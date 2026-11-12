@@ -1,0 +1,233 @@
+AMETHYST-TOOLS:
+  EXCLUDED-WORLDS:
+  - duels
+  PARTICLES:
+    ENABLED: true
+    TYPE: BLOCK
+    BLOCK-MATERIAL: PURPLE_CONCRETE_POWDER
+    COUNT: 12
+    SPREAD: 0.4
+  SOUNDS:
+    USE: minecraft:block.amethyst_block.hit|1.0|1.2
+    EXPIRE: minecraft:entity.lightning_bolt.impact|0.5|2.0
+    BREAK: minecraft:block.amethyst_block.break|1.0|0.8
+    ACTIVATE: minecraft:block.amethyst_block.resonate|1.0|1.0
+  SECURITY:
+    REQUIRE-ITEM-ID: true
+    BIND-TO-OWNER: false
+    CLICK-COOLDOWN-MS: 250
+    BLOCK-HOPPER-PICKUP: true
+  DRILL:
+    MATERIAL: NETHERITE_PICKAXE
+    NAME: '&#009bff&lғʀᴏᴢᴇɴ Drill'
+    LORE:
+    - '&#BDC3C7Breaks &d9 blocks &7per strike'
+    - '&#BDC3C7Powered by ғʀᴏᴢᴇɴ energy'
+    - ''
+    - '&#9B59B6✦ Self Destruct'
+    - '&#BDC3C7{time}'
+    ENCHANTMENTS:
+    - efficiency:5
+    - unbreaking:3
+    - fortune:3
+    RADIUS: 1
+    DISABLED-BLOCKS:
+    - DIRT
+    - GRASS_BLOCK
+    - COARSE_DIRT
+    - ROOTED_DIRT
+    - PODZOL
+    - SAND
+    - RED_SAND
+    - GRAVEL
+    - SPAWNER
+    - BEDROCK
+    - OBSIDIAN
+    - CRYING_OBSIDIAN
+    - END_PORTAL_FRAME
+    - FARMLAND
+    - SOUL_SAND
+    - SOUL_SOIL
+    DURATION: 86400
+    SHARD-SHOP:
+      ENABLED: false
+      CURRENCY: SHARD
+      PRICE-PER-UNIT: 750.0
+      SLOT: 18
+      MIN-QUANTITY: 1
+      MAX-QUANTITY: 1
+      DEFAULT-QUANTITY: 1
+      HIDE-QUANTITY-BUTTONS: true
+  CHOPPER:
+    MATERIAL: NETHERITE_AXE
+    NAME: '&#009bff&lғʀᴏᴢᴇɴ Tree Chopper'
+    LORE:
+    - '&#BDC3C7Chops entire trees &dinstantly'
+    - '&#BDC3C7Vein-style breaking'
+    - ''
+    - '&#9B59B6✦ Self Destruct'
+    - '&#BDC3C7{time}'
+    ENCHANTMENTS:
+    - efficiency:10
+    - unbreaking:3
+    MAX-LOGS: 128
+    LOG-BLOCKS:
+    - OAK_LOG
+    - SPRUCE_LOG
+    - BIRCH_LOG
+    - JUNGLE_LOG
+    - ACACIA_LOG
+    - DARK_OAK_LOG
+    - CHERRY_LOG
+    - MANGROVE_LOG
+    - CRIMSON_STEM
+    - WARPED_STEM
+    - STRIPPED_OAK_LOG
+    - STRIPPED_SPRUCE_LOG
+    - STRIPPED_BIRCH_LOG
+    - STRIPPED_JUNGLE_LOG
+    - STRIPPED_ACACIA_LOG
+    - STRIPPED_DARK_OAK_LOG
+    - STRIPPED_CHERRY_LOG
+    - STRIPPED_MANGROVE_LOG
+    - STRIPPED_CRIMSON_STEM
+    - STRIPPED_WARPED_STEM
+    DURATION: 86400
+    SHARD-SHOP:
+      ENABLED: false
+      CURRENCY: SHARD
+      PRICE-PER-UNIT: 600.0
+      SLOT: 19
+      MIN-QUANTITY: 1
+      MAX-QUANTITY: 1
+      DEFAULT-QUANTITY: 1
+      HIDE-QUANTITY-BUTTONS: true
+  SELL-AXE:
+    MATERIAL: NETHERITE_AXE
+    NAME: '&#009bff&lғʀᴏᴢᴇɴ Sell Axe'
+    LORE:
+    - '&#BDC3C7Instantly sells all items in a chest'
+    - '&#BDC3C7Right-click a chest to sell'
+    - ''
+    - '&#9B59B6✦ Self Destruct'
+    - '&#BDC3C7{time}'
+    ENCHANTMENTS:
+    - efficiency:5
+    - unbreaking:3
+    DURATION: 86400
+    SHARD-SHOP:
+      ENABLED: false
+      CURRENCY: SHARD
+      PRICE-PER-UNIT: 900.0
+      SLOT: 20
+      MIN-QUANTITY: 1
+      MAX-QUANTITY: 1
+      DEFAULT-QUANTITY: 1
+      HIDE-QUANTITY-BUTTONS: true
+  SHOVEL:
+    MATERIAL: NETHERITE_SHOVEL
+    NAME: '&#009bff&lғʀᴏᴢᴇɴ Shovel'
+    LORE:
+    - '&#BDC3C7Breaks &d9 blocks &7per strike'
+    - '&#BDC3C7Only for soft terrain blocks'
+    - ''
+    - '&#9B59B6✦ Self Destruct'
+    - '&#BDC3C7{time}'
+    ENCHANTMENTS:
+    - efficiency:5
+    - unbreaking:3
+    - fortune:3
+    RADIUS: 1
+    ALLOWED-BLOCKS:
+    - DIRT
+    - GRASS_BLOCK
+    - COARSE_DIRT
+    - PODZOL
+    - ROOTED_DIRT
+    - GRAVEL
+    - SAND
+    - RED_SAND
+    - CLAY
+    - SOUL_SAND
+    - SOUL_SOIL
+    - FARMLAND
+    - DIRT_PATH
+    - SNOW
+    - SNOW_BLOCK
+    - POWDER_SNOW
+    - MUD
+    DURATION: 86400
+    SHARD-SHOP:
+      ENABLED: false
+      CURRENCY: SHARD
+      PRICE-PER-UNIT: 500.0
+      SLOT: 21
+      MIN-QUANTITY: 1
+      MAX-QUANTITY: 1
+      DEFAULT-QUANTITY: 1
+      HIDE-QUANTITY-BUTTONS: true
+  BUCKET:
+    MATERIAL: BUCKET
+    NAME: '&#009bff&lғʀᴏᴢᴇɴ Bucket'
+    LORE:
+    - '&#BDC3C7Drains &d27 water blocks &7at once'
+    - '&#BDC3C7Right-click water to drain'
+    - ''
+    - '&#9B59B6✦ Self Destruct'
+    - '&#BDC3C7{time}'
+    DRAIN-RADIUS: 1
+    MAX-DRAIN: 27
+    DURATION: 86400
+    SHARD-SHOP:
+      ENABLED: false
+      CURRENCY: SHARD
+      PRICE-PER-UNIT: 400.0
+      SLOT: 22
+      MIN-QUANTITY: 1
+      MAX-QUANTITY: 1
+      DEFAULT-QUANTITY: 1
+      HIDE-QUANTITY-BUTTONS: true
+  SHARD-BOOSTER:
+    MATERIAL: POTION
+    NAME: '&#009bff&lShard Booster'
+    LORE:
+    - '&#BDC3C7&d4x &7Shard Multiplier'
+    - '&#BDC3C7Duration: &d60 minutes'
+    - ''
+    - '&#BDC3C7Drink to &dactivate'
+    - ''
+    - '&#9B59B6✦ Self Destruct'
+    - '&#BDC3C7{time}'
+    BOOSTER-DURATION: 3600
+    DURATION: 3600
+    SHARD-SHOP:
+      ENABLED: false
+      CURRENCY: SHARD
+      PRICE-PER-UNIT: 1500.0
+      SLOT: 23
+      MIN-QUANTITY: 1
+      MAX-QUANTITY: 1
+      DEFAULT-QUANTITY: 1
+      HIDE-QUANTITY-BUTTONS: true
+AMETHYST-MESSAGES:
+  PREFIX: '&#9B59B6[ғʀᴏᴢᴇɴ] &r'
+  EXPIRED: '{prefix}&#BDC3C7Your &d{tool} &7has &cexpired &7and self-destructed!'
+  EXCLUDED-WORLD: '{prefix}&#BDC3C7ғʀᴏᴢᴇɴ Tools cannot be used in this world.'
+  DRILL-BREAK: '{prefix}&#BDC3C7&dғʀᴏᴢᴇɴ Drill &7broke &d{count} &7blocks.'
+  CHOP-BREAK: '{prefix}&#BDC3C7&dғʀᴏᴢᴇɴ Tree Chopper &7chopped &d{count} &7logs.'
+  SELL-SUCCESS: '{prefix}&#BDC3C7Sold all chest contents for &a${amount}&7.'
+  SELL-EMPTY: '{prefix}&#BDC3C7That chest is empty or has no sellable items.'
+  SELL-FAILED: '{prefix}&#BDC3C7The sale failed. no items were removed.'
+  SELL-NO-CHEST: '{prefix}&#BDC3C7You must right-click a chest.'
+  BUCKET-DRAIN: '{prefix}&#BDC3C7Drained &d{count} &7water blocks.'
+  BUCKET-NO-WATER: '{prefix}&#BDC3C7No water blocks found nearby.'
+  BOOSTER-ACTIVATED: '{prefix}&#BDC3C7&dShard Booster &7activated! &d4x &7shards for
+    &d60 minutes&7.'
+  BOOSTER-ALREADY: '{prefix}&#BDC3C7You already have an active shard booster!'
+  NO-PERMISSION: '{prefix}&#BDC3C7You do not have permission to use this item.'
+  WRONG-OWNER: '{prefix}&#BDC3C7This ғʀᴏᴢᴇɴ Tool is bound to another player.'
+  GIVE-SUCCESS: '{prefix}&#BDC3C7Gave &d{type} &7to &d{player}&7.'
+  GIVE-USAGE: '{prefix}&#BDC3C7Usage: &d/frozentool give <player> <type> [duration_seconds]'
+  GIVE-INVALID-TYPE: '{prefix}&#BDC3C7Invalid tool type. Types: DRILL, CHOPPER, SELL_AXE,
+    SHOVEL, BUCKET, FLAKE_BOOSTER'
+  RELOAD-SUCCESS: '{prefix}&#BDC3C7Configuration reloaded.'

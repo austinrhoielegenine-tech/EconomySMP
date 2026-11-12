@@ -1,0 +1,89 @@
+# EconomySMP Core - Essentials configuration
+# Path: core/essentials/essentials.yml
+#
+# This file defines the Essentials-style perks and their settings.
+# The core command/listener code must read these settings for them to take effect.
+
+perks:
+  fly:
+    enabled: true
+    permission: "economysmp.perks.fly"
+    aliases:
+      - "fly"
+    # Persist each player's preferred flight state.
+    # When true, remember whether /fly was ON or OFF and restore it on join
+    # and after changing worlds. The Java implementation must enforce this.
+    persistence:
+      enabled: true
+      save-on-toggle: true
+      save-on-quit: true
+      restore-on-join: true
+      restore-on-world-change: true
+      # Do not enable flight in worlds where the player lacks permission.
+      respect-world-permissions: true
+      # If the player is not allowed to fly in the destination world, force OFF.
+      disable-if-not-allowed: true
+    messages:
+      enabled: "&aFlight enabled."
+      disabled: "&cFlight disabled."
+      no-permission: "&cYou don't have permission to use /fly."
+
+  repair:
+    enabled: true
+    permission: "economysmp.perks.repair"
+    aliases:
+      - "repair"
+    messages:
+      success: "&aItem repaired."
+      no-item: "&cHold an item to repair."
+      no-permission: "&cYou don't have permission to use /repair."
+
+  condense:
+    enabled: true
+    permission: "economysmp.perks.condense"
+    aliases:
+      - "condense"
+    messages:
+      success: "&aEligible items condensed."
+      no-items: "&cYou don't have any eligible items to condense."
+      no-permission: "&cYou don't have permission to use /condense."
+
+  craft:
+    enabled: true
+    permission: "economysmp.perks.craft"
+    aliases:
+      - "craft"
+      - "workbench"
+    messages:
+      no-permission: "&cYou don't have permission to use /craft."
+
+  anvil:
+    enabled: true
+    permission: "economysmp.perks.anvil"
+    aliases:
+      - "anvil"
+    messages:
+      no-permission: "&cYou don't have permission to use /anvil."
+
+  smithingtable:
+    enabled: true
+    permission: "economysmp.perks.smithingtable"
+    aliases:
+      - "smithingtable"
+      - "smithing"
+    messages:
+      no-permission: "&cYou don't have permission to use /smithingtable."
+
+  enderchest:
+    enabled: true
+    permission: "economysmp.perks.enderchest"
+    aliases:
+      - "ec"
+      - "enderchest"
+    messages:
+      no-permission: "&cYou don't have permission to use /ec."
+
+# Optional common messages used by the command handlers.
+messages:
+  player-only: "&cOnly players can use this command."
+  config-reloaded: "&aEssentials configuration reloaded."

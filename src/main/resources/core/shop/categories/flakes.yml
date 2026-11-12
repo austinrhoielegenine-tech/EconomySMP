@@ -1,0 +1,125 @@
+title: "ѕʜᴏᴘ - ꜰʟᴀᴋᴇ"
+size: 27
+currency: FLAKES
+
+items:
+  pig_spawner:
+    material: SPAWNER
+    slot: 9
+    amount: 1
+    price: 250
+    currency: FLAKES
+    name: "Pig Spawner"
+    lore:
+      - "#FFFFFFPig"
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} pig {amount}"
+    give-item: false
+
+  cow_spawner:
+    material: SPAWNER
+    slot: 10
+    amount: 1
+    price: 350
+    currency: FLAKES
+    name: "Cow Spawner"
+    lore:
+      - "#FFFFFFCow"
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} cow {amount}"
+    give-item: false
+
+  zombie_spawner:
+    material: SPAWNER
+    slot: 11
+    amount: 1
+    price: 400
+    currency: FLAKES
+    name: "Zombie Spawner"
+    lore:
+      - "#FFFFFFZombie"
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} zombie {amount}"
+    give-item: false
+
+  spider_spawner:
+    material: SPAWNER
+    slot: 12
+    amount: 1
+    price: 750
+    currency: FLAKES
+    name: "Spider Spawner"
+    lore:
+      - "#FFFFFFSpider"
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} spider {amount}"
+    give-item: false
+
+  skeleton_spawner:
+    material: SPAWNER
+    slot: 13
+    amount: 1
+    price: 500
+    currency: FLAKES
+    name: "Skeleton Spawner"
+    lore:
+      - "#FFFFFFSkeleton"
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} skeleton {amount}"
+    give-item: false
+
+  creeper_spawner:
+    material: SPAWNER
+    slot: 14
+    amount: 1
+    price: 625
+    currency: FLAKES
+    name: "Creeper Spawner"
+    lore:
+      - "#FFFFFFCreeper"
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} creeper {amount}"
+    give-item: false
+
+  zombified_spawner:
+    material: SPAWNER
+    slot: 15
+    amount: 1
+    price: 750
+    currency: FLAKES
+    name: "Zombified Piglin"
+    lore:
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} piglin {amount}"
+    give-item: false
+
+  blaze_spawner:
+    material: SPAWNER
+    slot: 16
+    amount: 1
+    price: 1000
+    currency: FLAKES
+    name: "Blaze Spawner"
+    lore:
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} blaze {amount}"
+    give-item: false
+
+  golem_spawner:
+    material: SPAWNER
+    slot: 17
+    amount: 1
+    price: 1500
+    currency: FLAKES
+    name: "Iron Golem Spawner"
+    lore:
+      - "#FFFFFFBuy price: #73cffa%price% flakes"
+    command: "spawner give {username} iron_golem {amount}"
+    give-item: false
+
+back:
+  material: RED_STAINED_GLASS_PANE
+  slot: 18
+  name: "#FF0000ʙᴀᴄᴋ"
+  lore:
+    - "#FFFFFFClick to return"

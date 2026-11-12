@@ -1,0 +1,31 @@
+DATABASE:
+  TYPE: SQLITE
+  SQLITE:
+    FILE: data/data.db
+  MYSQL:
+    HOST: localhost
+    PORT: 3306
+    DATABASE: ultimatedonutsmp
+    USERNAME: root
+    PASSWORD: ''
+    CREATE-DATABASE: true
+    PARAMETERS: useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=utf8
+  MONGODB:
+    URI: mongodb://localhost:27017
+    DATABASE: ultimatedonutsmp
+    CACHE-FILE: data/mongodb-cache.db
+    SYNC-ON-AUTOSAVE: true
+REDIS:
+  ENABLED: false
+  HOST: localhost
+  PORT: 6379
+  TIMEOUT: 2000
+  PASSWORD: ''
+  DATABASE: 0
+  MAX-TOTAL: 50
+  MAX-IDLE: 10
+  MIN-IDLE: 5
+  TEST-ON-BORROW: false
+  TEST-ON-RETURN: false
+  TEST-WHILE-IDLE: false
+  RECONNECT-DELAY-MS: 5000

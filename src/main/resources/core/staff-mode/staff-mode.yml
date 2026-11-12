@@ -1,0 +1,178 @@
+STAFF-MODE:
+  ENABLED: true
+  AUTO-VANISH-ON-ENABLE: false
+  PERSIST-ON-QUIT: true
+  PERSIST-ON-RESTART: true
+  LOCK-TOOLS: true
+  RESTORE-INVENTORY-ON-DISABLE: true
+  LUCKPERMS-CONTEXT:
+    ENABLED: true
+    KEY: "staffmode"
+  VANISH-ACTIONBAR:
+    ENABLED: true
+    INTERVAL-TICKS: 40
+    MESSAGE: '&aVANISHED &7>> &fYou are hidden from regular players'
+  VANISH-FAKE-MESSAGES:
+    FAKE-LEAVE-ON-VANISH: true
+    FAKE-JOIN-ON-UNVANISH: true
+    ONLY-TO-REGULAR-PLAYERS: true
+  STAFF-PERMISSION: economysmp.staff.mode
+  ADMIN-PERMISSION: economysmp.admin.staffmode
+  VANISH-PERMISSION: economysmp.staff.mode.vanish
+  BETTER-VIEW-PERMISSION: economysmp.staff.mode.betterview
+  STAFF-LIST-PERMISSION: economysmp.staff.mode.stafflist
+  RANDOM-TELEPORT-PERMISSION: economysmp.staff.mode.randomtp
+  SEE-VANISHED-PERMISSION: economysmp.staff.mode.seevanished
+  OTHERS-PERMISSION: economysmp.staff.mode.others
+  HOTBAR-SLOTS:
+    VANISH: 0
+    FREEZE: 1
+    STAFF_LIST: 4
+    BETTER_VIEW: 7
+    RANDOM_TELEPORT: 8
+  BETTER-VIEW:
+    ENABLE-NIGHT-VISION: true
+    ENABLE-FLIGHT: true
+    AUTO-FLY: true
+  RANDOM-TELEPORT:
+    EXCLUDE-STAFF: true
+    EXCLUDE-VANISHED: true
+    EXCLUDE-FROZEN: false
+    EXCLUDE-DUELS: true
+    EXCLUDE-FFA: true
+    NOTIFY-TARGET: false
+ITEMS:
+  VANISH:
+    ENABLED:
+      MATERIAL: LIME_DYE
+      NAME: '&aVanished'
+      LORE:
+      - '&7Click to disable vanish'
+    DISABLED:
+      MATERIAL: GRAY_DYE
+      NAME: '&7Unvanished'
+      LORE:
+      - '&7Click to enable vanish'
+  FREEZE:
+    MATERIAL: ICE
+    NAME: '&bFreeze Player'
+    LORE:
+    - '&7Right-click a player to freeze them'
+    - '&7Left-click to see frozen players'
+  STAFF_LIST:
+    MATERIAL: CLOCK
+    NAME: '&eStaff List'
+    LORE:
+    - '&7Click to view online staff members'
+  BETTER_VIEW:
+    MATERIAL: ORANGE_CARPET
+    NAME: '&eBetter View'
+    LORE:
+    - '&7Click to toggle better view mode'
+  RANDOM_TELEPORT:
+    MATERIAL: PLAYER_HEAD
+    NAME: '&eRandom Teleport'
+    LORE:
+    - '&7Click to teleport to a random player'
+CUSTOM-ITEMS:
+  EXAMPLE:
+    ENABLED: false
+    SLOT: 2
+    MATERIAL: DIRT
+    NAME: '&eCustom Command'
+    LORE:
+    - '&7Click to execute custom command'
+    EXECUTE-AS: PLAYER
+    PERMISSION: ''
+    REQUIRE-TARGET: false
+    COMMANDS:
+    - 'say Hello from {player}'
+MENUS:
+  STAFF-LIST:
+    TITLE: '&8Online Staff'
+    SIZE: 54
+    REFRESH-SLOT: 49
+    PLACEHOLDER-MATERIAL: AIR
+    CONTENT-SLOTS:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    EMPTY-MATERIAL: BARRIER
+    EMPTY-NAME: '&cNo staff online'
+    EMPTY-LORE:
+    - '&7No staff members are currently online.'
+  FROZEN-PLAYERS:
+    TITLE: '&8Frozen Players'
+    SIZE: 54
+    REFRESH-SLOT: 49
+    PLACEHOLDER-MATERIAL: AIR
+    CONTENT-SLOTS:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    EMPTY-MATERIAL: BARRIER
+    EMPTY-NAME: '&aNo frozen players'
+    EMPTY-LORE:
+    - '&7There are no active frozen players.'
+MESSAGES:
+  NO-PERMISSION: '&cYou do not have permission.'
+  FEATURE-DISABLED: '&cStaff mode is currently disabled.'
+  PLAYER-ONLY: '&cOnly players can use this command.'
+  ENABLED: '&aStaff mode enabled.'
+  DISABLED: '&cStaff mode disabled.'
+  ENABLED-ACTIONBAR: '&aStaff mode enabled'
+  DISABLED-ACTIONBAR: '&cStaff mode disabled'
+  VANISH-ON: '&aVanish enabled.'
+  VANISH-OFF: '&cVanish disabled.'
+  BETTER-VIEW-ON: '&aBetter View enabled.'
+  BETTER-VIEW-OFF: '&cBetter View disabled.'
+  RANDOM-TELEPORT-NO-TARGET: '&cNo eligible player found.'
+  RANDOM-TELEPORT-SUCCESS: '&eTeleported to &f{player}&e.'
+  RESTORE-FAILED: '&cStaff mode restore failed. Contact an admin.'
+  RECOVERED-AFTER-RESTART: '&eStaff mode was disabled because the server restarted.
+    Your inventory was restored.'
+  TOOL-LOCKED: '&cYour staff tools are locked while Staff Mode is active.'
+  CUSTOM-ITEM-NO-TARGET: '&cRight-click a player to use this tool.'
+  RELOAD-SUCCESS: '&aStaff mode config reloaded.'
+FAKE-PLAYER:
+  USE-DEFAULT-SKIN: false
+  HIDE-NAMETAG: true
+  SNEAK: true
+  SPAWN-AT-LOOK-TARGET: true
+  LOOK-RANGE: 32.0

@@ -1,0 +1,98 @@
+MENUS:
+  BUTTON-CLICK: minecraft:ui.button.click|1.0|1.0
+  PAGE-TURN: minecraft:item.book.page_turn|2.0|0.1
+SPAWN:
+  SLIME-JUMP: minecraft:entity.slime.jump|1.0|1.0
+SELL:
+  LEVEL-UP: minecraft:entity.player.levelup|1.0|2.0
+AMETHYST:
+  EXPIRED: minecraft:entity.item.break|1.0|1.0
+  BREAK: minecraft:block.amethyst_block.break|1.0|1.0
+BOOSTER:
+  ERROR: minecraft:entity.villager.no|1.0|1.0
+  SUCCESS: minecraft:entity.player.levelup|1.0|1.0
+SHARDS:
+  REWARD: minecraft:entity.experience_orb.pickup|0.85|1.35
+  REWARD-BOOSTED: minecraft:entity.player.levelup|0.85|1.45
+  CANCELLED: minecraft:entity.villager.no|0.8|1.1
+MESSAGES:
+  RECEIVER: minecraft:entity.experience_orb.pickup|0.85|1.35
+COMMANDS:
+  ERROR: minecraft:entity.villager.no|1.0|1.0
+BUCKET:
+  FILL: minecraft:item.bucket.fill|1.0|1.0
+TPAUTO:
+  ACTIVATE: minecraft:block.beacon.activate|1.0|1.0
+  DEACTIVATE: minecraft:block.beacon.deactivate|1.0|1.0
+TPA:
+  REQUEST-RECEIVED: minecraft:block.note_block.chime|1.0|1.0
+  REQUEST-SENT: minecraft:block.note_block.bit|1.0|1.0
+  REQUEST-SENT-EXTRA: minecraft:entity.experience_orb.pickup|1.0|1.0
+  NO-REQUEST: minecraft:entity.ender_pearl.throw|1.0|1.0
+  CONFIRM: minecraft:entity.experience_orb.pickup|1.0|1.0
+TELEPORT:
+  SUCCESS: minecraft:entity.experience_orb.pickup|1.0|1.0
+  COUNTDOWN: minecraft:entity.enderman.teleport|1.0|1.0
+  CANCELLED: minecraft:entity.villager.no|1.0|1.0
+RTP-ZONE:
+  COUNTDOWN: minecraft:block.note_block.hat|0.9|1.5
+  CANCELLED: minecraft:entity.villager.no|1.0|1.0
+RTP:
+  SEARCH-START: minecraft:block.note_block.pling|0.9|1.1
+  SEARCH-TICK: minecraft:block.note_block.hat|0.5|1.6
+  SEARCH-FOUND: minecraft:entity.experience_orb.pickup|1.0|1.35
+  SEARCH-FAIL: minecraft:entity.villager.no|1.0|1.0
+SHOP:
+  NO-MONEY: minecraft:entity.villager.no|1.0|1.0
+  BUY-SUCCESS: minecraft:entity.experience_orb.pickup|1.0|1.0
+DRILL:
+  ITEM-BREAK: minecraft:entity.item.break|1.0|1.0
+  AMETHYST-BREAK: minecraft:block.amethyst_block.break|1.0|1.0
+BILLFORD:
+  OPEN: minecraft:entity.villager.trade|1.0|1.1
+  ROTATE: minecraft:block.beacon.activate|0.8|1.2
+  SUCCESS: minecraft:entity.player.levelup|1.0|1.5
+  FAIL: minecraft:entity.villager.no|1.0|1.0
+AUCTION_HOUSE:
+  SUCCESS: minecraft:entity.experience_orb.pickup|1.0|1.2
+  FAIL: minecraft:entity.villager.no|1.0|1.0
+ORDERS:
+  SUCCESS: minecraft:entity.experience_orb.pickup|1.0|1.2
+  FAIL: minecraft:entity.villager.no|1.0|1.0
+DUELS:
+  CLICK: minecraft:ui.button.click|1.0|1.0
+  REQUEST-SENT: minecraft:entity.experience_orb.pickup|1.0|1.2
+  REQUEST-RECEIVED: minecraft:block.note_block.pling|1.0|1.0
+  QUEUE-JOIN: minecraft:block.note_block.hat|1.0|1.0
+  START-COUNTDOWN:
+    PER-SECOND:
+      5: minecraft:block.note_block.hat|1.0|1.0
+      4: minecraft:block.note_block.hat|1.0|1.0
+      3: minecraft:block.note_block.hat|1.0|1.0
+      2: minecraft:block.note_block.hat|1.0|1.0
+      1: minecraft:block.note_block.hat|1.0|1.0
+    START-SOUND: minecraft:entity.firework_rocket.blast|1.0|1.0
+  MATCH-FOUND: minecraft:block.beacon.activate|1.0|1.1
+  MATCH-START: minecraft:entity.player.levelup|1.0|1.0
+  VICTORY: minecraft:ui.toast.challenge_complete|1.0|1.0
+  DEFEAT: minecraft:entity.villager.no|1.0|1.0
+  CLAIM: minecraft:entity.item.pickup|1.0|1.0
+KEY-ALL:
+  REWARD: minecraft:entity.player.levelup|1.0|1.1
+CRATES:
+  OPEN: minecraft:block.ender_chest.open|1.0|1.05
+  CLAIM: minecraft:entity.player.levelup|1.0|1.25
+  NO-KEY: minecraft:entity.villager.no|1.0|1.0
+  SPIN-TICK: minecraft:block.note_block.hat|0.55|1.55
+  SPIN-END: minecraft:entity.experience_orb.pickup|1.0|1.35
+SPAWNERS:
+  OPEN-MENU: minecraft:block.chest.open|1.0|1.0
+  COLLECT-LOOT: minecraft:entity.item.pickup|1.0|1.0
+  DROP-LOOT: minecraft:entity.item.pickup|1.0|1.2
+  COLLECT-XP: minecraft:entity.experience_orb.pickup|1.0|1.0
+  SELL-CONFIRM-OPEN: minecraft:ui.button.click|1.0|1.0
+  SELL-SUCCESS: minecraft:entity.villager.yes|1.0|1.0
+  SELL-CANCEL: minecraft:ui.button.click|1.0|0.8
+  FILTER-OPEN: minecraft:ui.button.click|1.0|1.2
+  FILTER-TOGGLE: minecraft:ui.button.click|1.0|1.0
+

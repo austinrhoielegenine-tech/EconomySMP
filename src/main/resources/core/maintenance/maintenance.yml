@@ -1,0 +1,18 @@
+# EconomySMP maintenance messages
+# Path: core/maintenance/maintenance.yml
+# Color codes use &. %player% is replaced with the target player's name.
+
+messages:
+  kick: "&cEconomySMP is now under maintenance. Please try again later."
+  whitelisted-online: "&aYou are whitelisted and may remain online during maintenance."
+  whitelist-added: "&aAdded &f%player% &ato the maintenance whitelist."
+  whitelist-already: "&e%player% is already on the maintenance whitelist."
+  whitelist-removed: "&aRemoved &f%player% &afrom the maintenance whitelist."
+  whitelist-missing: "&e%player% is not on the maintenance whitelist."
+  enabled: "&aMaintenance mode enabled. Non-whitelisted players have been kicked."
+  enabled-duration: "&aMaintenance mode enabled for &b%duration%&a."
+  disabled: "&aMaintenance mode disabled."
+  already-enabled: "&eMaintenance mode is already enabled."
+  already-disabled: "&eMaintenance mode is not enabled."
+  no-permission: "&cYou do not have permission to manage maintenance mode."
+  usage: "&cUsage: /maintenance <on|off|status|whitelist <player>|unwhitelist <player>>"

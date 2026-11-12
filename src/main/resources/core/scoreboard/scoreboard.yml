@@ -1,0 +1,32 @@
+
+SCOREBOARD:
+  ENABLED: true
+
+  TITLE-UPDATE-TICKS: 2
+
+  ALIGN-ICON-COLUMN: true
+
+  ICON-COLUMN-WIDTH: 10
+
+  TITLE:
+    - '&#0069d6&lE&#0374da&lc&#067fdf&lo&#0a8be3&ln&#0d96e7&lo&#10a1ec&lm&#13acf0&ly&#17b8f4&lS&#1ac3f9&lM&#1dcefd&lP'
+
+  LINES:
+    - ''
+    - '&#00FC00&l$ &fMoney &#00FC00%economy_nicestMoney%     '
+    - '&#A303F9★ &fShards &#A303F9%economy_shards%     '
+    - '&#FC0000🗡 &fKills &#FC0000%economy_kills%      '
+    - '&#F97603☠ &fDeaths &#F97603%economy_deaths%   '
+    - '&#00A4FC⌛ &fKeyall &#00A4FC%economy_keyall_countdown%'
+    - '&#FCE300⌚ &fPlaytime &#FCE300%economy_playtime%   '
+    - '{team}'
+    - '{shard_cuboid}'
+    - '{shard_booster}'
+    - ''
+    - '&7NA East &7(&#0069D6%economy_ping%ms&7)'
+
+  TEAM: '&#00A4FC🪓 &fTeam &#00A4FC%economy_team%     '
+
+  SHARD-BOOSTER: '&#A303F9⚡ &fBooster &#A303F9%economy_booster_countdown%     '
+
+  SHARD-CUBOID: '&#A303F9⌛ &fShards &#A303F9%economy_shard_cuboid_display%     '

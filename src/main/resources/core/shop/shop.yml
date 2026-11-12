@@ -1,0 +1,72 @@
+title: "ѕʜᴏᴘ"
+size: 27
+
+CATEGORIES:
+  end:
+    FILE-TYPE: end.yml
+    OPEN-MENU: "{end-menu}"
+    MATERIAL: END_STONE
+    SLOT: 11
+    NAME: "#00FC88ᴇɴᴅ"
+    LORE:
+      - "#FFFFFFClick to view the end shop"
+
+  nether:
+    FILE-TYPE: nether.yml
+    OPEN-MENU: "{nether-menu}"
+    MATERIAL: NETHERRACK
+    SLOT: 12
+    NAME: "#00FC88ɴᴇᴛʜᴇʀ"
+    LORE:
+      - "#FFFFFFClick to view the nether shop"
+
+  gear:
+    FILE-TYPE: gear.yml
+    OPEN-MENU: "{gear-menu}"
+    MATERIAL: TOTEM_OF_UNDYING
+    SLOT: 13
+    NAME: "#00FC88ɢᴇᴀʀ"
+    LORE:
+      - "#FFFFFFClick to view the gear shop"
+
+  food:
+    FILE-TYPE: food.yml
+    OPEN-MENU: "{food-menu}"
+    MATERIAL: COOKED_BEEF
+    SLOT: 14
+    NAME: "#00FC88ꜰᴏᴏᴅ"
+    LORE:
+      - "#FFFFFFClick to view the food shop"
+
+  flakes:
+    FILE-TYPE: flakes.yml
+    OPEN-MENU: "{flake-menu}"
+    MATERIAL: SNOWBALL
+    SLOT: 22
+    NAME: "#73cffaꜰʟᴀᴋᴇ ѕʜᴏᴘ"
+    LORE:
+      - "#FFFFFFClick to view the flake shop"
+
+BACK-BUTTON:
+  MATERIAL: BARRIER
+  DISPLAY-NAME: "#FF0000ʙᴀᴄᴋ"
+  LORE:
+    - "#FFFFFFClick to return"
+
+SHOP-GUI:
+  SHOW-AUCTION-PRICE: true
+  ITEM:
+    LORE:
+      - "&7Shop price: {shop_price}"
+      - "{auction_line}"
+      - ""
+      - "{favorite_line}"
+      - "&eLeft-click to buy from the shop"
+      - "{auction_action}"
+      - "{favorite_action}"
+  FAVORITES:
+    ENABLED: true
+  WEB-SERVER:
+    ENABLED: false
+    PORT: 8080
+    PUBLIC-URL: ""

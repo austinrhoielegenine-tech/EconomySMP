@@ -1,0 +1,77 @@
+ENABLED: true
+COOLDOWN-SECONDS: 30
+MAX-NAME-LENGTH: 16
+STAFF-MARKER: '&8[&cH&8] '
+SCRAMBLE:
+  LENGTH: 10
+  CHARACTERS: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_
+  OBFUSCATED: true
+  NAMETAG-OFFSET-Y: 1.0
+ALIASES:
+  mrbeast:
+    NAME: MrBeast
+    SKIN: mrbeast
+  technoblade:
+    NAME: Technoblade
+    SKIN: technoblade
+  dream:
+    NAME: Dream
+    SKIN: dream
+  drdonutt:
+    NAME: DrDonutt
+    SKIN: drdonutt
+SKINS:
+  mrbeast:
+    DISPLAY-NAME: MrBeast
+    USERNAME: MrBeast
+  technoblade:
+    DISPLAY-NAME: Technoblade
+    USERNAME: Technoblade
+  dream:
+    DISPLAY-NAME: Dream
+    USERNAME: Dream
+  drdonutt:
+    DISPLAY-NAME: DrDonutt
+    USERNAME: DrDonutt
+GUI:
+  MAIN:
+    TITLE: '&8hide'
+    SIZE: 27
+  ALIASES:
+    TITLE: '&8select a name - {page}/{pages}'
+    SIZE: 54
+  SKINS:
+    TITLE: '&8select a skin - {page}/{pages}'
+    SIZE: 54
+  LIST:
+    TITLE: '&8hidden players - {page}/{pages}'
+    SIZE: 54
+MESSAGES:
+  PLAYER-ONLY: '&conly players can use this command.'
+  NO-PERMISSION: '&cyou do not have permission.'
+  DEPENDENCY-MISSING: '&chide requires protocollib to be installed and enabled.'
+  DISABLED: '&cthe hide feature is currently disabled.'
+  IN-COMBAT: '&cyou cannot change your hide state while in combat.'
+  COOLDOWN: '&cwait &f{seconds}s &cbefore changing hide again.'
+  ALREADY-HIDDEN: '&cyou are already using that hide identity.'
+  NOT-HIDDEN: '&cthat player is not hidden.'
+  PLAYER-NOT-FOUND: '&cplayer not found.'
+  INVALID-ALIAS: '&cthat disguise alias is not configured or is invalid.'
+  INVALID-SKIN: '&cunable to resolve that skin name or url.'
+  SKIN-SEARCHING: '&7searching skin for &f{skin}&7...'
+  ALIAS-IN-USE: '&cthat alias is already in use.'
+  SCRAMBLED: '&ayour identity is now scrambled as &f{alias}&a.'
+  DISGUISED: '&ayou are now disguised as &f{alias}&a.'
+  REMOVED: '&ayour hide state has been removed.'
+  ADMIN-REMOVED: '&asuccessfully removed hide from &f{player}&a.'
+  REMOVED-BY-ADMIN: '&cyour hide state has been removed by an administrator.'
+  STATUS-NONE: '&7hide status: &cinactive'
+  STATUS-ACTIVE: '&7hide status: &a{mode} &8- &f{alias}'
+  CHECK: |-
+    &bhide check
+    &7real name: &f{real}
+    &7alias: &f{alias}
+    &7mode: &f{mode}
+    &7skin: &f{skin}
+  PERMISSION-REMOVED: '&cyour hide state was removed because its permission is no
+    longer available.'

@@ -1,0 +1,37 @@
+# Suspect review GUI configuration.
+# Colors use the legacy Minecraft format (&a, &7, etc.).
+# Placeholders: {player}, {reports}, {reason}
+
+messages:
+  players-only: "&cOnly players can use this command."
+  no-permission: "&cYou do not have permission."
+  reviewed: "&a{player} &7was moved to suspect history."
+
+gui:
+  title: "&7ѕᴜѕ"
+  history-title: "&7ѕᴜѕ &8» &eʜɪѕᴛᴏʀʏ"
+
+  suspects:
+    click-lore: "&eClick to mark as reviewed"
+    reports-lore: "&7Reports: &f{reports}"
+    reason-lore: "&7Last reason: &f{reason}"
+
+  history-button:
+    name: "&eʜɪѕᴛᴏʀʏ"
+    lore: "&7View reviewed players"
+
+  previous-button:
+    name: "&cʙᴀᴄᴋ"
+    lore: "&7Go to the previous page"
+
+  next-button:
+    name: "&aɴᴇxᴛ"
+    lore: "&7Go to the next page"
+
+  history:
+    status-lore: "&7Status: &aReviewed"
+    reports-lore: "&7Reports: &f{reports}"
+    reason-lore: "&7Last reason: &f{reason}"
+    back-button:
+      name: "&cʙᴀᴄᴋ"
+      lore: "&7Return to suspicious players"

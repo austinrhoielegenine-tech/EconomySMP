@@ -1,0 +1,612 @@
+LANGUAGE:
+  ACTIVE: en_US
+  FALLBACK: en_US
+LOCATIONS:
+  SPAWN-LOCATION: ''
+  AFK-LOCATION: ''
+COMBAT-MANAGER:
+  ENABLED: true
+  COOLDOWN: 16
+  KILL-ON-LOGOUT: false
+  ACTION-BAR: '&fcombat: &b${time}s'
+  MOBS: false
+  ENDER-CRYSTAL: true
+  ENDER-PEARL: true
+  RESPAWN-ANCHOR: true
+  BLOCK-MESSAGE: '&cYou cannot use that command while in combat.'
+  BLOCK-COMMANDS: []
+  EXCLUDED-WORLDS: []
+
+PORTAL-SYSTEM:
+  ENABLED: true
+  BLOCK-IN-COMBAT: true
+  DEFAULT-TRIGGER-COOLDOWN-MS: 1500
+  POST-TELEPORT-GRACE-MS: 2000
+  HOLOGRAM:
+    ENABLED: true
+    DEFAULT-REGION: NA East
+    DEFAULT-SERVER-ID: ''
+    PORTALS: null
+    OFFSET-Y: 1.2
+    SET-HERE-OFFSET-Y: 1.6
+    LINE-SPACING: 0.27
+    UPDATE-TICKS: 40
+    LINES:
+    - '&f{portal}'
+    - '&7Region {region}'
+    - ''
+    - '&f<players> Players'
+SETTINGS:
+  RESPAWN-ON-BED: false
+  CHAINMAIL-ON-RESPAWN: true
+  CHAINMAIL-RESPAWN-ITEMS:
+  - MATERIAL: STONE_SWORD
+    AMOUNT: 1
+  - MATERIAL: CHAINMAIL_HELMET
+    NAME: '&eChainmail Helmet'
+    AMOUNT: 1
+  - MATERIAL: CHAINMAIL_CHESTPLATE
+    NAME: '&eChainmail Chestplate'
+    AMOUNT: 1
+  - MATERIAL: CHAINMAIL_LEGGINGS
+    NAME: '&eChainmail Leggings'
+    AMOUNT: 1
+  - MATERIAL: CHAINMAIL_BOOTS
+    NAME: '&eChainmail Boots'
+    AMOUNT: 1
+  - MATERIAL: COOKED_BEEF
+    AMOUNT: 16
+  HOME-DEFAULT: 2
+  HOME-PERMISSIONS:
+    ENABLED: true
+    PERMISSIONS:
+      "economysmp.homes.vip++": 15
+      "economysmp.homes.vip+": 10
+      "economysmp.homes.vip": 5
+  HOME-EXCLUDED-WORLDS: []
+  SHARDS-PER-KILL: 1
+  SHARDS-KILL-MESSAGE: '&#A303F9+{shards} Shard'
+  SHARDS-KILL-MESSAGE-BOOSTED: '&#A303F9+{shards} Shards &7(&ax{multiplier}&7)'
+  SHARDS-KILL-COOLDOWN-SECONDS: 600
+  SHARDS-KILL-COOLDOWN-MESSAGE: '&cNo Shard &7(killed recently, {time} left)'
+  MONEY-PER-DEFAULT: 1000.0
+  SELL-MESSAGE: '&a+$%price%'
+  SPAWN-MENU: true
+  AFK-MENU: true
+  TELEPORT-SPAWN-ON-FIRST-JOIN: true
+  FIRST-JOIN-SPAWN-DELAY-TICKS: 20
+  LOG-JOIN-QUIT: true
+  WORTH-DEFAULT-VALUE: 1.0
+  MOB-SPAWN-RADIUS: 50
+  PHANTOM-SPAWN-RADIUS: 40
+  DISABLE-MOB-SPAWN-LIMIT-SECONDS: -1
+  DISABLE-PHANTOM-SPAWN-LIMIT-SECONDS: 3600
+  MOB-SPAWN-TOGGLE-BLOCKS-TRIAL-SPAWNERS: false
+FEATURES_SETTINGS:
+  DISABLED_COMMAND_ACTION: "MESSAGE"
+CHAT:
+  FORMAT-ENABLED: true
+  FORMAT: '&f%prefix%%player%&7: &f%message%'
+  MESSAGE-COLORS:
+    default: '&f'
+    owner: '&#0000FF'
+  CLICKABLE-NAME:
+    ENABLED: true
+    HOVER-TEXT:
+    - '%luckperms_prefix%%player%'
+    - '&7&m----------'
+    - '&#00FC00&l$ &fmoney &#00FC00%economy_money%'
+    - '&#FC0000⚔ &fkills &#FC0000%economy_kills%'
+    - '&#FCE300⌚ &fplaytime &#FCE300%economy_playtime%'
+    - '&#F97603☠ &fdeaths &#F97603%economy_deaths%'
+    - '&#A303F9★ &fshards &#A303F9%economy_shards%'
+    - '&7&m----------'
+    - '&7click to view stats'
+    SUGGEST-COMMAND: '/msg <player> '
+  GLOBAL-CHAT-MUTED: false
+  GLOBAL-CHAT-DELAY-ENABLED: false
+  GLOBAL-CHAT-DELAY: 3
+  MAX-DELAY-SECONDS: 30
+  CLEAR-LINES: 150
+  LOGGING:
+    ENABLED: true
+    PUBLIC-MESSAGES: true
+    PRIVATE-MESSAGES: true
+  FILTER:
+    ENABLED: true
+    BLOCK-MESSAGE: '&7Please avoid using inappropriate words.'
+    WORDS:
+    - fuck
+    - shit
+    - bitch
+    LANGUAGE:
+      ENABLED: false
+      ALLOWED-ALPHABETS:
+      - LATIN
+      - NUMBERS
+      - SYMBOLS
+      BLOCK-MESSAGE: '&cYour message contains characters that are not allowed on this
+        server.'
+    CAPS:
+      ENABLED: false
+      PERCENTAGE: 70
+      MIN-LENGTH: 5
+      BLOCK-MESSAGE: '&cPlease avoid using too many capital letters.'
+    ANTI-REPEAT:
+      ENABLED: false
+      BLOCK-MESSAGE: '&cYou cannot repeat the same message!'
+    ANTI-LINK:
+      ENABLED: false
+      ALLOWED:
+      - google.com
+      - youtube.com
+      BLOCK-MESSAGE: '&cLinks are not allowed in the chat!'
+    LENGTH:
+      MIN:
+        ENABLED: false
+        VALUE: 1
+        BLOCK-MESSAGE: '&cYour message is too short! (Min: %min%)'
+      MAX:
+        ENABLED: false
+        VALUE: 100
+        BLOCK-MESSAGE: '&cYour message is too long! (Max: %max%)'
+SERVER-NOTIFICATIONS:
+  JOIN:
+    ENABLED: false
+    MESSAGE: '&8[&a+&8] &a{player} &7joined the server.'
+    BY-PERMISSION:
+      "economysmp.notifications.join.vip++": '&8[&a+&8] &6{player} &7joined the server.'
+      "economysmp.notifications.join.vip+": '&8[&a+&8] &b{player} &7joined the server.'
+      "economysmp.notifications.join.vip": '&8[&a+&8] &e{player} &7joined the server.'
+  LEAVE:
+    ENABLED: false
+    MESSAGE: '&8[&c-&8] &c{player} &7left the server.'
+    BY-PERMISSION:
+      "economysmp.notifications.leave.vip++": '&8[&c-&8] &6{player} &7left the server.'
+      "economysmp.notifications.leave.vip+": '&8[&c-&8] &b{player} &7left the server.'
+      "economysmp.notifications.leave.vip": '&8[&c-&8] &e{player} &7left the server.'
+  FIRST-JOIN:
+    ENABLED: false
+    MESSAGE: '&aWelcome &e{player} &ato the server for the first time!'
+    BY-PERMISSION:
+      "economysmp.notifications.first-join.vip++": '&aWelcome &6{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip+": '&aWelcome &b{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip": '&aWelcome &e{player} &ato the server for the first time!'
+  AUCTION-HOUSE:
+    ENABLED: true
+    LISTING:
+      ENABLED: false
+      MESSAGE: '&8[&6AH&8] &f{player} &7listed &e{amount}x {item} &7for &a{price_formatted}&7.'
+    PURCHASE:
+      ENABLED: false
+      MESSAGE: '&8[&6AH&8] &f{player} &7bought &e{amount}x {item} &7for &a{price_formatted}&7.'
+  ORDERS:
+    ENABLED: true
+    CREATE:
+      ENABLED: false
+      MESSAGE: '&8[&6ORDER&8] &f{player} &7created an order for &e{amount}x {item} &7at &a{price_formatted} &7each.'
+    COMPLETE:
+      ENABLED: false
+      MESSAGE: '&8[&6ORDER&8] &f{player} &7completed &e{owner}&7''s order for &e{amount}x {item}&7.'
+AFK-SYSTEM:
+  ENABLED: true
+  TIME: 180
+  SPAWN-CUBOID-NAME: spawn
+  AFK-CUBOID-NAME: ''
+  MESSAGE: '&7You have been moved to the AFK area for being inactive in the spawn.'
+PREVENT-ITEM-DROP:
+  SPAWN: true
+  AFK: true
+  BYPASS-PERMISSION: 'economysmp.preventdrop.bypass'
+  MESSAGE: '&c✗ You are not allowed to drop items in spawn or AFK areas!'
+CUBOID-BINDS:
+  SPAWN: []
+  AFK: []
+FLY-SYSTEM:
+  PLAYER-FLY-PERMISSION: 'economysmp.player.fly'
+  AUTO-DISABLE-OUTSIDE: true
+  MIN-SPEED: 1
+  MAX-SPEED: 10
+WORTH-LORE:
+  ENABLED: true
+  FORMAT: '&7Worth: &a$%price%'
+MONEY-NAMETAGS:
+  ENABLED: true
+  FORMAT: '&a$ &f{balance}'
+  SHORT-FORMAT: true
+  UPDATE-INTERVAL-TICKS: 10
+END-CRYSTAL:
+  ENABLED: false
+  DAMAGE: 2.0
+FAST-CRYSTALS:
+  ENABLED: true
+  DEFAULT-PLAYER-STATE: true
+  EXCLUDED-WORLDS:
+  - duels
+  PLACE:
+    ENABLED-COOLDOWN-TICKS: 0
+    DISABLED-COOLDOWN-TICKS: 8
+    DEBOUNCE-MS: 40
+    REQUIRE-VALID-BASE: true
+    VALID-BASES:
+    - OBSIDIAN
+    - BEDROCK
+    REQUIRE-AIR-ABOVE: true
+    REQUIRE-AIR-TWO-ABOVE: true
+  BREAK:
+    CLEAR-COOLDOWN-AFTER-HIT: true
+RESPAWN-ANCHOR:
+  ENABLED: false
+  DAMAGE: 2.0
+BOSS-SOUNDS:
+  ENABLED: true
+  RADIUS: 1600
+  WITHER-SPAWN: true
+  ENDER-DRAGON-DEATH: true
+ENDER-CHEST:
+  SIX-ROW: true
+LUNAR-CLIENT:
+  RICH-PRESENCE:
+    ENABLED: true
+    UPDATE: 1
+    PLAYER-STATE: Playing
+    GAME-STATE: Playing
+    GAME-NAME: Economy
+    VARIANT: '%economy_username% ($%economy_nicestMoney%)'
+    WORLD-NAME: Economy
+    SUB-SERVER-NAME: SMP
+    TEAM-CURRENT-SIZE: '{team_size}'
+    TEAM-MAX-SIZE: '{team_max_size}'
+    MAX-FIELD-LENGTH: 128
+  TEAM-VIEW:
+    ENABLED: true
+    UPDATE: 20
+SHARDS:
+  EVERY: 1
+  AMOUNT: 1
+  COUNTDOWN: '&7Next shard in &#A303F9%time%'
+  RECEIVED: '&#A303F9You received %amount% Shard &7(Total: &#A303F9%total%&7)'
+  RECEIVED-BOOSTED: '&#A303F9You received %amount% Shards &7(&ax%multiplier%&7) &7(Total:
+    &#A303F9%total%&7)'
+  CANCELLED-MESSAGE: '&cShard reward cancelled &7(Left %cuboid% zone)'
+  RESET-ON-LEAVE: true
+  CUBOIDS:
+    REGIONS:
+      spawn:
+        ENABLED: false
+        BOUND: false
+        PRIORITY: 100
+        CUBOID: ''
+        WORLD: world
+        RADIUS: 16
+        INTERVAL: 60
+        AMOUNT: 1
+        COUNTDOWN-MESSAGE: '&7Next shard in &#A303F9%time%'
+        REWARD-MESSAGE: '&#A303F9You received %amount% Shard &7(Total: &#A303F9%total%&7)'
+        BOOSTED-REWARD-MESSAGE: '&#A303F9You received %amount% Shards &7(&ax%multiplier%&7) &7(Total: &#A303F9%total%&7)'
+        LEAVE-MESSAGE: '&cShard reward cancelled &7(Left %cuboid% zone)'
+        AFK-TIME: 120
+        AFK-CUBOID: ''
+        AFK-LOCATION: ''
+        AFK-MESSAGE: '&7You have been moved to the AFK area for being inactive in the shard zone.'
+        TELEPORT-ON-AFK: true
+        EXCLUDED-WORLDS:
+        - duels
+        RECENT-MOVEMENT-WINDOW: 15
+        MIN-MOVEMENT-BLOCKS: 5
+        RESET-ON-LEAVE: true
+        PAUSED-MESSAGE: '&eMove to keep earning shards &7(%movement%/%required_movement%)'
+        AFK-PAUSED-MESSAGE: '&cYou are AFK. Move to resume shard gain'
+        EXCLUDED-WORLD-MESSAGE: '&cShards are disabled in this world'
+  EVERYWHERE:
+    ENABLED: false
+    EVERY: 3
+    AMOUNT: 1
+    REQUIRED-PERMISSION: economysmp.shards.everywhere
+    RECENT-MOVEMENT-WINDOW: 15
+    DISABLE-WHILE-IN-SHARD-CUBOID: false
+    RECEIVED: '&#A303F9You received %amount% Shard &8[Everywhere] &7(Total: &#A303F9%total%&7)'
+    RECEIVED-BOOSTED: '&#A303F9You received %amount% Shards &7(&ax%multiplier%&7) &8[Everywhere] &7(Total: &#A303F9%total%&7)'
+    EXCLUDED-WORLDS:
+    - duels
+  BOOSTER-MULTIPLIER: 4
+  BOOSTER-APPLIES-TO-KILLS: true
+  BOOSTER-KILL-MULTIPLIER: 0
+KEY-ALL:
+  ENABLED: true
+  EVERY: 60
+  COMMANDS:
+  - ''
+  TYPE: RANDOM
+  RANDOM:
+    KEYS:
+      common: 60
+      rare: 30
+      epic: 10
+  ONE-KEY-ONLY:
+    KEY: common
+  NOTIFICATION:
+    ENABLED: true
+    MESSAGE:
+    - ''
+    - '&#00A4FCKey-All reward!'
+    - '&fYou received &b{amount}x {crate}&f key.'
+    - ''
+TEAM:
+  NAME-MIN-LENGTH: 3
+  NAME-MAX-LENGTH: 5
+  LIMIT-MEMBERS: 10
+  EXCLUDED-WORLDS: []
+LEADERBOARD:
+  UPDATE: 10
+  NPC-REFRESH: 1
+TABLIST:
+  ENABLED: true
+  LUCKPERMS-PRIORITY: true
+  SHOW-TEAM-NAME: true
+  ICON-HEAD-SKIN: <head:%player_name%>
+  ICON-MEDIA: 📹
+  MEDIA-BADGE-FORMAT: '&d<icon_media>&#37BFF9+'
+  MEDIA-BADGE-PERMISSION: rank.media
+  NAME-FORMAT: <media_badge>&f<nick>%team_suffix%
+  HEADER:
+  - ''
+  - <#00ADFC>&lServer Name</#00FCFC>
+  - '&f%online% Players'
+  - ''
+  FOOTER:
+  - ''
+  - '   &#37BFF9/discord  /guide  /store   '
+  - ''
+SERVER-LIST:
+  ENABLED: false
+  MOTD:
+  - '&d&lUltimateDonutSMP'
+  - '&7%online%&8/&7%max_players% &7online'
+OPTIMIZATION:
+  ENABLED: true
+  MONITOR-INTERVAL-TICKS: 100
+  TPS-WARN-THRESHOLD: 18.5
+  TPS-CRITICAL-THRESHOLD: 16.0
+  MSPT-WARN-THRESHOLD: 45.0
+  MSPT-CRITICAL-THRESHOLD: 55.0
+  RECOVERY-SAMPLES: 3
+  LOG-STATE-CHANGES: true
+  ADAPTIVE-TASKS:
+    SCOREBOARD:
+      ENABLED: true
+      WARN-MIN-INTERVAL-TICKS: 4
+      CRITICAL-MIN-INTERVAL-TICKS: 10
+    TABLIST:
+      ENABLED: true
+      WARN-MIN-INTERVAL-TICKS: 80
+      CRITICAL-MIN-INTERVAL-TICKS: 140
+    LUNAR-TEAMMATES:
+      ENABLED: true
+      WARN-MIN-INTERVAL-TICKS: 40
+      CRITICAL-MIN-INTERVAL-TICKS: 100
+CLEAR-LAG:
+  ENABLED: true
+  EVERY: 5
+  ANIMALS: false
+  MONSTERS: false
+  DROPPED-ITEMS: true
+  MIN-ITEM-AGE-SECONDS: 60
+  EXCLUDED-WORLDS:
+  - duels
+  EXCLUDE-NAMED: true
+  EXCLUDE-TAMED: true
+  EXCLUDE-VILLAGERS: true
+  EXCLUDED-ENTITY-TYPES: []
+  EXCLUDED-ITEM-MATERIALS: []
+COMBAT-MANAGER:
+  ENABLED: true
+  COOLDOWN: 16
+  KILL-ON-LOGOUT: false
+  ACTION-BAR: '&fCombat: &b${time}s'
+  MOBS: false
+  ENDER-CRYSTAL: true
+  ENDER-PEARL: true
+  RESPAWN-ANCHOR: true
+  BLOCK-MESSAGE: '&cYou can''t use this command in your current status.'
+  BLOCK-COMMANDS:
+  - /spawn
+  - /afk
+  - /rtp
+  - /homes
+  - /tpa
+  EXCLUDED-WORLDS:
+  - duels
+RTP-ZONE:
+  ENABLED: true
+  CUBOID: ''
+  EVERY: 30
+  TITLE: '&c&lRTP Zone'
+  SUB-TITLE: '&fTeleporting in %countdown%'
+  CANCELLED-MESSAGE: '&cRTP cancelled because you left the zone.'
+  FAILED-MESSAGE: '&cCould not find a safe RTP zone location.'
+  SUCCESS-MESSAGE: ''
+  WORLD:
+    NAME: world
+    CENTER-X: 0
+    CENTER-Z: 0
+    MIN-RADIUS: 500
+    MAX-RADIUS: 2000
+  TITLE-FADE-OUT-TICKS: 10
+FIRST-JOIN-RTP:
+  ENABLED: false
+  FALLBACK-TO-SPAWN: true
+  SEARCHING-MESSAGE: '&7Finding you a safe place to start...'
+  SUCCESS-MESSAGE: '&aWelcome! You spawned at &fX:{x} Y:{y} Z:{z}&a.'
+  FAILED-MESSAGE: '&cCould not find a random spawn location for you.'
+  WORLD:
+    NAME: ''
+    CENTER-X: 0
+    CENTER-Z: 0
+    MIN-RADIUS: 500
+    MAX-RADIUS: 5000
+RESPAWN-RTP:
+  ENABLED: false
+  SEARCHING-MESSAGE: '&7Finding you a safe place to respawn...'
+  SUCCESS-MESSAGE: '&aYou respawned at &fX:{x} Y:{y} Z:{z}&a.'
+  FAILED-MESSAGE: '&cCould not find a random respawn location for you.'
+  WORLD:
+    NAME: ''
+    USE-RTP-BOUNDS: true
+    CENTER-X: 0
+    CENTER-Z: 0
+    MIN-RADIUS: 500
+    MAX-RADIUS: 5000
+TELEPORT-COOLDOWN:
+  HOME: 5
+  TEAM-HOME: 5
+  SPAWN: 5
+  AFK: 5
+  TPA: 5
+  WARP: 5
+  RTP: 5
+BOUNTY:
+  EXCLUDED-WORLDS:
+  - duels
+AMETHYST-TOOLS:
+  EXCLUDED-WORLDS:
+  - duels
+  PICKAXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    DISABLED-BLOCKS:
+    - GRASS_BLOCK
+    - DIRT_PATH
+    - DIRT
+    - COARSE_DIRT
+    - ROOTED_DIRT
+    - CLAY
+    - FARMLAND
+    - SAND
+    - RED_SAND
+    - GRAVEL
+    - SPAWNER
+    NAME: '&#A303F9Amethyst Pickaxe'
+    LORE:
+    - '&79 Blocks Per Break'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+  AXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Amethyst Axe'
+    LORE:
+    - '&7Breaks Trees Instantly'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+    - SILK_TOUCH:1
+  SELLAXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Amethyst Sell Axe'
+    LORE:
+    - '&7Instantly Sells All Items in A Chest'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+  SHOVEL:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    ALLOWED-BLOCKS:
+    - GRASS_BLOCK
+    - DIRT_PATH
+    - DIRT
+    - COARSE_DIRT
+    - ROOTED_DIRT
+    - CLAY
+    - FARMLAND
+    - SAND
+    - RED_SAND
+    - GRAVEL
+    NAME: '&#A303F9Amethyst Shovel'
+    LORE:
+    - '&79 Blocks Per Break'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+  BUCKET:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Amethyst Bucket'
+    LORE:
+    - '&7Drains 27 Water At Once'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS: []
+  BOOSTER:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Shard Booster'
+    LORE:
+    - '&74x Shard Production for 24 hours'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS: []
+VOICE-CHAT:
+  PROMPT-ON-JOIN: true
+  PROMPT-DELAY-TICKS: 40
+  MUTE-UNTIL-ACCEPTED: true
+COMMANDS:
+  CHAT: true
+  IGNORE: true
+  MESSAGE: true
+  BOUNTY: true
+  CUBOID: true
+  AFK: true
+  SHARDS: true
+  WARP: true
+  TEAM: true
+  BILLFORD: true
+  HOME: true
+  LEADERBOARDS: true
+  NIGHT-VISION: true
+  PHANTOM: true
+  RTP: true
+  SELL: true
+  SETTINGS: true
+  SHOP: true
+  ENDERCHEST: true
+  GAMEMODE: true
+  SOCIAL: true
+  SPAWN: true
+  STATS: true
+  TPA: true
+  TPAUTO: true
+  FINDPLAYER: true
+  CRATE: true
+  SHARDPAY: false
+  RANKS: true
+  RULES: true
+  HELP: true
+  SERVERS: true

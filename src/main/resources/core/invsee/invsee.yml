@@ -1,0 +1,55 @@
+
+INVSEE:
+  ENABLED: true
+
+  TITLE: '&8Inventory of {player}'
+
+  REQUIRE-ONLINE: true
+
+  ALLOW-EDIT: false
+
+  ALLOW-SELF-VIEW: false
+
+  NOTIFY-TARGET: false
+
+  LOG-USAGE: true
+
+  FREEZE-ON-LOGOUT: true
+
+  AUTO-REFRESH-TICKS: 10
+
+  VIEW-PERMISSION: economysmp.staff.invsee
+
+  MODIFY-PERMISSION: economysmp.staff.invsee.modify
+
+  ADMIN-PERMISSION: economysmp.admin.invsee
+
+LAYOUT:
+  SIZE: 54
+
+  ARMOR-SLOTS:
+    - 0
+    - 1
+    - 2
+    - 3
+
+  OFFHAND-SLOT: 4
+
+  SUMMARY-SLOT: 6
+
+  STATUS-SLOT: 8
+
+  MAIN-INVENTORY-START: 18
+
+  HOTBAR-START: 45
+
+MESSAGES:
+  NO-PERMISSION: '&cYou do not have permission.'
+  FEATURE-DISABLED: '&cThe Invsee system is disabled.'
+  PLAYER-NOT-ONLINE: '&cThat player must be online.'
+  PLAYER-NOT-FOUND: '&cPlayer not found.'
+  SELF-VIEW-DISABLED: '&cYou cannot invsee yourself.'
+  EDIT-CONFLICT: '&eAnother staff member is already editing &f{target}&e. Opened in read-only mode.'
+  TARGET-LOGGED-OUT: '&eThis inventory is now a frozen snapshot because &f{target}&e logged out.'
+  TARGET-NOTIFY: '&eYour inventory is being viewed by &f{viewer}&e in &f{mode}&e mode.'
+  RELOAD-SUCCESS: '&aInvsee config reloaded.'

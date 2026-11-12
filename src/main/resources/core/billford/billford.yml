@@ -1,0 +1,155 @@
+CURRENT: 1
+ROTATION_MODE: SEQUENTIAL
+COUNTDOWN:
+  ENABLED: true
+  TIME_ZONE: SYSTEM
+  START_DATE: '2026-01-31 00:00:00'
+  INTERVAL_DAYS: 3
+  INTERVAL_HOURS: 0
+ANNOUNCE_ON_ROTATE: true
+ANNOUNCE_MESSAGE: '&6&l[Billford] &eTrade has rotated! &7New trade is live. &bNext
+  change in &f{countdown}&b.'
+ACCESS:
+  PERMISSION: ''
+  COMMAND: /billford
+  NPC:
+    ENABLED: false
+    DISPLAY_NAME: '&aBillford'
+    INTERACT_COMMAND: /billford
+SETTINGS:
+  CLICK_COOLDOWN_MS: 1000
+  CLOSE_MENU_ON_SUCCESS: true
+  REOPEN_ON_TRADE_CHANGE: true
+  ALLOWED_CLICK_TYPES:
+  - LEFT
+  - RIGHT
+GUI:
+  TITLE: '&8&lBillford &7Trade'
+  SIZE: 54
+  FILLER_MATERIAL: AIR
+  REWARD_SLOT: 25
+  COUNTDOWN_SLOT: 31
+  INFO_SLOT: 49
+  CONFIRM_SLOT: 22
+  INFO_MATERIAL: BOOK
+  INPUT_NAME: '&f{item}'
+  INPUT_LORE:
+  - '&7Cost: &f{amount}x &e{item}'
+  - ''
+  - '&8Must already be in your inventory.'
+  REWARD_NAME: '&aReward'
+  REWARD_LORE:
+  - '&7Reward: &a{amount}x &f{item}'
+  - '{money_line}'
+  - '{shard_line}'
+  - ''
+  - '&8Granted when the trade succeeds.'
+  COUNTDOWN_NAME: '&e{trade_name}'
+  COUNTDOWN_LORE:
+  - '&7Next rotation: &b{countdown}'
+  - ''
+  - '&8Trade &f{trade_id} &8of &f{trade_count}'
+  INFO_NAME: '&6Trade Info'
+  INFO_LIMITED_LORE:
+  - '&7Trades: &f{used} &7/ &f{limit}'
+  - '{status_line}'
+  INFO_UNLIMITED_LORE:
+  - '&7Trades done: &f{used}'
+  - '&aUnlimited trades this rotation.'
+  CONFIRM_BUTTON:
+    MATERIAL: EMERALD
+    NAME: '&a&lConfirm Trade'
+    LORE:
+    - '&7Bring the required items,'
+    - '&7then click to exchange them.'
+    - ''
+    - '&a&lClick to Confirm'
+  LIMIT_BUTTON:
+    MATERIAL: BARRIER
+    NAME: '&c&lLimit Reached'
+    LORE:
+    - '&cYou already used this deal enough'
+    - '&cfor the current rotation.'
+    - '&7Come back after the next refresh.'
+FEEDBACK:
+  SUCCESS_PARTICLE:
+    ENABLED: true
+    TYPE: TOTEM_OF_UNDYING
+    COUNT: 24
+BILLFORD:
+  1:
+    DISPLAY_NAME: The Gem Exchange
+    LIMIT: 3
+    INPUTS:
+      1:
+        SLOT: 11
+        MATERIAL: DIAMOND
+        QUANTITY: 3
+      2:
+        SLOT: 12
+        MATERIAL: EMERALD
+        QUANTITY: 5
+    REWARD:
+      MATERIAL: PISTON
+      QUANTITY: 64
+      SHARD_BONUS: 0
+      MONEY_BONUS: 0
+  2:
+    DISPLAY_NAME: The Utility Crate
+    LIMIT: 2
+    INPUTS:
+      1:
+        SLOT: 10
+        MATERIAL: IRON_INGOT
+        QUANTITY: 32
+      2:
+        SLOT: 11
+        MATERIAL: REDSTONE
+        QUANTITY: 16
+      3:
+        SLOT: 12
+        MATERIAL: EMERALD
+        QUANTITY: 12
+    REWARD:
+      MATERIAL: OBSERVER
+      QUANTITY: 32
+      SHARD_BONUS: 40
+      MONEY_BONUS: 0
+  3:
+    DISPLAY_NAME: The Ingot Deal
+    LIMIT: 1
+    INPUTS:
+      1:
+        SLOT: 11
+        MATERIAL: NETHERITE_INGOT
+        QUANTITY: 1
+      2:
+        SLOT: 12
+        MATERIAL: BLAZE_ROD
+        QUANTITY: 8
+    REWARD:
+      MATERIAL: ELYTRA
+      QUANTITY: 1
+      SHARD_BONUS: 120
+      MONEY_BONUS: 50000
+  4:
+    DISPLAY_NAME: The Builder Stash
+    LIMIT: 4
+    INPUTS:
+      1:
+        SLOT: 10
+        MATERIAL: GOLD_INGOT
+        QUANTITY: 16
+      2:
+        SLOT: 11
+        MATERIAL: LAPIS_LAZULI
+        QUANTITY: 32
+      3:
+        SLOT: 12
+        MATERIAL: AMETHYST_SHARD
+        QUANTITY: 24
+    REWARD:
+      MATERIAL: SEA_LANTERN
+      QUANTITY: 48
+      SHARD_BONUS: 15
+      MONEY_BONUS: 0

@@ -1,0 +1,14 @@
+
+ENABLED: true
+
+RESET-WORLDS: []
+
+PROTECTED-WORLDS: []
+
+TOKEN-TTL-SECONDS: 300
+
+BACKUP-DIRECTORY: server-wipe-backups
+
+MESSAGES:
+  MAINTENANCE: '&cthe server is preparing a season reset. try again after the restart.'
+  KICK: '&ca season reset is starting. the server will restart shortly.'

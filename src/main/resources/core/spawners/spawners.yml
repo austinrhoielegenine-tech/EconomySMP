@@ -1,0 +1,276 @@
+SETTINGS:
+  ENABLED: true
+  ACCESS_MODE: OWNER_ONLY
+  ALLOW_SPAWNER_STEAL: false
+  GENERATION_INTERVAL_SECONDS: 5
+  PROCESS_ONLY_LOADED_CHUNKS: true
+  REQUIRE_PLAYER_NEARBY: false
+  PLAYER_NEARBY_RADIUS: 16
+  MAX_STACK_PER_BLOCK: 100000
+  STORAGE_CAP_PER_LOOT_KEY: 1000000
+  DROP_ON_BREAK_IF_INVENTORY_FULL: true
+  REQUIRE_SILK_TOUCH: true
+  CANCEL_MOB_SPAWN: true
+  XP_ENABLED: true
+GUI:
+  MAIN_MENU:
+    TITLE: '{stack} {mob}'
+    SIZE: 27
+  STORAGE:
+    TITLE: '&8{mob} Spawners - {page}/{max_page}'
+    SIZE: 54
+    ITEMS_PER_PAGE: 45
+  PANEL:
+    TITLE: '&8Spawners - {world}'
+    SIZE: 54
+  WORLD_LIST:
+    TITLE: '&8Spawners Panel'
+    SIZE: 27
+MESSAGES:
+  PLACED: '&aplaced &f{amount}x {type}&a.'
+  STACKED: '&aspawner stack updated to &f{amount}&a.'
+  PICKED-UP: '&apicked up &f{amount}x {type}&a.'
+  REMOVED: '&aremoved &f{amount}x {type}&a.'
+  REMOVED-ADMIN: '&aspawner removed.'
+  GAVE-SPAWNER: '&aGave &f{amount}x {type}&a to &f{player}&a.'
+  RECEIVED-SPAWNER: '&aYou received &f{amount}x {type}&a.'
+  COLLECTED: '&acollected &f{amount}x {item}&a.'
+  COLLECTED-ALL: '&acollected &f{amount}&a items from this spawner.'
+  DROPPED-PAGE: '&adropped &f{amount}&a stored items from this page on the ground.'
+  SOLD: '&asold &f{amount}&a items for {price}&a.'
+  COLLECTED-XP: '&acollected &f{amount} &aXP points!'
+  RELOADED: '&aSpawner settings reloaded.'
+  SPLIT-SUCCESS: '&aSplit &f{amount}x &aspawners. &7Remaining in hand: &f{remaining}&7.'
+  FILTER-ENABLED-ALL: '&aEnabled storing for all drops on this spawner.'
+  FILTER-DISABLED-ALL: '&cDisabled storing for all drops on this spawner.'
+  FILTER-TOGGLED: '&aToggled filter for &f{item} &ato {status}&a.'
+  FILTER-STATUS-ENABLED: '&aEnabled &7(Storing)'
+  FILTER-STATUS-DISABLED: '&cDisabled &7(Not Storing)'
+  TELEPORTED: '&aTeleported to spawner at &f{x}, {y}, {z}&a in &f{world}&a.'
+  DISABLED: '&cspawner system is currently disabled.'
+  NOT-SPAWNER-ITEM: '&cthat is not a managed spawner item.'
+  INVALID-AMOUNT: '&cthis spawner item has an invalid amount.'
+  MAX-STACK-EXCEEDED: '&cthat would exceed the max stack per block (&f{max}&c).'
+  ALREADY-AT-MAX-STACK: '&cthat spawner is already at the max stack per block (&f{max}&c).'
+  ALREADY-SPAWNER: '&cthat block is already a managed spawner.'
+  NOT-OWNER: '&cyou do not own that spawner.'
+  NO-ACCESS: '&cyou do not have access to that spawner.'
+  NO-BREAK-PERMISSION: '&cyou do not have permission to break that spawner.'
+  SILK-TOUCH-REQUIRED: '&cYou need Silk Touch to break this spawner!'
+  TYPE-MISMATCH: '&cyou can only stack the same spawner type onto this block.'
+  HOLD-TO-STACK: '&chold a managed spawner item to stack.'
+  NOT-MANAGED-SPAWNER: '&cthat is not a managed spawner.'
+  NOT-FOUND: '&cspawner not found.'
+  UNKNOWN-TYPE: '&cunknown spawner type ''&f{type}&c''.'
+  SAVE-FAILED: '&cfailed to save that spawner. please try again.'
+  INVENTORY-FULL: '&cyour inventory is full.'
+  LOOT-EMPTY: '&cthat loot entry is empty.'
+  NO-SPACE: '&cthere was no space to collect your spawner loot.'
+  NO-LOOT-ON-PAGE: '&cthere is no loot stored on this page.'
+  NO-SELLABLE-ITEMS: '&cthere are no sellable items stored in that spawner.'
+  SELL-FAILED: '&cfailed to pay out the spawner loot sale.'
+  XP-DISABLED: '&cXP collection is disabled on this server.'
+  NO-XP-STORED: '&cthere is no XP stored in that spawner.'
+  WORLD-NOT-LOADED: '&cThat spawner''s world is not currently loaded.'
+  TEMP-REGISTERED: '&atemporary spawner registered.'
+  TEMP-REMOVED: '&atemporary spawner removed.'
+  TEMP-CANNOT-STACK: '&ctemporary spawners cannot be stacked.'
+  TEMP-NEEDS-PLAYER-BLOCK: '&ctemporary spawner needs a player and block.'
+  NO-PANEL-PERMISSION: '&cYou do not have permission to open the spawner admin panel.'
+  NO-GIVE-PERMISSION: '&cYou do not have permission to give spawners.'
+  NO-RELOAD-PERMISSION: '&cYou do not have permission to reload spawners.'
+  NO-REMOVE-PERMISSION: '&cYou do not have permission to remove spawners.'
+  PLAYER-ONLY: 'Player only.'
+  TARGET-NOT-ONLINE: '&ctarget player must be online.'
+  PLAYER-NOT-ONLINE: '&cPlayer ''&f{player}&c'' must be online.'
+  AMOUNT-POSITIVE: '&cspawner amount must be positive.'
+  AMOUNT-INVALID: '&cAmount must be a valid positive number.'
+  AMOUNT-GREATER-THAN-ZERO: '&cAmount must be greater than zero.'
+  CREATE-ITEM-FAILED: '&cfailed to create the spawner item.'
+  GIVE-USAGE: 'Use /{label} give <player> <type> [amount]'
+  GIVE-USAGE-COMMAND: '&cUsage: /spawner give <player> <type> [amount]'
+  LOOK-AT-SPAWNER-INSPECT: '&cLook at a managed spawner to inspect it.'
+  LOOK-AT-SPAWNER-REMOVE: '&cLook at a managed spawner to remove it.'
+  HOLD-SPAWNER-TO-SPLIT: '&cYou must be holding a managed spawner item.'
+  CANNOT-SPLIT-ONE: '&cThis spawner item cannot be split (amount is 1).'
+  SPLIT-USAGE: '&cUsage: /spawner split <amount>'
+  INVALID-SPLIT-AMOUNT: '&cInvalid split amount.'
+  SPLIT-GREATER-THAN-ZERO: '&cSplit amount must be greater than zero.'
+  SPLIT-LESS-THAN-CURRENT: '&cSplit amount must be less than the current stack size (&f{max}&c).'
+  SPLIT-FAILED: '&cFailed to create split spawner item.'
+  USAGE:
+  - '&8&m----------- &dSpawner &8&m-----------'
+  - '&f/{label} &7- Open the spawner panel'
+  - '&f/{label} info &7- Inspect the looked-at spawner'
+  - '&f/{label} panel &7- Open the spawner admin panel'
+  - '&f/{label} give <player> <type> [amount] &7- Give a spawner item'
+  - '&f/{label} split <amount> &7- Split the held spawner item'
+  - '&f/{label} reload &7- Reload spawner settings'
+  - '&f/{label} remove &7- Remove the looked-at spawner'
+  INFO-HEADER: '&8&m----------- &bSpawner Info &8&m-----------'
+  INFO-TYPE: '&7Type: &f{type}'
+  INFO-REST-HIDDEN: '&7The rest is hidden on spawners you cannot access.'
+  INFO-OWNER: '&7Owner: &f{owner}'
+  INFO-STACK: '&7Stack: &f{amount}'
+  INFO-STORED-LOOT: '&7Stored Loot: &f{amount}'
+  INFO-LOCATION: '&7Location: &f{world} {x}, {y}, {z}'
+TYPES:
+  PIG:
+    DISPLAY_NAME: '&dPig Spawner'
+    ENTITY_TYPE: PIG
+    HEAD_TEXTURE: 'https://textures.minecraft.net/texture/d875eb45aca34a4d24c3dc1395fc020ccf37f825a17b054a22fd24b189c24c'
+    ICON_MATERIAL: PORKCHOP
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      PORKCHOP:
+        MATERIAL: PORKCHOP
+        MIN: 1
+        MAX: 3
+        CHANCE: 1.0
+      LEATHER:
+        MATERIAL: LEATHER
+        MIN: 0
+        MAX: 1
+        CHANCE: 0.35
+  COW:
+    DISPLAY_NAME: '&dCow Spawner'
+    ENTITY_TYPE: COW
+    HEAD_TEXTURE: ''
+    ICON_MATERIAL: BEEF
+    BASE_ITEMS_PER_CYCLE: 1
+    XP_PER_CYCLE: 3.7
+    DROPS:
+      BEEF:
+        MATERIAL: BEEF
+        MIN: 1
+        MAX: 3
+        CHANCE: 1.0
+      LEATHER:
+        MATERIAL: LEATHER
+        MIN: 1
+        MAX: 2
+        CHANCE: 0.8
+  ZOMBIE:
+    DISPLAY_NAME: '&dZombie Spawner'
+    ENTITY_TYPE: ZOMBIE
+    HEAD_TEXTURE: ''
+    ICON_MATERIAL: ROTTEN_FLESH
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      ROTTEN_FLESH:
+        MATERIAL: ROTTEN_FLESH
+        MIN: 1
+        MAX: 3
+        CHANCE: 1.0
+      IRON_INGOT:
+        MATERIAL: IRON_INGOT
+        MIN: 0
+        MAX: 1
+        CHANCE: 0.05
+      CARROT:
+        MATERIAL: CARROT
+        MIN: 0
+        MAX: 1
+        CHANCE: 0.025
+      POTATO:
+        MATERIAL: POTATO
+        MIN: 0
+        MAX: 1
+        CHANCE: 0.025
+  SPIDER:
+    DISPLAY_NAME: '&dSpider Spawner'
+    ENTITY_TYPE: SPIDER
+    HEAD_TEXTURE: 'https://textures.minecraft.net/texture/cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1'
+    ICON_MATERIAL: STRING
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      STRING:
+        MATERIAL: STRING
+        MIN: 1
+        MAX: 2
+        CHANCE: 1.0
+      SPIDER_EYE:
+        MATERIAL: SPIDER_EYE
+        MIN: 0
+        MAX: 1
+        CHANCE: 0.4
+  SKELETON:
+    DISPLAY_NAME: '&dSkeleton Spawner'
+    ENTITY_TYPE: SKELETON
+    HEAD_TEXTURE: ''
+    ICON_MATERIAL: BONE
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      BONE:
+        MATERIAL: BONE
+        MIN: 1
+        MAX: 3
+        CHANCE: 1.0
+      ARROW:
+        MATERIAL: ARROW
+        MIN: 1
+        MAX: 3
+        CHANCE: 1.0
+  CREEPER:
+    DISPLAY_NAME: '&dCreeper Spawner'
+    ENTITY_TYPE: CREEPER
+    HEAD_TEXTURE: ''
+    ICON_MATERIAL: GUNPOWDER
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      GUNPOWDER:
+        MATERIAL: GUNPOWDER
+        MIN: 1
+        MAX: 2
+        CHANCE: 1.0
+  PIGLIN:
+    DISPLAY_NAME: '&dPiglin Spawner'
+    ENTITY_TYPE: ZOMBIFIED_PIGLIN
+    HEAD_TEXTURE: ''
+    ICON_MATERIAL: GOLD_NUGGET
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      ROTTEN_FLESH:
+        MATERIAL: ROTTEN_FLESH
+        MIN: 1
+        MAX: 2
+        CHANCE: 1.0
+      GOLD_NUGGET:
+        MATERIAL: GOLD_NUGGET
+        MIN: 1
+        MAX: 4
+        CHANCE: 0.85
+      GOLD_INGOT:
+        MATERIAL: GOLD_INGOT
+        MIN: 0
+        MAX: 1
+        CHANCE: 0.06
+  BLAZE:
+    DISPLAY_NAME: '&dBlaze Spawner'
+    ENTITY_TYPE: BLAZE
+    HEAD_TEXTURE: 'https://textures.minecraft.net/texture/b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0'
+    ICON_MATERIAL: BLAZE_ROD
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      BLAZE_ROD:
+        MATERIAL: BLAZE_ROD
+        MIN: 1
+        MAX: 2
+        CHANCE: 1.0
+  IRON_GOLEM:
+    DISPLAY_NAME: '&dIron Golem Spawner'
+    ENTITY_TYPE: IRON_GOLEM
+    HEAD_TEXTURE: 'https://textures.minecraft.net/texture/e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697'
+    ICON_MATERIAL: IRON_INGOT
+    BASE_ITEMS_PER_CYCLE: 1
+    DROPS:
+      IRON_INGOT:
+        MATERIAL: IRON_INGOT
+        MIN: 3
+        MAX: 5
+        CHANCE: 1.0
+      POPPY:
+        MATERIAL: POPPY
+        MIN: 0
+        MAX: 2
+        CHANCE: 0.45

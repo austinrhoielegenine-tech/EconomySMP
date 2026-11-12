@@ -1,0 +1,497 @@
+SETTINGS:
+  ENABLED: true
+  DEFAULT_TTL_SECONDS: 900
+  DEFAULT_ALERT_RADIUS: 8.0
+  ALERT_COOLDOWN_SECONDS: 30
+  CHECK_INTERVAL_TICKS: 20
+  OVERWRITE_BLOCKS: true
+  PROTECT_BLOCKS: false
+  CLAIM_SPAWNERS_ON_BREAK: false
+  ROLLBACK_ON_RELOAD: true
+  LOG_TO_CONSOLE: true
+  MAX_BLOCKS_PER_STASH: 256
+MESSAGES:
+  USAGE:
+  - '&8&m----------- &dspawnstash &8&m-----------'
+  - '&f/{label} &7- spawn random bait stash'
+  - '&f/{label} <type> &7- spawn a bait stash'
+  - '&f/{label} spawn <type> &7- spawn a bait stash'
+  - '&f/{label} list &7- list active/configured stashes'
+  - '&f/{label} remove <id|nearest|all> &7- rollback stashes'
+  - '&f/{label} reload &7- reload spawn-stash.yml'
+  SPAWNED: '&aspawned stash #{type} successfully. &7(id: {id})'
+  REMOVED: '&aremoved stash &f#{id}&a.'
+  REMOVED-ALL: '&aremoved &f{count}&a active stash(es).'
+  EXPIRED: '&7spawnstash #{id} expired and was rolled back.'
+  RELOADED: '&aspawnstash settings reloaded.'
+  DISABLED: '&cspawnstash is currently disabled.'
+  PLAYER-ONLY: '&conly players can use this command.'
+  NO-PERMISSION: '&cyou do not have permission.'
+  NO-ACTIVE: '&cno active stash found.'
+  BLOCKED-BREAK: '&cthis stash is protected. use &f/spawnstash remove nearest &cto
+    rollback it.'
+  SPAWNER-CLAIMED: '&aclaimed &f{amount}x {spawner}&a from spawnstash.'
+  SPAWNER-CLAIMED-DROPPED: '&aclaimed &f{amount}x {spawner}&a. &7inventory full, item
+    dropped.'
+  INVALID-TYPE: '&cunknown stash type ''&f{type}&c''. use &f/spawnstash list&c.'
+  INVALID-CONFIG: '&cspawnstash config is invalid: &f{reason}&c.'
+  ALERT:
+  - '&8[&dspawnstash&8] &f{player} &7triggered &d{reason}&7 on stash &f#{id}&7 (&f{type}&7)'
+  - '&7location: &f{world} {x}, {y}, {z} &8| &7created by: &f{creator}'
+  ALERT-HOVER: '&eclick to teleport to &f{player}'
+TYPES:
+  '1':
+    ENABLED: true
+    DISPLAY_NAME: '&dcompact amethyst stash'
+    TTL_SECONDS: 900
+    ALERT_RADIUS: 8.0
+    PASTE_OFFSET:
+    - 0
+    - 0
+    - 0
+    BLOCKS:
+    - OFFSET:
+      - -1
+      - 0
+      - 0
+      MATERIAL: DEEPSLATE
+    - OFFSET:
+      - 0
+      - 0
+      - 0
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: SKELETON
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - 1
+      - 0
+      - 0
+      MATERIAL: DEEPSLATE
+    - OFFSET:
+      - -1
+      - 0
+      - 1
+      MATERIAL: COBBLED_DEEPSLATE
+    - OFFSET:
+      - 0
+      - 0
+      - 1
+      MATERIAL: AMETHYST_BLOCK
+    - OFFSET:
+      - 1
+      - 0
+      - 1
+      MATERIAL: COBBLED_DEEPSLATE
+    - OFFSET:
+      - -1
+      - 1
+      - 0
+      MATERIAL: DEEPSLATE_TILES
+    - OFFSET:
+      - 1
+      - 1
+      - 0
+      MATERIAL: DEEPSLATE_TILES
+    - OFFSET:
+      - -1
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE
+    - OFFSET:
+      - 0
+      - 1
+      - 1
+      MATERIAL: BUDDING_AMETHYST
+    - OFFSET:
+      - 1
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE
+    - OFFSET:
+      - 0
+      - 2
+      - 1
+      MATERIAL: AMETHYST_CLUSTER
+    - OFFSET:
+      - -1
+      - 2
+      - 1
+      MATERIAL: POLISHED_DEEPSLATE
+    - OFFSET:
+      - 1
+      - 2
+      - 1
+      MATERIAL: POLISHED_DEEPSLATE
+  '2':
+    ENABLED: true
+    DISPLAY_NAME: '&5double spawner chest stash'
+    PASTE_OFFSET:
+    - 0
+    - 0
+    - 0
+    BLOCKS:
+    - OFFSET:
+      - -1
+      - 0
+      - 0
+      MATERIAL: COBBLED_DEEPSLATE
+    - OFFSET:
+      - 0
+      - 0
+      - 0
+      MATERIAL: COBBLED_DEEPSLATE
+    - OFFSET:
+      - 1
+      - 0
+      - 0
+      MATERIAL: COBBLED_DEEPSLATE
+    - OFFSET:
+      - -1
+      - 0
+      - 1
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: ZOMBIE
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - 0
+      - 0
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 10
+        MATERIAL: DIAMOND
+        AMOUNT: 12
+      - SLOT: 13
+        MATERIAL: EMERALD
+        AMOUNT: 16
+    - OFFSET:
+      - 1
+      - 0
+      - 1
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: SKELETON
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - -1
+      - 1
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 11
+        MATERIAL: GOLD_INGOT
+        AMOUNT: 24
+      - SLOT: 15
+        MATERIAL: AMETHYST_SHARD
+        AMOUNT: 32
+    - OFFSET:
+      - 0
+      - 1
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: ENCHANTED_GOLDEN_APPLE
+        AMOUNT: 1
+    - OFFSET:
+      - 1
+      - 1
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: NETHERITE_INGOT
+        AMOUNT: 2
+    - OFFSET:
+      - -1
+      - 2
+      - 1
+      MATERIAL: DEEPSLATE_BRICKS
+    - OFFSET:
+      - 0
+      - 2
+      - 1
+      MATERIAL: DEEPSLATE_BRICKS
+    - OFFSET:
+      - 1
+      - 2
+      - 1
+      MATERIAL: DEEPSLATE_BRICKS
+    - OFFSET:
+      - -1
+      - 3
+      - 1
+      MATERIAL: PURPLE_SHULKER_BOX
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: ECHO_SHARD
+        AMOUNT: 8
+    - OFFSET:
+      - -1
+      - 2
+      - 0
+      MATERIAL: ENDER_CHEST
+  '3':
+    ENABLED: true
+    DISPLAY_NAME: '&amossy ore stash'
+    PASTE_OFFSET:
+    - 0
+    - 0
+    - 0
+    BLOCKS:
+    - OFFSET:
+      - -1
+      - 0
+      - 0
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - 0
+      - 0
+      - 0
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - 1
+      - 0
+      - 0
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - -1
+      - 0
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: REDSTONE
+        AMOUNT: 32
+    - OFFSET:
+      - 0
+      - 0
+      - 1
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: CREEPER
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - 1
+      - 0
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: GOLD_INGOT
+        AMOUNT: 20
+    - OFFSET:
+      - -1
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE_REDSTONE_ORE
+    - OFFSET:
+      - 0
+      - 1
+      - 1
+      MATERIAL: LANTERN
+    - OFFSET:
+      - 1
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE_GOLD_ORE
+    - OFFSET:
+      - -1
+      - 1
+      - 0
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - 1
+      - 1
+      - 0
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - -1
+      - 2
+      - 1
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - 0
+      - 2
+      - 1
+      MATERIAL: MOSSY_COBBLESTONE
+    - OFFSET:
+      - 1
+      - 2
+      - 1
+      MATERIAL: MOSSY_COBBLESTONE
+  '4':
+    ENABLED: true
+    DISPLAY_NAME: '&6mineshaft sign stash'
+    PASTE_OFFSET:
+    - 0
+    - 0
+    - 0
+    BLOCKS:
+    - OFFSET:
+      - -1
+      - 0
+      - 0
+      MATERIAL: DEEPSLATE
+    - OFFSET:
+      - 0
+      - 0
+      - 0
+      MATERIAL: RAIL
+    - OFFSET:
+      - 1
+      - 0
+      - 0
+      MATERIAL: DEEPSLATE
+    - OFFSET:
+      - -1
+      - 0
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: IRON_INGOT
+        AMOUNT: 32
+    - OFFSET:
+      - 0
+      - 0
+      - 1
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: ZOMBIE
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - 1
+      - 0
+      - 1
+      MATERIAL: DEEPSLATE_IRON_ORE
+    - OFFSET:
+      - 0
+      - 1
+      - 0
+      MATERIAL: OAK_SIGN
+      SIGN_LINES:
+      - '&6private mine'
+      - '&7no entry'
+      - '&8- staff bait -'
+      - ''
+    - OFFSET:
+      - -1
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE_BRICKS
+    - OFFSET:
+      - 0
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE_BRICKS
+    - OFFSET:
+      - 1
+      - 1
+      - 1
+      MATERIAL: DEEPSLATE_BRICKS
+    - OFFSET:
+      - -1
+      - 2
+      - 1
+      MATERIAL: DEEPSLATE_TILES
+    - OFFSET:
+      - 0
+      - 2
+      - 1
+      MATERIAL: DEEPSLATE_TILES
+    - OFFSET:
+      - 1
+      - 2
+      - 1
+      MATERIAL: DEEPSLATE_TILES
+  '5':
+    ENABLED: true
+    DISPLAY_NAME: '&dpremium amethyst spawner stash'
+    TTL_SECONDS: 1200
+    ALERT_RADIUS: 10.0
+    PASTE_OFFSET:
+    - 0
+    - 0
+    - 0
+    BLOCKS:
+    - OFFSET:
+      - -1
+      - 0
+      - 0
+      MATERIAL: CHISELED_DEEPSLATE
+    - OFFSET:
+      - 0
+      - 0
+      - 0
+      MATERIAL: AMETHYST_BLOCK
+    - OFFSET:
+      - 1
+      - 0
+      - 0
+      MATERIAL: CHISELED_DEEPSLATE
+    - OFFSET:
+      - -1
+      - 0
+      - 1
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: BLAZE
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - 0
+      - 0
+      - 1
+      MATERIAL: CHEST
+      CONTAINER_ITEMS:
+      - SLOT: 11
+        MATERIAL: DIAMOND
+        AMOUNT: 24
+      - SLOT: 13
+        MATERIAL: NETHERITE_INGOT
+        AMOUNT: 3
+      - SLOT: 15
+        MATERIAL: ENCHANTED_GOLDEN_APPLE
+        AMOUNT: 2
+    - OFFSET:
+      - 1
+      - 0
+      - 1
+      MATERIAL: SPAWNER
+      SPAWNER_TYPE: IRON_GOLEM
+      SPAWNER_ACCESS: PUBLIC
+    - OFFSET:
+      - -1
+      - 1
+      - 1
+      MATERIAL: BUDDING_AMETHYST
+    - OFFSET:
+      - 0
+      - 1
+      - 1
+      MATERIAL: AMETHYST_CLUSTER
+    - OFFSET:
+      - 1
+      - 1
+      - 1
+      MATERIAL: BUDDING_AMETHYST
+    - OFFSET:
+      - -1
+      - 2
+      - 1
+      MATERIAL: POLISHED_BLACKSTONE_BRICKS
+    - OFFSET:
+      - 0
+      - 2
+      - 1
+      MATERIAL: REINFORCED_DEEPSLATE
+    - OFFSET:
+      - 1
+      - 2
+      - 1
+      MATERIAL: POLISHED_BLACKSTONE_BRICKS
+    - OFFSET:
+      - 0
+      - 3
+      - 1
+      MATERIAL: PURPLE_SHULKER_BOX
+      CONTAINER_ITEMS:
+      - SLOT: 13
+        MATERIAL: ECHO_SHARD
+        AMOUNT: 12

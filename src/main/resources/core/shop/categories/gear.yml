@@ -1,0 +1,74 @@
+title: "ѕʜᴏᴘ - ɢᴇᴀʀ"
+size: 27
+
+items:
+  obsidian:
+    material: OBSIDIAN
+    slot: 9
+    amount: 1
+    price: 100
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  end_crystal:
+    material: END_CRYSTAL
+    slot: 10
+    amount: 1
+    price: 350
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  respawn_anchor:
+    material: RESPAWN_ANCHOR
+    slot: 11
+    amount: 1
+    price: 1000
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  glowstone:
+    material: GLOWSTONE
+    slot: 12
+    amount: 1
+    price: 100
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  totem_of_undying:
+    material: TOTEM_OF_UNDYING
+    slot: 13
+    amount: 1
+    price: 1250
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  ender_pearl:
+    material: ENDER_PEARL
+    slot: 14
+    amount: 1
+    price: 75
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  golden_apple:
+    material: GOLDEN_APPLE
+    slot: 15
+    amount: 1
+    price: 250
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  experience_bottle:
+    material: EXPERIENCE_BOTTLE
+    slot: 16
+    amount: 1
+    price: 100
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+back:
+  material: RED_STAINED_GLASS_PANE
+  slot: 18
+  name: "#FF0000ʙᴀᴄᴋ"
+  lore:
+    - "#FFFFFFClick to return"

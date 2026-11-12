@@ -1,0 +1,39 @@
+MESSAGES:
+  ENABLED: true
+  PREFIX: '&c☠ '
+  BLOCK-EXPLOSION: '{player} got blown to pieces'
+  CONTACT: '{player} was pricked to death'
+  DROWNING:
+    NORMAL: '{player} drowned!'
+    PVP: '{player} drowned whilst trying to escape {killer}'
+  ENTITY-ATTACK: '{player} was slain by {killer}'
+  FALL:
+    NORMAL: '{player} hit the ground too hard'
+    PVP: '{player} was doomed to fall by {killer}'
+  FALLING-BLOCK: '{player} got freaking squashed by a block'
+  FIRE:
+    NORMAL: '{player} went up in flames'
+    PVP: '{player} walked into a fire whilst fighting {killer}'
+  FIRE-TICK:
+    NORMAL: '{player} burned to death'
+    PVP: '{player} was burnt to a crisp whilst fighting {killer}'
+  LAVA:
+    NORMAL: '{player} tried to swim in lava'
+    PVP: '{player} tried to swim in lava while trying to escape {killer}'
+  LIGHTNING: '{player} got lit the hell up by a lightning'
+  POISON: '{player} was poisoned'
+  PROJECTILE:
+    NORMAL: '{player} was shot'
+    PVP: '{player} was shot by {killer}'
+  STARVATION: '{player} starved to death'
+  SUFFOCATION: '{player} suffocated in a wall'
+  SUICIDE: '{player} took his own life like a peasant'
+  THORNS: '{player} killed themself by trying to kill someone'
+  VOID:
+    NORMAL: '{player} fell out of the world'
+    PVP: '{player} was knocked into the void by {killer}'
+  WITHER: '{player} withered away'
+  ENTITY-EXPLOSION:
+    NORMAL: '{player} was blown up'
+    PVP: '{player} was blown up by {killer}'
+  DEFAULT: '{player} died'

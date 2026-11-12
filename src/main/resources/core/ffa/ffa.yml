@@ -1,0 +1,33 @@
+
+SETTINGS:
+  ENABLED: true
+  RETURN_DELAY_SECONDS: 3
+
+ROLLBACK:
+  ENABLED: true
+  PADDING_HORIZONTAL: 48
+  PADDING_VERTICAL: 20
+  TIMEOUT_SECONDS: 10
+  CLEANUP_PROJECTILES: true
+  CLEANUP_DROPS: true
+  CLEANUP_FIRE_AND_FLUIDS: true
+
+PLAYER_STATE:
+  RESTORE_INVENTORY: true
+  RESTORE_HEALTH: true
+  RESTORE_EFFECTS: true
+
+RULES:
+  BLOCK_COMMANDS: true
+  COUNT_TOWARD_GLOBAL_STATS: false
+  GIVE_SURVIVAL_REWARDS: false
+
+RESULT-TITLES:
+  victory:
+    title: '&e&lVICTORY!'
+    subtitle: '&e<player> &fwon the FFA Match!'
+  defeat:
+    title: '&c&lDEFEAT!'
+    subtitle: '&c<opponent> &feliminated you!'
+
+ARENA_SETTINGS: {}

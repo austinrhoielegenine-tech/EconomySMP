@@ -1,0 +1,187 @@
+WEBHOOKS:
+  ENABLED: true
+  URL: https://discord.com/api/webhooks/your_webhook_here
+  AVATAR_API: https://visage.surgeplay.com/face/128/%uuid_no_dash%
+  MODEL_API: https://visage.surgeplay.com/full/384/%uuid_no_dash%
+  BUST_API: https://visage.surgeplay.com/bust/384/%uuid_no_dash%
+  MESSAGES:
+    BAN:
+      ENABLED: true
+      TITLE: Player Banned - %player%
+      COLOR: '#FF0000'
+      DESCRIPTION: |-
+        :hammer: **Punishment Type:** Ban
+
+        **Player:**
+        %player%
+
+        **Staff:**
+        %staff%
+
+        **Reason:**
+        ||%reason%||
+
+        **Duration:**
+        %duration%
+
+        **Date:**
+        %date%
+
+        **ID:** `%id%`
+      THUMBNAIL: '%skin_bust%'
+      AUTHOR_NAME: Ban System
+      FOOTER: Punishment issued via server
+    MUTE:
+      ENABLED: true
+      TITLE: Player Muted - %player%
+      COLOR: '#FFFF00'
+      DESCRIPTION: |-
+        :mute: **Punishment Type:** Mute
+
+        **Player:**
+        %player%
+
+        **Staff:**
+        %staff%
+
+        **Reason:**
+        ||%reason%||
+
+        **Duration:**
+        %duration%
+
+        **Date:**
+        %date%
+
+        **ID:** `%id%`
+      THUMBNAIL: '%skin_bust%'
+      AUTHOR_NAME: Moderation System
+      FOOTER: Chat restriction applied
+    WARN:
+      ENABLED: true
+      TITLE: Player Warned - %player%
+      COLOR: '#FFA500'
+      DESCRIPTION: |-
+        :warning: **Punishment Type:** Warning
+
+        **Player:**
+        %player%
+
+        **Staff:**
+        %staff%
+
+        **Reason:**
+        ||%reason%||
+
+        **Date:**
+        %date%
+
+        **ID:** `%id%`
+      THUMBNAIL: '%skin_bust%'
+      AUTHOR_NAME: Moderation System
+      FOOTER: Warning issued
+    KICK:
+      ENABLED: true
+      TITLE: Player Kicked - %player%
+      COLOR: '#FF6347'
+      DESCRIPTION: |-
+        :boot: **Punishment Type:** Kick
+
+        **Player:**
+        %player%
+
+        **Staff:**
+        %staff%
+
+        **Reason:**
+        ||%reason%||
+
+        **Date:**
+        %date%
+      THUMBNAIL: '%skin_bust%'
+      AUTHOR_NAME: Moderation System
+      FOOTER: Player was removed from server
+    BLACKLIST:
+      ENABLED: true
+      TITLE: PLAYER BLACKLISTED - %player%
+      COLOR: '#000000'
+      DESCRIPTION: |-
+        :no_entry: **PERMANENT NETWORK BAN**
+
+        **Player:**
+        %player%
+
+        **Staff:**
+        %staff%
+
+        **Reason:**
+        ||%reason%||
+
+        **Date:**
+        %date%
+
+        **ID:** `%id%`
+
+        :exclamation:
+        This is a permanent network-wide ban
+      THUMBNAIL: '%skin_bust%'
+      AUTHOR_NAME: Security System
+      FOOTER: Blacklist enforced
+
+    AUCTION_LISTED:
+      ENABLED: true
+      TITLE: 'New Auction Listed'
+      COLOR: '#009BFF'
+      DESCRIPTION: |-
+        A new item was listed in the Auction House.
+
+        **Item:** %item% x%amount%
+        **Price:** %price%
+        **Category:** %category%
+        **Seller:** %player%
+        **Listing ID:** #%id%
+        **Expires:** %expires%
+      AUTHOR_NAME: EconomySMP Auction House
+      FOOTER: New auction listing
+      TIMESTAMP: true
+    ORDER_CREATED:
+      ENABLED: true
+      TITLE: 'New Item Order'
+      COLOR: '#2ECC71'
+      DESCRIPTION: |-
+        A new player order was created.
+
+        **Requested Item:** %item%
+        **Quantity:** %quantity%
+        **Price Each:** %price%
+        **Total Budget:** %total%
+        **Category:** %category%
+        **Buyer:** %player%
+        **Order ID:** #%id%
+        **Expires:** %expires%
+      AUTHOR_NAME: EconomySMP Orders
+      FOOTER: New player order
+      TIMESTAMP: true
+
+ACCOUNT_LINKING:
+  ENABLED: true
+  EXPIRES: 10m
+  CODE_LENGTH: 6
+
+BOT:
+  TOKEN: ''
+  CLIENT_ID: ''
+  GUILD_ID: ''
+  PVP_MATCH_CHANNEL_ID: ''
+  PVP_MATCH_POLL_SECONDS: 15
+  LINKS_FILE: data/links.db
+
+  LINK_PROMPT: 'Run /link in Minecraft to get a one-time code, then use /link code:<code> here.'
+  LINK_SUCCESS: 'Successfully linked Minecraft account **{player}** to your Discord account!'
+  LINK_INVALID: 'That link code is invalid. Run /pvp sync in Minecraft to get a new one.'
+  LINK_EXPIRED: 'That link code has expired. Run /pvp sync in Minecraft to get a new one.'
+  LINK_USED: 'That link code has already been used. Generate a new one with /pvp sync.'
+  LINK_TAKEN: 'That Minecraft account is already linked to another Discord user. They must use /unsync first.'
+  LINK_ALREADY_LINKED: 'Your Discord account is already linked to **{player}**. Use /unsync before linking another account.'
+  UNLINK_SUCCESS: 'Successfully unlinked **{player}** from your Discord account.'
+  UNLINK_NOT_LINKED: 'Your Discord account is not linked to a Minecraft account.'

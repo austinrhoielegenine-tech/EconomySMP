@@ -1,0 +1,82 @@
+title: "ѕʜᴏᴘ - ɴᴇᴛʜᴇʀ"
+size: 27
+
+items:
+  blaze_rod:
+    material: BLAZE_ROD
+    slot: 9
+    amount: 1
+    price: 150
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  nether_wart:
+    material: NETHER_WART
+    slot: 10
+    amount: 1
+    price: 25
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  glowstone_dust:
+    material: GLOWSTONE_DUST
+    slot: 11
+    amount: 1
+    price: 15
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  magma_cream:
+    material: MAGMA_CREAM
+    slot: 12
+    amount: 1
+    price: 25
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  ghast_tear:
+    material: GHAST_TEAR
+    slot: 13
+    amount: 1
+    price: 350
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  nether_quartz:
+    material: QUARTZ
+    slot: 14
+    amount: 1
+    price: 15
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  soul_sand:
+    material: SOUL_SAND
+    slot: 15
+    amount: 1
+    price: 50
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  magma_block:
+    material: MAGMA_BLOCK
+    slot: 16
+    amount: 1
+    price: 35
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  crying_obsidian:
+    material: CRYING_OBSIDIAN
+    slot: 17
+    amount: 1
+    price: 150
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+back:
+  material: RED_STAINED_GLASS_PANE
+  slot: 18
+  name: "#FF0000ʙᴀᴄᴋ"
+  lore:
+    - "#FFFFFFClick to return"

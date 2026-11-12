@@ -1,0 +1,82 @@
+title: "ѕʜᴏᴘ - ᴇɴᴅ"
+size: 27
+
+items:
+  ender_chest:
+    material: ENDER_CHEST
+    slot: 9
+    amount: 1
+    price: 2500
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  ender_pearl:
+    material: ENDER_PEARL
+    slot: 10
+    amount: 1
+    price: 75
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  end_stone:
+    material: END_STONE
+    slot: 11
+    amount: 16
+    price: 128
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  dragon_breath:
+    material: DRAGON_BREATH
+    slot: 12
+    amount: 1
+    price: 1000
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  end_rod:
+    material: END_ROD
+    slot: 13
+    amount: 1
+    price: 100
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  chorus_fruit:
+    material: CHORUS_FRUIT
+    slot: 14
+    amount: 1
+    price: 108
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  popped_chorus_fruit:
+    material: POPPED_CHORUS_FRUIT
+    slot: 15
+    amount: 1
+    price: 24
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  shulker_shell:
+    material: SHULKER_SHELL
+    slot: 16
+    amount: 1
+    price: 350
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  shulker_box:
+    material: SHULKER_BOX
+    slot: 17
+    amount: 1
+    price: 800
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+back:
+  material: RED_STAINED_GLASS_PANE
+  slot: 18
+  name: "#FF0000ʙᴀᴄᴋ"
+  lore:
+    - "#FFFFFFClick to return"

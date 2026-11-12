@@ -1,0 +1,82 @@
+title: "ѕʜᴏᴘ - ꜰᴏᴏᴅ"
+size: 27
+
+items:
+  potato:
+    material: POTATO
+    slot: 9
+    amount: 1
+    price: 75
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  sweet_berries:
+    material: SWEET_BERRIES
+    slot: 10
+    amount: 1
+    price: 50
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  melon_slice:
+    material: MELON_SLICE
+    slot: 11
+    amount: 1
+    price: 10
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  carrot:
+    material: CARROT
+    slot: 12
+    amount: 1
+    price: 65
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  apple:
+    material: APPLE
+    slot: 13
+    amount: 1
+    price: 25
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  cooked_chicken:
+    material: COOKED_CHICKEN
+    slot: 14
+    amount: 1
+    price: 30
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  steak:
+    material: COOKED_BEEF
+    slot: 15
+    amount: 1
+    price: 35
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  golden_carrot:
+    material: GOLDEN_CARROT
+    slot: 16
+    amount: 1
+    price: 50
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+  golden_apple:
+    material: GOLDEN_APPLE
+    slot: 17
+    amount: 1
+    price: 250
+    lore:
+      - "#FFFFFFBuy price: #55FF55%price%"
+
+back:
+  material: RED_STAINED_GLASS_PANE
+  slot: 18
+  name: "#FF0000ʙᴀᴄᴋ"
+  lore:
+    - "#FFFFFFClick to return"

@@ -1,0 +1,111 @@
+
+NETWORK:
+  ENABLED: true
+
+  STAFF_CHAT_ENABLED: true
+
+  HELPOP_ENABLED: true
+
+  REPORT_ENABLED: true
+
+  STAFF_JOIN_LEAVE_ENABLED: true
+
+  SERVER_STATUS_ENABLED: true
+
+  LOCAL_SERVER_ID: crystal
+
+  LOCAL_DISPLAY_NAME: Crystal
+
+  REDIS_CHANNEL: ultimatedonutsmp:staff-chat
+
+  HELPOP_REDIS_CHANNEL: ultimatedonutsmp:staff-alerts
+
+  REPORT_REDIS_CHANNEL: ultimatedonutsmp:staff-alerts
+
+  SEND_LOCAL_FALLBACK_ON_REDIS_ERROR: true
+
+  STAFF_ALERTS_WARN_SENDER_ON_REDIS_ERROR: false
+
+  LOG_TO_CONSOLE: true
+
+  STAFF_ALERTS_LOG_TO_CONSOLE: true
+
+  MAX_MESSAGE_LENGTH: 512
+
+  STAFF_ALERTS_MAX_REASON_LENGTH: 256
+
+  HELPOP_COOLDOWN_SECONDS: 30
+
+  REPORT_COOLDOWN_SECONDS: 60
+
+  SERVER_STATUS: '&6%server% &eis now %status%&e.'
+
+  STAFF_CHAT: '&8[&dNetwork&8] &7[%server%] &e%player%&8: &f%message%'
+
+  STAFF_JOIN: '&8[&a+&8] &a%player% &7joined &b%server%'
+
+  STAFF_LEAVE: '&8[&c-&8] &a%player% &7left &b%server%'
+
+NETWORK-STATUS:
+  ENABLED: true
+
+  LOCAL-SERVER-ID: crystal
+
+  LOCAL-DISPLAY-NAME: Crystal
+
+  REFRESH-SECONDS: 5
+
+  TIMEOUT-MS: 1500
+
+  ENDPOINT:
+    ENABLED: false
+    HOST: 0.0.0.0
+    PORT: 8123
+    PATH: /status
+    TOKEN: change-me
+
+  SERVERS:
+    crystal:
+      DISPLAY: Crystal
+      SOURCE:
+        TYPE: LOCAL
+
+MAINTENANCE:
+  BYPASS_PERMISSION: economysmp.admin.maintenance.bypass
+
+  USE_PROXY: true
+
+  LOBBY_SERVER: lobby
+
+  LOBBY_WORLD: WORLD
+
+  RECONNECT_DELAY_SECONDS: 5
+
+  MESSAGES:
+    ENTERING: '&d[Maintenance] &7server is entering maintenance. Moving you to the lobby...'
+
+    NOT_ALLOWED: '&d[Maintenance] &cthis server is currently in maintenance. Redirecting to lobby...'
+
+    BYPASS_JOIN: '&d[Maintenance] &7you joined while maintenance mode is active.'
+
+    KICK_FALLBACK: '&cThis server is in maintenance and no lobby is available.'
+
+    RECONNECTING_TITLE: '&a&lServer online'
+
+    RECONNECTING_SUBTITLE: '&7Sending you back in %seconds% seconds...'
+
+  SERVER_LIST:
+    ENABLED: true
+
+    LINES:
+    - '&cCurrently under maintenance'
+    - '&bCome back in: &d%time%'
+
+    LINES_NO_TIMER:
+    - '&cCurrently under maintenance'
+    - '&7come back later'
+
+    VERSION_LABEL: '&cMaintenance'
+
+    HOVER:
+    - '&cCurrently under maintenance'

@@ -1,0 +1,29 @@
+ENDER-CHEST:
+  ENABLED: true
+  DEFAULT-ROWS: 6
+  TITLE: '&5Ender Chest'
+  INTERCEPT-VANILLA-OPEN: true
+  ALLOW-COMMAND: true
+  COMMAND-REQUIRES-PERMISSION: false
+  PERMISSION: economysmp.enderchest
+  AUTO-SAVE-TICKS: 1200
+  ROW-PERMISSIONS:
+    ENABLED: true
+    ON-DOWNGRADE: KEEP-SIZE
+    PERMISSIONS:
+      "economysmp.enderchest.rows.vip++": 6
+      "economysmp.enderchest.rows.vip+": 5
+      "economysmp.enderchest.rows.vip": 4
+  ECSEE:
+    ENABLED: true
+    PERMISSION: economysmp.admin.ecsee
+    AUTO-REFRESH-TICKS: 20
+    EDITABLE: false
+MESSAGES:
+  FEATURE-DISABLED: '&cThe Ender Chest 6 Rows system is disabled.'
+  COMMAND-DISABLED: '&cThe /enderchest command is disabled.'
+  NO-PERMISSION: '&cYou do not have permission to use this command.'
+  OPEN-FAILED: '&cFailed to open your Ender Chest. Please try again.'
+  SAVE-FAILED: '&cFailed to save your Ender Chest. Contact staff.'
+  RELOAD-SUCCESS: '&aEnder Chest config reloaded.'
+  ROWS-DOWNGRADED: '&eYour Ender Chest is now {rows} rows. {amount} item(s) that no longer fit were returned to you.'
