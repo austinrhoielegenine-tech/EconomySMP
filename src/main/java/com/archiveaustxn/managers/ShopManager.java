@@ -541,7 +541,8 @@ public class ShopManager {
         ConfigurationSection menuConfig = plugin.getConfigManager().getShop()
                 .getConfigurationSection(menuSection);
         if (menuConfig == null) {
-            return items;
+            FileConfiguration categoryFile = findShopCategoryFile(menuSection);
+            return categoryFile == null ? items : loadCategoryFileItems(menuSection, categoryFile);
         }
 
         ConfigurationSection itemsSection = menuConfig.getConfigurationSection("ITEMS");
@@ -601,6 +602,122 @@ public class ShopManager {
 
         if ("SHARD-MENU".equalsIgnoreCase(menuSection)) {
             items.addAll(loadAmethystShardShopItems(menuSection));
+        }
+
+        items.sort(Comparator.comparingInt(ShopItem::slot).thenComparing(ShopItem::key, String.CASE_INSENSITIVE_ORDER));
+        return List.copyOf(items);
+    }
+
+    /**
+     * The {@code core/shop/categories/<file>} config a category's {@code FILE-TYPE} points at, for a
+     * menu section that has no inline section of its own in {@code shop.yml}. Null when the menu is
+     * defined directly in shop.yml, or no category names it with a FILE-TYPE.
+     */
+    public FileConfiguration findShopCategoryFile(String menuSection) {
+        String fileType = findShopCategoryFileType(menuSection);
+        return fileType == null ? null : plugin.getConfigManager().getShopCategoryFile(fileType);
+    }
+
+    private String findShopCategoryFileType(String menuSection) {
+        if (menuSection == null) {
+            return null;
+        }
+
+        ConfigurationSection categoriesSection = plugin.getConfigManager().getShop()
+                .getConfigurationSection("CATEGORIES");
+        if (categoriesSection == null) {
+            return null;
+        }
+
+        for (String key : categoriesSection.getKeys(false)) {
+            if (CATEGORY_META_KEYS.contains(key.toUpperCase(Locale.US))) {
+                continue;
+            }
+
+            ConfigurationSection section = categoriesSection.getConfigurationSection(key);
+            if (section == null) {
+                continue;
+            }
+
+            String fileType = section.getString("FILE-TYPE");
+            if (fileType == null || fileType.isBlank()) {
+                continue;
+            }
+
+            if (normalizeMenuSection(section.getString("OPEN-MENU"), key).equalsIgnoreCase(menuSection)) {
+                return fileType.trim();
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Reads shop items out of an external {@code core/shop/categories/<file>} config instead of an
+     * inline shop.yml section. These files predate shop.yml's uppercase {@code ITEMS}/{@code MATERIAL}
+     * schema and use their own lowercase one ({@code items}, {@code material}, {@code price}, ...), so
+     * this is a separate parser rather than a case-insensitive reading of the one above.
+     *
+     * <p>Each entry's {@code price} is the total cost for its whole {@code amount} (for example
+     * {@code amount: 16, price: 128} is 8 per block), so the item is locked to buying exactly that many
+     * at a time and {@link ShopItem#pricePerUnit()} is {@code price / amount}.</p>
+     */
+    private List<ShopItem> loadCategoryFileItems(String menuSection, FileConfiguration categoryFile) {
+        List<ShopItem> items = new ArrayList<>();
+        ConfigurationSection itemsSection = categoryFile.getConfigurationSection("items");
+        if (itemsSection == null) {
+            return items;
+        }
+
+        Currency defaultCurrency = parseCurrency(categoryFile.getString("currency", "MONEY"));
+
+        for (String key : itemsSection.getKeys(false)) {
+            ConfigurationSection itemSec = itemsSection.getConfigurationSection(key);
+            if (itemSec == null || !itemSec.getBoolean("enabled", true) || !itemSec.contains("material")) {
+                continue;
+            }
+
+            Material material = ItemUtils.parseMaterial(itemSec.getString("material", "STONE"));
+            int amount = Math.max(1, itemSec.getInt("amount", 1));
+            double totalPrice = itemSec.getDouble("price", 0);
+            double pricePerUnit = totalPrice / amount;
+
+            List<String> enchantments = new ArrayList<>();
+            if (itemSec.isConfigurationSection("enchantments")) {
+                ConfigurationSection enchSec = itemSec.getConfigurationSection("enchantments");
+                if (enchSec != null) {
+                    for (String enchKey : enchSec.getKeys(false)) {
+                        int level = enchSec.getInt(enchKey, 1);
+                        enchantments.add(enchKey + ":" + level);
+                    }
+                }
+            } else if (itemSec.isList("enchantments")) {
+                enchantments.addAll(itemSec.getStringList("enchantments"));
+            }
+
+            Boolean glint = itemSec.contains("glint") ? itemSec.getBoolean("glint") : null;
+
+            items.add(new ShopItem(
+                    key,
+                    menuSection,
+                    material,
+                    itemSec.getString("name", key),
+                    itemSec.getStringList("lore"),
+                    itemSec.getInt("slot", 0),
+                    pricePerUnit,
+                    parseCurrency(itemSec.getString("currency", defaultCurrency.name())),
+                    itemSec.getString("command", ""),
+                    itemSec.getBoolean("give-item", true),
+                    itemSec.getString("permission", ""),
+                    amount,
+                    amount,
+                    amount,
+                    null,
+                    null,
+                    -1L,
+                    enchantments,
+                    glint,
+                    itemSec.getString("item-data")
+            ));
         }
 
         items.sort(Comparator.comparingInt(ShopItem::slot).thenComparing(ShopItem::key, String.CASE_INSENSITIVE_ORDER));

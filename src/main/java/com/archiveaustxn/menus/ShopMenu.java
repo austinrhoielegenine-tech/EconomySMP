@@ -566,17 +566,28 @@ public class ShopMenu extends BaseMenu {
         if (menuSection == null) {
             return config.getString("CATEGORIES.MENU-TITLE", "&8Shop");
         }
-        return config.getString(menuSection + ".TITLE", "&8Shop");
+        if (config.contains(menuSection)) {
+            return config.getString(menuSection + ".TITLE", "&8Shop");
+        }
+        // No inline shop.yml section: this category's items come from a core/shop/categories/ file
+        // instead, which uses its own lowercase "title" key.
+        FileConfiguration categoryFile = plugin.getShopManager().findShopCategoryFile(menuSection);
+        return categoryFile == null ? "&8Shop" : categoryFile.getString("title", "&8Shop");
     }
 
     private static int resolveSize(EconomySMP plugin, String menuSection, boolean favoritesMenu) {
         FileConfiguration config = plugin.getConfigManager().getShop();
-        int configured = favoritesMenu
-                ? config.getInt("SHOP-GUI.FAVORITES.MENU.SIZE", 54)
-                : menuSection == null
-                ? config.getInt("CATEGORIES.MENU-SIZE", 27)
-                : config.getInt(menuSection + ".SIZE", 27);
-        return normalizeSize(configured);
+        if (favoritesMenu) {
+            return normalizeSize(config.getInt("SHOP-GUI.FAVORITES.MENU.SIZE", 54));
+        }
+        if (menuSection == null) {
+            return normalizeSize(config.getInt("CATEGORIES.MENU-SIZE", 27));
+        }
+        if (config.contains(menuSection)) {
+            return normalizeSize(config.getInt(menuSection + ".SIZE", 27));
+        }
+        FileConfiguration categoryFile = plugin.getShopManager().findShopCategoryFile(menuSection);
+        return normalizeSize(categoryFile == null ? 27 : categoryFile.getInt("size", 27));
     }
 
     private static int normalizeSize(int configuredSize) {

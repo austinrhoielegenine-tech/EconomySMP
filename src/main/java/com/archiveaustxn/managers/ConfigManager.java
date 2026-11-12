@@ -174,6 +174,7 @@ public class ConfigManager {
         anvilModeration = load("anvil-moderation.yml", anvilModeration);
         enchantments = load("enchantments.yml", enchantments);
         filter       = load("filter.yml", filter);
+        reloadShopCategoryFiles();
     }
 
     private void syncBundledConfigurations() {
@@ -914,6 +915,55 @@ public class ConfigManager {
         return configuration;
     }
 
+    /**
+     * {@code core/shop/categories/<fileName>} files that {@code shop.yml}'s {@code CATEGORIES.*.FILE-TYPE}
+     * entries point at. Unlike the single-file configs above, any number of these can exist (an admin can
+     * add a new category with its own file), so they are loaded on demand and cached by file name rather
+     * than through a fixed field, and are copied into the data folder the same way on first use.
+     */
+    private final Map<String, FileConfiguration> shopCategoryFiles = new HashMap<>();
+
+    public FileConfiguration getShopCategoryFile(String fileName) {
+        if (fileName == null || fileName.isBlank()) {
+            return null;
+        }
+        return shopCategoryFiles.computeIfAbsent(fileName, this::loadShopCategoryFile);
+    }
+
+    public void reloadShopCategoryFiles() {
+        shopCategoryFiles.clear();
+    }
+
+    private FileConfiguration loadShopCategoryFile(String fileName) {
+        File dataFile = new File(plugin.getDataFolder(), "core/shop/categories/" + fileName);
+        if (!dataFile.isFile() && !copyShopCategoryResource(fileName, dataFile)) {
+            return null;
+        }
+
+        try {
+            return loadYamlFile(dataFile);
+        } catch (IOException | InvalidConfigurationException e) {
+            plugin.getLogger().log(Level.WARNING, "Failed to load shop category file " + fileName, e);
+            return null;
+        }
+    }
+
+    private boolean copyShopCategoryResource(String fileName, File target) {
+        try (InputStream input = plugin.getResource("core/shop/categories/" + fileName)) {
+            if (input == null) {
+                plugin.getLogger().warning("Shop category resource not found in jar: " + fileName);
+                return false;
+            }
+
+            Files.createDirectories(target.getParentFile().toPath());
+            Files.copy(input, target.toPath());
+            return true;
+        } catch (IOException e) {
+            plugin.getLogger().log(Level.WARNING, "Failed to copy bundled shop category file " + fileName, e);
+            return false;
+        }
+    }
+
     private boolean copyBundledResource(String name, File target, boolean replace) {
         try (InputStream input = plugin.getResource(bundledPath(name))) {
             if (input == null) {
@@ -1223,7 +1273,7 @@ public class ConfigManager {
     public FileConfiguration getLegacyShop() { return shop; }
     public FileConfiguration getLegacyAuctionHouse() { return auctionHouse; }
 
-    public void reloadShop() { shop = load("shop.yml", shop); }
+    public void reloadShop() { shop = load("shop.yml", shop); reloadShopCategoryFiles(); }
     public void reloadMenus() { menus = load("menus.yml", menus); }
     public void reloadSounds() { sounds = load("sounds.yml", sounds); }
     public void reloadWorth() { worth = load("worth.yml", worth); }
