@@ -183,6 +183,12 @@ commands:
     usage: /pvp [join|leave|kit|stats|top|queue|leaderboard|history|assign|wand|create|setspawn|setspawn2|setlobby|setboundary|schematic|reset|reload]
     permission: economysmp.command.pvp
     permission-message: "&cYou do not have permission to use /pvp."
+  link:
+    description: Get a code to link your Minecraft account with Discord
+    usage: /link
+    aliases: [discordlink]
+    permission: economysmp.command.link
+    permission-message: "&cYou do not have permission to use /link."
   auctionhouse:
     description: Open the Auction House
     usage: /auctionhouse [sell|my|claims|cancel|reload]
@@ -1311,6 +1317,7 @@ permissions:
       economysmp.command.ffastats: true
       economysmp.command.ffaarena: true
       economysmp.command.pvp: true
+      economysmp.command.link: true
       economysmp.command.auctionhouse: true
       economysmp.command.enderchest: true
       economysmp.command.sell: true
@@ -1496,6 +1503,9 @@ permissions:
     default: true
   economysmp.command.pvp:
     description: Access to /pvp command
+    default: true
+  economysmp.command.link:
+    description: Access to /link command
     default: true
   economysmp.command.ffaarena:
     description: Access to /ffaarena command

@@ -677,6 +677,7 @@ public final class EconomySMP extends JavaPlugin {
         setExecutor("ffastats", new FfaStatsCommand(this), FeatureManager.Feature.FFA);
         setExecutor("ffaarena", new FfaArenaCommand(this), FeatureManager.Feature.FFA);
         setExecutor("pvp", new PvpCommand(this), FeatureManager.Feature.PVP_ARENA);
+        setExecutor("link", new com.archiveaustxn.commands.LinkCommand(this), FeatureManager.Feature.PVP_ARENA);
         AuctionHouseCommand auctionHouseCommand = new AuctionHouseCommand(this);
         setExecutor("auctionhouse", auctionHouseCommand, FeatureManager.Feature.AUCTION_HOUSE);
         setTabCompleter("auctionhouse", auctionHouseCommand);

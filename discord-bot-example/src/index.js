@@ -44,9 +44,11 @@ client.on(Events.InteractionCreate, async interaction => {
         await handleMyStats(interaction);
         return;
       case 'sync':
+      case 'link':
         await handleSync(interaction);
         return;
       case 'unsync':
+      case 'unlink':
         await handleUnsync(interaction);
         return;
       case 'tier':
@@ -168,29 +170,30 @@ async function handleSync(interaction) {
 
   const entry = await pvp.findSyncCode(code);
   if (!entry) {
-    await interaction.editReply('That sync code is not valid. Run `/pvp sync` in game for a new one.');
+    await interaction.editReply('That link code is not valid. Run `/link` in game for a new one.');
     return;
   }
   if (entry.expiresAt > 0 && entry.expiresAt < Date.now()) {
-    await interaction.editReply('That sync code has expired. Run `/pvp sync` in game for a new one.');
+    await interaction.editReply('That link code has expired. Run `/link` in game for a new one.');
     return;
   }
   if (links.isCodeUsed(code)) {
-    await interaction.editReply('That sync code has already been used. Run `/pvp sync` in game for a new one.');
+    await interaction.editReply('That link code has already been used. Run `/link` in game for a new one.');
     return;
   }
 
   const taken = links.getLinkByUuid(entry.uuid);
   if (taken && taken.discord_id !== interaction.user.id) {
     await interaction.editReply(
-      'That Minecraft account is already linked to another Discord user. They need to `/unsync` first.'
+      'That Minecraft account is already linked to another Discord user. They need to `/unlink` first.'
     );
     return;
   }
 
   const name = entry.name ?? (await pvp.findStats(entry.uuid))?.username ?? 'your account';
   links.link(interaction.user.id, entry.uuid, name, code);
-  await interaction.editReply(`Sync successful! You are now linked with **${name}**.`);
+  const roleNote = await setLinkedRole(interaction, true);
+  await interaction.editReply(`Linked! Your Discord account is now connected to **${name}**.${roleNote}`);
 }
 
 async function handleUnsync(interaction) {
@@ -203,7 +206,36 @@ async function handleUnsync(interaction) {
   }
 
   links.unlink(interaction.user.id);
+  await setLinkedRole(interaction, false);
   await interaction.editReply(`Unlinked from **${link.player_name ?? link.player_uuid}**.`);
+}
+
+/**
+ * Gives or removes the optional "linked" role (LINKED_ROLE_ID).
+ *
+ * Returns a short note for the reply when the role could not be applied, so a missing permission
+ * is visible to the player instead of silently doing nothing. The link itself never depends on it.
+ */
+async function setLinkedRole(interaction, grant) {
+  const roleId = process.env.LINKED_ROLE_ID?.trim();
+  if (!roleId || !interaction.inGuild()) {
+    return '';
+  }
+
+  try {
+    const member = await interaction.guild.members.fetch(interaction.user.id);
+    if (grant) {
+      await member.roles.add(roleId, 'Linked Minecraft account');
+    } else {
+      await member.roles.remove(roleId, 'Unlinked Minecraft account');
+    }
+    return '';
+  } catch (error) {
+    console.warn(`Could not ${grant ? 'give' : 'remove'} the linked role: ${error.message}`);
+    return grant
+      ? '\nYour link is saved, but I could not give you the linked role. Ask a staff member to check my permissions.'
+      : '';
+  }
 }
 
 function shutdown() {

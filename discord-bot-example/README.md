@@ -44,8 +44,9 @@ placeholder values such as `your_test_server_id` in `.env`.
 /stats player:<minecraft username or uuid>
 /leaderboard type:<money|shards|kills|deaths|playtime|...> limit:<1-10>
 
-/sync code:<code from /pvp sync in game>
-/unsync
+/link code:<code from /link in game>
+/unlink
+/sync and /unsync still work as aliases
 /mystats
 /tier stats player:<minecraft username or uuid>
 /tier leaderboard type:<elo|level|kills|deaths|streak|killstreak|wins|losses> limit:<1-10>
@@ -53,14 +54,17 @@ placeholder values such as `your_test_server_id` in `.env`.
 
 ## Linking an account
 
-A player runs `/pvp sync` in game. The plugin gives them a short one-time code and writes it to the
-`pvp_sync_codes` table. They then run `/sync code:<that code>` in Discord, and the bot checks the
+A player runs `/link` in game. The plugin gives them a short one-time code and writes it to the
+`pvp_sync_codes` table. They then run `/link code:<that code>` in Discord, and the bot checks the
 code, confirms it has not expired or been spent, and records the link on its own side.
 
 The plugin never learns anybody's Discord id, which is why the bot can keep the plugin database
 read-only. Codes expire after ten minutes by default, and asking for a new one in game replaces the
-old one. Every `/sync` and `/unsync` reply is ephemeral so a live code never sits in a public
-channel.
+old one. Every `/link` and `/unlink` reply is ephemeral so a live code never sits in a public
+channel. `/pvp sync` in game and `/sync` / `/unsync` in Discord are kept as aliases.
+
+Set `LINKED_ROLE_ID` in `.env` to give linked players a role automatically. The bot's own role must
+sit above that role and have the Manage Roles permission. The link works without it.
 
 `/mystats` uses that link. `/tier stats` takes a username instead and needs no link at all.
 

@@ -55,6 +55,18 @@ export const commands = [
     .setName('unsync')
     .setDescription('Unlink your Minecraft account.'),
   new SlashCommandBuilder()
+    .setName('link')
+    .setDescription('Link your Minecraft account with Discord.')
+    .addStringOption(option =>
+      option
+        .setName('code')
+        .setDescription('The code /link gave you in game')
+        .setRequired(true)
+    ),
+  new SlashCommandBuilder()
+    .setName('unlink')
+    .setDescription('Unlink your Minecraft account.'),
+  new SlashCommandBuilder()
     .setName('tier')
     .setDescription('Ranked arena commands.')
     .addSubcommand(subcommand =>
