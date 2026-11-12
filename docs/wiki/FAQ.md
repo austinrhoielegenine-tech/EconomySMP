@@ -1,6 +1,6 @@
 # Frequently Asked Questions (FAQ) & Troubleshooting
 
-This page provides answers and troubleshooting steps for common questions, configuration issues, and error resolutions when running **UltimateDonutSMP**.
+This page provides answers and troubleshooting steps for common questions, configuration issues, and error resolutions when running **EconomySMP**.
 
 ---
 
@@ -11,15 +11,15 @@ This page provides answers and troubleshooting steps for common questions, confi
 #### Root Causes & Solutions:
 
 1. **PlaceholderAPI is not installed**:
-   - **Fix**: UltimateDonutSMP requires the **PlaceholderAPI** plugin to parse `%economy_*%` tags. Download and place `PlaceholderAPI.jar` into your server's `plugins/` folder and restart the server.
+   - **Fix**: EconomySMP requires the **PlaceholderAPI** plugin to parse `%economy_*%` tags. Download and place `PlaceholderAPI.jar` into your server's `plugins/` folder and restart the server.
 
-2. **UltimateDonutSMP started before PlaceholderAPI**:
+2. **EconomySMP started before PlaceholderAPI**:
    - **Fix**: Place `PlaceholderAPI.jar` in the `plugins/` directory and ensure soft dependencies load correctly. Run `/uds reload` or restart the server to trigger the expansion registration.
 
 3. **Typo in Placeholder Identifier**:
-   - **Fix**: UltimateDonutSMP uses `%economy_*%` as its identifier prefix.
+   - **Fix**: EconomySMP uses `%economy_*%` as its identifier prefix.
      - Correct: `%economy_money%`, `%economy_shards%`, `%economy_team%`
-     - Incorrect: `%ultimatedonutsmp_money%`, `%uds_money%`
+     - Incorrect: `%economysmp_money%`, `%uds_money%`
 
 4. **Player is Offline or Context Missing**:
    - **Fix**: Placeholders like `%economy_ping%`, `%economy_shard_cuboid_status%`, or `%economy_shard_cuboid_display%` require an active online player session. When called from console or headless holograms without player context, they return default fallback values (`0`, `outside`, `-`).
@@ -34,8 +34,8 @@ This page provides answers and troubleshooting steps for common questions, confi
 ### Question: Why are third-party plugins (like ChestShop, CMI, or ShopGUIPlus) not detecting player money balances?
 
 #### Solutions:
-- **Install Vault**: UltimateDonutSMP registers itself as a Vault Economy provider on startup. Ensure `Vault.jar` is installed in your `plugins/` folder.
-- **Check Startup Logs**: Look for `[UltimateDonutSMP] Vault economy provider registered successfully` in server startup logs.
+- **Install Vault**: EconomySMP registers itself as a Vault Economy provider on startup. Ensure `Vault.jar` is installed in your `plugins/` folder.
+- **Check Startup Logs**: Look for `[EconomySMP] Vault economy provider registered successfully` in server startup logs.
 - **Remove Conflicting Economy Plugins**: Remove plugins like EssentialsX Economy or Reserve that might override the Vault economy registration.
 
 ---
@@ -45,7 +45,7 @@ This page provides answers and troubleshooting steps for common questions, confi
 ### Question: Why is player money, shards, or home data resetting after a server restart?
 
 #### Solutions:
-- **SQLite File Permissions**: If using SQLite (default), ensure the server process has read/write permissions for `plugins/UltimateDonutSmp/database.db`.
+- **SQLite File Permissions**: If using SQLite (default), ensure the server process has read/write permissions for `plugins/EconomySMP/database.db`.
 - **MySQL / MongoDB Credentials**: If using MySQL or MongoDB (`database.yml`), check that your database host, port, username, and password are correct and that the database server allows remote connections.
 - **Check Console Logs**: Check for SQL connection timeouts or pool exhaustion errors on startup.
 
@@ -71,7 +71,7 @@ This page provides answers and troubleshooting steps for common questions, confi
 ### Question: Why do custom spawners break into default pig spawners or fail to drop when mined?
 
 #### Solutions:
-- **Silk Touch Requirement**: By default, breaking spawners requires a pickaxe enchanted with Silk Touch. Only Creative mode and the `ultimatedonutsmp.spawner.bypass` permission are exempt. Operators are **not** exempt: that node is registered with `default: false` and must be assigned explicitly via LuckPerms.
+- **Silk Touch Requirement**: By default, breaking spawners requires a pickaxe enchanted with Silk Touch. Only Creative mode and the `economysmp.spawner.bypass` permission are exempt. Operators are **not** exempt: that node is registered with `default: false` and must be assigned explicitly via LuckPerms.
 - **Check `spawners.yml`**: Ensure `SETTINGS.REQUIRE_SILK_TOUCH: true/false` is configured according to your server rules.
 
 ---
@@ -81,8 +81,8 @@ This page provides answers and troubleshooting steps for common questions, confi
 ### Question: Why can players still see vanished staff members in tablist or game?
 
 #### Solutions:
-- **Install ProtocolLib**: UltimateDonutSMP uses **ProtocolLib** for packet-level vanish suppression, chest animation silencing, and equipment hiding. Install `ProtocolLib.jar` for full vanish protection.
-- **Check Staff Permissions**: Ensure normal players do not have see-vanish permissions (`ultimatedonutsmp.admin.vanish.see`).
+- **Install ProtocolLib**: EconomySMP uses **ProtocolLib** for packet-level vanish suppression, chest animation silencing, and equipment hiding. Install `ProtocolLib.jar` for full vanish protection.
+- **Check Staff Permissions**: Ensure normal players do not have see-vanish permissions (`economysmp.admin.vanish.see`).
 
 ---
 
@@ -119,11 +119,11 @@ Set custom rank prefixes for the `+` or `MEDIA` rank groups in LuckPerms:
 /lp group media meta setprefix 100 "&c[MEDIA] "
 ```
 
-#### 3. Granting UltimateDonutSMP Rank Perks
-Attach specific UltimateDonutSMP permission nodes to your `plus` or `media` groups:
-- **Expanded Home Limits**: `ultimatedonutsmp.command.sethome.multiple.<amount>`
-- **Ender Chest Row Expansion**: `ultimatedonutsmp.enderchest.rows.<1-6>`
-- **RTP Cooldown Bypass**: `ultimatedonutsmp.command.rtp.bypasscooldown`
+#### 3. Granting EconomySMP Rank Perks
+Attach specific EconomySMP permission nodes to your `plus` or `media` groups:
+- **Expanded Home Limits**: `economysmp.command.sethome.multiple.<amount>`
+- **Ender Chest Row Expansion**: `economysmp.enderchest.rows.<1-6>`
+- **RTP Cooldown Bypass**: `economysmp.command.rtp.bypasscooldown`
 - **Key Giveaways & Rewards**:
   - Give Crate Keys: `/crate key <player> <crate_name> <amount>`
   - KeyAll Broadcast: `/crate keyall <crate_name> <amount>`
@@ -138,12 +138,12 @@ Attach specific UltimateDonutSMP permission nodes to your `plus` or `media` grou
 #### Option 1: Direct SQLite File Copy (Same Plugin Instance)
 If you are moving your server to a new host or updating server files:
 1. Stop both old and new Minecraft servers.
-2. Copy `plugins/UltimateDonutSmp/database.db` from your old server folder to `plugins/UltimateDonutSmp/database.db` on your new server.
+2. Copy `plugins/EconomySMP/database.db` from your old server folder to `plugins/EconomySMP/database.db` on your new server.
 3. Start the new server. All player homes, balances, and statistics will be loaded automatically.
 
 #### Option 2: MySQL / MongoDB Migration
 If migrating from SQLite to MySQL or between database instances:
-1. Configure connection credentials in `plugins/UltimateDonutSmp/database.yml`.
+1. Configure connection credentials in `plugins/EconomySMP/database.yml`.
 2. Export the `homes` table from your old database.
 3. Import the SQL table structure:
    ```sql
@@ -167,7 +167,7 @@ If migrating from SQLite to MySQL or between database instances:
    ```
 
 #### Option 3: Importing Legacy Homes from EssentialsX
-If migrating from EssentialsX to UltimateDonutSMP:
+If migrating from EssentialsX to EconomySMP:
 - EssentialsX stores player homes inside `plugins/Essentials/userdata/<uuid>.yml` under the `homes:` key.
 - You can parse the YAML coordinates from Essentials userdata files and insert them into the `homes` SQL table using a standard SQL script or database utility (such as DB Browser for SQLite).
 
@@ -178,12 +178,12 @@ If migrating from EssentialsX to UltimateDonutSMP:
 ### Question: Why do players see "Move to keep earning shards (0/5)" and how do I disable the movement requirement?
 
 #### Explanation:
-By default, UltimateDonutSMP enforces anti-AFK movement checks inside Shard Cuboids (or Everywhere Shards) so that players cannot earn free passive Shards by standing completely still or macroing without moving.
+By default, EconomySMP enforces anti-AFK movement checks inside Shard Cuboids (or Everywhere Shards) so that players cannot earn free passive Shards by standing completely still or macroing without moving.
 
 #### How to Disable the Movement Requirement Completely:
 If you want players to earn Shards passively while standing completely still inside Shard Cuboids (or anywhere on the server):
 
-1. Open `plugins/UltimateDonutSmp/config.yml`.
+1. Open `plugins/EconomySMP/config.yml`.
 2. Locate the `SHARDS` section under `CUBOIDS` or `EVERYWHERE`.
 3. Change `MIN-MOVEMENT-BLOCKS` from `5` to `0`:
 
@@ -206,12 +206,12 @@ SHARDS:
 ### Question: Why are death messages only showing to nearby players, and how do I turn on global death messages server-wide?
 
 #### Explanation:
-By default, UltimateDonutSMP limits death messages to nearby players within a chunk radius (`RADIUS: true`, `CHUNKS: 5`) to reduce chat spam in crowded areas or spawn arenas.
+By default, EconomySMP limits death messages to nearby players within a chunk radius (`RADIUS: true`, `CHUNKS: 5`) to reduce chat spam in crowded areas or spawn arenas.
 
 #### How to Enable Global Death Messages:
 To make all death messages broadcast globally across the entire server to every online player:
 
-1. Open `plugins/UltimateDonutSmp/death-messages.yml`.
+1. Open `plugins/EconomySMP/death-messages.yml`.
 2. Locate the `SETTINGS` block at the top of the file:
 
 ```yaml
@@ -253,22 +253,22 @@ SETTINGS:
 
 ## 13. LuckPerms & LuckPermsChat (LPC) Integration & Tablist Displays
 
-### Question: I use LuckPerms and LuckPermsChat (LPC) for my own rank system. Does UltimateDonutSMP override my chat format or tablist display, and is it visible to other players?
+### Question: I use LuckPerms and LuckPermsChat (LPC) for my own rank system. Does EconomySMP override my chat format or tablist display, and is it visible to other players?
 
 #### Explanation:
-UltimateDonutSMP includes its own built-in chat formatting engine and tablist manager, which read player rank prefixes and suffixes from **LuckPerms** via Vault or PlaceholderAPI. Depending on your configuration, UltimateDonutSMP can either format chat for you or step aside to let **LuckPermsChat (LPC)**, **EssentialsChat**, or **TAB** manage your chat and tablist display for all players.
+EconomySMP includes its own built-in chat formatting engine and tablist manager, which read player rank prefixes and suffixes from **LuckPerms** via Vault or PlaceholderAPI. Depending on your configuration, EconomySMP can either format chat for you or step aside to let **LuckPermsChat (LPC)**, **EssentialsChat**, or **TAB** manage your chat and tablist display for all players.
 
 #### How to Prevent Overrides & Configure Your Rank System:
 
 1. **If you want LuckPermsChat (LPC) or EssentialsChat to handle chat formatting**:
-   - Disable UltimateDonutSMP's chat formatting in `plugins/UltimateDonutSmp/config.yml`:
+   - Disable EconomySMP's chat formatting in `plugins/EconomySMP/config.yml`:
      ```yaml
      CHAT:
        FORMAT-ENABLED: false  # Set to false to allow LPC / EssentialsChat to handle chat
      ```
    - Run `/uds reload`. Now your LuckPermsChat format will be 100% active without any overrides or double-prefixing.
 
-2. **If you want UltimateDonutSMP to handle chat formatting with LuckPerms ranks**:
+2. **If you want EconomySMP to handle chat formatting with LuckPerms ranks**:
    - Keep `CHAT.FORMAT-ENABLED: true` in `config.yml`.
    - Configure the chat format string to include the LuckPerms prefix tag:
      ```yaml
@@ -278,7 +278,7 @@ UltimateDonutSMP includes its own built-in chat formatting engine and tablist ma
    - All online players will see your LuckPerms rank prefix in global chat.
 
 3. **Configuring Rank Displays in Tablist**:
-   - If using UltimateDonutSMP's built-in tablist (`scoreboard.yml`), set player prefixes using PlaceholderAPI:
+   - If using EconomySMP's built-in tablist (`scoreboard.yml`), set player prefixes using PlaceholderAPI:
      ```yaml
      TABLIST:
        ENABLED: true
@@ -287,7 +287,7 @@ UltimateDonutSMP includes its own built-in chat formatting engine and tablist ma
        FOOTER:
          - '&7Rank: %luckperms_prefix%'
      ```
-   - If using a third-party tablist plugin (e.g. **TAB by NEYNAM**), disable UltimateDonutSMP's tablist in `scoreboard.yml` by setting `TABLIST.ENABLED: false` so it does not conflict with your custom tablist display.
+   - If using a third-party tablist plugin (e.g. **TAB by NEYNAM**), disable EconomySMP's tablist in `scoreboard.yml` by setting `TABLIST.ENABLED: false` so it does not conflict with your custom tablist display.
 
 ---
 
@@ -296,7 +296,7 @@ UltimateDonutSMP includes its own built-in chat formatting engine and tablist ma
 ### Question: How do I add a Splash Potion of Strength to `/shop`, and can I create mixed potions with multiple effects (e.g., Fire Resistance + Strength + Speed)?
 
 #### Explanation:
-In UltimateDonutSMP's `shop.yml`, you can add custom potion items to any shop category (e.g., `GEAR-MENU` or a dedicated `POTION-MENU`).
+In EconomySMP's `shop.yml`, you can add custom potion items to any shop category (e.g., `GEAR-MENU` or a dedicated `POTION-MENU`).
 
 There are two primary methods to set up potions in `/shop`:
 1. **Method 1 (Recommended for Custom & Mixed Potions)**: Using the `COMMAND:` property to execute a vanilla `/give` command with custom potion component NBT data when purchased. This allows unlimited mixing of effects (Strength, Speed, Fire Resistance, Haste, etc.), custom amplifiers, and custom durations.
@@ -361,7 +361,7 @@ SPLASH-STRENGTH-POTION:
 ```
 
 #### Step-by-Step Setup Guide:
-1. Open `plugins/UltimateDonutSmp/shop.yml`.
+1. Open `plugins/EconomySMP/shop.yml`.
 2. Locate your target menu section (e.g., `GEAR-MENU` or create a new `POTION-MENU`).
 3. Paste the potion configuration entry into the `ITEMS:` section.
 4. Save `shop.yml` and run `/uds reload` in-game or from console.

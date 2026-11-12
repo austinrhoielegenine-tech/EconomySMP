@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `menus.yml`
 
-This is the official, 100% complete technical setup guide for `menus.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `menus.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -2887,7 +2887,7 @@ fail to resolve it shows `&cLocation not set` instead, which is the one to look 
 locations by hand. The random button only appears once **two or more** areas resolve, so a
 single-area menu never shows it however the button is configured.
 
-Players holding `ultimatedonutsmp.admin.teleportareas.delete` or `ultimatedonutsmp.admin` get an
+Players holding `economysmp.admin.teleportareas.delete` or `economysmp.admin` get an
 extra `&cRight-click to delete` line on each area. That click opens a confirmation screen instead of
 removing the area on the spot, because deleting one also blanks the point `/setafk` saved in
 `LOCATIONS.AFK-LOCATION`; on the spawn menu the same click would take the server spawn with it.
@@ -3361,7 +3361,7 @@ leaves them out: `{scope}` and `{source_server}` exist alongside the obvious one
 | `{source_server}` | Which server issued it |
 
 Paging arrows come from the shared `GLOBAL.PAGE-MENU` block. Deleting a record is a shift-right-click
-and needs `ultimatedonutsmp.staff.punishments.delete`; without that permission the click does
+and needs `economysmp.staff.punishments.delete`; without that permission the click does
 nothing, so leave the hint line out of the lore for servers where only admins hold it.
 
 ### 3. Practical Setup Example
@@ -3497,7 +3497,7 @@ off the main thread, so on a large database staff see this icon first and the re
 If it never appears, that is fine, it just means the read finished quickly.
 
 Left-clicking a record opens that player's `PUNISHMENT-HISTORY-MENU`, and shift-right-click deletes
-it for staff holding `ultimatedonutsmp.staff.punishments.delete`. Paging arrows come from
+it for staff holding `economysmp.staff.punishments.delete`. Paging arrows come from
 `GLOBAL.PAGE-MENU`.
 
 ### 3. Practical Setup Example
@@ -3538,7 +3538,7 @@ PUNISHMENTS-LIST-MENU:
 
 ## Section: `STATS-WIPE-MENU`
 
-Opened with `/ultimatedonutsmp statswipe`, and it needs `ultimatedonutsmp.admin.statswipe`. One
+Opened with `/economysmp statswipe`, and it needs `economysmp.admin.statswipe`. One
 button per kind of stored data, each showing how many records a wipe would touch, and each leading to
 a confirmation menu rather than firing straight away.
 

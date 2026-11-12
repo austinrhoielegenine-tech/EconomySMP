@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `ender-chest.yml`
 
-This is the official, 100% complete technical setup guide for `ender-chest.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `ender-chest.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -26,7 +26,7 @@ ENDER-CHEST:
   # Determines whether Command Requires Permission is enabled or disabled. Available options: true, false
   COMMAND-REQUIRES-PERMISSION: false
   # The text or value for Permission. Available options: Any valid string text
-  PERMISSION: ultimatedonutsmp.enderchest
+  PERMISSION: economysmp.enderchest
   # The numerical value for Auto Save Ticks. Available options: Any valid integer
   AUTO-SAVE-TICKS: 1200
   # Per-rank Ender Chest size resolved from permissions
@@ -40,20 +40,20 @@ ENDER-CHEST:
     # Available options: KEEP-SIZE, RETURN-ITEMS
     ON-DOWNGRADE: KEEP-SIZE
     # Explicit mapping from permission node to Ender Chest rows
-    # Players can also be given ultimatedonutsmp.enderchest.rows.<1-6> directly, for example
-    # ultimatedonutsmp.enderchest.rows.4 for a 36 slot chest
+    # Players can also be given economysmp.enderchest.rows.<1-6> directly, for example
+    # economysmp.enderchest.rows.4 for a 36 slot chest
     # The highest value the player has wins
     # Players without any of these permissions keep DEFAULT-ROWS above
     PERMISSIONS:
-      "ultimatedonutsmp.enderchest.rows.vip++": 6
-      "ultimatedonutsmp.enderchest.rows.vip+": 5
-      "ultimatedonutsmp.enderchest.rows.vip": 4
+      "economysmp.enderchest.rows.vip++": 6
+      "economysmp.enderchest.rows.vip+": 5
+      "economysmp.enderchest.rows.vip": 4
   # Configuration section for Ecsee.
   ECSEE:
     # Determines whether Enabled is enabled or disabled. Available options: true, false
     ENABLED: true
     # The text or value for Permission. Available options: Any valid string text
-    PERMISSION: ultimatedonutsmp.admin.ecsee
+    PERMISSION: economysmp.admin.ecsee
     # The numerical value for Auto Refresh Ticks. Available options: Any valid integer
     AUTO-REFRESH-TICKS: 20
     # Determines whether staff can edit other players' ender chests. Available options: true, false
@@ -70,10 +70,10 @@ ENDER-CHEST:
 | `ENDER-CHEST.INTERCEPT-VANILLA-OPEN` | `bool` | `true`, `false` | `true` | Configures the technical `INTERCEPT-VANILLA-OPEN` parameter for `ENDER-CHEST.INTERCEPT-VANILLA-OPEN` in `ender-chest.yml`. |
 | `ENDER-CHEST.ALLOW-COMMAND` | `bool` | `true`, `false` | `true` | Configures the technical `ALLOW-COMMAND` parameter for `ENDER-CHEST.ALLOW-COMMAND` in `ender-chest.yml`. |
 | `ENDER-CHEST.COMMAND-REQUIRES-PERMISSION` | `bool` | `true`, `false` | `false` | Configures the technical `COMMAND-REQUIRES-PERMISSION` parameter for `ENDER-CHEST.COMMAND-REQUIRES-PERMISSION` in `ender-chest.yml`. |
-| `ENDER-CHEST.PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.enderchest'` | Configures the technical `PERMISSION` parameter for `ENDER-CHEST.PERMISSION` in `ender-chest.yml`. |
+| `ENDER-CHEST.PERMISSION` | `str` | Any string text | `'economysmp.enderchest'` | Configures the technical `PERMISSION` parameter for `ENDER-CHEST.PERMISSION` in `ender-chest.yml`. |
 | `ENDER-CHEST.AUTO-SAVE-TICKS` | `int` | Any valid integer number | `'1200'` | Configures the technical `AUTO-SAVE-TICKS` parameter for `ENDER-CHEST.AUTO-SAVE-TICKS` in `ender-chest.yml`. |
 | `ENDER-CHEST.ECSEE.ENABLED` | `bool` | `true`, `false` | `true` | Global toggle for `ENDER-CHEST` system. Set to `true` to enable, `false` to disable. |
-| `ENDER-CHEST.ECSEE.PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.admin.ecsee'` | Configures the technical `PERMISSION` parameter for `ENDER-CHEST.ECSEE.PERMISSION` in `ender-chest.yml`. |
+| `ENDER-CHEST.ECSEE.PERMISSION` | `str` | Any string text | `'economysmp.admin.ecsee'` | Configures the technical `PERMISSION` parameter for `ENDER-CHEST.ECSEE.PERMISSION` in `ender-chest.yml`. |
 | `ENDER-CHEST.ECSEE.AUTO-REFRESH-TICKS` | `int` | Any valid integer number | `'20'` | Configures the technical `AUTO-REFRESH-TICKS` parameter for `ENDER-CHEST.ECSEE.AUTO-REFRESH-TICKS` in `ender-chest.yml`. |
 | `ENDER-CHEST.ECSEE.EDITABLE` | `bool` | `true`, `false` | `false` | Configures the technical `EDITABLE` parameter for `ENDER-CHEST.ECSEE.EDITABLE` in `ender-chest.yml`. |
 
@@ -96,7 +96,7 @@ ENDER-CHEST:
   # Determines whether Command Requires Permission is enabled or disabled. Available options: true, false
   COMMAND-REQUIRES-PERMISSION: false
   # The text or value for Permission. Available options: Any valid string text
-  PERMISSION: ultimatedonutsmp.enderchest
+  PERMISSION: economysmp.enderchest
   # The numerical value for Auto Save Ticks. Available options: Any valid integer
   AUTO-SAVE-TICKS: 1200
   # Per-rank Ender Chest size resolved from permissions
@@ -110,14 +110,14 @@ ENDER-CHEST:
     # Available options: KEEP-SIZE, RETURN-ITEMS
     ON-DOWNGRADE: KEEP-SIZE
     # Explicit mapping from permission node to Ender Chest rows
-    # Players can also be given ultimatedonutsmp.enderchest.rows.<1-6> directly, for example
-    # ultimatedonutsmp.enderchest.rows.4 for a 36 slot chest
+    # Players can also be given economysmp.enderchest.rows.<1-6> directly, for example
+    # economysmp.enderchest.rows.4 for a 36 slot chest
     # The highest value the player has wins
     # Players without any of these permissions keep DEFAULT-ROWS above
     PERMISSIONS:
-      "ultimatedonutsmp.enderchest.rows.vip++": 6
-      "ultimatedonutsmp.enderchest.rows.vip+": 5
-      "ultimatedonutsmp.enderchest.rows.vip": 4
+      "economysmp.enderchest.rows.vip++": 6
+      "economysmp.enderchest.rows.vip+": 5
+      "economysmp.enderchest.rows.vip": 4
   # Configuration section for Ecsee.
   ECSEE:
     # Determines whether Enabled is enabled or disabled. Available options: true, false
@@ -145,14 +145,14 @@ without a separate config entry per rank.
     # Available options: KEEP-SIZE, RETURN-ITEMS
     ON-DOWNGRADE: KEEP-SIZE
     # Explicit mapping from permission node to Ender Chest rows
-    # Players can also be given ultimatedonutsmp.enderchest.rows.<1-6> directly, for example
-    # ultimatedonutsmp.enderchest.rows.4 for a 36 slot chest
+    # Players can also be given economysmp.enderchest.rows.<1-6> directly, for example
+    # economysmp.enderchest.rows.4 for a 36 slot chest
     # The highest value the player has wins
     # Players without any of these permissions keep DEFAULT-ROWS above
     PERMISSIONS:
-      "ultimatedonutsmp.enderchest.rows.vip++": 6
-      "ultimatedonutsmp.enderchest.rows.vip+": 5
-      "ultimatedonutsmp.enderchest.rows.vip": 4
+      "economysmp.enderchest.rows.vip++": 6
+      "economysmp.enderchest.rows.vip+": 5
+      "economysmp.enderchest.rows.vip": 4
 ```
 
 ### 2. Key Options & Technical Breakdown
@@ -177,14 +177,14 @@ without a separate config entry per rank.
 ### 4. Resolution Order
 
 1. Every entry under `PERMISSIONS` the player holds is collected.
-2. Every `ultimatedonutsmp.enderchest.rows.<1-6>` node the player holds is collected. A non-numeric
+2. Every `economysmp.enderchest.rows.<1-6>` node the player holds is collected. A non-numeric
    suffix is ignored, and a value above 6 counts as 6.
 3. The **highest** collected value becomes the player size, so a player with both `.rows.2` and
    `.rows.4` gets 36 slots.
 4. If the player holds none of these nodes, `DEFAULT-ROWS` applies.
 
-Wildcards do not grant a tier. `ultimatedonutsmp.*` leaves the player on `DEFAULT-ROWS`, the same way it
-does for `ultimatedonutsmp.homes.<1-100>`, so a staff wildcard cannot quietly resize everyone.
+Wildcards do not grant a tier. `economysmp.*` leaves the player on `DEFAULT-ROWS`, the same way it
+does for `economysmp.homes.<1-100>`, so a staff wildcard cannot quietly resize everyone.
 
 The size is evaluated every time the chest is opened, so a rank change applies on the next open.
 
@@ -221,9 +221,9 @@ ENDER-CHEST:
 Or skip the config entirely and drive it from LuckPerms alone:
 
 ```
-/lp group vip permission set ultimatedonutsmp.enderchest.rows.4
-/lp group vip+ permission set ultimatedonutsmp.enderchest.rows.5
-/lp group mvp permission set ultimatedonutsmp.enderchest.rows.6
+/lp group vip permission set economysmp.enderchest.rows.4
+/lp group vip+ permission set economysmp.enderchest.rows.5
+/lp group mvp permission set economysmp.enderchest.rows.6
 ```
 
 `/ecsee <player>` always opens a target's chest at its real stored size, so staff see exactly what the

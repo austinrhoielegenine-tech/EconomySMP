@@ -1,8 +1,8 @@
-# Welcome to the UltimateDonutSMP Wiki
+# Welcome to the EconomySMP Wiki
 
-Welcome to the official wiki documentation for **UltimateDonutSMP**, an all-in-one, high-performance Paper, Purpur, Pufferfish, Spigot, and Folia plugin designed for DonutSMP-style Minecraft survival networks.
+Welcome to the official wiki documentation for **EconomySMP**, an all-in-one, high-performance Paper, Purpur, Pufferfish, Spigot, and Folia plugin designed for DonutSMP-style Minecraft survival networks.
 
-UltimateDonutSMP replaces dozens of separate plugins by integrating economy, marketplaces, team systems, teleportation, PvP duels, FFA and ranked arenas, custom spawners, crates, staff utilities, security tools, and multi-server network syncing into a single, cohesive plugin.
+EconomySMP replaces dozens of separate plugins by integrating economy, marketplaces, team systems, teleportation, PvP duels, FFA and ranked arenas, custom spawners, crates, staff utilities, security tools, and multi-server network syncing into a single, cohesive plugin.
 
 ---
 
@@ -28,7 +28,7 @@ Explore the complete feature guide and documentation pages:
   Requirements, server engine installation, storage setup (SQLite, MySQL, MongoDB), and Redis multi-server networking.
 
 - **[Commands & Permissions](Commands-and-Permissions)**  
-  Comprehensive reference table of all player and administrator commands, syntax, aliases, and permission nodes (`ultimatedonutsmp.command.*`, `ultimatedonutsmp.admin.*`).
+  Comprehensive reference table of all player and administrator commands, syntax, aliases, and permission nodes (`economysmp.command.*`, `economysmp.admin.*`).
 
 - **[Cuboids & Portals](Cuboids-and-Portals)**  
   Guide to region selections, `/cuboid` creation, binding regions to feature zones (Spawn, AFK, Shard Cuboids, RTP), and creating custom `/portal` triggers.

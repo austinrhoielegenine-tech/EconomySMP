@@ -111,7 +111,7 @@ MAP_SOURCES:
 CROSS_SERVER:
   ENABLED: false
   LOCAL_SERVER_ID: ""
-  REDIS_CHANNEL: "ultimatedonutsmp:duels"
+  REDIS_CHANNEL: "economysmp:duels"
   KEY_PREFIX: "uds:duels:"
   STALE_QUEUE_TIMEOUT_SECONDS: 45
   TRANSFER_TIMEOUT_SECONDS: 20

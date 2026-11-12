@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `enchantments.yml`
 
-This is the technical setup guide for `enchantments.yml` in **UltimateDonutSMP**.
+This is the technical setup guide for `enchantments.yml` in **EconomySMP**.
 The file drives the enchantment picker: which enchantments each kind of item can be given, at
 what level, and where each option sits in the menu.
 

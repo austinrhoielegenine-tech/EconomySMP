@@ -319,7 +319,7 @@ CROSS_SERVER:
   # Unique identifier for this local server instance
   LOCAL_SERVER_ID: ""
   # Redis channel for duel match communications
-  REDIS_CHANNEL: "ultimatedonutsmp:duels"
+  REDIS_CHANNEL: "economysmp:duels"
   # Redis key prefix for duel data
   KEY_PREFIX: "uds:duels:"
   # Stale queue request timeout (in seconds)
@@ -341,7 +341,7 @@ CROSS_SERVER:
 | :--- | :--- | :--- | :--- | :--- |
 | `CROSS_SERVER.ENABLED` | `bool` | true, false | `False` | Configures `ENABLED` for `CROSS_SERVER`. |
 | `CROSS_SERVER.LOCAL_SERVER_ID` | `str` | Any string text | `` | Configures `LOCAL_SERVER_ID` for `CROSS_SERVER`. |
-| `CROSS_SERVER.REDIS_CHANNEL` | `str` | Any string text | `ultimatedonutsmp:duels` | Configures `REDIS_CHANNEL` for `CROSS_SERVER`. |
+| `CROSS_SERVER.REDIS_CHANNEL` | `str` | Any string text | `economysmp:duels` | Configures `REDIS_CHANNEL` for `CROSS_SERVER`. |
 | `CROSS_SERVER.KEY_PREFIX` | `str` | Any string text | `uds:duels:` | Configures `KEY_PREFIX` for `CROSS_SERVER`. |
 | `CROSS_SERVER.STALE_QUEUE_TIMEOUT_SECONDS` | `int` | Any valid integer | `45` | Configures `STALE_QUEUE_TIMEOUT_SECONDS` for `CROSS_SERVER`. |
 | `CROSS_SERVER.TRANSFER_TIMEOUT_SECONDS` | `int` | Any valid integer | `20` | Configures `TRANSFER_TIMEOUT_SECONDS` for `CROSS_SERVER`. |
@@ -504,15 +504,15 @@ SETTINGS:
     # Enable or disable permission based home limits
     ENABLED: true
     # Explicit mapping from permission node to home limit
-    # Players can also be given ultimatedonutsmp.homes.<1-100> directly, for example
-    # ultimatedonutsmp.homes.10 for ten homes, or ultimatedonutsmp.homes.page.<1-100> to
+    # Players can also be given economysmp.homes.<1-100> directly, for example
+    # economysmp.homes.10 for ten homes, or economysmp.homes.page.<1-100> to
     # hand out whole pages of five at a time
     # The highest value the player has wins
     # Players without any of these permissions keep HOME-DEFAULT above
     PERMISSIONS:
-      "ultimatedonutsmp.homes.vip++": 15
-      "ultimatedonutsmp.homes.vip+": 10
-      "ultimatedonutsmp.homes.vip": 5
+      "economysmp.homes.vip++": 15
+      "economysmp.homes.vip+": 10
+      "economysmp.homes.vip": 5
   # The numerical value for Shards Per Kill. Available options: Any valid integer
   SHARDS-PER-KILL: 1
   # The text or value for Shards Kill Message. Available options: Any valid string text
@@ -576,7 +576,7 @@ SETTINGS:
 | `SETTINGS.CHAINMAIL-RESPAWN-ITEMS` | `list` | Configured values | `[{'MATERIAL': 'STONE_SWORD', 'AMOUNT'...` | Configures `CHAINMAIL-RESPAWN-ITEMS` for `SETTINGS`. |
 | `SETTINGS.HOME-DEFAULT` | `int` | Any positive integer | `2` | Default maximum `/sethome` limit for non-donor players. |
 | `SETTINGS.HOME-PERMISSIONS.ENABLED` | `bool` | `true`, `false` | `true` | Master switch for permission based home limits. Set to `false` to ignore every home permission and give everyone `HOME-DEFAULT`. |
-| `SETTINGS.HOME-PERMISSIONS.PERMISSIONS` | `section` | Permission node to home count | `{'ultimatedonutsmp.homes.vip++': 15, 'ultimatedonutsmp.homes.vip+': 10, 'ultimatedonutsmp.homes.vip': 5}` | Named rank nodes mapped to a home limit, for servers that prefer `ultimatedonutsmp.homes.vip` over the numbered nodes. The highest value a player holds wins. See [Commands-and-Permissions](Commands-and-Permissions). |
+| `SETTINGS.HOME-PERMISSIONS.PERMISSIONS` | `section` | Permission node to home count | `{'economysmp.homes.vip++': 15, 'economysmp.homes.vip+': 10, 'economysmp.homes.vip': 5}` | Named rank nodes mapped to a home limit, for servers that prefer `economysmp.homes.vip` over the numbered nodes. The highest value a player holds wins. See [Commands-and-Permissions](Commands-and-Permissions). |
 | `SETTINGS.SHARDS-PER-KILL` | `int` | Any valid integer | `1` | Configures `SHARDS-PER-KILL` for `SETTINGS`. |
 | `SETTINGS.SHARDS-KILL-MESSAGE` | `str` | Any string text | `&#A303F9+{shards} Shard` | Configures `SHARDS-KILL-MESSAGE` for `SETTINGS`. |
 | `SETTINGS.SHARDS-KILL-MESSAGE-BOOSTED` | `str` | Any string text | `&#A303F9+{shards} Shards &7(&ax{multiplier}&7)` | Action bar shown instead of `SHARDS-KILL-MESSAGE` while a shard booster multiplies the kill reward. Supports `{multiplier}`. |
@@ -1131,7 +1131,7 @@ SHARDS:
     # The numerical value for Amount. Available options: Any valid integer
     AMOUNT: 1
     # The text or value for Required Permission. Available options: Any valid string text
-    REQUIRED-PERMISSION: ultimatedonutsmp.shards.everywhere
+    REQUIRED-PERMISSION: economysmp.shards.everywhere
     # The numerical value for Recent Movement Window. Available options: Any valid integer
     RECENT-MOVEMENT-WINDOW: 15
     # Determines whether Disable While In Shard Cuboid is enabled or disabled. Available options: true, false
@@ -1213,7 +1213,7 @@ DATABASE:
     # The numerical value for Port. Available options: Any valid integer
     PORT: 3306
     # The text or value for Database. Available options: Any valid string text
-    DATABASE: ultimatedonutsmp
+    DATABASE: economysmp
     # The text or value for Username. Available options: Any valid string text
     USERNAME: root
     # The text or value for Password. Available options: Any valid string text
@@ -1227,7 +1227,7 @@ DATABASE:
     # The text or value for Uri. Available options: Any valid string text
     URI: mongodb://localhost:27017
     # The text or value for Database. Available options: Any valid string text
-    DATABASE: ultimatedonutsmp
+    DATABASE: economysmp
     # The text or value for Cache File. Available options: Any valid string text
     CACHE-FILE: data/mongodb-cache.db
     # Determines whether Sync On Autosave is enabled or disabled. Available options: true, false
@@ -1242,13 +1242,13 @@ DATABASE:
 | `DATABASE.SQLITE.FILE` | `str` | Any string text | `data/data.db` | Configures `FILE` for `DATABASE`. |
 | `DATABASE.MYSQL.HOST` | `str` | Any string text | `localhost` | Configures `HOST` for `DATABASE`. |
 | `DATABASE.MYSQL.PORT` | `int` | Any valid integer | `3306` | Configures `PORT` for `DATABASE`. |
-| `DATABASE.MYSQL.DATABASE` | `str` | Any string text | `ultimatedonutsmp` | Configures `DATABASE` for `DATABASE`. |
+| `DATABASE.MYSQL.DATABASE` | `str` | Any string text | `economysmp` | Configures `DATABASE` for `DATABASE`. |
 | `DATABASE.MYSQL.USERNAME` | `str` | Any string text | `root` | Configures `USERNAME` for `DATABASE`. |
 | `DATABASE.MYSQL.PASSWORD` | `str` | Any string text | `` | Configures `PASSWORD` for `DATABASE`. |
 | `DATABASE.MYSQL.CREATE-DATABASE` | `bool` | true, false | `True` | Configures `CREATE-DATABASE` for `DATABASE`. |
 | `DATABASE.MYSQL.PARAMETERS` | `str` | Any string text | `useSSL=false&allowPublicKeyRetrieval=...` | Configures `PARAMETERS` for `DATABASE`. |
 | `DATABASE.MONGODB.URI` | `str` | Any string text | `mongodb://localhost:27017` | Configures `URI` for `DATABASE`. |
-| `DATABASE.MONGODB.DATABASE` | `str` | Any string text | `ultimatedonutsmp` | Configures `DATABASE` for `DATABASE`. |
+| `DATABASE.MONGODB.DATABASE` | `str` | Any string text | `economysmp` | Configures `DATABASE` for `DATABASE`. |
 | `DATABASE.MONGODB.CACHE-FILE` | `str` | Any string text | `data/mongodb-cache.db` | Configures `CACHE-FILE` for `DATABASE`. |
 | `DATABASE.MONGODB.SYNC-ON-AUTOSAVE` | `bool` | true, false | `True` | Configures `SYNC-ON-AUTOSAVE` for `DATABASE`. |
 
@@ -1338,13 +1338,13 @@ NETWORK:
   LOCAL_DISPLAY_NAME: Crystal
 
   # Redis pub/sub channel for staff chat messages
-  REDIS_CHANNEL: ultimatedonutsmp:staff-chat
+  REDIS_CHANNEL: economysmp:staff-chat
 
   # Redis pub/sub channel for helpop alerts
-  HELPOP_REDIS_CHANNEL: ultimatedonutsmp:staff-alerts
+  HELPOP_REDIS_CHANNEL: economysmp:staff-alerts
 
   # Redis pub/sub channel for player reports
-  REPORT_REDIS_CHANNEL: ultimatedonutsmp:staff-alerts
+  REPORT_REDIS_CHANNEL: economysmp:staff-alerts
 
   # Warn the sender when their staff chat message reached this server's staff but could not be
   # published to the other servers. Local delivery happens either way (true / false)
@@ -1397,9 +1397,9 @@ NETWORK:
 | `NETWORK.SERVER_STATUS_ENABLED` | `bool` | true, false | `True` | Configures `SERVER_STATUS_ENABLED` for `NETWORK`. |
 | `NETWORK.LOCAL_SERVER_ID` | `str` | Any string text | `crystal` | Configures `LOCAL_SERVER_ID` for `NETWORK`. |
 | `NETWORK.LOCAL_DISPLAY_NAME` | `str` | Any string text | `Crystal` | Configures `LOCAL_DISPLAY_NAME` for `NETWORK`. |
-| `NETWORK.REDIS_CHANNEL` | `str` | Any string text | `ultimatedonutsmp:staff-chat` | Configures `REDIS_CHANNEL` for `NETWORK`. |
-| `NETWORK.HELPOP_REDIS_CHANNEL` | `str` | Any string text | `ultimatedonutsmp:staff-alerts` | Configures `HELPOP_REDIS_CHANNEL` for `NETWORK`. |
-| `NETWORK.REPORT_REDIS_CHANNEL` | `str` | Any string text | `ultimatedonutsmp:staff-alerts` | Configures `REPORT_REDIS_CHANNEL` for `NETWORK`. |
+| `NETWORK.REDIS_CHANNEL` | `str` | Any string text | `economysmp:staff-chat` | Configures `REDIS_CHANNEL` for `NETWORK`. |
+| `NETWORK.HELPOP_REDIS_CHANNEL` | `str` | Any string text | `economysmp:staff-alerts` | Configures `HELPOP_REDIS_CHANNEL` for `NETWORK`. |
+| `NETWORK.REPORT_REDIS_CHANNEL` | `str` | Any string text | `economysmp:staff-alerts` | Configures `REPORT_REDIS_CHANNEL` for `NETWORK`. |
 | `NETWORK.SEND_LOCAL_FALLBACK_ON_REDIS_ERROR` | `bool` | true, false | `True` | The name oversells it: local delivery is not optional and never was. A staff chat message reaches the staff on this server before Redis is attempted at all, and this key decides only whether the sender is told, once per session, that it did not reach the other servers. |
 | `NETWORK.STAFF_ALERTS_WARN_SENDER_ON_REDIS_ERROR` | `bool` | true, false | `False` | The `/helpop` and `/report` counterpart of the key above. Warns a player, once per session, that their alert reached local staff but could not be published to the other servers. Off by default, since somebody did receive it. |
 | `NETWORK.LOG_TO_CONSOLE` | `bool` | true, false | `True` | Configures `LOG_TO_CONSOLE` for `NETWORK`. |

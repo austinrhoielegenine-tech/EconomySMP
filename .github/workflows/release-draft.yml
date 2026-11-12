@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - 'v*'
+      - '!v*-pre'
   workflow_dispatch:
     inputs:
       version_name:
@@ -190,7 +191,7 @@ jobs:
         with:
           tag_name: ${{ steps.info.outputs.tag_name }}
           target_commitish: ${{ github.sha }}
-          name: "UltimateDonutSMP ${{ steps.info.outputs.tag_name }}"
+          name: "EconomySMP ${{ steps.info.outputs.tag_name }}"
           body: ${{ steps.changelog_gen.outputs.changelog_body }}
           draft: true
           prerelease: ${{ steps.info.outputs.is_prerelease == 'true' }}

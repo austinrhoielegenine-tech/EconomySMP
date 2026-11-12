@@ -1,5 +1,5 @@
 name: 🐛 Bug Report
-description: Report a bug or error in UltimateDonutSMP plugin.
+description: Report a bug or error in EconomySMP plugin.
 title: "[Bug]: "
 labels: ["type: bug"]
 body:
@@ -14,7 +14,7 @@ body:
     attributes:
       label: Server Environment & Versions
       description: Specify your server core (Paper, Spigot, Folia), Minecraft version, Java version, and plugin version.
-      placeholder: "e.g., Paper 1.21.1 / Java 21 / UltimateDonutSMP v1.0.0"
+      placeholder: "e.g., Paper 1.21.1 / Java 21 / EconomySMP v1.0.0"
     validations:
       required: true
 
@@ -64,5 +64,5 @@ body:
       options:
         - label: I have searched existing issues to ensure this is not a duplicate.
           required: true
-        - label: I am using the latest version of UltimateDonutSMP.
+        - label: I am using the latest version of EconomySMP.
           required: true

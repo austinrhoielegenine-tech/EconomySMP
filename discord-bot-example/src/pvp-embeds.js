@@ -48,7 +48,7 @@ export function createCompetitiveStatsEmbed(stats, record, requestedBy) {
         inline: false
       }
     )
-    .setFooter({ text: 'UltimateDonutSmp ranked stats' })
+    .setFooter({ text: 'EconomySMP ranked stats' })
     .setTimestamp();
 }
 
@@ -67,7 +67,7 @@ export function createTierLeaderboardEmbed(typeKey, entries, requestedBy) {
     .setTitle(`:trophy: Top ${type.label}`)
     .setDescription(lines.join('\n'))
     .setThumbnail(skinBustUrl(top.uuid))
-    .setFooter({ text: `UltimateDonutSmp leaderboards · requested by ${requestedBy}` })
+    .setFooter({ text: `EconomySMP leaderboards · requested by ${requestedBy}` })
     .setTimestamp();
 }
 

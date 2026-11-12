@@ -136,7 +136,7 @@ BEDROCK:
 
 NETWORK:
   ENABLED: true
-  REDIS_CHANNEL: ultimate-donut-smp:orders
+  REDIS_CHANNEL: economysmp:orders
 
 SEARCH_SIGN:
   lines:

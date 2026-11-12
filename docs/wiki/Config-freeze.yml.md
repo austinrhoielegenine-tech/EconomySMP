@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `freeze.yml`
 
-This is the official, 100% complete technical setup guide for `freeze.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `freeze.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -33,16 +33,16 @@ FREEZE:
   SERVER-NAME: survival-01
 
   # Required permission node to execute /freeze
-  STAFF-PERMISSION: ultimatedonutsmp.staff.freeze
+  STAFF-PERMISSION: economysmp.staff.freeze
 
   # Permission node to receive staff freeze broadcast alerts
-  ALERT-PERMISSION: ultimatedonutsmp.staff.freeze.alert
+  ALERT-PERMISSION: economysmp.staff.freeze.alert
 
   # Permission node granting exemption from being frozen
-  EXEMPT-PERMISSION: ultimatedonutsmp.staff.freeze.exempt
+  EXEMPT-PERMISSION: economysmp.staff.freeze.exempt
 
   # Permission node to reload/administer freeze system
-  ADMIN-PERMISSION: ultimatedonutsmp.admin.freeze
+  ADMIN-PERMISSION: economysmp.admin.freeze
 
   # Commands allowed for frozen players (e.g., messaging staff or discord)
   ALLOWED-COMMANDS:
@@ -89,10 +89,10 @@ FREEZE:
 | `FREEZE.ALERT-INTERVAL-TICKS` | `int` | Any valid integer number | `'100'` | Configures the technical `ALERT-INTERVAL-TICKS` parameter for `FREEZE.ALERT-INTERVAL-TICKS` in `freeze.yml`. |
 | `FREEZE.LOG-USAGE` | `bool` | `true`, `false` | `true` | Configures the technical `LOG-USAGE` parameter for `FREEZE.LOG-USAGE` in `freeze.yml`. |
 | `FREEZE.SERVER-NAME` | `str` | Any string text | `'survival-01'` | Configures the technical `SERVER-NAME` parameter for `FREEZE.SERVER-NAME` in `freeze.yml`. |
-| `FREEZE.STAFF-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.freeze'` | Configures the technical `STAFF-PERMISSION` parameter for `FREEZE.STAFF-PERMISSION` in `freeze.yml`. |
-| `FREEZE.ALERT-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.freeze.alert'` | Configures the technical `ALERT-PERMISSION` parameter for `FREEZE.ALERT-PERMISSION` in `freeze.yml`. |
-| `FREEZE.EXEMPT-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.freeze.exemp...'` | Configures the technical `EXEMPT-PERMISSION` parameter for `FREEZE.EXEMPT-PERMISSION` in `freeze.yml`. |
-| `FREEZE.ADMIN-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.admin.freeze'` | Configures the technical `ADMIN-PERMISSION` parameter for `FREEZE.ADMIN-PERMISSION` in `freeze.yml`. |
+| `FREEZE.STAFF-PERMISSION` | `str` | Any string text | `'economysmp.staff.freeze'` | Configures the technical `STAFF-PERMISSION` parameter for `FREEZE.STAFF-PERMISSION` in `freeze.yml`. |
+| `FREEZE.ALERT-PERMISSION` | `str` | Any string text | `'economysmp.staff.freeze.alert'` | Configures the technical `ALERT-PERMISSION` parameter for `FREEZE.ALERT-PERMISSION` in `freeze.yml`. |
+| `FREEZE.EXEMPT-PERMISSION` | `str` | Any string text | `'economysmp.staff.freeze.exemp...'` | Configures the technical `EXEMPT-PERMISSION` parameter for `FREEZE.EXEMPT-PERMISSION` in `freeze.yml`. |
+| `FREEZE.ADMIN-PERMISSION` | `str` | Any string text | `'economysmp.admin.freeze'` | Configures the technical `ADMIN-PERMISSION` parameter for `FREEZE.ADMIN-PERMISSION` in `freeze.yml`. |
 | `FREEZE.ALLOWED-COMMANDS` | `list` | List of configured items/strings | `[/discord, /social, /msg...]` | Configures the technical `ALLOWED-COMMANDS` parameter for `FREEZE.ALLOWED-COMMANDS` in `freeze.yml`. |
 | `FREEZE.STATUS_ON` | `str` | Any string text | `'&a&lON'` | Configures the technical `STATUS_ON` parameter for `FREEZE.STATUS_ON` in `freeze.yml`. |
 | `FREEZE.STATUS_OFF` | `str` | Any string text | `'&c&lOFF'` | Configures the technical `STATUS_OFF` parameter for `FREEZE.STATUS_OFF` in `freeze.yml`. |
@@ -126,16 +126,16 @@ FREEZE:
   SERVER-NAME: survival-01
 
   # Required permission node to execute /freeze
-  STAFF-PERMISSION: ultimatedonutsmp.staff.freeze
+  STAFF-PERMISSION: economysmp.staff.freeze
 
   # Permission node to receive staff freeze broadcast alerts
-  ALERT-PERMISSION: ultimatedonutsmp.staff.freeze.alert
+  ALERT-PERMISSION: economysmp.staff.freeze.alert
 
   # Permission node granting exemption from being frozen
-  EXEMPT-PERMISSION: ultimatedonutsmp.staff.freeze.exempt
+  EXEMPT-PERMISSION: economysmp.staff.freeze.exempt
 
   # Permission node to reload/administer freeze system
-  ADMIN-PERMISSION: ultimatedonutsmp.admin.freeze
+  ADMIN-PERMISSION: economysmp.admin.freeze
 
   # Commands allowed for frozen players (e.g., messaging staff or discord)
   ALLOWED-COMMANDS:

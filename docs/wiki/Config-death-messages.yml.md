@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `death-messages.yml`
 
-This is the official, 100% complete technical setup guide for `death-messages.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `death-messages.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---

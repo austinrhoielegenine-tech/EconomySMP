@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `database.yml`
 
-This is the official, 100% complete technical setup guide for `database.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `database.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -23,7 +23,7 @@ DATABASE:
     # The numerical value for Port. Available options: Any valid integer
     PORT: 3306
     # The text or value for Database. Available options: Any valid string text
-    DATABASE: ultimatedonutsmp
+    DATABASE: economysmp
     # The text or value for Username. Available options: Any valid string text
     USERNAME: root
     # The text or value for Password. Available options: Any valid string text
@@ -37,7 +37,7 @@ DATABASE:
     # The text or value for Uri. Available options: Any valid string text
     URI: mongodb://localhost:27017
     # The text or value for Database. Available options: Any valid string text
-    DATABASE: ultimatedonutsmp
+    DATABASE: economysmp
     # The text or value for Cache File. Available options: Any valid string text
     CACHE-FILE: data/mongodb-cache.db
     # Determines whether Sync On Autosave is enabled or disabled. Available options: true, false
@@ -53,13 +53,13 @@ DATABASE:
 | `DATABASE.SQLITE.FILE` | `str` | Any string text | `'data/data.db'` | Configures the technical `FILE` parameter for `DATABASE.SQLITE.FILE` in `database.yml`. |
 | `DATABASE.MYSQL.HOST` | `str` | Any string text | `'localhost'` | Configures the technical `HOST` parameter for `DATABASE.MYSQL.HOST` in `database.yml`. |
 | `DATABASE.MYSQL.PORT` | `int` | Any valid integer number | `'3306'` | Configures the technical `PORT` parameter for `DATABASE.MYSQL.PORT` in `database.yml`. |
-| `DATABASE.MYSQL.DATABASE` | `str` | Any string text | `'ultimatedonutsmp'` | Configures the technical `DATABASE` parameter for `DATABASE.MYSQL.DATABASE` in `database.yml`. |
+| `DATABASE.MYSQL.DATABASE` | `str` | Any string text | `'economysmp'` | Configures the technical `DATABASE` parameter for `DATABASE.MYSQL.DATABASE` in `database.yml`. |
 | `DATABASE.MYSQL.USERNAME` | `str` | Any string text | `'root'` | Configures the technical `USERNAME` parameter for `DATABASE.MYSQL.USERNAME` in `database.yml`. |
 | `DATABASE.MYSQL.PASSWORD` | `str` | Any string text | `''` | Configures the technical `PASSWORD` parameter for `DATABASE.MYSQL.PASSWORD` in `database.yml`. |
 | `DATABASE.MYSQL.CREATE-DATABASE` | `bool` | `true`, `false` | `true` | Configures the technical `CREATE-DATABASE` parameter for `DATABASE.MYSQL.CREATE-DATABASE` in `database.yml`. |
 | `DATABASE.MYSQL.PARAMETERS` | `str` | Any string text | `'useSSL=false&allowPublicKeyRetrieva...'` | Configures the technical `PARAMETERS` parameter for `DATABASE.MYSQL.PARAMETERS` in `database.yml`. |
 | `DATABASE.MONGODB.URI` | `str` | Any string text | `'mongodb://localhost:27017'` | Configures the technical `URI` parameter for `DATABASE.MONGODB.URI` in `database.yml`. |
-| `DATABASE.MONGODB.DATABASE` | `str` | Any string text | `'ultimatedonutsmp'` | Configures the technical `DATABASE` parameter for `DATABASE.MONGODB.DATABASE` in `database.yml`. |
+| `DATABASE.MONGODB.DATABASE` | `str` | Any string text | `'economysmp'` | Configures the technical `DATABASE` parameter for `DATABASE.MONGODB.DATABASE` in `database.yml`. |
 | `DATABASE.MONGODB.CACHE-FILE` | `str` | Any string text | `'data/mongodb-cache.db'` | Configures the technical `CACHE-FILE` parameter for `DATABASE.MONGODB.CACHE-FILE` in `database.yml`. |
 | `DATABASE.MONGODB.SYNC-ON-AUTOSAVE` | `bool` | `true`, `false` | `true` | Configures the technical `SYNC-ON-AUTOSAVE` parameter for `DATABASE.MONGODB.SYNC-ON-AUTOSAVE` in `database.yml`. |
 
@@ -79,7 +79,7 @@ DATABASE:
     # The numerical value for Port. Available options: Any valid integer
     PORT: 3306
     # The text or value for Database. Available options: Any valid string text
-    DATABASE: ultimatedonutsmp
+    DATABASE: economysmp
     # The text or value for Username. Available options: Any valid string text
     USERNAME: root
     # The text or value for Password. Available options: Any valid string text
@@ -93,7 +93,7 @@ DATABASE:
     # The text or value for Uri. Available options: Any valid string text
     URI: mongodb://localhost:27017
     # The text or value for Database. Available options: Any valid string text
-    DATABASE: ultimatedonutsmp
+    DATABASE: economysmp
     # The text or value for Cache File. Available options: Any valid string text
     CACHE-FILE: data/mongodb-cache.db
     # Determines whether Sync On Autosave is enabled or disabled. Available options: true, false

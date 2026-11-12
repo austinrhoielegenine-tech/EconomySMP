@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `staff-mode.yml`
 
-This is the official, 100% complete technical setup guide for `staff-mode.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `staff-mode.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -32,21 +32,21 @@ STAFF-MODE:
     # The text or value for Message. Available options: Any valid string text
     MESSAGE: '&aVANISHED &7>> &fYou are hidden from regular players'
   # The text or value for Staff Permission. Available options: Any valid string text
-  STAFF-PERMISSION: ultimatedonutsmp.staff.mode
+  STAFF-PERMISSION: economysmp.staff.mode
   # The text or value for Admin Permission. Available options: Any valid string text
-  ADMIN-PERMISSION: ultimatedonutsmp.admin.staffmode
+  ADMIN-PERMISSION: economysmp.admin.staffmode
   # The text or value for Vanish Permission. Available options: Any valid string text
-  VANISH-PERMISSION: ultimatedonutsmp.staff.mode.vanish
+  VANISH-PERMISSION: economysmp.staff.mode.vanish
   # The text or value for Better View Permission. Available options: Any valid string text
-  BETTER-VIEW-PERMISSION: ultimatedonutsmp.staff.mode.betterview
+  BETTER-VIEW-PERMISSION: economysmp.staff.mode.betterview
   # The text or value for Staff List Permission. Available options: Any valid string text
-  STAFF-LIST-PERMISSION: ultimatedonutsmp.staff.mode.stafflist
+  STAFF-LIST-PERMISSION: economysmp.staff.mode.stafflist
   # The text or value for Random Teleport Permission. Available options: Any valid string text
-  RANDOM-TELEPORT-PERMISSION: ultimatedonutsmp.staff.mode.randomtp
+  RANDOM-TELEPORT-PERMISSION: economysmp.staff.mode.randomtp
   # The text or value for See Vanished Permission. Available options: Any valid string text
-  SEE-VANISHED-PERMISSION: ultimatedonutsmp.staff.mode.seevanished
+  SEE-VANISHED-PERMISSION: economysmp.staff.mode.seevanished
   # The text or value for Others Permission. Available options: Any valid string text
-  OTHERS-PERMISSION: ultimatedonutsmp.staff.mode.others
+  OTHERS-PERMISSION: economysmp.staff.mode.others
   # Configuration section for Hotbar Slots.
   HOTBAR-SLOTS:
     # The numerical value for Vanish. Available options: Any valid integer
@@ -96,14 +96,14 @@ STAFF-MODE:
 | `STAFF-MODE.VANISH-ACTIONBAR.ENABLED` | `bool` | `true`, `false` | `true` | Global toggle for `STAFF-MODE` system. Set to `true` to enable, `false` to disable. |
 | `STAFF-MODE.VANISH-ACTIONBAR.INTERVAL-TICKS` | `int` | Any valid integer number | `'40'` | Configures the technical `INTERVAL-TICKS` parameter for `STAFF-MODE.VANISH-ACTIONBAR.INTERVAL-TICKS` in `staff-mode.yml`. |
 | `STAFF-MODE.VANISH-ACTIONBAR.MESSAGE` | `str` | Any string text | `'&aVANISHED &7>> &fYou are hidden fr...'` | Configures the technical `MESSAGE` parameter for `STAFF-MODE.VANISH-ACTIONBAR.MESSAGE` in `staff-mode.yml`. |
-| `STAFF-MODE.STAFF-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode'` | Configures the technical `STAFF-PERMISSION` parameter for `STAFF-MODE.STAFF-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.ADMIN-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.admin.staffmode'` | Configures the technical `ADMIN-PERMISSION` parameter for `STAFF-MODE.ADMIN-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.VANISH-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode.vanish'` | Configures the technical `VANISH-PERMISSION` parameter for `STAFF-MODE.VANISH-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.BETTER-VIEW-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode.betterv...'` | Configures the technical `BETTER-VIEW-PERMISSION` parameter for `STAFF-MODE.BETTER-VIEW-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.STAFF-LIST-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode.staffli...'` | Configures the technical `STAFF-LIST-PERMISSION` parameter for `STAFF-MODE.STAFF-LIST-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.RANDOM-TELEPORT-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode.randomt...'` | Configures the technical `RANDOM-TELEPORT-PERMISSION` parameter for `STAFF-MODE.RANDOM-TELEPORT-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.SEE-VANISHED-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode.seevani...'` | Configures the technical `SEE-VANISHED-PERMISSION` parameter for `STAFF-MODE.SEE-VANISHED-PERMISSION` in `staff-mode.yml`. |
-| `STAFF-MODE.OTHERS-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.mode.others'` | Configures the technical `OTHERS-PERMISSION` parameter for `STAFF-MODE.OTHERS-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.STAFF-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode'` | Configures the technical `STAFF-PERMISSION` parameter for `STAFF-MODE.STAFF-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.ADMIN-PERMISSION` | `str` | Any string text | `'economysmp.admin.staffmode'` | Configures the technical `ADMIN-PERMISSION` parameter for `STAFF-MODE.ADMIN-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.VANISH-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode.vanish'` | Configures the technical `VANISH-PERMISSION` parameter for `STAFF-MODE.VANISH-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.BETTER-VIEW-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode.betterv...'` | Configures the technical `BETTER-VIEW-PERMISSION` parameter for `STAFF-MODE.BETTER-VIEW-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.STAFF-LIST-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode.staffli...'` | Configures the technical `STAFF-LIST-PERMISSION` parameter for `STAFF-MODE.STAFF-LIST-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.RANDOM-TELEPORT-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode.randomt...'` | Configures the technical `RANDOM-TELEPORT-PERMISSION` parameter for `STAFF-MODE.RANDOM-TELEPORT-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.SEE-VANISHED-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode.seevani...'` | Configures the technical `SEE-VANISHED-PERMISSION` parameter for `STAFF-MODE.SEE-VANISHED-PERMISSION` in `staff-mode.yml`. |
+| `STAFF-MODE.OTHERS-PERMISSION` | `str` | Any string text | `'economysmp.staff.mode.others'` | Configures the technical `OTHERS-PERMISSION` parameter for `STAFF-MODE.OTHERS-PERMISSION` in `staff-mode.yml`. |
 | `STAFF-MODE.HOTBAR-SLOTS.VANISH` | `int` | Any valid integer number | `'0'` | Configures the technical `VANISH` parameter for `STAFF-MODE.HOTBAR-SLOTS.VANISH` in `staff-mode.yml`. |
 | `STAFF-MODE.HOTBAR-SLOTS.FREEZE` | `int` | Any valid integer number | `'1'` | Configures the technical `FREEZE` parameter for `STAFF-MODE.HOTBAR-SLOTS.FREEZE` in `staff-mode.yml`. |
 | `STAFF-MODE.HOTBAR-SLOTS.STAFF_LIST` | `int` | Any valid integer number | `'4'` | Configures the technical `STAFF_LIST` parameter for `STAFF-MODE.HOTBAR-SLOTS.STAFF_LIST` in `staff-mode.yml`. |
@@ -144,21 +144,21 @@ STAFF-MODE:
     # The text or value for Message. Available options: Any valid string text
     MESSAGE: '&aVANISHED &7>> &fYou are hidden from regular players'
   # The text or value for Staff Permission. Available options: Any valid string text
-  STAFF-PERMISSION: ultimatedonutsmp.staff.mode
+  STAFF-PERMISSION: economysmp.staff.mode
   # The text or value for Admin Permission. Available options: Any valid string text
-  ADMIN-PERMISSION: ultimatedonutsmp.admin.staffmode
+  ADMIN-PERMISSION: economysmp.admin.staffmode
   # The text or value for Vanish Permission. Available options: Any valid string text
-  VANISH-PERMISSION: ultimatedonutsmp.staff.mode.vanish
+  VANISH-PERMISSION: economysmp.staff.mode.vanish
   # The text or value for Better View Permission. Available options: Any valid string text
-  BETTER-VIEW-PERMISSION: ultimatedonutsmp.staff.mode.betterview
+  BETTER-VIEW-PERMISSION: economysmp.staff.mode.betterview
   # The text or value for Staff List Permission. Available options: Any valid string text
-  STAFF-LIST-PERMISSION: ultimatedonutsmp.staff.mode.stafflist
+  STAFF-LIST-PERMISSION: economysmp.staff.mode.stafflist
   # The text or value for Random Teleport Permission. Available options: Any valid string text
-  RANDOM-TELEPORT-PERMISSION: ultimatedonutsmp.staff.mode.randomtp
+  RANDOM-TELEPORT-PERMISSION: economysmp.staff.mode.randomtp
   # The text or value for See Vanished Permission. Available options: Any valid string text
-  SEE-VANISHED-PERMISSION: ultimatedonutsmp.staff.mode.seevanished
+  SEE-VANISHED-PERMISSION: economysmp.staff.mode.seevanished
   # The text or value for Others Permission. Available options: Any valid string text
-  OTHERS-PERMISSION: ultimatedonutsmp.staff.mode.others
+  OTHERS-PERMISSION: economysmp.staff.mode.others
   # Configuration section for Hotbar Slots.
   HOTBAR-SLOTS:
     # The numerical value for Vanish. Available options: Any valid integer
@@ -418,7 +418,7 @@ CUSTOM-ITEMS:
     LORE:
     - '&7Right-click a player to ban them'
     EXECUTE-AS: CONSOLE
-    PERMISSION: ultimatedonutsmp.staff.mode.custom.ban
+    PERMISSION: economysmp.staff.mode.custom.ban
     REQUIRE-TARGET: true
     COMMANDS:
     - 'ban {target} Caught by staff'

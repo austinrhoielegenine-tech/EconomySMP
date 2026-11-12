@@ -15,7 +15,7 @@ const tierChoices = Object.entries(tierLeaderboardTypes).map(([value, definition
 export const commands = [
   new SlashCommandBuilder()
     .setName('stats')
-    .setDescription('Show player stats from the UltimateDonutSmp database.')
+    .setDescription('Show player stats from the EconomySMP database.')
     .addStringOption(option =>
       option
         .setName('player')
@@ -24,7 +24,7 @@ export const commands = [
     ),
   new SlashCommandBuilder()
     .setName('leaderboard')
-    .setDescription('Show a top-player leaderboard from the UltimateDonutSmp database.')
+    .setDescription('Show a top-player leaderboard from the EconomySMP database.')
     .addStringOption(option =>
       option
         .setName('type')

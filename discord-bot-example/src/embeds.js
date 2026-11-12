@@ -35,7 +35,7 @@ export function createStatsEmbed(player, requestedBy) {
         inline: false
       }
     )
-    .setFooter({ text: 'UltimateDonutSmp stats' })
+    .setFooter({ text: 'EconomySMP stats' })
     .setTimestamp();
 }
 
@@ -67,7 +67,7 @@ export function createLeaderboardEmbed(typeKey, entries, requestedBy) {
         inline: false
       }
     )
-    .setFooter({ text: 'UltimateDonutSmp leaderboard' })
+    .setFooter({ text: 'EconomySMP leaderboard' })
     .setTimestamp();
 }
 

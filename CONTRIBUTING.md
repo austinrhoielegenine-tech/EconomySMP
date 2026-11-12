@@ -1,12 +1,12 @@
-# Contributing to UltimateDonutSmp
+# Contributing to EconomySMP
 
-Thank you for your interest in contributing to **UltimateDonutSmp**! We welcome bug reports, feature requests, documentation fixes, and pull requests from the community.
+Thank you for your interest in contributing to **EconomySMP**! We welcome bug reports, feature requests, documentation fixes, and pull requests from the community.
 
 ---
 
 ## Code of Conduct & Rules
 
-- **Respect Licensing**: UltimateDonutSmp is released under a proprietary license. Contributions submitted to this repository become part of the project under its existing licensing terms. See [LICENSE.md](LICENSE.md).
+- **Respect Licensing**: EconomySMP is released under a proprietary license. Contributions submitted to this repository become part of the project under its existing licensing terms. See [LICENSE.md](LICENSE.md).
 - **Maintain Clean Code**: Follow the existing Java and Maven project structure. Write readable, well-structured code and keep new code consistent with the surrounding style.
 - **Test Before Submitting**: Make sure the project builds and the unit tests pass (`mvn clean test`, then `mvn package -DskipTests`) before opening a pull request.
 - **Keep Docs In Sync**: If you add or change a command, permission node, or configuration key, update [README.md](README.md) and the matching page under [`docs/wiki/`](docs/wiki) in the same pull request.
@@ -48,7 +48,7 @@ The build produces a single shaded jar in `target/` that detects Paper, Spigot, 
 
 ### 1. Reporting Issues & Suggestions
 
-- Search the existing [GitHub Issues](https://github.com/BeestoXd/UltimateDonutSMP/issues) before opening a new one to avoid duplicates.
+- Search the existing [GitHub Issues](https://github.com/austinrhoielegenine-tech/EconomySMP/issues) before opening a new one to avoid duplicates.
 - Use the matching issue form: **Bug Report**, **Feature Request**, or **Documentation**. Blank issues are disabled.
 - Include the plugin version, server software and version, Java version, stack traces, and clear reproduction steps.
 - For setup questions and general help, use the [Discord community](https://dsc.gg/hellstarr) instead of the issue tracker.
@@ -98,4 +98,4 @@ and `src/main/resources/plugin.yml` consistent with one another.
 
 ---
 
-Thank you for helping make UltimateDonutSmp better!
+Thank you for helping make EconomySMP better!

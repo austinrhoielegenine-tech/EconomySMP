@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `pvp.yml`
 
-This is the official, 100% complete technical setup guide for `pvp.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `pvp.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 For the walkthrough that puts these settings together, see [Ranked PvP Arena](Ranked-PvP-Arena).
@@ -247,7 +247,7 @@ BLOCKED_COMMANDS:
 | :--- | :--- | :--- | :--- | :--- |
 | `BLOCKED_COMMANDS.ENABLED` | `bool` | `true`, `false` | `true` | Master switch. `/pvp` itself is never blocked. |
 | `BLOCKED_COMMANDS.COMMANDS` | `list` | Command labels, with or without the leading slash | shop, sell, ah, auctionhouse, ec, enderchest, orders | An entry covers its subcommands and its plugin-qualified form, so `shop` catches `/shop sell` and `/otherplugin:shop`. |
-| `BLOCKED_COMMANDS.BLOCK_ENDER_CHEST_BLOCK` | `bool` | `true`, `false` | `true` | Closes the second route into the ender chest: right clicking the block. Holders of `ultimatedonutsmp.admin.pvp` bypass both. |
+| `BLOCKED_COMMANDS.BLOCK_ENDER_CHEST_BLOCK` | `bool` | `true`, `false` | `true` | Closes the second route into the ender chest: right clicking the block. Holders of `economysmp.admin.pvp` bypass both. |
 
 ---
 

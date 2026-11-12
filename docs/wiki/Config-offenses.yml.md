@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `offenses.yml`
 
-This is the technical setup guide for `offenses.yml` in **UltimateDonutSMP**.
+This is the technical setup guide for `offenses.yml` in **EconomySMP**.
 The file holds the preset offences staff pick from, and the escalating punishment tiers each one
 runs through. 61 offences ship with it, covering advertising, cheating, chat behaviour and the
 rest; the list is meant to be edited rather than treated as fixed.

@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `anvil-moderation.yml`
 
-This is the official, 100% complete technical setup guide for `anvil-moderation.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `anvil-moderation.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---

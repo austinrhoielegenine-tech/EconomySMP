@@ -1,6 +1,6 @@
 # Crates & Spawners Guide
 
-UltimateDonutSMP provides custom Crates with virtual & physical keys, key-all broadcast timers, Donut-style stacked spawners, Amethyst toolsets, and GUI enchantment workflows.
+EconomySMP provides custom Crates with virtual & physical keys, key-all broadcast timers, Donut-style stacked spawners, Amethyst toolsets, and GUI enchantment workflows.
 
 ---
 
@@ -24,7 +24,7 @@ UltimateDonutSMP provides custom Crates with virtual & physical keys, key-all br
 
 ## Donut-Style Stacked Spawners (`/spawner`)
 
-UltimateDonutSMP includes custom mob spawners engineered for high-performance mob farms without lag:
+EconomySMP includes custom mob spawners engineered for high-performance mob farms without lag:
 
 ### Features:
 - **Spawner Stacking**: Place matching spawners onto an existing spawner to stack them (e.g., `x64 Pig Spawner`).
@@ -43,7 +43,7 @@ UltimateDonutSMP includes custom mob spawners engineered for high-performance mo
 - `/spawner remove` – Remove the spawner block you are looking at. `/spawner forcebreak` does the same thing.
 - `/spawner reload` – Reload `spawners.yml`.
 
-The admin entries need `ultimatedonutsmp.admin.spawner`, which also unlocks the full `/spawner info` breakdown on any spawner. The command itself is gated by `ultimatedonutsmp.command.spawner`, and every player holds that one by default.
+The admin entries need `economysmp.admin.spawner`, which also unlocks the full `/spawner info` breakdown on any spawner. The command itself is gated by `economysmp.command.spawner`, and every player holds that one by default.
 
 ---
 

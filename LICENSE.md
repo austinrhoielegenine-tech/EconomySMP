@@ -1,11 +1,11 @@
 # Custom Proprietary License
 
-Copyright (c) 2026 UltimateDonutSmp. All rights reserved.
+Copyright (c) 2026 EconomySMP. All rights reserved.
 
-UltimateDonutSmp is free, proprietary software.
+EconomySMP is free, proprietary software.
 
 ### 1. Grant of License
-Subject to the terms of this license, you are granted a non-exclusive, non-transferable license to use, download, and run UltimateDonutSmp on your Minecraft server. No fee is charged for this license.
+Subject to the terms of this license, you are granted a non-exclusive, non-transferable license to use, download, and run EconomySMP on your Minecraft server. No fee is charged for this license.
 
 ### 2. Restrictions
 - Redistribution, resale, sublicensing, public mirroring, or unauthorized sharing of the software or its compiled artifacts is strictly prohibited without explicit written permission from the copyright holders.

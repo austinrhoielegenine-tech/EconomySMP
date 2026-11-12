@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `sounds.yml`
 
-This is the official technical setup guide for `sounds.yml` in **UltimateDonutSMP**.
+This is the official technical setup guide for `sounds.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---

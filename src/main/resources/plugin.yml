@@ -1,6 +1,6 @@
-name: UltimateDonutSmp
+name: EconomySMP
 version: ${project.version}
-main: com.bx.ultimateDonutSmp.UltimateDonutSmp
+main: com.archiveaustxn.EconomySMP
 api-version: "1.21"
 folia-supported: true
 depend:
@@ -22,22 +22,22 @@ commands:
   team:
     description: Team management
     usage: /team <create|disband|invite|kick|join|leave|home|sethome|delhome|chat|info|pvp>
-    permission: ultimatedonutsmp.command.team
+    permission: economysmp.command.team
     permission-message: "&cYou do not have permission to use /team."
   chat:
     description: Manage global chat settings
     usage: /chat <help|mute|unmute|delay|clear>
-    permission: ultimatedonutsmp.command.chat
+    permission: economysmp.command.chat
     permission-message: "&cYou do not have permission to use /chat."
   ignore:
     description: Add or remove a player from your ignore list
     usage: /ignore <player|list>
-    permission: ultimatedonutsmp.command.ignore
+    permission: economysmp.command.ignore
     permission-message: "&cYou do not have permission to use /ignore."
   unignore:
     description: Remove a player from your ignore list
     usage: /unignore <player>
-    permission: ultimatedonutsmp.command.unignore
+    permission: economysmp.command.unignore
     permission-message: "&cYou do not have permission to use /unignore."
   msg:
     description: Send a private message
@@ -47,14 +47,14 @@ commands:
     - tell
     - whisper
     - w
-    permission: ultimatedonutsmp.command.msg
+    permission: economysmp.command.msg
     permission-message: "&cYou do not have permission to use /msg."
   reply:
     description: Reply to your last private conversation
     usage: /reply <message>
     aliases:
     - r
-    permission: ultimatedonutsmp.command.reply
+    permission: economysmp.command.reply
     permission-message: "&cYou do not have permission to use /reply."
   pm:
     description: Toggle private messages
@@ -62,196 +62,196 @@ commands:
     aliases:
     - togglepm
     - privatemessages
-    permission: ultimatedonutsmp.command.pm
+    permission: economysmp.command.pm
     permission-message: "&cYou do not have permission to use /pm."
   home:
     description: Teleport to your home
     usage: /home [name]
-    permission: ultimatedonutsmp.command.home
+    permission: economysmp.command.home
     permission-message: "&cYou do not have permission to use /home."
   homes:
     description: List your homes
     usage: /homes
-    permission: ultimatedonutsmp.command.homes
+    permission: economysmp.command.homes
     permission-message: "&cYou do not have permission to use /homes."
   sethome:
     description: Set your home
     usage: /sethome [name]
-    permission: ultimatedonutsmp.command.sethome
+    permission: economysmp.command.sethome
     permission-message: "&cYou do not have permission to use /sethome."
   delhome:
     description: Delete a home
     usage: /delhome <name>
-    permission: ultimatedonutsmp.command.delhome
+    permission: economysmp.command.delhome
     permission-message: "&cYou do not have permission to use /delhome."
   renamehome:
     description: Rename a home
     usage: /renamehome <old> <new>
-    permission: ultimatedonutsmp.command.renamehome
+    permission: economysmp.command.renamehome
     permission-message: "&cYou do not have permission to use /renamehome."
   spawn:
     description: Teleport to spawn
     usage: /spawn [set]
-    permission: ultimatedonutsmp.command.spawn
+    permission: economysmp.command.spawn
     permission-message: "&cYou do not have permission to use /spawn."
   setspawn:
     description: Set server spawn location
     usage: /setspawn
-    permission: ultimatedonutsmp.command.setspawn
+    permission: economysmp.command.setspawn
     permission-message: "&cYou do not have permission to use /setspawn."
   afk:
     description: Go to AFK zone
     usage: /afk [set]
-    permission: ultimatedonutsmp.command.afk
+    permission: economysmp.command.afk
     permission-message: "&cYou do not have permission to use /afk."
   setafk:
     description: Set AFK zone location
     usage: /setafk
-    permission: ultimatedonutsmp.command.setafk
+    permission: economysmp.command.setafk
     permission-message: "&cYou do not have permission to use /setafk."
   rtp:
     description: Random teleport
     usage: /rtp [world]
-    permission: ultimatedonutsmp.command.rtp
+    permission: economysmp.command.rtp
     permission-message: "&cYou do not have permission to use /rtp."
   rtpq:
     description: Join the RTP matchmaking queue
     usage: /rtpq [join|leave]
     aliases:
     - rtpqueue
-    permission: ultimatedonutsmp.command.rtpq
+    permission: economysmp.command.rtpq
     permission-message: "&cYou do not have permission to use /rtpq."
   shop:
     description: Open the shop
     usage: /shop [reload]
-    permission: ultimatedonutsmp.command.shop
+    permission: economysmp.command.shop
     permission-message: "&cYou do not have permission to use /shop."
   shopedit:
     description: Edit a shop menu in game
     usage: /shopedit <menu>
-    permission: ultimatedonutsmp.admin.shop
+    permission: economysmp.admin.shop
     permission-message: "&cYou do not have permission to edit the shop."
   orders:
     description: Open the Orders board
     usage: /orders [my|collect|reload]
-    permission: ultimatedonutsmp.command.orders
+    permission: economysmp.command.orders
     permission-message: "&cYou do not have permission to use /orders."
   duel:
     description: Challenge or manage duels
     usage: /duel [player|accept|deny|claims|reload]
-    permission: ultimatedonutsmp.command.duel
+    permission: economysmp.command.duel
     permission-message: "&cYou do not have permission to use /duel."
   queue:
     description: Open or join the duel queue
     usage: /queue [join|leave]
-    permission: ultimatedonutsmp.command.queue
+    permission: economysmp.command.queue
     permission-message: "&cYou do not have permission to use /queue."
   leave:
     description: Leave a duel or FFA queue/match
     usage: /leave
-    permission: ultimatedonutsmp.command.leave
+    permission: economysmp.command.leave
     permission-message: "&cYou do not have permission to use /leave."
   draw:
     description: Request or accept a duel draw
     usage: /draw
-    permission: ultimatedonutsmp.command.draw
+    permission: economysmp.command.draw
     permission-message: "&cYou do not have permission to use /draw."
   arena:
     description: Manage duel arenas
     usage: /arena <create|delete|setpos1|setpos2|setreturn|setdisplay|enable|disable|queue|list|reload>
     aliases:
     - duelarena
-    permission: ultimatedonutsmp.command.arena
+    permission: economysmp.command.arena
     permission-message: "&cYou do not have permission to use /arena."
   ffa:
     description: Join the instanced FFA queue
     usage: /ffa [join|reload|arena ...]
-    permission: ultimatedonutsmp.command.ffa
+    permission: economysmp.command.ffa
     permission-message: "&cYou do not have permission to use /ffa."
   ffastats:
     description: View FFA stats
     usage: /ffastats [player]
-    permission: ultimatedonutsmp.command.ffastats
+    permission: economysmp.command.ffastats
     permission-message: "&cYou do not have permission to use /ffastats."
   ffaarena:
     description: Manage FFA arenas
     usage: /ffaarena <create|delete|setpos|setdisplay|settings|enable|disable|list|reload>
-    permission: ultimatedonutsmp.command.ffaarena
+    permission: economysmp.command.ffaarena
     permission-message: "&cYou do not have permission to use /ffaarena."
   pvp:
     description: Join the ranked PvP arena
     usage: /pvp [join|leave|kit|stats|top|queue|leaderboard|history|assign|wand|create|setspawn|setspawn2|setlobby|setboundary|schematic|reset|reload]
-    permission: ultimatedonutsmp.command.pvp
+    permission: economysmp.command.pvp
     permission-message: "&cYou do not have permission to use /pvp."
   auctionhouse:
     description: Open the Auction House
     usage: /auctionhouse [sell|my|claims|cancel|reload]
     aliases:
     - ah
-    permission: ultimatedonutsmp.command.auctionhouse
+    permission: economysmp.command.auctionhouse
     permission-message: "&cYou do not have permission to use /auctionhouse."
   enderchest:
     description: Open your custom Ender Chest
     usage: /enderchest [reload]
     aliases:
     - ec
-    permission: ultimatedonutsmp.command.enderchest
+    permission: economysmp.command.enderchest
     permission-message: "&cYou do not have permission to use /enderchest."
   sell:
     description: Open sell menu
     usage: /sell
-    permission: ultimatedonutsmp.command.sell
+    permission: economysmp.command.sell
     permission-message: "&cYou do not have permission to use /sell."
   sellmulti:
     description: Open sell multiplier menu
     usage: /sellmulti [category]
-    permission: ultimatedonutsmp.command.sellmulti
+    permission: economysmp.command.sellmulti
     permission-message: "&cYou do not have permission to use /sellmulti."
   sellmultiplier:
     description: Open sell multiplier menu
     usage: /sellmultiplier [category]
-    permission: ultimatedonutsmp.command.sellmulti
+    permission: economysmp.command.sellmulti
     permission-message: "&cYou do not have permission to use /sellmultiplier."
   sellprogress:
     description: Open sell multiplier progress menu
     usage: /sellprogress [category]
-    permission: ultimatedonutsmp.command.sellprogress
+    permission: economysmp.command.sellprogress
     permission-message: "&cYou do not have permission to use /sellprogress."
   sellhand:
     description: Sell item in hand
     usage: /sellhand [amount]
-    permission: ultimatedonutsmp.command.sellhand
+    permission: economysmp.command.sellhand
     permission-message: "&cYou do not have permission to use /sellhand."
   sellall:
     description: Sell all sellable items
     usage: /sellall
-    permission: ultimatedonutsmp.command.sellall
+    permission: economysmp.command.sellall
     permission-message: "&cYou do not have permission to use /sellall."
   sellhistory:
     description: View sell history
     usage: /sellhistory
-    permission: ultimatedonutsmp.command.sellhistory
+    permission: economysmp.command.sellhistory
     permission-message: "&cYou do not have permission to use /sellhistory."
   topsell:
     description: View admin top sell statistics and economy metrics
     usage: /topsell [gui|items|volume|sellers|export]
     aliases:
     - sellstats
-    permission: ultimatedonutsmp.command.topsell
+    permission: economysmp.command.topsell
     permission-message: "&cYou do not have permission to use /topsell."
   worth:
     description: Open the worth browser or check held item worth
     usage: /worth [hand|reload]
     aliases:
     - prices
-    permission: ultimatedonutsmp.command.worth
+    permission: economysmp.command.worth
     permission-message: "&cYou do not have permission to use /worth."
   meta:
     description: Show the item that is currently the farming meta
     usage: /meta
     aliases:
     - farmingmeta
-    permission: ultimatedonutsmp.command.meta
+    permission: economysmp.command.meta
     permission-message: "&cYou do not have permission to use /meta."
   balance:
     description: Check balance
@@ -259,95 +259,95 @@ commands:
     aliases:
     - bal
     - money
-    permission: ultimatedonutsmp.command.balance
+    permission: economysmp.command.balance
     permission-message: "&cYou do not have permission to use /balance."
   pay:
     description: Pay a player
     usage: /pay <player> <amount>
-    permission: ultimatedonutsmp.command.pay
+    permission: economysmp.command.pay
     permission-message: "&cYou do not have permission to use /pay."
   addmoney:
     description: Add money to a player
     usage: /addmoney <player> <amount>
-    permission: ultimatedonutsmp.command.addmoney
+    permission: economysmp.command.addmoney
     permission-message: "&cYou do not have permission to use /addmoney."
   removemoney:
     description: Remove money from a player
     usage: /removemoney <player> <amount>
-    permission: ultimatedonutsmp.command.removemoney
+    permission: economysmp.command.removemoney
     permission-message: "&cYou do not have permission to use /removemoney."
   setmoney:
     description: Set a player's money balance
     usage: /setmoney <player> <amount>
-    permission: ultimatedonutsmp.command.setmoney
+    permission: economysmp.command.setmoney
     permission-message: "&cYou do not have permission to use /setmoney."
   shards:
     description: Check shards
     usage: /shards [player] | /shards everywhere <status|debug> [player]
-    permission: ultimatedonutsmp.command.shards
+    permission: economysmp.command.shards
     permission-message: "&cYou do not have permission to use /shards."
   shardpay:
     description: Pay shards to a player
     usage: /shardpay <player> <amount>
-    permission: ultimatedonutsmp.command.shardpay
+    permission: economysmp.command.shardpay
     permission-message: "&cYou do not have permission to use /shardpay."
   crate:
     description: Manage crates
     usage: /crate <create|delete|type|open|keys|reload|key|take|set|keyall|add|edit|remove|bind|unbind|info>
-    permission: ultimatedonutsmp.command.crate
+    permission: economysmp.command.crate
     permission-message: "&cYou do not have permission to use /crate."
   crates:
     description: Open the crates menu
     usage: /crates
-    permission: ultimatedonutsmp.command.crates
+    permission: economysmp.command.crates
     permission-message: "&cYou do not have permission to use /crates."
   keys:
     description: Open your crate keys menu
     usage: /keys
-    permission: ultimatedonutsmp.command.keys
+    permission: economysmp.command.keys
     permission-message: "&cYou do not have permission to use /keys."
   stats:
     description: View player stats
     usage: /stats [player]
-    permission: ultimatedonutsmp.command.stats
+    permission: economysmp.command.stats
     permission-message: "&cYou do not have permission to use /stats."
   ping:
     description: Check your ping or another online player's ping
     usage: /ping [player]
-    permission: ultimatedonutsmp.command.ping
+    permission: economysmp.command.ping
     permission-message: "&cYou do not have permission to use /ping."
   playtime:
     description: Check your playtime or another player's playtime
     usage: /playtime [player]
     aliases:
     - pt
-    permission: ultimatedonutsmp.command.playtime
+    permission: economysmp.command.playtime
     permission-message: "&cYou do not have permission to use /playtime."
   freeze:
     description: Freeze or unfreeze a player for moderation
     usage: /freeze <player> | /freeze reload
-    permission: ultimatedonutsmp.command.freeze
+    permission: economysmp.command.freeze
     permission-message: "&cYou do not have permission to use /freeze."
   fly:
     description: Toggle flight mode for yourself or another player
     usage: /fly [player]
-    permission: ultimatedonutsmp.command.fly
+    permission: economysmp.command.fly
     permission-message: "&cYou do not have permission to use /fly."
   flyspeed:
     description: Adjust flying speed for yourself or another player
     usage: /flyspeed <1-10> [player]
     aliases: [fs]
-    permission: ultimatedonutsmp.command.flyspeed
+    permission: economysmp.command.flyspeed
     permission-message: "&cYou do not have permission to use /flyspeed."
   heal:
     description: Restore health for yourself or another player
     usage: /heal [player]
-    permission: ultimatedonutsmp.command.heal
+    permission: economysmp.command.heal
     permission-message: "&cYou do not have permission to use /heal."
   feed:
     description: Restore hunger for yourself or another player
     usage: /feed [player]
-    permission: ultimatedonutsmp.command.feed
+    permission: economysmp.command.feed
     permission-message: "&cYou do not have permission to use /feed."
   gamemode:
     description: Change your gamemode or another online player's gamemode
@@ -358,48 +358,48 @@ commands:
     - gms
     - gma
     - gmsp
-    permission: ultimatedonutsmp.command.gamemode
+    permission: economysmp.command.gamemode
     permission-message: "&cYou do not have permission to use /gamemode."
   staffmode:
     description: Toggle the staff moderation hotbar
     usage: /staffmode [player|reload]
     aliases:
     - staff
-    permission: ultimatedonutsmp.command.staffmode
+    permission: economysmp.command.staffmode
     permission-message: "&cYou do not have permission to use /staffmode."
   stafflist:
     description: Open the online staff list
     usage: /stafflist
-    permission: ultimatedonutsmp.command.stafflist
+    permission: economysmp.command.stafflist
     permission-message: "&cYou do not have permission to use /stafflist."
   staffchat:
     description: Send a message to staff chat
     usage: /staffchat <message>
     aliases:
     - sc
-    permission: ultimatedonutsmp.command.staffchat
+    permission: economysmp.command.staffchat
     permission-message: "&cYou do not have permission to use /staffchat."
   helpop:
     description: Request staff assistance
     usage: /helpop <message>
-    permission: ultimatedonutsmp.command.helpop
+    permission: economysmp.command.helpop
     permission-message: "&cYou do not have permission to use /helpop."
   report:
     description: Report a player to online staff
     usage: /report <player> <reason>
-    permission: ultimatedonutsmp.command.report
+    permission: economysmp.command.report
     permission-message: "&cYou do not have permission to use /report."
   rename:
     description: Rename the item in your hand
     usage: /rename <name...|reset>
-    permission: ultimatedonutsmp.command.rename
+    permission: economysmp.command.rename
     permission-message: "&cYou do not have permission to use /rename."
   randomteleport:
     description: Teleport to a random online player
     usage: /randomteleport
     aliases:
     - randomtp
-    permission: ultimatedonutsmp.command.randomteleport
+    permission: economysmp.command.randomteleport
     permission-message: "&cYou do not have permission to use /randomteleport."
   teleport:
     description: Staff teleport command suite
@@ -408,153 +408,153 @@ commands:
     - tp
     - tphere
     - tpall
-    permission: ultimatedonutsmp.command.teleport
+    permission: economysmp.command.teleport
     permission-message: "&cYou do not have permission to use /teleport."
   alts:
     description: View alternate accounts by shared IP history
     usage: /alts <player>
-    permission: ultimatedonutsmp.command.alts
+    permission: economysmp.command.alts
     permission-message: "&cYou do not have permission to use /alts."
   vanish:
     description: Toggle vanish while in staff mode
     usage: /vanish
-    permission: ultimatedonutsmp.command.vanish
+    permission: economysmp.command.vanish
     permission-message: "&cYou do not have permission to use /vanish."
   invsee:
     description: View another player's inventory
     usage: /invsee <player> | /invsee reload
     aliases:
     - inventorysee
-    permission: ultimatedonutsmp.command.invsee
+    permission: economysmp.command.invsee
     permission-message: "&cYou do not have permission to use /invsee."
   profileviewer:
     description: View a player's profile and homes
     usage: /profileviewer <player>
     aliases:
     - pv
-    permission: ultimatedonutsmp.command.profileviewer
+    permission: economysmp.command.profileviewer
     permission-message: "&cYou do not have permission to use /profileviewer."
   seehomes:
     description: Browse another player's homes and teleport to them
     usage: /seehomes <player>
     aliases:
     - homesee
-    permission: ultimatedonutsmp.command.seehomes
+    permission: economysmp.command.seehomes
     permission-message: "&cYou do not have permission to use /seehomes."
   punishments:
     description: Browse every punishment on the server, or one player's history
     usage: /punishments [player]
     aliases:
     - phistory
-    permission: ultimatedonutsmp.command.punishments
+    permission: economysmp.command.punishments
     permission-message: "&cYou do not have permission to use /punishments."
   offend:
     description: Punish a player using preset offense rules from offenses.yml
     usage: /offend <player> <reason> [time]
-    permission: ultimatedonutsmp.staff.punishments.offend
+    permission: economysmp.staff.punishments.offend
     permission-message: "&cYou do not have permission to use /offend."
   ban:
     description: Ban a player and record punishment history
     usage: /ban <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.ban
+    permission: economysmp.staff.punishments.ban
     permission-message: "&cYou do not have permission to use /ban."
   tempban:
     description: Temporarily ban a player and record punishment history
     usage: '/tempban <player> <time> [reason] (time: 30s, 15m, 2h, 5d, or 5d 15m 30s)'
-    permission: ultimatedonutsmp.staff.punishments.ban
+    permission: economysmp.staff.punishments.ban
     permission-message: "&cYou do not have permission to use /tempban."
   mute:
     description: Mute a player and record punishment history
     usage: /mute <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.mute
+    permission: economysmp.staff.punishments.mute
     permission-message: "&cYou do not have permission to use /mute."
   tempmute:
     description: Temporarily mute a player and record punishment history
     usage: '/tempmute <player> <time> [reason] (time: 30s, 15m, 2h, 5d, or 5d 15m
       30s)'
-    permission: ultimatedonutsmp.staff.punishments.mute
+    permission: economysmp.staff.punishments.mute
     permission-message: "&cYou do not have permission to use /tempmute."
   vcmute:
     description: Mute a player in voice chat and record punishment history
     usage: /vcmute <player> [reason]
-    permission: ultimatedonutsmp.staff.vcmute
+    permission: economysmp.staff.vcmute
     permission-message: "&cYou do not have permission to use /vcmute."
   warn:
     description: Warn a player and record punishment history
     usage: /warn <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.create
+    permission: economysmp.staff.punishments.create
     permission-message: "&cYou do not have permission to use /warn."
   kick:
     description: Kick a player and record punishment history
     usage: /kick <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.create
+    permission: economysmp.staff.punishments.create
     permission-message: "&cYou do not have permission to use /kick."
   blacklist:
     description: Blacklist a player and record punishment history
     usage: /blacklist <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.blacklist
+    permission: economysmp.staff.punishments.blacklist
     permission-message: "&cYou do not have permission to use /blacklist."
   unban:
     description: Remove active ban records for a player
     usage: /unban <player> [reason]
     aliases:
     - pardon
-    permission: ultimatedonutsmp.staff.punishments.unban
+    permission: economysmp.staff.punishments.unban
     permission-message: "&cYou do not have permission to use /unban."
   unmute:
     description: Remove active mute records for a player
     usage: /unmute <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.unmute
+    permission: economysmp.staff.punishments.unmute
     permission-message: "&cYou do not have permission to use /unmute."
   vcunmute:
     description: Remove active voice chat mute records for a player
     usage: /vcunmute <player> [reason]
-    permission: ultimatedonutsmp.staff.vcunmute
+    permission: economysmp.staff.vcunmute
     permission-message: "&cYou do not have permission to use /vcunmute."
   unblacklist:
     description: Remove active blacklist records for a player
     usage: /unblacklist <player> [reason]
-    permission: ultimatedonutsmp.staff.punishments.unblacklist
+    permission: economysmp.staff.punishments.unblacklist
     permission-message: "&cYou do not have permission to use /unblacklist."
   bounty:
     description: Manage bounties
     usage: /bounty <add|set|info|list> [player] [amount]
-    permission: ultimatedonutsmp.command.bounty
+    permission: economysmp.command.bounty
     permission-message: "&cYou do not have permission to use /bounty."
   tpa:
     description: Request teleport to player
     usage: /tpa <player>
-    permission: ultimatedonutsmp.command.tpa
+    permission: economysmp.command.tpa
     permission-message: "&cYou do not have permission to use /tpa."
   tpahere:
     description: Request player to teleport to you
     usage: /tpahere <player>
-    permission: ultimatedonutsmp.command.tpahere
+    permission: economysmp.command.tpahere
     permission-message: "&cYou do not have permission to use /tpahere."
   tpaccept:
     description: Accept a TPA request
     usage: /tpaccept [player]
-    permission: ultimatedonutsmp.command.tpaccept
+    permission: economysmp.command.tpaccept
     permission-message: "&cYou do not have permission to use /tpaccept."
   tpadeny:
     description: Deny a TPA request
     usage: /tpadeny [player]
-    permission: ultimatedonutsmp.command.tpadeny
+    permission: economysmp.command.tpadeny
     permission-message: "&cYou do not have permission to use /tpadeny."
   tpacancel:
     description: Cancel your TPA requests
     usage: /tpacancel
-    permission: ultimatedonutsmp.command.tpacancel
+    permission: economysmp.command.tpacancel
     permission-message: "&cYou do not have permission to use /tpacancel."
   tpauto:
     description: Toggle TPA auto-accept
     usage: /tpauto
-    permission: ultimatedonutsmp.command.tpauto
+    permission: economysmp.command.tpauto
     permission-message: "&cYou do not have permission to use /tpauto."
   tpahereauto:
     description: Toggle TPA Here auto-accept
     usage: /tpahereauto
-    permission: ultimatedonutsmp.command.tpahereauto
+    permission: economysmp.command.tpahereauto
     permission-message: "&cYou do not have permission to use /tpahereauto."
   leaderboard:
     description: View leaderboards
@@ -564,180 +564,180 @@ commands:
     - top
     - leaderboards
     - baltop
-    permission: ultimatedonutsmp.command.leaderboard
+    permission: economysmp.command.leaderboard
     permission-message: "&cYou do not have permission to use /leaderboard."
   warp:
     description: Teleport to a warp
     usage: /warp [name]
-    permission: ultimatedonutsmp.command.warp
+    permission: economysmp.command.warp
     permission-message: "&cYou do not have permission to use /warp."
   warpmanager:
     description: Manage warp points
     usage: /warpmanager <create|delete|list> [name]
-    permission: ultimatedonutsmp.command.warpmanager
+    permission: economysmp.command.warpmanager
     permission-message: "&cYou do not have permission to use /warpmanager."
   portalmanager:
     description: Manage RTP portal triggers
     usage: /portalmanager <list|info|create|delete|setcuboid|setdestination|setdisplay|toggle|setpriority|sethologramhere>
-    permission: ultimatedonutsmp.command.portalmanager
+    permission: economysmp.command.portalmanager
     permission-message: "&cYou do not have permission to use /portalmanager."
   nightvision:
     description: Toggle night vision
     usage: /nightvision
     aliases:
     - nv
-    permission: ultimatedonutsmp.command.nightvision
+    permission: economysmp.command.nightvision
     permission-message: "&cYou do not have permission to use /nightvision."
   phantom:
     description: Toggle phantom spawning
     usage: /phantom
-    permission: ultimatedonutsmp.command.phantom
+    permission: economysmp.command.phantom
     permission-message: "&cYou do not have permission to use /phantom."
   findplayer:
     description: Find a player location
     usage: /findplayer <player>
     aliases:
     - fp
-    permission: ultimatedonutsmp.command.findplayer
+    permission: economysmp.command.findplayer
     permission-message: "&cYou do not have permission to use /findplayer."
   settings:
     description: Open player settings
     usage: /settings
-    permission: ultimatedonutsmp.command.settings
+    permission: economysmp.command.settings
     permission-message: "&cYou do not have permission to use /settings."
   discord:
     description: Get Discord link
     usage: /discord
-    permission: ultimatedonutsmp.command.discord
+    permission: economysmp.command.discord
     permission-message: "&cYou do not have permission to use /discord."
   twitter:
     description: Get Twitter/X link
     usage: /twitter
-    permission: ultimatedonutsmp.command.twitter
+    permission: economysmp.command.twitter
     permission-message: "&cYou do not have permission to use /twitter."
   store:
     description: Get store link
     usage: /store
-    permission: ultimatedonutsmp.command.store
+    permission: economysmp.command.store
     permission-message: "&cYou do not have permission to use /store."
   social:
     description: Get social links
     usage: /social
-    permission: ultimatedonutsmp.command.social
+    permission: economysmp.command.social
     permission-message: "&cYou do not have permission to use /social."
   media:
     description: View media rank requirements
     usage: /media
-    permission: ultimatedonutsmp.command.media
+    permission: economysmp.command.media
     permission-message: "&cYou do not have permission to use /media."
   ranks:
     description: View rank perks
     usage: /ranks
     aliases:
     - rank
-    permission: ultimatedonutsmp.command.ranks
+    permission: economysmp.command.ranks
     permission-message: "&cYou do not have permission to use /ranks."
   rules:
     description: View server rules
     usage: /rules
-    permission: ultimatedonutsmp.command.rules
+    permission: economysmp.command.rules
     permission-message: "&cYou do not have permission to use /rules."
   help:
     description: View help
     usage: /help
-    permission: ultimatedonutsmp.command.help
+    permission: economysmp.command.help
     permission-message: "&cYou do not have permission to use /help."
   servers:
     description: View network server status
     usage: /servers
-    permission: ultimatedonutsmp.command.servers
+    permission: economysmp.command.servers
     permission-message: "&cYou do not have permission to use /servers."
   billford:
     description: Open Billford trade
     usage: /billford
-    permission: ultimatedonutsmp.command.billford
+    permission: economysmp.command.billford
     permission-message: "&cYou do not have permission to use /billford."
   spawner:
     description: Manage Donut-style spawners
     usage: /spawner [give|info|panel|reload|remove|split]
     aliases:
     - spawners
-    permission: ultimatedonutsmp.command.spawner
+    permission: economysmp.command.spawner
     permission-message: "&cYou do not have permission to use /spawner."
   clearlag:
     description: Manually clear lag entities
     usage: /clearlag
-    permission: ultimatedonutsmp.command.clearlag
+    permission: economysmp.command.clearlag
     permission-message: "&cYou do not have permission to use /clearlag."
   cuboid:
     description: Manage cuboid regions
     usage: /cuboid <wand|create|delete|list|setspawn|delspawn|bind <cuboid> <spawn|shard|rtp-zone|rtp-queue> <true|false>|reload>
-    permission: ultimatedonutsmp.command.cuboid
+    permission: economysmp.command.cuboid
     permission-message: "&cYou do not have permission to use /cuboid."
   setwarp:
     description: Set a warp point
     usage: /setwarp <name>
-    permission: ultimatedonutsmp.command.setwarp
+    permission: economysmp.command.setwarp
     permission-message: "&cYou do not have permission to use /setwarp."
   delwarp:
     description: Delete a warp point
     usage: /delwarp <name>
-    permission: ultimatedonutsmp.command.delwarp
+    permission: economysmp.command.delwarp
     permission-message: "&cYou do not have permission to use /delwarp."
   amethysttool:
     description: Manage amethyst tools
     usage: /amethysttool give <player> <type> [duration] | /amethysttool reload
-    permission: ultimatedonutsmp.command.amethysttool
+    permission: economysmp.command.amethysttool
     permission-message: "&cYou do not have permission to use /amethysttool."
-  ultimatedonutsmp:
-    description: UltimateDonutSmp admin command
-    usage: /ultimatedonutsmp <reload|statswipe|optimize>
+  economysmp:
+    description: EconomySMP admin command
+    usage: /economysmp <reload|statswipe|optimize>
     aliases:
     - uds
     - udsmp
-    permission: ultimatedonutsmp.command.ultimatedonutsmp
-    permission-message: "&cYou do not have permission to use /ultimatedonutsmp."
+    permission: economysmp.command.economysmp
+    permission-message: "&cYou do not have permission to use /economysmp."
   ecsee:
     description: ecsee
     usage: /ecsee <player>
-    permission: ultimatedonutsmp.command.ecsee
+    permission: economysmp.command.ecsee
     permission-message: "&cYou do not have permission to use /ecsee."
   logs:
     description: Command logs
-    permission: ultimatedonutsmp.command.logs
+    permission: economysmp.command.logs
     permission-message: "&cYou do not have permission to use /logs."
   chatlog:
     description: Browse public chat for the whole server, or for one player
     usage: /chatlog [player]
-    permission: ultimatedonutsmp.command.chatlog
+    permission: economysmp.command.chatlog
     permission-message: "&cYou do not have permission to use /chatlog."
   addshards:
     description: Command addshards
-    permission: ultimatedonutsmp.command.addshards
+    permission: economysmp.command.addshards
     permission-message: "&cYou do not have permission to use /addshards."
   removeshards:
     description: Command removeshards
-    permission: ultimatedonutsmp.command.removeshards
+    permission: economysmp.command.removeshards
     permission-message: "&cYou do not have permission to use /removeshards."
   setshards:
     description: Command setshards
-    permission: ultimatedonutsmp.command.setshards
+    permission: economysmp.command.setshards
     permission-message: "&cYou do not have permission to use /setshards."
   shardshop:
     description: Command shardshop
-    permission: ultimatedonutsmp.command.shardshop
+    permission: economysmp.command.shardshop
     permission-message: "&cYou do not have permission to use /shardshop."
   create:
     description: Command create
-    permission: ultimatedonutsmp.command.create
+    permission: economysmp.command.create
     permission-message: "&cYou do not have permission to use /create."
   kill:
     description: Command kill
-    permission: ultimatedonutsmp.command.kill
+    permission: economysmp.command.kill
     permission-message: "&cYou do not have permission to use /kill."
   safety:
     description: Command safety
-    permission: ultimatedonutsmp.command.safety
+    permission: economysmp.command.safety
     permission-message: "&cYou do not have permission to use /safety."
   voicechatconsent:
     description: Open the voice chat consent menu
@@ -745,43 +745,43 @@ commands:
     aliases:
     - vcconsent
     - voiceconsent
-    permission: ultimatedonutsmp.command.voicechatconsent
+    permission: economysmp.command.voicechatconsent
     permission-message: "&cYou do not have permission to use /voicechatconsent."
   friends:
     description: Command friends
-    permission: ultimatedonutsmp.command.friends
+    permission: economysmp.command.friends
     permission-message: "&cYou do not have permission to use /friends."
   friend:
     description: Command friend
-    permission: ultimatedonutsmp.command.friend
+    permission: economysmp.command.friend
     permission-message: "&cYou do not have permission to use /friend."
   spawnstash:
     description: Command spawnstash
     aliases:
     - stash
-    permission: ultimatedonutsmp.command.spawnstash
+    permission: economysmp.command.spawnstash
     permission-message: "&cYou do not have permission to use /spawnstash."
   fakeplayer:
     description: Command fakeplayer
     aliases:
     - fplayer
-    permission: ultimatedonutsmp.command.fakeplayer
+    permission: economysmp.command.fakeplayer
     permission-message: "&cYou do not have permission to use /fakeplayer."
   hide:
     description: Command hide
-    permission: ultimatedonutsmp.command.hide
+    permission: economysmp.command.hide
     permission-message: "&cYou do not have permission to use /hide."
   disguise:
     description: Command disguise
-    permission: ultimatedonutsmp.command.disguise
+    permission: economysmp.command.disguise
     permission-message: "&cYou do not have permission to use /disguise."
   maintenance:
     description: Command maintenance
-    permission: ultimatedonutsmp.command.maintenance
+    permission: economysmp.command.maintenance
     permission-message: "&cYou do not have permission to use /maintenance."
   serverwipe:
     description: Command serverwipe
-    permission: ultimatedonutsmp.command.serverwipe
+    permission: economysmp.command.serverwipe
     permission-message: "&cYou do not have permission to use /serverwipe."
   playerwipe:
     description: Wipe everything this plugin stores about one player
@@ -789,7 +789,7 @@ commands:
     aliases:
     - pwipe
     - wipe
-    permission: ultimatedonutsmp.command.playerwipe
+    permission: economysmp.command.playerwipe
     permission-message: "&cYou do not have permission to use /playerwipe."
   playerunwipe:
     description: Restore a wiped player from the backup their wipe left behind
@@ -797,434 +797,434 @@ commands:
     aliases:
     - punwipe
     - unwipe
-    permission: ultimatedonutsmp.command.playerunwipe
+    permission: economysmp.command.playerunwipe
     permission-message: "&cYou do not have permission to use /playerunwipe."
   amod:
     description: Command amod
-    permission: ultimatedonutsmp.command.amod
+    permission: economysmp.command.amod
     permission-message: "&cYou do not have permission to use /amod."
   god:
     description: Toggle god mode for yourself or another online player
     usage: /god [player]
     aliases:
     - godmode
-    permission: ultimatedonutsmp.staff.god
+    permission: economysmp.staff.god
     permission-message: "&cYou do not have permission to use /god."
 permissions:
-  ultimatedonutsmp.admin:
+  economysmp.admin:
     description: Full admin access
     default: op
     children:
-      ultimatedonutsmp.command.*: true
-      ultimatedonutsmp.admin.shop: true
-      ultimatedonutsmp.admin.orders: true
-      ultimatedonutsmp.admin.duels: true
-      ultimatedonutsmp.admin.ffa: true
-      ultimatedonutsmp.admin.pvp: true
-      ultimatedonutsmp.admin.auctionhouse: true
-      ultimatedonutsmp.admin.clearlag: true
-      ultimatedonutsmp.admin.cuboid: true
-      ultimatedonutsmp.admin.warpmanager: true
-      ultimatedonutsmp.admin.portalmanager: true
-      ultimatedonutsmp.admin.setwarp: true
-      ultimatedonutsmp.admin.delwarp: true
-      ultimatedonutsmp.admin.addmoney: true
-      ultimatedonutsmp.admin.removemoney: true
-      ultimatedonutsmp.admin.setmoney: true
-      ultimatedonutsmp.admin.amethysttool: true
-      ultimatedonutsmp.admin.worth: true
-      ultimatedonutsmp.admin.enderchest: true
-      ultimatedonutsmp.admin.freeze: true
-      ultimatedonutsmp.admin.staffmode: true
-      ultimatedonutsmp.admin.invsee: true
-      ultimatedonutsmp.admin.chatlog: true
-      ultimatedonutsmp.admin.spawner: true
-      ultimatedonutsmp.admin.spawner.seeall: true
-      ultimatedonutsmp.admin.crate: true
-      ultimatedonutsmp.admin.crate.reload: true
-      ultimatedonutsmp.admin.crate.keyall: true
-      ultimatedonutsmp.admin.reload: true
-      ultimatedonutsmp.admin.statswipe: true
-      ultimatedonutsmp.admin.playerwipe: true
-      ultimatedonutsmp.admin.playerunwipe: true
-      ultimatedonutsmp.admin.optimize: true
-      ultimatedonutsmp.admin.sellstats: true
-      ultimatedonutsmp.admin.shards: true
-      ultimatedonutsmp.ignore: true
-      ultimatedonutsmp.ignore.bypass: true
-      ultimatedonutsmp.message: true
-      ultimatedonutsmp.message.toggle: true
-      ultimatedonutsmp.message.bypass-disabled: true
-      ultimatedonutsmp.staff.freeze: true
-      ultimatedonutsmp.staff.freeze.alert: true
-      ultimatedonutsmp.staff.freeze.exempt: true
-      ultimatedonutsmp.staff.fly: true
-      ultimatedonutsmp.staff.heal: true
-      ultimatedonutsmp.staff.feed: true
-      ultimatedonutsmp.staff.gamemode: true
-      ultimatedonutsmp.staff.gamemode.others: true
-      ultimatedonutsmp.staff.mode: true
-      ultimatedonutsmp.staff.mode.vanish: true
-      ultimatedonutsmp.staff.mode.stafflist: true
-      ultimatedonutsmp.staff.mode.betterview: true
-      ultimatedonutsmp.staff.mode.randomtp: true
-      ultimatedonutsmp.staff.mode.seevanished: true
-      ultimatedonutsmp.staff.mode.others: true
-      ultimatedonutsmp.staff.chat.use: true
-      ultimatedonutsmp.staff.chat.mute: true
-      ultimatedonutsmp.staff.chat.unmute: true
-      ultimatedonutsmp.staff.chat.delay: true
-      ultimatedonutsmp.staff.chat.clear: true
-      ultimatedonutsmp.staff.chat.bypass.mute: true
-      ultimatedonutsmp.staff.chat.bypass.delay: true
-      ultimatedonutsmp.staff.chat.bypass.filter: true
-      ultimatedonutsmp.chat.color: true
-      ultimatedonutsmp.staff.alerts.receive: true
-      ultimatedonutsmp.staff.alerts.bypass-cooldown: true
-      ultimatedonutsmp.staff.teleport: true
-      ultimatedonutsmp.staff.rename: true
-      ultimatedonutsmp.staff.alts: true
-      ultimatedonutsmp.staff.invsee: true
-      ultimatedonutsmp.staff.profileviewer: true
-      ultimatedonutsmp.staff.seehomes: true
-      ultimatedonutsmp.staff.punishments.view: true
-      ultimatedonutsmp.staff.punishments.create: true
-      ultimatedonutsmp.staff.punishments.remove: true
-      ultimatedonutsmp.staff.punishments.delete: true
-      ultimatedonutsmp.servers: true
-      ultimatedonutsmp.shards.everywhere: true
-      ultimatedonutsmp.admin.ecsee: true
-      ultimatedonutsmp.admin.logs: true
-      ultimatedonutsmp.admin.maintenance: true
-      ultimatedonutsmp.admin.serverwipe: true
-      ultimatedonutsmp.admin.setup: true
-      ultimatedonutsmp.admin.features: true
-  ultimatedonutsmp.servers:
+      economysmp.command.*: true
+      economysmp.admin.shop: true
+      economysmp.admin.orders: true
+      economysmp.admin.duels: true
+      economysmp.admin.ffa: true
+      economysmp.admin.pvp: true
+      economysmp.admin.auctionhouse: true
+      economysmp.admin.clearlag: true
+      economysmp.admin.cuboid: true
+      economysmp.admin.warpmanager: true
+      economysmp.admin.portalmanager: true
+      economysmp.admin.setwarp: true
+      economysmp.admin.delwarp: true
+      economysmp.admin.addmoney: true
+      economysmp.admin.removemoney: true
+      economysmp.admin.setmoney: true
+      economysmp.admin.amethysttool: true
+      economysmp.admin.worth: true
+      economysmp.admin.enderchest: true
+      economysmp.admin.freeze: true
+      economysmp.admin.staffmode: true
+      economysmp.admin.invsee: true
+      economysmp.admin.chatlog: true
+      economysmp.admin.spawner: true
+      economysmp.admin.spawner.seeall: true
+      economysmp.admin.crate: true
+      economysmp.admin.crate.reload: true
+      economysmp.admin.crate.keyall: true
+      economysmp.admin.reload: true
+      economysmp.admin.statswipe: true
+      economysmp.admin.playerwipe: true
+      economysmp.admin.playerunwipe: true
+      economysmp.admin.optimize: true
+      economysmp.admin.sellstats: true
+      economysmp.admin.shards: true
+      economysmp.ignore: true
+      economysmp.ignore.bypass: true
+      economysmp.message: true
+      economysmp.message.toggle: true
+      economysmp.message.bypass-disabled: true
+      economysmp.staff.freeze: true
+      economysmp.staff.freeze.alert: true
+      economysmp.staff.freeze.exempt: true
+      economysmp.staff.fly: true
+      economysmp.staff.heal: true
+      economysmp.staff.feed: true
+      economysmp.staff.gamemode: true
+      economysmp.staff.gamemode.others: true
+      economysmp.staff.mode: true
+      economysmp.staff.mode.vanish: true
+      economysmp.staff.mode.stafflist: true
+      economysmp.staff.mode.betterview: true
+      economysmp.staff.mode.randomtp: true
+      economysmp.staff.mode.seevanished: true
+      economysmp.staff.mode.others: true
+      economysmp.staff.chat.use: true
+      economysmp.staff.chat.mute: true
+      economysmp.staff.chat.unmute: true
+      economysmp.staff.chat.delay: true
+      economysmp.staff.chat.clear: true
+      economysmp.staff.chat.bypass.mute: true
+      economysmp.staff.chat.bypass.delay: true
+      economysmp.staff.chat.bypass.filter: true
+      economysmp.chat.color: true
+      economysmp.staff.alerts.receive: true
+      economysmp.staff.alerts.bypass-cooldown: true
+      economysmp.staff.teleport: true
+      economysmp.staff.rename: true
+      economysmp.staff.alts: true
+      economysmp.staff.invsee: true
+      economysmp.staff.profileviewer: true
+      economysmp.staff.seehomes: true
+      economysmp.staff.punishments.view: true
+      economysmp.staff.punishments.create: true
+      economysmp.staff.punishments.remove: true
+      economysmp.staff.punishments.delete: true
+      economysmp.servers: true
+      economysmp.shards.everywhere: true
+      economysmp.admin.ecsee: true
+      economysmp.admin.logs: true
+      economysmp.admin.maintenance: true
+      economysmp.admin.serverwipe: true
+      economysmp.admin.setup: true
+      economysmp.admin.features: true
+  economysmp.servers:
     description: Access the network servers status menu
     default: false
-  ultimatedonutsmp.admin.clearlag:
+  economysmp.admin.clearlag:
     description: Manually clear lag
     default: op
-  ultimatedonutsmp.admin.duels:
+  economysmp.admin.duels:
     description: Manage duel system and arenas
     default: op
-  ultimatedonutsmp.admin.ffa:
+  economysmp.admin.ffa:
     description: Manage FFA system and arenas
     default: op
-  ultimatedonutsmp.admin.pvp:
+  economysmp.admin.pvp:
     description: Manage the ranked PvP arena and its kits
     default: op
-  ultimatedonutsmp.admin.cuboid:
+  economysmp.admin.cuboid:
     description: Manage cuboid regions
     default: op
-  ultimatedonutsmp.admin.warpmanager:
+  economysmp.admin.warpmanager:
     description: Manage public warp points
     default: op
-  ultimatedonutsmp.admin.portalmanager:
+  economysmp.admin.portalmanager:
     description: Manage RTP portal triggers
     default: op
-  ultimatedonutsmp.admin.setwarp:
+  economysmp.admin.setwarp:
     description: Set warp points
     default: op
-  ultimatedonutsmp.admin.delwarp:
+  economysmp.admin.delwarp:
     description: Delete warp points
     default: op
-  ultimatedonutsmp.admin.addmoney:
+  economysmp.admin.addmoney:
     description: Add money to player balances
     default: op
-  ultimatedonutsmp.admin.removemoney:
+  economysmp.admin.removemoney:
     description: Remove money from player balances
     default: op
-  ultimatedonutsmp.admin.setmoney:
+  economysmp.admin.setmoney:
     description: Set player balances
     default: op
-  ultimatedonutsmp.admin.shop:
+  economysmp.admin.shop:
     description: Reload and validate shop settings
     default: op
-  ultimatedonutsmp.admin.orders:
+  economysmp.admin.orders:
     description: Reload and manage Orders settings
     default: op
-  ultimatedonutsmp.admin.auctionhouse:
+  economysmp.admin.auctionhouse:
     description: Reload Auction House settings
     default: op
-  ultimatedonutsmp.admin.amethysttool:
+  economysmp.admin.amethysttool:
     description: Manage and give amethyst tools
     default: op
-  ultimatedonutsmp.admin.worth:
+  economysmp.admin.worth:
     description: Reload worth settings
     default: op
-  ultimatedonutsmp.admin.enderchest:
+  economysmp.admin.enderchest:
     description: Reload Ender Chest settings
     default: op
-  ultimatedonutsmp.admin.freeze:
+  economysmp.admin.freeze:
     description: Reload and administer Freeze settings
     default: op
-  ultimatedonutsmp.admin.staffmode:
+  economysmp.admin.staffmode:
     description: Reload and administer Staff Mode settings
     default: op
-  ultimatedonutsmp.admin.invsee:
+  economysmp.admin.invsee:
     description: Reload and administer Invsee settings
     default: op
-  ultimatedonutsmp.admin.spawner:
+  economysmp.admin.spawner:
     description: Manage internal spawner systems
     default: op
-  ultimatedonutsmp.admin.spawner.seeall:
+  economysmp.admin.spawner.seeall:
     description: Bypass spawner anti-ESP concealment
     default: op
-  ultimatedonutsmp.spawner.bypass:
+  economysmp.spawner.bypass:
     description: Break spawners without a Silk Touch pickaxe while REQUIRE_SILK_TOUCH is enabled
     default: false
-  ultimatedonutsmp.admin.crate:
+  economysmp.admin.crate:
     description: Manage crate balances, settings, and chest bindings
     default: op
-  ultimatedonutsmp.admin.crate.reload:
+  economysmp.admin.crate.reload:
     description: Reload crate settings
     default: op
-  ultimatedonutsmp.admin.crate.keyall:
+  economysmp.admin.crate.keyall:
     description: Trigger crate key-all rewards manually
     default: op
-  ultimatedonutsmp.admin.reload:
-    description: Reload all UltimateDonutSmp configuration files
+  economysmp.admin.reload:
+    description: Reload all EconomySMP configuration files
     default: op
-  ultimatedonutsmp.admin.statswipe:
+  economysmp.admin.statswipe:
     description: Open and execute Stats Wipe tools
     default: op
-  ultimatedonutsmp.admin.playerwipe:
+  economysmp.admin.playerwipe:
     description: Preview and wipe a single player's stored data
     default: op
-  ultimatedonutsmp.admin.playerunwipe:
+  economysmp.admin.playerunwipe:
     description: Preview and restore a wiped player's stored data
     default: op
-  ultimatedonutsmp.admin.optimize:
+  economysmp.admin.optimize:
     description: View and reload runtime optimization controls
     default: op
-  ultimatedonutsmp.admin.setup:
+  economysmp.admin.setup:
     description: Run the setup tools and set the spawn and AFK zone locations
     default: op
-  ultimatedonutsmp.admin.features:
+  economysmp.admin.features:
     description: Manage feature toggles
     default: op
-  ultimatedonutsmp.admin.shards:
+  economysmp.admin.shards:
     description: Inspect Shards Everywhere eligibility and status
     default: op
-  ultimatedonutsmp.staff.freeze:
+  economysmp.staff.freeze:
     description: Freeze and unfreeze players for moderation purposes
     default: op
-  ultimatedonutsmp.staff.freeze.alert:
+  economysmp.staff.freeze.alert:
     description: Receive freeze moderation alerts
     default: op
-  ultimatedonutsmp.staff.freeze.exempt:
+  economysmp.staff.freeze.exempt:
     description: Cannot be frozen by non-admin staff
     default: op
-  ultimatedonutsmp.staff.fly:
+  economysmp.staff.fly:
     description: Toggle flight mode for yourself or another player
     default: op
-  ultimatedonutsmp.staff.flyspeed:
+  economysmp.staff.flyspeed:
     description: Adjust flying speed for yourself or another player
     default: op
-  ultimatedonutsmp.staff.god:
+  economysmp.staff.god:
     description: Toggle god mode for yourself or another online player
     default: op
-  ultimatedonutsmp.staff.heal:
+  economysmp.staff.heal:
     description: Restore health for yourself or another player
     default: op
-  ultimatedonutsmp.staff.feed:
+  economysmp.staff.feed:
     description: Restore hunger for yourself or another player
     default: op
-  ultimatedonutsmp.staff.gamemode:
+  economysmp.staff.gamemode:
     description: Change your own gamemode
     default: op
-  ultimatedonutsmp.staff.gamemode.others:
+  economysmp.staff.gamemode.others:
     description: Change another online player's gamemode
     default: op
-  ultimatedonutsmp.staff.mode:
+  economysmp.staff.mode:
     description: Full staff access for Staff Mode and staff utility commands
     default: op
     children:
-      ultimatedonutsmp.staff.freeze: true
-      ultimatedonutsmp.staff.freeze.alert: true
-      ultimatedonutsmp.staff.fly: true
-      ultimatedonutsmp.staff.flyspeed: true
-      ultimatedonutsmp.staff.heal: true
-      ultimatedonutsmp.staff.feed: true
-      ultimatedonutsmp.staff.gamemode: true
-      ultimatedonutsmp.staff.gamemode.others: true
-      ultimatedonutsmp.staff.mode.vanish: true
-      ultimatedonutsmp.staff.mode.stafflist: true
-      ultimatedonutsmp.staff.mode.betterview: true
-      ultimatedonutsmp.staff.mode.randomtp: true
-      ultimatedonutsmp.staff.mode.seevanished: true
-      ultimatedonutsmp.staff.mode.others: true
-      ultimatedonutsmp.staff.chat.use: true
-      ultimatedonutsmp.chat.color: true
-      ultimatedonutsmp.staff.teleport: true
-      ultimatedonutsmp.staff.rename: true
-      ultimatedonutsmp.staff.alts: true
-      ultimatedonutsmp.staff.alerts.receive: true
-      ultimatedonutsmp.staff.alerts.bypass-cooldown: true
-      ultimatedonutsmp.staff.invsee: true
-      ultimatedonutsmp.staff.profileviewer: true
-      ultimatedonutsmp.staff.seehomes: true
-      ultimatedonutsmp.staff.punishments.view: true
-      ultimatedonutsmp.staff.punishments.create: true
-      ultimatedonutsmp.staff.punishments.remove: true
-      ultimatedonutsmp.staff.god: true
-  ultimatedonutsmp.staff.mode.others:
+      economysmp.staff.freeze: true
+      economysmp.staff.freeze.alert: true
+      economysmp.staff.fly: true
+      economysmp.staff.flyspeed: true
+      economysmp.staff.heal: true
+      economysmp.staff.feed: true
+      economysmp.staff.gamemode: true
+      economysmp.staff.gamemode.others: true
+      economysmp.staff.mode.vanish: true
+      economysmp.staff.mode.stafflist: true
+      economysmp.staff.mode.betterview: true
+      economysmp.staff.mode.randomtp: true
+      economysmp.staff.mode.seevanished: true
+      economysmp.staff.mode.others: true
+      economysmp.staff.chat.use: true
+      economysmp.chat.color: true
+      economysmp.staff.teleport: true
+      economysmp.staff.rename: true
+      economysmp.staff.alts: true
+      economysmp.staff.alerts.receive: true
+      economysmp.staff.alerts.bypass-cooldown: true
+      economysmp.staff.invsee: true
+      economysmp.staff.profileviewer: true
+      economysmp.staff.seehomes: true
+      economysmp.staff.punishments.view: true
+      economysmp.staff.punishments.create: true
+      economysmp.staff.punishments.remove: true
+      economysmp.staff.god: true
+  economysmp.staff.mode.others:
     description: Toggle staff mode for other players
     default: op
-  ultimatedonutsmp.staff.mode.vanish:
+  economysmp.staff.mode.vanish:
     description: Toggle vanish from the staff mode hotbar
     default: op
-  ultimatedonutsmp.staff.mode.stafflist:
+  economysmp.staff.mode.stafflist:
     description: Open the staff list from the staff mode hotbar
     default: op
-  ultimatedonutsmp.staff.mode.betterview:
+  economysmp.staff.mode.betterview:
     description: Toggle better view from the staff mode hotbar
     default: op
-  ultimatedonutsmp.staff.mode.randomtp:
+  economysmp.staff.mode.randomtp:
     description: Teleport to a random player from the staff mode hotbar
     default: op
-  ultimatedonutsmp.staff.mode.seevanished:
+  economysmp.staff.mode.seevanished:
     description: See staff members who are vanished
     default: op
-  ultimatedonutsmp.staff.chat.use:
+  economysmp.staff.chat.use:
     description: Send and receive network staff chat
     default: op
-  ultimatedonutsmp.staff.chat.mute:
+  economysmp.staff.chat.mute:
     description: Mute the global chat
     default: op
-  ultimatedonutsmp.staff.chat.unmute:
+  economysmp.staff.chat.unmute:
     description: Unmute the global chat
     default: op
-  ultimatedonutsmp.staff.chat.delay:
+  economysmp.staff.chat.delay:
     description: Configure global chat delay
     default: op
-  ultimatedonutsmp.staff.chat.clear:
+  economysmp.staff.chat.clear:
     description: Clear the global chat visually
     default: op
-  ultimatedonutsmp.staff.chat.bypass.mute:
+  economysmp.staff.chat.bypass.mute:
     description: Bypass the global chat mute
     default: op
-  ultimatedonutsmp.staff.chat.bypass.delay:
+  economysmp.staff.chat.bypass.delay:
     description: Bypass the global chat delay
     default: op
-  ultimatedonutsmp.staff.chat.bypass.filter:
+  economysmp.staff.chat.bypass.filter:
     description: Bypass global chat filters
     default: op
-  ultimatedonutsmp.helpop:
+  economysmp.helpop:
     description: Use helpop to request staff assistance
     default: true
-  ultimatedonutsmp.report:
+  economysmp.report:
     description: Report players to staff
     default: true
-  ultimatedonutsmp.staff.alerts.receive:
+  economysmp.staff.alerts.receive:
     description: Receive staff alerts from helpop and report
     default: op
     children:
-      ultimatedonutsmp.staff.helpop.receive: true
-      ultimatedonutsmp.staff.report.receive: true
-  ultimatedonutsmp.staff.helpop.receive:
+      economysmp.staff.helpop.receive: true
+      economysmp.staff.report.receive: true
+  economysmp.staff.helpop.receive:
     description: Receive helpop alerts
     default: op
-  ultimatedonutsmp.staff.report.receive:
+  economysmp.staff.report.receive:
     description: Receive report alerts
     default: op
-  ultimatedonutsmp.staff.alerts.bypass-cooldown:
+  economysmp.staff.alerts.bypass-cooldown:
     description: Bypass helpop and report cooldowns
     default: op
-  ultimatedonutsmp.staff.teleport:
+  economysmp.staff.teleport:
     description: Access staff teleport commands
     default: op
-  ultimatedonutsmp.staff.rename:
+  economysmp.staff.rename:
     description: Rename held items
     default: op
-  ultimatedonutsmp.staff.alts:
+  economysmp.staff.alts:
     description: View alternate accounts by shared IP history
     default: op
-  ultimatedonutsmp.staff.invsee:
+  economysmp.staff.invsee:
     description: View other players' inventories for moderation purposes
     default: op
-  ultimatedonutsmp.staff.invsee.modify:
+  economysmp.staff.invsee.modify:
     description: Reserved for future editable Invsee sessions
     default: op
-  ultimatedonutsmp.staff.profileviewer:
+  economysmp.staff.profileviewer:
     description: View player profiles and homes for moderation purposes
     default: op
-  ultimatedonutsmp.staff.seehomes:
+  economysmp.staff.seehomes:
     description: Browse any player's homes and teleport to them
     default: op
-  ultimatedonutsmp.staff.punishments.view:
+  economysmp.staff.punishments.view:
     description: View punishment history for moderation purposes
     default: op
-  ultimatedonutsmp.staff.punishments.create:
+  economysmp.staff.punishments.create:
     description: Create punishment records and apply punishment actions
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.ban: true
-      ultimatedonutsmp.staff.punishments.mute: true
-      ultimatedonutsmp.staff.vcmute: true
-      ultimatedonutsmp.staff.punishments.blacklist: true
-  ultimatedonutsmp.staff.punishments.remove:
+      economysmp.staff.punishments.ban: true
+      economysmp.staff.punishments.mute: true
+      economysmp.staff.vcmute: true
+      economysmp.staff.punishments.blacklist: true
+  economysmp.staff.punishments.remove:
     description: Remove active punishment records
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.unban: true
-      ultimatedonutsmp.staff.punishments.unmute: true
-      ultimatedonutsmp.staff.vcunmute: true
-      ultimatedonutsmp.staff.punishments.unblacklist: true
-  ultimatedonutsmp.staff.punishments.delete:
+      economysmp.staff.punishments.unban: true
+      economysmp.staff.punishments.unmute: true
+      economysmp.staff.vcunmute: true
+      economysmp.staff.punishments.unblacklist: true
+  economysmp.staff.punishments.delete:
     description: Delete punishment history records from the GUI
     default: op
-  ultimatedonutsmp.admin.punishments.exempt:
+  economysmp.admin.punishments.exempt:
     description: Cannot be punished by staff who lack the exempt bypass
     default: op
-  ultimatedonutsmp.admin.punishments.exempt.bypass:
+  economysmp.admin.punishments.exempt.bypass:
     description: Punish players who are exempt from being punished
     default: op
-  ultimatedonutsmp.shards.everywhere:
+  economysmp.shards.everywhere:
     description: Receive passive Shards Everywhere rewards
     default: false
-  ultimatedonutsmp.friends:
+  economysmp.friends:
     description: Access to friends feature
     default: true
-  ultimatedonutsmp.enderchest:
+  economysmp.enderchest:
     description: Open the custom Ender Chest command
     default: true
-  ultimatedonutsmp.ignore:
+  economysmp.ignore:
     description: Add and remove players from your ignore list
     default: true
-  ultimatedonutsmp.ignore.bypass:
+  economysmp.ignore.bypass:
     description: Bypass private-message ignore checks
     default: op
-  ultimatedonutsmp.message:
+  economysmp.message:
     description: Send and reply to private messages
     default: true
-  ultimatedonutsmp.message.toggle:
+  economysmp.message.toggle:
     description: Toggle private message receiving
     default: true
-  ultimatedonutsmp.message.bypass-disabled:
+  economysmp.message.bypass-disabled:
     description: Bypass target private-message disabled checks
     default: op
-  ultimatedonutsmp.chat.color:
+  economysmp.chat.color:
     description: Use colour codes and gradients in private messages and staff chat
     default: op
-  ultimatedonutsmp.staff.punishments.ban:
+  economysmp.staff.punishments.ban:
     default: false
-  ultimatedonutsmp.staff.punishments.mute:
+  economysmp.staff.punishments.mute:
     default: false
-  ultimatedonutsmp.staff.punishments.blacklist:
+  economysmp.staff.punishments.blacklist:
     default: false
-  ultimatedonutsmp.staff.punishments.unban:
+  economysmp.staff.punishments.unban:
     default: false
-  ultimatedonutsmp.staff.punishments.unmute:
+  economysmp.staff.punishments.unmute:
     default: false
-  ultimatedonutsmp.staff.punishments.unblacklist:
+  economysmp.staff.punishments.unblacklist:
     default: false
-  ultimatedonutsmp.staff.vcmute:
+  economysmp.staff.vcmute:
     default: false
-  ultimatedonutsmp.staff.vcunmute:
+  economysmp.staff.vcunmute:
     default: false
-  ultimatedonutsmp.admin.ecsee:
+  economysmp.admin.ecsee:
     default: op
   rank.media:
     description: Display configurable Media tablist badge
@@ -1235,25 +1235,25 @@ permissions:
   rank.media.include:
     description: Include player in media badge handling
     default: false
-  ultimatedonutsmp.auctionhouse.use:
+  economysmp.auctionhouse.use:
     description: Open the Auction House menu
     default: true
-  ultimatedonutsmp.auctionhouse.buy:
+  economysmp.auctionhouse.buy:
     description: Buy items from the Auction House
     default: true
-  ultimatedonutsmp.auctionhouse.sell:
+  economysmp.auctionhouse.sell:
     description: Sell items on the Auction House
     default: true
-  ultimatedonutsmp.auctionhouse.my:
+  economysmp.auctionhouse.my:
     description: View own listings in the Auction House
     default: true
-  ultimatedonutsmp.auctionhouse.claims:
+  economysmp.auctionhouse.claims:
     description: View and collect claims in the Auction House
     default: true
-  ultimatedonutsmp.auctionhouse.cancel:
+  economysmp.auctionhouse.cancel:
     description: Cancel own listings in the Auction House
     default: true
-  ultimatedonutsmp.auctionhouse.limit:
+  economysmp.auctionhouse.limit:
     description: Check listing limits in the Auction House
     default: true
   donutauction.use:
@@ -1278,602 +1278,602 @@ permissions:
     description: Check listing limits in the Auction House (alias)
     default: true
 
-  ultimatedonutsmp.command.*:
-    description: Full access to all UltimateDonutSmp commands
+  economysmp.command.*:
+    description: Full access to all EconomySMP commands
     default: op
     children:
-      ultimatedonutsmp.command.team: true
-      ultimatedonutsmp.command.chat: true
-      ultimatedonutsmp.command.ignore: true
-      ultimatedonutsmp.command.unignore: true
-      ultimatedonutsmp.command.msg: true
-      ultimatedonutsmp.command.reply: true
-      ultimatedonutsmp.command.pm: true
-      ultimatedonutsmp.command.home: true
-      ultimatedonutsmp.command.homes: true
-      ultimatedonutsmp.command.sethome: true
-      ultimatedonutsmp.command.delhome: true
-      ultimatedonutsmp.command.renamehome: true
-      ultimatedonutsmp.command.spawn: true
-      ultimatedonutsmp.command.setspawn: true
-      ultimatedonutsmp.command.afk: true
-      ultimatedonutsmp.command.setafk: true
-      ultimatedonutsmp.command.rtp: true
-      ultimatedonutsmp.command.rtpq: true
-      ultimatedonutsmp.command.shop: true
-      ultimatedonutsmp.command.orders: true
-      ultimatedonutsmp.command.duel: true
-      ultimatedonutsmp.command.queue: true
-      ultimatedonutsmp.command.leave: true
-      ultimatedonutsmp.command.draw: true
-      ultimatedonutsmp.command.arena: true
-      ultimatedonutsmp.command.ffa: true
-      ultimatedonutsmp.command.ffastats: true
-      ultimatedonutsmp.command.ffaarena: true
-      ultimatedonutsmp.command.pvp: true
-      ultimatedonutsmp.command.auctionhouse: true
-      ultimatedonutsmp.command.enderchest: true
-      ultimatedonutsmp.command.sell: true
-      ultimatedonutsmp.command.sellmulti: true
-      ultimatedonutsmp.command.sellprogress: true
-      ultimatedonutsmp.command.sellhand: true
-      ultimatedonutsmp.command.sellall: true
-      ultimatedonutsmp.command.sellhistory: true
-      ultimatedonutsmp.command.topsell: true
-      ultimatedonutsmp.command.worth: true
-      ultimatedonutsmp.command.meta: true
-      ultimatedonutsmp.command.balance: true
-      ultimatedonutsmp.command.pay: true
-      ultimatedonutsmp.command.addmoney: true
-      ultimatedonutsmp.command.removemoney: true
-      ultimatedonutsmp.command.setmoney: true
-      ultimatedonutsmp.command.shards: true
-      ultimatedonutsmp.command.shardpay: true
-      ultimatedonutsmp.command.crate: true
-      ultimatedonutsmp.command.crates: true
-      ultimatedonutsmp.command.keys: true
-      ultimatedonutsmp.command.stats: true
-      ultimatedonutsmp.command.ping: true
-      ultimatedonutsmp.command.playtime: true
-      ultimatedonutsmp.command.freeze: true
-      ultimatedonutsmp.command.fly: true
-      ultimatedonutsmp.command.heal: true
-      ultimatedonutsmp.command.feed: true
-      ultimatedonutsmp.command.gamemode: true
-      ultimatedonutsmp.command.staffmode: true
-      ultimatedonutsmp.command.stafflist: true
-      ultimatedonutsmp.command.staffchat: true
-      ultimatedonutsmp.command.helpop: true
-      ultimatedonutsmp.command.report: true
-      ultimatedonutsmp.command.rename: true
-      ultimatedonutsmp.command.randomteleport: true
-      ultimatedonutsmp.command.teleport: true
-      ultimatedonutsmp.command.alts: true
-      ultimatedonutsmp.command.vanish: true
-      ultimatedonutsmp.command.invsee: true
-      ultimatedonutsmp.command.profileviewer: true
-      ultimatedonutsmp.command.seehomes: true
-      ultimatedonutsmp.command.punishments: true
-      ultimatedonutsmp.command.ban: true
-      ultimatedonutsmp.command.tempban: true
-      ultimatedonutsmp.command.mute: true
-      ultimatedonutsmp.command.tempmute: true
-      ultimatedonutsmp.command.warn: true
-      ultimatedonutsmp.command.kick: true
-      ultimatedonutsmp.command.blacklist: true
-      ultimatedonutsmp.command.unban: true
-      ultimatedonutsmp.command.unmute: true
-      ultimatedonutsmp.command.unblacklist: true
-      ultimatedonutsmp.command.bounty: true
-      ultimatedonutsmp.command.tpa: true
-      ultimatedonutsmp.command.tpahere: true
-      ultimatedonutsmp.command.tpaccept: true
-      ultimatedonutsmp.command.tpadeny: true
-      ultimatedonutsmp.command.tpacancel: true
-      ultimatedonutsmp.command.tpauto: true
-      ultimatedonutsmp.command.tpahereauto: true
-      ultimatedonutsmp.command.leaderboard: true
-      ultimatedonutsmp.command.warp: true
-      ultimatedonutsmp.command.warpmanager: true
-      ultimatedonutsmp.command.portalmanager: true
-      ultimatedonutsmp.command.nightvision: true
-      ultimatedonutsmp.command.phantom: true
-      ultimatedonutsmp.command.findplayer: true
-      ultimatedonutsmp.command.settings: true
-      ultimatedonutsmp.command.discord: true
-      ultimatedonutsmp.command.twitter: true
-      ultimatedonutsmp.command.store: true
-      ultimatedonutsmp.command.social: true
-      ultimatedonutsmp.command.media: true
-      ultimatedonutsmp.command.ranks: true
-      ultimatedonutsmp.command.rules: true
-      ultimatedonutsmp.command.help: true
-      ultimatedonutsmp.command.servers: true
-      ultimatedonutsmp.command.billford: true
-      ultimatedonutsmp.command.spawner: true
-      ultimatedonutsmp.command.clearlag: true
-      ultimatedonutsmp.command.cuboid: true
-      ultimatedonutsmp.command.setwarp: true
-      ultimatedonutsmp.command.delwarp: true
-      ultimatedonutsmp.command.amethysttool: true
-      ultimatedonutsmp.command.ultimatedonutsmp: true
-      ultimatedonutsmp.command.ecsee: true
-      ultimatedonutsmp.command.logs: true
-      ultimatedonutsmp.command.chatlog: true
-      ultimatedonutsmp.command.addshards: true
-      ultimatedonutsmp.command.removeshards: true
-      ultimatedonutsmp.command.setshards: true
-      ultimatedonutsmp.command.shardshop: true
-      ultimatedonutsmp.command.create: true
-      ultimatedonutsmp.command.kill: true
-      ultimatedonutsmp.command.safety: true
-      ultimatedonutsmp.command.voicechatconsent: true
-      ultimatedonutsmp.command.friends: true
-      ultimatedonutsmp.command.friend: true
-      ultimatedonutsmp.command.spawnstash: true
-      ultimatedonutsmp.command.fakeplayer: true
-      ultimatedonutsmp.command.hide: true
-      ultimatedonutsmp.command.disguise: true
-      ultimatedonutsmp.command.maintenance: true
-      ultimatedonutsmp.command.serverwipe: true
-      ultimatedonutsmp.command.playerwipe: true
-      ultimatedonutsmp.command.playerunwipe: true
-      ultimatedonutsmp.command.amod: true
-  ultimatedonutsmp.command.team:
+      economysmp.command.team: true
+      economysmp.command.chat: true
+      economysmp.command.ignore: true
+      economysmp.command.unignore: true
+      economysmp.command.msg: true
+      economysmp.command.reply: true
+      economysmp.command.pm: true
+      economysmp.command.home: true
+      economysmp.command.homes: true
+      economysmp.command.sethome: true
+      economysmp.command.delhome: true
+      economysmp.command.renamehome: true
+      economysmp.command.spawn: true
+      economysmp.command.setspawn: true
+      economysmp.command.afk: true
+      economysmp.command.setafk: true
+      economysmp.command.rtp: true
+      economysmp.command.rtpq: true
+      economysmp.command.shop: true
+      economysmp.command.orders: true
+      economysmp.command.duel: true
+      economysmp.command.queue: true
+      economysmp.command.leave: true
+      economysmp.command.draw: true
+      economysmp.command.arena: true
+      economysmp.command.ffa: true
+      economysmp.command.ffastats: true
+      economysmp.command.ffaarena: true
+      economysmp.command.pvp: true
+      economysmp.command.auctionhouse: true
+      economysmp.command.enderchest: true
+      economysmp.command.sell: true
+      economysmp.command.sellmulti: true
+      economysmp.command.sellprogress: true
+      economysmp.command.sellhand: true
+      economysmp.command.sellall: true
+      economysmp.command.sellhistory: true
+      economysmp.command.topsell: true
+      economysmp.command.worth: true
+      economysmp.command.meta: true
+      economysmp.command.balance: true
+      economysmp.command.pay: true
+      economysmp.command.addmoney: true
+      economysmp.command.removemoney: true
+      economysmp.command.setmoney: true
+      economysmp.command.shards: true
+      economysmp.command.shardpay: true
+      economysmp.command.crate: true
+      economysmp.command.crates: true
+      economysmp.command.keys: true
+      economysmp.command.stats: true
+      economysmp.command.ping: true
+      economysmp.command.playtime: true
+      economysmp.command.freeze: true
+      economysmp.command.fly: true
+      economysmp.command.heal: true
+      economysmp.command.feed: true
+      economysmp.command.gamemode: true
+      economysmp.command.staffmode: true
+      economysmp.command.stafflist: true
+      economysmp.command.staffchat: true
+      economysmp.command.helpop: true
+      economysmp.command.report: true
+      economysmp.command.rename: true
+      economysmp.command.randomteleport: true
+      economysmp.command.teleport: true
+      economysmp.command.alts: true
+      economysmp.command.vanish: true
+      economysmp.command.invsee: true
+      economysmp.command.profileviewer: true
+      economysmp.command.seehomes: true
+      economysmp.command.punishments: true
+      economysmp.command.ban: true
+      economysmp.command.tempban: true
+      economysmp.command.mute: true
+      economysmp.command.tempmute: true
+      economysmp.command.warn: true
+      economysmp.command.kick: true
+      economysmp.command.blacklist: true
+      economysmp.command.unban: true
+      economysmp.command.unmute: true
+      economysmp.command.unblacklist: true
+      economysmp.command.bounty: true
+      economysmp.command.tpa: true
+      economysmp.command.tpahere: true
+      economysmp.command.tpaccept: true
+      economysmp.command.tpadeny: true
+      economysmp.command.tpacancel: true
+      economysmp.command.tpauto: true
+      economysmp.command.tpahereauto: true
+      economysmp.command.leaderboard: true
+      economysmp.command.warp: true
+      economysmp.command.warpmanager: true
+      economysmp.command.portalmanager: true
+      economysmp.command.nightvision: true
+      economysmp.command.phantom: true
+      economysmp.command.findplayer: true
+      economysmp.command.settings: true
+      economysmp.command.discord: true
+      economysmp.command.twitter: true
+      economysmp.command.store: true
+      economysmp.command.social: true
+      economysmp.command.media: true
+      economysmp.command.ranks: true
+      economysmp.command.rules: true
+      economysmp.command.help: true
+      economysmp.command.servers: true
+      economysmp.command.billford: true
+      economysmp.command.spawner: true
+      economysmp.command.clearlag: true
+      economysmp.command.cuboid: true
+      economysmp.command.setwarp: true
+      economysmp.command.delwarp: true
+      economysmp.command.amethysttool: true
+      economysmp.command.economysmp: true
+      economysmp.command.ecsee: true
+      economysmp.command.logs: true
+      economysmp.command.chatlog: true
+      economysmp.command.addshards: true
+      economysmp.command.removeshards: true
+      economysmp.command.setshards: true
+      economysmp.command.shardshop: true
+      economysmp.command.create: true
+      economysmp.command.kill: true
+      economysmp.command.safety: true
+      economysmp.command.voicechatconsent: true
+      economysmp.command.friends: true
+      economysmp.command.friend: true
+      economysmp.command.spawnstash: true
+      economysmp.command.fakeplayer: true
+      economysmp.command.hide: true
+      economysmp.command.disguise: true
+      economysmp.command.maintenance: true
+      economysmp.command.serverwipe: true
+      economysmp.command.playerwipe: true
+      economysmp.command.playerunwipe: true
+      economysmp.command.amod: true
+  economysmp.command.team:
     description: Access to /team command
     default: true
-  ultimatedonutsmp.command.chat:
+  economysmp.command.chat:
     description: Access to /chat command
     default: true
-  ultimatedonutsmp.command.ignore:
+  economysmp.command.ignore:
     description: Access to /ignore command
     default: true
-  ultimatedonutsmp.command.unignore:
+  economysmp.command.unignore:
     description: Access to /unignore command
     default: true
-  ultimatedonutsmp.command.msg:
+  economysmp.command.msg:
     description: Access to /msg command
     default: true
-  ultimatedonutsmp.command.reply:
+  economysmp.command.reply:
     description: Access to /reply command
     default: true
-  ultimatedonutsmp.command.pm:
+  economysmp.command.pm:
     description: Access to /pm command
     default: true
-  ultimatedonutsmp.command.home:
+  economysmp.command.home:
     description: Access to /home command
     default: true
-  ultimatedonutsmp.command.homes:
+  economysmp.command.homes:
     description: Access to /homes command
     default: true
-  ultimatedonutsmp.command.sethome:
+  economysmp.command.sethome:
     description: Access to /sethome command
     default: true
-  ultimatedonutsmp.command.delhome:
+  economysmp.command.delhome:
     description: Access to /delhome command
     default: true
-  ultimatedonutsmp.command.renamehome:
+  economysmp.command.renamehome:
     description: Access to /renamehome command
     default: true
-  ultimatedonutsmp.command.spawn:
+  economysmp.command.spawn:
     description: Access to /spawn command
     default: true
-  ultimatedonutsmp.command.afk:
+  economysmp.command.afk:
     description: Access to /afk command
     default: true
-  ultimatedonutsmp.command.rtp:
+  economysmp.command.rtp:
     description: Access to /rtp command
     default: true
-  ultimatedonutsmp.command.rtpq:
+  economysmp.command.rtpq:
     description: Access to /rtpq command
     default: true
-  ultimatedonutsmp.command.shop:
+  economysmp.command.shop:
     description: Access to /shop command
     default: true
-  ultimatedonutsmp.command.orders:
+  economysmp.command.orders:
     description: Access to /orders command
     default: true
-  ultimatedonutsmp.command.duel:
+  economysmp.command.duel:
     description: Access to /duel command
     default: true
-  ultimatedonutsmp.command.queue:
+  economysmp.command.queue:
     description: Access to /queue command
     default: true
-  ultimatedonutsmp.command.leave:
+  economysmp.command.leave:
     description: Access to /leave command
     default: true
-  ultimatedonutsmp.command.draw:
+  economysmp.command.draw:
     description: Access to /draw command
     default: true
-  ultimatedonutsmp.command.arena:
+  economysmp.command.arena:
     description: Access to /arena command
     default: op
-  ultimatedonutsmp.command.ffa:
+  economysmp.command.ffa:
     description: Access to /ffa command
     default: true
-  ultimatedonutsmp.command.ffastats:
+  economysmp.command.ffastats:
     description: Access to /ffastats command
     default: true
-  ultimatedonutsmp.command.pvp:
+  economysmp.command.pvp:
     description: Access to /pvp command
     default: true
-  ultimatedonutsmp.command.ffaarena:
+  economysmp.command.ffaarena:
     description: Access to /ffaarena command
     default: op
-  ultimatedonutsmp.command.auctionhouse:
+  economysmp.command.auctionhouse:
     description: Access to /auctionhouse command
     default: true
-  ultimatedonutsmp.command.enderchest:
+  economysmp.command.enderchest:
     description: Access to /enderchest command
     default: true
-  ultimatedonutsmp.command.sell:
+  economysmp.command.sell:
     description: Access to /sell command
     default: true
-  ultimatedonutsmp.command.sellmulti:
+  economysmp.command.sellmulti:
     description: Access to /sellmulti command
     default: true
-  ultimatedonutsmp.command.sellprogress:
+  economysmp.command.sellprogress:
     description: Access to /sellprogress command
     default: true
-  ultimatedonutsmp.command.sellhand:
+  economysmp.command.sellhand:
     description: Access to /sellhand command
     default: true
-  ultimatedonutsmp.command.sellall:
+  economysmp.command.sellall:
     description: Access to /sellall command
     default: true
-  ultimatedonutsmp.command.sellhistory:
+  economysmp.command.sellhistory:
     description: Access to /sellhistory command
     default: true
-  ultimatedonutsmp.command.topsell:
+  economysmp.command.topsell:
     description: Access to /topsell command
     default: op
-  ultimatedonutsmp.command.worth:
+  economysmp.command.worth:
     description: Access to /worth command
     default: true
-  ultimatedonutsmp.command.meta:
+  economysmp.command.meta:
     description: Access to /meta command
     default: true
-  ultimatedonutsmp.command.balance:
+  economysmp.command.balance:
     description: Access to /balance command
     default: true
-  ultimatedonutsmp.command.pay:
+  economysmp.command.pay:
     description: Access to /pay command
     default: true
-  ultimatedonutsmp.command.addmoney:
+  economysmp.command.addmoney:
     description: Access to /addmoney command
     default: op
-  ultimatedonutsmp.command.removemoney:
+  economysmp.command.removemoney:
     description: Access to /removemoney command
     default: op
-  ultimatedonutsmp.command.setmoney:
+  economysmp.command.setmoney:
     description: Access to /setmoney command
     default: op
-  ultimatedonutsmp.command.shards:
+  economysmp.command.shards:
     description: Access to /shards command
     default: true
-  ultimatedonutsmp.command.shardpay:
+  economysmp.command.shardpay:
     description: Access to /shardpay command
     default: true
-  ultimatedonutsmp.command.crate:
+  economysmp.command.crate:
     description: Access to /crate command
     default: op
-  ultimatedonutsmp.command.crates:
+  economysmp.command.crates:
     description: Access to /crates command
     default: true
-  ultimatedonutsmp.command.keys:
+  economysmp.command.keys:
     description: Access to /keys command
     default: true
-  ultimatedonutsmp.command.stats:
+  economysmp.command.stats:
     description: Access to /stats command
     default: true
-  ultimatedonutsmp.command.ping:
+  economysmp.command.ping:
     description: Access to /ping command
     default: true
-  ultimatedonutsmp.command.playtime:
+  economysmp.command.playtime:
     description: Access to /playtime command
     default: true
-  ultimatedonutsmp.command.freeze:
+  economysmp.command.freeze:
     description: Access to /freeze command
     default: op
-  ultimatedonutsmp.command.fly:
+  economysmp.command.fly:
     description: Access to /fly command
     default: op
-  ultimatedonutsmp.command.flyspeed:
+  economysmp.command.flyspeed:
     description: Access to /flyspeed command
     default: op
-  ultimatedonutsmp.command.flyspeed.others:
+  economysmp.command.flyspeed.others:
     description: Adjust another player's flying speed with /flyspeed
     default: op
-  ultimatedonutsmp.command.heal:
+  economysmp.command.heal:
     description: Access to /heal command
     default: op
-  ultimatedonutsmp.command.feed:
+  economysmp.command.feed:
     description: Access to /feed command
     default: op
-  ultimatedonutsmp.command.gamemode:
+  economysmp.command.gamemode:
     description: Access to /gamemode command
     default: op
-  ultimatedonutsmp.command.staffmode:
+  economysmp.command.staffmode:
     description: Access to /staffmode command
     default: op
-  ultimatedonutsmp.command.stafflist:
+  economysmp.command.stafflist:
     description: Access to /stafflist command
     default: op
-  ultimatedonutsmp.command.staffchat:
+  economysmp.command.staffchat:
     description: Access to /staffchat command
     default: op
-  ultimatedonutsmp.command.helpop:
+  economysmp.command.helpop:
     description: Access to /helpop command
     default: true
-  ultimatedonutsmp.command.report:
+  economysmp.command.report:
     description: Access to /report command
     default: true
-  ultimatedonutsmp.command.rename:
+  economysmp.command.rename:
     description: Access to /rename command
     default: op
-  ultimatedonutsmp.command.randomteleport:
+  economysmp.command.randomteleport:
     description: Access to /randomteleport command
     default: op
-  ultimatedonutsmp.command.teleport:
+  economysmp.command.teleport:
     description: Access to /teleport command
     default: op
-  ultimatedonutsmp.command.alts:
+  economysmp.command.alts:
     description: Access to /alts command
     default: op
-  ultimatedonutsmp.command.vanish:
+  economysmp.command.vanish:
     description: Access to /vanish command
     default: op
-  ultimatedonutsmp.command.invsee:
+  economysmp.command.invsee:
     description: Access to /invsee command
     default: op
-  ultimatedonutsmp.command.profileviewer:
+  economysmp.command.profileviewer:
     description: Access to /profileviewer command
     default: op
-  ultimatedonutsmp.command.seehomes:
+  economysmp.command.seehomes:
     description: Access to /seehomes command
     default: op
-  ultimatedonutsmp.command.punishments:
+  economysmp.command.punishments:
     description: Access to /punishments command
     default: op
-  ultimatedonutsmp.command.offend:
+  economysmp.command.offend:
     description: Access to /offend command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.offend: true
-  ultimatedonutsmp.command.ban:
+      economysmp.staff.punishments.offend: true
+  economysmp.command.ban:
     description: Access to /ban command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.ban: true
-  ultimatedonutsmp.command.tempban:
+      economysmp.staff.punishments.ban: true
+  economysmp.command.tempban:
     description: Access to /tempban command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.ban: true
-  ultimatedonutsmp.command.mute:
+      economysmp.staff.punishments.ban: true
+  economysmp.command.mute:
     description: Access to /mute command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.mute: true
-  ultimatedonutsmp.command.tempmute:
+      economysmp.staff.punishments.mute: true
+  economysmp.command.tempmute:
     description: Access to /tempmute command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.mute: true
-  ultimatedonutsmp.command.vcmute:
+      economysmp.staff.punishments.mute: true
+  economysmp.command.vcmute:
     description: Access to /vcmute command
     default: op
     children:
-      ultimatedonutsmp.staff.vcmute: true
-  ultimatedonutsmp.command.warn:
+      economysmp.staff.vcmute: true
+  economysmp.command.warn:
     description: Access to /warn command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.create: true
-  ultimatedonutsmp.command.kick:
+      economysmp.staff.punishments.create: true
+  economysmp.command.kick:
     description: Access to /kick command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.create: true
-  ultimatedonutsmp.command.blacklist:
+      economysmp.staff.punishments.create: true
+  economysmp.command.blacklist:
     description: Access to /blacklist command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.blacklist: true
-  ultimatedonutsmp.command.unban:
+      economysmp.staff.punishments.blacklist: true
+  economysmp.command.unban:
     description: Access to /unban command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.unban: true
-  ultimatedonutsmp.command.unmute:
+      economysmp.staff.punishments.unban: true
+  economysmp.command.unmute:
     description: Access to /unmute command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.unmute: true
-  ultimatedonutsmp.command.vcunmute:
+      economysmp.staff.punishments.unmute: true
+  economysmp.command.vcunmute:
     description: Access to /vcunmute command
     default: op
     children:
-      ultimatedonutsmp.staff.vcunmute: true
-  ultimatedonutsmp.command.unblacklist:
+      economysmp.staff.vcunmute: true
+  economysmp.command.unblacklist:
     description: Access to /unblacklist command
     default: op
     children:
-      ultimatedonutsmp.staff.punishments.unblacklist: true
-  ultimatedonutsmp.command.bounty:
+      economysmp.staff.punishments.unblacklist: true
+  economysmp.command.bounty:
     description: Access to /bounty command
     default: true
-  ultimatedonutsmp.command.tpa:
+  economysmp.command.tpa:
     description: Access to /tpa command
     default: true
-  ultimatedonutsmp.command.tpahere:
+  economysmp.command.tpahere:
     description: Access to /tpahere command
     default: true
-  ultimatedonutsmp.command.tpaccept:
+  economysmp.command.tpaccept:
     description: Access to /tpaccept command
     default: true
-  ultimatedonutsmp.command.tpadeny:
+  economysmp.command.tpadeny:
     description: Access to /tpadeny command
     default: true
-  ultimatedonutsmp.command.tpacancel:
+  economysmp.command.tpacancel:
     description: Access to /tpacancel command
     default: true
-  ultimatedonutsmp.command.tpauto:
+  economysmp.command.tpauto:
     description: Access to /tpauto command
     default: true
-  ultimatedonutsmp.command.tpahereauto:
+  economysmp.command.tpahereauto:
     description: Access to /tpahereauto command
     default: true
-  ultimatedonutsmp.command.leaderboard:
+  economysmp.command.leaderboard:
     description: Access to /leaderboard command
     default: true
-  ultimatedonutsmp.command.warp:
+  economysmp.command.warp:
     description: Access to /warp command
     default: true
-  ultimatedonutsmp.command.warpmanager:
+  economysmp.command.warpmanager:
     description: Access to /warpmanager command
     default: op
-  ultimatedonutsmp.command.portalmanager:
+  economysmp.command.portalmanager:
     description: Access to /portalmanager command
     default: op
-  ultimatedonutsmp.command.nightvision:
+  economysmp.command.nightvision:
     description: Access to /nightvision command
     default: true
-  ultimatedonutsmp.command.phantom:
+  economysmp.command.phantom:
     description: Access to /phantom command
     default: true
-  ultimatedonutsmp.command.findplayer:
+  economysmp.command.findplayer:
     description: Access to /findplayer command
     default: op
-  ultimatedonutsmp.command.settings:
+  economysmp.command.settings:
     description: Access to /settings command
     default: true
-  ultimatedonutsmp.command.discord:
+  economysmp.command.discord:
     description: Access to /discord command
     default: true
-  ultimatedonutsmp.command.twitter:
+  economysmp.command.twitter:
     description: Access to /twitter command
     default: true
-  ultimatedonutsmp.command.store:
+  economysmp.command.store:
     description: Access to /store command
     default: true
-  ultimatedonutsmp.command.social:
+  economysmp.command.social:
     description: Access to /social command
     default: true
-  ultimatedonutsmp.command.media:
+  economysmp.command.media:
     description: Access to /media command
     default: true
-  ultimatedonutsmp.command.ranks:
+  economysmp.command.ranks:
     description: Access to /ranks command
     default: true
-  ultimatedonutsmp.command.rules:
+  economysmp.command.rules:
     description: Access to /rules command
     default: true
-  ultimatedonutsmp.command.help:
+  economysmp.command.help:
     description: Access to /help command
     default: true
-  ultimatedonutsmp.command.servers:
+  economysmp.command.servers:
     description: Access to /servers command
     default: op
-  ultimatedonutsmp.command.billford:
+  economysmp.command.billford:
     description: Access to /billford command
     default: true
-  ultimatedonutsmp.command.spawner:
+  economysmp.command.spawner:
     description: Access to /spawner command
     default: true
-  ultimatedonutsmp.command.clearlag:
+  economysmp.command.clearlag:
     description: Access to /clearlag command
     default: op
-  ultimatedonutsmp.command.cuboid:
+  economysmp.command.cuboid:
     description: Access to /cuboid command
     default: op
-  ultimatedonutsmp.command.setwarp:
+  economysmp.command.setwarp:
     description: Access to /setwarp command
     default: op
-  ultimatedonutsmp.command.delwarp:
+  economysmp.command.delwarp:
     description: Access to /delwarp command
     default: op
-  ultimatedonutsmp.command.amethysttool:
+  economysmp.command.amethysttool:
     description: Access to /amethysttool command
     default: op
-  ultimatedonutsmp.command.ultimatedonutsmp:
-    description: Access to /ultimatedonutsmp command
+  economysmp.command.economysmp:
+    description: Access to /economysmp command
     default: op
-  ultimatedonutsmp.command.ecsee:
+  economysmp.command.ecsee:
     description: Access to /ecsee command
     default: op
-  ultimatedonutsmp.command.logs:
+  economysmp.command.logs:
     description: Access to /logs command
     default: op
-  ultimatedonutsmp.admin.logs:
+  economysmp.admin.logs:
     description: Browse a player's logged shop, auction and admin activity
     default: op
-  ultimatedonutsmp.command.chatlog:
+  economysmp.command.chatlog:
     description: Access to /chatlog command
     default: op
-  ultimatedonutsmp.admin.chatlog:
+  economysmp.admin.chatlog:
     description: Browse logged public chat messages
     default: op
-  ultimatedonutsmp.command.addshards:
+  economysmp.command.addshards:
     description: Access to /addshards command
     default: op
-  ultimatedonutsmp.command.removeshards:
+  economysmp.command.removeshards:
     description: Access to /removeshards command
     default: op
-  ultimatedonutsmp.command.setshards:
+  economysmp.command.setshards:
     description: Access to /setshards command
     default: op
-  ultimatedonutsmp.command.shardshop:
+  economysmp.command.shardshop:
     description: Access to /shardshop command
     default: true
-  ultimatedonutsmp.command.create:
+  economysmp.command.create:
     description: Access to /create command
     default: op
-  ultimatedonutsmp.command.kill:
+  economysmp.command.kill:
     description: Access to /kill command
     default: op
-  ultimatedonutsmp.command.safety:
+  economysmp.command.safety:
     description: Access to /safety command
     default: op
-  ultimatedonutsmp.command.voicechatconsent:
+  economysmp.command.voicechatconsent:
     description: Access to /voicechatconsent command
     default: true
-  ultimatedonutsmp.command.friends:
+  economysmp.command.friends:
     description: Access to /friends command
     default: true
-  ultimatedonutsmp.command.friend:
+  economysmp.command.friend:
     description: Access to /friend command
     default: true
-  ultimatedonutsmp.command.spawnstash:
+  economysmp.command.spawnstash:
     description: Access to /spawnstash command
     default: op
-  ultimatedonutsmp.command.fakeplayer:
+  economysmp.command.fakeplayer:
     description: Access to /fakeplayer command
     default: op
-  ultimatedonutsmp.command.hide:
+  economysmp.command.hide:
     description: Access to /hide command
     default: op
-  ultimatedonutsmp.command.disguise:
+  economysmp.command.disguise:
     description: Access to /disguise command
     default: op
-  ultimatedonutsmp.command.maintenance:
+  economysmp.command.maintenance:
     description: Access to /maintenance command
     default: op
-  ultimatedonutsmp.admin.maintenance:
+  economysmp.admin.maintenance:
     description: Toggle maintenance mode and manage the allowed player list
     default: op
-  ultimatedonutsmp.command.serverwipe:
+  economysmp.command.serverwipe:
     description: Access to /serverwipe command
     default: op
-  ultimatedonutsmp.admin.serverwipe:
+  economysmp.admin.serverwipe:
     description: Preview and run a full server data wipe
     default: op
-  ultimatedonutsmp.command.playerwipe:
+  economysmp.command.playerwipe:
     description: Access to /playerwipe command
     default: op
-  ultimatedonutsmp.command.playerunwipe:
+  economysmp.command.playerunwipe:
     description: Access to /playerunwipe command
     default: op
-  ultimatedonutsmp.command.amod:
+  economysmp.command.amod:
     description: Access to /amod command
     default: op

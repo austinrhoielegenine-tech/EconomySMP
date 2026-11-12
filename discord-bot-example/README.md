@@ -1,4 +1,4 @@
-# UltimateDonutSmp Discord Bot Example
+# EconomySMP Discord Bot Example
 
 Example discord.js bot that reads the plugin database. It covers survival stats and leaderboards,
 and the ranked PvP arena: account linking, competitive stats, tier leaderboards, and a match result
@@ -105,7 +105,7 @@ Default mode reads the plugin SQLite database:
 
 ```env
 DB_TYPE=sqlite
-SQLITE_FILE=../plugins/UltimateDonutSmp/data/data.db
+SQLITE_FILE=../plugins/EconomySMP/data/data.db
 ```
 
 For a production server, prefer an absolute path. If your plugin uses MySQL, set:
@@ -114,7 +114,7 @@ For a production server, prefer an absolute path. If your plugin uses MySQL, set
 DB_TYPE=mysql
 MYSQL_HOST=localhost
 MYSQL_PORT=3306
-MYSQL_DATABASE=ultimatedonutsmp
+MYSQL_DATABASE=economysmp
 MYSQL_USER=root
 MYSQL_PASSWORD=your_password
 ```
@@ -124,7 +124,7 @@ If your plugin uses MongoDB, set:
 ```env
 DB_TYPE=mongodb
 MONGODB_URI=mongodb://localhost:27017
-MONGODB_DATABASE=ultimatedonutsmp
+MONGODB_DATABASE=economysmp
 MONGODB_PLAYERS_COLLECTION=players
 ```
 

@@ -1,4 +1,4 @@
-### UltimateDonutSMP Wiki
+### EconomySMP Wiki
 
 - **[Home](Home)**
 - **[Installation & Setup](Installation-and-Setup)**
@@ -52,5 +52,5 @@
 ---
 
 ### Quick Links
-- [GitHub Repository](https://github.com/BeestoXd/UltimateDonutSMP)
-- [Issue Tracker](https://github.com/BeestoXd/UltimateDonutSMP/issues)
+- [GitHub Repository](https://github.com/austinrhoielegenine-tech/EconomySMP)
+- [Issue Tracker](https://github.com/austinrhoielegenine-tech/EconomySMP/issues)

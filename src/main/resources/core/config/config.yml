@@ -361,7 +361,7 @@ TABLIST:
 SERVER-LIST:
   ENABLED: false
   MOTD:
-  - '&d&lUltimateDonutSMP'
+  - '&d&lEconomySMP'
   - '&7%online%&8/&7%max_players% &7online'
 OPTIMIZATION:
   ENABLED: true

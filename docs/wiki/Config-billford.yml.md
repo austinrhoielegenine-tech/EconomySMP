@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `billford.yml`
 
-This is the official, 100% complete technical setup guide for `billford.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `billford.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---

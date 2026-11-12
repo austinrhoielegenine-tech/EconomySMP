@@ -1,14 +1,14 @@
 # Placeholders & Integrations Guide
 
-UltimateDonutSMP includes native PlaceholderAPI expansions, soft-dependency hooks, and network integrations.
+EconomySMP includes native PlaceholderAPI expansions, soft-dependency hooks, and network integrations.
 
 ---
 
 ## PlaceholderAPI Expansions Catalog
 
-UltimateDonutSMP registers multiple PlaceholderAPI expansion prefixes (`%economy_*%`, `%economylb_*%`, `%economyrank_*%`, `%hide_*%`, `%uds_*%`, `%ultimatedonutsmp_*%`).
+EconomySMP registers multiple PlaceholderAPI expansion prefixes (`%economy_*%`, `%economylb_*%`, `%economyrank_*%`, `%hide_*%`, `%uds_*%`, `%economysmp_*%`).
 
-### 1. Main Economy & Stats Expansion (`%economy_*%`, `%uds_*%`, `%ultimatedonutsmp_*%`)
+### 1. Main Economy & Stats Expansion (`%economy_*%`, `%uds_*%`, `%economysmp_*%`)
 
 #### Money & Currency Placeholders
 | Placeholder | Output Description |
@@ -122,7 +122,7 @@ A typical TAB nametag format:
 %pvp_rank% | %luckperms-prefix% %player%
 ```
 
-The bundled [Discord bot example](https://github.com/BeestoXd/UltimateDonutSMP/tree/main/discord-bot-example)
+The bundled [Discord bot example](https://github.com/austinrhoielegenine-tech/EconomySMP/tree/main/discord-bot-example)
 reads the same ranked data straight from the database rather than through placeholders, and adds
 `/mystats`, `/tier stats`, `/tier leaderboard`, `/sync` and `/unsync` along with a match result
 posted after every ranked fight. See [Ranked PvP Arena](Ranked-PvP-Arena) for the linking flow.
@@ -145,9 +145,9 @@ Available for config and language message templates (`messages.yml` & `languages
 
 ## Soft Dependencies & Integrations
 
-UltimateDonutSMP seamlessly hooks into the following plugins when installed:
+EconomySMP seamlessly hooks into the following plugins when installed:
 
-1. **Vault**: Registers UltimateDonutSMP as the primary economy provider for third-party plugins.
+1. **Vault**: Registers EconomySMP as the primary economy provider for third-party plugins.
 2. **LuckPerms**: Inherits group ranks and checks permission nodes dynamically.
 3. **ProtocolLib**: Used for packet-level entity lures, fast crystal placements, and disguise rendering.
 4. **Apollo (Lunar Client)**: Displays custom waypoints, team member markers, and combat cooldown indicators on Lunar Client.

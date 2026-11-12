@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `spawners.yml`
 
-This is the official, 100% complete technical setup guide for `spawners.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `spawners.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -53,7 +53,7 @@ SETTINGS:
 | `SETTINGS.MAX_STACK_PER_BLOCK` | `int` | Any valid integer number | `'100000'` | Configures the technical `MAX_STACK_PER_BLOCK` parameter for `SETTINGS.MAX_STACK_PER_BLOCK` in `spawners.yml`. |
 | `SETTINGS.STORAGE_CAP_PER_LOOT_KEY` | `int` | Any valid integer number | `'1000000'` | Configures the technical `STORAGE_CAP_PER_LOOT_KEY` parameter for `SETTINGS.STORAGE_CAP_PER_LOOT_KEY` in `spawners.yml`. |
 | `SETTINGS.DROP_ON_BREAK_IF_INVENTORY_FULL` | `bool` | `true`, `false` | `true` | Configures the technical `DROP_ON_BREAK_IF_INVENTORY_FULL` parameter for `SETTINGS.DROP_ON_BREAK_IF_INVENTORY_FULL` in `spawners.yml`. |
-| `SETTINGS.REQUIRE_SILK_TOUCH` | `bool` | `true`, `false` | `true` | Requires a Silk Touch pickaxe to break spawners, covering both plugin-managed and vanilla spawners. Creative mode and `ultimatedonutsmp.spawner.bypass` are exempt; operators are not. |
+| `SETTINGS.REQUIRE_SILK_TOUCH` | `bool` | `true`, `false` | `true` | Requires a Silk Touch pickaxe to break spawners, covering both plugin-managed and vanilla spawners. Creative mode and `economysmp.spawner.bypass` are exempt; operators are not. |
 | `SETTINGS.CANCEL_MOB_SPAWN` | `bool` | `true`, `false` | `true` | Cancels physical mob entity spawning in the world and routes loot directly to virtual storage, eliminating mob AI server lag. |
 | `SETTINGS.XP_ENABLED` | `bool` | `true`, `false` | `true` | Configures the technical `XP_ENABLED` parameter for `SETTINGS.XP_ENABLED` in `spawners.yml`. |
 

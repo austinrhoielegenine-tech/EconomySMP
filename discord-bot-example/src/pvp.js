@@ -6,7 +6,7 @@ import { MongoClient } from 'mongodb';
 import mysql from 'mysql2/promise';
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const defaultSqliteFile = '../plugins/UltimateDonutSmp/data/data.db';
+const defaultSqliteFile = '../plugins/EconomySMP/data/data.db';
 
 /**
  * The ranked boards. `column` types sort a column of `pvp_stats`; `derived` types are counted out
@@ -65,7 +65,7 @@ function createSqlitePvpRepository() {
       [
         `SQLite database file was not found: ${file}`,
         `SQLITE_FILE is currently set to: ${configured}`,
-        'Point SQLITE_FILE at the plugin database, usually plugins/UltimateDonutSmp/data/data.db.'
+        'Point SQLITE_FILE at the plugin database, usually plugins/EconomySMP/data/data.db.'
       ].join('\n')
     );
   }
@@ -215,7 +215,7 @@ async function createMysqlPvpRepository() {
   const pool = mysql.createPool({
     host: process.env.MYSQL_HOST || 'localhost',
     port: Number(process.env.MYSQL_PORT || 3306),
-    database: process.env.MYSQL_DATABASE || 'ultimatedonutsmp',
+    database: process.env.MYSQL_DATABASE || 'economysmp',
     user: process.env.MYSQL_USER || 'root',
     password: process.env.MYSQL_PASSWORD || '',
     waitForConnections: true,
@@ -309,7 +309,7 @@ async function createMongoPvpRepository() {
   const client = new MongoClient(process.env.MONGODB_URI || 'mongodb://localhost:27017');
   await client.connect();
 
-  const database = client.db(process.env.MONGODB_DATABASE || 'ultimatedonutsmp');
+  const database = client.db(process.env.MONGODB_DATABASE || 'economysmp');
   const stats = database.collection('pvp_stats');
   const matches = database.collection('pvp_matches');
   const codes = database.collection('pvp_sync_codes');

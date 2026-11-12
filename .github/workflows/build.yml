@@ -1,22 +1,22 @@
-name: Build Jar
+name: Auto Build
+
+# Builds EconomySMP.jar on every push to main and keeps a rolling pre-release (v<version>-pre)
+# up to date with it. The in-game updater (update.yml, release-tag: "auto") reads that release.
 
 on:
   push:
     branches:
       - main
-    paths:
-      - 'src/**'
-      - 'pom.xml'
+    paths-ignore:
+      - 'docs/**'
+      - '**/*.md'
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Two merges landing close together used to race each other for the nightly tag. The tag push is a
-# plain force push with no compare-and-swap, so whichever run finished last won, and the loser died
-# with "cannot lock ref". A slower older run winning would have moved v1.5-pre backwards and
-# published the older jar over the newer one. Cancelling the older run leaves the newest commit on
-# main as the only one that reaches the tag and release steps.
+# Two pushes landing close together would race for the nightly tag. Cancelling the older run leaves
+# the newest commit on main as the only one that reaches the tag and release steps.
 concurrency:
   group: build-nightly-${{ github.ref }}
   cancel-in-progress: true
@@ -29,27 +29,28 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v7
 
-      - name: Set up JDK 25
+      - name: Set up JDK 21
         uses: actions/setup-java@v6
         with:
           distribution: 'temurin'
-          java-version: '25'
+          java-version: '21'
           cache: 'maven'
 
-      - name: Build Project
-        run: mvn clean package
+      # Unit tests run in the Pull Request Verification workflow; this one only has to produce the jar.
+      - name: Build Jar
+        run: mvn -B clean package -DskipTests
 
       - name: Get Project Version
         id: metadata
         run: |
-          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          VERSION=$(mvn -B help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
 
-      - name: Upload Shaded Jar
+      - name: Upload Jar Artifact
         uses: actions/upload-artifact@v7
         with:
-          name: UltimateDonutSmp-${{ steps.metadata.outputs.version }}
-          path: target/UltimateDonutSmp-*.jar
+          name: EconomySMP-${{ steps.metadata.outputs.version }}
+          path: target/EconomySMP.jar
           if-no-files-found: error
 
       - name: Update Nightly Tag
@@ -58,22 +59,21 @@ jobs:
           git tag -f "v${{ steps.metadata.outputs.version }}-pre"
           git push -f origin "v${{ steps.metadata.outputs.version }}-pre"
 
-      - name: Release Nightly Build
+      - name: Publish Nightly Release
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v3
         with:
           tag_name: "v${{ steps.metadata.outputs.version }}-pre"
-          name: "UltimateDonutSMP v${{ steps.metadata.outputs.version }}-pre (nightly)"
+          name: "EconomySMP v${{ steps.metadata.outputs.version }}-pre (nightly)"
           body: |
-            ### UltimateDonutSMP v${{ steps.metadata.outputs.version }}-pre
-            This is an automated pre-release build, updated in place on every push to `main`.
+            ### EconomySMP v${{ steps.metadata.outputs.version }}-pre
+            Automated pre-release build, updated in place on every push to `main`.
 
             - **Commit:** ${{ github.sha }}
-            - **Branch:** ${{ github.ref_name }}
-            - **Build Date:** ${{ github.event.head_commit.timestamp }}
             - **Build:** #${{ github.run_number }}
           prerelease: true
-          files: target/UltimateDonutSmp-${{ steps.metadata.outputs.version }}.jar
           make_latest: false
+          fail_on_unmatched_files: true
+          files: target/EconomySMP.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

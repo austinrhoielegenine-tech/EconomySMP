@@ -16,11 +16,11 @@ NETWORK:
 
   LOCAL_DISPLAY_NAME: Crystal
 
-  REDIS_CHANNEL: ultimatedonutsmp:staff-chat
+  REDIS_CHANNEL: economysmp:staff-chat
 
-  HELPOP_REDIS_CHANNEL: ultimatedonutsmp:staff-alerts
+  HELPOP_REDIS_CHANNEL: economysmp:staff-alerts
 
-  REPORT_REDIS_CHANNEL: ultimatedonutsmp:staff-alerts
+  REPORT_REDIS_CHANNEL: economysmp:staff-alerts
 
   SEND_LOCAL_FALLBACK_ON_REDIS_ERROR: true
 

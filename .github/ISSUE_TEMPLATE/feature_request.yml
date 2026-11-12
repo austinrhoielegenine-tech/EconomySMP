@@ -1,12 +1,12 @@
 name: ✨ Feature Request
-description: Propose an idea or new feature for UltimateDonutSMP.
+description: Propose an idea or new feature for EconomySMP.
 title: "[Feature]: "
 labels: ["type: feature"]
 body:
   - type: markdown
     attributes:
       value: |
-        ### Have an idea for UltimateDonutSMP?
+        ### Have an idea for EconomySMP?
         We welcome community suggestions! Please describe your proposed feature or improvement below.
 
   - type: textarea

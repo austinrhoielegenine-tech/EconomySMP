@@ -56,7 +56,7 @@ client.on(Events.InteractionCreate, async interaction => {
     }
   } catch (error) {
     console.error(error);
-    const message = 'Failed to read the UltimateDonutSmp database.';
+    const message = 'Failed to read the EconomySMP database.';
     if (interaction.deferred || interaction.replied) {
       await interaction.editReply({ content: message, embeds: [] });
     } else {

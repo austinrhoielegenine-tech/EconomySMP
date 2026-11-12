@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `invsee.yml`
 
-This is the official, 100% complete technical setup guide for `invsee.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `invsee.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -39,13 +39,13 @@ INVSEE:
   AUTO-REFRESH-TICKS: 10
 
   # Permission node to view target player inventory
-  VIEW-PERMISSION: ultimatedonutsmp.staff.invsee
+  VIEW-PERMISSION: economysmp.staff.invsee
 
   # Permission node to modify items in target player inventory
-  MODIFY-PERMISSION: ultimatedonutsmp.staff.invsee.modify
+  MODIFY-PERMISSION: economysmp.staff.invsee.modify
 
   # Permission node for admin invsee commands
-  ADMIN-PERMISSION: ultimatedonutsmp.admin.invsee
+  ADMIN-PERMISSION: economysmp.admin.invsee
 
 # Inventory GUI layout slot mapping
 ```
@@ -63,9 +63,9 @@ INVSEE:
 | `INVSEE.LOG-USAGE` | `bool` | `true`, `false` | `true` | Configures the technical `LOG-USAGE` parameter for `INVSEE.LOG-USAGE` in `invsee.yml`. |
 | `INVSEE.FREEZE-ON-LOGOUT` | `bool` | `true`, `false` | `true` | Configures the technical `FREEZE-ON-LOGOUT` parameter for `INVSEE.FREEZE-ON-LOGOUT` in `invsee.yml`. |
 | `INVSEE.AUTO-REFRESH-TICKS` | `int` | Any valid integer number | `'10'` | Configures the technical `AUTO-REFRESH-TICKS` parameter for `INVSEE.AUTO-REFRESH-TICKS` in `invsee.yml`. |
-| `INVSEE.VIEW-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.invsee'` | Configures the technical `VIEW-PERMISSION` parameter for `INVSEE.VIEW-PERMISSION` in `invsee.yml`. |
-| `INVSEE.MODIFY-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.staff.invsee.modif...'` | Configures the technical `MODIFY-PERMISSION` parameter for `INVSEE.MODIFY-PERMISSION` in `invsee.yml`. |
-| `INVSEE.ADMIN-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.admin.invsee'` | Configures the technical `ADMIN-PERMISSION` parameter for `INVSEE.ADMIN-PERMISSION` in `invsee.yml`. |
+| `INVSEE.VIEW-PERMISSION` | `str` | Any string text | `'economysmp.staff.invsee'` | Configures the technical `VIEW-PERMISSION` parameter for `INVSEE.VIEW-PERMISSION` in `invsee.yml`. |
+| `INVSEE.MODIFY-PERMISSION` | `str` | Any string text | `'economysmp.staff.invsee.modif...'` | Configures the technical `MODIFY-PERMISSION` parameter for `INVSEE.MODIFY-PERMISSION` in `invsee.yml`. |
+| `INVSEE.ADMIN-PERMISSION` | `str` | Any string text | `'economysmp.admin.invsee'` | Configures the technical `ADMIN-PERMISSION` parameter for `INVSEE.ADMIN-PERMISSION` in `invsee.yml`. |
 
 ### 3. Practical Setup Example
 
@@ -99,13 +99,13 @@ INVSEE:
   AUTO-REFRESH-TICKS: 10
 
   # Permission node to view target player inventory
-  VIEW-PERMISSION: ultimatedonutsmp.staff.invsee
+  VIEW-PERMISSION: economysmp.staff.invsee
 
   # Permission node to modify items in target player inventory
-  MODIFY-PERMISSION: ultimatedonutsmp.staff.invsee.modify
+  MODIFY-PERMISSION: economysmp.staff.invsee.modify
 
   # Permission node for admin invsee commands
-  ADMIN-PERMISSION: ultimatedonutsmp.admin.invsee
+  ADMIN-PERMISSION: economysmp.admin.invsee
 
 # Inventory GUI layout slot mapping
 ```

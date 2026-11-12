@@ -1,6 +1,6 @@
 # Staff & Security Utilities Guide
 
-UltimateDonutSMP provides a comprehensive suite of staff moderation tools, anti-cheat detection lures, crash protection, chat filtering, Discord webhooks, and guarded server wipes.
+EconomySMP provides a comprehensive suite of staff moderation tools, anti-cheat detection lures, crash protection, chat filtering, Discord webhooks, and guarded server wipes.
 
 ---
 
@@ -11,17 +11,17 @@ Toggles Staff Mode for authorized moderators:
 - Gives custom hotbar items: Fast-Fly, Vanish toggle, Freeze tool, Random Teleport, Player Inspector, and Counter.
 - Separates staff inventory from normal player survival inventory.
 - Pins those hotbar items to the moderator so they cannot be dropped or handed to anyone (`LOCK-TOOLS` in `staff-mode.yml`). Other items stay droppable.
-- Permission: `ultimatedonutsmp.admin.staffmode`
+- Permission: `economysmp.admin.staffmode`
 
 ### 2. Vanish (`/vanish` or `/v`)
 Hides the moderator completely from online tab lists, player join/leave messages, and in-game rendering.
 - Suppresses chest opening animations and footstep sounds.
-- Permission: `ultimatedonutsmp.admin.vanish`
+- Permission: `economysmp.admin.vanish`
 
 ### 3. Freeze (`/freeze <player>`)
 Freezes the target player on top of an ice block and disables movement, block breaking, and command execution.
 - Prompts target player with unfreeze instructions or Discord support links.
-- Permission: `ultimatedonutsmp.admin.freeze`
+- Permission: `economysmp.admin.freeze`
 
 ### 4. Inventory & Ender Chest Inspection
 - Inspect player inventory in real-time: `/invsee <player>`
@@ -39,8 +39,8 @@ This is the same list the profile viewer has always shown behind its Homes butto
 skips the profile screen and drops you straight into it, which matters when you only need to check
 where somebody built. `/homesee` does the same thing.
 
-- Permission: `ultimatedonutsmp.staff.seehomes`, plus `ultimatedonutsmp.command.seehomes` to run the
-  command at all. Anyone already carrying `ultimatedonutsmp.staff.profileviewer` passes the first
+- Permission: `economysmp.staff.seehomes`, plus `economysmp.command.seehomes` to run the
+  command at all. Anyone already carrying `economysmp.staff.profileviewer` passes the first
   check without a new node, since that permission already opens this menu.
 - Styled from `PROFILE-VIEWER-HOMES-MENU` in `menus.yml`. Arriving from `/seehomes` swaps the Back
   button for `CLOSE-BUTTON`, because there is no profile screen to go back to.
@@ -63,32 +63,32 @@ Controls sit along the bottom row:
 | Search | Left-click opens a sign to type a player name, right-click clears it |
 | Refresh | Re-reads the list |
 
-Search matches any part of the stored player name and ignores case, so `rod` finds `Cuteboyrodney`. A full UUID also works. Left-clicking an entry opens that player's full history; shift-right-clicking deletes the record if the viewer holds `ultimatedonutsmp.staff.punishments.delete`.
+Search matches any part of the stored player name and ignores case, so `rod` finds `Cuteboyrodney`. A full UUID also works. Left-clicking an entry opens that player's full history; shift-right-clicking deletes the record if the viewer holds `economysmp.staff.punishments.delete`.
 
 Pages are read in the background rather than on the server thread, so the menu opens on a loading placeholder and fills in once the query returns. On a large history the first frame may be visible for a moment.
 
 ### 2. Player History (`/punishments <player>`)
 Passing a player name opens that player's history on its own, with the same state and type filters. This is also reachable from the profile viewer.
 
-- Both views require `ultimatedonutsmp.staff.punishments.view`.
+- Both views require `economysmp.staff.punishments.view`.
 - Both are styled from `PUNISHMENTS-LIST-MENU` and `PUNISHMENT-HISTORY-MENU` in `menus.yml`.
 
 ### 3. Protecting Ranks From Punishment
 
 A punishment permission carries no notion of who it may be used on. A rank given
-`ultimatedonutsmp.staff.punishments.offend` so it can hand out preset offenses can point `/offend` at
+`economysmp.staff.punishments.offend` so it can hand out preset offenses can point `/offend` at
 the owner just as easily as at a rule breaker, and the same goes for `/ban`, `/mute`, `/warn`,
 `/kick` and `/blacklist`.
 
-Give the ranks you want protected `ultimatedonutsmp.admin.punishments.exempt`. Staff below them are
+Give the ranks you want protected `economysmp.admin.punishments.exempt`. Staff below them are
 told they cannot punish that player and nothing is recorded. Ranks that should still be able to act
-on each other get `ultimatedonutsmp.admin.punishments.exempt.bypass` as well — `ultimatedonutsmp.admin.*`
+on each other get `economysmp.admin.punishments.exempt.bypass` as well — `economysmp.admin.*`
 covers both, so an admin group keeps its protection without losing the ability to punish other admins.
 
 Both nodes default to `op`, so operators are protected from non-operator staff out of the box and can
 still punish one another. The console is never blocked.
 
-Keep the nodes out of `ultimatedonutsmp.staff.punishments.*`. A wildcard over that branch is a normal
+Keep the nodes out of `economysmp.staff.punishments.*`. A wildcard over that branch is a normal
 way to set up a moderator rank, and it would hand the exemption to every moderator on the server.
 
 Permissions are read off the player, so the check only applies while the target is online. Banning an
@@ -146,7 +146,7 @@ Spawns a short-lived player bait at the block you are looking at (or at your fee
 
 ## Operations & Guarded Server Wipes (`/serverwipe`)
 
-UltimateDonutSMP includes a guarded `/serverwipe` command to safely reset player statistics, balances, inventories, and homes for new server seasons:
+EconomySMP includes a guarded `/serverwipe` command to safely reset player statistics, balances, inventories, and homes for new server seasons:
 
 - Command: `/serverwipe confirm`
 - Prompts multi-stage confirmation to prevent accidental wipe execution.
@@ -185,7 +185,7 @@ in the world rather than stored progress.
 
 ### Undoing A Wipe (`/playerunwipe`)
 
-Every wipe writes what it removed to a file in `plugins/UltimateDonutSmp/player-wipe-backups/` before
+Every wipe writes what it removed to a file in `plugins/EconomySMP/player-wipe-backups/` before
 deleting anything, and `/playerunwipe` reads that file back. `/punwipe` and `/unwipe` are the same
 command. It is the answer to a ban that turns out to have been wrong: clear the punishment, then hand
 the account back what it had.

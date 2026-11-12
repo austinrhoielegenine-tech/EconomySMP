@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `config.yml`
 
-This is the official technical setup guide for `config.yml` in **UltimateDonutSMP**.
+This is the official technical setup guide for `config.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 A line whose visible letters are all uppercase is shown in Title Case instead, so long as it also
@@ -227,15 +227,15 @@ SETTINGS:
     # Enable or disable permission based home limits
     ENABLED: true
     # Explicit mapping from permission node to home limit
-    # Players can also be given ultimatedonutsmp.homes.<1-100> directly, for example
-    # ultimatedonutsmp.homes.10 for ten homes, or ultimatedonutsmp.homes.page.<1-100> to
+    # Players can also be given economysmp.homes.<1-100> directly, for example
+    # economysmp.homes.10 for ten homes, or economysmp.homes.page.<1-100> to
     # hand out whole pages of five at a time
     # The highest value the player has wins
     # Players without any of these permissions keep HOME-DEFAULT above
     PERMISSIONS:
-      "ultimatedonutsmp.homes.vip++": 15
-      "ultimatedonutsmp.homes.vip+": 10
-      "ultimatedonutsmp.homes.vip": 5
+      "economysmp.homes.vip++": 15
+      "economysmp.homes.vip+": 10
+      "economysmp.homes.vip": 5
   # Configuration section for Excluded Worlds where homes cannot be set.
   # Available options: List of world names
   HOME-EXCLUDED-WORLDS: []
@@ -303,8 +303,8 @@ SETTINGS:
 | `SETTINGS.CHAINMAIL-RESPAWN-ITEMS` | `list` | List of configured items/strings | `[{'MATERIAL': 'STONE_SWORD', 'AMOUNT': 1}, {'MATERIAL': 'CHAINMAIL_HELMET', 'NAME': '&eChainmail Helmet', 'AMOUNT': 1}, {'MATERIAL': 'CHAINMAIL_CHESTPLATE', 'NAME': '&eChainmail Chestplate', 'AMOUNT': 1}...]` | Configures the technical `CHAINMAIL-RESPAWN-ITEMS` parameter for `SETTINGS.CHAINMAIL-RESPAWN-ITEMS` in `config.yml`. |
 | `SETTINGS.HOME-DEFAULT` | `int` | Any valid integer number | `'2'` | Default maximum `/sethome` limit for non-donor players. |
 | `SETTINGS.HOME-PERMISSIONS.ENABLED` | `bool` | `true`, `false` | `true` | Master switch for permission based home limits. Set to `false` to ignore every home permission and give everyone `HOME-DEFAULT`. |
-| `SETTINGS.HOME-PERMISSIONS.PERMISSIONS` | `section` | Permission node to home count | `{'ultimatedonutsmp.homes.vip++': 15, 'ultimatedonutsmp.homes.vip+': 10, 'ultimatedonutsmp.homes.vip': 5}` | Named rank nodes mapped to a home limit, for servers that prefer `ultimatedonutsmp.homes.vip` over the numbered nodes. The highest value a player holds wins. See [Commands-and-Permissions](Commands-and-Permissions). |
-| `SETTINGS.HOME-EXCLUDED-WORLDS` | `list` | List of world names | `[]` | List of world names where players cannot set personal homes (`/sethome`, menus, Bedrock form). Players with `ultimatedonutsmp.homes.bypass` bypass this restriction. |
+| `SETTINGS.HOME-PERMISSIONS.PERMISSIONS` | `section` | Permission node to home count | `{'economysmp.homes.vip++': 15, 'economysmp.homes.vip+': 10, 'economysmp.homes.vip': 5}` | Named rank nodes mapped to a home limit, for servers that prefer `economysmp.homes.vip` over the numbered nodes. The highest value a player holds wins. See [Commands-and-Permissions](Commands-and-Permissions). |
+| `SETTINGS.HOME-EXCLUDED-WORLDS` | `list` | List of world names | `[]` | List of world names where players cannot set personal homes (`/sethome`, menus, Bedrock form). Players with `economysmp.homes.bypass` bypass this restriction. |
 | `SETTINGS.SHARDS-PER-KILL` | `int` | Any valid integer number | `'1'` | Configures the technical `SHARDS-PER-KILL` parameter for `SETTINGS.SHARDS-PER-KILL` in `config.yml`. |
 | `SETTINGS.SHARDS-KILL-MESSAGE` | `str` | Any string text | `'&#A303F9+{shards} Shard'` | Configures the technical `SHARDS-KILL-MESSAGE` parameter for `SETTINGS.SHARDS-KILL-MESSAGE` in `config.yml`. |
 | `SETTINGS.SHARDS-KILL-MESSAGE-BOOSTED` | `str` | Any string text | `'&#A303F9+{shards} Shards &7(&ax{multiplier}&7)'` | Action bar shown instead of `SHARDS-KILL-MESSAGE` while a shard booster multiplies the kill reward. Supports `{multiplier}`. |
@@ -365,15 +365,15 @@ SETTINGS:
     # Enable or disable permission based home limits
     ENABLED: true
     # Explicit mapping from permission node to home limit
-    # Players can also be given ultimatedonutsmp.homes.<1-100> directly, for example
-    # ultimatedonutsmp.homes.10 for ten homes, or ultimatedonutsmp.homes.page.<1-100> to
+    # Players can also be given economysmp.homes.<1-100> directly, for example
+    # economysmp.homes.10 for ten homes, or economysmp.homes.page.<1-100> to
     # hand out whole pages of five at a time
     # The highest value the player has wins
     # Players without any of these permissions keep HOME-DEFAULT above
     PERMISSIONS:
-      "ultimatedonutsmp.homes.vip++": 15
-      "ultimatedonutsmp.homes.vip+": 10
-      "ultimatedonutsmp.homes.vip": 5
+      "economysmp.homes.vip++": 15
+      "economysmp.homes.vip+": 10
+      "economysmp.homes.vip": 5
   # Configuration section for Excluded Worlds where homes cannot be set.
   # Available options: List of world names
   HOME-EXCLUDED-WORLDS: []
@@ -895,8 +895,8 @@ characters they are. Staff chat is assembled in one piece rather than around a c
 
 Private messages and staff chat part company with public chat on one point. Both colour the whole
 line after the typed message has been put into it, so a code somebody typed would otherwise take
-effect, and `ultimatedonutsmp.chat.color` decides whether it does. The node defaults to `op` and
-ships inside the `ultimatedonutsmp.admin` and `ultimatedonutsmp.staff.mode` bundles, so staff keep
+effect, and `economysmp.chat.color` decides whether it does. The node defaults to `op` and
+ships inside the `economysmp.admin` and `economysmp.staff.mode` bundles, so staff keep
 the colours they already had. For anyone without it the codes come out of the message before the
 line is built, which stops a player hiding a private message behind `&k` or wiping the format's own
 colours with `&r`. Grant the node to a rank to hand those colours back.
@@ -925,24 +925,24 @@ SERVER-NOTIFICATIONS:
     MESSAGE: '&8[&a+&8] &a{player} &7joined the server.'
     # Per-rank wording. The first node the player holds wins, so list the highest rank first.
     BY-PERMISSION:
-      "ultimatedonutsmp.notifications.join.vip++": '&8[&a+&8] &6{player} &7joined the server.'
-      "ultimatedonutsmp.notifications.join.vip+": '&8[&a+&8] &b{player} &7joined the server.'
-      "ultimatedonutsmp.notifications.join.vip": '&8[&a+&8] &e{player} &7joined the server.'
+      "economysmp.notifications.join.vip++": '&8[&a+&8] &6{player} &7joined the server.'
+      "economysmp.notifications.join.vip+": '&8[&a+&8] &b{player} &7joined the server.'
+      "economysmp.notifications.join.vip": '&8[&a+&8] &e{player} &7joined the server.'
   LEAVE:
     ENABLED: false
     MESSAGE: '&8[&c-&8] &c{player} &7left the server.'
     BY-PERMISSION:
-      "ultimatedonutsmp.notifications.leave.vip++": '&8[&c-&8] &6{player} &7left the server.'
-      "ultimatedonutsmp.notifications.leave.vip+": '&8[&c-&8] &b{player} &7left the server.'
-      "ultimatedonutsmp.notifications.leave.vip": '&8[&c-&8] &e{player} &7left the server.'
+      "economysmp.notifications.leave.vip++": '&8[&c-&8] &6{player} &7left the server.'
+      "economysmp.notifications.leave.vip+": '&8[&c-&8] &b{player} &7left the server.'
+      "economysmp.notifications.leave.vip": '&8[&c-&8] &e{player} &7left the server.'
   # Sent in place of the join line the very first time a player ever connects.
   FIRST-JOIN:
     ENABLED: false
     MESSAGE: '&aWelcome &e{player} &ato the server for the first time!'
     BY-PERMISSION:
-      "ultimatedonutsmp.notifications.first-join.vip++": '&aWelcome &6{player} &ato the server for the first time!'
-      "ultimatedonutsmp.notifications.first-join.vip+": '&aWelcome &b{player} &ato the server for the first time!'
-      "ultimatedonutsmp.notifications.first-join.vip": '&aWelcome &e{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip++": '&aWelcome &6{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip+": '&aWelcome &b{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip": '&aWelcome &e{player} &ato the server for the first time!'
   AUCTION-HOUSE:
     ENABLED: true
     LISTING:
@@ -967,7 +967,7 @@ SERVER-NOTIFICATIONS:
 | :--- | :--- | :--- | :--- | :--- |
 | `SERVER-NOTIFICATIONS.JOIN.ENABLED` | `bool` | `true`, `false` | `false` | `true` replaces the server's own join line with `JOIN.MESSAGE`. `false` relays the server's line unchanged. |
 | `SERVER-NOTIFICATIONS.JOIN.MESSAGE` | `str` | Any string text | `'&8[&a+&8] &a{player} &7joined the server.'` | Supports `{player}`. Used for any player no `JOIN.BY-PERMISSION` entry applies to. |
-| `SERVER-NOTIFICATIONS.JOIN.BY-PERMISSION` | `map` | Permission node to wording | Three `vip` examples | Per-rank join wording. Supports `{player}` like `MESSAGE`. The first node the player holds wins, so list the highest rank first. Matching is on the exact node, so a wildcard such as `ultimatedonutsmp.*` does not pick these up. Deleted entries are never merged back. |
+| `SERVER-NOTIFICATIONS.JOIN.BY-PERMISSION` | `map` | Permission node to wording | Three `vip` examples | Per-rank join wording. Supports `{player}` like `MESSAGE`. The first node the player holds wins, so list the highest rank first. Matching is on the exact node, so a wildcard such as `economysmp.*` does not pick these up. Deleted entries are never merged back. |
 | `SERVER-NOTIFICATIONS.LEAVE.ENABLED` | `bool` | `true`, `false` | `false` | `true` replaces the server's own quit line with `LEAVE.MESSAGE`. |
 | `SERVER-NOTIFICATIONS.LEAVE.MESSAGE` | `str` | Any string text | `'&8[&c-&8] &c{player} &7left the server.'` | Supports `{player}`. Used for any player no `LEAVE.BY-PERMISSION` entry applies to. |
 | `SERVER-NOTIFICATIONS.LEAVE.BY-PERMISSION` | `map` | Permission node to wording | Three `vip` examples | Per-rank leave wording, resolved exactly as `JOIN.BY-PERMISSION` is. |
@@ -995,8 +995,8 @@ SERVER-NOTIFICATIONS:
     # Donors get announced in their rank colour, everyone else gets the plain line above.
     # Highest rank first: the first node the player holds is the one that wins.
     BY-PERMISSION:
-      "ultimatedonutsmp.notifications.join.mvp": '&#FEE75C✦ &e{player}'
-      "ultimatedonutsmp.notifications.join.vip": '&#57F287+ &a{player}'
+      "economysmp.notifications.join.mvp": '&#FEE75C✦ &e{player}'
+      "economysmp.notifications.join.vip": '&#57F287+ &a{player}'
   LEAVE:
     ENABLED: true
     MESSAGE: '&#ED4245- &f{player}'
@@ -1099,7 +1099,7 @@ PREVENT-ITEM-DROP:
   # Prevent players from dropping items while AFK (either in the AFK area or has AFK status).
   AFK: true
   # Bypass permission for admins/staff to allow item dropping.
-  BYPASS-PERMISSION: 'ultimatedonutsmp.preventdrop.bypass'
+  BYPASS-PERMISSION: 'economysmp.preventdrop.bypass'
   # Message sent to player when their drop is cancelled. Set to '' to disable message.
   MESSAGE: '&c✗ You are not allowed to drop items in spawn or AFK areas!'
 # Configuration section for Cuboid Binds.
@@ -1111,7 +1111,7 @@ PREVENT-ITEM-DROP:
 | :--- | :--- | :--- | :--- | :--- |
 | `PREVENT-ITEM-DROP.SPAWN` | `bool` | `true`, `false` | `true` | Configures the technical `SPAWN` parameter for `PREVENT-ITEM-DROP.SPAWN` in `config.yml`. |
 | `PREVENT-ITEM-DROP.AFK` | `bool` | `true`, `false` | `true` | Configures the technical `AFK` parameter for `PREVENT-ITEM-DROP.AFK` in `config.yml`. |
-| `PREVENT-ITEM-DROP.BYPASS-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.preventdrop.bypass'` | Configures the technical `BYPASS-PERMISSION` parameter for `PREVENT-ITEM-DROP.BYPASS-PERMISSION` in `config.yml`. |
+| `PREVENT-ITEM-DROP.BYPASS-PERMISSION` | `str` | Any string text | `'economysmp.preventdrop.bypass'` | Configures the technical `BYPASS-PERMISSION` parameter for `PREVENT-ITEM-DROP.BYPASS-PERMISSION` in `config.yml`. |
 | `PREVENT-ITEM-DROP.MESSAGE` | `str` | Any string text | `'&c✗ You are not allowed to drop ite...'` | Configures the technical `MESSAGE` parameter for `PREVENT-ITEM-DROP.MESSAGE` in `config.yml`. |
 
 ### 3. Practical Setup Example
@@ -1123,7 +1123,7 @@ PREVENT-ITEM-DROP:
   # Prevent players from dropping items while AFK (either in the AFK area or has AFK status).
   AFK: true
   # Bypass permission for admins/staff to allow item dropping.
-  BYPASS-PERMISSION: 'ultimatedonutsmp.preventdrop.bypass'
+  BYPASS-PERMISSION: 'economysmp.preventdrop.bypass'
   # Message sent to player when their drop is cancelled. Set to '' to disable message.
   MESSAGE: '&c✗ You are not allowed to drop items in spawn or AFK areas!'
 # Configuration section for Cuboid Binds.
@@ -1171,7 +1171,7 @@ CUBOID-BINDS:
 ```yaml
 FLY-SYSTEM:
   # The permission required for regular players/ranks to fly in spawn or cuboids.
-  PLAYER-FLY-PERMISSION: 'ultimatedonutsmp.player.fly'
+  PLAYER-FLY-PERMISSION: 'economysmp.player.fly'
   # Disable flight automatically when the player leaves the allowed areas or enters combat.
   AUTO-DISABLE-OUTSIDE: true
 # Configuration section for Worth Lore.
@@ -1181,7 +1181,7 @@ FLY-SYSTEM:
 
 | Option / Key Path | Data Type | Allowed Values | Default | Technical Function & Setup Guide |
 | :--- | :--- | :--- | :--- | :--- |
-| `FLY-SYSTEM.PLAYER-FLY-PERMISSION` | `str` | Any string text | `'ultimatedonutsmp.player.fly'` | Configures the technical `PLAYER-FLY-PERMISSION` parameter for `FLY-SYSTEM.PLAYER-FLY-PERMISSION` in `config.yml`. |
+| `FLY-SYSTEM.PLAYER-FLY-PERMISSION` | `str` | Any string text | `'economysmp.player.fly'` | Configures the technical `PLAYER-FLY-PERMISSION` parameter for `FLY-SYSTEM.PLAYER-FLY-PERMISSION` in `config.yml`. |
 | `FLY-SYSTEM.AUTO-DISABLE-OUTSIDE` | `bool` | `true`, `false` | `true` | Configures the technical `AUTO-DISABLE-OUTSIDE` parameter for `FLY-SYSTEM.AUTO-DISABLE-OUTSIDE` in `config.yml`. |
 
 ### 3. Practical Setup Example
@@ -1189,7 +1189,7 @@ FLY-SYSTEM:
 ```yaml
 FLY-SYSTEM:
   # The permission required for regular players/ranks to fly in spawn or cuboids.
-  PLAYER-FLY-PERMISSION: 'ultimatedonutsmp.player.fly'
+  PLAYER-FLY-PERMISSION: 'economysmp.player.fly'
   # Disable flight automatically when the player leaves the allowed areas or enters combat.
   AUTO-DISABLE-OUTSIDE: true
 # Configuration section for Worth Lore.
@@ -1933,7 +1933,7 @@ TEAM:
 | `TEAM.NAME-MIN-LENGTH` | `int` | Any valid integer number | `'3'` | Minimum length of the visible team name (default 3). Minecraft color and formatting codes (e.g. `&7`, `&#FF0000`, `&l`) are stripped before length validation. |
 | `TEAM.NAME-MAX-LENGTH` | `int` | Any valid integer number | `'5'` | Maximum length of the visible team name (default 5). Color codes are stripped before length validation to allow styled tags without restricting display length. |
 | `TEAM.LIMIT-MEMBERS` | `int` | Any valid integer number | `'10'` | Configures the technical `LIMIT-MEMBERS` parameter for `TEAM.LIMIT-MEMBERS` in `config.yml`. |
-| `TEAM.EXCLUDED-WORLDS` | `list` | List of world names | `[]` | List of world names where players cannot set team homes (`/team sethome`, menus, Bedrock form). If left empty, falls back to `SETTINGS.HOME-EXCLUDED-WORLDS`. Players with `ultimatedonutsmp.teams.bypass` bypass this restriction. |
+| `TEAM.EXCLUDED-WORLDS` | `list` | List of world names | `[]` | List of world names where players cannot set team homes (`/team sethome`, menus, Bedrock form). If left empty, falls back to `SETTINGS.HOME-EXCLUDED-WORLDS`. Players with `economysmp.teams.bypass` bypass this restriction. |
 
 ### 3. Practical Setup Example
 
@@ -2089,7 +2089,7 @@ SERVER-LIST:
   # the number of players on the server and %max_players% the slot count, the same two tokens the
   # tablist header takes. Maintenance mode keeps its own text while it is on, set in network.yml
   MOTD:
-  - '&d&lUltimateDonutSMP'
+  - '&d&lEconomySMP'
   - '&7%online%&8/&7%max_players% &7online'
 ```
 
@@ -2098,7 +2098,7 @@ SERVER-LIST:
 | Option / Key Path | Data Type | Allowed Values | Default | Technical Function & Setup Guide |
 | :--- | :--- | :--- | :--- | :--- |
 | `SERVER-LIST.ENABLED` | `bool` | `true`, `false` | `false` | Global toggle for `SERVER-LIST` system. Set to `true` to enable, `false` to disable. It ships off, so updating the jar leaves the entry reading exactly as it did before. |
-| `SERVER-LIST.MOTD` | `list` | Any lines of text | `['&d&lUltimateDonutSMP', '&7%online%&8/&7%max_players% &7online']` | The lines drawn under the server name. The client shows the first two and ignores anything after them, so a longer list costs nothing and gains nothing. `%online%` becomes the number of players on the server and `%max_players%` the slot count. Colour codes, hex codes and PlaceholderAPI server placeholders all work in these lines. An empty list leaves the `motd` line from `server.properties` where it is. |
+| `SERVER-LIST.MOTD` | `list` | Any lines of text | `['&d&lEconomySMP', '&7%online%&8/&7%max_players% &7online']` | The lines drawn under the server name. The client shows the first two and ignores anything after them, so a longer list costs nothing and gains nothing. `%online%` becomes the number of players on the server and `%max_players%` the slot count. Colour codes, hex codes and PlaceholderAPI server placeholders all work in these lines. An empty list leaves the `motd` line from `server.properties` where it is. |
 
 Nothing here rewrites `server.properties`, and that file still answers for the server whenever this
 block is off. What the block adds is two lines instead of one, the `&` colours used everywhere else
@@ -2352,7 +2352,7 @@ COMBAT-MANAGER:
 
 | Option / Key Path | Data Type | Allowed Values | Default | Technical Function & Setup Guide |
 | :--- | :--- | :--- | :--- | :--- |
-| `COMBAT-MANAGER.ENABLED` | `bool` | `true`, `false` | `true` | Master switch for combat tagging, the action bar timer, command blocking and the logout kill. The `COMBAT` feature toggle has to be on as well, which it is unless someone has turned it off with `/uds features disable combat`. Being tagged also switches a player's flight off when `FLY-SYSTEM.AUTO-DISABLE-OUTSIDE` is enabled and they do not hold `ultimatedonutsmp.staff.fly`, leaving creative and spectator mode alone. |
+| `COMBAT-MANAGER.ENABLED` | `bool` | `true`, `false` | `true` | Master switch for combat tagging, the action bar timer, command blocking and the logout kill. The `COMBAT` feature toggle has to be on as well, which it is unless someone has turned it off with `/uds features disable combat`. Being tagged also switches a player's flight off when `FLY-SYSTEM.AUTO-DISABLE-OUTSIDE` is enabled and they do not hold `economysmp.staff.fly`, leaving creative and spectator mode alone. |
 | `COMBAT-MANAGER.COOLDOWN` | `int` | Any valid integer | `16` | How many seconds a player stays tagged. Each new hit resets the full duration rather than adding to it, so a player is clear this many seconds after the last hit lands. |
 | `COMBAT-MANAGER.KILL-ON-LOGOUT` | `bool` | `true`, `false` | `false` | Kills a player who disconnects while still tagged, so logging out mid-fight is not a way to escape. They die where they logged off and drop their items there. Skipped for players who are already dead, who are in an excluded world, or who are in a duel queue, a duel, or an FFA session. |
 | `COMBAT-MANAGER.ACTION-BAR` | `string` | Any valid string text | `'&fCombat: &b${time}s'` | The action bar line shown once a second while a player is tagged. Both `${time}` and `{time}` are replaced with the whole seconds left. |

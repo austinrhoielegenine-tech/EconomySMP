@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `rtp.yml`
 
-This is the official, 100% complete technical setup guide for `rtp.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `rtp.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -315,14 +315,14 @@ without a separate config entry per rank.
     # Enable or disable permission based RTP cooldown overrides
     ENABLED: true
     # Explicit mapping from permission node to RTP cooldown in seconds
-    # Players can also be given ultimatedonutsmp.rtp.cooldown.<seconds> directly, for example
-    # ultimatedonutsmp.rtp.cooldown.3 for a 3 second cooldown
+    # Players can also be given economysmp.rtp.cooldown.<seconds> directly, for example
+    # economysmp.rtp.cooldown.3 for a 3 second cooldown
     # The lowest value the player has wins, and 0 removes the cooldown entirely
     # Players without any of these permissions keep the per-world COOLDOWN below
     PERMISSIONS:
-      "ultimatedonutsmp.rtp.cooldown.vip++": 3
-      "ultimatedonutsmp.rtp.cooldown.vip+": 10
-      "ultimatedonutsmp.rtp.cooldown.vip": 15
+      "economysmp.rtp.cooldown.vip++": 3
+      "economysmp.rtp.cooldown.vip+": 10
+      "economysmp.rtp.cooldown.vip": 15
 ```
 
 ### 2. Key Options & Technical Breakdown
@@ -335,14 +335,14 @@ without a separate config entry per rank.
 ### 3. Resolution Order
 
 1. Every entry under `PERMISSIONS` the player holds is collected.
-2. Every `ultimatedonutsmp.rtp.cooldown.<seconds>` node the player holds is collected. A non-numeric or
+2. Every `economysmp.rtp.cooldown.<seconds>` node the player holds is collected. A non-numeric or
    negative suffix is ignored.
 3. The **lowest** collected value becomes the player cooldown, so stacked ranks always give the player
    the fastest cooldown they are entitled to.
 4. If the player holds none of these nodes, the per-world `WORLD-SETTINGS.<world>.COOLDOWN` value applies.
 
-A permission value fully replaces the per-world value, in both directions. `ultimatedonutsmp.rtp.cooldown.60`
-gives a 60 second cooldown even where the world is configured at 30, and `ultimatedonutsmp.rtp.cooldown.0`
+A permission value fully replaces the per-world value, in both directions. `economysmp.rtp.cooldown.60`
+gives a 60 second cooldown even where the world is configured at 30, and `economysmp.rtp.cooldown.0`
 removes the cooldown entirely.
 
 The cooldown is evaluated on every `/rtp` attempt rather than frozen when the previous teleport finished,
@@ -368,9 +368,9 @@ WORLD-SETTINGS:
 Or skip the config entirely and drive it from LuckPerms alone:
 
 ```
-/lp group default permission set ultimatedonutsmp.rtp.cooldown.60
-/lp group vip permission set ultimatedonutsmp.rtp.cooldown.15
-/lp group staff permission set ultimatedonutsmp.rtp.cooldown.0
+/lp group default permission set economysmp.rtp.cooldown.60
+/lp group vip permission set economysmp.rtp.cooldown.15
+/lp group staff permission set economysmp.rtp.cooldown.0
 ```
 
 The `{cooldown}` placeholder in the RTP menu shows the viewing player their own resolved cooldown.

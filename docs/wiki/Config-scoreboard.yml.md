@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `scoreboard.yml`
 
-This is the official, 100% complete technical setup guide for `scoreboard.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `scoreboard.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 Rows typed entirely in capitals do not stay that way. Any line carrying a colour code or a

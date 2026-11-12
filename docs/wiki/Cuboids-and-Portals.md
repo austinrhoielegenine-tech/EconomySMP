@@ -1,6 +1,6 @@
 # Cuboids & Portals System Guide
 
-The **Cuboid** system in UltimateDonutSMP provides lightweight, high-performance 3D region selection and protection without needing WorldGuard. Cuboids are used for Spawn protection, AFK reward areas, Shard event zones, Random Teleport (RTP) boundaries, and Portal triggers.
+The **Cuboid** system in EconomySMP provides lightweight, high-performance 3D region selection and protection without needing WorldGuard. Cuboids are used for Spawn protection, AFK reward areas, Shard event zones, Random Teleport (RTP) boundaries, and Portal triggers.
 
 ---
 

@@ -6,7 +6,7 @@ import { MongoClient } from 'mongodb';
 import mysql from 'mysql2/promise';
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const defaultSqliteFile = '../plugins/UltimateDonutSmp/data/data.db';
+const defaultSqliteFile = '../plugins/EconomySMP/data/data.db';
 
 export const leaderboardTypes = {
   money: { label: 'Money', column: 'money', formatter: 'money' },
@@ -105,7 +105,7 @@ function assertReadableSqliteFile(databasePath, configuredPath) {
       [
         `SQLite database file was not found: ${databasePath}`,
         `SQLITE_FILE is currently set to: ${configuredPath}`,
-        'Point SQLITE_FILE to the real UltimateDonutSmp database, usually plugins/UltimateDonutSmp/data/data.db, or copy that data.db file into this bot project.'
+        'Point SQLITE_FILE to the real EconomySMP database, usually plugins/EconomySMP/data/data.db, or copy that data.db file into this bot project.'
       ].join('\n')
     );
   }
@@ -120,7 +120,7 @@ async function createMysqlRepository() {
   const pool = mysql.createPool({
     host: process.env.MYSQL_HOST || 'localhost',
     port: Number(process.env.MYSQL_PORT || 3306),
-    database: process.env.MYSQL_DATABASE || 'ultimatedonutsmp',
+    database: process.env.MYSQL_DATABASE || 'economysmp',
     user: process.env.MYSQL_USER || 'root',
     password: process.env.MYSQL_PASSWORD || '',
     waitForConnections: true,
@@ -162,7 +162,7 @@ async function createMysqlRepository() {
 
 async function createMongoRepository() {
   const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
-  const databaseName = process.env.MONGODB_DATABASE || 'ultimatedonutsmp';
+  const databaseName = process.env.MONGODB_DATABASE || 'economysmp';
   const playersCollectionName = process.env.MONGODB_PLAYERS_COLLECTION || 'players';
   const client = new MongoClient(uri);
 

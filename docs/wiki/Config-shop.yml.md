@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `shop.yml`
 
-This is the official, 100% complete technical setup guide for `shop.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `shop.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -1506,7 +1506,7 @@ END-MENU:
 
 ### 3. Practical Setup Example
 
-Rather than writing `ITEM-DATA` by hand, run `/shopedit <menu>` (for example `/shopedit end`), which needs `ultimatedonutsmp.admin.shop`. Click the item you want to sell in your own inventory, then click the shop slot it should sit in. To set a price, rename the item to `[PRICE] 250` in an anvil first — the rename is read as the price and then stripped, so it never reaches the buyer. Without it the price comes from `worth.yml`, and an item with no worth entry is refused instead of being listed for nothing.
+Rather than writing `ITEM-DATA` by hand, run `/shopedit <menu>` (for example `/shopedit end`), which needs `economysmp.admin.shop`. Click the item you want to sell in your own inventory, then click the shop slot it should sit in. To set a price, rename the item to `[PRICE] 250` in an anvil first — the rename is read as the price and then stripped, so it never reaches the buyer. Without it the price comes from `worth.yml`, and an item with no worth entry is refused instead of being listed for nothing.
 
 Clicking a filled slot with nothing selected removes that entry. Changes are saved to `shop.yml` as you make them, so no reload is needed.
 

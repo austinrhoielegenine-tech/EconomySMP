@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `duels.yml`
 
-This is the official, 100% complete technical setup guide for `duels.yml` in **UltimateDonutSMP**.
+This is the official, 100% complete technical setup guide for `duels.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 ---
@@ -518,7 +518,7 @@ CROSS_SERVER:
   # Unique identifier for this local server instance
   LOCAL_SERVER_ID: ""
   # Redis channel for duel match communications
-  REDIS_CHANNEL: "ultimatedonutsmp:duels"
+  REDIS_CHANNEL: "economysmp:duels"
   # Redis key prefix for duel data
   KEY_PREFIX: "uds:duels:"
   # Stale queue request timeout (in seconds)
@@ -541,7 +541,7 @@ CROSS_SERVER:
 | :--- | :--- | :--- | :--- | :--- |
 | `CROSS_SERVER.ENABLED` | `bool` | `true`, `false` | `false` | Global toggle for `CROSS_SERVER` system. Set to `true` to enable, `false` to disable. |
 | `CROSS_SERVER.LOCAL_SERVER_ID` | `str` | Any string text | `''` | Configures the technical `LOCAL_SERVER_ID` parameter for `CROSS_SERVER.LOCAL_SERVER_ID` in `duels.yml`. |
-| `CROSS_SERVER.REDIS_CHANNEL` | `str` | Any string text | `'ultimatedonutsmp:duels'` | Configures the technical `REDIS_CHANNEL` parameter for `CROSS_SERVER.REDIS_CHANNEL` in `duels.yml`. |
+| `CROSS_SERVER.REDIS_CHANNEL` | `str` | Any string text | `'economysmp:duels'` | Configures the technical `REDIS_CHANNEL` parameter for `CROSS_SERVER.REDIS_CHANNEL` in `duels.yml`. |
 | `CROSS_SERVER.KEY_PREFIX` | `str` | Any string text | `'uds:duels:'` | Configures the technical `KEY_PREFIX` parameter for `CROSS_SERVER.KEY_PREFIX` in `duels.yml`. |
 | `CROSS_SERVER.STALE_QUEUE_TIMEOUT_SECONDS` | `int` | Any valid integer number | `'45'` | Configures the technical `STALE_QUEUE_TIMEOUT_SECONDS` parameter for `CROSS_SERVER.STALE_QUEUE_TIMEOUT_SECONDS` in `duels.yml`. |
 | `CROSS_SERVER.TRANSFER_TIMEOUT_SECONDS` | `int` | Any valid integer number | `'20'` | Configures the technical `TRANSFER_TIMEOUT_SECONDS` parameter for `CROSS_SERVER.TRANSFER_TIMEOUT_SECONDS` in `duels.yml`. |
@@ -558,7 +558,7 @@ CROSS_SERVER:
   # Unique identifier for this local server instance
   LOCAL_SERVER_ID: ""
   # Redis channel for duel match communications
-  REDIS_CHANNEL: "ultimatedonutsmp:duels"
+  REDIS_CHANNEL: "economysmp:duels"
   # Redis key prefix for duel data
   KEY_PREFIX: "uds:duels:"
   # Stale queue request timeout (in seconds)

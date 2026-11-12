@@ -1,6 +1,6 @@
 # Detailed Configuration & Setup Guide: `messages.yml`
 
-This is the official technical setup guide for `messages.yml` in **UltimateDonutSMP**.
+This is the official technical setup guide for `messages.yml` in **EconomySMP**.
 Each section details the exact commented setup code block, allowed option values, data types, default values, and in-depth functional behavior.
 
 One formatting rule catches people out. A line whose visible letters are all uppercase is shown

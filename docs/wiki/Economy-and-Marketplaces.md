@@ -1,6 +1,6 @@
 # Economy & Marketplaces Guide
 
-UltimateDonutSMP includes a complete dual-currency economy (Vault Money & Virtual Shards), GUI shops, sell menus, worth browsers, Auction House, Orders board, and Billford rotating trades NPC.
+EconomySMP includes a complete dual-currency economy (Vault Money & Virtual Shards), GUI shops, sell menus, worth browsers, Auction House, Orders board, and Billford rotating trades NPC.
 
 ---
 

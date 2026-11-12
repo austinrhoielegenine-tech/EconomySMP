@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bx</groupId>
-    <artifactId>ultimatedonutsmp</artifactId>
+    <artifactId>EconomySMP</artifactId>
     <version>1.6</version>
     <packaging>jar</packaging>
 
-    <name>ultimatedonutsmp</name>
+    <name>EconomySMP</name>
 
     <properties>
         <java.version>21</java.version>
@@ -34,7 +34,7 @@
 
     <build>
         <defaultGoal>clean package</defaultGoal>
-        <finalName>UltimateDonutSmp-${project.version}</finalName>
+        <finalName>EconomySMP</finalName>
         <sourceDirectory>${source.directory}</sourceDirectory>
         <plugins>
             <plugin>
@@ -66,19 +66,19 @@
                     <relocations>
                         <relocation>
                             <pattern>org.xerial</pattern>
-                            <shadedPattern>com.bx.ultimateDonutSmp.libs.xerial</shadedPattern>
+                            <shadedPattern>com.archiveaustxn.libs.xerial</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>redis.clients</pattern>
-                            <shadedPattern>com.bx.ultimateDonutSmp.libs.redis.clients</shadedPattern>
+                            <shadedPattern>com.archiveaustxn.libs.redis.clients</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.apache.commons.pool2</pattern>
-                            <shadedPattern>com.bx.ultimateDonutSmp.libs.commons.pool2</shadedPattern>
+                            <shadedPattern>com.archiveaustxn.libs.commons.pool2</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.zaxxer.hikari</pattern>
-                            <shadedPattern>com.bx.ultimateDonutSmp.libs.hikari</shadedPattern>
+                            <shadedPattern>com.archiveaustxn.libs.hikari</shadedPattern>
                         </relocation>
                     </relocations>
                     <filters>
