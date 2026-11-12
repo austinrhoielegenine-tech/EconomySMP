@@ -208,7 +208,7 @@ public class ConfigManager {
 
     private SyncResult syncBundledConfiguration(String name, File backupDirectory) {
         SyncResult result = new SyncResult();
-        File targetFile = new File(plugin.getDataFolder(), name);
+        File targetFile = new File(plugin.getDataFolder(), bundledPath(name));
 
         YamlConfiguration bundledDefault;
         try {
@@ -960,7 +960,7 @@ public class ConfigManager {
     }
 
     private FileConfiguration load(String name, FileConfiguration previousConfiguration) {
-        File file = new File(plugin.getDataFolder(), name);
+        File file = new File(plugin.getDataFolder(), bundledPath(name));
         YamlConfiguration configuration = new YamlConfiguration();
         configuration.options().parseComments(true);
 
@@ -1327,8 +1327,9 @@ public class ConfigManager {
             return false;
         }
 
-        File file = new File(plugin.getDataFolder(), name);
+        File file = new File(plugin.getDataFolder(), bundledPath(name));
         try {
+            Files.createDirectories(file.getParentFile().toPath());
             configuration.save(file);
             if (plugin != null && plugin.getLanguageManager() != null) {
                 plugin.getLanguageManager().clearLocalizedConfigurations();

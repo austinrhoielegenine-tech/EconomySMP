@@ -45,7 +45,7 @@ public class OffenseManager {
     }
 
     private void loadConfig() {
-        File file = new File(plugin.getDataFolder(), "offenses.yml");
+        File file = new File(plugin.getDataFolder(), ConfigManager.bundledPath("offenses.yml"));
         if (!file.exists()) {
             try (java.io.InputStream in = plugin.getResource(ConfigManager.bundledPath("offenses.yml"))) {
                 if (in != null) {

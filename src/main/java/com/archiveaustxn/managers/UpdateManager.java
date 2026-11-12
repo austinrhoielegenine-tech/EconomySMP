@@ -150,7 +150,7 @@ public class UpdateManager {
     }
 
     private FileConfiguration loadConfig() {
-        File file = new File(plugin.getDataFolder(), "update.yml");
+        File file = new File(plugin.getDataFolder(), ConfigManager.bundledPath("update.yml"));
         if (file.isFile()) {
             return YamlConfiguration.loadConfiguration(file);
         }
