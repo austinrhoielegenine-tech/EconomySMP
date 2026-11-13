@@ -41,11 +41,11 @@ CATEGORIES:
   flakes:
     FILE-TYPE: flakes.yml
     OPEN-MENU: "{flake-menu}"
-    MATERIAL: SNOWBALL
+    MATERIAL: AMETHYST_SHARD
     SLOT: 22
-    NAME: "#73cffaꜰʟᴀᴋᴇ ѕʜᴏᴘ"
+    NAME: "#73cffaѕʜᴀʀᴅ ѕʜᴏᴘ"
     LORE:
-      - "#FFFFFFClick to view the flake shop"
+      - "#FFFFFFClick to view the shard shop"
 
 BACK-BUTTON:
   MATERIAL: BARRIER
