@@ -1,3 +1,4 @@
+enable: true
 STAFF-MODE:
   ENABLED: true
   AUTO-VANISH-ON-ENABLE: false

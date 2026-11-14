@@ -1,3 +1,4 @@
+enable: true
 SETTINGS:
   ENABLED: true
   DEFAULT_TTL_SECONDS: 900

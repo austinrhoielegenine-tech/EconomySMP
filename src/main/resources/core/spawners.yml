@@ -1,3 +1,4 @@
+enable: true
 SETTINGS:
   ENABLED: true
   ACCESS_MODE: OWNER_ONLY
