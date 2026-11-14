@@ -1,3 +1,4 @@
+enable: true
 
 banned-words:
   - example

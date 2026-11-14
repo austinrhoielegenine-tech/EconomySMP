@@ -4,7 +4,7 @@ import com.archiveaustxn.managers.ConfigManager;
 
 import java.nio.file.Path;
 
-/** Resolves bundled config files, which live under {@code src/main/resources/core/<folder>/}. */
+/** Resolves bundled config files, which live under {@code src/main/resources/core/}. */
 public final class BundledResources {
 
     private BundledResources() {

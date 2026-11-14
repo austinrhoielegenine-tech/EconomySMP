@@ -1,3 +1,4 @@
+enable: true
 AMETHYST-TOOLS:
   EXCLUDED-WORLDS:
   - duels

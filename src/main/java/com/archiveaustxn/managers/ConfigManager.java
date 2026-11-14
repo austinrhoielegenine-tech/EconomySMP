@@ -65,28 +65,9 @@ public class ConfigManager {
             "update.yml"
     );
 
-    /**
-     * Bundled defaults live under {@code core/<folder>/} inside the jar. Files in the plugin data
-     * folder keep their flat names (for example {@code menus.yml}); only the bundled lookup uses
-     * the folder layout.
-     */
-    private static final Map<String, String> BUNDLED_FOLDERS = createBundledFolders();
-
-    private static Map<String, String> createBundledFolders() {
-        Map<String, String> folders = new HashMap<>();
-        folders.put("death-messages.yml", "messages");
-        folders.put("messages.yml", "messages");
-        folders.put("menus.yml", "gui");
-        folders.put("auction-house.yml", "auction");
-        return folders;
-    }
-
+    /** Bundled defaults are flat under core/, except the shop configuration. */
     public static String bundledPath(String name) {
-        String folder = BUNDLED_FOLDERS.get(name);
-        if (folder == null) {
-            folder = name.endsWith(".yml") ? name.substring(0, name.length() - ".yml".length()) : name;
-        }
-        return "core/" + folder + "/" + name;
+        return "shop.yml".equals(name) ? "core/shop/shop.yml" : "core/" + name;
     }
 
     private static final DateTimeFormatter BACKUP_TIMESTAMP_FORMAT =
