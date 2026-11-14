@@ -1,3 +1,4 @@
+enable: true
 MESSAGES:
   ENABLED: true
   PREFIX: '&c☠ '

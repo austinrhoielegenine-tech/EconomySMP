@@ -1,3 +1,4 @@
+enable: true
 TEAM:
   NO-TEAM: '&cYou don''t have a team. Type /team create (name) to create a team.'
   ALREADY-EXISTS: '&cYou cannot create a team with this name, it is already taken.'
