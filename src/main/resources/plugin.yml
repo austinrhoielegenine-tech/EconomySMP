@@ -695,12 +695,14 @@ commands:
     usage: /amethysttool give <player> <type> [duration] | /amethysttool reload
     permission: economysmp.command.amethysttool
     permission-message: "&cYou do not have permission to use /amethysttool."
+  core:
+    description: EconomySMP core administration command
+    usage: /core reload
+    permission: economysmp.command.economysmp
+    permission-message: "&cYou do not have permission to use /core."
   economysmp:
     description: EconomySMP admin command
     usage: /economysmp <reload|statswipe|optimize>
-    aliases:
-    - uds
-    - udsmp
     permission: economysmp.command.economysmp
     permission-message: "&cYou do not have permission to use /economysmp."
   ecsee:

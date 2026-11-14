@@ -822,6 +822,8 @@ public final class EconomySMP extends JavaPlugin {
         EconomySMPCommand economySMPCommand = new EconomySMPCommand(this);
         setExecutor("economysmp", economySMPCommand);
         setTabCompleter("economysmp", economySMPCommand);
+        setExecutor("core", economySMPCommand);
+        setTabCompleter("core", economySMPCommand);
         MaintenanceCommand maintenanceCommand = new MaintenanceCommand(this);
         setExecutor("maintenance", maintenanceCommand, FeatureManager.Feature.MAINTENANCE);
         setTabCompleter("maintenance", maintenanceCommand);
