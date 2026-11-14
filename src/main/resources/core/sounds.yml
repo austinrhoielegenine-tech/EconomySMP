@@ -1,3 +1,4 @@
+enable: true
 MENUS:
   BUTTON-CLICK: minecraft:ui.button.click|1.0|1.0
   PAGE-TURN: minecraft:item.book.page_turn|2.0|0.1
