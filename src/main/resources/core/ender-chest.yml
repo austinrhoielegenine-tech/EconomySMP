@@ -1,3 +1,4 @@
+enable: true
 ENDER-CHEST:
   ENABLED: true
   DEFAULT-ROWS: 6
