@@ -1,3 +1,4 @@
+enable: true
 WEBHOOKS:
   ENABLED: true
   URL: https://discord.com/api/webhooks/your_webhook_here

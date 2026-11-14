@@ -1,3 +1,4 @@
+enable: true
 DATABASE:
   TYPE: SQLITE
   SQLITE:
