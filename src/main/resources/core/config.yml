@@ -181,14 +181,6 @@ SERVER-NOTIFICATIONS:
     PURCHASE:
       ENABLED: false
       MESSAGE: '&8[&6AH&8] &f{player} &7bought &e{amount}x {item} &7for &a{price_formatted}&7.'
-  ORDERS:
-    ENABLED: true
-    CREATE:
-      ENABLED: false
-      MESSAGE: '&8[&6ORDER&8] &f{player} &7created an order for &e{amount}x {item} &7at &a{price_formatted} &7each.'
-    COMPLETE:
-      ENABLED: false
-      MESSAGE: '&8[&6ORDER&8] &f{player} &7completed &e{owner}&7''s order for &e{amount}x {item}&7.'
 AFK-SYSTEM:
   ENABLED: true
   TIME: 180
@@ -333,11 +325,6 @@ KEY-ALL:
     - '&#00A4FCKey-All reward!'
     - '&fYou received &b{amount}x {crate}&f key.'
     - ''
-TEAM:
-  NAME-MIN-LENGTH: 3
-  NAME-MAX-LENGTH: 5
-  LIMIT-MEMBERS: 10
-  EXCLUDED-WORLDS: []
 LEADERBOARD:
   UPDATE: 10
   NPC-REFRESH: 1

@@ -47,6 +47,7 @@ public class ConfigManager {
             "freeze.yml",
             "auction-house.yml",
             "orders.yml",
+            "team.yml",
             "enchantments.yml",
             "filter.yml",
             "duels.yml",
@@ -93,6 +94,7 @@ public class ConfigManager {
     private FileConfiguration freeze;
     private FileConfiguration auctionHouse;
     private FileConfiguration orders;
+    private FileConfiguration team;
     private FileConfiguration duels;
     private FileConfiguration ffa;
     private FileConfiguration pvp;
@@ -140,6 +142,8 @@ public class ConfigManager {
         freeze       = load("freeze.yml", freeze);
         auctionHouse = load("auction-house.yml", auctionHouse);
         orders       = load("orders.yml", orders);
+        team         = load("team.yml", team);
+        applyModuleConfigurations();
         duels        = load("duels.yml", duels);
         ffa          = load("ffa.yml", ffa);
         pvp          = load("pvp.yml", pvp);
@@ -156,6 +160,32 @@ public class ConfigManager {
         enchantments = load("enchantments.yml", enchantments);
         filter       = load("filter.yml", filter);
         reloadShopCategoryFiles();
+    }
+
+    /** Applies module-owned YAML sections to legacy runtime views used by existing features. */
+    private void applyModuleConfigurations() {
+        copySection(team, "TEAM", config, "TEAM");
+        copySection(team, "MENUS.TEAM-MENUS", menus, "TEAM-MENUS");
+        copySection(team, "MESSAGES.TEAM", messages, "TEAM");
+        copySection(orders, "SERVER-NOTIFICATIONS.ORDERS", config, "SERVER-NOTIFICATIONS.ORDERS");
+        copySection(orders, "MESSAGES.ORDERS", messages, "ORDERS");
+    }
+
+    private void copySection(FileConfiguration source, String sourcePath,
+                             FileConfiguration target, String targetPath) {
+        if (source == null || target == null) {
+            return;
+        }
+        ConfigurationSection section = source.getConfigurationSection(sourcePath);
+        if (section == null) {
+            return;
+        }
+        target.set(targetPath, null);
+        for (String key : section.getKeys(true)) {
+            if (!section.isConfigurationSection(key)) {
+                target.set(targetPath + "." + key, section.get(key));
+            }
+        }
     }
 
     private void syncBundledConfigurations() {
@@ -1224,6 +1254,7 @@ public class ConfigManager {
     public FileConfiguration getAuctionHouse()  { return localized("CONFIG.AUCTION_HOUSE", auctionHouse); }
     public FileConfiguration getOrders()        { return localized("CONFIG.ORDERS", orders); }
     public FileConfiguration getOrdersConfig()  { return getOrders(); }
+    public FileConfiguration getTeam()          { return team; }
     public FileConfiguration getDuels()         { return localized("CONFIG.DUELS", duels); }
     public FileConfiguration getFfa()           { return localized("CONFIG.FFA", ffa); }
     public FileConfiguration getPvp()           { return localized("CONFIG.PVP", pvp); }
@@ -1255,7 +1286,7 @@ public class ConfigManager {
     public FileConfiguration getLegacyAuctionHouse() { return auctionHouse; }
 
     public void reloadShop() { shop = load("shop.yml", shop); reloadShopCategoryFiles(); }
-    public void reloadMenus() { menus = load("menus.yml", menus); }
+    public void reloadMenus() { menus = load("menus.yml", menus); applyModuleConfigurations(); }
     public void reloadSounds() { sounds = load("sounds.yml", sounds); }
     public void reloadWorth() { worth = load("worth.yml", worth); }
     public void reloadAmethystTools() { amethystTools = load("amethyst-tools.yml", amethystTools); }
@@ -1263,7 +1294,8 @@ public class ConfigManager {
     public void reloadInvsee() { invsee = load("invsee.yml", invsee); }
     public void reloadFreeze() { freeze = load("freeze.yml", freeze); }
     public void reloadAuctionHouse() { auctionHouse = load("auction-house.yml", auctionHouse); }
-    public void reloadOrders() { orders = load("orders.yml", orders); }
+    public void reloadOrders() { orders = load("orders.yml", orders); applyModuleConfigurations(); }
+    public void reloadTeam() { team = load("team.yml", team); applyModuleConfigurations(); }
     public void reloadDuels() { duels = load("duels.yml", duels); }
     public void reloadFfa() { ffa = load("ffa.yml", ffa); }
     public void reloadPvp() { pvp = load("pvp.yml", pvp); }
