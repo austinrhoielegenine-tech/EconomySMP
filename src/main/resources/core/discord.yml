@@ -186,3 +186,13 @@ BOT:
   LINK_ALREADY_LINKED: 'Your Discord account is already linked to **{player}**. Use /unsync before linking another account.'
   UNLINK_SUCCESS: 'Successfully unlinked **{player}** from your Discord account.'
   UNLINK_NOT_LINKED: 'Your Discord account is not linked to a Minecraft account.'
+
+
+IP-COMMAND:
+  ENABLED: true
+  COMMAND: "!ip"
+  SERVER-NAME: "LinearSMP"
+  SERVER-ADDRESS: "CHANGE_ME"
+  SERVER-PORT: 25565
+  COLOR: "#009BFF"
+  FOOTER: "Made By ArchiveAustxn"

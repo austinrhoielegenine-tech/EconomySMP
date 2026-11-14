@@ -38,9 +38,9 @@ CATEGORIES:
     LORE:
       - "#FFFFFFClick to view the food shop"
 
-  flakes:
-    FILE-TYPE: flakes.yml
-    OPEN-MENU: "{flake-menu}"
+  shards:
+    FILE-TYPE: shards.yml
+    OPEN-MENU: "{shard-menu}"
     MATERIAL: AMETHYST_SHARD
     SLOT: 22
     NAME: "#73cffaѕʜᴀʀᴅ ѕʜᴏᴘ"
