@@ -1,3 +1,4 @@
+enable: true
 # EconomySMP maintenance messages
 # Path: core/maintenance/maintenance.yml
 # Color codes use &. %player% is replaced with the target player's name.

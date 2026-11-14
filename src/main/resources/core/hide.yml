@@ -1,3 +1,4 @@
+enable: true
 ENABLED: true
 COOLDOWN-SECONDS: 30
 MAX-NAME-LENGTH: 16

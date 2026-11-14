@@ -1,3 +1,4 @@
+enable: true
 GLOBAL:
   PAGE-MENU:
     MATERIAL: ARROW
