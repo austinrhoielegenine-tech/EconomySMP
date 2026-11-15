@@ -339,10 +339,11 @@ public class ConfigManager {
             if (normalized.isBlank() || normalized.contains("/")) {
                 return null;
             }
-        } else if (!normalized.contains("/")) {
-            // Bare filenames remain backwards-compatible with categories/<name>.yml.
+        } else if (!normalized.contains("/")
+                && !normalized.toLowerCase(java.util.Locale.ROOT).endsWith("shop.yml")) {
+            // Bare category filenames remain backwards-compatible with categories/<name>.yml.
             normalized = "categories/" + normalized;
-        } else if (!normalized.startsWith("categories/")) {
+        } else if (normalized.contains("/") && !normalized.startsWith("categories/")) {
             return null;
         }
 
