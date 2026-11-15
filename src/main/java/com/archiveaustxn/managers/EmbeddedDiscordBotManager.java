@@ -5,15 +5,12 @@ import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Guild;
-import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
-import net.dv8tion.jda.api.events.guild.GuildReadyEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
-import net.dv8tion.jda.api.requests.GatewayIntent;
 
 import java.awt.Color;
 import java.io.File;
@@ -58,8 +55,8 @@ public final class EmbeddedDiscordBotManager extends ListenerAdapter {
 
         try {
             openLinksDatabase(config.getString("BOT.LINKS_FILE", "data/links.db"));
+            // Slash commands do not need privileged Message Content intent.
             jda = JDABuilder.createDefault(token)
-                    .enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.MESSAGE_CONTENT)
                     .addEventListeners(this)
                     .build();
             plugin.getLogger().info("Connecting the embedded EconomySMP Discord bot...");
@@ -101,7 +98,8 @@ public final class EmbeddedDiscordBotManager extends ListenerAdapter {
                 Commands.slash("sync", "Link your Minecraft account.")
                         .addOption(OptionType.STRING, "code", "The one-time code from /pvp sync in Minecraft.", true),
                 Commands.slash("unlink", "Unlink your Minecraft account from Discord."),
-                Commands.slash("unsync", "Unlink your Minecraft account from Discord.")
+                Commands.slash("unsync", "Unlink your Minecraft account from Discord."),
+                Commands.slash("ip", "Show the Minecraft server address.")
         );
 
         String guildId = plugin.getConfigManager().getDiscord().getString("BOT.GUILD_ID", "").trim();
@@ -133,6 +131,30 @@ public final class EmbeddedDiscordBotManager extends ListenerAdapter {
         } else if (command.equals("unlink") || command.equals("unsync")) {
             String response = unlinkAccount(event.getUser().getId());
             event.reply(response).setEphemeral(true).queue();
+        } else if (command.equals("ip")) {
+            var config = plugin.getConfigManager().getDiscord();
+            if (!config.getBoolean("IP-COMMAND.ENABLED", true)) {
+                event.reply("The server address command is disabled.").setEphemeral(true).queue();
+                return;
+            }
+            String address = config.getString("IP-COMMAND.SERVER-ADDRESS", "CHANGE_ME").trim();
+            int port = config.getInt("IP-COMMAND.SERVER-PORT", 25565);
+            String displayAddress = address + (port == 25565 ? "" : ":" + port);
+            Color color;
+            try {
+                color = Color.decode(config.getString("IP-COMMAND.COLOR", "#009BFF"));
+            } catch (NumberFormatException ignored) {
+                color = new Color(0x009BFF);
+            }
+            EmbedBuilder embed = new EmbedBuilder()
+                    .setColor(color)
+                    .setTitle(config.getString("IP-COMMAND.SERVER-NAME", "EconomySMP"))
+                    .setDescription("Minecraft server information")
+                    .addField("Server IP", address.equalsIgnoreCase("CHANGE_ME")
+                            ? "Not configured" : "`" + displayAddress + "`", false)
+                    .setFooter(config.getString("IP-COMMAND.FOOTER", "EconomySMP"))
+                    .setTimestamp(java.time.Instant.now());
+            event.replyEmbeds(embed.build()).queue();
         }
     }
 
