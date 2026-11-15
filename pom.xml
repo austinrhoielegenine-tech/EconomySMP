@@ -68,11 +68,11 @@
                     <dependency>
                         <groupId>com.guardsquare</groupId>
                         <artifactId>proguard-base</artifactId>
-                        <version>7.10.0</version>
+                        <version>7.9.1</version>
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <proguardVersion>7.10.0</proguardVersion>
+                    <proguardVersion>7.9.1</proguardVersion>
                     <injar>${project.build.finalName}.jar</injar>
                     <proguardInclude>${project.basedir}/proguard-rules.pro</proguardInclude>
                     <libs>
