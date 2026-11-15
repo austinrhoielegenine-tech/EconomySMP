@@ -334,7 +334,14 @@ public class ConfigManager {
             return null;
         }
 
-        if (!normalized.contains("/")) {
+        if (normalized.startsWith("shop/")) {
+            // Explicit root-level shop files, e.g. shop/shardshop.yml.
+            normalized = normalized.substring("shop/".length());
+            if (normalized.isBlank() || normalized.contains("/")) {
+                return null;
+            }
+        } else if (!normalized.contains("/")) {
+            // Bare filenames remain backwards-compatible with categories/<name>.yml.
             normalized = "categories/" + normalized;
         } else if (!normalized.startsWith("categories/")) {
             return null;
@@ -549,11 +556,71 @@ public class ConfigManager {
             }
         }
 
+        int discovered = syncNewBundledYamlResources();
         plugin.getLogger().info("Configuration sync complete: "
                 + created + " created, "
                 + updated + " updated"
+                + (discovered > 0 ? ", " + discovered + " new bundled YAML file(s) discovered" : "")
                 + (skipped > 0 ? ", " + skipped + " skipped" : "")
                 + ".");
+    }
+
+    /**
+     * Copies newly introduced core YAML resources from the installed plugin JAR when they do not
+     * exist in the server data folder yet. Existing server-owned files are never overwritten here.
+     * This lets new releases add modules, GUI files, and shop categories without requiring admins
+     * to create their folders or files manually.
+     */
+    private int syncNewBundledYamlResources() {
+        File jarFile;
+        try {
+            jarFile = new File(plugin.getClass().getProtectionDomain()
+                    .getCodeSource().getLocation().toURI());
+        } catch (Exception exception) {
+            plugin.getLogger().log(Level.WARNING, "Could not locate the installed plugin JAR for resource discovery.", exception);
+            return 0;
+        }
+        if (!jarFile.isFile()) {
+            return 0;
+        }
+
+        Path dataRoot = plugin.getDataFolder().toPath().toAbsolutePath().normalize();
+        int created = 0;
+        try (java.util.jar.JarFile jar = new java.util.jar.JarFile(jarFile)) {
+            java.util.Enumeration<java.util.jar.JarEntry> entries = jar.entries();
+            while (entries.hasMoreElements()) {
+                java.util.jar.JarEntry entry = entries.nextElement();
+                String resource = entry.getName();
+                String lower = resource.toLowerCase(java.util.Locale.ROOT);
+                if (entry.isDirectory()
+                        || !resource.startsWith("core/")
+                        || !(lower.endsWith(".yml") || lower.endsWith(".yaml"))
+                        || resource.contains("../")
+                        || resource.startsWith("/")) {
+                    continue;
+                }
+
+                Path target = dataRoot.resolve(resource).normalize();
+                if (!target.startsWith(dataRoot) || java.nio.file.Files.exists(target)) {
+                    continue;
+                }
+
+                try (InputStream input = plugin.getResource(resource)) {
+                    if (input == null) {
+                        continue;
+                    }
+                    java.nio.file.Files.createDirectories(target.getParent());
+                    java.nio.file.Files.copy(input, target);
+                    created++;
+                } catch (IOException exception) {
+                    plugin.getLogger().log(Level.WARNING,
+                            "Could not install newly bundled configuration " + resource, exception);
+                }
+            }
+        } catch (IOException exception) {
+            plugin.getLogger().log(Level.WARNING, "Failed to scan bundled YAML resources in the plugin JAR.", exception);
+        }
+        return created;
     }
 
     private SyncResult syncBundledConfiguration(String name, File backupDirectory) {
