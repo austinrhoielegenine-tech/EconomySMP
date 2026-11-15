@@ -185,9 +185,12 @@ public class ConfigManager {
         copySection(tpa, "MESSAGES.TPA", messages, "TPA");
         copySection(tpa, "MESSAGES.TPAUTO", messages, "TPAUTO");
         copySection(tpa, "MESSAGES.TPAHEREAUTO", messages, "TPAHEREAUTO");
-        copySection(tpaGui, "SETTINGS-MENU.BUTTONS", menus, "SETTINGS-MENU.BUTTONS");
+        copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_CONFIRM_MENUS", menus, "SETTINGS-MENU.BUTTONS.TPA_CONFIRM_MENUS");
+        copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_REQUESTS", menus, "SETTINGS-MENU.BUTTONS.TPA_REQUESTS");
+        copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_HERE_REQUESTS", menus, "SETTINGS-MENU.BUTTONS.TPA_HERE_REQUESTS");
+        copySection(tpaGui, "SETTINGS-MENU.BUTTONS.AUTO_CONFIRM_TPAS", menus, "SETTINGS-MENU.BUTTONS.AUTO_CONFIRM_TPAS");
         copySection(tpaGui, "TPA-CONFIRM-MENU", menus, "TPA-CONFIRM-MENU");
-        copySection(tpaGui, "SERVER-INFO-MENU", menus, "SERVER-INFO-MENU");
+        copySection(tpaGui, "SERVER-INFO-MENU.PAGES.'3'.BUTTONS.TPA", menus, "SERVER-INFO-MENU.PAGES.'3'.BUTTONS.TPA");
         copySection(orders, "SERVER-NOTIFICATIONS.ORDERS", config, "SERVER-NOTIFICATIONS.ORDERS");
         copySection(orders, "MESSAGES.ORDERS", messages, "ORDERS");
     }
