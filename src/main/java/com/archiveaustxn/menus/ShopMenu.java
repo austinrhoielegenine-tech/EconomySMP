@@ -64,7 +64,6 @@ public class ShopMenu extends BaseMenu {
     @Override
     public void build(Player player) {
         clear();
-        fill(Material.GRAY_STAINED_GLASS_PANE);
         slotCategories.clear();
         slotItems.clear();
         slotQuotes.clear();
