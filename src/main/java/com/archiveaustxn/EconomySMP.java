@@ -159,7 +159,7 @@ public final class EconomySMP extends JavaPlugin {
         String licenseKey = configManager.getConfig().getString("LICENSE-KEY", "").trim();
         if (!"A1U2-S2T3-I1N2".equals(licenseKey)) {
             getServer().getConsoleSender().sendMessage(
-                    org.bukkit.ChatColor.RED + "[EconomySMP] Invalid license key! Set license: \"A1U2-S2T3-I1N2\" in plugins/EconomySMP/core/config.yml."
+                    org.bukkit.ChatColor.RED + "[EconomySMP] Invalid license key! Set LICENSE-KEY: \"A1U2-S2T3-I1N2\" in plugins/EconomySMP/core/config.yml."
             );
             getServer().getPluginManager().disablePlugin(this);
             return;
