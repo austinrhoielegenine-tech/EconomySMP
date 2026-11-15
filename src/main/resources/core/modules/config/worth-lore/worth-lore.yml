@@ -1,0 +1,4 @@
+enable: true
+WORTH-LORE:
+  ENABLED: true
+  FORMAT: '&7Worth: &a$%price%'

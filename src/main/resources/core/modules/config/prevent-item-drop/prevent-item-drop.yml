@@ -1,0 +1,6 @@
+enable: true
+PREVENT-ITEM-DROP:
+  SPAWN: true
+  AFK: true
+  BYPASS-PERMISSION: 'economysmp.preventdrop.bypass'
+  MESSAGE: '&c✗ You are not allowed to drop items in spawn or AFK areas!'

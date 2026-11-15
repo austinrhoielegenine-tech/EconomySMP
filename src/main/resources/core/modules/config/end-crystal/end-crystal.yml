@@ -1,0 +1,4 @@
+enable: true
+END-CRYSTAL:
+  ENABLED: false
+  DAMAGE: 2.0

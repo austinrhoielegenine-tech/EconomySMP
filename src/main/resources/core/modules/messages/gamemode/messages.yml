@@ -1,0 +1,12 @@
+enable: true
+GAMEMODE:
+  MESSAGE: '&d%player% &7is now in &e%mode% mode'
+  TARGET_MESSAGE: '&7Your gamemode has been changed to &e%mode% &7by &d%sender%'
+  NO_PERMISSION: '&cYou do not have permission.'
+  NO_PERMISSION_OTHERS: '&cYou do not have permission to change other players'' gamemode.'
+  PLAYER_ONLY: '&cOnly players can use this command without a target.'
+  PLAYER_NOT_ONLINE: '&cPlayer not online.'
+  INVALID_MODE: '&cInvalid gamemode. Use survival, creative, adventure, or spectator.'
+  USAGE: '&cUsage: /%label% <survival|creative|adventure|spectator> [player]'
+  USAGE_SHORT: '&cUsage: /%label% [player]'
+  DISABLED: '&cGamemode commands are currently disabled.'

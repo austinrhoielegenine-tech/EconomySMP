@@ -1,0 +1,6 @@
+enable: true
+FLY-SYSTEM:
+  PLAYER-FLY-PERMISSION: 'economysmp.player.fly'
+  AUTO-DISABLE-OUTSIDE: true
+  MIN-SPEED: 1
+  MAX-SPEED: 10

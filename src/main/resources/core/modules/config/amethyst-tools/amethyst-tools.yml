@@ -1,0 +1,106 @@
+enable: true
+AMETHYST-TOOLS:
+  EXCLUDED-WORLDS:
+  - duels
+  PICKAXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    DISABLED-BLOCKS:
+    - GRASS_BLOCK
+    - DIRT_PATH
+    - DIRT
+    - COARSE_DIRT
+    - ROOTED_DIRT
+    - CLAY
+    - FARMLAND
+    - SAND
+    - RED_SAND
+    - GRAVEL
+    - SPAWNER
+    NAME: '&#A303F9Amethyst Pickaxe'
+    LORE:
+    - '&79 Blocks Per Break'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+  AXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Amethyst Axe'
+    LORE:
+    - '&7Breaks Trees Instantly'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+    - SILK_TOUCH:1
+  SELLAXE:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Amethyst Sell Axe'
+    LORE:
+    - '&7Instantly Sells All Items in A Chest'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+  SHOVEL:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    ALLOWED-BLOCKS:
+    - GRASS_BLOCK
+    - DIRT_PATH
+    - DIRT
+    - COARSE_DIRT
+    - ROOTED_DIRT
+    - CLAY
+    - FARMLAND
+    - SAND
+    - RED_SAND
+    - GRAVEL
+    NAME: '&#A303F9Amethyst Shovel'
+    LORE:
+    - '&79 Blocks Per Break'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS:
+    - MENDING:1
+    - EFFICIENCY:5
+    - UNBREAKING:3
+  BUCKET:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Amethyst Bucket'
+    LORE:
+    - '&7Drains 27 Water At Once'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS: []
+  BOOSTER:
+    PARTICLE:
+      NAME: FALLING_DUST
+      MATERIAL: PURPLE_CONCRETE_POWDER
+      AMOUNT: 10
+    NAME: '&#A303F9Shard Booster'
+    LORE:
+    - '&74x Shard Production for 24 hours'
+    - '&8Self Destruct'
+    - '&8{time}'
+    ENCHANTMENTS: []

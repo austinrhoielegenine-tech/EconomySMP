@@ -1,0 +1,303 @@
+enable: true
+SERVER-INFO-MENU:
+  TITLE: '&8Server Info'
+  SIZE: 27
+  BUTTONS:
+    SERVER:
+      MATERIAL: LANTERN
+      SLOT: 10
+      NAME: '&#00A4FCDonutSMP'
+      LORE:
+      - '&fBuild a base, fight players,'
+      - '&fand become the richest.'
+      - ''
+      - '&#00A4FCPVP: &cEnabled'
+      - '&#00A4FCDifficulty: &cHard'
+      - '&#00A4FCkeepInventory: &cFalse'
+    ECONOMY:
+      MATERIAL: GOLD_INGOT
+      SLOT: 11
+      NAME: '&#00A4FCEconomy'
+      LORE:
+      - '&fYou can earn server money by selling items in game.'
+      - '&fThis allows you to buy better things like armor and pvp gear.'
+      - ''
+      - '&#00A4FCCommands: &f/sell and /auction'
+    RULES:
+      MATERIAL: KNOWLEDGE_BOOK
+      SLOT: 12
+      NAME: '&#00A4FCRules'
+      LORE:
+      - '&fTo keep the community safe, everyone must'
+      - '&ffollow the rules or be subject to punishment.'
+      - ''
+      - '&#00A4FCCommand: &f/rules'
+    LEADERBOARDS:
+      MATERIAL: CLOCK
+      SLOT: 13
+      NAME: '&#00A4FCLeaderboards'
+      LORE:
+      - '&fLook at the top players and'
+      - '&fcompete for the top spots.'
+      - ''
+      - '&#00A4FCCommand: &f/leaderboards'
+    SHARDS:
+      MATERIAL: AMETHYST_SHARD
+      SLOT: 14
+      NAME: '&#00A4FCAFK Shards'
+      LORE:
+      - '&fYou can earn shards by sitting idle, then'
+      - '&fbuy things like spawners, keys, and more.'
+      - ''
+      - '&#00A4FCCommand: &f/afk'
+    SETTINGS:
+      MATERIAL: GRAY_DYE
+      SLOT: 15
+      NAME: '&#00A4FCSettings'
+      LORE:
+      - '&fYou can change certain settings'
+      - '&fbased on your preferences.'
+      - ''
+      - '&#00A4FCCommand: &f/settings'
+    RTP:
+      MATERIAL: OAK_SAPLING
+      SLOT: 16
+      NAME: '&#00A4FCRandom Teleport'
+      LORE:
+      - '&fUse the random teleport to'
+      - '&fget far away from spawn.'
+      - ''
+      - '&#00A4FCOverworld: &f175k X 175k'
+      - '&#00A4FCNether: &f7.5k X 7.5k'
+      - '&#00A4FCEnd: &f225k X 225k'
+      - ''
+      - '&#00A4FCCommand: &f/rtp'
+  NAVIGATION:
+    BACK-SLOT: 18
+    PAGE-INFO-SLOT: 22
+    NEXT-SLOT: 26
+    PAGE-INFO-MATERIAL: BOOK
+    PAGE-INFO-NAME: '&#00A4FCHelp Pages'
+  PAGES:
+    '1':
+      TITLE: '&8Server Info'
+      SIZE: 27
+      BUTTONS:
+        SERVER:
+          MATERIAL: LANTERN
+          SLOT: 10
+          NAME: '&#00A4FCDonutSMP'
+          LORE:
+          - '&fBuild a base, fight players,'
+          - '&fand become the richest.'
+          - ''
+          - '&#00A4FCPVP: &cEnabled'
+          - '&#00A4FCDifficulty: &cHard'
+          - '&#00A4FCkeepInventory: &cFalse'
+        ECONOMY:
+          MATERIAL: GOLD_INGOT
+          SLOT: 11
+          NAME: '&#00A4FCEconomy'
+          LORE:
+          - '&fYou can earn server money by selling items in game.'
+          - '&fThis allows you to buy better things like armor and pvp gear.'
+          - ''
+          - '&#00A4FCCommands: &f/sell and /auctionhouse'
+        RULES:
+          MATERIAL: KNOWLEDGE_BOOK
+          SLOT: 12
+          NAME: '&#00A4FCRules'
+          LORE:
+          - '&fTo keep the community safe, everyone must'
+          - '&ffollow the rules or be subject to punishment.'
+          - ''
+          - '&#00A4FCCommand: &f/rules'
+          COMMAND: rules
+        LEADERBOARDS:
+          MATERIAL: CLOCK
+          SLOT: 13
+          NAME: '&#00A4FCLeaderboards'
+          LORE:
+          - '&fLook at the top players and'
+          - '&fcompete for the top spots.'
+          - ''
+          - '&#00A4FCCommand: &f/leaderboards'
+          COMMAND: leaderboards
+        SHARDS:
+          MATERIAL: AMETHYST_SHARD
+          SLOT: 14
+          NAME: '&#00A4FCAFK Shards'
+          LORE:
+          - '&fYou can earn shards by sitting idle, then'
+          - '&fbuy things like spawners, keys, and more.'
+          - ''
+          - '&#00A4FCCommand: &f/afk'
+          COMMAND: afk
+        SETTINGS:
+          MATERIAL: GRAY_DYE
+          SLOT: 15
+          NAME: '&#00A4FCSettings'
+          LORE:
+          - '&fYou can change certain settings'
+          - '&fbased on your preferences.'
+          - ''
+          - '&#00A4FCCommand: &f/settings'
+          COMMAND: settings
+        RTP:
+          MATERIAL: OAK_SAPLING
+          SLOT: 16
+          NAME: '&#00A4FCRandom Teleport'
+          LORE:
+          - '&fUse the random teleport to'
+          - '&fget far away from spawn.'
+          - ''
+          - '&#00A4FCOverworld: &f175k X 175k'
+          - '&#00A4FCNether: &f7.5k X 7.5k'
+          - '&#00A4FCEnd: &f225k X 225k'
+          - ''
+          - '&#00A4FCCommand: &f/rtp'
+          COMMAND: rtp
+    '2':
+      TITLE: '&8Getting Started'
+      SIZE: 27
+      BUTTONS:
+        START_HERE:
+          MATERIAL: BOOK
+          SLOT: 10
+          NAME: '&#00A4FCStart Here'
+          LORE:
+          - '&f1. Use &b/rtp &fto leave spawn.'
+          - '&f2. Gather wood, food, and iron.'
+          - '&f3. Build a safe base.'
+          - '&f4. Save it with &b/sethome&f.'
+          CLICK-MESSAGE:
+          - '&7Start with &f/rtp &7to find land away from spawn.'
+          - '&7After building a base, save it using &f/sethome&7.'
+        MONEY:
+          MATERIAL: GOLD_INGOT
+          SLOT: 11
+          NAME: '&#00A4FCMake Money'
+          LORE:
+          - '&fSell blocks, ores, and drops with'
+          - '&b/sell &for list items in'
+          - '&b/auctionhouse&f.'
+          - ''
+          - '&#00A4FCTip: &fKeep rare loot to trade.'
+          COMMAND: sell
+        HOMES:
+          MATERIAL: RED_BED
+          SLOT: 12
+          NAME: '&#00A4FCHomes'
+          LORE:
+          - '&fUse &b/sethome <name> &fto save'
+          - '&fimportant places.'
+          - ''
+          - '&#00A4FCOpen: &f/home'
+          COMMAND: home
+        TEAMS:
+          MATERIAL: IRON_HELMET
+          SLOT: 13
+          NAME: '&#00A4FCTeams'
+          LORE:
+          - '&fPlay with friends, share a base,'
+          - '&fand manage team permissions.'
+          - ''
+          - '&#00A4FCOpen: &f/team'
+          COMMAND: team
+        COMBAT:
+          MATERIAL: DIAMOND_SWORD
+          SLOT: 14
+          NAME: '&#00A4FCCombat Tips'
+          LORE:
+          - '&fDying is punishing because'
+          - '&fkeepInventory is turned off.'
+          - ''
+          - '&#00A4FCTip: &fAvoid risky fights'
+          - '&funtil you are geared.'
+          CLICK-MESSAGE:
+          - '&7You drop your items on death here, so gear up before taking big fights.'
+          - '&7Keep backup armor and food if you plan to PvP often.'
+        SPAWN:
+          MATERIAL: COMPASS
+          SLOT: 15
+          NAME: '&#00A4FCSpawn'
+          LORE:
+          - '&fReturn to spawn when you need'
+          - '&fshops, safety, or a reset.'
+          - ''
+          - '&#00A4FCCommand: &f/spawn'
+          COMMAND: spawn
+        RTP_GUIDE:
+          MATERIAL: OAK_SAPLING
+          SLOT: 16
+          NAME: '&#00A4FCRTP Guide'
+          LORE:
+          - '&fUse RTP when spawn feels crowded'
+          - '&for you need fresh land.'
+          - ''
+          - '&#00A4FCCommand: &f/rtp'
+          COMMAND: rtp
+    '3':
+      TITLE: '&8Useful Commands'
+      SIZE: 27
+      BUTTONS:
+        SHOP:
+          MATERIAL: EMERALD
+          SLOT: 10
+          NAME: '&#00A4FCShop'
+          LORE:
+          - '&fBuy useful items, blocks,'
+          - '&fand starter gear.'
+          - ''
+          - '&#00A4FCCommand: &f/shop'
+          COMMAND: shop
+        SELL:
+          MATERIAL: CHEST
+          SLOT: 11
+          NAME: '&#00A4FCSell'
+          LORE:
+          - '&fTurn farmed or mined items'
+          - '&finto Quick money.'
+          - ''
+          - '&#00A4FCCommand: &f/sell'
+          COMMAND: sell
+        LEADERBOARDS_GUIDE:
+          MATERIAL: CLOCK
+          SLOT: 13
+          NAME: '&#00A4FCLeaderboards'
+          LORE:
+          - '&fCheck who is leading in'
+          - '&fmoney, kills, and more.'
+          - ''
+          - '&#00A4FCCommand: &f/leaderboards'
+          COMMAND: leaderboards
+        SETTINGS_GUIDE:
+          MATERIAL: GRAY_DYE
+          SLOT: 14
+          NAME: '&#00A4FCSettings'
+          LORE:
+          - '&fToggle personal options like'
+          - '&falerts and menu preferences.'
+          - ''
+          - '&#00A4FCCommand: &f/settings'
+          COMMAND: settings
+        RULES_GUIDE:
+          MATERIAL: KNOWLEDGE_BOOK
+          SLOT: 15
+          NAME: '&#00A4FCRules'
+          LORE:
+          - '&fRead the rules before grinding'
+          - '&for trading with players.'
+          - ''
+          - '&#00A4FCCommand: &f/rules'
+          COMMAND: rules
+        SOCIAL_GUIDE:
+          MATERIAL: PINK_DYE
+          SLOT: 16
+          NAME: '&#00A4FCSocial & Media'
+          LORE:
+          - '&fOpen server links and check'
+          - '&fmedia rank reQuirements.'
+          - ''
+          - '&#00A4FCCommand: &f/media'
+          COMMAND: media

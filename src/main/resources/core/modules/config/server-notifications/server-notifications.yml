@@ -1,0 +1,31 @@
+enable: true
+SERVER-NOTIFICATIONS:
+  JOIN:
+    ENABLED: false
+    MESSAGE: '&8[&a+&8] &a{player} &7joined the server.'
+    BY-PERMISSION:
+      "economysmp.notifications.join.vip++": '&8[&a+&8] &6{player} &7joined the server.'
+      "economysmp.notifications.join.vip+": '&8[&a+&8] &b{player} &7joined the server.'
+      "economysmp.notifications.join.vip": '&8[&a+&8] &e{player} &7joined the server.'
+  LEAVE:
+    ENABLED: false
+    MESSAGE: '&8[&c-&8] &c{player} &7left the server.'
+    BY-PERMISSION:
+      "economysmp.notifications.leave.vip++": '&8[&c-&8] &6{player} &7left the server.'
+      "economysmp.notifications.leave.vip+": '&8[&c-&8] &b{player} &7left the server.'
+      "economysmp.notifications.leave.vip": '&8[&c-&8] &e{player} &7left the server.'
+  FIRST-JOIN:
+    ENABLED: false
+    MESSAGE: '&aWelcome &e{player} &ato the server for the first time!'
+    BY-PERMISSION:
+      "economysmp.notifications.first-join.vip++": '&aWelcome &6{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip+": '&aWelcome &b{player} &ato the server for the first time!'
+      "economysmp.notifications.first-join.vip": '&aWelcome &e{player} &ato the server for the first time!'
+  AUCTION-HOUSE:
+    ENABLED: true
+    LISTING:
+      ENABLED: false
+      MESSAGE: '&8[&6AH&8] &f{player} &7listed &e{amount}x {item} &7for &a{price_formatted}&7.'
+    PURCHASE:
+      ENABLED: false
+      MESSAGE: '&8[&6AH&8] &f{player} &7bought &e{amount}x {item} &7for &a{price_formatted}&7.'

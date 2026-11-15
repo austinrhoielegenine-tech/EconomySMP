@@ -1,0 +1,7 @@
+enable: true
+RENAME:
+  NO_ITEM: '&c✖ &7You must hold an item to rename it'
+  META_ERROR: '&c⚠ &7This item cannot be renamed'
+  STAFFMODE_BLOCKED: '&c✖ &7Staff mode items cannot be renamed'
+  RESET_SUCCESS: '&8[&aRename&8] &7Item name has been reset'
+  SUCCESS: '&8[&aRename&8] &7New name: &f%name%'

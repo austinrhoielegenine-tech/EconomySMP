@@ -1,0 +1,7 @@
+enable: true
+FLY:
+  ENABLED: '&a✈ &7Flight mode &aactivated'
+  DISABLED: '&c✗ &7Flight mode &cdeactivated'
+  PLAYER_RESTRICTED: '&c✗ &7You can only use flight in spawn or cuboids.'
+  PLAYER_IN_COMBAT: '&c✗ &7You cannot fly while in combat.'
+  PLAYER_DISABLED: '&c✗ &7Flight deactivated because you left the allowed area or entered combat.'

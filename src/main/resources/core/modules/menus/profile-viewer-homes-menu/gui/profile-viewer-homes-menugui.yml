@@ -1,0 +1,37 @@
+enable: true
+PROFILE-VIEWER-HOMES-MENU:
+  TITLE: '&8{username}''s Homes'
+  SIZE: 54
+  MAX-ITEMS-PER-PAGE: 45
+  HOME-BUTTON:
+    MATERIAL: LIGHT_BLUE_BED
+    DISPLAY-NAME: '&b{name}'
+    LORE:
+    - '&7World: &f{world}'
+    - '&7X: &f{x} &7Y: &f{y} &7Z: &f{z}'
+    - '&aClick to teleport'
+  INVALID-HOME-BUTTON:
+    MATERIAL: BARRIER
+    DISPLAY-NAME: '&c{name}'
+    LORE:
+    - '&7This home points to an unavailable world.'
+  EMPTY-BUTTON:
+    MATERIAL: BARRIER
+    DISPLAY-NAME: '&cNo Homes'
+    LORE:
+    - '&7This player has no homes saved.'
+  BACK-BUTTON:
+    MATERIAL: BARRIER
+    DISPLAY-NAME: '&cBack'
+    LORE:
+    - '&7Return to the main profile viewer'
+  CLOSE-BUTTON:
+    MATERIAL: BARRIER
+    DISPLAY-NAME: '&cClose'
+    LORE:
+    - '&7Close this home list'
+  REFRESH-BUTTON:
+    MATERIAL: CLOCK
+    DISPLAY-NAME: '&#6BF18DRefresh'
+    LORE:
+    - '&7Reload this player''s homes'

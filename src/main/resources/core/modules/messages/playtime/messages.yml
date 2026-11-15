@@ -1,0 +1,4 @@
+enable: true
+PLAYTIME:
+  MESSAGE: '&a%time% &eplaying on &a%server%'
+  OTHER: '&e%player% &7has played for &a%time% &7on &a%server%'

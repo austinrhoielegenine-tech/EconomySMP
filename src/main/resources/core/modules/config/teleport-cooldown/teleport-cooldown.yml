@@ -1,0 +1,8 @@
+enable: true
+TELEPORT-COOLDOWN:
+  HOME: 5
+  TEAM-HOME: 5
+  SPAWN: 5
+  AFK: 5
+  WARP: 5
+  RTP: 5

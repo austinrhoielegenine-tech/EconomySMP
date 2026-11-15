@@ -1,0 +1,6 @@
+enable: true
+SERVER-LIST:
+  ENABLED: false
+  MOTD:
+  - '&d&lEconomySMP'
+  - '&7%online%&8/&7%max_players% &7online'

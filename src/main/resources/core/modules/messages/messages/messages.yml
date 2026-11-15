@@ -1,0 +1,16 @@
+enable: true
+MESSAGES:
+  CANNOT_MESSAGE_SELF: '&cYou cannot message yourself!'
+  PLAYER_BLOCKED: '&c%player% has blocked you.'
+  PMS_DISABLED: '&c%player% has private messages disabled.'
+  NO_CONVERSATION: '&cYou are currently not in conversation with anyone or the player
+    is offline.'
+  SENDER_FORMAT: '&d(To &a%player%&d) %message%'
+  RECEIVER_FORMAT: '&d(From &a%player%&d) %message%'
+  USAGE: '&cUsage: /msg <player> <message>'
+  REPLY_USAGE: '&cUsage: /reply <message>'
+  PLAYER_NOT_ONLINE: '&cPlayer not online.'
+  PLAYER_ONLY_REPLY: '&cOnly players can use /reply.'
+  PLAYER_ONLY: '&cOnly players can use this command.'
+  NO_PERMISSION: '&cYou do not have permission.'
+  DISABLED: '&cPrivate messages are currently disabled.'

@@ -1,0 +1,20 @@
+enable: true
+PORTAL-SYSTEM:
+  ENABLED: true
+  BLOCK-IN-COMBAT: true
+  DEFAULT-TRIGGER-COOLDOWN-MS: 1500
+  POST-TELEPORT-GRACE-MS: 2000
+  HOLOGRAM:
+    ENABLED: true
+    DEFAULT-REGION: NA East
+    DEFAULT-SERVER-ID: ''
+    PORTALS: null
+    OFFSET-Y: 1.2
+    SET-HERE-OFFSET-Y: 1.6
+    LINE-SPACING: 0.27
+    UPDATE-TICKS: 40
+    LINES:
+    - '&f{portal}'
+    - '&7Region {region}'
+    - ''
+    - '&f<players> Players'

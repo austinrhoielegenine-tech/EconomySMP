@@ -1,0 +1,31 @@
+enable: true
+AFK-MENU:
+  TITLE: '&8AFK Areas'
+  SIZE: 54
+  RANDOM-BUTTON:
+    SLOT: 49
+    MATERIAL: AMETHYST_BLOCK
+    DISPLAY-NAME: '&#A303F9AFK'
+    LORE:
+    - '&fClick to teleport to a random afk area'
+  AREAS:
+    '1':
+      SLOT: 0
+      MATERIAL: ITEM_FRAME
+      DISPLAY-NAME: '&#A303F9AFK #1'
+      LORE:
+      - '&8{players}/200'
+      - '&7Click to go to this'
+      - '&7AFK zone area.'
+      CUBOID: afk1
+      LOCATION: 1
+    '2':
+      SLOT: 1
+      MATERIAL: ITEM_FRAME
+      DISPLAY-NAME: '&#A303F9AFK #2'
+      LORE:
+      - '&8{players}/200'
+      - '&7Click to go to this'
+      - '&7AFK zone area.'
+      CUBOID: afk2
+      LOCATION: 2

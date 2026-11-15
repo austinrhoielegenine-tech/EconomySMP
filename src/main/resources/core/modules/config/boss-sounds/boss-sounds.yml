@@ -1,0 +1,6 @@
+enable: true
+BOSS-SOUNDS:
+  ENABLED: true
+  RADIUS: 1600
+  WITHER-SPAWN: true
+  ENDER-DRAGON-DEATH: true

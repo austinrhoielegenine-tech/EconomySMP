@@ -1,0 +1,77 @@
+enable: true
+STATS-WIPE-MENU:
+  TITLE: '&8Stats Wipe'
+  SIZE: 27
+  PLACEHOLDER: true
+  PLACEHOLDER-MATERIAL: AIR
+  STATUS:
+    SLOT: 13
+    MATERIAL: BARRIER
+    DISPLAY-NAME: '&cWipe In Progress'
+    LORE:
+    - '&7Another wipe is currently running.'
+    - '&7Wait for it to finish, then refresh.'
+  BUTTONS:
+    PLAYER_STATS:
+      SLOT: 10
+      MATERIAL: PAPER
+      DISPLAY-NAME: '&#6BF18DPlayer Stats'
+      LORE:
+      - '&7Players with tracked stats: &f{count}'
+      - '&cReset kills, deaths, playtime,'
+      - '&cblocks, mobs, streaks, and money flow stats.'
+    TEAM_DOCUMENTS:
+      SLOT: 11
+      MATERIAL: LIGHT_BLUE_BANNER
+      DISPLAY-NAME: '&#6BF18DTeam Documents'
+      LORE:
+      - '&7Teams stored: &f{count}'
+      - '&cDelete all teams and team members.'
+    HOME_DOCUMENTS:
+      SLOT: 12
+      MATERIAL: RED_BED
+      DISPLAY-NAME: '&#6BF18DHome Documents'
+      LORE:
+      - '&7Homes stored: &f{count}'
+      - '&cDelete all saved player homes.'
+    BOUNTIES:
+      SLOT: 14
+      MATERIAL: PLAYER_HEAD
+      DISPLAY-NAME: '&#6BF18DBounties'
+      LORE:
+      - '&7Active bounties: &f{count}'
+      - '&cDelete all active bounties.'
+    SELL_DOCUMENTS:
+      SLOT: 15
+      MATERIAL: CHEST
+      DISPLAY-NAME: '&#6BF18DSell Documents'
+      LORE:
+      - '&7Sell docs stored: &f{count}'
+      - '&cDelete sell history and sell progress.'
+    MONEY:
+      SLOT: 9
+      MATERIAL: GOLD_INGOT
+      DISPLAY-NAME: '&#6BF18DPlayer Money'
+      LORE:
+      - '&7Players with custom balances: &f{count}'
+      - '&cReset all player balances to'
+      - '&cthe default starting money.'
+    SHARDS:
+      SLOT: 16
+      MATERIAL: PRISMARINE_SHARD
+      DISPLAY-NAME: '&#6BF18DPlayer Shards'
+      LORE:
+      - '&7Players with shards: &f{count}'
+      - '&cReset all player shards to 0.'
+    REFRESH:
+      SLOT: 22
+      MATERIAL: CLOCK
+      DISPLAY-NAME: '&#6BF18DRefresh'
+      LORE:
+      - '&7Click to refresh wipe counts.'
+    CLOSE:
+      SLOT: 26
+      MATERIAL: BARRIER
+      DISPLAY-NAME: '&cClose'
+      LORE:
+      - '&7Close this menu.'

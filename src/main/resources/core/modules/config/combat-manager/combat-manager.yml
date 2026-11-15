@@ -1,0 +1,18 @@
+enable: true
+COMBAT-MANAGER:
+  ENABLED: true
+  COOLDOWN: 16
+  KILL-ON-LOGOUT: false
+  ACTION-BAR: '&fCombat: &b${time}s'
+  MOBS: false
+  ENDER-CRYSTAL: true
+  ENDER-PEARL: true
+  RESPAWN-ANCHOR: true
+  BLOCK-MESSAGE: '&cYou can''t use this command in your current status.'
+  BLOCK-COMMANDS:
+  - /spawn
+  - /afk
+  - /rtp
+  - /homes
+  EXCLUDED-WORLDS:
+  - duels

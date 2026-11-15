@@ -1,0 +1,4 @@
+enable: true
+PHANTOM:
+  ENABLED: '&7You disabled phantoms spawning close to you'
+  DISABLED: '&7You enabled phantoms spawning close to you'

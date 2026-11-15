@@ -1,0 +1,19 @@
+enable: true
+TABLIST:
+  ENABLED: true
+  LUCKPERMS-PRIORITY: true
+  SHOW-TEAM-NAME: true
+  ICON-HEAD-SKIN: <head:%player_name%>
+  ICON-MEDIA: 📹
+  MEDIA-BADGE-FORMAT: '&d<icon_media>&#37BFF9+'
+  MEDIA-BADGE-PERMISSION: rank.media
+  NAME-FORMAT: <media_badge>&f<nick>%team_suffix%
+  HEADER:
+  - ''
+  - <#00ADFC>&lServer Name</#00FCFC>
+  - '&f%online% Players'
+  - ''
+  FOOTER:
+  - ''
+  - '   &#37BFF9/discord  /guide  /store   '
+  - ''

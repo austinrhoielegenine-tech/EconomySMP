@@ -1,0 +1,5 @@
+enable: true
+HEAL:
+  SELF: '&a♡ &7Your health has been restored!'
+  OTHER: '&8[&cHeal&8] &7You healed &d%player%'
+  NOTIFY: '&8[&cHeal&8] &d%sender% &7restored your health'

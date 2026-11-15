@@ -1,0 +1,46 @@
+enable: true
+PROFILE-VIEWER-MENU:
+  TITLE: '&8{username}''s Profile'
+  SIZE: 54
+  BUTTONS:
+    SUMMARY:
+      SLOT: 4
+      MATERIAL: PLAYER_HEAD
+      DISPLAY-NAME: '&#6BF18D{username}'
+      LORE:
+      - '&7Status: &f{status}'
+      - '&7Team: &f{team}'
+      - '&7Homes: &f{homes}'
+      - '&7AFK: &f{afk}'
+      - '&7Location: &f{world} ({x}, {y}, {z})'
+    HOMES:
+      SLOT: 40
+      MATERIAL: RED_BED
+      DISPLAY-NAME: '&#6BF18DHomes'
+      LORE:
+      - '&7View and navigate through this player''s homes'
+      - '&7Homes saved: &f{homes}'
+      - '&aClick to open'
+    CURRENT-LOCATION:
+      SLOT: 41
+      MATERIAL: COMPASS
+      DISPLAY-NAME: '&#6BF18DCurrent Location'
+      DISPLAY-NAME-OFFLINE: '&cCurrent Location'
+      LORE:
+      - '&7{world} ({x}, {y}, {z})'
+      - '&aClick to teleport'
+      LORE-OFFLINE:
+      - '&7This player is offline right now.'
+    PUNISHMENTS:
+      SLOT: 42
+      MATERIAL: IRON_BARS
+      DISPLAY-NAME: '&#6BF18DPunishments'
+      LORE:
+      - '&7View this player''s punishment history'
+      - '&aClick to open'
+    REFRESH:
+      SLOT: 49
+      MATERIAL: CLOCK
+      DISPLAY-NAME: '&#6BF18DRefresh'
+      LORE:
+      - '&7Reload this player''s profile'

@@ -1,0 +1,17 @@
+enable: true
+RTP-ZONE:
+  ENABLED: true
+  CUBOID: ''
+  EVERY: 30
+  TITLE: '&c&lRTP Zone'
+  SUB-TITLE: '&fTeleporting in %countdown%'
+  CANCELLED-MESSAGE: '&cRTP cancelled because you left the zone.'
+  FAILED-MESSAGE: '&cCould not find a safe RTP zone location.'
+  SUCCESS-MESSAGE: ''
+  WORLD:
+    NAME: world
+    CENTER-X: 0
+    CENTER-Z: 0
+    MIN-RADIUS: 500
+    MAX-RADIUS: 2000
+  TITLE-FADE-OUT-TICKS: 10

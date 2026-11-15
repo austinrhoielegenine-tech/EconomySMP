@@ -1,0 +1,5 @@
+enable: true
+RANDOMTP:
+  SUCCESS: '&8[&dRTP&8] &7You were teleported to &e%player%'
+  NOTIFY: '&8[&dRTP&8] &e%player% &7appeared near you!'
+  NO_PLAYERS: '&c✖ &7No other players available for random teleport'

@@ -1,0 +1,11 @@
+enable: true
+SHARD_PAY:
+  CANT-PAY-SELF: '&cYou cannot pay yourself.'
+  INVALID-AMOUNT: '&cInvalid amount format. Use numbers with optional K, M, or B suffix
+    (e.g. 100K, 1.5M, 2B)'
+  MUST-BE-POSITIVE: '&cThe amount must be positive.'
+  NOT-ENOUGH-SHARDS: '&cYou don''t have enough shards.'
+  TARGET-PROFILE-NOT-FOUND: '&cTarget profile not found.'
+  TARGET-DISABLED-PAYMENTS: '&cThe target player has the payments disabled.'
+  SUCCESS-SENDER: '&7You paid &b{player} &#A303F9{amount}&7 shards.'
+  SUCCESS-RECEIVER: '&7You received &#A303F9{amount}&7 shards from &b{player}&7.'

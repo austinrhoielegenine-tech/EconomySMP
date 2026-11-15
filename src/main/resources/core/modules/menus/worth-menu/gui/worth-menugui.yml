@@ -1,0 +1,7 @@
+enable: true
+WORTH-MENU:
+  TITLE: '&8Item Prices'
+  FORMAT: '&7Worth: &a${price}'
+  SORT-BUTTON:
+    TITLE: '&aSort'
+    MATERIAL: CAULDRON

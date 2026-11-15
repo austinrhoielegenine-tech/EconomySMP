@@ -1,0 +1,9 @@
+enable: true
+STAFFCHAT:
+  NO_PERMISSION: '&cYou do not have permission to use staff chat.'
+  USAGE: '&cUsage: /staffchat <message>'
+  FORMAT: '&8[&6StaffChat&8] &e%player%&7: %message%'
+  DISABLED: '&cNetwork staff chat is currently disabled.'
+  MESSAGE_TOO_LONG: '&cStaff chat message is too long. Max: %max% characters.'
+  REDIS_UNAVAILABLE: '&eStaff chat was delivered locally, but Redis is unavailable
+    for cross-server delivery.'

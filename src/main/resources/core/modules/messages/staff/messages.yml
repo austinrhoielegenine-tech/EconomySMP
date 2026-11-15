@@ -1,0 +1,24 @@
+enable: true
+STAFF:
+  NO_PERMISSION_OTHERS: '&c&lERROR &7» &cYou don''t have permission to manage other
+    players'' staff mode!'
+  TOGGLE_ERROR: '&c&lERROR &7» &cFailed to toggle staff mode!'
+  STATUS_ENABLED: '&aEnabled'
+  STATUS_DISABLED: '&cDisabled'
+  ICON_ENABLED: '&a✓'
+  ICON_DISABLED: '&c✗'
+  STATE_ACTIVE: '&aActive'
+  STATE_INACTIVE: '&cInactive'
+  SELF_TOGGLE: '&6&lSTAFF MODE &7» %status%&7!'
+  SELF_STATUS: '&7Status: %icon% %status%'
+  OTHER_TOGGLE: '&6&lSTAFF MODE &7» %status% &7staff mode for &e%target%&7!'
+  TARGET_NOTIFY: '&6&lSTAFF MODE &7» Your staff mode has been %status% &7by &e%staff%&7!'
+  BROADCAST: '&8[&6STAFF&8] &e%staff% &7has %status% &7staff mode for &e%target%'
+  ACTIVATION_MESSAGES:
+  - '&7&m------------------------------'
+  - '&6&lSTAFF MODE ACTIVATED'
+  - '&7• Inventory cleared and saved'
+  - '&7• Game mode set to Creative'
+  - '&7• Flight enabled'
+  - '&7• Use &e/vanish &7to become invisible'
+  - '&7&m------------------------------'

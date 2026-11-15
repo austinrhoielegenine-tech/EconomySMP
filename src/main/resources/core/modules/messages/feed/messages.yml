@@ -1,0 +1,5 @@
+enable: true
+FEED:
+  SELF: '&7Your hunger has been satisfied!'
+  OTHER: '&8[&6Feed&8] &7You fed &d%player%'
+  NOTIFY: '&8[&6Feed&8] &d%sender% &7restored your hunger'

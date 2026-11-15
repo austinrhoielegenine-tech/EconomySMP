@@ -66,7 +66,113 @@ public class ConfigManager {
             "server-wipe.yml",
             "discord.yml",
             "anvil-moderation.yml",
-            "update.yml"
+            "update.yml",
+            "modules/config/language/language.yml",
+            "modules/config/locations/locations.yml",
+            "modules/config/combat-manager/combat-manager.yml",
+            "modules/config/portal-system/portal-system.yml",
+            "modules/config/settings/settings.yml",
+            "modules/config/features-settings/features-settings.yml",
+            "modules/config/chat/chat.yml",
+            "modules/config/server-notifications/server-notifications.yml",
+            "modules/config/afk-system/afk-system.yml",
+            "modules/config/prevent-item-drop/prevent-item-drop.yml",
+            "modules/config/cuboid-binds/cuboid-binds.yml",
+            "modules/config/fly-system/fly-system.yml",
+            "modules/config/worth-lore/worth-lore.yml",
+            "modules/config/money-nametags/money-nametags.yml",
+            "modules/config/end-crystal/end-crystal.yml",
+            "modules/config/fast-crystals/fast-crystals.yml",
+            "modules/config/respawn-anchor/respawn-anchor.yml",
+            "modules/config/boss-sounds/boss-sounds.yml",
+            "modules/config/ender-chest/ender-chest.yml",
+            "modules/config/lunar-client/lunar-client.yml",
+            "modules/config/shards/shards.yml",
+            "modules/config/key-all/key-all.yml",
+            "modules/config/leaderboard/leaderboard.yml",
+            "modules/config/tablist/tablist.yml",
+            "modules/config/server-list/server-list.yml",
+            "modules/config/optimization/optimization.yml",
+            "modules/config/clear-lag/clear-lag.yml",
+            "modules/config/rtp-zone/rtp-zone.yml",
+            "modules/config/first-join-rtp/first-join-rtp.yml",
+            "modules/config/respawn-rtp/respawn-rtp.yml",
+            "modules/config/teleport-cooldown/teleport-cooldown.yml",
+            "modules/config/bounty/bounty.yml",
+            "modules/config/amethyst-tools/amethyst-tools.yml",
+            "modules/config/voice-chat/voice-chat.yml",
+            "modules/config/commands/commands.yml",
+            "modules/messages/chat-manager/messages.yml",
+            "modules/messages/ignore/messages.yml",
+            "modules/messages/private-messages/messages.yml",
+            "modules/messages/messages/messages.yml",
+            "modules/messages/private-message/messages.yml",
+            "modules/messages/phantom/messages.yml",
+            "modules/messages/clear-lag/messages.yml",
+            "modules/messages/teleport/messages.yml",
+            "modules/messages/shard-booster/messages.yml",
+            "modules/messages/home/messages.yml",
+            "modules/messages/warp/messages.yml",
+            "modules/messages/warpmanager/messages.yml",
+            "modules/messages/portal/messages.yml",
+            "modules/messages/portalmanager/messages.yml",
+            "modules/messages/worth/messages.yml",
+            "modules/messages/bounty/messages.yml",
+            "modules/messages/billford/messages.yml",
+            "modules/messages/balance/messages.yml",
+            "modules/messages/shard-pay/messages.yml",
+            "modules/messages/findplayer/messages.yml",
+            "modules/messages/punishments/messages.yml",
+            "modules/messages/social/messages.yml",
+            "modules/messages/auction-house/messages.yml",
+            "modules/messages/stats-wipe/messages.yml",
+            "modules/messages/staff/messages.yml",
+            "modules/messages/fly/messages.yml",
+            "modules/messages/flyspeed/messages.yml",
+            "modules/messages/walkspeed/messages.yml",
+            "modules/messages/heal/messages.yml",
+            "modules/messages/feed/messages.yml",
+            "modules/messages/gamemode/messages.yml",
+            "modules/messages/randomtp/messages.yml",
+            "modules/messages/rename/messages.yml",
+            "modules/messages/ping/messages.yml",
+            "modules/messages/playtime/messages.yml",
+            "modules/messages/staffchat/messages.yml",
+            "modules/messages/helpop/messages.yml",
+            "modules/messages/report/messages.yml",
+            "modules/messages/alts/messages.yml",
+            "modules/messages/crates/messages.yml",
+            "modules/messages/voice-chat/messages.yml",
+            "modules/menus/global/gui/globalgui.yml",
+            "modules/menus/home-menu/gui/home-menugui.yml",
+            "modules/menus/media-menu/gui/media-menugui.yml",
+            "modules/menus/ranks-menu/gui/ranks-menugui.yml",
+            "modules/menus/stats-menu/gui/stats-menugui.yml",
+            "modules/menus/settings-menu/gui/settings-menugui.yml",
+            "modules/menus/leaderboards-menu/gui/leaderboards-menugui.yml",
+            "modules/menus/progress-menu/gui/progress-menugui.yml",
+            "modules/menus/sell-menu/gui/sell-menugui.yml",
+            "modules/menus/worth-menu/gui/worth-menugui.yml",
+            "modules/menus/bounties-menu/gui/bounties-menugui.yml",
+            "modules/menus/bounty-confirm-menu/gui/bounty-confirm-menugui.yml",
+            "modules/menus/sell-history-menu/gui/sell-history-menugui.yml",
+            "modules/menus/billford-menu/gui/billford-menugui.yml",
+            "modules/menus/purchase-shop-menu/gui/purchase-shop-menugui.yml",
+            "modules/menus/pay-confirm-menu/gui/pay-confirm-menugui.yml",
+            "modules/menus/sellall-confirm-menu/gui/sellall-confirm-menugui.yml",
+            "modules/menus/server-info-menu/gui/server-info-menugui.yml",
+            "modules/menus/rules-menu/gui/rules-menugui.yml",
+            "modules/menus/afk-menu/gui/afk-menugui.yml",
+            "modules/menus/spawn-menu/gui/spawn-menugui.yml",
+            "modules/menus/profile-viewer-menu/gui/profile-viewer-menugui.yml",
+            "modules/menus/profile-viewer-homes-menu/gui/profile-viewer-homes-menugui.yml",
+            "modules/menus/punishment-history-menu/gui/punishment-history-menugui.yml",
+            "modules/menus/punishments-list-menu/gui/punishments-list-menugui.yml",
+            "modules/menus/stats-wipe-menu/gui/stats-wipe-menugui.yml",
+            "modules/menus/stats-wipe-confirm-menu/gui/stats-wipe-confirm-menugui.yml",
+            "modules/menus/servers-menu/gui/servers-menugui.yml",
+            "modules/menus/spawner-menus/gui/spawner-menusgui.yml",
+            "modules/menus/voice-chat-consent-menu/gui/voice-chat-consent-menugui.yml"
     );
 
     /** Bundled defaults are flat under core/, except the shop configuration. */
@@ -168,6 +274,7 @@ public class ConfigManager {
         anvilModeration = load("anvil-moderation.yml", anvilModeration);
         enchantments = load("enchantments.yml", enchantments);
         filter       = load("filter.yml", filter);
+        applySplitConfigurations();
         reloadShopCategoryFiles();
     }
 
@@ -217,6 +324,34 @@ public class ConfigManager {
         for (String key : section.getKeys(true)) {
             if (!section.isConfigurationSection(key)) {
                 target.set(targetPath + "." + key, section.get(key));
+            }
+        }
+    }
+
+    /** Loads split module YAML files and mirrors their sections into the legacy runtime views. */
+    private void applySplitConfigurations() {
+        for (String resource : CONFIGURATION_RESOURCES) {
+            FileConfiguration target;
+            if (resource.startsWith("modules/config/")) {
+                target = config;
+            } else if (resource.startsWith("modules/messages/")) {
+                target = messages;
+            } else if (resource.startsWith("modules/menus/")) {
+                target = menus;
+            } else {
+                continue;
+            }
+
+            FileConfiguration module = load(resource, null);
+            if (module == null) {
+                continue;
+            }
+            String root = module.getKeys(false).stream()
+                    .filter(key -> !"enable".equalsIgnoreCase(key))
+                    .findFirst()
+                    .orElse(null);
+            if (root != null) {
+                copySection(module, root, target, root);
             }
         }
     }
@@ -1319,7 +1454,7 @@ public class ConfigManager {
     public FileConfiguration getLegacyAuctionHouse() { return auctionHouse; }
 
     public void reloadShop() { shop = load("shop.yml", shop); reloadShopCategoryFiles(); }
-    public void reloadMenus() { menus = load("menus.yml", menus); applyModuleConfigurations(); }
+    public void reloadMenus() { menus = load("menus.yml", menus); applyModuleConfigurations(); applySplitConfigurations(); }
     public void reloadSounds() { sounds = load("sounds.yml", sounds); }
     public void reloadWorth() { worth = load("worth.yml", worth); }
     public void reloadAmethystTools() { amethystTools = load("amethyst-tools.yml", amethystTools); }

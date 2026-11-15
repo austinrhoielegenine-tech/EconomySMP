@@ -1,0 +1,15 @@
+enable: true
+PRIVATE-MESSAGE:
+  USAGE: '&cUsage: /msg <player> <message>'
+  REPLY-USAGE: '&cUsage: /reply <message>'
+  PLAYER-ONLY-REPLY: '&cOnly players can use /reply.'
+  NO-PERMISSION: '&cYou do not have permission.'
+  DISABLED: '&cPrivate messages are currently disabled.'
+  PLAYER-NOT-ONLINE: '&cPlayer not online.'
+  CANNOT-MESSAGE-SELF: '&cYou cannot message yourself!'
+  NO-REPLY-TARGET: '&cYou are currently not in conversation with anyone or the player
+    is offline.'
+  SENT: '&d(To &a%player%&d) %message%'
+  RECEIVED: '&d(From &a%player%&d) %message%'
+  PM-ENABLED: '&aPrivate messages are now enabled'
+  PM-DISABLED: '&cPrivate messages are now disabled'

@@ -1,0 +1,4 @@
+enable: true
+PING:
+  SELF: '&7Your ping is &b%ping%ms'
+  OTHER: '&e%player%''s &7ping is &b%ping%ms'

@@ -1,0 +1,67 @@
+enable: true
+CHAT:
+  FORMAT-ENABLED: true
+  FORMAT: '&f%prefix%%player%&7: &f%message%'
+  MESSAGE-COLORS:
+    default: '&f'
+    owner: '&#0000FF'
+  CLICKABLE-NAME:
+    ENABLED: true
+    HOVER-TEXT:
+    - '%luckperms_prefix%%player%'
+    - '&7&m----------'
+    - '&#00FC00&l$ &fmoney &#00FC00%economy_money%'
+    - '&#FC0000⚔ &fkills &#FC0000%economy_kills%'
+    - '&#FCE300⌚ &fplaytime &#FCE300%economy_playtime%'
+    - '&#F97603☠ &fdeaths &#F97603%economy_deaths%'
+    - '&#A303F9★ &fshards &#A303F9%economy_shards%'
+    - '&7&m----------'
+    - '&7click to view stats'
+    SUGGEST-COMMAND: '/msg <player> '
+  GLOBAL-CHAT-MUTED: false
+  GLOBAL-CHAT-DELAY-ENABLED: false
+  GLOBAL-CHAT-DELAY: 3
+  MAX-DELAY-SECONDS: 30
+  CLEAR-LINES: 150
+  LOGGING:
+    ENABLED: true
+    PUBLIC-MESSAGES: true
+    PRIVATE-MESSAGES: true
+  FILTER:
+    ENABLED: true
+    BLOCK-MESSAGE: '&7Please avoid using inappropriate words.'
+    WORDS:
+    - fuck
+    - shit
+    - bitch
+    LANGUAGE:
+      ENABLED: false
+      ALLOWED-ALPHABETS:
+      - LATIN
+      - NUMBERS
+      - SYMBOLS
+      BLOCK-MESSAGE: '&cYour message contains characters that are not allowed on this
+        server.'
+    CAPS:
+      ENABLED: false
+      PERCENTAGE: 70
+      MIN-LENGTH: 5
+      BLOCK-MESSAGE: '&cPlease avoid using too many capital letters.'
+    ANTI-REPEAT:
+      ENABLED: false
+      BLOCK-MESSAGE: '&cYou cannot repeat the same message!'
+    ANTI-LINK:
+      ENABLED: false
+      ALLOWED:
+      - google.com
+      - youtube.com
+      BLOCK-MESSAGE: '&cLinks are not allowed in the chat!'
+    LENGTH:
+      MIN:
+        ENABLED: false
+        VALUE: 1
+        BLOCK-MESSAGE: '&cYour message is too short! (Min: %min%)'
+      MAX:
+        ENABLED: false
+        VALUE: 100
+        BLOCK-MESSAGE: '&cYour message is too long! (Max: %max%)'

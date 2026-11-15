@@ -1,0 +1,17 @@
+enable: true
+PAY-CONFIRM-MENU:
+  TITLE: '&8Confirm Payment'
+  SIZE: 27
+  CONFIRM-BUTTON:
+    TITLE: '&#00FC00Confirm'
+    MATERIAL: EMERALD
+    LORE:
+    - '&7Click to confirm to pay {amount}!'
+  CANCEL-BUTTON:
+    TITLE: '&#FC0000Cancel'
+    MATERIAL: BARRIER
+    LORE:
+    - '&7Click to cancel'
+  PLAYER-BUTTON:
+    TITLE: '&#00FC00{player}'
+    MATERIAL: PLAYER_HEAD

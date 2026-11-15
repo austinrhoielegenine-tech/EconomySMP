@@ -1,0 +1,5 @@
+enable: true
+SHARD-BOOSTER:
+  ACTIVATED: '&aYou have activated your &5Shard Booster &afor 24h.'
+  ALREADY-ACTIVATED: '&cYou already have an active Shard Booster.'
+  EXPIRED: '&cYour shard booster has expired.'

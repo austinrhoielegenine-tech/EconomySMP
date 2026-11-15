@@ -1,0 +1,24 @@
+enable: true
+SELLALL-CONFIRM-MENU:
+  TITLE: '&8Confirm Sell All'
+  SIZE: 27
+  CONFIRM-BUTTON:
+    TITLE: '&#00FC00Confirm'
+    MATERIAL: EMERALD
+    SLOT: 15
+    LORE:
+    - '&7Click to confirm to sell all'
+    - '&7sellable items in your inventory.'
+  CANCEL-BUTTON:
+    TITLE: '&#FC0000Cancel'
+    MATERIAL: BARRIER
+    SLOT: 11
+    LORE:
+    - '&7Click to cancel'
+  INFO-BUTTON:
+    TITLE: '&#E69F00Sell All Items'
+    MATERIAL: CHEST
+    SLOT: 13
+    LORE:
+    - '&7This will sell all sellable'
+    - '&7items in your inventory.'

@@ -1,0 +1,11 @@
+enable: true
+STATS-WIPE:
+  NO-PERMISSION: '&cYou do not have permission to use Stats Wipe.'
+  PLAYER-ONLY-GUI: '&cOpen the Stats Wipe GUI in-game, or use /uds statswipe <target>
+    confirm.'
+  INVALID-TARGET: '&cInvalid Stats Wipe target. Available: {targets}'
+  DIRECT-USAGE: '&cUse /uds statswipe <target> confirm to run directly, or /uds statswipe
+    to open the GUI.'
+  BUSY: '&cA wipe is already in progress.'
+  FAILED: '&cStats Wipe failed: {error}'
+  SUCCESS: '&aWipe complete: &f{target}&a. Affected records: &f{count}&a.'

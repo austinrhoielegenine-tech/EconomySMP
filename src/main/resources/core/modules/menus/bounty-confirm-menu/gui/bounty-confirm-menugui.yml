@@ -1,0 +1,19 @@
+enable: true
+BOUNTY-CONFIRM-MENU:
+  TITLE: '&8Confirm Bounty'
+  SIZE: 27
+  CANCEL-BUTTON:
+    MATERIAL: BARRIER
+    NAME: '&#FC0000Cancel'
+    LORE:
+    - '&7Click to cancel the bounty adding!'
+  PLAYER-BUTTON:
+    MATERIAL: PLAYER_HEAD
+    NAME: '&#00FC00{player}'
+    LORE:
+    - '&fYou''re going to set &#00FC00{amount}'
+  CONFIRM-BUTTON:
+    MATERIAL: EMERALD
+    NAME: '&#00FC00Confirm'
+    LORE:
+    - '&7Click to confirm to add {amount} bounty!'

@@ -1,0 +1,17 @@
+enable: true
+IGNORE:
+  ADDED: '&7%player% &chas been added to your ignore list.'
+  REMOVED: '&7%player% &chas been removed from your ignore list.'
+  USAGE: '&cUsage: /ignore <player|list>'
+  UNIGNORE-USAGE: '&cUsage: /unignore <player>'
+  PLAYER-ONLY: '&cOnly players can use this command.'
+  NO-PERMISSION: '&cYou do not have permission.'
+  DISABLED: '&cIgnore command is currently disabled.'
+  CANNOT-IGNORE-SELF: '&cYou cannot ignore yourself.'
+  PLAYER-NOT-FOUND: '&cPlayer not found.'
+  NOT-IGNORED: '&7%player% &cis not in your ignore list.'
+  LIST-EMPTY: '&7You are not ignoring anyone.'
+  LIST-HEADER: '&8&m-------- &cIgnored Players &7(%count%) &8&m--------'
+  LIST-ENTRY: '&8- &7%player%'
+  MESSAGE-BLOCKED-SENDER: '&cYou cannot message %player%.'
+  ERROR: '&cCould not update your ignore list.'

@@ -1,0 +1,11 @@
+enable: true
+BOUNTY:
+  NEW: '&aA new bounty of ${price} has been placed on {player}!'
+  INCREASED: '&aThe bounty for {player} has been increased by ${price}!'
+  ALERT: '&aYou have a new bounty from {who} for ${price}'
+  CLAIM-SUCCESS: '&7You received &b${amount}&7 for killing &c{player}&7.'
+  PLAYER-NOT-EXIST: '&cThat player does not exist.'
+  PLAYER-HAS-BOUNTY: '&b{player} &7has a bounty of &c${amount}'
+  NO-BOUNTY: '&cThe user does not have a bounty.'
+  CANT-SELF-BOUNTY: '&cYou can''t do this yourself.'
+  MINIMUM-PRICE: '&cMinimum price is $1.00.'

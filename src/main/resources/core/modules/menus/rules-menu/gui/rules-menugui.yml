@@ -1,0 +1,48 @@
+enable: true
+RULES-MENU:
+  TITLE: '&8Rules'
+  SIZE: 27
+  BUTTONS:
+    RULE_1:
+      MATERIAL: KNOWLEDGE_BOOK
+      SLOT: 12
+      NAME: '&#00A4FCServer Rules'
+      LORE:
+      - "&#00A4FC● &fNo Hacked Clients"
+      - "&#00A4FC● &fNo Movement Mods"
+      - "&#00A4FC● &fNo Inventory Mods"
+      - "&#00A4FC● &fNo Health Indicators"
+      - "&#00A4FC● &fNo Radar"
+      - "&#00A4FC● &fNo Freecam"
+      - "&#00A4FC● &fNo Auto Place"
+      - "&#00A4FC● &fNo Easy Place"
+      - "&#00A4FC● &fNo Macros or Scripts"
+      - "&#00A4FC● &fNo Abusing bugs"
+      - "&#00A4FC● &fNo Using dupe methods"
+      - "&#00A4FC● &fNo Irl trading"
+      - "&#00A4FC● &fNo Invite Rewards"
+      - "&#00A4FC● &fNo Cross Server Trading"
+      - "&#00A4FC● &fNo Finding or Using the seed"
+      - "&#00A4FC● &fNo Using More Than 5 Accounts"
+      - "&#00A4FC● &fNo Mouse Tweaks / Scrollers"
+      - "&#00A4FC● &fNo Nitro Boost Rewards"
+      - "&#00A4FC● &fNo Crafting Modifications"
+      - "&#00A4FC● &fNo Staff Impersonation"
+      - "&#00A4FC● &fNo EXternal Gambling"
+    RULE_2:
+      MATERIAL: KNOWLEDGE_BOOK
+      SLOT: 14
+      NAME: '&#00A4FC&lChat Rules'
+      LORE:
+      - ''
+      - "&#00A4FC● &fNo Spamming or getting others to spam"
+      - "&#00A4FC● &fNo Harassing"
+      - "&#00A4FC● &fNo Advertising or Promotion"
+      - "&#00A4FC● &fNo Discrimination or Hate Speech"
+      - "&#00A4FC● &fNo Death Threats"
+      - "&#00A4FC● &fNo Sharing Others Private Information"
+      - "&#00A4FC● &fNo Pretending to be someone else"
+      - "&#00A4FC● &fNo Ban Evasion"
+      - "&#00A4FC● &fNo Lying to Staff Members"
+      - "&#00A4FC● &fReport All Bugs, Glitches, and Cheaters"
+      - '  &fin the discord &&#F97603(discord.gg/donutsmp)'
