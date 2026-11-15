@@ -370,13 +370,6 @@ SETTINGS-MENU:
       LORE:
       - '&7Receive pay alerts'
       - '&fCurrently: {status}'
-    TELEPORT_ALERTS:
-      DISPLAY-NAME: '&#6BF18DTeleport Alerts'
-      MATERIAL: ENDER_PEARL
-      SLOT: 10
-      LORE:
-      - '&7Sound and message alerts for TPA'
-      - '&fCurrently: {status}'
     BOUNTY_ALERTS:
       DISPLAY-NAME: '&#6BF18DBounty Alerts'
       MATERIAL: BAMBOO_SIGN

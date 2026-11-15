@@ -185,6 +185,7 @@ public class ConfigManager {
         copySection(tpa, "MESSAGES.TPA", messages, "TPA");
         copySection(tpa, "MESSAGES.TPAUTO", messages, "TPAUTO");
         copySection(tpa, "MESSAGES.TPAHEREAUTO", messages, "TPAHEREAUTO");
+        copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TELEPORT_ALERTS", menus, "SETTINGS-MENU.BUTTONS.TELEPORT_ALERTS");
         copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_CONFIRM_MENUS", menus, "SETTINGS-MENU.BUTTONS.TPA_CONFIRM_MENUS");
         copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_REQUESTS", menus, "SETTINGS-MENU.BUTTONS.TPA_REQUESTS");
         copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_HERE_REQUESTS", menus, "SETTINGS-MENU.BUTTONS.TPA_HERE_REQUESTS");

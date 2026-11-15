@@ -2,6 +2,13 @@ enable: true
 
 SETTINGS-MENU:
   BUTTONS:
+TELEPORT_ALERTS:
+  DISPLAY-NAME: '&#6BF18DTeleport Alerts'
+  MATERIAL: ENDER_PEARL
+  SLOT: 10
+  LORE:
+  - '&7Sound and message alerts for TPA'
+  - '&fCurrently: {status}'
     TPA_CONFIRM_MENUS:
       DISPLAY-NAME: '&#6BF18DTpa Confirm Menus'
       MATERIAL: COMPASS
