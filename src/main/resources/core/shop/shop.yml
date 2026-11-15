@@ -40,7 +40,7 @@ CATEGORIES:
       - "#FFFFFFClick to view the food shop"
 
   shards:
-    FILE-TYPE: shardshop.yml
+    FILE-TYPE: shop/shardshop.yml
     OPEN-MENU: "{shard-menu}"
     MATERIAL: AMETHYST_SHARD
     SLOT: 22
@@ -61,12 +61,8 @@ SHOP-GUI:
       - "&7Shop price: {shop_price}"
       - "{auction_line}"
       - ""
-      - "{favorite_line}"
       - "&eLeft-click to buy from the shop"
       - "{auction_action}"
-      - "{favorite_action}"
-  FAVORITES:
-    ENABLED: true
   WEB-SERVER:
     ENABLED: false
     PORT: 8080
