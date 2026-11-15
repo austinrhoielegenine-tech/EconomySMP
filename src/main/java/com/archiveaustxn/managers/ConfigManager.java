@@ -326,7 +326,7 @@ public class ConfigManager {
             return null;
         }
 
-        String normalized = fileName.trim().replace('\\\\', '/');
+        String normalized = fileName.trim().replace('\\', '/');
         if (normalized.startsWith("/")
                 || normalized.contains("..")
                 || normalized.contains(":")
