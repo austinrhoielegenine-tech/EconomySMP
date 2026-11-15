@@ -315,10 +315,32 @@ public class ConfigManager {
         return "core/" + relative;
     }
 
+    /**
+     * Resolve a shop FILE-TYPE relative to core/shop. A bare filename is kept
+     * backwards-compatible and resolves inside categories/. Explicit paths may
+     * target categories/<name>.yml or a root-level shop file such as shardshop.yml.
+     * Traversal and arbitrary nested paths are rejected.
+     */
     private static String shopCategoryResourcePath(String fileName) {
-        return "shardshop.yml".equalsIgnoreCase(fileName)
-                ? "core/shop/shardshop.yml"
-                : "core/shop/categories/" + fileName;
+        if (fileName == null || fileName.isBlank()) {
+            return null;
+        }
+
+        String normalized = fileName.trim().replace('\\\\', '/');
+        if (normalized.startsWith("/")
+                || normalized.contains("..")
+                || normalized.contains(":")
+                || !(normalized.endsWith(".yml") || normalized.endsWith(".yaml"))) {
+            return null;
+        }
+
+        if (!normalized.contains("/")) {
+            normalized = "categories/" + normalized;
+        } else if (!normalized.startsWith("categories/")) {
+            return null;
+        }
+
+        return "core/shop/" + normalized;
     }
 
     private static final DateTimeFormatter BACKUP_TIMESTAMP_FORMAT =
@@ -1251,34 +1273,36 @@ public class ConfigManager {
     private final Map<String, FileConfiguration> shopCategoryFiles = new HashMap<>();
 
     public FileConfiguration getShopCategoryFile(String fileName) {
-        if (fileName == null || fileName.isBlank()) {
+        String resourcePath = shopCategoryResourcePath(fileName);
+        if (resourcePath == null) {
+            plugin.getLogger().warning("Invalid shop category FILE-TYPE: " + fileName);
             return null;
         }
-        return shopCategoryFiles.computeIfAbsent(fileName, this::loadShopCategoryFile);
+        return shopCategoryFiles.computeIfAbsent(resourcePath, this::loadShopCategoryFile);
     }
 
     public void reloadShopCategoryFiles() {
         shopCategoryFiles.clear();
     }
 
-    private FileConfiguration loadShopCategoryFile(String fileName) {
-        File dataFile = new File(plugin.getDataFolder(), shopCategoryResourcePath(fileName));
-        if (!dataFile.isFile() && !copyShopCategoryResource(fileName, dataFile)) {
+    private FileConfiguration loadShopCategoryFile(String resourcePath) {
+        File dataFile = new File(plugin.getDataFolder(), resourcePath);
+        if (!dataFile.isFile() && !copyShopCategoryResource(resourcePath, dataFile)) {
             return null;
         }
 
         try {
             return loadYamlFile(dataFile);
         } catch (IOException | InvalidConfigurationException e) {
-            plugin.getLogger().log(Level.WARNING, "Failed to load shop category file " + fileName, e);
+            plugin.getLogger().log(Level.WARNING, "Failed to load shop category file " + resourcePath, e);
             return null;
         }
     }
 
-    private boolean copyShopCategoryResource(String fileName, File target) {
-        try (InputStream input = plugin.getResource(shopCategoryResourcePath(fileName))) {
+    private boolean copyShopCategoryResource(String resourcePath, File target) {
+        try (InputStream input = plugin.getResource(resourcePath)) {
             if (input == null) {
-                plugin.getLogger().warning("Shop category resource not found in jar: " + fileName);
+                plugin.getLogger().warning("Shop category resource not found in jar: " + resourcePath);
                 return false;
             }
 
@@ -1286,7 +1310,7 @@ public class ConfigManager {
             Files.copy(input, target.toPath());
             return true;
         } catch (IOException e) {
-            plugin.getLogger().log(Level.WARNING, "Failed to copy bundled shop category file " + fileName, e);
+            plugin.getLogger().log(Level.WARNING, "Failed to copy bundled shop category file " + resourcePath, e);
             return false;
         }
     }

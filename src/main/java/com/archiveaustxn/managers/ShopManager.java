@@ -527,7 +527,7 @@ public class ShopManager {
                     key,
                     normalizeMenuSection(section.getString("OPEN-MENU"), key),
                     ItemUtils.parseMaterial(section.getString("MATERIAL", "STONE")),
-                    section.getString("DISPLAY-NAME", key),
+                    section.getString("DISPLAY-NAME", section.getString("NAME", key)),
                     section.getStringList("LORE"),
                     section.getInt("SLOT", 0)
             ));

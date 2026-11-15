@@ -889,6 +889,20 @@ class ConfigManagerTest {
     }
 
     @Test
+    void shopCategoryFileTypesResolveFromTheShopFolderWithoutHardcodedSpecialCases() throws Exception {
+        Method method = ConfigManager.class.getDeclaredMethod("shopCategoryResourcePath", String.class);
+        method.setAccessible(true);
+
+        assertEquals("core/shop/categories/end.yml", method.invoke(null, "end.yml"));
+        assertEquals("core/shop/categories/custom.yml", method.invoke(null, "categories/custom.yml"));
+        assertEquals("core/shop/shardshop.yml", method.invoke(null, "shardshop.yml"));
+        assertEquals("core/shop/categories/custom.yaml", method.invoke(null, "categories/custom.yaml"));
+        assertEquals(null, method.invoke(null, "../secrets.yml"));
+        assertEquals(null, method.invoke(null, "other-feature/custom.yml"));
+        assertEquals(null, method.invoke(null, "/absolute.yml"));
+    }
+
+    @Test
     void bundledResourcesAreStoredInsideTheirOwningFeatureFolders() {
         assertEquals("core/auction/auction.yml", ConfigManager.bundledPath("auction-house.yml"));
         assertEquals("core/orders/orders.yml", ConfigManager.bundledPath("orders.yml"));

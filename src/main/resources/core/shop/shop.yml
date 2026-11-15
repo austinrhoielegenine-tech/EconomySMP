@@ -4,7 +4,7 @@ size: 27
 
 CATEGORIES:
   end:
-    FILE-TYPE: end.yml
+    FILE-TYPE: categories/end.yml
     OPEN-MENU: "{end-menu}"
     MATERIAL: END_STONE
     SLOT: 11
@@ -13,7 +13,7 @@ CATEGORIES:
       - "#FFFFFFClick to view the end shop"
 
   nether:
-    FILE-TYPE: nether.yml
+    FILE-TYPE: categories/nether.yml
     OPEN-MENU: "{nether-menu}"
     MATERIAL: NETHERRACK
     SLOT: 12
@@ -22,7 +22,7 @@ CATEGORIES:
       - "#FFFFFFClick to view the nether shop"
 
   gear:
-    FILE-TYPE: gear.yml
+    FILE-TYPE: categories/gear.yml
     OPEN-MENU: "{gear-menu}"
     MATERIAL: TOTEM_OF_UNDYING
     SLOT: 13
@@ -31,7 +31,7 @@ CATEGORIES:
       - "#FFFFFFClick to view the gear shop"
 
   food:
-    FILE-TYPE: food.yml
+    FILE-TYPE: categories/food.yml
     OPEN-MENU: "{food-menu}"
     MATERIAL: COOKED_BEEF
     SLOT: 14
