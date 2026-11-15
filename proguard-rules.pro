@@ -36,6 +36,10 @@
 -dontshrink
 -dontoptimize
 
+# The JDK 25 runner image does not expose a readable java.base.jmod path.
+# Keep unresolved library references as warnings so obfuscation can proceed.
+-ignorewarnings
+
 # SkinsRestorer is an optional server-provided API and is excluded from ProGuard's
 # library inputs because its current build targets Java 25.
 -dontwarn net.skinsrestorer.**
