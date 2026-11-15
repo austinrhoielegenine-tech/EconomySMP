@@ -402,7 +402,6 @@ COMBAT-MANAGER:
   - /afk
   - /rtp
   - /homes
-  - /tpa
   EXCLUDED-WORLDS:
   - duels
 RTP-ZONE:

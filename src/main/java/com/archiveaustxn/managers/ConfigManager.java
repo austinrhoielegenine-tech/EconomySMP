@@ -182,6 +182,14 @@ public class ConfigManager {
         copyValue(tpa, "TELEPORT-COOLDOWN.TPA", config, "TELEPORT-COOLDOWN.TPA");
         copyValue(tpa, "COMMANDS.TPA", config, "COMMANDS.TPA");
         copyValue(tpa, "COMMANDS.TPAUTO", config, "COMMANDS.TPAUTO");
+        String combatBlockedCommand = tpa.getString("COMBAT-MANAGER.BLOCK-COMMAND");
+        if (combatBlockedCommand != null && !combatBlockedCommand.isBlank()) {
+            List<String> blockedCommands = new ArrayList<>(config.getStringList("COMBAT-MANAGER.BLOCK-COMMANDS"));
+            if (!blockedCommands.contains(combatBlockedCommand)) {
+                blockedCommands.add(combatBlockedCommand);
+                config.set("COMBAT-MANAGER.BLOCK-COMMANDS", blockedCommands);
+            }
+        }
         copySection(tpa, "MESSAGES.TPA", messages, "TPA");
         copySection(tpa, "MESSAGES.TPAUTO", messages, "TPAUTO");
         copySection(tpa, "MESSAGES.TPAHEREAUTO", messages, "TPAHEREAUTO");

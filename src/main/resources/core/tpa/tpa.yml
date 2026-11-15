@@ -1,5 +1,8 @@
 enable: true
 
+COMBAT-MANAGER:
+  BLOCK-COMMAND: /tpa
+
 TELEPORT-COOLDOWN:
   TPA: 5
 
