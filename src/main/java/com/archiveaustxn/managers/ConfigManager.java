@@ -47,7 +47,8 @@ public class ConfigManager {
             "freeze.yml",
             "auction-house.yml",
             "orders.yml",
-            "team.yml",
+            "team/team.yml",
+            "team/gui/teamgui.yml",
             "enchantments.yml",
             "filter.yml",
             "duels.yml",
@@ -95,6 +96,7 @@ public class ConfigManager {
     private FileConfiguration auctionHouse;
     private FileConfiguration orders;
     private FileConfiguration team;
+    private FileConfiguration teamGui;
     private FileConfiguration duels;
     private FileConfiguration ffa;
     private FileConfiguration pvp;
@@ -142,7 +144,8 @@ public class ConfigManager {
         freeze       = load("freeze.yml", freeze);
         auctionHouse = load("auction-house.yml", auctionHouse);
         orders       = load("orders.yml", orders);
-        team         = load("team.yml", team);
+        team         = load("team/team.yml", team);
+        teamGui      = load("team/gui/teamgui.yml", teamGui);
         applyModuleConfigurations();
         duels        = load("duels.yml", duels);
         ffa          = load("ffa.yml", ffa);
@@ -165,7 +168,10 @@ public class ConfigManager {
     /** Applies module-owned YAML sections to legacy runtime views used by existing features. */
     private void applyModuleConfigurations() {
         copySection(team, "TEAM", config, "TEAM");
-        copySection(team, "MENUS.TEAM-MENUS", menus, "TEAM-MENUS");
+        copySection(teamGui, "TEAM-MENUS", menus, "TEAM-MENUS");
+        copySection(teamGui, "HOME-MENU.TEAM_HOME", menus, "HOME-MENU.TEAM_HOME");
+        copySection(teamGui, "SETTINGS-MENU.BUTTONS.TEAM_CHAT_VISIBILITY", menus, "SETTINGS-MENU.BUTTONS.TEAM_CHAT_VISIBILITY");
+        copySection(teamGui, "SETTINGS-MENU.BUTTONS.TEAM_INVITES", menus, "SETTINGS-MENU.BUTTONS.TEAM_INVITES");
         copySection(team, "MESSAGES.TEAM", messages, "TEAM");
         copySection(orders, "SERVER-NOTIFICATIONS.ORDERS", config, "SERVER-NOTIFICATIONS.ORDERS");
         copySection(orders, "MESSAGES.ORDERS", messages, "ORDERS");
@@ -1295,7 +1301,7 @@ public class ConfigManager {
     public void reloadFreeze() { freeze = load("freeze.yml", freeze); }
     public void reloadAuctionHouse() { auctionHouse = load("auction-house.yml", auctionHouse); }
     public void reloadOrders() { orders = load("orders.yml", orders); applyModuleConfigurations(); }
-    public void reloadTeam() { team = load("team.yml", team); applyModuleConfigurations(); }
+    public void reloadTeam() { team = load("team/team.yml", team); teamGui = load("team/gui/teamgui.yml", teamGui); applyModuleConfigurations(); }
     public void reloadDuels() { duels = load("duels.yml", duels); }
     public void reloadFfa() { ffa = load("ffa.yml", ffa); }
     public void reloadPvp() { pvp = load("pvp.yml", pvp); }
