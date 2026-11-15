@@ -358,8 +358,7 @@ public class ShopManager {
     }
 
     public boolean areFavoritesEnabled() {
-        return plugin.getConfigManager().getShop()
-                .getBoolean("SHOP-GUI.FAVORITES.ENABLED", false) && false;
+        return false;
     }
 
     public boolean toggleFavorite(UUID playerId, ShopItem item) {
