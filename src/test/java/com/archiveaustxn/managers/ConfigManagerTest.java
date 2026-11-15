@@ -887,4 +887,16 @@ class ConfigManagerTest {
         assertTrue(index >= 0, () -> "Missing line: " + line);
         return index;
     }
+
+    @Test
+    void bundledResourcesAreStoredInsideTheirOwningFeatureFolders() {
+        assertEquals("core/auction/auction.yml", ConfigManager.bundledPath("auction-house.yml"));
+        assertEquals("core/orders/orders.yml", ConfigManager.bundledPath("orders.yml"));
+        assertEquals("core/shards/shards.yml", ConfigManager.bundledPath("modules/config/shards/shards.yml"));
+        assertEquals("core/home/gui/homegui.yml",
+                ConfigManager.bundledPath("modules/menus/home-menu/gui/home-menugui.yml"));
+        assertEquals("core/shop/shop.yml", ConfigManager.bundledPath("shop.yml"));
+        assertEquals("core/_internal/messages.yml", ConfigManager.bundledPath("messages.yml"));
+    }
+
 }

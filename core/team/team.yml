@@ -1,0 +1,49 @@
+enabled: true
+enable: true
+
+TEAM:
+  NAME-MIN-LENGTH: 3
+  NAME-MAX-LENGTH: 5
+  LIMIT-MEMBERS: 10
+  EXCLUDED-WORLDS: []
+
+
+MESSAGES:
+  TEAM:
+    NO-TEAM: '&cYou don''t have a team. Type /team create (name) to create a team.'
+    ALREADY-EXISTS: '&cYou cannot create a team with this name, it is already taken.'
+    TEAM-CREATED: '&aTeam created.'
+    TEAM-DISBANDED: '&7Team disbanded.'
+    ALREADY-IN-TEAM: '&cYou are already in a team.'
+    NOT-LEADER: '&cYou are not the leader.'
+    PLAYER-NO-INVITES: '&cThis player does not accept invitations.'
+    PLAYER-IN-TEAM: '&c{player} is already in a team.'
+    TEAM-FULL: '&cTeam has reached the maximum members.'
+    INVITE-SENT: '&eYou have invited &a{player} &eto join the team.'
+    NO-PENDING-INVITES: '&cYou have no pending invites for &6{team}&c.'
+    JOIN-SUCCESS: '&aYou have joined to &e{team}&a.'
+    CANNOT-INVITE-YOURSELF: '&cYou cannot invite yourself!'
+    CANT-KICK-SELF: '&cYou cannot kick yourself!'
+    KICK-SUCCESS: '&aSuccessfully kicked &7({player}).'
+    KICKED-FROM-TEAM: '&aYou have been kicked from the team.'
+    PLAYER-NOT-IN-TEAM: '&c{player} is not a member of your team.'
+    TEAM-CHAT-ENABLED: '&7You enabled team chat.'
+    TEAM-CHAT-DISABLED: '&7You disabled team chat.'
+    NO-MANAGE-PERMISSION: '&cYou don''t have permission to invite or kick teammates.'
+    NO-EDIT-HOME-PERMISSION: '&cYou don''t have permission to edit the team home.'
+    NO-VISIT-HOME-PERMISSION: '&cYou don''t have permission to visit the team home.'
+    NO-TEAM-CHAT-PERMISSION: '&cYou don''t have permission to use team chat.'
+    NO-PVP-PERMISSION: '&cYou don''t have permission to change team PvP.'
+    TEAM-PVP-ENABLED: '&7Team PvP is now &aenabled&7.'
+    TEAM-PVP-DISABLED: '&7Team PvP is now &cdisabled&7.'
+    NO-TEAM-HOME: '&7Your team does not have a home.'
+    TEAM-HOME-DELETED: '&7Team home deleted.'
+    TEAM-HOME-SET: '&7Team home set'
+    EXCLUDED-WORLD: '&cYou cannot set a team home in this world.'
+    TEAM-NOT-EXIST: '&cUser/team does not exist.'
+    INVITED-TO-JOIN: '&7You have been invited to join the &a{team}&7 team!'
+    CLICK-TO-JOIN: '&b[Click to join]'
+    HOVER-JOIN: '&eClick to join the {team} team.'
+    OR-TYPE-COMMAND: '&7or type &f{command}&7 to join.'
+    JOINED-BROADCAST: '&a{player} &ehas joined the team.'
+

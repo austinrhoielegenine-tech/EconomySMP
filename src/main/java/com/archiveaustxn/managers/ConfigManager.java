@@ -175,9 +175,150 @@ public class ConfigManager {
             "modules/menus/voice-chat-consent-menu/gui/voice-chat-consent-menugui.yml"
     );
 
-    /** Bundled defaults are flat under core/, except the shop configuration. */
+    /**
+     * Resolve the logical configuration names used by existing managers to feature-owned resources.
+     * This keeps Java APIs stable while keeping each feature's YAML files together.
+     */
     public static String bundledPath(String name) {
-        return "shop.yml".equals(name) ? "core/shop/shop.yml" : "core/" + name;
+        if (name == null || name.isBlank()) return "core/" + name;
+        if ("shop.yml".equals(name)) return "core/shop/shop.yml";
+
+        if (name.startsWith("modules/config/")) {
+            String[] parts = name.split("/");
+            if (parts.length == 4) {
+                String module = parts[2];
+                String feature = switch (module) {
+                    case "afk-system" -> "afk";
+                    case "boss-sounds" -> "sounds";
+                    case "combat-manager" -> "combat";
+                    case "cuboid-binds" -> "cuboid";
+                    case "features-settings" -> "features";
+                    case "first-join-rtp", "respawn-rtp", "rtp-zone" -> "rtp";
+                    case "fly-system" -> "fly";
+                    case "key-all" -> "keyall";
+                    case "money-nametags" -> "economy";
+                    case "portal-system" -> "portals";
+                    case "prevent-item-drop" -> "item-drop";
+                    case "teleport-cooldown" -> "teleport";
+                    case "worth-lore" -> "worth";
+                    default -> module;
+                };
+                String file = switch (module) {
+                    case "afk-system" -> "afk.yml";
+                    case "amethyst-tools", "ender-chest" -> "module-settings.yml";
+                    default -> parts[3];
+                };
+                return "core/" + feature + "/" + file;
+            }
+        }
+
+        if (name.startsWith("modules/messages/")) {
+            String[] parts = name.split("/");
+            if (parts.length == 4) {
+                String module = parts[2];
+                return switch (module) {
+                    case "shard-booster" -> "core/shards/booster-messages.yml";
+                    case "shard-pay" -> "core/shards/messages.yml";
+                    case "private-message" -> "core/private-messages/private-message.yml";
+                    case "portalmanager" -> "core/portals/manager-messages.yml";
+                    case "staffchat" -> "core/staff/staffchat-messages.yml";
+                    case "warpmanager" -> "core/warp/manager-messages.yml";
+                    case "auction-house" -> "core/auction/messages.yml";
+                    case "balance" -> "core/economy/messages.yml";
+                    case "chat-manager" -> "core/chat/messages.yml";
+                    case "randomtp" -> "core/rtp/messages.yml";
+                    case "portal" -> "core/portals/messages.yml";
+                    default -> "core/" + module + "/messages.yml";
+                };
+            }
+        }
+
+        if (name.startsWith("modules/menus/")) {
+            String[] parts = name.split("/");
+            if (parts.length == 5) {
+                String menu = parts[2];
+                String feature = switch (menu) {
+                    case "home-menu" -> "home";
+                    case "sell-menu", "sell-history-menu", "sellall-confirm-menu", "purchase-shop-menu" -> "shop";
+                    case "bounties-menu", "bounty-confirm-menu" -> "bounty";
+                    case "leaderboards-menu" -> "leaderboard";
+                    case "pay-confirm-menu" -> "economy";
+                    case "profile-viewer-menu", "profile-viewer-homes-menu" -> "profile-viewer";
+                    case "punishment-history-menu", "punishments-list-menu" -> "punishments";
+                    case "spawner-menus" -> "spawners";
+                    case "voice-chat-consent-menu" -> "voice-chat";
+                    default -> menu.endsWith("-menu") ? menu.substring(0, menu.length() - 5) : menu;
+                };
+                String gui = switch (menu) {
+                    case "home-menu" -> "homegui.yml";
+                    case "sell-menu" -> "sellgui.yml";
+                    case "sell-history-menu" -> "sellhistorygui.yml";
+                    case "sellall-confirm-menu" -> "sellallconfirmgui.yml";
+                    case "purchase-shop-menu" -> "purchasegui.yml";
+                    case "bounties-menu" -> "bountiesgui.yml";
+                    case "bounty-confirm-menu" -> "confirmgui.yml";
+                    case "billford-menu" -> "billfordgui.yml";
+                    case "pay-confirm-menu" -> "payconfirmgui.yml";
+                    case "global" -> "globalgui.yml";
+                    case "spawner-menus" -> "spawnersgui.yml";
+                    case "profile-viewer-homes-menu" -> "profileviewerhomesgui.yml";
+                    case "profile-viewer-menu" -> "profileviewergui.yml";
+                    case "punishment-history-menu" -> "historygui.yml";
+                    case "punishments-list-menu" -> "listgui.yml";
+                    case "stats-wipe-menu" -> "statswipegui.yml";
+                    case "stats-wipe-confirm-menu" -> "statswipeconfirmgui.yml";
+                    case "voice-chat-consent-menu" -> "consentgui.yml";
+                    case "server-info-menu" -> "serverinfogui.yml";
+                    case "leaderboards-menu" -> "leaderboardsgui.yml";
+                    default -> parts[4].replace("-menugui.yml", "gui.yml").replace("-menusgui.yml", "gui.yml");
+                };
+                return "core/" + feature + "/gui/" + gui;
+            }
+        }
+
+        String relative = switch (name) {
+            case "messages.yml" -> "_internal/messages.yml";
+            case "menus.yml" -> "_internal/menus.yml";
+            case "death-messages.yml" -> "death-messages/death-messages.yml";
+            case "scoreboard.yml" -> "scoreboard/scoreboard.yml";
+            case "sounds.yml" -> "sounds/sounds.yml";
+            case "billford.yml" -> "billford/billford.yml";
+            case "rtp.yml" -> "rtp/rtp.yml";
+            case "worth.yml" -> "worth/worth.yml";
+            case "amethyst-tools.yml" -> "amethyst-tools/amethyst-tools.yml";
+            case "ender-chest.yml" -> "ender-chest/ender-chest.yml";
+            case "invsee.yml" -> "invsee/invsee.yml";
+            case "freeze.yml" -> "freeze/freeze.yml";
+            case "auction-house.yml" -> "auction/auction.yml";
+            case "orders.yml" -> "orders/orders.yml";
+            case "enchantments.yml" -> "enchantments/enchantments.yml";
+            case "filter.yml" -> "filter/filter.yml";
+            case "duels.yml" -> "duels/duels.yml";
+            case "ffa.yml" -> "ffa/ffa.yml";
+            case "pvp.yml" -> "pvp/pvp.yml";
+            case "crates.yml" -> "crates/crates.yml";
+            case "spawners.yml" -> "spawners/spawners.yml";
+            case "spawn-stash.yml" -> "spawn-stash/spawn-stash.yml";
+            case "network.yml" -> "network/network.yml";
+            case "staff-mode.yml" -> "staff-mode/staff-mode.yml";
+            case "hide.yml" -> "hide/hide.yml";
+            case "database.yml" -> "database/database.yml";
+            case "server-wipe.yml" -> "server-wipe/server-wipe.yml";
+            case "discord.yml" -> "discord/discord.yml";
+            case "anvil-moderation.yml" -> "anvil-moderation/anvil-moderation.yml";
+            case "update.yml" -> "update/update.yml";
+            case "essentials.yml" -> "essentials/essentials.yml";
+            case "maintenance.yml" -> "maintenance/maintenance.yml";
+            case "offenses.yml" -> "offenses/offenses.yml";
+            default -> name;
+        };
+        return "core/" + relative;
+    }
+
+    private static String shopCategoryResourcePath(String fileName) {
+        return "shardshop.yml".equalsIgnoreCase(fileName)
+                ? "core/shop/shardshop.yml"
+                : "core/shop/categories/" + fileName;
     }
 
     private static final DateTimeFormatter BACKUP_TIMESTAMP_FORMAT =
@@ -282,7 +423,6 @@ public class ConfigManager {
     private void applyModuleConfigurations() {
         copySection(team, "TEAM", config, "TEAM");
         copySection(teamGui, "TEAM-MENUS", menus, "TEAM-MENUS");
-        copySection(teamGui, "HOME-MENU.TEAM_HOME", menus, "HOME-MENU.TEAM_HOME");
         copySection(teamGui, "SETTINGS-MENU.BUTTONS.TEAM_CHAT_VISIBILITY", menus, "SETTINGS-MENU.BUTTONS.TEAM_CHAT_VISIBILITY");
         copySection(teamGui, "SETTINGS-MENU.BUTTONS.TEAM_INVITES", menus, "SETTINGS-MENU.BUTTONS.TEAM_INVITES");
         copySection(team, "MESSAGES.TEAM", messages, "TEAM");
@@ -355,7 +495,7 @@ public class ConfigManager {
                 continue;
             }
             String root = module.getKeys(false).stream()
-                    .filter(key -> !"enable".equalsIgnoreCase(key))
+                    .filter(key -> !"enable".equalsIgnoreCase(key) && !"enabled".equalsIgnoreCase(key))
                     .findFirst()
                     .orElse(null);
             if (root != null) {
@@ -1122,7 +1262,7 @@ public class ConfigManager {
     }
 
     private FileConfiguration loadShopCategoryFile(String fileName) {
-        File dataFile = new File(plugin.getDataFolder(), "core/shop/categories/" + fileName);
+        File dataFile = new File(plugin.getDataFolder(), shopCategoryResourcePath(fileName));
         if (!dataFile.isFile() && !copyShopCategoryResource(fileName, dataFile)) {
             return null;
         }
@@ -1136,7 +1276,7 @@ public class ConfigManager {
     }
 
     private boolean copyShopCategoryResource(String fileName, File target) {
-        try (InputStream input = plugin.getResource("core/shop/categories/" + fileName)) {
+        try (InputStream input = plugin.getResource(shopCategoryResourcePath(fileName))) {
             if (input == null) {
                 plugin.getLogger().warning("Shop category resource not found in jar: " + fileName);
                 return false;
