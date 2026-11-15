@@ -36,5 +36,9 @@
 -dontshrink
 -dontoptimize
 
+# SkinsRestorer is an optional server-provided API and is excluded from ProGuard's
+# library inputs because its current build targets Java 25.
+-dontwarn net.skinsrestorer.**
+
 # Keep an obfuscation map in target/ for diagnosing production stack traces.
 -printmapping target/proguard-mapping.txt
