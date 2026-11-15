@@ -40,7 +40,7 @@ CATEGORIES:
       - "#FFFFFFClick to view the food shop"
 
   shards:
-    FILE-TYPE: shop/shardshop.yml
+    FILE-TYPE: shardshop.yml
     OPEN-MENU: "{shard-menu}"
     MATERIAL: AMETHYST_SHARD
     SLOT: 22
