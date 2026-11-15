@@ -76,7 +76,7 @@
                     <injar>${project.build.finalName}.jar</injar>
                     <proguardInclude>${project.basedir}/proguard-rules.pro</proguardInclude>
                     <libs>
-                        <lib>${java.home}/jmods/java.base.jmod</lib>
+                        <lib>${env.JAVA_HOME}/jmods/java.base.jmod</lib>
                     </libs>
                     <!-- SkinsRestorer is an optional server-provided API. Its Java 25
                          classes are not needed for obfuscating our own plugin classes. -->
