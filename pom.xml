@@ -78,6 +78,14 @@
                     <libs>
                         <lib>${java.home}/jmods/java.base.jmod</lib>
                     </libs>
+                    <!-- SkinsRestorer is an optional server-provided API. Its Java 25
+                         classes are not needed for obfuscating our own plugin classes. -->
+                    <exclusions>
+                        <exclusion>
+                            <groupId>net.skinsrestorer</groupId>
+                            <artifactId>skinsrestorer-api</artifactId>
+                        </exclusion>
+                    </exclusions>
                     <includeDependency>true</includeDependency>
                     <includeDependencyInjar>false</includeDependencyInjar>
                     <maxMemory>2g</maxMemory>
