@@ -49,6 +49,8 @@ public class ConfigManager {
             "orders.yml",
             "team/team.yml",
             "team/gui/teamgui.yml",
+            "tpa/tpa.yml",
+            "tpa/gui/tpagui.yml",
             "enchantments.yml",
             "filter.yml",
             "duels.yml",
@@ -97,6 +99,8 @@ public class ConfigManager {
     private FileConfiguration orders;
     private FileConfiguration team;
     private FileConfiguration teamGui;
+    private FileConfiguration tpa;
+    private FileConfiguration tpaGui;
     private FileConfiguration duels;
     private FileConfiguration ffa;
     private FileConfiguration pvp;
@@ -146,6 +150,8 @@ public class ConfigManager {
         orders       = load("orders.yml", orders);
         team         = load("team/team.yml", team);
         teamGui      = load("team/gui/teamgui.yml", teamGui);
+        tpa          = load("tpa/tpa.yml", tpa);
+        tpaGui       = load("tpa/gui/tpagui.yml", tpaGui);
         applyModuleConfigurations();
         duels        = load("duels.yml", duels);
         ffa          = load("ffa.yml", ffa);
@@ -173,11 +179,20 @@ public class ConfigManager {
         copySection(teamGui, "SETTINGS-MENU.BUTTONS.TEAM_CHAT_VISIBILITY", menus, "SETTINGS-MENU.BUTTONS.TEAM_CHAT_VISIBILITY");
         copySection(teamGui, "SETTINGS-MENU.BUTTONS.TEAM_INVITES", menus, "SETTINGS-MENU.BUTTONS.TEAM_INVITES");
         copySection(team, "MESSAGES.TEAM", messages, "TEAM");
+        copyValue(tpa, "TELEPORT-COOLDOWN.TPA", config, "TELEPORT-COOLDOWN.TPA");
+        copyValue(tpa, "COMMANDS.TPA", config, "COMMANDS.TPA");
+        copyValue(tpa, "COMMANDS.TPAUTO", config, "COMMANDS.TPAUTO");
+        copySection(tpa, "MESSAGES.TPA", messages, "TPA");
+        copySection(tpa, "MESSAGES.TPAUTO", messages, "TPAUTO");
+        copySection(tpa, "MESSAGES.TPAHEREAUTO", messages, "TPAHEREAUTO");
+        copySection(tpaGui, "SETTINGS-MENU.BUTTONS", menus, "SETTINGS-MENU.BUTTONS");
+        copySection(tpaGui, "TPA-CONFIRM-MENU", menus, "TPA-CONFIRM-MENU");
+        copySection(tpaGui, "SERVER-INFO-MENU", menus, "SERVER-INFO-MENU");
         copySection(orders, "SERVER-NOTIFICATIONS.ORDERS", config, "SERVER-NOTIFICATIONS.ORDERS");
         copySection(orders, "MESSAGES.ORDERS", messages, "ORDERS");
     }
 
-    private void copySection(FileConfiguration source, String sourcePath,
+    private void copyValue(FileConfiguration source, String sourcePath,\n                           FileConfiguration target, String targetPath) {\n        if (source == null || target == null || !source.contains(sourcePath)) {\n            return;\n        }\n        target.set(targetPath, source.get(sourcePath));\n    }\n\n    private void copySection(FileConfiguration source, String sourcePath,
                              FileConfiguration target, String targetPath) {
         if (source == null || target == null) {
             return;
@@ -1302,6 +1317,7 @@ public class ConfigManager {
     public void reloadAuctionHouse() { auctionHouse = load("auction-house.yml", auctionHouse); }
     public void reloadOrders() { orders = load("orders.yml", orders); applyModuleConfigurations(); }
     public void reloadTeam() { team = load("team/team.yml", team); teamGui = load("team/gui/teamgui.yml", teamGui); applyModuleConfigurations(); }
+    public void reloadTpa() { tpa = load("tpa/tpa.yml", tpa); tpaGui = load("tpa/gui/tpagui.yml", tpaGui); applyModuleConfigurations(); }
     public void reloadDuels() { duels = load("duels.yml", duels); }
     public void reloadFfa() { ffa = load("ffa.yml", ffa); }
     public void reloadPvp() { pvp = load("pvp.yml", pvp); }

@@ -1,0 +1,80 @@
+enable: true
+
+SETTINGS-MENU:
+  BUTTONS:
+    TPA_CONFIRM_MENUS:
+      DISPLAY-NAME: '&#6BF18DTpa Confirm Menus'
+      MATERIAL: COMPASS
+      SLOT: 26
+      LORE:
+      - '&7Show confirmation GUI for TPA'
+      - '&fCurrently: {status}'
+    TPA_REQUESTS:
+      DISPLAY-NAME: '&#6BF18DTpa Requests'
+      MATERIAL: ENDER_PEARL
+      SLOT: 27
+      LORE:
+      - '&7Teleport requests privacy settings'
+      - '&fCurrently: {status}'
+    TPA_HERE_REQUESTS:
+      DISPLAY-NAME: '&#6BF18DTpa Here Requests'
+      MATERIAL: ENDER_EYE
+      SLOT: 28
+      LORE:
+      - '&7Teleport-here requests privacy settings'
+      - '&fCurrently: {status}'
+    AUTO_CONFIRM_TPAS:
+      DISPLAY-NAME: '&#6BF18DAuto-Confirm Tpas'
+      MATERIAL: CLOCK
+      SLOT: 33
+      LORE:
+      - '&7Auto-confirm teleport requests'
+      - '&fCurrently: {status}'
+
+TPA-CONFIRM-MENU:
+  TITLE: '&8Confirm TPA {here}'
+  SIZE: 27
+  BUTTONS:
+    CANCEL:
+      MATERIAL: BARRIER
+      NAME: '&cCancel'
+      LORE:
+      - '&fCLICK TO CANCEL'
+    CONFIRM:
+      MATERIAL: EMERALD
+      NAME: '&aConfirm'
+      LORE:
+      - '&fCLICK TO CONFIRM'
+    PLAYER:
+      MATERIAL: PLAYER_HEAD
+      NAME: '&#00FC00Player'
+      LORE:
+      - '&7{player}'
+    LOCATION:
+      NAME: '&#6BF18DLocation'
+      MATERIAL: GRASS_BLOCK
+      LORE:
+      - '&7{world}'
+    REGION:
+      NAME: '&#6BF18DRegion'
+      MATERIAL: FEATHER
+      LORE:
+      - '&7NA East (&#0069D6${ping}ms&7)'
+
+SERVER-INFO-MENU:
+  PAGES:
+    '3':
+      BUTTONS:
+        TPA:
+          MATERIAL: ENDER_PEARL
+          SLOT: 12
+          NAME: '&#00A4FCTeleport ReQuests'
+          LORE:
+          - '&fUse &b/tpa <player> &for'
+          - '&b/tpahere <player>&f.'
+          - ''
+          - '&#00A4FCTip: &fOnly teleport to'
+          - '&fpeople you trust.'
+          CLICK-MESSAGE:
+          - '&7Use &f/tpa <player> &7to reQuest teleporting to them.'
+          - '&7Use &f/tpahere <player> &7if you want them to come to you.'

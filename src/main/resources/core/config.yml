@@ -450,7 +450,6 @@ TELEPORT-COOLDOWN:
   TEAM-HOME: 5
   SPAWN: 5
   AFK: 5
-  TPA: 5
   WARP: 5
   RTP: 5
 BOUNTY:
@@ -589,8 +588,6 @@ COMMANDS:
   SOCIAL: true
   SPAWN: true
   STATS: true
-  TPA: true
-  TPAUTO: true
   FINDPLAYER: true
   CRATE: true
   SHARDPAY: false
