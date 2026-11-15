@@ -316,10 +316,9 @@ public class ConfigManager {
     }
 
     /**
-     * Resolve a shop FILE-TYPE relative to core/shop. A bare filename is kept
-     * backwards-compatible and resolves inside categories/. Explicit paths may
-     * target categories/<name>.yml or a root-level shop file such as shardshop.yml.
-     * Traversal and arbitrary nested paths are rejected.
+     * Resolve a shop FILE-TYPE relative to core/shop. Bare filenames resolve inside
+     * categories/; use shop/<name>.yml for an explicit root-level shop file and
+     * categories/<name>.yml for an explicit category file. Traversal is rejected.
      */
     private static String shopCategoryResourcePath(String fileName) {
         if (fileName == null || fileName.isBlank()) {
