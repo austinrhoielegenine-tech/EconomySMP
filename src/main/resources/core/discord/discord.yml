@@ -171,6 +171,7 @@ ACCOUNT_LINKING:
   CODE_LENGTH: 6
 
 BOT:
+  ENABLED: true
   TOKEN: ''
   CLIENT_ID: ''
   GUILD_ID: ''
