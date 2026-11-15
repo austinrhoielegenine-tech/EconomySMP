@@ -496,24 +496,28 @@ public class ShopManager {
             return List.of();
         }
 
+        // Keep the original YAML key casing: Bukkit ConfigurationSection lookups are
+        // case-sensitive, so converting "end" to "END" makes the section lookup fail.
         List<String> orderedKeys = new ArrayList<>();
+        Set<String> seenKeys = new HashSet<>();
         for (String configuredKey : categoriesSection.getStringList("ORDER")) {
             if (configuredKey == null || configuredKey.isBlank()) {
                 continue;
             }
 
-            String normalized = configuredKey.trim().toUpperCase(Locale.US);
-            if (!orderedKeys.contains(normalized)) {
-                orderedKeys.add(normalized);
+            String actualKey = configuredKey.trim();
+            String normalized = actualKey.toUpperCase(Locale.US);
+            if (!CATEGORY_META_KEYS.contains(normalized) && seenKeys.add(normalized)) {
+                orderedKeys.add(actualKey);
             }
         }
 
         for (String key : categoriesSection.getKeys(false)) {
             String normalized = key.toUpperCase(Locale.US);
-            if (CATEGORY_META_KEYS.contains(normalized) || orderedKeys.contains(normalized)) {
+            if (CATEGORY_META_KEYS.contains(normalized) || !seenKeys.add(normalized)) {
                 continue;
             }
-            orderedKeys.add(normalized);
+            orderedKeys.add(key);
         }
 
         List<ShopCategory> categories = new ArrayList<>();
