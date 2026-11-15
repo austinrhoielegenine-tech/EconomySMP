@@ -157,9 +157,24 @@ public final class EconomySMP extends JavaPlugin {
         configManager.loadAll();
 
         String licenseKey = configManager.getConfig().getString("LICENSE-KEY", "").trim();
+
+        // Backwards compatibility: some server owners edit plugins/EconomySMP/config.yml
+        // instead of the feature-owned plugins/EconomySMP/core/config.yml.
+        if (licenseKey.isBlank() || "YOUR-LICENSE-KEY".equalsIgnoreCase(licenseKey)) {
+            File legacyConfigFile = new File(getDataFolder(), "config.yml");
+            if (legacyConfigFile.isFile()) {
+                org.bukkit.configuration.file.FileConfiguration legacyConfig =
+                        org.bukkit.configuration.file.YamlConfiguration.loadConfiguration(legacyConfigFile);
+                String legacyLicenseKey = legacyConfig.getString("LICENSE-KEY", "").trim();
+                if (!legacyLicenseKey.isBlank()) {
+                    licenseKey = legacyLicenseKey;
+                }
+            }
+        }
+
         if (!"A1U2-S2T3-I1N2".equals(licenseKey)) {
             getServer().getConsoleSender().sendMessage(
-                    org.bukkit.ChatColor.RED + "[EconomySMP] Invalid license key! Set LICENSE-KEY: \"A1U2-S2T3-I1N2\" in plugins/EconomySMP/core/config.yml."
+                    org.bukkit.ChatColor.RED + "[EconomySMP] License validation failed. Check LICENSE-KEY in your config.yml."
             );
             getServer().getPluginManager().disablePlugin(this);
             return;
