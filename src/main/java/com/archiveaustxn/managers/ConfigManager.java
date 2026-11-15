@@ -190,7 +190,7 @@ public class ConfigManager {
         copySection(tpaGui, "SETTINGS-MENU.BUTTONS.TPA_HERE_REQUESTS", menus, "SETTINGS-MENU.BUTTONS.TPA_HERE_REQUESTS");
         copySection(tpaGui, "SETTINGS-MENU.BUTTONS.AUTO_CONFIRM_TPAS", menus, "SETTINGS-MENU.BUTTONS.AUTO_CONFIRM_TPAS");
         copySection(tpaGui, "TPA-CONFIRM-MENU", menus, "TPA-CONFIRM-MENU");
-        copySection(tpaGui, "SERVER-INFO-MENU.PAGES.'3'.BUTTONS.TPA", menus, "SERVER-INFO-MENU.PAGES.'3'.BUTTONS.TPA");
+        copySection(tpaGui, "SERVER-INFO-MENU.PAGES.3.BUTTONS.TPA", menus, "SERVER-INFO-MENU.PAGES.3.BUTTONS.TPA");
         copySection(orders, "SERVER-NOTIFICATIONS.ORDERS", config, "SERVER-NOTIFICATIONS.ORDERS");
         copySection(orders, "MESSAGES.ORDERS", messages, "ORDERS");
     }
