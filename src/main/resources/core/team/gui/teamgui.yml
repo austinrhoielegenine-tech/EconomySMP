@@ -1,226 +1,229 @@
 enable: true
 
-  TEAM-MENUS:
-TEAM:
-  TITLE: '&8Team'
-  SIZE: 54
-  MAX-ITEMS-PER-PAGE: 45
-  PLAYER-BUTTON:
-    ONLINE-SYMBOL: "&a■"
-    OFFLINE-SYMBOL: "&4■"
-    LORE: '&fClick to edit'
-  SEARCH-BUTTON:
-    TITLE: '&#6BF18DSearch'
-    MATERIAL: OAK_SIGN
-    SLOT: 45
-    LORE:
-    - '&fSearch for team members'
-  SEARCH_SIGN:
-    lines:
-    - ''
-    - ↑↑↑↑↑↑↑↑↑↑↑↑↑
-    - Search
-    - ''
-    input-line: 0
-  SORT-BUTTON:
-    TITLE: '&aSort'
-    MATERIAL: HOPPER
-    SLOT: 46
-    SELECTED-PREFIX: '&a'
-    UNSELECTED-PREFIX: '&f'
-    SYMBOL: "▪"
-  REFRESH-BUTTON:
-    TITLE: '&#6BF18DTeam {team_name}'
-    MATERIAL: IRON_HELMET
-    SLOT: 49
-    LORE:
-    - '&fClick to refresh'
-    - '&7Add up to {max_members} members'
-  HOME-BUTTON:
-    TITLE: '&#6BF18DTeam Home'
-    MATERIAL: WHITE_BANNER
-    SLOT: 52
-    HOME-LORE: '&fClick to teleport to your team''s home'
-    NO-HOME-LORE: '&fSet the team home with /home'
-  PVP-BUTTON:
-    TITLE: '&#6BF18DPVP'
-    MATERIAL: IRON_SWORD
-    SLOT: 53
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE: '&fCurrently: {state}'
-  MESSAGES:
-    NOT-IN-TEAM: '&cYou are not part of the team.'
-    NO-PERMISSION: '&cYou don''t have permissions to do this.'
-    CANT-EDIT-SELF: '&cYou can''t do this yourself!'
-TEAM-INFO:
-  TITLE: '&8Team {team_name}'
-  SIZE: 54
-  MAX-ITEMS-PER-PAGE: 45
-  PLAYER-BUTTON:
-    ONLINE-SYMBOL: "&a■"
-    OFFLINE-SYMBOL: "&4■"
-    LEADER-LORE: '&6Leader'
-  SUMMARY-BUTTON:
-    TITLE: '&#6BF18DTeam {team_name}'
-    MATERIAL: IRON_HELMET
-    SLOT: 49
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE:
-    - '&7Leader: &f{leader}'
-    - '&7Members: &f{members}&7/&f{max_members}'
-    - '&7PvP: {state}'
-  PAGE-BUTTON:
-    TITLE: '&fPage {page}&7/&f{total_pages}'
-    MATERIAL: PAPER
-    SLOT: 50
-    LORE:
-    - '&7Browse team members.'
-TEAM-EDIT-MEMBER:
-  TITLE: '&8Edit {player}'
-  SIZE: 27
-  PLACEHOLDER: false
-  PLACEHOLDER-MATERIAL: AIR
-  EDIT-HOME-BUTTON:
-    TITLE: '&#6BF18DEdit Home'
-    MATERIAL: WHITE_BANNER
-    SLOT: 10
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE:
-    - '&fLet {player} set and remove the team home'
-    - '&fCurrently: {state}'
-  KICK-BUTTON:
-    TITLE: '&#6BF18DKick'
-    MATERIAL: OAK_DOOR
-    SLOT: 11
-    LORE:
-    - '&fClick to kick {player}'
-  MANAGE-TEAMMATES-BUTTON:
-    TITLE: '&#6BF18DManage Teammates'
-    MATERIAL: IRON_HELMET
-    SLOT: 12
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE:
-    - '&fLet {player} invite and kick teammates'
-    - '&fCurrently: {state}'
-  PVP-BUTTON:
-    TITLE: '&#6BF18DPVP'
-    MATERIAL: IRON_SWORD
-    SLOT: 13
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE:
-    - '&fLet {player} turn on and off team pvp'
-    - '&fCurrently: {state}'
-  VISIT-HOME-BUTTON:
-    TITLE: '&#6BF18DVisit Team Home'
-    MATERIAL: ENDER_PEARL
-    SLOT: 14
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE:
-    - '&fLet {player} go to team home'
-    - '&fCurrently: {state}'
-  TEAM-CHAT-BUTTON:
-    TITLE: '&#6BF18DTeam Chat'
-    MATERIAL: FEATHER
-    SLOT: 15
-    ON-STATE: '&a&lON'
-    OFF-STATE: '&c&lOFF'
-    LORE:
-    - '&fLet {player} speak in chat'
-    - '&fCurrently: {state}'
-  BACK-BUTTON:
-    TITLE: '&cBack'
-    MATERIAL: BARRIER
-    SLOT: 18
-    LORE:
-    - '&fClick to return'
-TEAM-KICK-MEMBER:
-  PLACEHOLDER: true
-  TITLE: '&8Confirm Kicking {player}'
-  SIZE: 27
-  CANCEL-BUTTON:
-    TITLE: '&#FC0000Cancel'
-    MATERIAL: BARRIER
-    SLOT: 11
-    LORE:
-    - '&fClick to cancel'
-  CONFIRM-BUTTON:
-    TITLE: '&#00FC00Confirm'
-    MATERIAL: EMERALD
-    SLOT: 15
-    LORE:
-    - '&fClick to kick {player}'
-TEAM-DISBAND:
-  PLACEHOLDER: true
-  TITLE: '&8Confirm Disbanding Team'
-  SIZE: 27
-  CANCEL-BUTTON:
-    TITLE: '&#FC0000Cancel'
-    MATERIAL: BARRIER
-    SLOT: 11
-    LORE:
-    - '&fClick to cancel'
-  CONFIRM-BUTTON:
-    TITLE: '&#00FC00Confirm'
-    MATERIAL: EMERALD
-    SLOT: 15
-    LORE:
-    - '&fClick to confirm'
+TEAM-MENUS:
+  TEAM:
+    TITLE: '&8Team'
+    SIZE: 54
+    MAX-ITEMS-PER-PAGE: 45
+    PLAYER-BUTTON:
+      ONLINE-SYMBOL: "&a■"
+      OFFLINE-SYMBOL: "&4■"
+      LORE: '&fClick to edit'
+    SEARCH-BUTTON:
+      TITLE: '&#6BF18DSearch'
+      MATERIAL: OAK_SIGN
+      SLOT: 45
+      LORE:
+      - '&fSearch for team members'
+    SEARCH_SIGN:
+      lines:
+      - ''
+      - ↑↑↑↑↑↑↑↑↑↑↑↑↑
+      - Search
+      - ''
+      input-line: 0
+    SORT-BUTTON:
+      TITLE: '&aSort'
+      MATERIAL: HOPPER
+      SLOT: 46
+      SELECTED-PREFIX: '&a'
+      UNSELECTED-PREFIX: '&f'
+      SYMBOL: "▪"
+    REFRESH-BUTTON:
+      TITLE: '&#6BF18DTeam {team_name}'
+      MATERIAL: IRON_HELMET
+      SLOT: 49
+      LORE:
+      - '&fClick to refresh'
+      - '&7Add up to {max_members} members'
+    HOME-BUTTON:
+      TITLE: '&#6BF18DTeam Home'
+      MATERIAL: WHITE_BANNER
+      SLOT: 52
+      HOME-LORE: '&fClick to teleport to your team''s home'
+      NO-HOME-LORE: '&fSet the team home with /home'
+    PVP-BUTTON:
+      TITLE: '&#6BF18DPVP'
+      MATERIAL: IRON_SWORD
+      SLOT: 53
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE: '&fCurrently: {state}'
+    MESSAGES:
+      NOT-IN-TEAM: '&cYou are not part of the team.'
+      NO-PERMISSION: '&cYou don''t have permissions to do this.'
+      CANT-EDIT-SELF: '&cYou can''t do this yourself!'
+  TEAM-INFO:
+    TITLE: '&8Team {team_name}'
+    SIZE: 54
+    MAX-ITEMS-PER-PAGE: 45
+    PLAYER-BUTTON:
+      ONLINE-SYMBOL: "&a■"
+      OFFLINE-SYMBOL: "&4■"
+      LEADER-LORE: '&6Leader'
+    SUMMARY-BUTTON:
+      TITLE: '&#6BF18DTeam {team_name}'
+      MATERIAL: IRON_HELMET
+      SLOT: 49
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE:
+      - '&7Leader: &f{leader}'
+      - '&7Members: &f{members}&7/&f{max_members}'
+      - '&7PvP: {state}'
+    PAGE-BUTTON:
+      TITLE: '&fPage {page}&7/&f{total_pages}'
+      MATERIAL: PAPER
+      SLOT: 50
+      LORE:
+      - '&7Browse team members.'
+  TEAM-EDIT-MEMBER:
+    TITLE: '&8Edit {player}'
+    SIZE: 27
+    PLACEHOLDER: false
+    PLACEHOLDER-MATERIAL: AIR
+    EDIT-HOME-BUTTON:
+      TITLE: '&#6BF18DEdit Home'
+      MATERIAL: WHITE_BANNER
+      SLOT: 10
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE:
+      - '&fLet {player} set and remove the team home'
+      - '&fCurrently: {state}'
+    KICK-BUTTON:
+      TITLE: '&#6BF18DKick'
+      MATERIAL: OAK_DOOR
+      SLOT: 11
+      LORE:
+      - '&fClick to kick {player}'
+    MANAGE-TEAMMATES-BUTTON:
+      TITLE: '&#6BF18DManage Teammates'
+      MATERIAL: IRON_HELMET
+      SLOT: 12
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE:
+      - '&fLet {player} invite and kick teammates'
+      - '&fCurrently: {state}'
+    PVP-BUTTON:
+      TITLE: '&#6BF18DPVP'
+      MATERIAL: IRON_SWORD
+      SLOT: 13
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE:
+      - '&fLet {player} turn on and off team pvp'
+      - '&fCurrently: {state}'
+    VISIT-HOME-BUTTON:
+      TITLE: '&#6BF18DVisit Team Home'
+      MATERIAL: ENDER_PEARL
+      SLOT: 14
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE:
+      - '&fLet {player} go to team home'
+      - '&fCurrently: {state}'
+    TEAM-CHAT-BUTTON:
+      TITLE: '&#6BF18DTeam Chat'
+      MATERIAL: FEATHER
+      SLOT: 15
+      ON-STATE: '&a&lON'
+      OFF-STATE: '&c&lOFF'
+      LORE:
+      - '&fLet {player} speak in chat'
+      - '&fCurrently: {state}'
+    BACK-BUTTON:
+      TITLE: '&cBack'
+      MATERIAL: BARRIER
+      SLOT: 18
+      LORE:
+      - '&fClick to return'
+  TEAM-KICK-MEMBER:
+    PLACEHOLDER: true
+    TITLE: '&8Confirm Kicking {player}'
+    SIZE: 27
+    CANCEL-BUTTON:
+      TITLE: '&#FC0000Cancel'
+      MATERIAL: BARRIER
+      SLOT: 11
+      LORE:
+      - '&fClick to cancel'
+    CONFIRM-BUTTON:
+      TITLE: '&#00FC00Confirm'
+      MATERIAL: EMERALD
+      SLOT: 15
+      LORE:
+      - '&fClick to kick {player}'
+  TEAM-DISBAND:
+    PLACEHOLDER: true
+    TITLE: '&8Confirm Disbanding Team'
+    SIZE: 27
+    CANCEL-BUTTON:
+      TITLE: '&#FC0000Cancel'
+      MATERIAL: BARRIER
+      SLOT: 11
+      LORE:
+      - '&fClick to cancel'
+    CONFIRM-BUTTON:
+      TITLE: '&#00FC00Confirm'
+      MATERIAL: EMERALD
+      SLOT: 15
+      LORE:
+      - '&fClick to confirm'
 
 
-TEAM_HOME:
-  TELEPORT:
-    MATERIALS:
-      NO_TEAM: RED_BANNER
-      NO_HOME: WHITE_BANNER
-      HAS_HOME: WHITE_BANNER
-    DISPLAY_NAME:
-      NO_TEAM: '&cTeam Home'
-      NO_HOME: '&fTeam Home'
-      HAS_HOME: '&bTeam Home'
-    LORE:
-      NO_TEAM:
-      - '&7You are not in a team.'
-      NO_HOME:
-      - '&7Click to create your team home.'
-      HAS_HOME:
-      - '&7World: &f{world}'
-      - '&aLeft-click to teleport'
-  SAVE:
-    MATERIALS:
-      NO_TEAM: RED_DYE
-      NO_HOME: GRAY_DYE
-      HAS_HOME: BLUE_DYE
-    DISPLAY_NAME:
-      NO_TEAM: '&cTeam Home'
-      NO_HOME: '&7Set Team Home'
-      HAS_HOME: '&bManage Team Home'
-    LORE:
-      NO_TEAM:
-      - '&7You are not in a team.'
-      NO_HOME:
-      - '&7Left-click to save your team home.'
-      HAS_HOME:
-      - '&bLeft-click to update the team home'
-      - '&cRight-click to delete'
+HOME-MENU:
+  TEAM_HOME:
+    TELEPORT:
+      MATERIALS:
+        NO_TEAM: RED_BANNER
+        NO_HOME: WHITE_BANNER
+        HAS_HOME: WHITE_BANNER
+      DISPLAY_NAME:
+        NO_TEAM: '&cTeam Home'
+        NO_HOME: '&fTeam Home'
+        HAS_HOME: '&bTeam Home'
+      LORE:
+        NO_TEAM:
+        - '&7You are not in a team.'
+        NO_HOME:
+        - '&7Click to create your team home.'
+        HAS_HOME:
+        - '&7World: &f{world}'
+        - '&aLeft-click to teleport'
+    SAVE:
+      MATERIALS:
+        NO_TEAM: RED_DYE
+        NO_HOME: GRAY_DYE
+        HAS_HOME: BLUE_DYE
+      DISPLAY_NAME:
+        NO_TEAM: '&cTeam Home'
+        NO_HOME: '&7Set Team Home'
+        HAS_HOME: '&bManage Team Home'
+      LORE:
+        NO_TEAM:
+        - '&7You are not in a team.'
+        NO_HOME:
+        - '&7Left-click to save your team home.'
+        HAS_HOME:
+        - '&bLeft-click to update the team home'
+        - '&cRight-click to delete'
 
-TEAM_CHAT_VISIBILITY:
-  DISPLAY-NAME: '&#6BF18DTeam Chat Visibility'
-  MATERIAL: MANGROVE_SIGN
-  SLOT: 7
-  LORE:
-  - '&7Show team chat in main chat'
-  - '&fCurrently: {status}'
+SETTINGS-MENU:
+  BUTTONS:
+      TEAM_CHAT_VISIBILITY:
+        DISPLAY-NAME: '&#6BF18DTeam Chat Visibility'
+        MATERIAL: MANGROVE_SIGN
+        SLOT: 7
+        LORE:
+        - '&7Show team chat in main chat'
+        - '&fCurrently: {status}'
 
-TEAM_INVITES:
-  DISPLAY-NAME: '&#6BF18DTeam Invites'
-  MATERIAL: SHIELD
-  SLOT: 34
-  LORE:
-  - '&7Receive team invitations'
-  - '&fCurrently: {status}'
+    TEAM_INVITES:
+      DISPLAY-NAME: '&#6BF18DTeam Invites'
+      MATERIAL: SHIELD
+      SLOT: 34
+      LORE:
+      - '&7Receive team invitations'
+      - '&fCurrently: {status}'
