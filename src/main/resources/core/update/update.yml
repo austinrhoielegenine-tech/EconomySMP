@@ -4,7 +4,7 @@ enable: true
 # in plugins/update/EconomySMP.jar. Bukkit/Paper installs it on the next server restart.
 enabled: true
 auto-download: true
-check-interval-minutes: 30
+check-interval-minutes: 5
 
 # "auto" follows the plugin version and checks the matching nightly release tag (v<version>-pre).
 release-tag: "auto"
