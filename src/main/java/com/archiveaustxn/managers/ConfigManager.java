@@ -311,7 +311,15 @@ public class ConfigManager {
         copySection(orders, "MESSAGES.ORDERS", messages, "ORDERS");
     }
 
-    private void copyValue(FileConfiguration source, String sourcePath,\n                           FileConfiguration target, String targetPath) {\n        if (source == null || target == null || !source.contains(sourcePath)) {\n            return;\n        }\n        target.set(targetPath, source.get(sourcePath));\n    }\n\n    private void copySection(FileConfiguration source, String sourcePath,
+    private void copyValue(FileConfiguration source, String sourcePath,
+                           FileConfiguration target, String targetPath) {
+        if (source == null || target == null || !source.contains(sourcePath)) {
+            return;
+        }
+        target.set(targetPath, source.get(sourcePath));
+    }
+
+    private void copySection(FileConfiguration source, String sourcePath,
                              FileConfiguration target, String targetPath) {
         if (source == null || target == null) {
             return;
