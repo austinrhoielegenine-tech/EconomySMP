@@ -49,7 +49,7 @@ public class ShopCommand implements CommandExecutor {
     }
 
     private boolean reload(CommandSender sender) {
-        if (!PermissionUtils.has(sender, "economysmp.admin.shop")) {
+        if (!PermissionUtils.has(sender, "shop.reload") && !PermissionUtils.has(sender, "economysmp.admin.shop")) {
             sender.sendMessage(ColorUtils.colorize(text(
                     "SHOP-GUI.MESSAGES.NO-RELOAD-PERMISSION",
                     "&cYou do not have permission to reload shop settings."
