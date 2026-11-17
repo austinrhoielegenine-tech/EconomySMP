@@ -124,7 +124,7 @@ commands:
   shop:
     description: Open the shop
     usage: /shop [reload]
-    permission: economysmp.command.shop
+    permission: shop.use
     permission-message: "&cYou do not have permission to use /shop."
   shopedit:
     description: Edit a shop menu in game
@@ -1878,4 +1878,33 @@ permissions:
     default: op
   economysmp.command.amod:
     description: Access to /amod command
+    default: op
+
+  shop.admin:
+    description: Full access to shop administration
+    default: op
+    children:
+      shop.reload: true
+      shop.add: true
+      shop.remove: true
+      shop.addshop: true
+      shop.removeshop: true
+      shop.use: true
+  shop.reload:
+    description: Reload shop configuration
+    default: op
+  shop.use:
+    description: Use the shop
+    default: true
+  shop.add:
+    description: Add an item to a shop
+    default: op
+  shop.remove:
+    description: Remove an item from a shop
+    default: op
+  shop.addshop:
+    description: Add a shop
+    default: op
+  shop.removeshop:
+    description: Remove a shop
     default: op
