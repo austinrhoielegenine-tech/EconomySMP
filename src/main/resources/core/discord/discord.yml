@@ -164,36 +164,3 @@ WEBHOOKS:
       FOOTER: New player order
       TIMESTAMP: true
 
-ACCOUNT_LINKING:
-  ENABLED: true
-  EXPIRES: 10m
-  CODE_LENGTH: 6
-
-BOT:
-  ENABLED: true
-  TOKEN: ''
-  CLIENT_ID: ''
-  GUILD_ID: ''
-  PVP_MATCH_CHANNEL_ID: ''
-  PVP_MATCH_POLL_SECONDS: 15
-  LINKS_FILE: data/links.db
-
-  LINK_PROMPT: 'Run /link in Minecraft to get a one-time code, then use /link code:<code> here.'
-  LINK_SUCCESS: 'Successfully linked Minecraft account **{player}** to your Discord account!'
-  LINK_INVALID: 'That link code is invalid. Run /pvp sync in Minecraft to get a new one.'
-  LINK_EXPIRED: 'That link code has expired. Run /pvp sync in Minecraft to get a new one.'
-  LINK_USED: 'That link code has already been used. Generate a new one with /pvp sync.'
-  LINK_TAKEN: 'That Minecraft account is already linked to another Discord user. They must use /unsync first.'
-  LINK_ALREADY_LINKED: 'Your Discord account is already linked to **{player}**. Use /unsync before linking another account.'
-  UNLINK_SUCCESS: 'Successfully unlinked **{player}** from your Discord account.'
-  UNLINK_NOT_LINKED: 'Your Discord account is not linked to a Minecraft account.'
-
-
-IP-COMMAND:
-  ENABLED: true
-  COMMAND: "!ip"
-  SERVER-NAME: "LinearSMP"
-  SERVER-ADDRESS: "CHANGE_ME"
-  SERVER-PORT: 25565
-  COLOR: "#009BFF"
-  FOOTER: "Made By ArchiveAustxn"
