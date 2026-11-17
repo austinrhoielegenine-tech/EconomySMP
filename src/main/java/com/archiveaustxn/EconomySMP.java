@@ -125,7 +125,6 @@ public final class EconomySMP extends JavaPlugin {
     private NetworkStaffAlertManager networkStaffAlertManager;
     private StaffModeManager staffModeManager;
     private DiscordWebhookManager discordWebhookManager;
-    private EmbeddedDiscordBotManager embeddedDiscordBotManager;
     private LunarRichPresenceManager lunarRichPresenceManager;
     private PingManager pingManager;
     private LuckPermsTablistRefreshBridge luckPermsTablistRefreshBridge;
@@ -298,8 +297,6 @@ public final class EconomySMP extends JavaPlugin {
         new ServerListProtocolLibBridge(this).initialize();
         duelManager.initializeCrossServer();
         discordWebhookManager = new DiscordWebhookManager(this);
-        embeddedDiscordBotManager = new EmbeddedDiscordBotManager(this);
-        embeddedDiscordBotManager.start();
         pingManager = new PingManager(this);
         initializeLunarRichPresenceManager();
 
@@ -381,9 +378,6 @@ public final class EconomySMP extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        if (embeddedDiscordBotManager != null) {
-            embeddedDiscordBotManager.shutdown();
-        }
         com.archiveaustxn.managers.SellStatsExporter.stopEmbeddedHttpServer();
         boolean suppressWipeSaves = serverWipeManager != null
                 && serverWipeManager.shouldSuppressShutdownSaves();
@@ -709,7 +703,6 @@ public final class EconomySMP extends JavaPlugin {
         setExecutor("ffastats", new FfaStatsCommand(this), FeatureManager.Feature.FFA);
         setExecutor("ffaarena", new FfaArenaCommand(this), FeatureManager.Feature.FFA);
         setExecutor("pvp", new PvpCommand(this), FeatureManager.Feature.PVP_ARENA);
-        setExecutor("link", new com.archiveaustxn.commands.LinkCommand(this), FeatureManager.Feature.PVP_ARENA);
         AuctionHouseCommand auctionHouseCommand = new AuctionHouseCommand(this);
         setExecutor("auctionhouse", auctionHouseCommand, FeatureManager.Feature.AUCTION_HOUSE);
         setTabCompleter("auctionhouse", auctionHouseCommand);
@@ -1180,9 +1173,6 @@ public final class EconomySMP extends JavaPlugin {
         configManager.reloadNetwork();
         configManager.reloadDatabase();
         configManager.reloadDiscord();
-        if (embeddedDiscordBotManager != null) {
-            embeddedDiscordBotManager.reload();
-        }
         spawnerManager.reload();
         spawnStashManager.reload();
         fakePlayerManager.reload();
