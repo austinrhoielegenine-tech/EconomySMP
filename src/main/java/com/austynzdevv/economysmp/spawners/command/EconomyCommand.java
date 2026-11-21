@@ -25,7 +25,7 @@ public class EconomyCommand implements CommandExecutor, TabCompleter {
    }
 
    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-      if (!sender.hasPermission("economysmpcore.system.spawners.admin")) {
+      if (!sender.hasPermission("economysmp.system.spawners.admin")) {
          this.plugin.getMessages().send(sender, "no-permission");
          return true;
       } else if (args.length == 0) {
@@ -182,7 +182,7 @@ public class EconomyCommand implements CommandExecutor, TabCompleter {
    }
 
    public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-      if (!sender.hasPermission("economysmpcore.system.spawners.admin")) {
+      if (!sender.hasPermission("economysmp.system.spawners.admin")) {
          return List.of();
       } else if (args.length == 1) {
          return this.filter(List.of("give", "list", "info", "panel", "convert", "reload", "help"), args[0]);
