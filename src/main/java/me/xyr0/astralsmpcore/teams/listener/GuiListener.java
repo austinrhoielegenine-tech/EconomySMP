@@ -201,11 +201,11 @@ public final class GuiListener implements Listener {
             }
          }
 
-         line = line.trim();
+         String finalLine = line.trim();
          this.searching.remove(player.getUniqueId());
          Tasks.run(this.plugin.getCore(), () -> {
             InputUtil.cleanup(player);
-            this.handleSearchResult(player, line);
+            this.handleSearchResult(player, finalLine);
          });
       }
    }

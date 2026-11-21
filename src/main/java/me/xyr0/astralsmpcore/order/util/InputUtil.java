@@ -211,7 +211,8 @@ public class InputUtil implements Listener {
          }
 
          this.restore(id);
-         Tasks.run(this.plugin.getCore(), () -> this.plugin.handleInput(player, mode, value));
+         String finalValue = value;
+         Tasks.run(this.plugin.getCore(), () -> this.plugin.handleInput(player, mode, finalValue));
       }
    }
 
