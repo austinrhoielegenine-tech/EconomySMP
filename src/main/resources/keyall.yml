@@ -12,25 +12,9 @@ keyall-timer-type:
 # %player% is replaced with each online player name when needed.
 keys:
   common:
-    chance: 80
+    chance: 100
     display: "&#249a1aᴄᴏᴍᴍᴏɴ ᴋᴇʏ"
     command: "crate keyall common virtual 1"
-  crimson:
-    chance: 50
-    display: "&#c62119ᴄʀɪᴍsᴏɴ ᴋᴇʏ"
-    command: "crate keyall crimson virtual 1"
-  prime:
-    chance: 95
-    display: "&#2388d6ᴘʀɪᴍᴇ ᴋᴇʏ"
-    command: "crate keyall prime virtual 1"
-  gold:
-    chance: 99
-    display: "&#e6bb00ɢᴏʟᴅ ᴋᴇʏ"
-    command: "crate keyall gold virtual 1"
-  amethyst:
-    chance: 5
-    display: "&#6f3bafᴀᴍᴇᴛʜʏsᴛ ᴋᴇʏ"
-    command: "crate keyall amethyst virtual 1"
 
 messages:
   no-permission: "&cYou don't have permission."
