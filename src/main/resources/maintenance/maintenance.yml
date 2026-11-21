@@ -1,6 +1,6 @@
 server:
-  name: "YourServer"
-  discord: "https://discord.gg/yourserver"
+  name: "NovaSMP"
+  discord: "https://discord.gg/smpnova"
 
 permissions:
   use: "maintenance.use"
