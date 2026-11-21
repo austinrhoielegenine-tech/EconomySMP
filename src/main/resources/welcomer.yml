@@ -7,3 +7,7 @@ first-join-announcement:
 
 join-message: "&a[+] %player%"
 leave-message: "&c[-] %player%"
+
+welcome-reward: "&7Say &a&lWELCOME &7to %player% to receive a reward"
+reward-command:
+  - "eco give %player% 10000"
