@@ -1,6 +1,6 @@
 package com.austynzdevv.economysmp.chat2.command;
 
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.SettingsModule;
 import com.austynzdevv.economysmp.chat2.EconomyChat;
@@ -31,7 +31,7 @@ public class EconomyChatCommand implements CommandExecutor {
             boolean on = this.plugin.getChatManager().togglePersonal(player.getUniqueId());
 
             try {
-               EconomySMPcore core = EconomySMPcore.get();
+               EconomySMP core = EconomySMP.get();
                if (core != null) {
                   Module mod = core.modules().get("settings");
                   if (mod instanceof SettingsModule) {

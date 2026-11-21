@@ -4,15 +4,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 public class ConfigManager {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final Map<String, FileConfiguration> systemConfigs = new HashMap();
 
-   public ConfigManager(EconomySMPcore plugin) {
+   public ConfigManager(EconomySMP plugin) {
       this.plugin = plugin;
       this.load();
    }

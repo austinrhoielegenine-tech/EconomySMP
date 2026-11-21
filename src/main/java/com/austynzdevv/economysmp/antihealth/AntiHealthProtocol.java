@@ -10,14 +10,14 @@ import com.comphenix.protocol.events.PacketListener;
 import com.comphenix.protocol.wrappers.WrappedDataValue;
 import java.util.ArrayList;
 import java.util.List;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 
 public class AntiHealthProtocol {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private ProtocolManager protocol;
    private PacketListener listener;
 
-   public AntiHealthProtocol(EconomySMPcore plugin) {
+   public AntiHealthProtocol(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

@@ -2,19 +2,19 @@ package com.austynzdevv.economysmp.data;
 
 import java.io.File;
 import java.io.IOException;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 public final class SystemDataStore {
    private static SystemDataStore instance;
    private final File folder;
 
-   private SystemDataStore(EconomySMPcore plugin) {
+   private SystemDataStore(EconomySMP plugin) {
       this.folder = new File(plugin.getDataFolder(), "Data");
       this.folder.mkdirs();
    }
 
-   public static synchronized SystemDataStore init(EconomySMPcore plugin) {
+   public static synchronized SystemDataStore init(EconomySMP plugin) {
       if (instance == null) {
          instance = new SystemDataStore(plugin);
       }

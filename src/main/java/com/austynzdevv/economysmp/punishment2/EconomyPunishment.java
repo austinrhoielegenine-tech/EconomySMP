@@ -3,7 +3,7 @@ package com.austynzdevv.economysmp.punishment2;
 import java.io.File;
 import java.util.List;
 import java.util.logging.Logger;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.punishment2.command.CheckBanCommand;
 import com.austynzdevv.economysmp.punishment2.command.CheckMuteCommand;
 import com.austynzdevv.economysmp.punishment2.command.FreezeCommand;
@@ -214,7 +214,7 @@ public class EconomyPunishment {
       }
 
       JavaPlugin var5 = this.core;
-      if (var5 instanceof EconomySMPcore asmp) {
+      if (var5 instanceof EconomySMP asmp) {
          asmp.commands().registerHandler(name, (sender, args) -> {
             try {
                return executor.onCommand(sender, (Command)(pc != null ? pc : this.dummyCmd(name)), name, args);

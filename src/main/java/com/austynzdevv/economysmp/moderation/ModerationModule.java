@@ -15,7 +15,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.StreamSupport;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.CommandRegistry;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.economy.CoreEconomy;
@@ -67,7 +67,7 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
 
 public class ModerationModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Set<UUID> vanished = new HashSet();
    private final Set<UUID> staffChatToggle = new HashSet();
@@ -78,7 +78,7 @@ public class ModerationModule implements Module, Listener {
    private final Map<UUID, Integer> killConfirm = new ConcurrentHashMap();
    private static final String[] RANDOM_FAKE_NAMES = new String[]{"Steve_Miner", "AlexCraft", "NotchJr", "HerobrineX", "CreeperBob", "EnderKnight", "BlockyLuke", "CraftQueen", "RedstoneRex", "DiamondDan", "SkyWalkerMC", "LavaFish", "PiglinPete", "AxolotlAmy", "WardenWill", "SculkSam", "NetherNate", "Froglight", "AmethystAva", "CopperCarl"};
 
-   public ModerationModule(EconomySMPcore plugin) {
+   public ModerationModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -1226,7 +1226,7 @@ public class ModerationModule implements Module, Listener {
       return this.cfg;
    }
 
-   public EconomySMPcore getPlugin() {
+   public EconomySMP getPlugin() {
       return this.plugin;
    }
 

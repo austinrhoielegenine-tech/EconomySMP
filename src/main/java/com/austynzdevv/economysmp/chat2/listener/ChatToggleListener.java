@@ -1,6 +1,6 @@
 package com.austynzdevv.economysmp.chat2.listener;
 
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.SettingsModule;
 import com.austynzdevv.economysmp.chat2.EconomyChat;
@@ -33,8 +33,8 @@ public class ChatToggleListener implements Listener {
       } else {
          try {
             JavaPlugin var4 = this.plugin.getCore();
-            if (var4 instanceof EconomySMPcore) {
-               EconomySMPcore core = (EconomySMPcore)var4;
+            if (var4 instanceof EconomySMP) {
+               EconomySMP core = (EconomySMP)var4;
                Module mod = core.modules().get("settings");
                if (mod instanceof SettingsModule) {
                   SettingsModule sm = (SettingsModule)mod;

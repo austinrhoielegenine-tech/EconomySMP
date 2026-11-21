@@ -27,7 +27,7 @@ public final class VaultEconomyBridge implements Economy {
    }
 
    public String getName() {
-      return "EconomySMPcore";
+      return "EconomySMP";
    }
 
    public boolean hasBankSupport() {

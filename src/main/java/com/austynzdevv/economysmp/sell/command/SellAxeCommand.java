@@ -26,7 +26,7 @@ public class SellAxeCommand implements CommandExecutor, TabCompleter {
    }
 
    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-      if (!sender.hasPermission("EconomySMPcore.system.sellaxe.use")) {
+      if (!sender.hasPermission("EconomySMP.system.sellaxe.use")) {
          this.plugin.getMessages().send(sender, "no-permission");
          return true;
       } else if (args.length >= 3 && args[0].equalsIgnoreCase("give")) {

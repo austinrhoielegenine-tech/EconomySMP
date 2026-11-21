@@ -251,7 +251,7 @@ public final class StatsManager {
       } catch (Exception var6) {
       }
 
-      File shardsData = new File(this.plugin.getDataFolder().getParentFile(), "EconomySMPcore/shards/data.yml");
+      File shardsData = new File(this.plugin.getDataFolder().getParentFile(), "EconomySMP/shards/data.yml");
       if (!shardsData.exists()) {
          shardsData = PlayerDataStore.get().file();
       }
@@ -267,7 +267,7 @@ public final class StatsManager {
    }
 
    private void loadShardsInto(Map<UUID, Entry> map) {
-      File shardsData = new File(this.plugin.getDataFolder().getParentFile(), "EconomySMPcore/shards/data.yml");
+      File shardsData = new File(this.plugin.getDataFolder().getParentFile(), "EconomySMP/shards/data.yml");
       if (!shardsData.exists()) {
          shardsData = PlayerDataStore.get().file();
       }

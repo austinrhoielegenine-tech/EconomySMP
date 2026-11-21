@@ -3,17 +3,17 @@ package com.austynzdevv.economysmp.managers;
 import java.io.File;
 import java.nio.file.Files;
 import java.util.Map;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 public class MessageManager {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration messages;
 
-   public MessageManager(EconomySMPcore plugin) {
+   public MessageManager(EconomySMP plugin) {
       this.plugin = plugin;
       this.reload();
    }

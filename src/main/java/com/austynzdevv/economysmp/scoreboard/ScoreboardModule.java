@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import me.clip.placeholderapi.PlaceholderAPI;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.SettingsModule;
 import com.austynzdevv.economysmp.economy.CoreEconomy;
@@ -40,13 +40,13 @@ import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
 public class ScoreboardModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Set<UUID> hidden = new HashSet();
    private final Map<UUID, Scoreboard> boards = new HashMap();
    private int taskId = -1;
 
-   public ScoreboardModule(EconomySMPcore plugin) {
+   public ScoreboardModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

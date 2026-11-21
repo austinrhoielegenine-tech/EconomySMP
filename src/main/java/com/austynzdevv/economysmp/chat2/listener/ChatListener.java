@@ -3,7 +3,7 @@ package com.austynzdevv.economysmp.chat2.listener;
 import io.papermc.paper.event.player.AsyncChatEvent;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.SettingsModule;
 import com.austynzdevv.economysmp.chat2.EconomyChat;
@@ -41,7 +41,7 @@ public class ChatListener implements Listener {
 
       try {
          JavaPlugin var3 = this.plugin.getCore();
-         if (var3 instanceof EconomySMPcore core) {
+         if (var3 instanceof EconomySMP core) {
             Module mod = core.modules().get("settings");
             if (mod instanceof SettingsModule sm) {
                if (sm.isChatOff(player.getUniqueId())) {

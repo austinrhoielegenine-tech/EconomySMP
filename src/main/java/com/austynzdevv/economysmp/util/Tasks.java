@@ -336,7 +336,7 @@ public final class Tasks {
       FLAGS.clear();
 
       try {
-         Plugin pl = Bukkit.getPluginManager().getPlugin("EconomySMPcore");
+         Plugin pl = Bukkit.getPluginManager().getPlugin("EconomySMP");
          if (pl != null) {
             Bukkit.getScheduler().cancelTasks(pl);
             if (FOLIA) {
@@ -364,7 +364,7 @@ public final class Tasks {
          Throwable t = var5;
 
          try {
-            Bukkit.getLogger().warning("[EconomySMPcore] Task error: " + t.getMessage());
+            Bukkit.getLogger().warning("[EconomySMP] Task error: " + t.getMessage());
          } catch (Throwable var3) {
          }
       }

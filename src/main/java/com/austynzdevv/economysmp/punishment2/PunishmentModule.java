@@ -1,14 +1,14 @@
 package com.austynzdevv.economysmp.punishment2;
 
 import java.io.File;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.Module;
 
 public class PunishmentModule implements Module {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private EconomyPunishment punishment;
 
-   public PunishmentModule(EconomySMPcore plugin) {
+   public PunishmentModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

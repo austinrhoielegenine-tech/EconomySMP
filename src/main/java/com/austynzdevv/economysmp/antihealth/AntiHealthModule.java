@@ -1,14 +1,14 @@
 package com.austynzdevv.economysmp.antihealth;
 
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.Module;
 import org.bukkit.Bukkit;
 
 public class AntiHealthModule implements Module {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private Object handle;
 
-   public AntiHealthModule(EconomySMPcore plugin) {
+   public AntiHealthModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -22,7 +22,7 @@ public class AntiHealthModule implements Module {
       } else {
          try {
             Class<?> impl = Class.forName("com.austynzdevv.economysmp.antihealth.AntiHealthProtocol");
-            this.handle = impl.getConstructor(EconomySMPcore.class).newInstance(this.plugin);
+            this.handle = impl.getConstructor(EconomySMP.class).newInstance(this.plugin);
             impl.getMethod("start").invoke(this.handle);
          } catch (Exception t) {
             this.plugin.getLogger().warning("Anti health indicator failed to start: " + t.getMessage());

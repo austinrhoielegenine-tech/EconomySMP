@@ -79,7 +79,7 @@ public final class CoreEconomy {
             registeredSelf = true;
             vaultReady = true;
             vault = INSTANCE;
-            core.getLogger().info("Economy: Paper + Vault — EconomySMPcore registered as currency provider.");
+            core.getLogger().info("Economy: Paper + Vault — EconomySMP registered as currency provider.");
          } catch (Exception t) {
             core.getLogger().warning("Economy: could not register with Vault, using built-in only: " + t.getMessage());
          }

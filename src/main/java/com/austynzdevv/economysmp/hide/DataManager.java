@@ -1,7 +1,7 @@
 package com.austynzdevv.economysmp.hide;
 
 import java.io.File;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.data.PlayerDataStore;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -21,7 +21,7 @@ public class DataManager {
    }
 
    public void reload() {
-      PlayerDataStore.init((EconomySMPcore)this.plugin.getCore());
+      PlayerDataStore.init((EconomySMP)this.plugin.getCore());
    }
 
    public File getFile() {

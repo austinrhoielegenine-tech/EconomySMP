@@ -1,7 +1,7 @@
 package com.austynzdevv.economysmp.homes;
 
 import java.io.File;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.CommandRegistry;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.homes.command.HomeCommand;
@@ -13,13 +13,13 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.event.HandlerList;
 
 public class HomesModule implements Module {
-   private final EconomySMPcore core;
+   private final EconomySMP core;
    private EconomyHomes host;
    private HomeCommand command;
    private GUIListener guiListener;
    private PlayerListener playerListener;
 
-   public HomesModule(EconomySMPcore core) {
+   public HomesModule(EconomySMP core) {
       this.core = core;
    }
 

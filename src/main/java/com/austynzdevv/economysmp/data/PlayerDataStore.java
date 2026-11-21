@@ -10,21 +10,21 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.logging.Logger;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.util.Tasks;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 public final class PlayerDataStore {
    private static PlayerDataStore instance;
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final File file;
    private final YamlConfiguration data;
    private final Object lock = new Object();
    private final AtomicBoolean savePending = new AtomicBoolean();
    private final AtomicBoolean saveDirty = new AtomicBoolean();
 
-   private PlayerDataStore(EconomySMPcore plugin) {
+   private PlayerDataStore(EconomySMP plugin) {
       this.plugin = plugin;
       File dir = new File(plugin.getDataFolder(), "Data");
       dir.mkdirs();
@@ -84,7 +84,7 @@ public final class PlayerDataStore {
       }
    }
 
-   public static synchronized PlayerDataStore init(EconomySMPcore plugin) {
+   public static synchronized PlayerDataStore init(EconomySMP plugin) {
       if (instance == null || instance.plugin != plugin) {
          instance = new PlayerDataStore(plugin);
       }

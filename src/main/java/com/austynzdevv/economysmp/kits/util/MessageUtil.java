@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.nio.file.CopyOption;
 import java.nio.file.Files;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.util.TextUtil;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -19,7 +19,7 @@ public final class MessageUtil {
       File f = new File(dataFolder, "messages.yml");
       if (!f.exists()) {
          try {
-            InputStream in = EconomySMPcore.class.getResourceAsStream("/kits/messages.yml");
+            InputStream in = EconomySMP.class.getResourceAsStream("/kits/messages.yml");
             if (in != null) {
                Files.copy(in, f.toPath(), new CopyOption[0]);
                in.close();

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.CommandRegistry;
 import com.austynzdevv.economysmp.CoreSystemsModule;
 import com.austynzdevv.economysmp.DoubleJumpModule;
@@ -39,10 +39,10 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class ModuleManager {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final Map<String, Module> modules = new HashMap();
 
-   public ModuleManager(EconomySMPcore plugin) {
+   public ModuleManager(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -247,7 +247,7 @@ public class ModuleManager {
          } else {
             try {
                Class<?> clazz = Class.forName("com.austynzdevv.economysmp.antihealth.AntiHealthModule");
-               Module mod = (Module)clazz.getConstructor(EconomySMPcore.class).newInstance(this.plugin);
+               Module mod = (Module)clazz.getConstructor(EconomySMP.class).newInstance(this.plugin);
                this.modules.put("anti-health-indicator", mod);
             } catch (LinkageError | Exception t) {
                this.plugin.getLogger().warning("Anti health indicator unavailable: " + ((Throwable)t).getMessage());
@@ -300,7 +300,7 @@ public class ModuleManager {
       try {
          cleanup.run();
       } catch (RuntimeException ex) {
-         this.plugin.getLogger().log(Level.WARNING, "Failed during " + operation + " while reloading EconomySMPcore", ex);
+         this.plugin.getLogger().log(Level.WARNING, "Failed during " + operation + " while reloading EconomySMP", ex);
       }
 
    }
