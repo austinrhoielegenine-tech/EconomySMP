@@ -218,12 +218,12 @@ public final class GuiListener implements Listener {
             }
          }
 
-         line = line.trim();
+         String finalLine = line.trim();
          this.searching.remove(player.getUniqueId());
          BountyManager.Sort sort = (BountyManager.Sort)MenuSession.SORT.getOrDefault(player.getUniqueId(), BountyManager.Sort.HIGHEST);
          Tasks.run(this.plugin.getCore(), () -> {
             InputUtil.cleanup(player);
-            this.handleSearchResult(player, sort, line);
+            this.handleSearchResult(player, sort, finalLine);
          });
       }
    }
