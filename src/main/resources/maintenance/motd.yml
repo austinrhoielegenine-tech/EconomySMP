@@ -1,12 +1,12 @@
 normal:
   enabled: true
   lines:
-    - "<#00ADFC>EconomySMP"
-    - "&fsᴜʀᴠɪᴠᴀʟ ᴍᴜʟᴛɪᴘʟᴀʏᴇʀ"
-  max-players: 2026
+    - "<#00ADFC>NovaSMP"
+    - "&a&lECONOMY &4&lRELEASED"
+  max-players: 500
 
 maintenance:
   lines:
-    - "&cEconomySMP"
+    - "&cNovaSMP"
     - "&cᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ"
   max-players: 0
