@@ -1,10 +1,8 @@
 title: "&8ѕʜᴏᴘ - sᴘᴀᴡɴᴇʀ"
 size: 27
 type: shop
-economy: command
-take-command: "shards take %player% %total%"
-balance-placeholder: "%economysmp_shards_balance_raw%"
-currency-symbol: "Shards"
+economy: vault
+currency-symbol: "$"
 back-slot: 18
 back-open: main
 items:
