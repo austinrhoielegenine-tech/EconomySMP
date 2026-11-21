@@ -35,11 +35,11 @@ public final class WarpManager {
       this.warps.clear();
       this.spawns.clear();
       this.afks.clear();
-      this.warpsFile = new File(this.plugin.getDataFolder(), "warps.yml");
+      this.warpsFile = new File(this.plugin.getDataFolder(), "setting.yml");
       this.spawnsFile = new File(this.plugin.getDataFolder(), "spawns.yml");
       this.afkFile = new File(this.plugin.getDataFolder(), "afk.yml");
       if (!this.warpsFile.exists()) {
-         this.plugin.saveResource("warps.yml", false);
+         this.plugin.saveResource("setting.yml", false);
       }
 
       if (!this.spawnsFile.exists()) {
