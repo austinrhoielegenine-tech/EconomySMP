@@ -1,0 +1,12 @@
+title: "&8ѕʜᴏᴘ - sᴘᴀᴡɴᴇʀ"
+size: 27
+type: shop
+economy: vault
+back-slot: 18
+back-open: main
+items:
+  "9":
+    material: SPAWNER
+    name: "&fSpawner"
+    price: 100000
+    amount: 1
