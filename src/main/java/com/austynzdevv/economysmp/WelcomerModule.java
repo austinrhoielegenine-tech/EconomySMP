@@ -140,6 +140,8 @@ public class WelcomerModule implements Module, Listener {
             for(String line : announcement) {
                TextUtil.send(online, line.replace("%player%", p.getName()).replace("%count%", String.valueOf(this.registered)));
             }
+            String rewardPrompt = this.cfg.getString("welcome-reward", "&7Say &a&lWELCOME &7to %player% to receive a reward");
+            TextUtil.send(online, rewardPrompt.replace("%player%", p.getName()));
 
             try {
                SoundUtil.play(online, online.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 0.4F, 1.5F);
