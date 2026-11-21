@@ -1,5 +1,5 @@
 gui:
-  title: "&8EconomySMP Rules"
+  title: "&8NovaCore Rules"
   size: 27
 
 sound:
@@ -25,7 +25,7 @@ items:
       - "&#64C1FD• &fNo Ban Evasion"
       - "&#64C1FD• &fNo Lying to Staff Members"
       - "&#64C1FD• &fReport Bugs, Glitches, and Cheaters"
-      - "    &fin the discord (&adiscord.gg/EconomySMP)"
+      - "    &fin the discord (&adiscord.gg/NovaCore)"
 
   server-rules:
     slot: 14

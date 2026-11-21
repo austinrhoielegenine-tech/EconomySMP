@@ -2,7 +2,7 @@ tab:
   enabled: true
   header:
     - ''
-    - '<#00ADFC>&lEconomySMP</#00FCFC>'
+    - '<#00ADFC>&lNovaCore</#00FCFC>'
     - '&f%online% Players'
     - ''
   footer:
@@ -18,13 +18,13 @@ tab:
 
   bossbar:
     enabled: true
-    title: '&#00ADFC&lEconomySMP &8» &f%online% players'
+    title: '&#00ADFC&lNovaCore &8» &f%online% players'
     color: BLUE
     style: SOLID
   belowname-objective:
     enabled: true
     title: ''
-    score: '&#00FC00&l$&#00FC00%economysmp_pay_balance%'
+    score: '&#00FC00&l$&#00FC00%novacore_pay_balance%'
   playerlist-objective:
     enabled: false
     title: '&aPing'
@@ -42,27 +42,27 @@ scoreboard:
   respect-other-plugins: true
   scoreboards:
     not-in-team:
-      title: '  <#00ADFC>&lEconomySMP</#00FCFC> '
+      title: '  <#00ADFC>&lNovaCore</#00FCFC> '
       lines:
       - ''
-      - '&#00FC00&l$ &fMoney &#00FC00%economysmp_pay_balance%'
-      - '&#A303F9★ &fShards &#A303F9%economysmp_shards_balance%'
-      - '&#FC0000🗡 &fKills &#FC0000%economysmp_stats_kills%'
-      - '&#F97603☠ &fDeaths &#F97603%economysmp_stats_deaths%'
-      - '&#00A4FC⌛ &fKeyall &#00A4FC%economysmp_keyall_time%'
-      - '&#FCE300⌚ &fPlaytime &#FCE300%economysmp_stats_playtime%'
+      - '&#00FC00&l$ &fMoney &#00FC00%novacore_pay_balance%'
+      - '&#A303F9★ &fShards &#A303F9%novacore_shards_balance%'
+      - '&#FC0000🗡 &fKills &#FC0000%novacore_stats_kills%'
+      - '&#F97603☠ &fDeaths &#F97603%novacore_stats_deaths%'
+      - '&#00A4FC⌛ &fKeyall &#00A4FC%novacore_keyall_time%'
+      - '&#FCE300⌚ &fPlaytime &#FCE300%novacore_stats_playtime%'
       - ''
-      - '&#A8A8A8NA East (&#00A4FC%economysmp_ping%&#A8A8A8)'
+      - '&#A8A8A8NA East (&#00A4FC%novacore_ping%&#A8A8A8)'
     in-team:
-      title: '  <#00ADFC>&lEconomySMP</#00FCFC> '
+      title: '  <#00ADFC>&lNovaCore</#00FCFC> '
       lines:
       - ''
-      - '&#00FC00&l$ &fMoney &#00FC00%economysmp_pay_balance%'
-      - '&#A303F9★ &fShards &#A303F9%economysmp_shards_balance%'
-      - '&#FC0000🗡 &fKills &#FC0000%economysmp_stats_kills%'
-      - '&#F97603☠ &fDeaths &#F97603%economysmp_stats_deaths%'
-      - '&#00A4FC⌛ &fKeyall &#00A4FC%economysmp_keyall_time%'
-      - '&#FCE300⌚ &fPlaytime &#FCE300%economysmp_stats_playtime%'
-      - '&#00A4FC🪓 &fTeam &#00A4FC%economysmp_teams_name%'
+      - '&#00FC00&l$ &fMoney &#00FC00%novacore_pay_balance%'
+      - '&#A303F9★ &fShards &#A303F9%novacore_shards_balance%'
+      - '&#FC0000🗡 &fKills &#FC0000%novacore_stats_kills%'
+      - '&#F97603☠ &fDeaths &#F97603%novacore_stats_deaths%'
+      - '&#00A4FC⌛ &fKeyall &#00A4FC%novacore_keyall_time%'
+      - '&#FCE300⌚ &fPlaytime &#FCE300%novacore_stats_playtime%'
+      - '&#00A4FC🪓 &fTeam &#00A4FC%novacore_teams_name%'
       - ''
-      - '&#A8A8A8NA East (&#00A4FC%economysmp_ping%&#A8A8A8)'
+      - '&#A8A8A8NA East (&#00A4FC%novacore_ping%&#A8A8A8)'

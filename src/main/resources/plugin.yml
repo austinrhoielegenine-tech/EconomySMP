@@ -1,6 +1,6 @@
 name: NovaCore
 version: 2.9
-main: com.austynzdevv.economysmp.EconomySMP
+main: com.austynzdevv.novacore.NovaCore
 api-version: '1.21'
 author: Xyr0
 description: Free NovaCore 
@@ -10,31 +10,31 @@ softdepend: [ProtocolLib, packetevents, Vault, PlaceholderAPI, LuckPerms, Discor
 commands:
   tpaheretoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   globaltoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   teamchattoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   duelrequesttoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   duelsongtoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   tpaconfirmtoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   mobtoggle:
     description: Settings toggle
-    permission: economysmp.system.settings.use
+    permission: novacore.system.settings.use
 
   phantom:
     description: Toggle personal phantom spawning
@@ -43,12 +43,12 @@ commands:
   aholo:
     description: Holograms admin
     aliases: [aholograms, holograms]
-    permission: economysmp.system.holograms.use
-  economysmp:
-    description: Main EconomySMP admin command
-    aliases: [asmp, asmpcore, economycore, acore, EconomySMP, EconomySMP]
-    usage: /economysmp reload | /asmp reload | /asmpcore reload
-    permission: economysmp.reload
+    permission: novacore.system.holograms.use
+  novacore:
+    description: Main NovaCore admin command
+    aliases: [asmp, asmpcore, economycore, acore, NovaCore, NovaCore]
+    usage: /novacore reload | /asmp reload | /asmpcore reload
+    permission: novacore.reload
   ah:
     description: Auction house
     aliases: [auction, economyauction]
@@ -76,7 +76,7 @@ commands:
     description: Toggle worth display
   sellaxe:
     description: Sell axe
-    permission: EconomySMP.system.sellaxe.use
+    permission: NovaCore.system.sellaxe.use
   sellhistory:
     description: Sell history
   orders:
@@ -306,7 +306,7 @@ commands:
 
   sus:
     description: Open suspected players GUI
-    permission: economysmp.system.moderation.sus
+    permission: novacore.system.moderation.sus
 
   v:
     description: Toggle vanish
@@ -358,271 +358,271 @@ commands:
   eco:
     description: Economy admin commands
     usage: /eco <give|take|set|bal> <player> [amount]
-    permission: economysmp.system.moderation.eco
+    permission: novacore.system.moderation.eco
   give:
     description: Give items to a player
-    permission: economysmp.system.moderation.give
+    permission: novacore.system.moderation.give
   clear:
     description: Clear a player's inventory
-    permission: economysmp.system.moderation.clear
+    permission: novacore.system.moderation.clear
   enchant:
     description: Enchant held item
-    permission: economysmp.system.moderation.enchant
+    permission: novacore.system.moderation.enchant
   effect:
     description: Give/clear potion effects
-    permission: economysmp.system.moderation.effect
+    permission: novacore.system.moderation.effect
   offend:
     description: Punish a player
-    permission: economysmp.system.punishment.offend
+    permission: novacore.system.punishment.offend
   unoffend:
     description: Remove punishment
-    permission: economysmp.system.punishment.unoffend
+    permission: novacore.system.punishment.unoffend
   offendip:
     description: IP punish
-    permission: economysmp.system.punishment.offendip
+    permission: novacore.system.punishment.offendip
   freeze:
     description: Freeze a player
-    permission: economysmp.system.punishment.freeze
+    permission: novacore.system.punishment.freeze
   unfreeze:
     description: Unfreeze a player
-    permission: economysmp.system.punishment.unfreeze
+    permission: novacore.system.punishment.unfreeze
   kick:
     description: Kick a player
-    permission: economysmp.system.punishment.kick
+    permission: novacore.system.punishment.kick
   checkban:
     description: Check ban
-    permission: economysmp.system.punishment.check
+    permission: novacore.system.punishment.check
   checkmute:
     description: Check mute
-    permission: economysmp.system.punishment.check
+    permission: novacore.system.punishment.check
   history:
     description: Punishment history
-    permission: economysmp.system.punishment.history
+    permission: novacore.system.punishment.history
   punishment:
     description: Punishment history
-    permission: economysmp.system.punishment.admin
+    permission: novacore.system.punishment.admin
     aliases: [punish]
   economypunishment:
     description: Punishment admin
-    permission: economysmp.system.punishment.admin
+    permission: novacore.system.punishment.admin
     aliases: [ap]
 
 permissions:
-  economysmp.reload:
-    description: Reload EconomySMP (/economysmp reload, /asmp reload, /asmpcore reload)
+  novacore.reload:
+    description: Reload NovaCore (/novacore reload, /asmp reload, /asmpcore reload)
     default: op
-  economysmp.system.admin:
+  novacore.system.admin:
     description: Full admin for enable/disable systems
     default: op
 
-  # ---- systems (format: economysmp.system.<name>.<perm>) ----
-  economysmp.system.settings.use:
+  # ---- systems (format: novacore.system.<name>.<perm>) ----
+  novacore.system.settings.use:
     default: true
-  economysmp.system.holograms.use:
+  novacore.system.holograms.use:
     default: op
-  economysmp.system.holograms.admin:
+  novacore.system.holograms.admin:
     default: op
-  economysmp.system.warps.use:
+  novacore.system.warps.use:
     default: true
-  economysmp.system.warps.spawn:
+  novacore.system.warps.spawn:
     default: true
-  economysmp.system.warps.warp:
+  novacore.system.warps.warp:
     default: true
-  economysmp.system.warps.afk:
+  novacore.system.warps.afk:
     default: true
-  economysmp.system.warps.admin:
+  novacore.system.warps.admin:
     default: op
-  economysmp.system.warps.bypass:
+  novacore.system.warps.bypass:
     default: op
-  economysmp.system.homes.use:
+  novacore.system.homes.use:
     default: true
-  economysmp.system.homes.limit.3:
+  novacore.system.homes.limit.3:
     default: false
-  economysmp.system.homes.limit.4:
+  novacore.system.homes.limit.4:
     default: false
-  economysmp.system.homes.limit.5:
+  novacore.system.homes.limit.5:
     default: false
-  economysmp.system.homes.admin:
+  novacore.system.homes.admin:
     default: op
-  economysmp.system.homes.bypass:
+  novacore.system.homes.bypass:
     default: op
-  economysmp.system.homes.others:
+  novacore.system.homes.others:
     default: op
-  economysmp.system.tpa.use:
+  novacore.system.tpa.use:
     default: true
-  economysmp.system.tpa.admin:
+  novacore.system.tpa.admin:
     default: op
-  economysmp.system.teams.use:
+  novacore.system.teams.use:
     default: true
-  economysmp.system.teams.admin:
+  novacore.system.teams.admin:
     default: op
-  economysmp.system.shop.use:
+  novacore.system.shop.use:
     default: true
-  economysmp.system.shop.admin:
+  novacore.system.shop.admin:
     default: op
-  economysmp.system.sell.use:
+  novacore.system.sell.use:
     default: true
-  economysmp.system.sell.admin:
+  novacore.system.sell.admin:
     default: op
-  EconomySMP.system.sellaxe.use:
+  NovaCore.system.sellaxe.use:
     description: Give sell axes via /sellaxe
     default: op
-  economysmp.system.auction.use:
+  novacore.system.auction.use:
     default: true
-  economysmp.system.auction.admin:
+  novacore.system.auction.admin:
     default: op
-  economysmp.system.auction.fastbuy:
+  novacore.system.auction.fastbuy:
     default: false
-  economysmp.system.order.use:
+  novacore.system.order.use:
     default: true
-  economysmp.system.order.admin:
+  novacore.system.order.admin:
     default: op
-  economysmp.system.bounties.use:
+  novacore.system.bounties.use:
     default: true
-  economysmp.system.bounties.add:
+  novacore.system.bounties.add:
     default: true
-  economysmp.system.bounties.admin:
+  novacore.system.bounties.admin:
     default: op
-  economysmp.system.pay.use:
+  novacore.system.pay.use:
     default: true
-  economysmp.system.msg.use:
+  novacore.system.msg.use:
     default: true
-  economysmp.system.stats.use:
+  novacore.system.stats.use:
     default: true
-  economysmp.system.profile.use:
+  novacore.system.profile.use:
     default: true
-  economysmp.system.scoreboard.use:
+  novacore.system.scoreboard.use:
     default: true
-  economysmp.system.nightvision.use:
+  novacore.system.nightvision.use:
     default: true
-  economysmp.system.hide.use:
+  novacore.system.hide.use:
     default: false
-  economysmp.system.fly.use:
+  novacore.system.fly.use:
     default: op
-  economysmp.system.doublejump.use:
+  novacore.system.doublejump.use:
     default: true
-  economysmp.system.shards.use:
+  novacore.system.shards.use:
     default: true
-  economysmp.system.shards.vip:
+  novacore.system.shards.vip:
     description: Earn VIP shard rate (2/min) while in the AFK zone
     default: false
-  economysmp.system.shards.everywhere:
+  novacore.system.shards.everywhere:
     description: Earn 1 shard per minute anywhere on the server (not only AFK zone)
     default: false
-  economysmp.system.shards.admin:
+  novacore.system.shards.admin:
     default: op
-  economysmp.system.crates.use:
+  novacore.system.crates.use:
     default: true
-  economysmp.system.crates.admin:
+  novacore.system.crates.admin:
     default: op
-  economysmp.system.spawners.use:
+  novacore.system.spawners.use:
     default: true
-  economysmp.system.spawners.admin:
+  novacore.system.spawners.admin:
     default: op
-  economysmp.system.tools.use:
+  novacore.system.tools.use:
     default: true
-  economysmp.system.tools.admin:
+  novacore.system.tools.admin:
     default: op
-  economysmp.system.rtp.use:
+  novacore.system.rtp.use:
     default: true
-  economysmp.system.rtp.admin:
+  novacore.system.rtp.admin:
     default: op
-  economysmp.system.ec.open:
+  novacore.system.ec.open:
     default: true
-  economysmp.system.ec.everywhere:
+  novacore.system.ec.everywhere:
     description: Open your ender chest with /ec from anywhere
     default: true
-  economysmp.system.ec.see:
+  novacore.system.ec.see:
     default: op
-  economysmp.system.ec.admin:
+  novacore.system.ec.admin:
     default: op
-  economysmp.system.links.use:
+  novacore.system.links.use:
     default: true
-  economysmp.system.links.unlink:
+  novacore.system.links.unlink:
     default: op
-  economysmp.system.duels.use:
+  novacore.system.duels.use:
     default: true
-  economysmp.system.duels.admin:
+  novacore.system.duels.admin:
     default: op
-  economysmp.system.moderation.use:
+  novacore.system.moderation.use:
     default: op
-  economysmp.system.moderation.invsee:
+  novacore.system.moderation.invsee:
     default: op
-  economysmp.system.moderation.wipe:
+  novacore.system.moderation.wipe:
     default: op
-  economysmp.system.moderation.give:
+  novacore.system.moderation.give:
     default: op
-  economysmp.system.moderation.clear:
+  novacore.system.moderation.clear:
     default: op
-  economysmp.system.moderation.enchant:
+  novacore.system.moderation.enchant:
     default: op
-  economysmp.system.moderation.effect:
+  novacore.system.moderation.effect:
     default: op
-  economysmp.system.moderation.broadcast:
+  novacore.system.moderation.broadcast:
     default: op
-  economysmp.system.moderation.vanish:
+  novacore.system.moderation.vanish:
     default: op
-  economysmp.system.moderation.commandlog:
+  novacore.system.moderation.commandlog:
     default: op
-  economysmp.system.moderation.sus:
+  novacore.system.moderation.sus:
     default: op
-  economysmp.system.moderation.fakeplayer:
+  novacore.system.moderation.fakeplayer:
     default: op
-  economysmp.system.moderation.fakestash:
+  novacore.system.moderation.fakestash:
     default: op
-  economysmp.system.staffchat.use:
+  novacore.system.staffchat.use:
     default: op
-  economysmp.system.punishment.offend:
+  novacore.system.punishment.offend:
     default: op
-  economysmp.system.punishment.unoffend:
+  novacore.system.punishment.unoffend:
     default: op
-  economysmp.system.punishment.offendip:
+  novacore.system.punishment.offendip:
     default: op
-  economysmp.system.punishment.freeze:
+  novacore.system.punishment.freeze:
     default: op
-  economysmp.system.punishment.unfreeze:
+  novacore.system.punishment.unfreeze:
     default: op
-  economysmp.system.punishment.kick:
+  novacore.system.punishment.kick:
     default: op
-  economysmp.system.punishment.check:
+  novacore.system.punishment.check:
     default: op
-  economysmp.system.punishment.history:
+  novacore.system.punishment.history:
     default: op
-  economysmp.system.punishment.admin:
+  novacore.system.punishment.admin:
     default: op
-  economysmp.system.punishment.bypass:
+  novacore.system.punishment.bypass:
     default: op
-  economysmp.system.maintenance.use:
+  novacore.system.maintenance.use:
     default: op
-  economysmp.system.reports.use:
+  novacore.system.reports.use:
     default: true
-  economysmp.system.reports.staff:
+  novacore.system.reports.staff:
     default: op
-  economysmp.system.lb.use:
+  novacore.system.lb.use:
     default: true
-  economysmp.system.lb.admin:
+  novacore.system.lb.admin:
     default: op
-  economysmp.system.baltop.use:
+  novacore.system.baltop.use:
     default: true
-  economysmp.system.billford.use:
+  novacore.system.billford.use:
     default: true
-  economysmp.system.billford.admin:
+  novacore.system.billford.admin:
     default: op
-  economysmp.system.voicechat.use:
+  novacore.system.voicechat.use:
     default: true
-  economysmp.system.phantoms.use:
+  novacore.system.phantoms.use:
     default: true
-  economysmp.system.combat.bypass:
+  novacore.system.combat.bypass:
     default: op
-  economysmp.system.chainmail.use:
+  novacore.system.chainmail.use:
     default: true
-  economysmp.system.safety.use:
+  novacore.system.safety.use:
     default: true
-  economysmp.system.whitelister.bypass:
+  novacore.system.whitelister.bypass:
     default: op
-  economysmp.system.whitelister.reload:
+  novacore.system.whitelister.reload:
     default: op
-  economysmp.system.keyall.admin:
+  novacore.system.keyall.admin:
     default: op
-  economysmp.system.help.use:
+  novacore.system.help.use:
     default: true

@@ -8,67 +8,67 @@ items:
     name: "&#00fc88ᴍᴏɴᴇʏ"
     slot: 10
     lore:
-      - "&f%economysmp_pay_balance%"
+      - "&f%novacore_pay_balance%"
 
   shards:
     material: AMETHYST_SHARD
     name: "&#00fc88ꜱʜᴀʀᴅꜱ"
     slot: 11
     lore:
-      - "&f%economysmp_shards_balance%"
+      - "&f%novacore_shards_balance%"
 
   kills:
     material: DIAMOND_SWORD
     name: "&#00fc88ᴋɪʟʟꜱ"
     slot: 12
     lore:
-      - "&f%economysmp_stats_kills%"
+      - "&f%novacore_stats_kills%"
 
   deaths:
     material: SKELETON_SKULL
     name: "&#00fc88ᴅᴇᴀᴛʜꜱ"
     slot: 13
     lore:
-      - "&f%economysmp_stats_deaths%"
+      - "&f%novacore_stats_deaths%"
 
   playtime:
     material: CLOCK
     name: "&#00fc88ᴘʟᴀʏᴛɪᴍᴇ"
     slot: 14
     lore:
-      - "&f%economysmp_stats_playtime%"
+      - "&f%novacore_stats_playtime%"
 
   blocks_placed:
     material: STONE
     name: "&#00fc88ʙʟᴏᴄᴋꜱ ᴘʟᴀᴄᴇᴅ"
     slot: 15
     lore:
-      - "&f%economysmp_stats_blocks_placed%"
+      - "&f%novacore_stats_blocks_placed%"
 
   blocks_broken:
     material: COBBLESTONE
     name: "&#00fc88ʙʟᴏᴄᴋꜱ ʙʀᴏᴋᴇɴ"
     slot: 16
     lore:
-      - "&f%economysmp_stats_blocks_broken%"
+      - "&f%novacore_stats_blocks_broken%"
 
   mobs_killed:
     material: ZOMBIE_HEAD
     name: "&#00fc88ᴍᴏʙꜱ ᴋɪʟʟᴇᴅ"
     slot: 19
     lore:
-      - "&f%economysmp_stats_mobs_killed%"
+      - "&f%novacore_stats_mobs_killed%"
 
   money_spent_on_shop:
     material: gold_nugget
     name: "&#00fc88ᴍᴏɴᴇʏ ꜱᴘᴇɴᴛ ᴏɴ sʜᴏᴘ"
     slot: 20
     lore:
-      - "&f%economysmp_shop_spent%"
+      - "&f%novacore_shop_spent%"
 
   money_made_on_sell:
     material: iron_nugget
     name: "&#00fc88ᴍᴏɴᴇʏ ᴍᴀᴅᴇ ᴏɴ /sᴇʟʟ"
     slot: 21
     lore:
-      - "&f%economysmp_sell_earned%"
+      - "&f%novacore_sell_earned%"
