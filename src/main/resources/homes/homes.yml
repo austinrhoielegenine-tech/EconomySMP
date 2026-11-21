@@ -1,0 +1,24 @@
+settings:
+  warmup-seconds: 5
+
+teleport:
+  delay: 5
+  cancel-on-move: 0.3
+  free-slots: 2
+  max-homes: 2
+
+audio:
+  countdown: "block.note_block.pling"
+  arrive: "entity.enderman.teleport"
+  abort: "entity.villager.no"
+  denied: "entity.villager.no"
+  reload: "entity.player.levelup"
+  interact: "ui.button.click"
+
+restricted-worlds:
+  - "Spawn"
+  - "AFK"
+
+restricted-regions:
+  - "region_example"
+

@@ -1,0 +1,20 @@
+# EconomySMPcore Pay system
+confirm-gui-enabled: false
+min-pay: 1
+max-pay: 1000000000
+
+messages:
+  no-permission: "&cNo permission."
+  player-only: "&cPlayers only."
+  player-not-found: "&cPlayer not found."
+  invalid-number: "&cInvalid number."
+  not-enough-money: "&cNot enough money."
+  self-pay: "&cYou can't pay yourself."
+  balance: "&7Balance: &#0bf52b%balance%"
+  balance-other: "&#00A0FC%player% &7has &#0bf52b%balance%"
+  send: "&7You paid &#0bf52b%amount% &7to &#00A0FC%player%"
+  received: "&7You received &#0bf52b%amount% &7from &#00A0FC%player%"
+  pay-toggle-on: "&cPayments disabled for you."
+  pay-toggle-off: "&aPayments enabled for you."
+  pay-toggle-blocked: "&c%player% is not accepting payments."
+  usage: "&cUsage: /pay <player> <amount>"

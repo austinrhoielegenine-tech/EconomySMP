@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.xyr0</groupId>
-    <artifactId>AstralSMPcore</artifactId>
+    <artifactId>EconomySMPcore</artifactId>
     <version>2.9</version>
     <packaging>jar</packaging>
-    <name>AstralSMPcore</name>
+    <name>EconomySMPcore</name>
 
     <properties>
         <java.version>21</java.version>
@@ -96,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>AstralSMPcore</finalName>
+        <finalName>EconomySMPcore</finalName>
         <defaultGoal>clean package</defaultGoal>
         <resources>
             <resource>
@@ -137,31 +137,31 @@
                     <relocations>
                         <relocation>
                             <pattern>net.dv8tion</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.net.dv8tion</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.net.dv8tion</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okhttp3</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.okhttp3</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.okhttp3</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okio</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.okio</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.okio</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.fasterxml.jackson</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.jackson</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.jackson</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.neovisionaries</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.neovisionaries</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.neovisionaries</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>gnu.trove</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.trove</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.trove</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.apache.commons.collections4</pattern>
-                            <shadedPattern>me.xyr0.astralsmpcore.libs.collections4</shadedPattern>
+                            <shadedPattern>me.xyr0.economysmpcore.libs.collections4</shadedPattern>
                         </relocation>
                     </relocations>
                     <filters>

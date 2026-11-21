@@ -1,18 +1,3 @@
-# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
-# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
-# ███████║███████╗   ██║   ██████╔╝███████║██║     
-# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
-# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
-# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
-#
-# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
-# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
-# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
-# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
-# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
-# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
-#
-
 messages:
   no-permission: "&cNo permission."
   player-not-found: "&cPlayer not found."
@@ -35,7 +20,7 @@ messages:
 command-logs:
   enabled: true
   # Permission to RECEIVE alerts
-  alert-permission: "astralsmpcore.system.moderation.commandlog"
+  alert-permission: "economysmpcore.system.moderation.commandlog"
   # Commands that trigger alerts (label only, case-insensitive)
   watched-commands:
     - give

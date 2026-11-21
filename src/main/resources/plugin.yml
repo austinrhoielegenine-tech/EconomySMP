@@ -1,6 +1,6 @@
-name: AstralSMPcore
+name: EconomySMPcore
 version: 2.9
-main: me.xyr0.astralsmpcore.AstralSMPcore
+main: me.xyr0.economysmpcore.EconomySMPcore
 api-version: '1.21'
 author: Xyr0
 description: Free EconomySMP 
@@ -10,31 +10,31 @@ softdepend: [ProtocolLib, packetevents, Vault, PlaceholderAPI, LuckPerms, Discor
 commands:
   tpaheretoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   globaltoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   teamchattoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   duelrequesttoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   duelsongtoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   tpaconfirmtoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   mobtoggle:
     description: Settings toggle
-    permission: astralsmpcore.system.settings.use
+    permission: economysmpcore.system.settings.use
 
   phantom:
     description: Toggle personal phantom spawning
@@ -43,12 +43,12 @@ commands:
   aholo:
     description: Holograms admin
     aliases: [aholograms, holograms]
-    permission: astralsmpcore.system.holograms.use
-  astralsmpcore:
-    description: Main AstralSMPcore admin command
-    aliases: [asmp, asmpcore, astralcore, acore, AstralSMPcore, AstralSMP]
-    usage: /astralsmpcore reload | /asmp reload | /asmpcore reload
-    permission: astralsmpcore.reload
+    permission: economysmpcore.system.holograms.use
+  economysmpcore:
+    description: Main EconomySMPcore admin command
+    aliases: [asmp, asmpcore, astralcore, acore, EconomySMPcore, EconomySMP]
+    usage: /economysmpcore reload | /asmp reload | /asmpcore reload
+    permission: economysmpcore.reload
   ah:
     description: Auction house
     aliases: [auction, astralauction]
@@ -76,7 +76,7 @@ commands:
     description: Toggle worth display
   sellaxe:
     description: Sell axe
-    permission: AstralSMPcore.system.sellaxe.use
+    permission: EconomySMPcore.system.sellaxe.use
   sellhistory:
     description: Sell history
   orders:
@@ -306,7 +306,7 @@ commands:
 
   sus:
     description: Open suspected players GUI
-    permission: astralsmpcore.system.moderation.sus
+    permission: economysmpcore.system.moderation.sus
 
   v:
     description: Toggle vanish
@@ -358,271 +358,271 @@ commands:
   eco:
     description: Economy admin commands
     usage: /eco <give|take|set|bal> <player> [amount]
-    permission: astralsmpcore.system.moderation.eco
+    permission: economysmpcore.system.moderation.eco
   give:
     description: Give items to a player
-    permission: astralsmpcore.system.moderation.give
+    permission: economysmpcore.system.moderation.give
   clear:
     description: Clear a player's inventory
-    permission: astralsmpcore.system.moderation.clear
+    permission: economysmpcore.system.moderation.clear
   enchant:
     description: Enchant held item
-    permission: astralsmpcore.system.moderation.enchant
+    permission: economysmpcore.system.moderation.enchant
   effect:
     description: Give/clear potion effects
-    permission: astralsmpcore.system.moderation.effect
+    permission: economysmpcore.system.moderation.effect
   offend:
     description: Punish a player
-    permission: astralsmpcore.system.punishment.offend
+    permission: economysmpcore.system.punishment.offend
   unoffend:
     description: Remove punishment
-    permission: astralsmpcore.system.punishment.unoffend
+    permission: economysmpcore.system.punishment.unoffend
   offendip:
     description: IP punish
-    permission: astralsmpcore.system.punishment.offendip
+    permission: economysmpcore.system.punishment.offendip
   freeze:
     description: Freeze a player
-    permission: astralsmpcore.system.punishment.freeze
+    permission: economysmpcore.system.punishment.freeze
   unfreeze:
     description: Unfreeze a player
-    permission: astralsmpcore.system.punishment.unfreeze
+    permission: economysmpcore.system.punishment.unfreeze
   kick:
     description: Kick a player
-    permission: astralsmpcore.system.punishment.kick
+    permission: economysmpcore.system.punishment.kick
   checkban:
     description: Check ban
-    permission: astralsmpcore.system.punishment.check
+    permission: economysmpcore.system.punishment.check
   checkmute:
     description: Check mute
-    permission: astralsmpcore.system.punishment.check
+    permission: economysmpcore.system.punishment.check
   history:
     description: Punishment history
-    permission: astralsmpcore.system.punishment.history
+    permission: economysmpcore.system.punishment.history
   punishment:
     description: Punishment history
-    permission: astralsmpcore.system.punishment.admin
+    permission: economysmpcore.system.punishment.admin
     aliases: [punish]
   astralpunishment:
     description: Punishment admin
-    permission: astralsmpcore.system.punishment.admin
+    permission: economysmpcore.system.punishment.admin
     aliases: [ap]
 
 permissions:
-  astralsmpcore.reload:
-    description: Reload AstralSMPcore (/astralsmpcore reload, /asmp reload, /asmpcore reload)
+  economysmpcore.reload:
+    description: Reload EconomySMPcore (/economysmpcore reload, /asmp reload, /asmpcore reload)
     default: op
-  astralsmpcore.system.admin:
+  economysmpcore.system.admin:
     description: Full admin for enable/disable systems
     default: op
 
-  # ---- systems (format: astralsmpcore.system.<name>.<perm>) ----
-  astralsmpcore.system.settings.use:
+  # ---- systems (format: economysmpcore.system.<name>.<perm>) ----
+  economysmpcore.system.settings.use:
     default: true
-  astralsmpcore.system.holograms.use:
+  economysmpcore.system.holograms.use:
     default: op
-  astralsmpcore.system.holograms.admin:
+  economysmpcore.system.holograms.admin:
     default: op
-  astralsmpcore.system.warps.use:
+  economysmpcore.system.warps.use:
     default: true
-  astralsmpcore.system.warps.spawn:
+  economysmpcore.system.warps.spawn:
     default: true
-  astralsmpcore.system.warps.warp:
+  economysmpcore.system.warps.warp:
     default: true
-  astralsmpcore.system.warps.afk:
+  economysmpcore.system.warps.afk:
     default: true
-  astralsmpcore.system.warps.admin:
+  economysmpcore.system.warps.admin:
     default: op
-  astralsmpcore.system.warps.bypass:
+  economysmpcore.system.warps.bypass:
     default: op
-  astralsmpcore.system.homes.use:
+  economysmpcore.system.homes.use:
     default: true
-  astralsmpcore.system.homes.limit.3:
+  economysmpcore.system.homes.limit.3:
     default: false
-  astralsmpcore.system.homes.limit.4:
+  economysmpcore.system.homes.limit.4:
     default: false
-  astralsmpcore.system.homes.limit.5:
+  economysmpcore.system.homes.limit.5:
     default: false
-  astralsmpcore.system.homes.admin:
+  economysmpcore.system.homes.admin:
     default: op
-  astralsmpcore.system.homes.bypass:
+  economysmpcore.system.homes.bypass:
     default: op
-  astralsmpcore.system.homes.others:
+  economysmpcore.system.homes.others:
     default: op
-  astralsmpcore.system.tpa.use:
+  economysmpcore.system.tpa.use:
     default: true
-  astralsmpcore.system.tpa.admin:
+  economysmpcore.system.tpa.admin:
     default: op
-  astralsmpcore.system.teams.use:
+  economysmpcore.system.teams.use:
     default: true
-  astralsmpcore.system.teams.admin:
+  economysmpcore.system.teams.admin:
     default: op
-  astralsmpcore.system.shop.use:
+  economysmpcore.system.shop.use:
     default: true
-  astralsmpcore.system.shop.admin:
+  economysmpcore.system.shop.admin:
     default: op
-  astralsmpcore.system.sell.use:
+  economysmpcore.system.sell.use:
     default: true
-  astralsmpcore.system.sell.admin:
+  economysmpcore.system.sell.admin:
     default: op
-  AstralSMPcore.system.sellaxe.use:
+  EconomySMPcore.system.sellaxe.use:
     description: Give sell axes via /sellaxe
     default: op
-  astralsmpcore.system.auction.use:
+  economysmpcore.system.auction.use:
     default: true
-  astralsmpcore.system.auction.admin:
+  economysmpcore.system.auction.admin:
     default: op
-  astralsmpcore.system.auction.fastbuy:
+  economysmpcore.system.auction.fastbuy:
     default: false
-  astralsmpcore.system.order.use:
+  economysmpcore.system.order.use:
     default: true
-  astralsmpcore.system.order.admin:
+  economysmpcore.system.order.admin:
     default: op
-  astralsmpcore.system.bounties.use:
+  economysmpcore.system.bounties.use:
     default: true
-  astralsmpcore.system.bounties.add:
+  economysmpcore.system.bounties.add:
     default: true
-  astralsmpcore.system.bounties.admin:
+  economysmpcore.system.bounties.admin:
     default: op
-  astralsmpcore.system.pay.use:
+  economysmpcore.system.pay.use:
     default: true
-  astralsmpcore.system.msg.use:
+  economysmpcore.system.msg.use:
     default: true
-  astralsmpcore.system.stats.use:
+  economysmpcore.system.stats.use:
     default: true
-  astralsmpcore.system.profile.use:
+  economysmpcore.system.profile.use:
     default: true
-  astralsmpcore.system.scoreboard.use:
+  economysmpcore.system.scoreboard.use:
     default: true
-  astralsmpcore.system.nightvision.use:
+  economysmpcore.system.nightvision.use:
     default: true
-  astralsmpcore.system.hide.use:
+  economysmpcore.system.hide.use:
     default: false
-  astralsmpcore.system.fly.use:
+  economysmpcore.system.fly.use:
     default: op
-  astralsmpcore.system.doublejump.use:
+  economysmpcore.system.doublejump.use:
     default: true
-  astralsmpcore.system.shards.use:
+  economysmpcore.system.shards.use:
     default: true
-  astralsmpcore.system.shards.vip:
+  economysmpcore.system.shards.vip:
     description: Earn VIP shard rate (2/min) while in the AFK zone
     default: false
-  astralsmpcore.system.shards.everywhere:
+  economysmpcore.system.shards.everywhere:
     description: Earn 1 shard per minute anywhere on the server (not only AFK zone)
     default: false
-  astralsmpcore.system.shards.admin:
+  economysmpcore.system.shards.admin:
     default: op
-  astralsmpcore.system.crates.use:
+  economysmpcore.system.crates.use:
     default: true
-  astralsmpcore.system.crates.admin:
+  economysmpcore.system.crates.admin:
     default: op
-  astralsmpcore.system.spawners.use:
+  economysmpcore.system.spawners.use:
     default: true
-  astralsmpcore.system.spawners.admin:
+  economysmpcore.system.spawners.admin:
     default: op
-  astralsmpcore.system.tools.use:
+  economysmpcore.system.tools.use:
     default: true
-  astralsmpcore.system.tools.admin:
+  economysmpcore.system.tools.admin:
     default: op
-  astralsmpcore.system.rtp.use:
+  economysmpcore.system.rtp.use:
     default: true
-  astralsmpcore.system.rtp.admin:
+  economysmpcore.system.rtp.admin:
     default: op
-  astralsmpcore.system.ec.open:
+  economysmpcore.system.ec.open:
     default: true
-  astralsmpcore.system.ec.everywhere:
+  economysmpcore.system.ec.everywhere:
     description: Open your ender chest with /ec from anywhere
     default: true
-  astralsmpcore.system.ec.see:
+  economysmpcore.system.ec.see:
     default: op
-  astralsmpcore.system.ec.admin:
+  economysmpcore.system.ec.admin:
     default: op
-  astralsmpcore.system.links.use:
+  economysmpcore.system.links.use:
     default: true
-  astralsmpcore.system.links.unlink:
+  economysmpcore.system.links.unlink:
     default: op
-  astralsmpcore.system.duels.use:
+  economysmpcore.system.duels.use:
     default: true
-  astralsmpcore.system.duels.admin:
+  economysmpcore.system.duels.admin:
     default: op
-  astralsmpcore.system.moderation.use:
+  economysmpcore.system.moderation.use:
     default: op
-  astralsmpcore.system.moderation.invsee:
+  economysmpcore.system.moderation.invsee:
     default: op
-  astralsmpcore.system.moderation.wipe:
+  economysmpcore.system.moderation.wipe:
     default: op
-  astralsmpcore.system.moderation.give:
+  economysmpcore.system.moderation.give:
     default: op
-  astralsmpcore.system.moderation.clear:
+  economysmpcore.system.moderation.clear:
     default: op
-  astralsmpcore.system.moderation.enchant:
+  economysmpcore.system.moderation.enchant:
     default: op
-  astralsmpcore.system.moderation.effect:
+  economysmpcore.system.moderation.effect:
     default: op
-  astralsmpcore.system.moderation.broadcast:
+  economysmpcore.system.moderation.broadcast:
     default: op
-  astralsmpcore.system.moderation.vanish:
+  economysmpcore.system.moderation.vanish:
     default: op
-  astralsmpcore.system.moderation.commandlog:
+  economysmpcore.system.moderation.commandlog:
     default: op
-  astralsmpcore.system.moderation.sus:
+  economysmpcore.system.moderation.sus:
     default: op
-  astralsmpcore.system.moderation.fakeplayer:
+  economysmpcore.system.moderation.fakeplayer:
     default: op
-  astralsmpcore.system.moderation.fakestash:
+  economysmpcore.system.moderation.fakestash:
     default: op
-  astralsmpcore.system.staffchat.use:
+  economysmpcore.system.staffchat.use:
     default: op
-  astralsmpcore.system.punishment.offend:
+  economysmpcore.system.punishment.offend:
     default: op
-  astralsmpcore.system.punishment.unoffend:
+  economysmpcore.system.punishment.unoffend:
     default: op
-  astralsmpcore.system.punishment.offendip:
+  economysmpcore.system.punishment.offendip:
     default: op
-  astralsmpcore.system.punishment.freeze:
+  economysmpcore.system.punishment.freeze:
     default: op
-  astralsmpcore.system.punishment.unfreeze:
+  economysmpcore.system.punishment.unfreeze:
     default: op
-  astralsmpcore.system.punishment.kick:
+  economysmpcore.system.punishment.kick:
     default: op
-  astralsmpcore.system.punishment.check:
+  economysmpcore.system.punishment.check:
     default: op
-  astralsmpcore.system.punishment.history:
+  economysmpcore.system.punishment.history:
     default: op
-  astralsmpcore.system.punishment.admin:
+  economysmpcore.system.punishment.admin:
     default: op
-  astralsmpcore.system.punishment.bypass:
+  economysmpcore.system.punishment.bypass:
     default: op
-  astralsmpcore.system.maintenance.use:
+  economysmpcore.system.maintenance.use:
     default: op
-  astralsmpcore.system.reports.use:
+  economysmpcore.system.reports.use:
     default: true
-  astralsmpcore.system.reports.staff:
+  economysmpcore.system.reports.staff:
     default: op
-  astralsmpcore.system.lb.use:
+  economysmpcore.system.lb.use:
     default: true
-  astralsmpcore.system.lb.admin:
+  economysmpcore.system.lb.admin:
     default: op
-  astralsmpcore.system.baltop.use:
+  economysmpcore.system.baltop.use:
     default: true
-  astralsmpcore.system.billford.use:
+  economysmpcore.system.billford.use:
     default: true
-  astralsmpcore.system.billford.admin:
+  economysmpcore.system.billford.admin:
     default: op
-  astralsmpcore.system.voicechat.use:
+  economysmpcore.system.voicechat.use:
     default: true
-  astralsmpcore.system.phantoms.use:
+  economysmpcore.system.phantoms.use:
     default: true
-  astralsmpcore.system.combat.bypass:
+  economysmpcore.system.combat.bypass:
     default: op
-  astralsmpcore.system.chainmail.use:
+  economysmpcore.system.chainmail.use:
     default: true
-  astralsmpcore.system.safety.use:
+  economysmpcore.system.safety.use:
     default: true
-  astralsmpcore.system.whitelister.bypass:
+  economysmpcore.system.whitelister.bypass:
     default: op
-  astralsmpcore.system.whitelister.reload:
+  economysmpcore.system.whitelister.reload:
     default: op
-  astralsmpcore.system.keyall.admin:
+  economysmpcore.system.keyall.admin:
     default: op
-  astralsmpcore.system.help.use:
+  economysmpcore.system.help.use:
     default: true

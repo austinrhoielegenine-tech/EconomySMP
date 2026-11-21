@@ -1,0 +1,41 @@
+# Your Discord invite shown on the ban screen.
+discord: "https://discord.gg/yourserver"
+
+database:
+  type: SQLITE # Don't change
+  file: "database.db" # Don't change
+
+settings:
+
+  # Generate a unique 5-character Ban ID.
+  ban-id-length: 5
+
+  # Automatically remove expired punishments.
+  auto-remove-expired-punishments: true
+
+  # Check every X seconds for expired punishments.
+  expire-check-interval: 60
+
+freeze:
+
+  # If a frozen player leaves the server,
+  # they will automatically be punished.
+
+  enabled: true # Set to false to disable
+
+  punishment:
+    type: BAN
+    reason: "Leaving while Frozen"
+    duration: "7d"
+
+history:
+  gui-title: "&8Punishment History"
+  rows: 6
+
+webhook:
+  enabled: true # Set to false to disable discord webhook
+
+messages-prefix: "&#ff2d2d&lAstralPunishment &8» "
+
+# Do not change this.
+config-version: 1 # Don't change this

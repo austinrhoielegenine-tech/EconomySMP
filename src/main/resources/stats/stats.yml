@@ -1,0 +1,5 @@
+# EconomySMPcore Stats
+messages:
+  no-permission: "&cNo permission."
+  player-not-found: "&cPlayer not found."
+  opening: "&7Opening stats..."

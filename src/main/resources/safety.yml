@@ -1,21 +1,6 @@
-# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
-# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
-# ███████║███████╗   ██║   ██████╔╝███████║██║     
-# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
-# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
-# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
-#
-# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
-# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
-# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
-# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
-# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
-# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
-#
-
 book:
   title: "Safety"
-  author: "AstralSMP"
+  author: "EconomySMP"
 
 first-join:
   enabled: true
@@ -33,7 +18,7 @@ pages:
     Never download files from random people.
 
   - |
-    🎤 Voice Chat&n&nWelcome to AstralSMP's Voice Chat!&n&nUsing Voice Chat is completely optional, but if you choose to use it, please respect everyone around you.&nl%&nl%Breaking these rules may result in a mute or other punishment.
+    🎤 Voice Chat&n&nWelcome to EconomySMP's Voice Chat!&n&nUsing Voice Chat is completely optional, but if you choose to use it, please respect everyone around you.&nl%&nl%Breaking these rules may result in a mute or other punishment.
 messages:
   reload: "&aAstralSafety configuration reloaded!"
   no-permission: "&cYou don't have permission!"

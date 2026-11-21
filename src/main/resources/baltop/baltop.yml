@@ -1,0 +1,32 @@
+economy:
+  currency-format: "#,##0.##"
+  abbreviations:
+    enabled: true
+    formats:
+      - "K"
+      - "M"
+      - "B"
+      - "T"
+
+max-pages: 10
+players-per-page: 45
+
+cache:
+  online-refresh-ticks: 20
+  offline-refresh-ticks: 100
+  offline-batch-size: 40
+
+chat-input:
+  SignAPI: true
+  ChatAPI: false
+
+sign-gui:
+  - ""
+  - "^^^^^^^^^^^^^^^"
+  - "   Player    "
+  - "             "
+
+sounds:
+  click: "UI_BUTTON_CLICK"
+  open: "UI_BUTTON_CLICK"
+  reload: "ENTITY_PLAYER_LEVELUP"
