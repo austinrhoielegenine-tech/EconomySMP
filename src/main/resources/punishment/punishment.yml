@@ -1,5 +1,5 @@
 # Your Discord invite shown on the ban screen.
-discord: "https://discord.gg/yourserver"
+discord: "https://discord.gg/smpnova"
 
 database:
   type: SQLITE # Don't change
