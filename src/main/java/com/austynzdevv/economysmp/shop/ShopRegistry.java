@@ -59,7 +59,7 @@ public final class ShopRegistry {
          catDir.mkdirs();
       }
 
-      String[] defaults = new String[]{"end.yml", "nether.yml", "gear.yml", "food.yml", "redstone.yml", "shards.yml"};
+      String[] defaults = new String[]{"end.yml", "nether.yml", "gear.yml", "food.yml", "redstone.yml", "shards.yml", "spawner.yml"};
 
       for(String name : defaults) {
          File out = new File(catDir, name);
