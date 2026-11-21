@@ -42,7 +42,7 @@ public final class SusListener implements Listener {
 
    private void hook(String className, SusManager.Anticheat ac, String playerMethod, String checkMethod, String vlMethod) {
       try {
-         Class<? extends Event> eventClass = Class.forName(className);
+         Class<? extends Event> eventClass = Class.forName(className).asSubclass(Event.class);
          EventExecutor executor = (listener, event) -> {
             if (eventClass.isInstance(event)) {
                if (this.manager.isEnabled(ac)) {

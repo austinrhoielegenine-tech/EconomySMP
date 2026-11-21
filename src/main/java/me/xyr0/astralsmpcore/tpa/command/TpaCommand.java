@@ -78,13 +78,13 @@ public final class TpaCommand implements CommandExecutor, TabCompleter {
                var10000 = true;
                break;
             case "tpaheretoggle":
-               boolean accepting = mgr.toggleTpahere(player.getUniqueId());
-               this.msg(player, accepting ? "tpa-here-enabled" : "tpa-here-disabled", accepting ? "&aYou are now accepting /tpahere requests." : "&cYou are now blocking /tpahere requests.");
+               boolean accepting2 = mgr.toggleTpahere(player.getUniqueId());
+               this.msg(player, accepting2 ? "tpa-here-enabled" : "tpa-here-disabled", accepting2 ? "&aYou are now accepting /tpahere requests." : "&cYou are now blocking /tpahere requests.");
                var10000 = true;
                break;
             case "tpaconfirmtoggle":
-               boolean on = mgr.toggleConfirmGui(player.getUniqueId());
-               this.msg(player, on ? "confirm-gui-enabled" : "confirm-gui-disabled", on ? "&aConfirm GUI enabled for send and accept." : "&cConfirm GUI disabled. /tpa and /tpaccept are instant.");
+               boolean on2 = mgr.toggleConfirmGui(player.getUniqueId());
+               this.msg(player, on2 ? "confirm-gui-enabled" : "confirm-gui-disabled", on2 ? "&aConfirm GUI enabled for send and accept." : "&cConfirm GUI disabled. /tpa and /tpaccept are instant.");
                var10000 = true;
                break;
             case "tpaignore":

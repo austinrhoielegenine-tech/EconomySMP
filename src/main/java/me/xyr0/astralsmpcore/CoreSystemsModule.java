@@ -104,7 +104,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("auction"));
          h.start();
          this.bind("ah", new AuctionCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -113,7 +113,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("baltop"));
          h.start();
          this.bind("baltop", new BaltopCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -122,7 +122,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("order"));
          h.start();
          this.bind("orders", new OrdersCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -131,7 +131,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("shop"));
          h.start();
          this.bind("shop", new ShopCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -154,7 +154,7 @@ public class CoreSystemsModule implements Module {
          } catch (Exception var3) {
          }
 
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -163,7 +163,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("lb"));
          h.start();
          this.bind("lb", new LeaderboardCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -172,7 +172,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("billford"));
          h.start();
          this.bind("billford", new BillfordCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -181,7 +181,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("bounties"));
          h.start();
          this.bind("bounty", new BountyCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -192,7 +192,7 @@ public class CoreSystemsModule implements Module {
          CrateCommand crateCmd = new CrateCommand(h);
          this.bind("crates", crateCmd);
          this.bind("crate", crateCmd);
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -201,7 +201,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("shards"));
          h.start();
          this.bind("shards", new ShardsCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -212,7 +212,7 @@ public class CoreSystemsModule implements Module {
          TeamCommand cmd = new TeamCommand(h);
          this.bind("teams", cmd);
          this.bind("team", cmd);
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -230,7 +230,7 @@ public class CoreSystemsModule implements Module {
          this.bind("tpauto", cmd);
          this.bind("tpatoggle", cmd);
          this.bind("tpaheretoggle", cmd);
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -249,7 +249,7 @@ public class CoreSystemsModule implements Module {
          this.bind("afk", cmd);
          this.bind("setafk", cmd);
          this.bind("delafk", cmd);
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -258,7 +258,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("tools"));
          h.start();
          this.bind("tools", new ToolsCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -269,7 +269,7 @@ public class CoreSystemsModule implements Module {
          KitsCommand kitsCmd = new KitsCommand(h);
          this.bind("kit", kitsCmd);
          this.bind("kits", kitsCmd);
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -280,7 +280,7 @@ public class CoreSystemsModule implements Module {
          AstralCommand asCmd = new AstralCommand(h);
          this.bind("spawners", asCmd);
          this.bind("as", asCmd);
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -329,7 +329,7 @@ public class CoreSystemsModule implements Module {
          } catch (Exception var3) {
          }
 
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -338,7 +338,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.flatData());
          h.start();
          this.bind("combat", new CombatCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -347,7 +347,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.flatData());
          h.start();
          this.bind("echest", new EcCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -356,7 +356,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.flatData());
          h.start();
          this.bind("help", new HelpCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -365,7 +365,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.flatData());
          h.start();
          this.bind("hide", new HideCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -374,7 +374,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.flatData());
          h.start();
          this.bind("keyall", new KeyallCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -383,7 +383,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("maintenance"));
          h.start();
          this.bind("maintenance", new MaintenanceCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -394,7 +394,7 @@ public class CoreSystemsModule implements Module {
          this.bind("media", new MediaCommand());
          this.bind("discord", new DiscordCommand());
          this.bind("store", new StoreCommand());
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -412,7 +412,7 @@ public class CoreSystemsModule implements Module {
             }
          }
 
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -422,7 +422,7 @@ public class CoreSystemsModule implements Module {
          h.start();
          this.bind("report", new ReportCommand(h));
          this.bind("reports", new ReportsCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -431,7 +431,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.data("rtp"));
          h.start();
          this.bind("rtp", new RTPCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
          AstralRTPQ q = new AstralRTPQ();
@@ -448,7 +448,7 @@ public class CoreSystemsModule implements Module {
          h.init(this.plugin, this.flatData());
          h.start();
          this.bind("rules", new RulesCommand(h));
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -462,7 +462,7 @@ public class CoreSystemsModule implements Module {
          } catch (Exception var3) {
          }
 
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });
@@ -476,7 +476,7 @@ public class CoreSystemsModule implements Module {
          } catch (Exception var3) {
          }
 
-         List var10000 = this.shutdown;
+         List<Runnable> var10000 = this.shutdown;
          Objects.requireNonNull(h);
          var10000.add(h::stop);
       });

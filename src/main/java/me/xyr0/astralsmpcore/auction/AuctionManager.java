@@ -47,7 +47,7 @@ public class AuctionManager {
                Map<?, ?> map = (Map)o;
 
                try {
-                  AuctionListing listing = AuctionListing.deserialize(map);
+                  AuctionListing listing = AuctionListing.deserialize((Map<String, Object>)map);
                   this.listings.put(listing.getId(), listing);
                } catch (Exception var10) {
                   this.plugin.getLogger().warning("Could not load a listing");
@@ -64,7 +64,7 @@ public class AuctionManager {
                Map<?, ?> map = (Map)o;
 
                try {
-                  this.transactions.add(Transaction.deserialize(map));
+                  this.transactions.add(Transaction.deserialize((Map<String, Object>)map));
                } catch (Exception var9) {
                }
             }

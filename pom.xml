@@ -112,6 +112,11 @@
                 <configuration>
                     <release>${java.version}</release>
                     <encoding>UTF-8</encoding>
+                    <showWarnings>false</showWarnings>
+                    <compilerArgs>
+                        <arg>-Xmaxerrs</arg>
+                        <arg>5000</arg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
             <plugin>

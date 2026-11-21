@@ -138,7 +138,7 @@ public final class BalanceCache {
          list.add(new Entry((UUID)e.getKey(), name, (Double)e.getValue()));
       }
 
-      list.sort(Comparator.comparingDouble((a) -> a.balance).reversed());
+      list.sort(Comparator.comparingDouble((Entry a) -> a.balance).reversed());
       int max = this.plugin.getConfig().getInt("max-pages", 10) * this.plugin.getConfig().getInt("players-per-page", 45);
       if (list.size() > max) {
          list = new ArrayList(list.subList(0, max));

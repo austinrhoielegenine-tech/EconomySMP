@@ -40,7 +40,7 @@ public class OrderManager {
                Map<?, ?> map = (Map)obj;
 
                try {
-                  Order order = Order.deserialize(map);
+                  Order order = Order.deserialize((Map<String, Object>)map);
                   this.orders.put(order.getId(), order);
                } catch (Exception var7) {
                   this.plugin.getLogger().warning("Could not load an order entry");

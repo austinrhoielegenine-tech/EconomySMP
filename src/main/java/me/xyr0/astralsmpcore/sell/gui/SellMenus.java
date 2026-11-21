@@ -149,7 +149,7 @@ public final class SellMenus {
       } else if (sort == 2) {
          cmp = Comparator.comparing(ItemUtil::pretty);
       } else {
-         cmp = Comparator.comparingDouble((mx) -> AstralSell.get().getPrices().getBase(mx)).reversed();
+         cmp = Comparator.comparingDouble((Material mx) -> AstralSell.get().getPrices().getBase(mx)).reversed();
       }
 
       mats.sort(cmp);

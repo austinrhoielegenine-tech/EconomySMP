@@ -162,7 +162,7 @@ public class HologramsModule implements Module {
 
    private void removeLoadedHolograms() {
       for(World world : Bukkit.getWorlds()) {
-         for(Entity entity : new ArrayList(world.getEntities())) {
+         for(Entity entity : new ArrayList<>(world.getEntities())) {
             try {
                if (entity.getScoreboardTags().contains("astralsmpcore_holo") || entity.getScoreboardTags().contains("astralsmpcore_holo_personal")) {
                   entity.remove();
@@ -300,7 +300,7 @@ public class HologramsModule implements Module {
       for(String name : this.personal.keySet()) {
          Map<UUID, List<TextDisplay>> map = (Map)this.personal.get(name);
          if (map != null) {
-            for(UUID id : new ArrayList(map.keySet())) {
+            for(UUID id : new ArrayList<>(map.keySet())) {
                if (Bukkit.getPlayer(id) == null) {
                   this.clearPersonal(name, id);
                }
@@ -435,7 +435,7 @@ public class HologramsModule implements Module {
 
    private void removeOrphanPersonal(String name, UUID uuid, Location base) {
       if (base != null && base.getWorld() != null) {
-         for(Entity entity : new ArrayList(base.getWorld().getNearbyEntities(base, (double)3.0F, (double)4.0F, (double)3.0F))) {
+         for(Entity entity : new ArrayList<>(base.getWorld().getNearbyEntities(base, (double)3.0F, (double)4.0F, (double)3.0F))) {
             if (entity.getScoreboardTags().contains("astralsmpcore_holo_personal") && entity.getScoreboardTags().contains("holo:" + name) && entity.getScoreboardTags().contains("owner:" + String.valueOf(uuid))) {
                try {
                   entity.remove();
@@ -542,7 +542,7 @@ public class HologramsModule implements Module {
    public void onPlayerQuit(PlayerQuitEvent event) {
       UUID id = event.getPlayer().getUniqueId();
 
-      for(String name : new ArrayList(this.personal.keySet())) {
+      for(String name : new ArrayList<>(this.personal.keySet())) {
          this.clearPersonal(name, id);
       }
 
@@ -638,7 +638,7 @@ public class HologramsModule implements Module {
                TextUtil.send(sender, "&7Holograms (&f" + var10001 + "&7): &f" + String.join("&7, &f", names));
 
                for(String n : names) {
-                  boolean live = this.active.containsKey(n) && ((List)this.active.get(n)).stream().anyMatch((d) -> d != null && !d.isDead());
+                  boolean live = this.active.containsKey(n) && this.active.get(n).stream().anyMatch((d) -> d != null && !d.isDead());
                   TextUtil.send(sender, " &8- &f" + n + (live ? " &a[spawned]" : " &c[not spawned]"));
                }
             }

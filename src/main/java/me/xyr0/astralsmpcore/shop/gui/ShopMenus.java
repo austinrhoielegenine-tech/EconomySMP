@@ -229,7 +229,7 @@ public final class ShopMenus {
 
                List<String> effects = item.getStringList("potion-effects");
                if (effects != null && !effects.isEmpty()) {
-                  for(PotionEffect existing : new ArrayList(potionMeta.getCustomEffects())) {
+                  for(PotionEffect existing : new ArrayList<>(potionMeta.getCustomEffects())) {
                      potionMeta.removeCustomEffect(existing.getType());
                   }
 

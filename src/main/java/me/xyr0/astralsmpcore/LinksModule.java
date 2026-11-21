@@ -269,7 +269,7 @@ public final class LinksModule implements Module {
 
    private RoleRank findConfiguredRank(Member member) {
       ConfigurationSection roles = this.config.getConfigurationSection("roles");
-      return roles == null ? null : (RoleRank)roles.getKeys(false).stream().map((id) -> {
+      return roles == null ? null : (RoleRank)roles.getKeys(false).stream().<RoleRank>map((id) -> {
          Role role = member.getGuild().getRoleById(id);
          if (role != null && member.getRoles().contains(role)) {
             String group = roles.getString(id + ".luckperms-group", "default");
@@ -277,14 +277,14 @@ public final class LinksModule implements Module {
          } else {
             return null;
          }
-      }).filter((r) -> r != null).max(Comparator.comparingInt((r) -> r.role.getPositionRaw())).orElse((Object)null);
+      }).filter((r) -> r != null).max(Comparator.comparingInt((RoleRank r) -> r.role.getPositionRaw())).orElse(null);
    }
 
    private void syncLinkedPlayers() {
       if (this.jda != null && this.guildId != null) {
          Guild guild = this.jda.getGuildById(this.guildId);
          if (guild != null) {
-            for(Map.Entry<UUID, String> entry : (new HashMap(this.linked)).entrySet()) {
+            for(Map.Entry<UUID, String> entry : (new HashMap<>(this.linked)).entrySet()) {
                UUID uuid = (UUID)entry.getKey();
                String discord = (String)entry.getValue();
 

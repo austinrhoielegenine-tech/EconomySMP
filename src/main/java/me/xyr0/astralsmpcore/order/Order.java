@@ -184,7 +184,7 @@ public class Order implements ConfigurationSerializable {
          display = is;
       } else if (draw instanceof Map<?, ?> dm) {
          try {
-            display = ItemStack.deserialize(dm);
+            display = ItemStack.deserialize((Map<String, Object>)dm);
          } catch (Exception var23) {
          }
       }
@@ -205,7 +205,7 @@ public class Order implements ConfigurationSerializable {
          for(Object o : (List)raw) {
             if (o instanceof Map) {
                Map<?, ?> m = (Map)o;
-               history.add(DeliveryRecord.deserialize(m));
+               history.add(DeliveryRecord.deserialize((Map<String, Object>)m));
             }
          }
       }

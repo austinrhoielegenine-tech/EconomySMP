@@ -126,7 +126,7 @@ public class AuctionListing {
          stack = is;
       } else if (raw instanceof Map<?, ?> m) {
          try {
-            stack = ItemStack.deserialize(m);
+            stack = ItemStack.deserialize((Map<String, Object>)m);
          } catch (Exception var6) {
             stack = null;
          }

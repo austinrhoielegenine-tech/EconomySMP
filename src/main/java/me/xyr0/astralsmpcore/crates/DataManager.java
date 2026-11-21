@@ -62,7 +62,7 @@ public final class DataManager {
       }
 
       for(Map.Entry<UUID, Map<String, Integer>> e : this.virtual.entrySet()) {
-         for(Map.Entry<String, Integer> c : ((Map)e.getValue()).entrySet()) {
+         for(Map.Entry<String, Integer> c : e.getValue().entrySet()) {
             this.playerCfg.set("players." + String.valueOf(e.getKey()) + ".crates.virtual." + (String)c.getKey(), c.getValue());
          }
       }

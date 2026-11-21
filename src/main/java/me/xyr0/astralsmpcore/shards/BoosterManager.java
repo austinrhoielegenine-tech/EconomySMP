@@ -25,7 +25,7 @@ public final class BoosterManager {
       if (PlayerDataStore.get().config().getConfigurationSection("shard-boosters.active") != null) {
          long now = System.currentTimeMillis();
 
-         for(String key : new HashSet(PlayerDataStore.get().config().getConfigurationSection("shard-boosters.active").getKeys(false))) {
+         for(String key : new HashSet<>(PlayerDataStore.get().config().getConfigurationSection("shard-boosters.active").getKeys(false))) {
             long end = PlayerDataStore.get().config().getLong("shard-boosters.active." + key, 0L);
             if (end <= now) {
                PlayerDataStore.get().config().set("shard-boosters.active." + key, (Object)null);

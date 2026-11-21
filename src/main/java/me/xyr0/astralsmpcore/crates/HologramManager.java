@@ -189,7 +189,7 @@ public final class HologramManager implements Listener {
    }
 
    public void removeAt(String locKey) {
-      for(String key : new ArrayList(this.holograms.keySet())) {
+      for(String key : new ArrayList<>(this.holograms.keySet())) {
          if (key.equals(locKey) || key.startsWith(locKey + "|")) {
             this.removeDisplayKey(key);
          }
@@ -212,7 +212,7 @@ public final class HologramManager implements Listener {
    }
 
    public void removeAll() {
-      for(String key : new ArrayList(this.holograms.keySet())) {
+      for(String key : new ArrayList<>(this.holograms.keySet())) {
          this.removeAt(key);
       }
 
@@ -221,7 +221,7 @@ public final class HologramManager implements Listener {
 
    public void purgeOrphanHolograms() {
       for(World world : Bukkit.getWorlds()) {
-         for(Entity entity : new ArrayList(world.getEntities())) {
+         for(Entity entity : new ArrayList<>(world.getEntities())) {
             if (entity.getScoreboardTags().contains("astralcrates_holo")) {
                try {
                   entity.remove();
@@ -254,7 +254,7 @@ public final class HologramManager implements Listener {
 
    private void removeLegacyAt(Location base) {
       if (base != null && base.getWorld() != null) {
-         for(Entity entity : new ArrayList(base.getWorld().getNearbyEntities(base, (double)2.75F, (double)3.0F, (double)2.75F))) {
+         for(Entity entity : new ArrayList<>(base.getWorld().getNearbyEntities(base, (double)2.75F, (double)3.0F, (double)2.75F))) {
             if (entity instanceof ArmorStand) {
                ArmorStand stand = (ArmorStand)entity;
                if (this.isLegacyCrateStand(stand)) {
@@ -307,7 +307,7 @@ public final class HologramManager implements Listener {
          }
       }
 
-      for(String key : new ArrayList(this.holograms.keySet())) {
+      for(String key : new ArrayList<>(this.holograms.keySet())) {
          int split = key.lastIndexOf(124);
          String locKey = split < 0 ? key : key.substring(0, split);
          String uuid = split < 0 ? "" : key.substring(split + 1);

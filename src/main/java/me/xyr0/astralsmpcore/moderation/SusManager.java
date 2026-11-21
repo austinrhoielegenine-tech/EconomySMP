@@ -101,10 +101,10 @@ public final class SusManager {
       }
 
       List<Map.Entry<UUID, List<SusFlag>>> entries = new ArrayList(map.entrySet());
-      entries.sort(Comparator.comparingLong((ex) -> {
+      entries.sort(Comparator.<Map.Entry<UUID, List<SusFlag>>>comparingLong((ex) -> {
          long latest = 0L;
 
-         for(SusFlag f : (List)ex.getValue()) {
+         for(SusFlag f : ex.getValue()) {
             if (f.getTime() > latest) {
                latest = f.getTime();
             }

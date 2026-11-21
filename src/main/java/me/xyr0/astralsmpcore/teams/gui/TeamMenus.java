@@ -118,7 +118,7 @@ public final class TeamMenus {
             Comparator var10000;
             switch (sort) {
                case ONLINE:
-                  var10000 = Comparator.comparingInt((idx) -> Bukkit.getPlayer(idx) != null ? 0 : 1).thenComparing((idx) -> team.getMemberName(idx), String.CASE_INSENSITIVE_ORDER);
+                  var10000 = Comparator.<UUID>comparingInt((idx) -> Bukkit.getPlayer(idx) != null ? 0 : 1).thenComparing((idx) -> team.getMemberName(idx), String.CASE_INSENSITIVE_ORDER);
                   break;
                case JOIN_DATE:
                   Objects.requireNonNull(team);

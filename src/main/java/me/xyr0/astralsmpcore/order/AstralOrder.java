@@ -61,7 +61,7 @@ public final class AstralOrder extends SystemHost {
    }
 
    public void stop() {
-      for(UUID id : new ArrayList(MenuSession.CHEST_SNAPSHOT.keySet())) {
+      for(UUID id : new ArrayList<>(MenuSession.CHEST_SNAPSHOT.keySet())) {
          Player p = this.getServer().getPlayer(id);
          if (p != null) {
             ItemStack[] snapshot = (ItemStack[])MenuSession.CHEST_SNAPSHOT.remove(id);

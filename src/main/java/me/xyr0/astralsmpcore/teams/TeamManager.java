@@ -81,7 +81,7 @@ public final class TeamManager {
    }
 
    public void disband(Team team) {
-      for(UUID id : new ArrayList(team.getMembers())) {
+      for(UUID id : new ArrayList<>(team.getMembers())) {
          this.playerTeam.remove(id);
          this.chatToggle.remove(id);
       }

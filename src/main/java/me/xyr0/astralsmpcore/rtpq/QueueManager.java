@@ -37,7 +37,7 @@ public class QueueManager {
 
    public void addPlayer(Player player) {
       if (!this.isQueued(player)) {
-         for(UUID id : new HashSet(this.queued)) {
+         for(UUID id : new HashSet<>(this.queued)) {
             Player other = Bukkit.getPlayer(id);
             if (other != null && other.isOnline() && !other.equals(player)) {
                this.queued.remove(id);
@@ -168,14 +168,14 @@ public class QueueManager {
    }
 
    public void shutdown() {
-      for(UUID id : new HashSet(this.music.keySet())) {
+      for(UUID id : new HashSet<>(this.music.keySet())) {
          Player p = Bukkit.getPlayer(id);
          if (p != null) {
             this.stopEffects(p);
          }
       }
 
-      for(UUID id : new HashSet(this.bars.keySet())) {
+      for(UUID id : new HashSet<>(this.bars.keySet())) {
          Player p = Bukkit.getPlayer(id);
          if (p != null) {
             this.stopEffects(p);

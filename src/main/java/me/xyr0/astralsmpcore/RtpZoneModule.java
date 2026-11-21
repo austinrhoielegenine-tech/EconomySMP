@@ -176,7 +176,7 @@ public class RtpZoneModule implements Module, Listener {
       } else {
          int secs = this.cfg.getInt("countdown-seconds", 30);
 
-         for(UUID id : new HashSet(this.inZone)) {
+         for(UUID id : new HashSet<>(this.inZone)) {
             int left = (Integer)this.timers.getOrDefault(id, secs) - 1;
             this.timers.put(id, left);
             Player p = Bukkit.getPlayer(id);
@@ -202,7 +202,7 @@ public class RtpZoneModule implements Module, Listener {
          int min = this.cfg.getInt("rtp.min-range", 500);
          int max = this.cfg.getInt("rtp.max-range", 4000);
 
-         for(UUID id : new HashSet(this.inZone)) {
+         for(UUID id : new HashSet<>(this.inZone)) {
             Player p = Bukkit.getPlayer(id);
             if (p != null) {
                int x = ThreadLocalRandom.current().nextInt(min, max + 1) * (ThreadLocalRandom.current().nextBoolean() ? 1 : -1);

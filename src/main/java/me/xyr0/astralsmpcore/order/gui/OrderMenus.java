@@ -186,7 +186,7 @@ public final class OrderMenus {
       } else if (sort == 3) {
          cmp = Comparator.comparingDouble(Order::getPriceEach).reversed();
       } else {
-         cmp = Comparator.comparingDouble((o) -> (double)o.getRemaining() * o.getPriceEach()).reversed();
+         cmp = Comparator.comparingDouble((Order o) -> (double)o.getRemaining() * o.getPriceEach()).reversed();
       }
 
       list.sort(cmp);
@@ -386,9 +386,9 @@ public final class OrderMenus {
 
       int sort = (Integer)MenuSession.SORT.getOrDefault(player.getUniqueId(), 0);
       if (sort == 1) {
-         list.sort(Comparator.comparing(Enum::name).reversed());
+         list.sort(Comparator.comparing(Material::name).reversed());
       } else {
-         list.sort(Comparator.comparing(Enum::name));
+         list.sort(Comparator.comparing(Material::name));
       }
 
       return list;

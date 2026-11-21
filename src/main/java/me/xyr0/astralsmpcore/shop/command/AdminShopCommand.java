@@ -138,16 +138,16 @@ public final class AdminShopCommand implements CommandExecutor, TabCompleter {
                   return true;
                }
 
-               String shop = args[1].toLowerCase();
-               FileConfiguration cfg = this.plugin.getShops().getShop(shop);
-               if (cfg == null || shop.equals("main")) {
+               String shop2 = args[1].toLowerCase();
+               FileConfiguration cfg2 = this.plugin.getShops().getShop(shop2);
+               if (cfg2 == null || shop2.equals("main")) {
                   sender.sendMessage(ColorUtil.parse("&cCategory not found."));
                   return true;
                }
 
-               cfg.set("economy", args[2].toLowerCase());
-               this.plugin.getShops().saveShop(shop);
-               sender.sendMessage(ColorUtil.parse("&aSet economy of &f" + shop + " &ato &f" + args[2].toLowerCase()));
+               cfg2.set("economy", args[2].toLowerCase());
+               this.plugin.getShops().saveShop(shop2);
+               sender.sendMessage(ColorUtil.parse("&aSet economy of &f" + shop2 + " &ato &f" + args[2].toLowerCase()));
                break;
             case "settake":
                if (args.length < 3) {
@@ -155,9 +155,9 @@ public final class AdminShopCommand implements CommandExecutor, TabCompleter {
                   return true;
                }
 
-               String shop = args[1].toLowerCase();
-               FileConfiguration cfg = this.plugin.getShops().getShop(shop);
-               if (cfg == null || shop.equals("main")) {
+               String shop3 = args[1].toLowerCase();
+               FileConfiguration cfg3 = this.plugin.getShops().getShop(shop3);
+               if (cfg3 == null || shop3.equals("main")) {
                   sender.sendMessage(ColorUtil.parse("&cCategory not found."));
                   return true;
                }
@@ -172,10 +172,10 @@ public final class AdminShopCommand implements CommandExecutor, TabCompleter {
                   sb.append(args[i]);
                }
 
-               cfg.set("take-command", sb.toString());
-               cfg.set("economy", "command");
-               this.plugin.getShops().saveShop(shop);
-               sender.sendMessage(ColorUtil.parse("&aTake command set for &f" + shop));
+               cfg3.set("take-command", sb.toString());
+               cfg3.set("economy", "command");
+               this.plugin.getShops().saveShop(shop3);
+               sender.sendMessage(ColorUtil.parse("&aTake command set for &f" + shop3));
                break;
             case "list":
                sender.sendMessage(ColorUtil.parse("&6Shops:"));

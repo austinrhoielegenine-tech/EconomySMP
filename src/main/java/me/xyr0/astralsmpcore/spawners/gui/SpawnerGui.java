@@ -94,7 +94,7 @@ public final class SpawnerGui {
       List<ItemStack> flat = new ArrayList();
 
       int give;
-      for(Map.Entry<Material, Integer> e : (new LinkedHashMap(data.getStorage())).entrySet()) {
+      for(Map.Entry<Material, Integer> e : (new LinkedHashMap<>(data.getStorage())).entrySet()) {
          for(int amount = (Integer)e.getValue(); amount > 0; amount -= give) {
             give = Math.min(amount, 64);
             flat.add(new ItemStack((Material)e.getKey(), give));

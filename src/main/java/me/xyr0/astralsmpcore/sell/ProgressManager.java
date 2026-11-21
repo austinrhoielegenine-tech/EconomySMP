@@ -73,7 +73,7 @@ public class ProgressManager {
             String path = "players." + String.valueOf(player.getKey()) + ".sell.progress";
             cfg.set(path, (Object)null);
 
-            for(Map.Entry<String, Double> entry : ((Map)player.getValue()).entrySet()) {
+            for(Map.Entry<String, Double> entry : player.getValue().entrySet()) {
                cfg.set(path + "." + (String)entry.getKey(), entry.getValue());
             }
 

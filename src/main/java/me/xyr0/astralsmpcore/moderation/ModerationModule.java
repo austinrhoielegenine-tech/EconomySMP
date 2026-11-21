@@ -141,7 +141,7 @@ public class ModerationModule implements Module, Listener {
    }
 
    public void onDisable() {
-      for(UUID id : new HashSet(this.vanished)) {
+      for(UUID id : new HashSet<>(this.vanished)) {
          Player p = Bukkit.getPlayer(id);
          if (p != null) {
             this.unvanish(p, false);
@@ -569,7 +569,7 @@ public class ModerationModule implements Module, Listener {
 
             try {
                Class<?> mannequinClass = Class.forName("org.bukkit.entity.Mannequin");
-               LivingEntity spawned = (LivingEntity)loc.getWorld().spawn(loc, mannequinClass, (entity) -> this.configureMannequin(p, entity, display));
+               LivingEntity spawned = (LivingEntity)loc.getWorld().spawn(loc, (Class<LivingEntity>)(Class<?>)mannequinClass, (entity) -> this.configureMannequin(p, entity, display));
                int seconds = this.cfg.getInt("fakeplayer.duration-seconds", 12);
                Tasks.runAtEntityLater(this.plugin, spawned, () -> {
                   if (spawned.isValid()) {
@@ -606,7 +606,7 @@ public class ModerationModule implements Module, Listener {
       invoke(entity, "setSneaking", new Class[]{Boolean.TYPE}, true);
 
       try {
-         Object pose = Enum.valueOf(Class.forName("org.bukkit.entity.Pose"), "SNEAKING");
+         Object pose = Enum.valueOf((Class)Class.forName("org.bukkit.entity.Pose"), "SNEAKING");
          Method m = entity.getClass().getMethod("setPose", Class.forName("org.bukkit.entity.Pose"), Boolean.TYPE);
          m.invoke(entity, pose, true);
       } catch (Exception var14) {
@@ -1274,27 +1274,27 @@ public class ModerationModule implements Module, Listener {
                   break;
                case "take":
                case "remove":
-                  double amount = CoreEconomy.parseAmount(a[2]);
-                  if (amount < (double)0.0F) {
+                  double amount2 = CoreEconomy.parseAmount(a[2]);
+                  if (amount2 < (double)0.0F) {
                      TextUtil.send(s, "&cInvalid amount.");
                      return true;
                   }
 
-                  double bal = CoreEconomy.balanceOf(target);
-                  CoreEconomy.setBalance(target, Math.max((double)0.0F, bal - amount));
-                  String var15 = CoreEconomy.formatMoney(amount);
+                  double bal2 = CoreEconomy.balanceOf(target);
+                  CoreEconomy.setBalance(target, Math.max((double)0.0F, bal2 - amount2));
+                  String var15 = CoreEconomy.formatMoney(amount2);
                   TextUtil.send(s, "&aTook &#37BFF9" + var15 + " &afrom &#37BFF9" + (target.getName() != null ? target.getName() : a[1]));
                   break;
                case "set":
-                  double amount = CoreEconomy.parseAmount(a[2]);
-                  if (amount < (double)0.0F) {
+                  double amount3 = CoreEconomy.parseAmount(a[2]);
+                  if (amount3 < (double)0.0F) {
                      TextUtil.send(s, "&cInvalid amount.");
                      return true;
                   }
 
-                  CoreEconomy.setBalance(target, amount);
+                  CoreEconomy.setBalance(target, amount3);
                   String var14 = target.getName() != null ? target.getName() : a[1];
-                  TextUtil.send(s, "&aSet balance of &#37BFF9" + var14 + " &ato &#37BFF9" + CoreEconomy.formatMoney(amount));
+                  TextUtil.send(s, "&aSet balance of &#37BFF9" + var14 + " &ato &#37BFF9" + CoreEconomy.formatMoney(amount3));
                   break;
                case "bal":
                case "balance":

@@ -99,7 +99,7 @@ public class KitManager {
          YamlConfiguration cfg = new YamlConfiguration();
 
          for(Map.Entry<UUID, Map<String, Long>> e : this.cooldowns.entrySet()) {
-            for(Map.Entry<String, Long> k : ((Map)e.getValue()).entrySet()) {
+            for(Map.Entry<String, Long> k : e.getValue().entrySet()) {
                cfg.set(((UUID)e.getKey()).toString() + "." + (String)k.getKey(), k.getValue());
             }
          }

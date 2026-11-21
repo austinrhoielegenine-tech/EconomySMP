@@ -215,9 +215,9 @@ public class ProfileModule implements Module, Listener {
                         p.closeInventory();
 
                         try {
-                           Player online = target.getPlayer();
-                           if (online != null && online.isOnline()) {
-                              p.openInventory(online.getEnderChest());
+                           Player online2 = target.getPlayer();
+                           if (online2 != null && online2.isOnline()) {
+                              p.openInventory(online2.getEnderChest());
                            } else {
                               TextUtil.send(p, "&cPlayer must be online for ender chest.");
                            }
@@ -227,13 +227,13 @@ public class ProfileModule implements Module, Listener {
                         break;
                      case 14:
                         p.closeInventory();
-                        Player online = target.getPlayer();
-                        if (online == null || !online.isOnline()) {
+                        Player online3 = target.getPlayer();
+                        if (online3 == null || !online3.isOnline()) {
                            TextUtil.send(p, "&cPlayer must be online to view inventory.");
                            return;
                         }
 
-                        p.openInventory(online.getInventory());
+                        p.openInventory(online3.getInventory());
                         break;
                      case 16:
                         p.closeInventory();
@@ -263,13 +263,13 @@ public class ProfileModule implements Module, Listener {
                         break;
                      case 20:
                         p.closeInventory();
-                        String tn = target.getName() == null ? "" : target.getName();
-                        boolean ok = false;
+                        String tn2 = target.getName() == null ? "" : target.getName();
+                        boolean ok2 = false;
 
-                        for(String c : new String[]{"order admin " + tn, "orders admin " + tn, "orderadmin " + tn}) {
+                        for(String c : new String[]{"order admin " + tn2, "orders admin " + tn2, "orderadmin " + tn2}) {
                            try {
                               if (p.performCommand(c)) {
-                                 ok = true;
+                                 ok2 = true;
                                  break;
                               }
                            } catch (Exception var22) {
@@ -277,14 +277,14 @@ public class ProfileModule implements Module, Listener {
 
                            try {
                               Bukkit.dispatchCommand(p, c);
-                              ok = true;
+                              ok2 = true;
                               break;
                            } catch (Exception var21) {
                            }
                         }
 
-                        if (!ok) {
-                           TextUtil.send(p, "&cCould not open orders admin. Try &f/order admin " + tn);
+                        if (!ok2) {
+                           TextUtil.send(p, "&cCould not open orders admin. Try &f/order admin " + tn2);
                         }
                         break;
                      case 22:

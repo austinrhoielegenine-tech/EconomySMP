@@ -120,20 +120,20 @@ public class ToolsCommand implements CommandExecutor, TabCompleter {
                   toolId = args[1];
                }
 
-               ToolDefinition def = this.plugin.getToolManager().get(toolId);
-               if (def == null) {
+               ToolDefinition def2 = this.plugin.getToolManager().get(toolId);
+               if (def2 == null) {
                   MessageUtil.send(sender, "invalid-tool", "%tools%", this.plugin.getToolManager().listIds());
                   return true;
                }
 
                for(int i = 0; i < amount; ++i) {
-                  ItemStack item = this.plugin.getToolFactory().create(def);
+                  ItemStack item = this.plugin.getToolFactory().create(def2);
                   target.getInventory().addItem(new ItemStack[]{item});
                }
 
-               MessageUtil.send(sender, "tool-given", "%tool%", def.getId(), "%amount%", String.valueOf(amount), "%player%", target.getName());
+               MessageUtil.send(sender, "tool-given", "%tool%", def2.getId(), "%amount%", String.valueOf(amount), "%player%", target.getName());
                if (!target.equals(sender)) {
-                  MessageUtil.send(target, "tool-received", "%tool%", def.getId());
+                  MessageUtil.send(target, "tool-received", "%tool%", def2.getId());
                }
                break;
             case "help":
@@ -141,8 +141,8 @@ public class ToolsCommand implements CommandExecutor, TabCompleter {
                break;
             default:
                if (sender instanceof Player) {
-                  Player player = (Player)sender;
-                  (new ToolsGui(this.plugin)).open(player);
+                  Player player2 = (Player)sender;
+                  (new ToolsGui(this.plugin)).open(player2);
                } else {
                   MessageUtil.send(sender, "usage");
                }

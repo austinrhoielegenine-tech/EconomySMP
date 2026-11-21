@@ -131,17 +131,17 @@ public class DuelsModule implements Module, Listener {
    }
 
    public void onDisable() {
-      for(UUID id : new HashSet(this.music.keySet())) {
+      for(UUID id : new HashSet<>(this.music.keySet())) {
          this.stopMusic(Bukkit.getPlayer(id));
       }
 
-      for(Integer tid : new HashSet(this.lootTasks.values())) {
+      for(Integer tid : new HashSet<>(this.lootTasks.values())) {
          if (tid != null) {
             Tasks.cancel(tid);
          }
       }
 
-      for(Integer tid : new HashSet(this.borderTasks.values())) {
+      for(Integer tid : new HashSet<>(this.borderTasks.values())) {
          if (tid != null) {
             Tasks.cancel(tid);
          }
@@ -230,7 +230,7 @@ public class DuelsModule implements Module, Listener {
       } else if (this.queue.contains(p.getUniqueId())) {
          TextUtil.send(p, "&7Already searching...");
       } else {
-         for(UUID id : new ArrayList(this.queue)) {
+         for(UUID id : new ArrayList<>(this.queue)) {
             Player other = Bukkit.getPlayer(id);
             if (other != null && other.isOnline() && !other.equals(p) && !SettingsModule.isDuelRequestsDisabled(other.getUniqueId())) {
                if (SettingsModule.isDuelRequestsDisabled(p.getUniqueId())) {

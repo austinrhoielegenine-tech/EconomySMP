@@ -119,7 +119,7 @@ public final class TpaManager {
          this.settings.set("ignore", (Object)null);
 
          for(Map.Entry<UUID, Set<UUID>> e : this.ignoreList.entrySet()) {
-            this.settings.set("ignore." + String.valueOf(e.getKey()), ((Set)e.getValue()).stream().map(UUID::toString).toList());
+            this.settings.set("ignore." + String.valueOf(e.getKey()), e.getValue().stream().map(UUID::toString).toList());
          }
 
          try {
@@ -394,7 +394,7 @@ public final class TpaManager {
    public void cancel(Player sender) {
       Set<UUID> targets = (Set)this.outgoing.get(sender.getUniqueId());
       if (targets != null && !targets.isEmpty()) {
-         for(UUID targetId : new HashSet(targets)) {
+         for(UUID targetId : new HashSet<>(targets)) {
             TpaRequest request = this.getIncomingFrom(targetId, sender.getUniqueId());
             if (request != null) {
                this.clearRequest(request);
@@ -549,7 +549,7 @@ public final class TpaManager {
       this.tpAutoBarTask = Tasks.runTimer(this.plugin.getCore(), () -> {
          String bar = this.msg("tpauto-actionbar-on", "&aYou have tpauto on.");
 
-         for(UUID id : new HashSet(this.tpAuto)) {
+         for(UUID id : new HashSet<>(this.tpAuto)) {
             Player p = Bukkit.getPlayer(id);
             if (p != null && p.isOnline()) {
                HotbarUtil.send(p, ColorUtil.parse(bar));

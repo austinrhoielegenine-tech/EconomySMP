@@ -26,7 +26,7 @@ public class HistoryManager {
                Map<?, ?> map = (Map)o;
 
                try {
-                  this.records.add(SellRecord.deserialize(map));
+                  this.records.add(SellRecord.deserialize((Map<String, Object>)map));
                } catch (Exception var6) {
                }
             }
