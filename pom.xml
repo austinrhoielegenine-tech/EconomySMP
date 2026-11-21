@@ -96,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>EconomySMP</finalName>
+        <finalName>NovaCore</finalName>
         <defaultGoal>clean package</defaultGoal>
         <resources>
             <resource>
