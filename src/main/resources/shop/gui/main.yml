@@ -2,6 +2,12 @@ title: "&8ѕʜᴏᴘ"
 size: 27
 type: menu
 items:
+  "4":
+    material: SPAWNER
+    name: "&#00fc88sᴘᴀᴡɴᴇʀ"
+    lore:
+      - "&fClick to view the spawner shop"
+    open: spawner
   "11":
     material: END_STONE
     name: "&#00fc88ᴇɴᴅ"
