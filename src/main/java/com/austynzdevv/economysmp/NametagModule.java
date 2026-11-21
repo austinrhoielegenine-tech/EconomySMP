@@ -88,6 +88,27 @@ public final class NametagModule implements Module {
         player.setCustomNameVisible(original != null);
     }
 
+    @Override public void reload() {
+        if (taskId != -1) {
+            Tasks.cancel(taskId);
+            taskId = -1;
+        }
+        File file = new File(plugin.getDataFolder(), "nametag.yml");
+        if (!file.exists()) plugin.saveResource("nametag.yml", false);
+        config = YamlConfiguration.loadConfiguration(file);
+        enabled = config.getBoolean("enabled", true);
+        if (!enabled) {
+            for (Player player : Bukkit.getOnlinePlayers()) restore(player);
+            return;
+        }
+        for (Player player : Bukkit.getOnlinePlayers()) apply(player);
+        long interval = Math.max(3L, Math.min(5L, config.getLong("rotation.interval-seconds", 4L)));
+        taskId = Tasks.runTimer(plugin, () -> {
+            rotation++;
+            for (Player player : Bukkit.getOnlinePlayers()) apply(player);
+        }, 1L, interval * 20L);
+    }
+
     @Override public void onDisable() {
         if (taskId != -1) Tasks.cancel(taskId);
         for (Player player : Bukkit.getOnlinePlayers()) restore(player);
