@@ -19,6 +19,8 @@ blocked-team-names:
   - "admin"
   - "staff"
   - "owner"
+  - "NovaSMP"
+  - "Nova"
 
 chat-input:
   SignAPI: true
