@@ -18,7 +18,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class EconomySMP extends JavaPlugin {
    private static EconomySMP instance;
    private ConfigManager configManager;
-   private LicenseManager licenseManager;
    private MessageManager messageManager;
    private ModuleManager moduleManager;
    private CommandRegistry commandRegistry;
@@ -39,8 +38,7 @@ public final class EconomySMP extends JavaPlugin {
 
    public void onEnable() {
       instance = this;
-      this.licenseManager = new LicenseManager(this);
-      this.licenseManager.loadAndValidate(this::onLicenseValid, this::onLicenseInvalid);
+      this.startPlugin();
    }
 
    private void logCompatibility() {
@@ -60,10 +58,10 @@ public final class EconomySMP extends JavaPlugin {
       this.getLogger().info("Server compatibility: " + server);
    }
 
-   private void onLicenseValid() {
+   private void startPlugin() {
       if (!this.fullyEnabled) {
          this.fullyEnabled = true;
-         this.getLogger().info("License valid — loading EconomySMP...");
+         this.getLogger().info("Loading EconomySMP...");
          this.startupStep("Compatibility logging", false, this::logCompatibility);
          this.startupStep("Config bootstrap", false, () -> {
             File mainCfg = new File(this.getDataFolder(), "main.config.yml");
@@ -133,14 +131,6 @@ public final class EconomySMP extends JavaPlugin {
 
    }
 
-   private void onLicenseInvalid(String status) {
-      this.getLogger().severe("================================================");
-      this.getLogger().severe(" EconomySMP LICENSE INVALID (" + status + ")");
-      this.getLogger().severe(" Only license.yml was created.");
-      this.getLogger().severe(" Set a valid LICENSE-KEY in license.yml and restart.");
-      this.getLogger().severe("================================================");
-   }
-
    public void onDisable() {
       if (this.moduleManager != null) {
          this.moduleManager.disableAll();
@@ -204,10 +194,6 @@ public final class EconomySMP extends JavaPlugin {
 
    public CommandRegistry commands() {
       return this.commandRegistry;
-   }
-
-   public LicenseManager license() {
-      return this.licenseManager;
    }
 
    @FunctionalInterface
