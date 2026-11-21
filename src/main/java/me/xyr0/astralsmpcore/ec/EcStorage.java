@@ -124,7 +124,8 @@ public class EcStorage {
          name = Bukkit.getOfflinePlayer(uuid).getName();
       }
 
-      Tasks.runAsync(this.plugin.getCore(), () -> this.save(uuid, copy, name));
+      String finalName = name;
+      Tasks.runAsync(this.plugin.getCore(), () -> this.save(uuid, copy, finalName));
    }
 
    public ItemStack[] seedFromVanilla(Player player, int size) {
