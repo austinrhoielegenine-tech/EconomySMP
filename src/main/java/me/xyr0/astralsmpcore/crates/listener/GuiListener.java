@@ -86,7 +86,8 @@ public final class GuiListener implements Listener {
                            MenuSession.MODE.put(player.getUniqueId(), MenuSession.Mode.CONFIRM);
                            MenuSession.PENDING.put(player.getUniqueId(), reward);
                            player.closeInventory();
-                           Tasks.run(this.plugin.getCore(), () -> this.openManager.openConfirm(player, crate, reward));
+                           Reward finalReward = reward;
+                           Tasks.run(this.plugin.getCore(), () -> this.openManager.openConfirm(player, crate, finalReward));
                         }
                      }
                   }
