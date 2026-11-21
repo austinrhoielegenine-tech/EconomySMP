@@ -1,9 +1,9 @@
-name: EconomySMP
+name: NovaCore
 version: 2.9
 main: com.austynzdevv.economysmp.EconomySMP
 api-version: '1.21'
 author: Xyr0
-description: Free EconomySMP 
+description: Free NovaCore 
 folia-supported: true
 softdepend: [ProtocolLib, packetevents, Vault, PlaceholderAPI, LuckPerms, DiscordSRV, WorldGuard, FancyNpcs, TAB, Geyser-Spigot, floodgate, ViaVersion, ViaBackwards]
 
