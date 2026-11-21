@@ -1,12 +1,73 @@
 title: "&8ѕʜᴏᴘ - sᴘᴀᴡɴᴇʀ"
 size: 27
 type: shop
-economy: vault
+economy: command
+take-command: "shards take %player% %total%"
+balance-placeholder: "%economysmp_shards_balance_raw%"
+currency-symbol: "Shards"
 back-slot: 18
 back-open: main
 items:
   "9":
     material: SPAWNER
-    name: "&fSpawner"
-    price: 100000
-    amount: 1
+    name: "&dPig Spawner"
+    price: 150000
+    give-command: "as give %player% PIG %amount%"
+    lore:
+      - "&ePig"
+  "10":
+    material: SPAWNER
+    name: "&dCow Spawner"
+    price: 200000
+    give-command: "as give %player% COW %amount%"
+    lore:
+      - "&eCow"
+  "11":
+    material: SPAWNER
+    name: "&dZombie Spawner"
+    price: 250000
+    give-command: "as give %player% ZOMBIE %amount%"
+    lore:
+      - "&eZombie"
+  "12":
+    material: SPAWNER
+    name: "&dSpider Spawner"
+    price: 350000
+    give-command: "as give %player% SPIDER %amount%"
+    lore:
+      - "&eSpider"
+  "13":
+    material: SPAWNER
+    name: "&dSkeleton Spawner"
+    price: 550000
+    give-command: "as give %player% SKELETON %amount%"
+    lore:
+      - "&eSkeleton"
+  "14":
+    material: SPAWNER
+    name: "&dCreeper Spawner"
+    price: 750000
+    give-command: "as give %player% CREEPER %amount%"
+    lore:
+      - "&eCreeper"
+  "15":
+    material: SPAWNER
+    name: "&dPiglin Spawner"
+    price: 850000
+    give-command: "as give %player% PIGLIN %amount%"
+    lore:
+      - "&ePiglin"
+  "16":
+    material: SPAWNER
+    name: "&dBlaze Spawner"
+    price: 1000000
+    give-command: "as give %player% BLAZE %amount%"
+    lore:
+      - "&eBlaze"
+  "17":
+    material: SPAWNER
+    name: "&dIron Golem Spawner"
+    price: 1200000
+    give-command: "as give %player% IRON_GOLEM %amount%"
+    lore:
+      - "&eIron Golem"
