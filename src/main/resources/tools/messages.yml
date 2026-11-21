@@ -13,7 +13,7 @@ tool-broken: "&cYour tool ran out of uses."
 jump-cooldown: "&cWait &7%seconds%s &cbefore jumping again."
 water-nether: "&cCan't place water in the Nether."
 usage: |
-  &#00fc88AstralTools
+  &#00fc88EconomyTools
   &7/tools &8- &7open tools menu
   &7/tools give <tool> [player] [amount]
   &7/tools reload

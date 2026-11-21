@@ -11,7 +11,7 @@ messages:
   enabled: "&7ᴍᴏʙ ꜱᴘᴀᴡɴɪɴɢ ʜᴀꜱ ʙᴇᴇɴ ᴇɴᴀʙʟᴇᴅ."
   disabled: "&7ᴍᴏʙ ꜱᴘᴀᴡɴɪɴɢ ʜᴀꜱ ʙᴇᴇɴ ᴅɪꜱᴀʙʟᴇᴅ."
   no-permission: "&cYou don't have permission."
-  reload: "&aAstralMobs configuration has been reloaded."
+  reload: "&aEconomyMobs configuration has been reloaded."
 
 actionbar:
   enabled: "&7ᴍᴏʙ ꜱᴘᴀᴡɴɪɴɢ ʜᴀꜱ ʙᴇᴇɴ ᴇɴᴀʙʟᴇᴅ."

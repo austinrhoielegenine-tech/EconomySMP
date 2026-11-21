@@ -2,7 +2,7 @@ debug: false # Debug Logs will show on console
 holograms: false # Set to true to enable holograms above the Spawners
 hologram-update-ticks: 40
 
-convert-natural-spawners: true # If set to true all natural generated spawners will be converted into astralSpawners
+convert-natural-spawners: true # If set to true all natural generated spawners will be converted into economySpawners
 
 generation:
   interval-ticks: 200

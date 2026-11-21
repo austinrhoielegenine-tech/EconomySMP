@@ -1,7 +1,7 @@
 no-permission: "&cYou do not have permission!"
 player-only: "&cOnly players can use this!"
 player-not-found: "&cPlayer not found!"
-reloaded: "&aAstralTPA reloaded."
+reloaded: "&aEconomyTPA reloaded."
 
 tpa-request-sent: "&7Tpa request sent to &#37BFF8{target}&7."
 tpa-request-received: "&7&#37BFF8{sender} &7wants to teleport to you."

@@ -34,9 +34,9 @@ locked:
     label: "&#FF0000ɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ"
     item: "RED_BED"
     extra:
-      - "&fBuy &#0044FCAstral+ &fin /store for more homes"
+      - "&fBuy &#0044FCEconomy+ &fin /store for more homes"
   dye:
     label: "&#FF0000ɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ"
     item: "RED_DYE"
     extra:
-      - "&fBuy &#0044FCAstral+ &fin /store for more homes"
+      - "&fBuy &#0044FCEconomy+ &fin /store for more homes"

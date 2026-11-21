@@ -29,11 +29,11 @@ discord:
   sound: "minecraft:block.note_block.pling"
 
 messages:
-  reload: "&aAstralMedia configuration reloaded!"
+  reload: "&aEconomyMedia configuration reloaded!"
   no-permission: "&cYou don't have permission."
 
 store:
   message:
     - "&#00A4FCᴊᴏɪɴ ᴛʜᴇ ᴀsᴛʀᴀʟsᴍᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ"
-    - "&#00A4FC• &f&nhttps://astralstudio.rf.gd/"
+    - "&#00A4FC• &f&nhttps://economystudio.rf.gd/"
   sound: "minecraft:block.note_block.pling"

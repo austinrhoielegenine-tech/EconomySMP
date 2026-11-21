@@ -38,7 +38,7 @@ hover:
 chat-toggle:
   disabled: false # Change to True to disable global Chat
 messages: 
-  reload-success: '&aAstralChat has been reloaded successfully!'
+  reload-success: '&aEconomyChat has been reloaded successfully!'
   no-permission: '&cYou don''t have permission.'
   chat-disabled: '&cGlobal chat is currently disabled.' 
   blacklisted: '&cYour message was blocked because it contains a blacklisted word.'

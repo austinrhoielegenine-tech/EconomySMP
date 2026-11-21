@@ -1,6 +1,6 @@
 no-permission: "&cYou don't have permission to do this!"
 player-only: "&cOnly players can execute this command!"
-reloaded: "&aAstralCrates has been reloaded!"
+reloaded: "&aEconomyCrates has been reloaded!"
 invalid-usage: "&cUsage: %usage%"
 crate-not-found: "&cCrate %crate% does not exist!"
 invalid-amount: "&cInvalid amount!"

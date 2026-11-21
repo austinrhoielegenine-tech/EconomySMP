@@ -1,11 +1,11 @@
-title: "&8Astral Info"
+title: "&8Economy Info"
 rows: 3
 items:
   1:
     item: LANTERN
     slot: 10
     cmd: rules
-    name: "&#13c3f5Astral"
+    name: "&#13c3f5Economy"
     lore:
       - "&fBuild a base, fight players,"
       - "&fand become the richest."
@@ -82,7 +82,7 @@ items:
       - ""
       - "&#13c3f5cmd: &f/rtp"
 messages:
-  reload: "&aAstralHelp configuration reloaded!"
+  reload: "&aEconomyHelp configuration reloaded!"
   no-permission: "&cYou don't have permission."
   only-player: "&cOnly players can use this command."
 sounds:

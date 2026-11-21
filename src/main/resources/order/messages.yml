@@ -8,7 +8,7 @@ messages:
   no-permission: "&cYou don't have permission for that!"
   only-players: "Only players can use that command!"
   no-items-to-collect: "&cYou don't have any items to collect for this order!"
-  plugin-reloaded: "&#00FF00AstralOrder reloaded."
+  plugin-reloaded: "&#00FF00EconomyOrder reloaded."
   no-orders: "&cThere are no active orders!"
   order-created: "&7You create an order for &#00fc88%amount% %item% &7for &#00fc88$%price% &7each! &7(Total: $%total_price%)"
   chat-input: "&cPlease write the %type% in the chat, or type cancel to cancel the input!"

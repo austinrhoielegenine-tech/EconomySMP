@@ -8,7 +8,7 @@ messages:
   auction-created: "&7Auction successfully created for &#00fc88%price%&7!"
   item-bought: "&7You bought &a%amount% %item% &7from the auction house for &#00fc88%price%&7!"
   item-sold: "&#00fc88%player% &7bought your &a%amount% %item% for &#00fc88%price%&7!"
-  config-reloaded: "&#00FF00AstralAuction reloaded."
+  config-reloaded: "&#00FF00EconomyAuction reloaded."
   auction-removed: "&#00fc88You successfully removed the item from the auction house!"
   item-returned: "&7Your item &a%item% &7has been returned to you!"
   price-too-low: "&7The price you set is below the minimum of &#00fc88%amount%&7!"

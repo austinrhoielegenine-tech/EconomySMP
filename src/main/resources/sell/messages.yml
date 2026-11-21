@@ -8,7 +8,7 @@ messages:
   blacklisted-returned: "&c%count% blacklisted item(s) returned."
   no-permission: "&cYou do not have permission."
   player-only: "&cPlayers only."
-  reloaded: "&#00FF00AstralSell reloaded."
+  reloaded: "&#00FF00EconomySell reloaded."
   worth-search: "&cType an item name to search, or cancel."
   search-cancelled: "&cSearch cancelled."
   multiplier: "&7Your sell multiplier: &#00fc88%x%"

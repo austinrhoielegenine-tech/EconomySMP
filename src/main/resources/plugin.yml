@@ -1,6 +1,6 @@
 name: EconomySMPcore
 version: 2.9
-main: me.xyr0.economysmpcore.EconomySMPcore
+main: com.austynzdevv.economysmp.EconomySMPcore
 api-version: '1.21'
 author: Xyr0
 description: Free EconomySMP 
@@ -46,12 +46,12 @@ commands:
     permission: economysmpcore.system.holograms.use
   economysmpcore:
     description: Main EconomySMPcore admin command
-    aliases: [asmp, asmpcore, astralcore, acore, EconomySMPcore, EconomySMP]
+    aliases: [asmp, asmpcore, economycore, acore, EconomySMPcore, EconomySMP]
     usage: /economysmpcore reload | /asmp reload | /asmpcore reload
     permission: economysmpcore.reload
   ah:
     description: Auction house
-    aliases: [auction, astralauction]
+    aliases: [auction, economyauction]
   homes:
     description: Homes GUI
     aliases: [home]
@@ -125,8 +125,8 @@ commands:
   spawners:
     description: Spawners
   tools:
-    description: Astral tools
-    aliases: [astraltools]
+    description: Economy tools
+    aliases: [economytools]
   kit:
     description: Claim a kit
     aliases: [kits]
@@ -402,7 +402,7 @@ commands:
     description: Punishment history
     permission: economysmpcore.system.punishment.admin
     aliases: [punish]
-  astralpunishment:
+  economypunishment:
     description: Punishment admin
     permission: economysmpcore.system.punishment.admin
     aliases: [ap]

@@ -5,7 +5,7 @@ use-prefix: false
 text:
   denied: "&cYou don't have permission for this!"
   players-only: "&cOnly players can use this command!"
-  reloaded: "&aAstralHomes has been reloaded!"
+  reloaded: "&aEconomyHomes has been reloaded!"
   created: "&7Home &a%home% &7has been set!"
   removed: "&7Home &c%home% &7has been deleted!"
   missing: "&cHome %home% does not exist!"
@@ -16,19 +16,19 @@ text:
   region-locked: "&cYou can't set a home here! &7(%region%)"
 
 bars:
-  reloaded: "&aAstralHomes has been reloaded!"
+  reloaded: "&aEconomyHomes has been reloaded!"
   moved: "&cTeleport cancelled!"
   arrived: "&aYou have been teleported to home %home%!"
   busy: "&cYou are already teleporting!"
 
 help: |
-  &#37BFF9&lASTRALHOMES
+  &#37BFF9&lECONOMYHOMES
    &7/home
    &7/sethome <1-10>
    &7/delhome <1-10>
 
 help-staff: |
-  &#FF0000&lAstralHomes ADMIN
+  &#FF0000&lEconomyHomes ADMIN
    &7/home reload 
    &7/home admin <player>
 countdown:

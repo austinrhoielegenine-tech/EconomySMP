@@ -1,6 +1,6 @@
 no-permission: "&cYou don't have permission!"
 player-only: "&cOnly players can use this!"
-reload-success: "&aAstralWarps reloaded."
+reload-success: "&aEconomyWarps reloaded."
 already-teleporting: "&cYou are already teleporting!"
 location-invalid: "&cThat location is invalid!"
 teleport-countdown: "&7Teleporting in &#00A0FC%seconds% &7seconds..."

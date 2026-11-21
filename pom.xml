@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.xyr0</groupId>
+    <groupId>com.austynzdevv</groupId>
     <artifactId>EconomySMPcore</artifactId>
     <version>2.9</version>
     <packaging>jar</packaging>
@@ -137,31 +137,31 @@
                     <relocations>
                         <relocation>
                             <pattern>net.dv8tion</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.net.dv8tion</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.net.dv8tion</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okhttp3</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.okhttp3</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.okhttp3</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okio</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.okio</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.okio</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.fasterxml.jackson</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.jackson</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.jackson</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.neovisionaries</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.neovisionaries</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.neovisionaries</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>gnu.trove</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.trove</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.trove</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.apache.commons.collections4</pattern>
-                            <shadedPattern>me.xyr0.economysmpcore.libs.collections4</shadedPattern>
+                            <shadedPattern>com.austynzdevv.economysmp.libs.collections4</shadedPattern>
                         </relocation>
                     </relocations>
                     <filters>

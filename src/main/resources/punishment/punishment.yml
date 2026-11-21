@@ -35,7 +35,7 @@ history:
 webhook:
   enabled: true # Set to false to disable discord webhook
 
-messages-prefix: "&#ff2d2d&lAstralPunishment &8» "
+messages-prefix: "&#ff2d2d&lEconomyPunishment &8» "
 
 # Do not change this.
 config-version: 1 # Don't change this
