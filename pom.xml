@@ -116,6 +116,7 @@
                     <compilerArgs>
                         <arg>-Xmaxerrs</arg>
                         <arg>5000</arg>
+                        <arg>-XDshould-stop.ifError=FLOW</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>

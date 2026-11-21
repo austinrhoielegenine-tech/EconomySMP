@@ -167,12 +167,12 @@ public final class GuiListener implements Listener {
             }
          }
 
-         line = line.trim();
+         String finalLine = line.trim();
          this.searching.remove(player.getUniqueId());
          StatsManager.Board board = (StatsManager.Board)MenuSession.BOARD.get(player.getUniqueId());
          Tasks.run(this.plugin.getCore(), () -> {
             InputUtil.cleanup(player);
-            this.handleSearchResult(player, board, line);
+            this.handleSearchResult(player, board, finalLine);
          });
       }
    }
