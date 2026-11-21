@@ -12,7 +12,7 @@ generation:
   loot-limit: -1
 
 stacking:
-  max-stack: 2000 # Max spawners 
+  max-stack: 10000 # Max spawners 
   merge-on-place: true 
   same-type-only: true # Please do not change this unless you know what you are doing
 
