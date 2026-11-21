@@ -57,6 +57,10 @@ public class WelcomerModule implements Module, Listener {
    }
 
    public void onDisable() {
+      if (this.data == null) {
+         return;
+      }
+
       this.data.set("registered-count", this.registered);
       PlayerDataStore.get().save();
    }

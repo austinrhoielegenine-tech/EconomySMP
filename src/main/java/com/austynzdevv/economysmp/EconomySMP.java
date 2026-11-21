@@ -61,6 +61,7 @@ public final class EconomySMP extends JavaPlugin {
    private void startPlugin() {
       if (!this.fullyEnabled) {
          this.fullyEnabled = true;
+         this.getDataFolder().mkdirs();
          this.getLogger().info("Loading EconomySMP...");
          this.startupStep("Compatibility logging", false, this::logCompatibility);
          this.startupStep("Config bootstrap", false, () -> {

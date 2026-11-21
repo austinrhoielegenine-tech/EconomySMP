@@ -55,15 +55,15 @@ public class ModuleManager {
       this.registerIfEnabled("settings", new SettingsModule(this.plugin));
       this.registerIfEnabled("scoreboard", new ScoreboardModule(this.plugin));
       this.modules.put("nightvision", new NightVisionModule(this.plugin));
-      this.modules.put("tab", new TabModule(this.plugin));
+      this.registerSafe("tab", false, () -> new TabModule(this.plugin));
       this.registerIfEnabled("homes", new HomesModule(this.plugin));
       this.registerIfEnabled("moderation", new ModerationModule(this.plugin));
       this.registerIfEnabled("welcomer", new WelcomerModule(this.plugin));
       this.registerIfEnabled("doublejump", new DoubleJumpModule(this.plugin));
       this.registerIfEnabled("profile", new ProfileModule(this.plugin));
       this.registerIfEnabled("duels", new DuelsModule(this.plugin));
-      this.registerIfEnabled("links", new LinksModule(this.plugin));
-      this.registerIfEnabled("voicechat", new VoiceChatModule(this.plugin));
+      this.registerSafe("links", true, () -> new LinksModule(this.plugin));
+      this.registerSafe("voicechat", true, () -> new VoiceChatModule(this.plugin));
       this.registerIfEnabled("punishment", new PunishmentModule(this.plugin));
       this.registerIfEnabled("phantoms", new PhantomsModule(this.plugin));
       this.registerIfEnabled("holograms", new HologramsModule(this.plugin));
@@ -74,7 +74,7 @@ public class ModuleManager {
          try {
             m.onEnable();
             this.plugin.getLogger().info("Enabled system: " + m.getName());
-         } catch (Exception e) {
+         } catch (Exception | LinkageError e) {
             this.plugin.getLogger().log(Level.WARNING, "Failed enabling " + m.getName(), e);
          }
       }
@@ -255,6 +255,19 @@ public class ModuleManager {
 
          }
       }
+   }
+
+   private void registerSafe(String key, boolean checkEnabled, java.util.function.Supplier<Module> factory) {
+      if (checkEnabled && !this.plugin.configs().isEnabled(key)) {
+         return;
+      }
+
+      try {
+         this.modules.put(key.toLowerCase(), factory.get());
+      } catch (LinkageError e) {
+         this.plugin.getLogger().warning("Skipped module '" + key + "' (a required plugin such as LuckPerms is not installed): " + e);
+      }
+
    }
 
    private void registerIfEnabled(String key, Module module) {
