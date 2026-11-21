@@ -1,0 +1,133 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+crimson-crate:
+  inventory:
+    name: '&8ᴄʀɪᴍsᴏɴ ᴄʀᴀᴛᴇ'
+    effect: CHOOSE #here you set it to choose or nowait (/dc seteffect <crate> <effect>)
+    rows: 3
+    filler-item:
+      enable: true
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&#c62119ᴄʀɪᴍsᴏɴ ᴄʀᴀᴛᴇ'
+      lore:
+        - '&fWith a ᴄʀɪᴍsᴏɴ ᴋᴇʏ you can choose'
+        - '&fwhich of the 7 you want.'
+  hologram:
+    enabled: true
+    '1':
+      height: 1.5
+      lines:
+        - '&#c62119ᴄʀɪᴍsᴏɴ ᴄʀᴀᴛᴇ'
+    '2':
+      height: 1.2
+      lines:
+        - '&fKeys: &#c62119%astralsmpcore_crate_keys_crimson%'
+    '3':
+      height: 0.9
+      lines:
+        - '&fRight-click to open'
+
+  rewards:
+    1:
+      slot: 10
+      icon:
+        material: NETHERITE_HELMET
+        name: '&#c62119ᴄʀɪᴍsᴏɴ ʜᴇʟᴍᴇᴛ'
+        trim:
+          material: redstone
+          pattern: snout
+        enchantments:
+          protection: 4
+          respiration: 3
+          mending: 1
+          thorns: 3
+          unbreaking: 3
+    2:
+      slot: 11
+      icon:
+        material: NETHERITE_CHESTPLATE
+        name: '&#c62119ᴄʀɪᴍsᴏɴ ᴄʜᴇsᴛᴘʟᴀᴛᴇ'
+        trim:
+          material: redstone
+          pattern: snout
+        enchantments:
+          protection: 4
+          mending: 1
+          thorns: 3
+          unbreaking: 3
+    3:
+      slot: 12
+      icon:
+        material: NETHERITE_LEGGINGS
+        name: '&#c62119ᴄʀɪᴍsᴏɴ ʟᴇɢɢɪɴɢs'
+        trim:
+          material: redstone
+          pattern: snout
+        enchantments:
+          protection: 4
+          swift_sneak: 3
+          mending: 1
+          thorns: 3
+          unbreaking: 3
+    4:
+      slot: 13
+      icon:
+        material: NETHERITE_BOOTS
+        name: '&#c62119ᴄʀɪᴍsᴏɴ ʙᴏᴏᴛs'
+        trim:
+          material: redstone
+          pattern: snout
+        enchantments:
+          protection: 4
+          depth_strider: 3
+          feather_falling: 4
+          mending: 1
+          soul_speed: 3
+          thorns: 3
+          unbreaking: 3
+    5:
+      slot: 14
+      icon:
+        material: NETHERITE_SWORD
+        name: '&#c62119ᴄʀɪᴍsᴏɴ sᴡᴏʀᴅ'
+        enchantments:
+          sharpness: 5
+          looting: 3
+          fire_aspect: 2
+          knockback: 2
+          mending: 1
+          unbreaking: 3
+    6:
+      slot: 15
+      icon:
+        material: NETHERITE_PICKAXE
+        name: '&#c62119ᴄʀɪᴍsᴏɴ ᴘɪᴄᴋᴀxᴇ'
+        enchantments:
+          mending: 1
+          unbreaking: 3
+          silk_touch: 1
+          efficiency: 5
+    7:
+      slot: 16
+      icon:
+        material: NETHERITE_AXE
+        name: '&#c62119ᴄʀɪᴍsᴏɴ ᴀxᴇ'
+        enchantments:
+          efficiency: 5
+          mending: 1
+          sharpness: 5
+          silk_touch: 1
+          unbreaking: 3

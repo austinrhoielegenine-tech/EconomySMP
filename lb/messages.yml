@@ -1,0 +1,22 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-permission: "&cYou have no permission for that!"
+player-only: "&cOnly players can use this command!"
+reloaded: "&#00FF00AstralLeaderboards reloaded."
+refreshed: "&aLeaderboard refreshed."
+search-prompt: "&7Type a player name in chat, or &ccancel &7to cancel."
+search-cancelled: "&cSearch cancelled!"
+player-not-found: "&cPlayer not found"

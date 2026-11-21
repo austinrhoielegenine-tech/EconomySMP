@@ -1,0 +1,45 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+if-kill-myself-get-reward: true
+
+limits:
+  min-amount: 10
+  max-amount: 1000000000
+
+sounds:
+  bounty-added:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+  bounty-claimed:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+  no-perm:
+    enabled: true
+    sound: BLOCK_ANVIL_LAND
+  gui-click:
+    enabled: true
+    sound: UI_BUTTON_CLICK
+
+chat-input:
+  SignAPI: true
+  ChatAPI: false
+
+sign-gui:
+  - ""
+  - "^^^^^^^^^^^^^^^"
+  - "   Player    "
+  - "             "
+

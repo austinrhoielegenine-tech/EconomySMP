@@ -1,0 +1,49 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ѕʜᴏᴘ"
+size: 27
+type: menu
+items:
+  "11":
+    material: END_STONE
+    name: "&#00fc88ᴇɴᴅ"
+    lore:
+      - "&fClick to view the end shop"
+    open: end
+  "12":
+    material: NETHERRACK
+    name: "&#00fc88ɴᴇᴛʜᴇʀ"
+    lore:
+      - "&fClick to view the nether shop"
+    open: nether
+  "13":
+    material: TOTEM_OF_UNDYING
+    name: "&#00fc88ɢᴇᴀʀ"
+    lore:
+      - "&fClick to view the gear shop"
+    open: gear
+  "14":
+    material: COOKED_BEEF
+    name: "&#00fc88ꜰᴏᴏᴅ"
+    lore:
+      - "&fClick to view the food shop"
+    open: food
+  "15":
+    material: AMETHYST_SHARD
+    name: "&#00fc88ѕʜᴀʀᴅѕ"
+    lore:
+      - "&fClick to view the shard shop"
+    open: shards

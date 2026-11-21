@@ -1,0 +1,107 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+
+no-permission: "&cYou do not have permission to use this command."
+player-only: "&cOnly players can execute this command."
+player-not-found: "&cThat player could not be found."
+
+reload:
+  success: "&#00ff66Configuration files reloaded successfully."
+
+usage:
+  offend: "&cUsage: /offend <player> <reason>"
+  unoffend: "&cUsage: /unoffend <player> <reason>"
+  kick: "&cUsage: /kick <player> <reason>"
+  freeze: "&cUsage: /freeze <player>"
+  unfreeze: "&cUsage: /unfreeze <player>"
+  history: "&cUsage: /history <player>"
+  checkban: "&cUsage: /checkban <player>"
+  checkmute: "&cUsage: /checkmute <player>"
+
+punishment:
+  mute-broadcast: "&#ff3333Temporary Muted &a%player% &#ff3333for &a%duration% &#ff3333Reason: &a%reason%"
+  ban-broadcast: "&#ff3333Temporary Banned &a%player% &#ff3333for &a%duration% &#ff3333Reason: &a%reason%"
+  kick-broadcast: "&#ff3333Player &a%player% &#ff3333was kicked. Reason: &a%reason%"
+  freeze-broadcast: "&#33ccffPlayer &a%player% &#33ccffhas been frozen by &a%staff%"
+  unfreeze-broadcast: "&#33ccffPlayer &a%player% &#33ccffhas been unfrozen by &a%staff%"
+  unoffend-broadcast: "&#00ff66Punishment removed from &a%player% &#00ff66Reason: &a%reason%"
+
+mute:
+  chat-message:
+    - "&#ff3333You are muted."
+    - "&7Reason: &a%reason%"
+    - "&7Time left: &a%time%"
+
+ban:
+  screen:
+    title: "&7Connection Lost"
+    lines:
+      - "&cYou have been {type} for {reason}"
+      - "&7Time left: &f{time}"
+      - "&7Ban ID: &f{banid}"
+      - "&7You may be able to appeal this ban on"
+      - "&f{discord}"
+
+kick:
+  screen:
+    title: "&7Connection Lost"
+    lines:
+      - "&cYou have been kicked."
+      - "&7Reason: &f{reason}"
+
+ip-mute-message:
+  - "&cYou have been IP-Muted."
+  - ""
+  - "&7Reason: &f%reason%"
+  - "&7Duration: &f%duration%"
+  - "&7Offense: &f%offense%"
+
+ip-ban-broadcast:
+  - "&#ff3333Player &a%player% &#ff3333has been IP-Banned."
+  - "&7Reason: &f%reason% &7Duration: &f%duration%"
+
+ip-mute-broadcast:
+  - "&#ff3333Player &a%player% &#ff3333has been IP-Muted."
+  - "&7Reason: &f%reason% &7Duration: &f%duration%"
+
+freeze:
+  blocked-command: "&cYou cannot use commands while frozen."
+  blocked-action: "&cYou are frozen and cannot do that."
+
+check:
+  no-active-ban: "&a%player% does not have an active ban."
+  active-ban:
+    - "&cActive Ban"
+    - "&7Player: &f%player%"
+    - "&7Reason: &f%reason%"
+    - "&7Duration: &f%duration%"
+    - "&7Time Left: &f%time%"
+    - "&7Staff: &f%staff%"
+    - "&7Ban ID: &f%banid%"
+
+  no-active-mute: "&a%player% does not have an active mute."
+  active-mute:
+    - "&cActive Mute"
+    - "&7Player: &f%player%"
+    - "&7Reason: &f%reason%"
+    - "&7Duration: &f%duration%"
+    - "&7Time Left: &f%time%"
+    - "&7Staff: &f%staff%"
+
+history:
+  no-history: "&cThis player has no punishment history."
+  next-page: "&aNext Page"
+  previous-page: "&aPrevious Page"
+  item:
+    name: "&c%type% Punishment"
+    lore:
+      - "&7Staff: &f%staff%"
+      - "&7Reason: &f%reason%"
+      - "&7Duration: &f%duration%"
+      - "&7Offense: &f%offense%"
+      - "&7Date: &f%date%"
+      - "&7Ban ID: &f%banid%"

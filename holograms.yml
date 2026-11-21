@@ -1,0 +1,401 @@
+# AstralSMPcore leaderboard holograms — native TextDisplay (no FancyHolograms needed)
+# /aholo list | movehere <name> | reload | near
+# Placeholders: %astralsmpcore_lb_<board>_top_name_<rank>%, %astralsmpcore_lb_<board>_top_value_<rank>%
+# Viewer row: %astralsmpcore_lb_<board>_rank%, %astralsmpcore_lb_<board>_value%, %player_name%
+version: 2
+
+defaults:
+  update-text-interval: 300
+
+top-entries: 10
+
+holograms:
+  mostmoney:
+    leaderboard: money
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.651295879917875
+      y: 185.0
+      z: 16.542167717041576
+      yaw: -90.60758
+      pitch: 73.93712
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ᴍᴏɴᴇʏ'
+    - '&#00f986#1 &f%astralsmpcore_lb_money_top_name_1%: &#00f986%astralsmpcore_lb_money_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_money_top_name_2%: &#00f986%astralsmpcore_lb_money_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_money_top_name_3%: &#00f986%astralsmpcore_lb_money_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_money_top_name_4%: &#00f986%astralsmpcore_lb_money_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_money_top_name_5%: &#00f986%astralsmpcore_lb_money_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_money_top_name_6%: &#00f986%astralsmpcore_lb_money_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_money_top_name_7%: &#00f986%astralsmpcore_lb_money_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_money_top_name_8%: &#00f986%astralsmpcore_lb_money_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_money_top_name_9%: &#00f986%astralsmpcore_lb_money_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_money_top_name_10%: &#00f986%astralsmpcore_lb_money_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_money_rank% &f%player_name%: &#00f986%astralsmpcore_lb_money_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  mostshards:
+    leaderboard: shards
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.51043675633067
+      y: 185.0
+      z: 13.523152915719976
+      yaw: -89.850624
+      pitch: 89.71832
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ꜱʜᴀʀᴅꜱ'
+    - '&#00f986#1 &f%astralsmpcore_lb_shards_top_name_1%: &#00f986%astralsmpcore_lb_shards_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_shards_top_name_2%: &#00f986%astralsmpcore_lb_shards_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_shards_top_name_3%: &#00f986%astralsmpcore_lb_shards_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_shards_top_name_4%: &#00f986%astralsmpcore_lb_shards_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_shards_top_name_5%: &#00f986%astralsmpcore_lb_shards_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_shards_top_name_6%: &#00f986%astralsmpcore_lb_shards_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_shards_top_name_7%: &#00f986%astralsmpcore_lb_shards_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_shards_top_name_8%: &#00f986%astralsmpcore_lb_shards_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_shards_top_name_9%: &#00f986%astralsmpcore_lb_shards_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_shards_top_name_10%: &#00f986%astralsmpcore_lb_shards_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_shards_rank% &f%player_name%: &#00f986%astralsmpcore_lb_shards_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  playerkills:
+    leaderboard: playerkills
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.530602528905334
+      y: 185.0
+      z: 7.53957593939886
+      yaw: -90.39461
+      pitch: 89.91418
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ᴘʟᴀʏᴇʀ ᴋɪʟʟꜱ'
+    - '&#00f986#1 &f%astralsmpcore_lb_playerkills_top_name_1%: &#00f986%astralsmpcore_lb_playerkills_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_playerkills_top_name_2%: &#00f986%astralsmpcore_lb_playerkills_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_playerkills_top_name_3%: &#00f986%astralsmpcore_lb_playerkills_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_playerkills_top_name_4%: &#00f986%astralsmpcore_lb_playerkills_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_playerkills_top_name_5%: &#00f986%astralsmpcore_lb_playerkills_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_playerkills_top_name_6%: &#00f986%astralsmpcore_lb_playerkills_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_playerkills_top_name_7%: &#00f986%astralsmpcore_lb_playerkills_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_playerkills_top_name_8%: &#00f986%astralsmpcore_lb_playerkills_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_playerkills_top_name_9%: &#00f986%astralsmpcore_lb_playerkills_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_playerkills_top_name_10%: &#00f986%astralsmpcore_lb_playerkills_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_playerkills_rank% &f%player_name%: &#00f986%astralsmpcore_lb_playerkills_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  deaths:
+    leaderboard: deaths
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.498381195494055
+      y: 185.0
+      z: 4.5273521591242485
+      yaw: -90.81383
+      pitch: 89.88784
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ᴅᴇᴀᴛʜꜱ'
+    - '&#00f986#1 &f%astralsmpcore_lb_deaths_top_name_1%: &#00f986%astralsmpcore_lb_deaths_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_deaths_top_name_2%: &#00f986%astralsmpcore_lb_deaths_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_deaths_top_name_3%: &#00f986%astralsmpcore_lb_deaths_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_deaths_top_name_4%: &#00f986%astralsmpcore_lb_deaths_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_deaths_top_name_5%: &#00f986%astralsmpcore_lb_deaths_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_deaths_top_name_6%: &#00f986%astralsmpcore_lb_deaths_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_deaths_top_name_7%: &#00f986%astralsmpcore_lb_deaths_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_deaths_top_name_8%: &#00f986%astralsmpcore_lb_deaths_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_deaths_top_name_9%: &#00f986%astralsmpcore_lb_deaths_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_deaths_top_name_10%: &#00f986%astralsmpcore_lb_deaths_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_deaths_rank% &f%player_name%: &#00f986%astralsmpcore_lb_deaths_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  topplaytime:
+    leaderboard: playtime
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.52459098978247
+      y: 185.0
+      z: 10.501472901179255
+      yaw: -89.313576
+      pitch: 89.86097
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ᴘʟᴀʏᴛɪᴍᴇ'
+    - '&#00f986#1 &f%astralsmpcore_lb_playtime_top_name_1%: &#00f986%astralsmpcore_lb_playtime_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_playtime_top_name_2%: &#00f986%astralsmpcore_lb_playtime_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_playtime_top_name_3%: &#00f986%astralsmpcore_lb_playtime_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_playtime_top_name_4%: &#00f986%astralsmpcore_lb_playtime_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_playtime_top_name_5%: &#00f986%astralsmpcore_lb_playtime_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_playtime_top_name_6%: &#00f986%astralsmpcore_lb_playtime_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_playtime_top_name_7%: &#00f986%astralsmpcore_lb_playtime_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_playtime_top_name_8%: &#00f986%astralsmpcore_lb_playtime_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_playtime_top_name_9%: &#00f986%astralsmpcore_lb_playtime_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_playtime_top_name_10%: &#00f986%astralsmpcore_lb_playtime_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_playtime_rank% &f%player_name%: &#00f986%astralsmpcore_lb_playtime_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  blocksplaced:
+    leaderboard: blocksplaced
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.4556365302064
+      y: 185.0
+      z: 1.515101525104558
+      yaw: -90.81383
+      pitch: 89.88784
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ʙʟᴏᴄᴋꜱ ᴘʟᴀᴄᴇᴅ'
+    - '&#00f986#1 &f%astralsmpcore_lb_blocksplaced_top_name_1%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_blocksplaced_top_name_2%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_blocksplaced_top_name_3%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_blocksplaced_top_name_4%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_blocksplaced_top_name_5%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_blocksplaced_top_name_6%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_blocksplaced_top_name_7%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_blocksplaced_top_name_8%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_blocksplaced_top_name_9%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_blocksplaced_top_name_10%: &#00f986%astralsmpcore_lb_blocksplaced_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_blocksplaced_rank% &f%player_name%: &#00f986%astralsmpcore_lb_blocksplaced_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  blocksbroken:
+    leaderboard: blocksbroken
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.4128107269885
+      y: 185.0
+      z: -1.502866963533529
+      yaw: -90.81383
+      pitch: 89.88784
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ʙʟᴏᴄᴋꜱ ᴍɪɴᴇᴅ'
+    - '&#00f986#1 &f%astralsmpcore_lb_blocksbroken_top_name_1%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_blocksbroken_top_name_2%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_blocksbroken_top_name_3%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_blocksbroken_top_name_4%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_blocksbroken_top_name_5%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_blocksbroken_top_name_6%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_blocksbroken_top_name_7%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_blocksbroken_top_name_8%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_blocksbroken_top_name_9%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_blocksbroken_top_name_10%: &#00f986%astralsmpcore_lb_blocksbroken_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_blocksbroken_rank% &f%player_name%: &#00f986%astralsmpcore_lb_blocksbroken_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  mobkills:
+    leaderboard: mobkills
+    type: TEXT
+    location:
+      world: Spawn
+      x: 8.5
+      y: 100.0
+      z: -59.5
+      yaw: 102.32697
+      pitch: 78.59953
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ᴍᴏʙꜱ ᴋɪʟʟᴇᴅ'
+    - '&#00f986#1 &f%astralsmpcore_lb_mobkills_top_name_1%: &#00f986%astralsmpcore_lb_mobkills_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_mobkills_top_name_2%: &#00f986%astralsmpcore_lb_mobkills_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_mobkills_top_name_3%: &#00f986%astralsmpcore_lb_mobkills_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_mobkills_top_name_4%: &#00f986%astralsmpcore_lb_mobkills_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_mobkills_top_name_5%: &#00f986%astralsmpcore_lb_mobkills_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_mobkills_top_name_6%: &#00f986%astralsmpcore_lb_mobkills_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_mobkills_top_name_7%: &#00f986%astralsmpcore_lb_mobkills_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_mobkills_top_name_8%: &#00f986%astralsmpcore_lb_mobkills_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_mobkills_top_name_9%: &#00f986%astralsmpcore_lb_mobkills_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_mobkills_top_name_10%: &#00f986%astralsmpcore_lb_mobkills_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_mobkills_rank% &f%player_name%: &#00f986%astralsmpcore_lb_mobkills_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  topsell:
+    leaderboard: topsell
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.36998492377061
+      y: 185.0
+      z: -4.520835452171614
+      yaw: -90.81383
+      pitch: 89.88784
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴛᴏᴘ /ꜱᴇʟʟ'
+    - '&#00f986#1 &f%astralsmpcore_lb_topsell_top_name_1%: &#00f986%astralsmpcore_lb_topsell_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_topsell_top_name_2%: &#00f986%astralsmpcore_lb_topsell_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_topsell_top_name_3%: &#00f986%astralsmpcore_lb_topsell_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_topsell_top_name_4%: &#00f986%astralsmpcore_lb_topsell_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_topsell_top_name_5%: &#00f986%astralsmpcore_lb_topsell_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_topsell_top_name_6%: &#00f986%astralsmpcore_lb_topsell_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_topsell_top_name_7%: &#00f986%astralsmpcore_lb_topsell_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_topsell_top_name_8%: &#00f986%astralsmpcore_lb_topsell_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_topsell_top_name_9%: &#00f986%astralsmpcore_lb_topsell_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_topsell_top_name_10%: &#00f986%astralsmpcore_lb_topsell_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_topsell_rank% &f%player_name%: &#00f986%astralsmpcore_lb_topsell_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  
+  mostspent:
+    leaderboard: topspent
+    type: TEXT
+    location:
+      world: Spawn
+      x: 52.32905520263486
+      y: 185.0
+      z: -7.405185525136776
+      yaw: -90.81383
+      pitch: 89.88784
+    visibility_distance: 82
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&#00f986ᴍᴏꜱᴛ ꜱᴘᴇɴᴛ'
+    - '&#00f986#1 &f%astralsmpcore_lb_topspent_top_name_1%: &#00f986%astralsmpcore_lb_topspent_top_value_1%'
+    - '&#00f986#2 &f%astralsmpcore_lb_topspent_top_name_2%: &#00f986%astralsmpcore_lb_topspent_top_value_2%'
+    - '&#00f986#3 &f%astralsmpcore_lb_topspent_top_name_3%: &#00f986%astralsmpcore_lb_topspent_top_value_3%'
+    - '&#00f986#4 &f%astralsmpcore_lb_topspent_top_name_4%: &#00f986%astralsmpcore_lb_topspent_top_value_4%'
+    - '&#00f986#5 &f%astralsmpcore_lb_topspent_top_name_5%: &#00f986%astralsmpcore_lb_topspent_top_value_5%'
+    - '&#00f986#6 &f%astralsmpcore_lb_topspent_top_name_6%: &#00f986%astralsmpcore_lb_topspent_top_value_6%'
+    - '&#00f986#7 &f%astralsmpcore_lb_topspent_top_name_7%: &#00f986%astralsmpcore_lb_topspent_top_value_7%'
+    - '&#00f986#8 &f%astralsmpcore_lb_topspent_top_name_8%: &#00f986%astralsmpcore_lb_topspent_top_value_8%'
+    - '&#00f986#9 &f%astralsmpcore_lb_topspent_top_name_9%: &#00f986%astralsmpcore_lb_topspent_top_value_9%'
+    - '&#00f986#10 &f%astralsmpcore_lb_topspent_top_name_10%: &#00f986%astralsmpcore_lb_topspent_top_value_10%'
+    - ''
+    - '&#00f986%astralsmpcore_lb_topspent_rank% &f%player_name%: &#00f986%astralsmpcore_lb_topspent_value%'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: 40
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0

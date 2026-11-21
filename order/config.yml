@@ -1,0 +1,77 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+command-aliases:
+  - orders
+  - order
+
+# -1 = Unlimited
+minimum-price-per-item: 1
+maximum-price-per-item: -1
+minimum-item-per-order: 1
+maximum-item-per-order: -1 
+max-orders-per-player: 27
+
+announce-orders: true
+announce-message: "&#00fc88Orders &7» &a%owner% &7has created an order for &6%requested-amount% %requested-material%&7 at &#00fc88%price%&7 each!"
+
+# Ignore item lore when Delivering items
+delivering-check-ignore-lore: true
+
+expire-time-seconds: 604800
+deletion-time-seconds: 604800
+
+currency-symbol: "$"
+
+storage:
+  auto-save-seconds: 120
+
+sounds:
+  gui-click:
+    enabled: true
+    sound: UI_BUTTON_CLICK
+  error:
+    enabled: true
+    sound: ENTITY_VILLAGER_NO
+
+chat-input:
+  SignAPI: true
+  ChatAPI: false
+
+sign-gui:
+  item:
+    - ""
+    - "↑↑↑↑↑↑↑↑↑↑↑↑↑"
+    - "   Item    "
+    - "             "
+  amount:
+    - ""
+    - "↑↑↑↑↑↑↑↑↑↑↑↑↑"
+    - "   Amount   "
+    - "             "
+  price:
+    - ""
+    - "↑↑↑↑↑↑↑↑↑↑↑↑↑"
+    - "   Price    "
+    - "             "
+
+economy:
+  abbreviations:
+    enabled: true
+    formats:
+      - "K"
+      - "M"
+      - "B"
+      - "T"

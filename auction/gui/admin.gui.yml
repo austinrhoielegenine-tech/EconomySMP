@@ -1,0 +1,84 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+admin-panel:
+  title: "&8ᴀᴅᴍɪɴ -> &8%player%"
+  rows: 3
+  items:
+    listings:
+      material: CHEST
+      slot: 11
+      name: "&#00fc88ʟɪꜱᴛɪɴɢꜱ"
+      lore:
+        - "&fView this player's active"
+        - "&fauction listings."
+        - ""
+        - "&eClick to open"
+    transactions:
+      material: BOOK
+      slot: 13
+      name: "&#00fc88ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴꜱ"
+      lore:
+        - "&fView this player's buy"
+        - "&fand sell history."
+        - ""
+        - "&eClick to open"
+    block:
+      material: IRON_BARS
+      slot: 15
+      name: "&cʙʟᴏᴄᴋ ᴘʟᴀʏᴇʀ"
+      lore:
+        - "&fPrevent this player from"
+        - "&fusing the auction house."
+        - ""
+        - "&cClick to block"
+    unblock:
+      material: LIME_STAINED_GLASS
+      slot: 15
+      name: "&aᴜɴʙʟᴏᴄᴋ ᴘʟᴀʏᴇʀ"
+      lore:
+        - "&fAllow this player to"
+        - "&fuse the auction house again."
+        - ""
+        - "&aClick to unblock"
+    back:
+      material: ARROW
+      slot: 22
+      name: "&aʙᴀᴄᴋ"
+      lore:
+        - "&fReturn to the auction house"
+
+admin-listings:
+  title: "&8ʟɪꜱᴛɪɴɢꜱ -> &f%player%"
+  rows: 6
+  items:
+    previous-page:
+      material: ARROW
+      slot: 45
+      name: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+      lore:
+        - "&fPrevious page"
+    next-page:
+      material: ARROW
+      slot: 53
+      name: "&#00fc88ɴᴇxᴛ"
+      lore:
+        - "&fNext page"
+    back:
+      material: ARROW
+      slot: 49
+      name: "&aʙᴀᴄᴋ"
+      lore:
+        - "&fBack to admin panel"

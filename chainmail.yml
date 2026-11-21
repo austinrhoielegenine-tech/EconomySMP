@@ -1,0 +1,40 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+settings:
+  first-join-kit: true
+  respawn-kit: true
+
+messages:
+  enabled: "&aYou have enabled the chainmail kit on respawn."
+  disabled: "&cYou have disabled the chainmail kit on respawn."
+  no-permission: "&cYou don't have permission to use this."
+
+kit:
+  helmet:
+    enabled: true
+  chestplate:
+    enabled: true
+  leggings:
+    enabled: true
+  boots:
+    enabled: true
+  sword:
+    enabled: true
+    material: STONE_SWORD
+  food:
+    enabled: true
+    material: COOKED_BEEF
+    amount: 32

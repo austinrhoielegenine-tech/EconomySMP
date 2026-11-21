@@ -1,0 +1,31 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+
+prefix: "&#55CFFF[Maintenance] &7"
+
+enabled: "&aMaintenance mode has been &lenabled&a."
+disabled: "&cMaintenance mode has been &ldisabled&c."
+already-enabled: "&cMaintenance is already enabled."
+already-disabled: "&cMaintenance is already disabled."
+no-permission: "&cYou don't have permission to use this command."
+reload: "&aMaintenance config reloaded."
+whitelist-added: "&aAdded &f%player% &ato the maintenance whitelist."
+whitelist-removed: "&cRemoved &f%player% &cfrom the maintenance whitelist."
+
+countdown:
+  - "&#55CFFFMaintenance starting in &f%time% &7seconds..."
+
+finished:
+  - "&#55CFFF&lMaintenance is now active."
+  - "&7The server is temporarily closed. Join our Discord: &f%discord%"

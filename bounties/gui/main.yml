@@ -1,0 +1,68 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ʙᴏᴜɴᴛʏ (Page %page%/%max%)"
+rows: 6
+slots-bounty: 0-44
+items:
+  bounty-head:
+    name: "&#00fc88%name%"
+    lore:
+      - "&fBounty: &7$%bounty%"
+  search:
+    name: "&#00fc88sᴇᴀʀᴄʜ"
+    material: OAK_SIGN
+    slot: 50
+    lore:
+      - "&fClick to search."
+  previous-page:
+    name: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+    material: ARROW
+    slot: 45
+    lore:
+      - "&fClick to navigate."
+  refresh:
+    name: "&#00fc88ʙᴏᴜɴᴛʏ"
+    material: SKELETON_SKULL
+    slot: 49
+    lore:
+      - "&fClick to refresh"
+      - ""
+      - "&fSet a bounty using this:"
+      - "&f/bounty add (player) (amount)"
+  next-page:
+    name: "&#00fc88ɴᴇxᴛ"
+    material: ARROW
+    slot: 53
+    lore:
+      - "&fClick to go to the next page."
+  sort:
+    name: "&#00fc88ꜱᴏʀᴛ"
+    material: HOPPER
+    slot: 48
+    lore:
+      - "&fClick to change the sorting"
+    active_prefix: "&#00fc88● "
+    inactive_prefix: "&f● "
+    keys:
+      - "newest"
+      - "oldest"
+      - "highest_price"
+      - "lowest_price"
+    options:
+      - "Newest"
+      - "Oldest"
+      - "Highest Price"
+      - "Lowest Price"

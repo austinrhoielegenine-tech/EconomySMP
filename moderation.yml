@@ -1,0 +1,99 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+messages:
+  no-permission: "&cNo permission."
+  player-not-found: "&cPlayer not found."
+  gmc: "&7Gamemode changed to &#37BFF9Creative"
+  gms: "&7Gamemode changed to &#37BFF9Survival"
+  gmsp: "&7Gamemode changed to &#37BFF9Spectator"
+  gtp: "&7Teleported to &#37BFF9%player%"
+  gtph: "&7Teleported &#37BFF9%player% &7to you"
+  vanish-on: "&7You are now &#37BFF9vanished"
+  vanish-off: "&7You are no longer &#37BFF9vanished"
+  fake-leave: "&#37BFF9%player% &7left the server"
+  fake-join: "&#37BFF9%player% &7joined the server"
+  vanish-chat-blocked: "&cYou cannot chat while vanished."
+  find-self: "&7Your world is &#37BFF9%world%"
+  find-other: "&7Player &#37BFF9%player% &7world is &#37BFF9%world%"
+  ping-self: "&7Your ping is &#37BFF9%ping%ms"
+  ping-other: "&7Player's ping is &#37BFF9%ping%ms"
+
+# Alert staff when dangerous commands / creative item taking happens
+command-logs:
+  enabled: true
+  # Permission to RECEIVE alerts
+  alert-permission: "astralsmpcore.system.moderation.commandlog"
+  # Commands that trigger alerts (label only, case-insensitive)
+  watched-commands:
+    - give
+    - minecraft:give
+    - gmc
+    - gamemode
+    - gm
+  # Alert when players take items out of creative inventory
+  creative-item-alerts: true
+  # Discord webhook (leave empty to disable)
+  discord-webhook: ""
+  # Messages
+  alert-message: "&c[CmdLog] &f%player% &7ran &f/%command%"
+  creative-alert-message: "&c[CmdLog] &f%player% &7took &f%item% &7from creative"
+
+sus:
+  enabled: true
+  max-flags-stored: 500
+  flag-expire-minutes: 60
+  anticheats:
+    grim: true
+    vulcan: true
+    matrix: true
+    totemguard: true
+    angelguard: true
+  gui:
+    title: "&8Suspected Players"
+    rows: 6
+    player-head-lore:
+      - "&7Flags: &f%flags%"
+      - "&7Last: &f%last_check% &7(%last_ac%)"
+      - "&7Click for details"
+    clock:
+      material: CLOCK
+      slot: 48
+      name: "&#34eb9bFilter"
+      lore:
+        - "&7Click to change anti-cheat filter"
+    nether-star:
+      material: NETHER_STAR
+      slot: 49
+      name: "&#34eb9bRefresh"
+      lore:
+        - "&7Click to refresh the list"
+    back:
+      material: ARROW
+      slot: 45
+      name: "&#34eb9bPrevious"
+    next:
+      material: ARROW
+      slot: 53
+      name: "&#34eb9bNext"
+    filter-gui:
+      title: "&8Filter Anti-Cheats"
+      rows: 3
+  messages:
+    no-permission: "&cNo permission."
+    disabled: "&cSus system is disabled."
+    no-flags: "&7No suspected players."
+    cleared: "&aCleared flags for %player%"
+    filter-set: "&7Filter set to &f%filter%"

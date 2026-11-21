@@ -1,0 +1,61 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ᴘɪᴄᴋ ᴇɴᴄʜᴀɴᴛᴍᴇɴᴛs"
+rows: 6
+
+items:
+  background:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    slots: [1, 9, 10]
+  
+  cancel:
+    material: RED_STAINED_GLASS_PANE
+    slot: 46
+    name: "&cCancel"
+    lore:
+      - "&fReturn without enchantments"
+  
+  confirm:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 52
+    name: "&aConfirm"
+    lore:
+      - "&fApply selected enchantments"
+  
+  next-page:
+    material: ARROW
+    slot: 53
+    name: "&aNext"
+    lore:
+      - "&fNext page"
+  
+  back-page:
+    material: ARROW
+    slot: 45
+    name: "&aBack"
+    lore:
+      - "&fPrevious page"
+
+  enchanted-book:
+    material: ENCHANTED_BOOK
+    name: "&b%enchant%"
+    lore-selected: "&aSelected"
+    lore-unselected: "&fClick to select"
+
+  display-item:
+    slot: 0
+    name-format: "&b%item%"

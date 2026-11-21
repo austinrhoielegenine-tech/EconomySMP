@@ -1,0 +1,73 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+# AstralSMPcore by Xyr0
+# Master configuration - enable/disable systems
+# If false, the system is disabled and its commands do not work
+
+systems:
+  duels: true
+  doublejump: true
+  profile: true
+  welcomer: true
+  moderation: true
+  auction-house: true
+  baltop: true
+  billford: true
+  bounties: true
+  crates: true
+  homes: true
+  orders: true
+  punishment: true
+  phantoms: true
+  holograms: true
+  sell: true
+  leaderboards: true
+  shards: true
+  shop: true
+  spawners: true
+  teams: true
+  tools: true
+  kits: true
+  tpa: true
+  warps: true
+  chat: true
+  combat: true
+  enderchest: true
+  rtp: true
+  reports: true
+  maintenance: true
+  help: true
+  hide: true
+  keyall: true
+  media: true
+  mobs: true
+  rules: true
+  safety: true
+  whitelist: true
+  chainmail: true
+  stats: true
+  pay: true
+  msg: true
+  settings: true
+  scoreboard: true
+  links: true
+  voicechat: true
+  anti-health-indicator: true
+
+settings:
+  language: "en"
+  debug: false
+

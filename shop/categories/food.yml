@@ -1,0 +1,67 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ѕʜᴏᴘ - ꜰᴏᴏᴅ"
+size: 27
+type: shop
+economy: vault
+back-slot: 18
+back-open: main
+items:
+  "9":
+    material: POTATO
+    name: "&fPotato"
+    price: 96
+    amount: 1
+  "10":
+    material: SWEET_BERRIES
+    name: "&fSweet Berries"
+    price: 50
+    amount: 1
+  "11":
+    material: MELON_SLICE
+    name: "&fMelon Slice"
+    price: 36
+    amount: 1
+  "12":
+    material: CARROT
+    name: "&fCarrot"
+    price: 96
+    amount: 1
+  "13":
+    material: APPLE
+    name: "&fApple"
+    price: 25
+    amount: 1
+  "14":
+    material: COOKED_CHICKEN
+    name: "&fCooked Chicken"
+    price: 48
+    amount: 1
+  "15":
+    material: COOKED_BEEF
+    name: "&fSteak"
+    price: 35
+    amount: 1
+  "16":
+    material: GOLDEN_CARROT
+    name: "&fGolden Carrot"
+    price: 120
+    amount: 1
+  "17":
+    material: GOLDEN_APPLE
+    name: "&fGolden Apple"
+    price: 250
+    amount: 1

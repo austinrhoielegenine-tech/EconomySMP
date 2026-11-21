@@ -1,0 +1,55 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+server:
+  name: "YourServer"
+  discord: "https://discord.gg/yourserver"
+
+permissions:
+  use: "maintenance.use"
+  bypass: "maintenance.bypass"
+
+settings:
+  allow-ops: true
+  use-whitelist: true
+
+countdown:
+  enabled: true
+  seconds: 30
+  title:
+    enabled: true
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+    only-last-seconds: 10
+    title: "<#55CFFF>&lMaintenance"
+    subtitle: "&7Starting in <#55CFFF>%time% &7seconds"
+  sounds:
+    enabled: true
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+    volume: 1.0
+    pitch: 1.0
+
+kick:
+  message:
+    - "<#55CFFF>&lMaintenance"
+    - ""
+    - "&fThe server is currently under maintenance."
+    - ""
+    - "&fJoin our Discord:"
+    - "<#55CFFF>%discord%"
+
+maintenance:
+  enabled: false # maintenance Status / Set to true and reload the plugin to enable maintenance 

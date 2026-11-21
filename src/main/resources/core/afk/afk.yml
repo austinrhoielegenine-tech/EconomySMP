@@ -1,7 +1,0 @@
-enable: true
-AFK-SYSTEM:
-  ENABLED: true
-  TIME: 180
-  SPAWN-CUBOID-NAME: spawn
-  AFK-CUBOID-NAME: ''
-  MESSAGE: '&7You have been moved to the AFK area for being inactive in the spawn.'

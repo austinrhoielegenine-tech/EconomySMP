@@ -1,0 +1,66 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prices:
+  AMETHYST_CLUSTER: 4
+  AMETHYST_SHARD: 50
+  ANCIENT_DEBRIS: 600
+  DIAMOND_BLOCK: 1100
+  NETHERITE_BLOCK: 225000
+  EMERALD_BLOCK: 72
+  REDSTONE_BLOCK: 450
+  IRON_BLOCK: 45
+  LAPIS_BLOCK: 72
+  GOLD_BLOCK: 45
+  COPPER_BLOCK: 25
+  BRICK: 5
+  COAL_ORE: 28
+  COPPER_ORE: 20
+  CHARCOAL: 8
+  COAL: 12
+  COPPER_INGOT: 14
+  CLAY_BALL: 2
+  DEEPSLATE_COAL_ORE: 4
+  DEEPSLATE_IRON_ORE: 20
+  DEEPSLATE_COPPER_ORE: 26
+  DEEPSLATE_GOLD_ORE: 34
+  DEEPSLATE_REDSTONE_ORE: 36
+  DEEPSLATE_EMERALD_ORE: 1000
+  DEEPSLATE_LAPIS_ORE: 36
+  DEEPSLATE_DIAMOND_ORE: 180
+  DIAMOND_ORE: 100
+  DIAMOND: 120
+  EMERALD_ORE: 20
+  ECHO_SHARD: 30
+  GOLD_ORE: 20
+  GOLD_INGOT: 5
+  GOLD_NUGGET: 0.5
+  GLOWSTONE_DUST: 1
+  IRON_ORE: 16
+  IRON_INGOT: 5
+  IRON_NUGGET: 0.5
+  LARGE_AMETHYST_BUD: 28
+  LAPIS_LAZULI: 8
+  MEDIUM_AMETHYST_BUD: 20
+  NETHER_GOLD_ORE: 24
+  NETHER_QUARTZ_ORE: 20
+  NETHERITE_INGOT: 25000
+  NETHERITE_SCRAP: 3000
+  REDSTONE_ORE: 12
+  RAW_IRON: 20
+  RAW_GOLD: 40
+  RAW_COPPER: 20
+  REDSTONE: 50
+  SMALL_AMETHYST_BUD: 16

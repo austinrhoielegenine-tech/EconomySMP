@@ -1,0 +1,109 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║
+# ███████║███████╗   ██║   ██████╔╝███████║██║
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝
+#
+sellmulti:
+  title: "&8ꜱᴇʟʟ ᴍᴜʟᴛɪ"
+  rows: 3
+
+items:
+  crops:
+    name: "&#00f986ᴄʀᴏᴘꜱ"
+    slot: 9
+    material: WHEAT
+    category: crops
+    lore:
+      - "&fSell crops to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  ores:
+    name: "&#00f986ᴏʀᴇꜱ"
+    slot: 10
+    material: DIAMOND
+    category: ores
+    lore:
+      - "&fSell ores to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  mobs:
+    name: "&#00f986ᴍᴏʙ ᴅʀᴏᴘꜱ"
+    slot: 11
+    material: BONE
+    category: mobs
+    lore:
+      - "&fSell mob drops to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  natural:
+    name: "&#00f986ɴᴀᴛᴜʀᴀʟ"
+    slot: 12
+    material: OAK_LEAVES
+    category: natural
+    lore:
+      - "&fSell natural items to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  tools:
+    name: "&#00f986ᴀʀᴍᴏʀ & ᴛᴏᴏʟꜱ"
+    slot: 13
+    material: NETHERITE_HELMET
+    category: tools
+    lore:
+      - "&fSell armor and tools to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  fish:
+    name: "&#00f986ꜰɪꜱʜ"
+    slot: 14
+    material: TROPICAL_FISH
+    category: fish
+    lore:
+      - "&fSell fish to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  books:
+    name: "&#00f986ʙᴏᴏᴋꜱ"
+    slot: 15
+    material: ENCHANTED_BOOK
+    category: books
+    lore:
+      - "&fSell books to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  potions:
+    name: "&#00f986ᴘᴏᴛɪᴏɴꜱ"
+    slot: 16
+    material: POTION
+    category: potions
+    lore:
+      - "&fSell potions to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"
+  blocks:
+    name: "&#00f986ʙʟᴏᴄᴋꜱ"
+    slot: 17
+    material: BRICK
+    category: blocks
+    lore:
+      - "&fSell blocks to upgrade your multi!"
+      - ""
+      - "&7Progress to &#00fc88%next_multi%x"
+      - "&8%bar% &r &#00fc88%progress%%"

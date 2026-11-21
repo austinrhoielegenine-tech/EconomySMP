@@ -1,0 +1,20 @@
+title: "&8ᴋɪᴛ ᴘʀᴇᴠɪᴇᴡ"
+rows: 6
+
+claim-button:
+  slot: 49
+  material: LIME_CONCRETE
+  name: "&#00fc88ᴄʟᴀɪᴍ"
+  lore:
+    - "&fClick to claim this kit"
+
+back-button:
+  slot: 45
+  material: ARROW
+  name: "&#00fc88ʙᴀᴄᴋ"
+  lore:
+    - "&fReturn to kits menu"
+
+filler:
+  material: AIR
+  name: " "

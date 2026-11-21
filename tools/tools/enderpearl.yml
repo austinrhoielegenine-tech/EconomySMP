@@ -1,0 +1,40 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ɪɴꜰɪɴɪᴛᴇ ᴇɴᴅᴇʀ ᴘᴇᴀʀʟ'
+lore:
+- '&7Ender Pearl that never breaks'
+- '&8Self Destruct:'
+- '&8%durability%'
+custom-model-data: 1000
+material: ENDER_PEARL
+durability:
+  mode: infinite
+enchantments:
+  enabled: false
+  list: []
+sound:
+  enabled: true
+  type: ENTITY_ENDERMAN_TELEPORT
+  volume: 1.0
+  pitch: 1.0
+particle:
+  enabled: true
+  type: PORTAL
+  count: 50
+  additional-particle:
+    enabled: true
+    type: DRAGON_BREATH
+    count: 30

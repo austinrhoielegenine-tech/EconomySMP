@@ -1,0 +1,67 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prefix-enable: false
+
+chat-broadcast:
+  enable: true
+  message: "&#00fc88ᴀᴜᴄᴛɪᴏɴ &7» &#00fc88%player% &7has listed &a%amount% %item% &7for &#00fc88%price% &7on the auction house &7(/ah)"
+
+messages:
+  auction-created: "&7Auction successfully created for &#00fc88%price%&7!"
+  item-bought: "&7You bought &a%amount% %item% &7from the auction house for &#00fc88%price%&7!"
+  item-sold: "&#00fc88%player% &7bought your &a%amount% %item% for &#00fc88%price%&7!"
+  config-reloaded: "&#00FF00AstralAuction reloaded."
+  auction-removed: "&#00fc88You successfully removed the item from the auction house!"
+  item-returned: "&7Your item &a%item% &7has been returned to you!"
+  price-too-low: "&7The price you set is below the minimum of &#00fc88%amount%&7!"
+  price-too-high: "&7The price you set is above the maximum of &#00fc88%amount%&7!"
+  invalid-price: "&cInvalid number!"
+  not-enough-money: "&cYou do not have enough money!"
+  item-not-found: "&cItem not found!"
+  inventory-full: "&cYour inventory is full!"
+  limit-reached: "&7You have reached the auction limit! &#00fc88(%current%/%limit%)&7!"
+  no-permission: "&cYou do not have permission to use this command!"
+  player-only: "&cYou must be a player to use this command!"
+  no-item-in-hand: "&cYou must hold an item in your hand!"
+  own-auction: "&cYou cannot buy your own auction!"
+  auction-already-sold: "&cThis auction has already been sold!"
+  expired: "&7Your &a%amount% %item% &7expired on &#00fc88%date%&7!"
+  no-transactions-found: "&cNo transactions found!"
+  search: "&cType the item name or ID to search for!"
+  search-cancelled: "&cSearch cancelled!"
+  offline-auction-sold: "&7Your &a%amount% %item% &7was sold while you were offline for &#00fc88%price%&7!"
+  blacklisted-item: "&cYou cannot sell this item on the auction house!"
+  fast-sell-on: "&aFast sell mode enabled!"
+  fast-sell-off: "&cFast sell mode disabled!"
+  fast-buy-on: "&aFast buy mode enabled!"
+  fast-buy-off: "&cFast buy mode disabled!"
+  usage-sell: "&cUsage: /ah sell <price>"
+  player-is-blocked: "&cYou are blocked from using the auction house!"
+  player-blocked: "&c%player% can no longer use the auction house."
+  player-unblocked: "&a%player% can use the auction house again."
+  listing-removed-admin: "&cListing removed by staff."
+  no-admin: "&cYou cannot manage this."
+  admin-usage: "&cUsage: /ah admin <player>"
+
+  help: |
+    &#00fc88&lAUCTION
+     &7/ah
+     &7/ah sell <price>
+     &7/ah search <item>
+     &7/ah view <player>
+     &7/ah fastbuy
+     &7/ah fastsell
+     &7/ah history

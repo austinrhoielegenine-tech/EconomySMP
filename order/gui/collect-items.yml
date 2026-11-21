@@ -1,0 +1,41 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+collect-items:
+    title: "&8ᴏʀᴅᴇʀs -> Collect Items"
+    rows: 6
+    collect-items: 0-44
+
+items:
+  previous-page-slot: 45
+  previous-page:
+    material: ARROW
+    displayname: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+    lore:
+      - "&fClick to go to the previous page"
+
+  next-page-slot: 53
+  next-page:
+    material: ARROW
+    displayname: "&#00fc88ɴᴇxᴛ"
+    lore:
+      - "&fClick to go to the next page"
+
+  drop-loot:
+    material: DISPENSER
+    slot: 49
+    name: "&#00fc88ᴅʀᴏᴘ ʟᴏᴏᴛ"
+    lore:
+      - "&fClick to drop all loot on the page"

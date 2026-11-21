@@ -1,0 +1,65 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+enabled: false
+url: ""
+username: "AstralOrder"
+avatar-url: ""
+
+events:
+  order-created: true
+  order-filled: true
+  order-cancelled: true
+
+message:
+  created-color: 5814783
+  filled-color: 16755200
+  cancelled-color: 15158332
+
+  embed-order-created: "New Order Created"
+  embed-order-filled: "Order Filled"
+  embed-order-cancelled: "Order Cancelled"
+
+  order-created:
+    - "Creator: %creator%"
+    - "Item: %amount%x %item%"
+    - "Price each: %price%"
+    - "Total: %total%"
+    - "Description: %lore%"
+    - ""
+    - "Happy trading!"
+
+  order-filled:
+    - "Creator: %creator%"
+    - "Filled by: %filler%"
+    - "Item: %amount%x %item%"
+    - "Price each: %price%"
+    - "Total: %total%"
+    - "Description: %lore%"
+    - ""
+    - "Order completed!"
+
+  order-cancelled:
+    - "Creator: %creator%"
+    - "Item: %amount%x %item%"
+    - "Price each: %price%"
+    - "Remaining: %remaining%"
+    - "Description: %lore%"
+    - ""
+    - "Order was cancelled."
+
+  item-format:
+    show-item-name-uppercase: false
+    show-item-lore: true

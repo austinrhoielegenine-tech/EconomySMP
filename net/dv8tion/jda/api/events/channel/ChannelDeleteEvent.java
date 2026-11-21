@@ -1,0 +1,11 @@
+package net.dv8tion.jda.api.events.channel;
+
+import javax.annotation.Nonnull;
+import net.dv8tion.jda.api.JDA;
+import net.dv8tion.jda.api.entities.channel.Channel;
+
+public class ChannelDeleteEvent extends GenericChannelEvent {
+   public ChannelDeleteEvent(@Nonnull JDA api, long responseNumber, Channel channel) {
+      super(api, responseNumber, channel);
+   }
+}

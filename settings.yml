@@ -1,0 +1,254 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+
+
+# Setting toggle cooldown
+cooldown:
+  enabled: true
+  duration: 3
+  message: "&#FF9600Please wait %time% seconds before changing settings again!"
+
+# Toggle status labels
+toggle:
+  enabled: "&a&lON"
+  disabled: "&c&lOFF"
+
+# Visibility setting only works in specified worlds/regions
+# If regions are specified, they take priority over worlds
+player-visibility:
+  worlds:
+    - Spawn 
+    - AFK
+  # WorldGuard regions where player visibility setting applies
+  # Leave empty to use world-based check instead
+  regions:
+    - spawn
+    - hub
+
+
+settings-gui:
+  title: "&8ѕᴇᴛᴛɪɴɢѕ"
+  gui-slots: 54
+  status:
+    on: "&#00FF00&lON"
+    off: "&#F91818&lOFF"
+  items:
+    public_chat:
+      slot: 10
+      material: "OAK_SIGN"
+      display-name: "&#08FB7Bᴘᴜʙʟɪᴄ ᴄʜᴀᴛ"
+      lore: "&fCurrently: %status%"
+      command: "globaltoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    private_messages:
+      slot: 11
+      material: "PAPER"
+      display-name: "&#08FB7Bᴘʀɪᴠᴀᴛᴇ ᴍᴇssᴀɢᴇs"
+      lore: "&fCurrently: %status%"
+      command: "msgtoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    chat_server_messages:
+      slot: 12
+      material: "WRITABLE_BOOK"
+      display-name: "&#08FB7Bᴄʜᴀᴛ sᴇʀᴠᴇʀ ᴍᴇssᴀɢᴇs"
+      lore: "&fCurrently: %status%"
+      command: "servertoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    hotbar_server_messages:
+      slot: 13
+      material: "COMPASS"
+      display-name: "&#08FB7Bʜᴏᴛʙᴀʀ sᴇʀᴠᴇʀ ᴍᴇssᴀɢᴇs"
+      lore: "&fCurrently: %status%"
+      command: "hotbartoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    pay_alerts:
+      slot: 14
+      material: "GOLD_INGOT"
+      display-name: "&#08FB7Bᴘᴀʏ ᴀʟᴇʀᴛs"
+      lore: "&fCurrently: %status%"
+      command: "payalerttoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    bounty_alerts:
+      slot: 15
+      material: "DIAMOND_SWORD"
+      display-name: "&#08FB7Bʙᴏᴜɴᴛʏ ᴀʟᴇʀᴛs"
+      lore: "&fCurrently: %status%"
+      command: "bountytoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    auction_alerts:
+      slot: 16
+      material: "CHEST"
+      display-name: "&#08FB7Bᴀᴜᴄᴛɪᴏɴ ᴀʟᴇʀᴛs"
+      lore: "&fCurrently: %status%"
+      command: "auctiontoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    fast_crystals:
+      slot: 19
+      material: "END_CRYSTAL"
+      display-name: "&#08FB7Bғᴀsᴛ ᴄʀʏsᴛᴀʟs"
+      lore: "&fCurrently: %status%"
+      command: "fastcrystal"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    explosion_sounds:
+      slot: 22
+      material: "BELL"
+      display-name: "&#08FB7Bᴇxᴘʟᴏsɪᴏɴ sᴏᴜɴᴅs"
+      lore: "&fCurrently: %status%"
+      command: "explosionsoundtoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    quick_auction_buy:
+      slot: 23
+      material: "GOLD_BLOCK"
+      display-name: "&#08FB7Bǫᴜɪᴄᴋ ᴀᴜᴄᴛɪᴏɴ ʙᴜʏ"
+      lore: "&fCurrently: %status%"
+      command: "quickbuy"
+      default: false
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    chainmail_on_respawn:
+      slot: 24
+      material: "CHAINMAIL_CHESTPLATE"
+      display-name: "&#08FB7Bᴄʜᴀɪɴᴍᴀɪʟ ᴏɴ ʀᴇsᴘᴀᴡɴ"
+      lore: "&fCurrently: %status%"
+      command: "cm"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    mob_disable:
+      slot: 25
+      material: "ZOMBIE_HEAD"
+      display-name: "&#08FB7Bᴍᴏʙ ᴅɪsᴀʙʟᴇ"
+      lore: "&fCurrently: %status%"
+      command: "mobtoggle"
+      default: false
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    player_visibility:
+      slot: 28
+      material: "ENDER_EYE"
+      display-name: "&#08FB7Bᴘʟᴀʏᴇʀ ᴠɪsɪʙɪʟɪᴛʏ"
+      lore: "&fCurrently: %status%"
+      command: "visibilitytoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    scoreboard:
+      slot: 29
+      material: "NAME_TAG"
+      display-name: "&#08FB7Bsᴄᴏʀᴇʙᴏᴀʀᴅ"
+      lore: "&fCurrently: %status%"
+      command: "sb"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    tpa_confirm_menu:
+      slot: 30
+      material: "ENDER_PEARL"
+      display-name: "&#08FB7Bᴛᴘᴀ ᴄᴏɴғɪʀᴍ ᴍᴇɴᴜ"
+      lore: "&fCurrently: %status%"
+      command: "tpaconfirmtoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    after_duel_songs:
+      slot: 31
+      material: "JUKEBOX"
+      display-name: "&#08FB7Bᴀғᴛᴇʀ ᴅᴜᴇʟ sᴏɴɢs"
+      lore: "&fCurrently: %status%"
+      command: "duelsongtoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    sound_notifications:
+      slot: 32
+      material: "NOTE_BLOCK"
+      display-name: "&#08FB7Bsᴏᴜɴᴅ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴs"
+      lore: "&fCurrently: %status%"
+      command: "soundstoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    order_notifications:
+      slot: 33
+      material: "HOPPER"
+      display-name: "&#08FB7Bᴏʀᴅᴇʀ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴs"
+      lore: "&fCurrently: %status%"
+      command: "ordertoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    duels_requests:
+      slot: 34
+      material: "DIAMOND_SWORD"
+      display-name: "&#08FB7Bᴅᴜᴇʟs ʀᴇǫᴜᴇsᴛs"
+      lore: "&fCurrently: %status%"
+      command: "duelrequesttoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    tpa_requests:
+      slot: 38
+      material: "ENDER_PEARL"
+      display-name: "&#08FB7Bᴛᴘᴀ ʀᴇǫᴜᴇsᴛs"
+      lore: "&fCurrently: %status%"
+      command: "tpatoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    tpa_here_requests:
+      slot: 39
+      material: "CLOCK"
+      display-name: "&#08FB7Bᴛᴘᴀ ʜᴇʀᴇ ʀᴇǫᴜᴇsᴛs"
+      lore: "&fCurrently: %status%"
+      command: "tpaheretoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    tpa_auto:
+      slot: 44
+      material: "LIME_DYE"
+      display-name: "&#08FB7Bᴛᴘ ᴀᴜᴛᴏ"
+      lore: "&fCurrently: %status%"
+      command: "tpauto"
+      default: false
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    team_invites:
+      slot: 40
+      material: "SHIELD"
+      display-name: "&#08FB7Bᴛᴇᴀᴍ ɪɴᴠɪᴛᴇs"
+      lore: "&fCurrently: %status%"
+      command: "teamtoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    payments:
+      slot: 41
+      material: "EMERALD"
+      display-name: "&#08FB7Bᴘᴀʏᴍᴇɴᴛs"
+      lore: "&fCurrently: %status%"
+      command: "paymenttoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    team_chat:
+      slot: 42
+      material: "BOOK"
+      display-name: "&#08FB7Bᴛᴇᴀᴍ ᴄʜᴀᴛ"
+      lore: "&fCurrently: %status%"
+      command: "teamchattoggle"
+      default: false
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    worth_display:
+      slot: 43
+      material: "EXPERIENCE_BOTTLE"
+      display-name: "&#08FB7Bᴡᴏʀᴛʜ ᴅɪsᴘʟᴀʏ"
+      lore: "&fCurrently: %status%"
+      command: "worthtoggle"
+      default: true
+      sound: "ENTITY_EXPERIENCE_ORB_PICKUP"

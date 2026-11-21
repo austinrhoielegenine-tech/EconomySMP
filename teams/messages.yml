@@ -1,0 +1,96 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prefix-enable: false
+prefix: ""
+
+errors:
+  team-already-exists: "&cA team with this name already exists!"
+  already-in-team: "&cYou are already in a team!"
+  not-in-team: "&cYou are not in a team!"
+  not-leader: "&cOnly the team leader can do that!"
+  player-not-found: "&cPlayer not found!"
+  player-already-in-team: "&cThis player is already in a team!"
+  player-only: "&cOnly players can use this!"
+  no-permission: "&cYou do not have permission!"
+  no-invite: "&cYou have no pending team invite!"
+  team-not-found: "&cThat team no longer exists!"
+  team-full: "&cYour team is full!"
+  cannot-manage-owner: "&cYou cannot manage the team owner!"
+  team-home-disabled: "&cTeam homes are currently disabled on this server!"
+  no-home: "&cYour team has no home set!"
+  usage-create: "&cUsage: /team create <name>"
+  usage-invite: "&cUsage: /team invite <player>"
+  usage-kick: "&cUsage: /team kick <player>"
+  usage-chat: "&cUsage: /team chat <message> or /team chat toggle"
+  usage-transfer: "&cUsage: /team transfer <player>"
+  usage-info: "&cUsage: /team info <team>"
+  blocked-team-name: "&cYou cannot create a team with that name!"
+  invalid-team-name-length: "&cTeam name must be between %min% and %max% characters long!"
+  invalid-team-name-placeholder: "&cYou cannot create a team with that name!"
+
+team:
+  pvp-enabled: "&aTeam-PVP has been enabled!"
+  pvp-disabled: "&cTeam-PVP has been disabled!"
+  pvp-disabled-damage: "&cYou cannot damage team members!"
+  plugin-reloaded: "&#00FF00Team plugin has been reloaded!"
+  created: "&7Your team &#34eb9b%astralsmpcore_teams_name% &7has been created"
+  invite-sent: "&7Invitation sent to &#34eb9b%player%"
+  invite-received:
+    - "&7You have been invited to the team &#34eb9b%astralsmpcore_teams_name%&7!"
+    - "&7Use &#34eb9b/team accept &7or &#34eb9b/team cancel"
+  invite-cancelled: "&cInvite cancelled!"
+  joined: "&7You have joined the team &#34eb9b%astralsmpcore_teams_name%"
+  member-joined: "&7Player &#34eb9b%player% &7has joined the team"
+  left: "&#FC0000You have left the team!"
+  member-left: "&7The player &#34eb9b%player% &7has left the team!"
+  player-kicked: "&cPlayer %player% has been kicked from the team!"
+  you-were-kicked: "&cYou were kicked from the team!"
+  deleted: "&cTeam %astralsmpcore_teams_name% has been deleted!"
+  home-set: "&aTeam home has been set!"
+  home-deleted: "&cTeam home has been deleted!"
+  new-owner: "&7Team leader has been transferred to &#34eb9b%player%"
+  team-search: "&cType the name of the player or type cancel to cancel the action!"
+  search-cancelled: "&cTeam search cancelled!"
+  teleport-countdown: "&7Teleport in &#34eb9b%count% &7seconds"
+  teleport-completed: "&aYou have been teleported to Team home!"
+  already-teleporting: "&cYou are already teleporting!"
+  teleport-cancelled: "&cTeleport cancelled!"
+  chat-enabled: "&aTeam chat enabled!"
+  chat-disabled: "&cTeam chat disabled!"
+  chat-format: "&#00a3fb[TeamChat] &#00a3fb%player%&7: &#00a3fb%message%"
+
+command-usage: |
+  &#00FF00TEAM
+   &7/team
+   &7/team create <name>
+   &7/team invite <player>
+   &7/team accept
+   & &7/team cancel
+   & &7/team leave
+   &7/team kick <player>
+   &7/team disband
+   &7/team info
+   &7/team sethome
+   &7/team home
+   &7/team transfer <player>
+   &7/team chat <message>
+   &7/team chat toggle
+   &7/team pvp
+   &7/team help
+
+command-usage-admin: |
+  &#FF0000TEAM ADMIN
+   &7/team reload

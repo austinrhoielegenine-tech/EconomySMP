@@ -1,0 +1,99 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+order-items:
+  title: "&8ᴏʀᴅᴇʀs (Page %page%)"
+  rows: 6
+  order-items: 0-44
+
+  items:
+    previous-page-slot: 45
+    previous-page:
+      material: ARROW
+      displayname: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+      lore:
+        - "&fClick to go to the previous page"
+
+    next-page-slot: 53
+    next-page:
+      material: ARROW
+      displayname: "&#00fc88ɴᴇxᴛ"
+      lore:
+        - "&fClick to go to the next page"
+
+    refresh:
+      material: PAPER
+      slot: 49
+      name: "&#00fc88ᴏʀᴅᴇʀs"
+      lore:
+        - "&fClick to refresh"
+
+    your-orders:
+      material: CHEST
+      slot: 51
+      name: "&#00fc88ʏᴏᴜʀ ᴏʀᴅᴇʀs"
+      lore:
+        - "&fClick to view your orders"
+
+    sort:
+      material: CAULDRON
+      slot: 47
+      name: "&#00fc88ꜱᴏʀᴛ"
+      active_prefix: "&#00fc88● "
+      inactive_prefix: "&f● "
+      keys:
+        - "most_money"
+        - "most_delivered"
+        - "most_recent"
+        - "most_paid_per_item"
+      options:
+        - "Most Paid"
+        - "Most Delivered"
+        - "Recently Listed"
+        - "Most Money Per Item"
+
+    filter:
+      material: HOPPER
+      slot: 48
+      name: "&#00fc88ꜰɪʟᴛᴇʀ"
+      active_prefix: "&#00fc88● "
+      inactive_prefix: "&f● "
+      keys:
+        - "all"
+        - "blocks"
+        - "tools"
+        - "food"
+        - "combat"
+        - "potions"
+        - "books"
+        - "ingredients"
+        - "utilities"
+      options:
+        - "All"
+        - "Blocks"
+        - "Tools"
+        - "Food"
+        - "Combat"
+        - "Potions"
+        - "Books"
+        - "Ingredients"
+        - "Utilities"
+
+    search:
+      material: OAK_SIGN
+      slot: 50
+      name: "&#00fc88sᴇᴀʀᴄʜ"
+      lore:
+        - "&fClick to search"

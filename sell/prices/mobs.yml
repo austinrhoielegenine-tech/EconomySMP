@@ -1,0 +1,62 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prices:
+  ARROW: 1.2
+  BOWL: 3
+  BLAZE_ROD: 2
+  BAKED_POTATO: 28
+  COOKED_CHICKEN: 8
+  COOKED_COD: 2
+  COOKED_PORKCHOP: 4
+  COOKED_RABBIT: 20
+  COOKED_SALMON: 2
+  COOKED_MUTTON: 3
+  ENDER_PEARL: 2
+  FEATHER: 6
+  FISHING_ROD: 8
+  GLOW_INK_SAC: 150
+  GHAST_TEAR: 30
+  GUNPOWDER: 1
+  INK_SAC: 50
+  LEATHER: 40
+  MAGMA_CREAM: 16
+  PUFFERFISH: 5
+  PRISMARINE_SHARD: 10
+  PRISMARINE_CRYSTALS: 15
+  PHANTOM_MEMBRANE: 5
+  CHICKEN: 6
+  EGG: 5
+  BEEF: 1
+  COD: 6
+  PORKCHOP: 0.2
+  RABBIT: 6
+  SALMON: 6
+  MUTTON: 4
+  RABBIT_HIDE: 5
+  ROTTEN_FLESH: 1
+  STRING: 0.5
+  COOKED_BEEF: 5
+  SNOWBALL: 0.25
+  SEAGRASS: 2
+  SPIDER_EYE: 0.5
+  SADDLE: 500
+  SHULKER_SHELL: 50
+  SLIME_BALL: 15
+  TROPICAL_FISH: 1
+  TOTEM_OF_UNDYING: 250
+  WET_SPONGE: 400
+  TURTLE_HELMET: 100
+

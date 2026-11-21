@@ -1,0 +1,47 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+reload:
+  success: "&#00fc88Config reloaded."
+  failed: "&cFailed to reload config."
+
+security:
+  spam:
+    player: "&cSlow down! Wait &#00fc88%seconds%s &cbefore chatting again."
+    actionbar: "&cWait &#00fc88%seconds%s &cbefore sending another message"
+    staff: "&#00fc88%player% &7tried to spam chat."
+  blacklist:
+    player: "&cThat message was blocked."
+    actionbar: "&cMessage blocked — blacklisted word"
+    staff: "&#00fc88%player% &7triggered the blacklist."
+  advertising:
+    player: "&cAdvertising is not allowed here."
+    actionbar: "&cAdvertising is not allowed"
+    staff: "&#00fc88%player% &7tried to advertise."
+  caps:
+    player: "&cEase up on the caps."
+    actionbar: "&cToo many capital letters"
+    staff: "&#00fc88%player% &7spammed caps."
+
+chat:
+  disabled: "&cGlobal chat is currently disabled."
+  enabled: "&#00fc88Global chat has been enabled."
+  no-permission: "&cNo permission."
+  cleared: "&#00fc88Chat cleared by &7%player%"
+  tagged: "&#00fc88%player% &7mentioned you"
+
+commands:
+  reload:
+    usage: "&cUsage: /astralchat reload"

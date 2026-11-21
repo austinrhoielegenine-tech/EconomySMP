@@ -1,0 +1,64 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prefix-enable: false
+prefix: "&#A303F9ꜱʜᴀʀᴅꜱ &7» "
+
+no-permission: "&cYou have no permission for that!"
+player-only: "Only players can use this command!"
+player-not-found: "&cPlayer not found"
+reload-success: "&#00FF00Shards reloaded success!"
+invalid-number: "&cInvaild number!"
+not-enough-shards: "&cYou have not enough shards!"
+self-pay: "&cYou can´t give ur self shards!"
+pay-disabled: "&cPay is disabled!"
+
+shards-balance: "&7Balance: &#A303F9%shards% shards"
+shards-balance-other: "&#00FF00%target% &7has &#A303F9%shards% shards&7!"
+
+shards-send: "&7You sent &#A303F9%shards_send% shards &7to &#00FF00%player%"
+shards-received: "&7You received &#A303F9%shards_received% shards &7from &#00FF00%target_player%"
+shards-given: "&7You gave &#A303F9%shards_given% shards &7to &#00FF00%player%!"
+shards-taken: "&7You took &#A303F9%shards_taken% shards &7from &#00FF00%player%!"
+shards-set: "&7You set the shards of &#00FF00%player% &7to &#A303F9%shards_set%&7!"
+
+afk-enter: "&7You entered the &#A303F9AFK zone&7. You will earn shards here."
+afk-enter-title: "&#A303F9AFK Zone"
+afk-enter-subtitle: "&7You are now earning shards"
+afk-leave: "&cYou left the &#A303F9AFK zone&7."
+afk-leave-actionbar: "&cNo longer earning shards"
+
+actionbar-countdown: "&7Next shard in &#A303F9%seconds%s"
+actionbar-reward: "&7+%amount% &#A303F9Shards &7(%total%)"
+
+command-usage: |
+  &#A303F9SHARDS
+   &7/shards
+   &7/shards pay <player> <amount>
+   &7/shards bal <player>
+
+command-usage-admin: |
+  &#FF0000SHARDS ADMIN
+   &7/shards reload
+   &7/shards give <player> <amount>
+   &7/shards take <player> <amount>
+   &7/shards set <player> <amount>
+   &7/shards bal <player>
+
+booster-activated: "&7Shard booster activated! &#A20AD6%speed%x &7speed for &#A20AD6%time%h &7in the AFK zone."
+booster-already-active: "&cYou already have an active shard booster!"
+booster-given: "&7Gave &#A20AD6%amount%x Shard Booster &7to &#00FF00%player%!"
+booster-received: "&7You received &#A20AD6%amount%x Shard Booster&7!"
+actionbar-countdown-boosted: "&7Next shard in &#A20AD6%seconds%s &7(&#A20AD6%speed%x&7)"

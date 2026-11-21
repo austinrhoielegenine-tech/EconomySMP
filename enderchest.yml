@@ -1,0 +1,31 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ᴇɴᴅᴇʀ ᴄʜᴇsᴛ"
+default-rows: 6
+play-sounds: true
+open-sound: "BLOCK_ENDER_CHEST_OPEN"
+close-sound: "BLOCK_ENDER_CHEST_CLOSE"
+seed-from-vanilla: true
+
+# ---------- messages ----------
+messages:
+  no-permission: "%prefix%&cNo permission."
+  player-only: "%prefix%&cPlayers only."
+  player-not-found: "%prefix%&cPlayer not found."
+  cannot-see-self: "%prefix%&cUse /echest for your own chest."
+  opening-target: "%prefix%Opening &#00fc88%target%&7's ender chest..."
+  opened: "%prefix%Ender chest opened."
+  reloaded: "%prefix%Reloaded."

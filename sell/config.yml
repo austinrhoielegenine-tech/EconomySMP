@@ -1,0 +1,79 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+currency-symbol: "$"
+default-price: 1.0
+prices-multiplier: 1.0
+Integrate-order: true # Sell into matching /order requests before using configured worth
+
+sell:
+  title: "&8ꜱᴇʟʟ"
+  rows: 4
+  confirm-slot: 44
+  shulker-content-selling: true
+  confirm:
+    material: LIME_STAINED_GLASS_PANE
+    name: "&#00fc88$%amount%"
+    lore:
+      - "&7Click to sell items"
+
+sounds:
+  gui-open:
+    enabled: true
+    sound: BLOCK_CHEST_OPEN
+    volume: 0.6
+    pitch: 1.2
+  gui-click:
+    enabled: true
+    sound: UI_BUTTON_CLICK
+    volume: 1.0
+    pitch: 1.0
+  sell:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1.0
+    pitch: 2.0
+  error:
+    enabled: true
+    sound: ENTITY_VILLAGER_NO
+    volume: 1.0
+    pitch: 1.0
+
+economy:
+  abbreviations:
+    enabled: true
+
+blacklist: []
+
+history:
+  max-entries: 100
+
+worth-lore:
+  enabled: true
+  player-inventory: true
+  lines:
+    - "&7Worth: &#00fc88%price%"
+  dont-show-gui: []
+
+chat-input:
+  SignAPI: true
+  ChatAPI: false
+
+sign-gui:
+  search:
+    - ""
+    - "^^^^^^^^^^^^^^^"
+    - "   Search   "
+    - "             "

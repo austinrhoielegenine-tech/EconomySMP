@@ -1,0 +1,47 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+sounds:
+  click-sound: UI_BUTTON_CLICK
+  plugin-reloaded: ENTITY_PLAYER_LEVELUP
+  error-sound: ENTITY_VILLAGER_NO
+  success-sound: ENTITY_PLAYER_LEVELUP
+  teleport-cooldown: BLOCK_NOTE_BLOCK_PLING
+  teleport-complete: ENTITY_ENDERMAN_TELEPORT
+  teleport-cancel: ENTITY_VILLAGER_NO
+
+team-home:
+  enabled: true
+  teleport-delay: 5
+  teleport-distance: 0.3
+
+min-team-name-length: 3
+max-team-name-length: 9
+
+blocked-team-names:
+  - "admin"
+  - "staff"
+  - "owner"
+
+chat-input:
+  SignAPI: true
+  ChatAPI: false
+
+sign-gui:
+  - ""
+  - "^^^^^^^^^^^^^^^"
+  - "   Player    "
+  - "             "
+

@@ -1,0 +1,76 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ᴄᴏɴꜰɪʀᴍ ꜱᴇɴᴅ"
+rows: 3
+
+items:
+  confirm:
+    name: "&aᴄᴏɴꜰɪʀᴍ"
+    slot: 16
+    material: LIME_STAINED_GLASS_PANE
+    lore:
+      - "&fClick to send request"
+
+  cancel:
+    name: "&cᴄᴀɴᴄᴇʟ"
+    slot: 10
+    material: RED_STAINED_GLASS_PANE
+    lore:
+      - "&fClick to cancel"
+
+  head:
+    name: "&#37BFF8{target_name}"
+    slot: 13
+    material: PLAYER_HEAD
+    lore:
+      tpa: "&fSend tpa request &#37BFF8to &f{target_name}"
+      tpahere: "&fSend tpahere request &#37BFF8to &f{target_name}"
+
+  world-overworld:
+    name: "&aʟᴏᴄᴀᴛɪᴏɴ"
+    lore:
+      - "&f{world}"
+    material: GRASS_BLOCK
+    slot: 12
+
+  world-nether:
+    name: "&cʟᴏᴄᴀᴛɪᴏɴ"
+    lore:
+      - "&f{world}"
+    material: NETHERRACK
+    slot: 12
+
+  world-end:
+    name: "&cʟᴏᴄᴀᴛɪᴏɴ"
+    lore:
+      - "&f{world}"
+    material: REDSTONE_BLOCK
+    slot: 12
+
+  world-other:
+    name: "&fʟᴏᴄᴀᴛɪᴏɴ"
+    lore:
+      - "&f{world}"
+    material: IRON_BLOCK
+    slot: 12
+
+  region:
+    name: "&#37BFF8{region}"
+    lore:
+      - "&fPing: &#37BFF8{ping}ms"
+    material: FEATHER
+    slot: 14
+    region-name: "EU"

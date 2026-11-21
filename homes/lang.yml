@@ -1,0 +1,65 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+# %home% %player% %count% %max_homes%
+
+use-prefix: false
+
+text:
+  denied: "&cYou don't have permission for this!"
+  players-only: "&cOnly players can use this command!"
+  reloaded: "&aAstralHomes has been reloaded!"
+  created: "&7Home &a%home% &7has been set!"
+  removed: "&7Home &c%home% &7has been deleted!"
+  missing: "&cHome %home% does not exist!"
+  limit: "&cYou have reached the maximum of %max_homes% homes!"
+  moved: "&cTeleport cancelled because you moved!"
+  busy: "&cYou are already teleporting!"
+  world-locked: "&cYou can't set a home here! &7(%world%)"
+  region-locked: "&cYou can't set a home here! &7(%region%)"
+
+bars:
+  reloaded: "&aAstralHomes has been reloaded!"
+  moved: "&cTeleport cancelled!"
+  arrived: "&aYou have been teleported to home %home%!"
+  busy: "&cYou are already teleporting!"
+
+help: |
+  &#37BFF9&lASTRALHOMES
+   &7/home
+   &7/sethome <1-10>
+   &7/delhome <1-10>
+
+help-staff: |
+  &#FF0000&lAstralHomes ADMIN
+   &7/home reload 
+   &7/home admin <player>
+countdown:
+  chat:
+    on: true
+    lines:
+      - "&7Teleport in &#37BFF9%count% &7seconds"
+  actionbar:
+    on: true
+    lines:
+      - "&7Teleport in &#37BFF9%count% &7seconds"
+  title:
+    on: false
+    lines:
+      - ""
+  subtitle:
+    on: false
+    lines:
+      - ""

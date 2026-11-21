@@ -1,0 +1,46 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʏꜱᴛ ꜱʜᴏᴠᴇʟ'
+lore:
+- '&7Breaks 9 Blocks at Once'
+- '&8Self Destruct:'
+- '&8%durability%'
+custom-model-data: 1000
+material: NETHERITE_SHOVEL
+durability:
+  mode: time
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: true
+  list:
+  - EFFICIENCY:5
+  - UNBREAKING:3
+  - FORTUNE:3
+  - MENDING:1
+sound:
+  enabled: true
+  type: BLOCK_GRASS_BREAK
+  volume: 0.3
+  pitch: 1.1
+particle:
+  enabled: true
+  type: CLOUD
+  count: 25
+  additional-particle:
+    enabled: true
+    type: CRIT
+    count: 15

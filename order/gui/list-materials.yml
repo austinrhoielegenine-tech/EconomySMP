@@ -1,0 +1,80 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+list-materials:
+  title: "&8ᴏʀᴅᴇʀs -> Select Item"
+  rows: 6
+  list-items: 0-44
+
+items:
+  previous-page-slot: 45
+  previous-page:
+    material: ARROW
+    displayname: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+    lore:
+      - "&fClick to go to the previous page"
+
+  search:
+    material: OAK_SIGN
+    slot: 50
+    name: "&#00fc88sᴇᴀʀᴄʜ"
+    lore:
+      - "&fClick to search"
+  sort:
+    material: CAULDRON
+    slot: 48
+    name: "&#00fc88ꜱᴏʀᴛ"
+    active_prefix: "&#00fc88● "
+    inactive_prefix: "&f● "
+    keys:
+      - "alphabetical_az"
+      - "alphabetical_za"
+    options:
+      - "Alphabetical A-Z"
+      - "Alphabetical Z-A"
+
+  filter:
+    material: HOPPER
+    slot: 49
+    name: "&#00fc88ꜰɪʟᴛᴇʀ"
+    active_prefix: "&#00fc88● "
+    inactive_prefix: "&f● "
+    keys:
+      - "all"
+      - "blocks"
+      - "tools"
+      - "food"
+      - "combat"
+      - "potions"
+      - "books"
+      - "ingredients"
+      - "utilities"
+    options:
+      - "All"
+      - "Blocks"
+      - "Tools"
+      - "Food"
+      - "Combat"
+      - "Potions"
+      - "Books"
+      - "Ingredients"
+      - "Utilities"
+
+  next-page-slot: 53
+  next-page:
+    material: ARROW
+    displayname: "&#00fc88ɴᴇxᴛ"
+    lore:
+      - "&fClick to go to the next page"

@@ -1,0 +1,50 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+spawn-gui:
+  title: "&8ꜱᴘᴀᴡɴs"
+  row: 6
+  gui-settings:
+    spawn:
+      material: ITEM_FRAME
+      displayName: "&#00A0FCꜱᴘᴀᴡɴ %name%"
+      lore:
+        - "&8%current%/%max%"
+        - "&fClick to go to this"
+        - "&fSpawn area."
+    maxed-players:
+      material: REDSTONE_BLOCK
+      displayName: "&cꜱᴘᴀᴡɴ %name%"
+      lore:
+        - "&8%current%/%max%"
+        - "&cThis area is full/closed."
+    random-spawn:
+      material: LIGHT_BLUE_GLAZED_TERRACOTTA
+      slot: 49
+      displayName: "&aꜱᴘᴀᴡɴ"
+      lore:
+        - "&fClick to teleport to a random spawn"
+    back:
+      material: ARROW
+      slot: 45
+      displayName: "&aʙᴀᴄᴋ"
+      lore:
+        - "&fClick to go to the previous page"
+    next:
+      material: ARROW
+      slot: 53
+      displayName: "&aɴᴇxᴛ"
+      lore:
+        - "&fClick to go to the next page"

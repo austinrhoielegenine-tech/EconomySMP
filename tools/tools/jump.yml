@@ -1,0 +1,48 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʜʏꜱᴛ ᴊᴜᴍᴘ'
+lore:
+- '&7Boost you in the destination'
+- '&7that you look &#A20AD6%distance% &7blocks'
+- '&8Cooldown: &f%cooldown%s'
+- '&8Durability: &f%durability%'
+custom-model-data: 1000
+material: WIND_CHARGE
+durability:
+  mode: time
+  uses: 100
+  time: 1d
+enchantments:
+  enabled: true
+  list:
+  - UNBREAKING:3
+  - MENDING:1
+jump:
+  distance: 4
+  cooldown: 15
+sound:
+  enabled: true
+  type: ENTITY_WIND_CHARGE_WIND_BURST
+  volume: 1.0
+  pitch: 1.0
+particle:
+  enabled: true
+  type: CLOUD
+  count: 30
+  additional-particle:
+    enabled: true
+    type: CRIT
+    count: 15

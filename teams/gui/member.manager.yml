@@ -1,0 +1,45 @@
+gui:
+  title: "&8ᴍᴇᴍʙᴇʀ ᴍᴀɴᴀɢᴇʀ"
+  rows: 3
+
+items:
+  pvp_toggle:
+    material: DIAMOND_SWORD
+    slot: 10
+    title: "&#34eb9bᴛᴇᴀᴍ ᴘᴠᴘ"
+    lore:
+      - "&fStatus: %status%"
+    enabled_status: "&#02de4fAllowed"
+    disabled_status: "&#e00202Denied"
+  team_home_access:
+    material: LIGHT_GRAY_BED
+    slot: 11
+    title: "&#34eb9bᴛᴇᴀᴍ ʜᴏᴍᴇ"
+    lore:
+      - "&fAccess: %status%"
+    enabled_status: "&#02de4fAllowed"
+    disabled_status: "&#e00202Denied"
+  team_home_set:
+    material: RED_BED
+    slot: 12
+    title: "&#34eb9bꜱᴇᴛ ʜᴏᴍᴇ"
+    lore:
+      - "&fPermission: %status%"
+    enabled_status: "&#02de4fAllowed"
+    disabled_status: "&#e00202Denied"
+  create_delete_teams:
+    material: BARRIER
+    slot: 13
+    title: "&#34eb9bᴛᴇᴀᴍ ᴀᴅᴍɪɴ"
+    lore:
+      - "&fPermission: %status%"
+    enabled_status: "&#02de4fAllowed"
+    disabled_status: "&#e00202Denied"
+  manage_members:
+    material: PLAYER_HEAD
+    slot: 14
+    title: "&#34eb9bᴍᴀɴᴀɢᴇ ᴍᴇᴍʙᴇʀꜱ"
+    lore:
+      - "&fPermission: %status%"
+    enabled_status: "&#02de4fAllowed"
+    disabled_status: "&#e00202Denied"

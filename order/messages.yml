@@ -1,0 +1,71 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+#Here you can change all the messages and actions bars of the plugin
+
+#Here you can change the prefix of the plugin
+prefix-enable: false
+prefix: '&#00fc88ᴏʀᴅᴇʀ &7» '
+
+messages:
+  no-permission: "&cYou don't have permission for that!"
+  only-players: "Only players can use that command!"
+  no-items-to-collect: "&cYou don't have any items to collect for this order!"
+  plugin-reloaded: "&#00FF00AstralOrder reloaded."
+  no-orders: "&cThere are no active orders!"
+  order-created: "&7You create an order for &#00fc88%amount% %item% &7for &#00fc88$%price% &7each! &7(Total: $%total_price%)"
+  chat-input: "&cPlease write the %type% in the chat, or type cancel to cancel the input!"
+  chat-input-cancel: "&cInput cancelled!"
+  amount-set: "&7Amount set to &#00fc88%amount%&7!"
+  price-set: "&7Price set to &#00fc88$%price%&7!"
+  amount-too-low: "&cThe amount must be at least %min%!"
+  amount-too-high: "&cThe amount must be at most %max%!"
+  price-too-low: "&cThe price must be at least $%min%!"
+  price-too-high: "&cThe price must be at most $%max%!"
+  no-money: "&cYou don't have enough money!"
+  no-items: "&cYou don't have enough items!"
+  order-not-available: "&cThis order is no longer available!"
+  no-items-to-deliver: "&cNo items to collect for this order!"
+  inventory-full: "&cYour inventory is full!"
+  items-collected: "&7You received &#00fc88%amount% %item%&7!"
+  delivery-cancelled: "&cDelivery cancelled!"
+  order-finished: "&aOrder fully delivered!"
+  error: "&cYou can't do this right now!"
+  order-cancelled-success: "&aOrder cancelled successfully!"
+  cancelled-closed: "&cOrder cancellation cancelled!"
+  refund-success: "&7Order cancelled and refunded successfully! &a+$%amount%"
+  cannot-deliver-own: "&cYou can't deliver your own orders!"
+  expired: "&cThis order has expired!"
+  already-delivered: "&cThis order has already been fully delivered!"
+  reward-messages: "&7You received &#00fc88$%reward% &7for delivering an order!"
+  delivered-user: "&#00fc88%player% &7delivered you &#00fc88%amount% %item%"
+  item-set: "&7Item set to &#00fc88%item%&7!"
+  max-orders-reached: "&cYou have already reached the maximum number of %max% orders!"
+  select-material: "&7Click to select"
+
+command-usage: |
+  &#00fc88ORDER
+   &7/order - &#00fc88Open the order menu
+
+command-usage-admin: |
+  &#00fc88ORDER ADMIN
+   &7/order reload - &#00fc88Reload the plugin
+  order-deleted-admin: "&cOrder deleted by staff."
+  player-blocked: "&c%player% can no longer create orders."
+  player-unblocked: "&a%player% can create orders again."
+  player-is-blocked: "&cYou are blocked from creating orders."
+  enchantments-applied: "&7Enchantments set on &#00fc88%item%&7!"
+  no-admin: "&cYou cannot manage this order."
+  claimed-admin: "&aClaimed &#00fc88%amount%x %item%&a."

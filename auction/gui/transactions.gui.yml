@@ -1,0 +1,56 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+transactions:
+  title: "&8ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴꜱ (Page %current_page%)"
+  rows: 6
+  listing-slots: 0-44
+
+items:
+  previous-page:
+    material: ARROW
+    slot: 45
+    name: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+    lore:
+      - "&fClick to go to the previous page"
+
+  next-page:
+    material: ARROW
+    slot: 53
+    name: "&#00fc88ɴᴇxᴛ"
+    lore:
+      - "&fClick to go to the next page"
+
+  refresh:
+    material: WRITABLE_BOOK
+    slot: 49
+    name: "&#00fc88ᴛʀᴀɴꜱᴀᴄᴛɪᴏɴꜱ"
+    lore:
+      - "&fClick to refresh"
+
+  search:
+    material: OAK_SIGN
+    slot: 50
+    name: "&#00fc88ꜱᴇᴀʀᴄʜ"
+    lore:
+      - "&fClick to search"
+
+  stats:
+    material: BOOK
+    slot: 48
+    name: "&#00fc88ꜱᴛᴀᴛꜱ"
+    lore:
+      - "&fTotal Spent: &#00fc88%total_spent%"
+      - "&fTotal Made: &#00fc88%total_made%"

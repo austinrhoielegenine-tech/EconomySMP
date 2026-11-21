@@ -1,0 +1,56 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+edit-order:
+  title: "&8ᴏʀᴅᴇʀs -> Edit Order"
+  rows: 3
+
+items:
+  background:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+    slots: 0,1,2,9,11,19,20
+
+  source-item:
+    slot: 10 #You can change this in the config.yml
+
+  cancel-order:
+    material: RED_TERRACOTTA
+    name: '&#00fc88ᴄᴀɴᴄᴇʟ'
+    lore:
+      - '&fClick to cancel this order'
+    slot: 13
+
+  collect-items:
+    material: CHEST
+    name: '&#00fc88ᴄᴏʟʟᴇᴄᴛ ɪᴛᴇᴍꜱ'
+    lore:
+      - '&fClick to collect items'
+    slot: 15
+
+  no-collect-items:
+    material: CHEST
+    name: '&#00fc88ɴᴏ ᴄᴏʟʟᴇᴄᴛ ɪᴛᴇᴍꜱ'
+    lore:
+      - '&cNo Items to collect'
+    slot: 15
+
+  back:
+    material: RED_STAINED_GLASS_PANE
+    name: '&#00fc88ʙᴀᴄᴋ'
+    lore:
+      - '&fClick to go back'
+    slot: 18

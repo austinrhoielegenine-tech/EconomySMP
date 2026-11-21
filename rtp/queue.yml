@@ -1,0 +1,29 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+world: world
+queue-music: MUSIC_DISC_PIGSTEP
+rtp:
+  min-range: 500
+  max-range: 5000
+messages:
+  joined: "&7You joined the &#37BFF9RTP queue&7. Waiting for an opponent..."
+  joined-bar: "&7Searching for opponent..."
+  left: "&7You left the RTP queue."
+  left-bar: "&7Left queue"
+  matched: "&7Match found! Teleporting..."
+
+messages:
+  actionbar: "&#37BFF9RTP Queue &8| &fSearching%dots% &8| &7Queued: &#37BFF9%count%"

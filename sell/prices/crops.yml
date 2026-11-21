@@ -1,0 +1,62 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prices:
+  ACACIA_SAPLING: 3
+  AZALEA: 1
+  BEETROOT: 10
+  BAMBOO: 12
+  BROWN_MUSHROOM: 1
+  BEETROOT_SEEDS: 2
+  BONE_MEAL: 1
+  BIRCH_SAPLING: 3
+  BIG_DRIPLEAF: 3
+  CARROT: 16
+  COCOA_BEANS: 10
+  CACTUS: 10
+  CRIMSON_FUNGUS: 2
+  CHERRY_SAPLING: 1
+  CRIMSON_ROOTS: 2
+  CHORUS_FLOWER: 3
+  CHORUS_FRUIT: 4
+  DARK_OAK_SAPLING: 3
+  FLOWERING_AZALEA: 3
+  GLOW_BERRIES: 4
+  HANGING_ROOTS: 2
+  JUNGLE_SAPLING: 3
+  KELP: 12
+  MELON: 6
+  MELON_SEEDS: 4
+  NETHER_WART: 16
+  NETHER_SPROUTS: 5
+  OAK_SAPLING: 3
+  POTATO: 16
+  POISONOUS_POTATO: 32
+  PUMPKIN: 16
+  PUMPKIN_SEEDS: 4
+  RED_MUSHROOM: 1
+  SWEET_BERRIES: 8
+  SUGAR_CANE: 10
+  SEA_PICKLE: 10
+  SPRUCE_SAPLING: 3
+  SMALL_DRIPLEAF: 3
+  TORCHFLOWER_SEEDS: 3
+  TORCHFLOWER: 4
+  TWISTING_VINES: 5
+  WHEAT: 18
+  WHEAT_SEEDS: 2
+  WARPED_FUNGUS: 2
+  WARPED_ROOTS: 2
+  WEEPING_VINES: 5

@@ -1,0 +1,628 @@
+name: AstralSMPcore
+version: 2.9
+main: me.xyr0.astralsmpcore.AstralSMPcore
+api-version: '1.21'
+author: Xyr0
+description: Free EconomySMP 
+folia-supported: true
+softdepend: [ProtocolLib, packetevents, Vault, PlaceholderAPI, LuckPerms, DiscordSRV, WorldGuard, FancyNpcs, TAB, Geyser-Spigot, floodgate, ViaVersion, ViaBackwards]
+
+commands:
+  tpaheretoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  globaltoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  teamchattoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  duelrequesttoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  duelsongtoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  tpaconfirmtoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  mobtoggle:
+    description: Settings toggle
+    permission: astralsmpcore.system.settings.use
+
+  phantom:
+    description: Toggle personal phantom spawning
+    aliases: [phantoms]
+
+  aholo:
+    description: Holograms admin
+    aliases: [aholograms, holograms]
+    permission: astralsmpcore.system.holograms.use
+  astralsmpcore:
+    description: Main AstralSMPcore admin command
+    aliases: [asmp, asmpcore, astralcore, acore, AstralSMPcore, AstralSMP]
+    usage: /astralsmpcore reload | /asmp reload | /asmpcore reload
+    permission: astralsmpcore.reload
+  ah:
+    description: Auction house
+    aliases: [auction, astralauction]
+  homes:
+    description: Homes GUI
+    aliases: [home]
+  profile:
+    description: Player profile GUI
+  fly:
+    description: Toggle flight (configured worlds)
+  invsee:
+    description: View a player's inventory
+  sethome:
+    description: Set a home
+  delhome:
+    description: Delete a home
+  sell:
+    description: Sell items
+    aliases: [sellgui]
+  sellmulti:
+    description: Multi sell
+  worth:
+    description: Item worth
+  worthtoggle:
+    description: Toggle worth display
+  sellaxe:
+    description: Sell axe
+    permission: AstralSMPcore.system.sellaxe.use
+  sellhistory:
+    description: Sell history
+  orders:
+    description: Orders system
+    aliases: [order]
+  crate:
+    description: Crates alias
+  crates:
+    description: Crates
+    aliases: [crate, keys]
+  baltop:
+    description: Balance top
+    aliases: [balancetop, moneytop]
+  billford:
+    description: Billford
+  bounty:
+    description: Bounties
+    aliases: [bounties]
+  teams:
+    description: Teams
+    aliases: [team]
+  tpa:
+    description: TPA request
+  tpahere:
+    description: TPA here
+  tpaccept:
+    description: Accept TPA
+    aliases: [tpyes]
+  tpadeny:
+    description: Deny TPA
+    aliases: [tpno]
+  warps:
+    description: Warps
+    aliases: [warp]
+  setwarp:
+    description: Set warp
+  delwarp:
+    description: Delete warp
+  shop:
+    description: Shop
+  shards:
+    description: Shards
+    aliases: [shard]
+  as:
+    description: Spawner admin alias
+  spawners:
+    description: Spawners
+  tools:
+    description: Astral tools
+    aliases: [astraltools]
+  kit:
+    description: Claim a kit
+    aliases: [kits]
+  echest:
+    description: Ender chest
+    aliases: [ec, enderchest]
+  rtp:
+    description: Random teleport
+  rtpqueue:
+    description: RTP queue
+    aliases: [rtpq]
+  help:
+    description: Help GUI
+    aliases: [guide]
+  hide:
+    description: Hide players
+  keyall:
+    description: Keyall
+  media:
+    description: Media links
+  discord:
+    description: Discord invite
+  store:
+    description: Store link
+  chatgames:
+    description: Chat games admin
+  mobs:
+    description: Mob toggles
+    aliases: [mobtoggle]
+  rules:
+    description: Rules
+  report:
+    description: Report a player
+  reports:
+    description: View reports
+  maintenance:
+    description: Maintenance mode
+  combat:
+    description: Combat status
+    aliases: [combatlog, pvp]
+  chattoggle:
+    description: Toggle general chat
+  chat:
+    description: Chat admin
+  clearchat:
+    description: Clear chat
+  lb:
+    description: Leaderboards
+    aliases: [leaderboard, leaderboards]
+  punish:
+    description: Punishment
+    aliases: [ban, mute, kick, warn]
+  chainmail:
+    description: Chainmail kit
+    aliases: [cm]
+  stats:
+    description: Player statistics
+    aliases: [statistics]
+  pay:
+    description: Pay a player
+  bal:
+    description: Balance
+    aliases: [money, balance]
+    description: Check balance
+    aliases: [balance, money]
+  paytoggle:
+    description: Toggle receiving payments
+  msg:
+    description: Private message
+    aliases: [message, tell, whisper, w]
+  reply:
+    description: Reply to last message
+    aliases: [r]
+  msgtoggle:
+    description: Toggle private messages
+  msgignore:
+    description: Ignore a player's messages
+    aliases: [msgblock, blockmsg]
+  msgunignore:
+    description: Unignore a player
+    aliases: [msgunblock]
+  settings:
+    description: Player settings GUI
+    aliases: [setting, options]
+  sb:
+    description: Toggle scoreboard
+    aliases: [scoreboard]
+  nv:
+    description: Toggle night vision
+    aliases: [nightvision]
+  teamchat:
+    description: Team chat toggle
+    aliases: [tc]
+  ordertoggle:
+    description: Toggle order notifications
+  paymenttoggle:
+    description: Toggle payment notifications
+  soundstoggle:
+    description: Toggle sound notifications
+  teamtoggle:
+    description: Toggle team invites
+  fastcrystal:
+    description: Fast crystal toggle
+
+  warp:
+    description: Warp
+  spawn:
+    description: Spawn
+  setspawn:
+    description: Set spawn
+  delspawn:
+    description: Delete spawn
+  afk:
+    description: AFK warp
+  setafk:
+    description: Set AFK
+  delafk:
+    description: Delete AFK
+  cm:
+    description: Chainmail kit
+
+  safety:
+    description: Safety settings
+
+  cmtoggle:
+    description: Toggle chainmail kit
+
+  tpacancel:
+    description: Cancel TPA request
+
+  tpauto:
+    description: Toggle auto TPA accept
+
+  tpdeny:
+    description: Deny TPA request
+
+  tpatoggle:
+    description: Toggle TPA requests
+
+  findplayer:
+    description: Find a player's world
+
+  fp:
+    description: Find a player's world
+
+  ping:
+    description: Check ping
+
+  broadcast:
+    description: Staff broadcast
+    aliases: [bc]
+  link:
+    description: Link Minecraft to Discord
+  unlink:
+    description: Unlink a Minecraft account
+  voicechat:
+    description: Voice Chat agreement
+    aliases: [vc]
+
+  gmc:
+    description: Creative mode
+
+  gms:
+    description: Survival mode
+
+  gmsp:
+    description: Spectator mode
+
+  gtp:
+    description: Teleport to player
+
+  gtph:
+    description: Teleport player to you
+
+  vanish:
+    description: Toggle vanish
+
+  sus:
+    description: Open suspected players GUI
+    permission: astralsmpcore.system.moderation.sus
+
+  v:
+    description: Toggle vanish
+
+  doublejump:
+    description: Double jump admin
+
+  duels:
+    description: Open duel queue
+    aliases: [queue]
+  queue:
+    description: Join duel queue
+
+  leave:
+    description: Leave duel/queue
+
+  draw:
+    description: Request duel draw
+
+  spectate:
+    description: Spectate a duel
+
+  duelsadmin:
+    description: Duels admin
+
+  staffchat:
+    description: Staff chat
+
+  st:
+    description: Staff chat
+
+  wipe:
+    description: Wipe player data
+
+  spawnfakeplayer:
+    description: Spawn fake player
+
+  spawnfakestash:
+    description: Spawn fake stash
+
+  rtpq:
+    description: RTP queue
+
+  kill:
+    description: Confirm kill GUI
+
+  die:
+    description: Confirm kill GUI
+  eco:
+    description: Economy admin commands
+    usage: /eco <give|take|set|bal> <player> [amount]
+    permission: astralsmpcore.system.moderation.eco
+  give:
+    description: Give items to a player
+    permission: astralsmpcore.system.moderation.give
+  clear:
+    description: Clear a player's inventory
+    permission: astralsmpcore.system.moderation.clear
+  enchant:
+    description: Enchant held item
+    permission: astralsmpcore.system.moderation.enchant
+  effect:
+    description: Give/clear potion effects
+    permission: astralsmpcore.system.moderation.effect
+  offend:
+    description: Punish a player
+    permission: astralsmpcore.system.punishment.offend
+  unoffend:
+    description: Remove punishment
+    permission: astralsmpcore.system.punishment.unoffend
+  offendip:
+    description: IP punish
+    permission: astralsmpcore.system.punishment.offendip
+  freeze:
+    description: Freeze a player
+    permission: astralsmpcore.system.punishment.freeze
+  unfreeze:
+    description: Unfreeze a player
+    permission: astralsmpcore.system.punishment.unfreeze
+  kick:
+    description: Kick a player
+    permission: astralsmpcore.system.punishment.kick
+  checkban:
+    description: Check ban
+    permission: astralsmpcore.system.punishment.check
+  checkmute:
+    description: Check mute
+    permission: astralsmpcore.system.punishment.check
+  history:
+    description: Punishment history
+    permission: astralsmpcore.system.punishment.history
+  punishment:
+    description: Punishment history
+    permission: astralsmpcore.system.punishment.admin
+    aliases: [punish]
+  astralpunishment:
+    description: Punishment admin
+    permission: astralsmpcore.system.punishment.admin
+    aliases: [ap]
+
+permissions:
+  astralsmpcore.reload:
+    description: Reload AstralSMPcore (/astralsmpcore reload, /asmp reload, /asmpcore reload)
+    default: op
+  astralsmpcore.system.admin:
+    description: Full admin for enable/disable systems
+    default: op
+
+  # ---- systems (format: astralsmpcore.system.<name>.<perm>) ----
+  astralsmpcore.system.settings.use:
+    default: true
+  astralsmpcore.system.holograms.use:
+    default: op
+  astralsmpcore.system.holograms.admin:
+    default: op
+  astralsmpcore.system.warps.use:
+    default: true
+  astralsmpcore.system.warps.spawn:
+    default: true
+  astralsmpcore.system.warps.warp:
+    default: true
+  astralsmpcore.system.warps.afk:
+    default: true
+  astralsmpcore.system.warps.admin:
+    default: op
+  astralsmpcore.system.warps.bypass:
+    default: op
+  astralsmpcore.system.homes.use:
+    default: true
+  astralsmpcore.system.homes.limit.3:
+    default: false
+  astralsmpcore.system.homes.limit.4:
+    default: false
+  astralsmpcore.system.homes.limit.5:
+    default: false
+  astralsmpcore.system.homes.admin:
+    default: op
+  astralsmpcore.system.homes.bypass:
+    default: op
+  astralsmpcore.system.homes.others:
+    default: op
+  astralsmpcore.system.tpa.use:
+    default: true
+  astralsmpcore.system.tpa.admin:
+    default: op
+  astralsmpcore.system.teams.use:
+    default: true
+  astralsmpcore.system.teams.admin:
+    default: op
+  astralsmpcore.system.shop.use:
+    default: true
+  astralsmpcore.system.shop.admin:
+    default: op
+  astralsmpcore.system.sell.use:
+    default: true
+  astralsmpcore.system.sell.admin:
+    default: op
+  AstralSMPcore.system.sellaxe.use:
+    description: Give sell axes via /sellaxe
+    default: op
+  astralsmpcore.system.auction.use:
+    default: true
+  astralsmpcore.system.auction.admin:
+    default: op
+  astralsmpcore.system.auction.fastbuy:
+    default: false
+  astralsmpcore.system.order.use:
+    default: true
+  astralsmpcore.system.order.admin:
+    default: op
+  astralsmpcore.system.bounties.use:
+    default: true
+  astralsmpcore.system.bounties.add:
+    default: true
+  astralsmpcore.system.bounties.admin:
+    default: op
+  astralsmpcore.system.pay.use:
+    default: true
+  astralsmpcore.system.msg.use:
+    default: true
+  astralsmpcore.system.stats.use:
+    default: true
+  astralsmpcore.system.profile.use:
+    default: true
+  astralsmpcore.system.scoreboard.use:
+    default: true
+  astralsmpcore.system.nightvision.use:
+    default: true
+  astralsmpcore.system.hide.use:
+    default: false
+  astralsmpcore.system.fly.use:
+    default: op
+  astralsmpcore.system.doublejump.use:
+    default: true
+  astralsmpcore.system.shards.use:
+    default: true
+  astralsmpcore.system.shards.vip:
+    description: Earn VIP shard rate (2/min) while in the AFK zone
+    default: false
+  astralsmpcore.system.shards.everywhere:
+    description: Earn 1 shard per minute anywhere on the server (not only AFK zone)
+    default: false
+  astralsmpcore.system.shards.admin:
+    default: op
+  astralsmpcore.system.crates.use:
+    default: true
+  astralsmpcore.system.crates.admin:
+    default: op
+  astralsmpcore.system.spawners.use:
+    default: true
+  astralsmpcore.system.spawners.admin:
+    default: op
+  astralsmpcore.system.tools.use:
+    default: true
+  astralsmpcore.system.tools.admin:
+    default: op
+  astralsmpcore.system.rtp.use:
+    default: true
+  astralsmpcore.system.rtp.admin:
+    default: op
+  astralsmpcore.system.ec.open:
+    default: true
+  astralsmpcore.system.ec.everywhere:
+    description: Open your ender chest with /ec from anywhere
+    default: true
+  astralsmpcore.system.ec.see:
+    default: op
+  astralsmpcore.system.ec.admin:
+    default: op
+  astralsmpcore.system.links.use:
+    default: true
+  astralsmpcore.system.links.unlink:
+    default: op
+  astralsmpcore.system.duels.use:
+    default: true
+  astralsmpcore.system.duels.admin:
+    default: op
+  astralsmpcore.system.moderation.use:
+    default: op
+  astralsmpcore.system.moderation.invsee:
+    default: op
+  astralsmpcore.system.moderation.wipe:
+    default: op
+  astralsmpcore.system.moderation.give:
+    default: op
+  astralsmpcore.system.moderation.clear:
+    default: op
+  astralsmpcore.system.moderation.enchant:
+    default: op
+  astralsmpcore.system.moderation.effect:
+    default: op
+  astralsmpcore.system.moderation.broadcast:
+    default: op
+  astralsmpcore.system.moderation.vanish:
+    default: op
+  astralsmpcore.system.moderation.commandlog:
+    default: op
+  astralsmpcore.system.moderation.sus:
+    default: op
+  astralsmpcore.system.moderation.fakeplayer:
+    default: op
+  astralsmpcore.system.moderation.fakestash:
+    default: op
+  astralsmpcore.system.staffchat.use:
+    default: op
+  astralsmpcore.system.punishment.offend:
+    default: op
+  astralsmpcore.system.punishment.unoffend:
+    default: op
+  astralsmpcore.system.punishment.offendip:
+    default: op
+  astralsmpcore.system.punishment.freeze:
+    default: op
+  astralsmpcore.system.punishment.unfreeze:
+    default: op
+  astralsmpcore.system.punishment.kick:
+    default: op
+  astralsmpcore.system.punishment.check:
+    default: op
+  astralsmpcore.system.punishment.history:
+    default: op
+  astralsmpcore.system.punishment.admin:
+    default: op
+  astralsmpcore.system.punishment.bypass:
+    default: op
+  astralsmpcore.system.maintenance.use:
+    default: op
+  astralsmpcore.system.reports.use:
+    default: true
+  astralsmpcore.system.reports.staff:
+    default: op
+  astralsmpcore.system.lb.use:
+    default: true
+  astralsmpcore.system.lb.admin:
+    default: op
+  astralsmpcore.system.baltop.use:
+    default: true
+  astralsmpcore.system.billford.use:
+    default: true
+  astralsmpcore.system.billford.admin:
+    default: op
+  astralsmpcore.system.voicechat.use:
+    default: true
+  astralsmpcore.system.phantoms.use:
+    default: true
+  astralsmpcore.system.combat.bypass:
+    default: op
+  astralsmpcore.system.chainmail.use:
+    default: true
+  astralsmpcore.system.safety.use:
+    default: true
+  astralsmpcore.system.whitelister.bypass:
+    default: op
+  astralsmpcore.system.whitelister.reload:
+    default: op
+  astralsmpcore.system.keyall.admin:
+    default: op
+  astralsmpcore.system.help.use:
+    default: true

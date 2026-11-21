@@ -1,0 +1,38 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-permission: "&cYou have no permission for that!"
+only-players: "&cOnly players can use this command!"
+reloaded: "&#00FF00Shop reloaded success!"
+not-enough: "&cYou don't have enough money!"
+not-enough-shards: "&cYou don't have enough shards!"
+bought: "&7You bought a &a%item% &7for &#00FF00%price%&7!"
+inventory-full: "&cYour Inventory is full!"
+shop-unavailable: "&cThis shop is not available!"
+back-name: "&#FF0000ʙᴀᴄᴋ"
+back-lore: "&7Click to return"
+buy-title: "&8ʙᴜʏɪɴɢ"
+amount-lore: "&7Amount: &a%amount%"
+price-lore: "&7Price: &a%symbol%%price%"
+confirm-name: "&#04fc04ᴄᴏɴғɪʀᴍ"
+confirm-lore: "&7Click to buy"
+cancel-name: "&#fc0404ᴄᴀɴᴄᴇʟ"
+cancel-lore: "&7Click to cancel"
+plus-name: "&aAdd 1"
+plus10-name: "&aAdd 10"
+plus64-name: "&aSet to 64"
+minus-name: "&cRemove 1"
+minus10-name: "&cRemove 10"
+minus64-name: "&cRemove 64"

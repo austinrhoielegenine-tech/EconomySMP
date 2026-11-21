@@ -1,0 +1,167 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║
+# ███████║███████╗   ██║   ██████╔╝███████║██║
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝
+#
+rows: 6
+titles-progress-gui:
+  WHEAT: '&8ᴄʀᴏᴘѕ ᴘʀᴏɢʀᴇѕѕ'
+  BONE: '&8ᴍᴏʙ ᴅʀᴏᴘѕ ᴘʀᴏɢʀᴇѕѕ'
+  DIAMOND: '&8ᴏʀᴇ ᴘʀᴏɢʀᴇѕѕ'
+  OAK_LEAVES: '&8ɴᴀᴛᴜʀᴀʟ ɪᴛᴇᴍѕ ᴘʀᴏɢʀᴇѕѕ'
+  NETHERITE_HELMET: '&8ᴀʀᴍᴏʀ ᴀɴᴅ ᴛᴏᴏʟѕ ᴘʀᴏɢʀᴇѕѕ'
+  TROPICAL_FISH: '&8ꜰɪѕʜ ᴘʀᴏɢʀᴇѕѕ'
+  ENCHANTED_BOOK: '&8ᴇɴᴄʜᴀɴᴛᴇᴅ ʙᴏᴏᴋѕ ᴘʀᴏɢʀᴇѕѕ'
+  POTION: '&8ᴘᴏᴛɪᴏɴѕ ᴘʀᴏɢʀᴇѕѕ'
+  BRICK: '&8ʙʟᴏᴄᴋѕ ᴘʀᴏɢʀᴇѕѕ'
+filler:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+  displayname: '&7 '
+  lore: []
+progress-slots:
+- 10
+- 19
+- 28
+- 37
+- 38
+- 39
+- 30
+- 21
+- 12
+- 13
+- 14
+- 23
+- 32
+- 41
+- 42
+- 43
+- 34
+- 25
+- 16
+- 7
+incomplete:
+  material: WHITE_STAINED_GLASS_PANE
+  displayname: '&fɪɴᴄᴏᴍᴘʟᴇᴛᴇ'
+  lore:
+  - '&f%loading-bar% &r &f%multiplier%x &f%progress%%'
+  - '&7$%amount-have%/%amount-needed%'
+working:
+  material: YELLOW_STAINED_GLASS_PANE
+  displayname: '&#eee70aᴡᴏʀᴋɪɴɢ'
+  lore:
+  - '&#eee70a%loading-bar% &r &f%multiplier%x &f%progress%%'
+  - '&7%amount-have%/%amount-needed%'
+complete:
+  material: LIME_STAINED_GLASS_PANE
+  displayname: '&#20f706ᴄᴏᴍᴘʟᴇᴛᴇ'
+  lore:
+  - '&#20f706%loading-bar% &r &#20f706%multiplier%x %progress%%'
+  - '&7%amount-have%/%amount-needed%'
+back-button:
+  enabled: true
+  slot: 45
+  material: RED_STAINED_GLASS_PANE
+  displayname: '&#ee300aʙᴀᴄᴋ'
+  lore:
+  - '&fClick to go back'
+categories:
+  crops:
+    icon:
+      material: WHEAT
+      slot: 1
+      displayname: '&#34ee80ᴄʀᴏᴘѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  ores:
+    icon:
+      material: DIAMOND
+      slot: 1
+      displayname: '&#34ee80ᴏʀᴇs'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  mobs:
+    icon:
+      material: BONE
+      slot: 1
+      displayname: '&#34ee80ᴍᴏʙ ᴅʀᴏᴘѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  natural:
+    icon:
+      material: OAK_LEAVES
+      slot: 1
+      displayname: '&#34ee80ɴᴀᴛᴜʀᴀʟ ɪᴛᴇᴍѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  tools:
+    icon:
+      material: NETHERITE_HELMET
+      slot: 1
+      displayname: '&#34ee80ᴀʀᴍᴏʀ ᴀɴᴅ ᴛᴏᴏʟѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  fish:
+    icon:
+      material: TROPICAL_FISH
+      slot: 1
+      displayname: '&#34ee80ꜰɪѕʜ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  books:
+    icon:
+      material: ENCHANTED_BOOK
+      slot: 1
+      displayname: '&#34ee80ᴇɴᴄʜᴀɴᴛᴇᴅ ʙᴏᴏᴋѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  potions:
+    icon:
+      material: POTION
+      slot: 1
+      displayname: '&#34ee80ᴘᴏᴛɪᴏɴѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'
+  blocks:
+    icon:
+      material: BRICK
+      slot: 1
+      displayname: '&#34ee80ʙʟᴏᴄᴋѕ'
+      lore:
+      - '&7Sell items to upgrade'
+      - '&7your sell multiplier!'
+      - ''
+      - '&fView your progress below'

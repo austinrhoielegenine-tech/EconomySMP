@@ -1,0 +1,199 @@
+#################################
+#  Duels
+#################################
+# Build anywhere → wand saves .schem → each match pastes into duel-world → paste cleared on end.
+# Themes: /duelsadmin wand <theme> → plugins/.../duels/arenas/<theme>.yml
+# Schems: plugins/.../duels/schematics/<theme>.schem
+# Requires: FastAsyncWorldEdit + loaded world named below.
+version: 6
+
+#################################
+#  Arena paste grid
+#################################
+arena:
+  duel-world: duels
+  worker-threads: 0
+  clone-grid:
+    origin-x: 10000
+    origin-y: 64
+    origin-z: 10000
+    spacing: 256
+    max-active-clones: 16
+
+#################################
+#  Match lifecycle
+#################################
+match:
+  duration-seconds: 600
+  loot-seconds: 180
+  return-delay-seconds: 3
+  heal-on-start: true
+  feed-on-start: true
+  set-survival-on-start: true
+  active-leave-counts-forfeit: true
+  count-draws-in-stats: true
+  block-ender-chests-until-winner: true
+  keep-loot-on-death: true
+  loser-spectator-seconds: 0
+  time-reminders:
+    - seconds: 300
+      message-key: duel-5-minutes
+    - seconds: 60
+      message-key: duel-1-minute
+    - seconds: 30
+      message-key: duel-30-seconds
+    - seconds: 5
+      message-key: duel-5-seconds
+
+#################################
+#  Protection
+#################################
+protection:
+  cancel-break-outside-arena: true
+  player-placed-break-only: false
+  banned-items:
+    - BEDROCK
+    - BARRIER
+    - NETHERITE_BLOCK
+    - ANCIENT_DEBRIS
+    - PEARLESCENT_FROGLIGHT
+    - STONE_BRICK_STAIRS
+    - SMOOTH_STONE
+    - STONE_BRICKS
+    - LIGHT_GRAY_CONCRETE
+    - GRAY_CONCRETE
+    - POLISHED_BLACKSTONE
+    - BLACK_CONCRETE
+    - LIGHT_BLUE_GLAZED_TERRACOTTA
+    - POLISHED_DIORITE_SLAB
+    - DEEPSLATE_BRICK_STAIRS
+    - POLISHED_DEEPSLATE_STAIRS
+    - IRON_TRAPDOOR
+    - BLUE_ICE
+    - SMOOTH_STONE_SLAB
+    - DEEPSLATE_TILE_STAIRS
+    - STONE_BRICK_WALL
+    - DEEPSLATE_TILE_SLAB
+    - BLACKSTONE_BUTTON
+    - POLISHED_BLACKSTONE_BUTTON
+    - POLISHED_DIORITE_STAIRS
+    - BLUE_GLAZED_TERRACOTTA
+  deny-place-blocks: []
+  whitelist-commands: true
+  allowed-commands:
+    - leave
+    - draw
+    - msg
+    - tell
+    - r
+    - duel
+    - queue
+    - spectate
+  blocked-commands:
+    - tp
+    - spawn
+    - warp
+    - home
+    - ec
+    - enderchest
+    - echest
+    - kit
+    - back
+    - shop
+    - tpa
+    - fly
+    - gamemode
+
+#################################
+#  Queue & matchmaking
+#################################
+queue:
+  enabled: true
+  max-wait-seconds: 600
+  search-delay: 3
+  duel-time-in-sec: 600
+  matchmaking-interval-seconds: 5
+  actionbar-interval-ticks: 20
+  music-interval-seconds: -1
+  fallback-estimated-wait: "<2 minutes"
+  gear-matchmaking:
+    enabled: true
+    netherite-allowed-opponent-tiers:
+      - NETHERITE
+
+matchmaking:
+  initial-win-rate-range: 15.0
+  expand-win-rate-range-every-seconds: 20
+  expand-win-rate-range-by: 10.0
+  max-win-rate-range: 50.0
+  match-closest-when-no-compatible: true
+
+elo:
+  default-rating: 1000
+  minimum-rating: 0
+  k-factor: 48
+  provisional-matches: 10
+  provisional-k-factor: 64
+  minimum-change: 1
+  maximum-change: 64
+
+#################################
+#  Direct duel requests
+#################################
+duel-request:
+  lifetime: 60
+  draw-timeout-seconds: 30
+  shard-reward-on-win: 10
+  min-time-minutes: 1
+  max-time-minutes: 15
+  default-time-minutes: 10
+
+countdown:
+  enabled: false
+  seconds: 5
+  freeze-players: false
+
+leave-warmup:
+  enabled: false
+  seconds: 3
+
+#################################
+#  Border & late-game
+#################################
+border:
+  enabled: true
+  apply-to-spectators: true
+  warning-distance: 10
+  warning-time: 15
+  default-size: 250
+  damage-amount: 0.2
+  damage-buffer: 0
+  phases:
+    - after-seconds: 0
+      size: 250
+      transition-seconds: 0
+      message-key: ""
+    - after-seconds: 300
+      size: 150
+      transition-seconds: 60
+      message-key: border-shrink-150
+    - after-seconds: 480
+      size: 50
+      transition-seconds: 60
+      message-key: border-shrink-50
+
+glow:
+  enabled: true
+  after-seconds: 300
+  duration-seconds: -1
+
+post-match:
+  winner-phase-seconds: 180
+  teleport-everyone-when-winner-leaves: true
+
+spectating:
+  restore-survival-on-leave: true
+
+statistics:
+  track-wins-losses: true
+  leaderboard-size: 10

@@ -1,0 +1,68 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ѕʜᴏᴘ - ᴇɴᴅ"
+size: 27
+type: shop
+economy: vault
+currency-symbol: "$"
+back-slot: 18
+back-open: main
+items:
+  "9":
+    material: ENDER_CHEST
+    name: "&fEnder Chest"
+    price: 2500
+    amount: 1
+  "10":
+    material: ENDER_PEARL
+    name: "&fEnder Pearl"
+    price: 75
+    amount: 1
+  "11":
+    material: END_STONE
+    name: "&fEnd Stone"
+    price: 128
+    amount: 16
+  "12":
+    material: DRAGON_BREATH
+    name: "&fDragon Breath"
+    price: 1000
+    amount: 1
+  "13":
+    material: END_ROD
+    name: "&fEnd Rod"
+    price: 100
+    amount: 1
+  "14":
+    material: CHORUS_FRUIT
+    name: "&fChorus Fruit"
+    price: 108
+    amount: 1
+  "15":
+    material: POPPED_CHORUS_FRUIT
+    name: "&fPopped Chorus Fruit"
+    price: 24
+    amount: 1
+  "16":
+    material: SHULKER_SHELL
+    name: "&fShulker Shell"
+    price: 350
+    amount: 1
+  "17":
+    material: SHULKER_BOX
+    name: "&fShulker Box"
+    price: 800
+    amount: 1

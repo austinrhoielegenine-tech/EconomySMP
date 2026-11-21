@@ -1,0 +1,202 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+amethyst-crate:
+  inventory:
+    name: '&8ᴀᴍᴇᴛʜʏsᴛ ᴄʀᴀᴛᴇ'
+    effect: CHOOSE
+    rows: 3
+    filler-item:
+      enable: true
+      material: BLACK_STAINED_GLASS_PANE
+      name: '&#A20AD6ᴀᴍᴇᴛʜʏsᴛ ᴄʀᴀᴛᴇ'
+      lore:
+      - '&fWith a ᴀᴍᴇᴛʜʏsᴛ ᴋᴇʏ you can choose'
+      - '&fwhich of the 6 you want.'
+  hologram:
+    enabled: true
+    '1':
+      height: 1.5
+      lines:
+        - '&#A20AD6ᴀᴍᴇᴛʜʏsᴛ ᴄʀᴀᴛᴇ'
+    '2':
+      height: 1.2
+      lines:
+        - '&fKeys: &#6f3baf%astralsmpcore_crate_keys_amethyst%'
+    '3':
+      height: 0.9
+      lines:
+        - '&fRight-click to open'
+
+  back-button:
+    enable: false
+    displayname: '&#FF0000ᴄʟᴏꜱᴇ'
+    material: RED_STAINED_GLASS_PANE
+    slot: 18
+    lore:
+    - '&fClick to close'
+  rewards:
+    '1':
+      slot: 4
+      icon:
+        material: NETHERITE_HOE
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʏꜱᴛ ʜᴏᴇ
+        lore:
+        - §7Plant 9 Blocks at once
+        - '§8Self Destruct:'
+        - §83d 0h 0m
+        enchantments:
+          efficiency: 5
+          fortune: 3
+          mending: 1
+          unbreaking: 3
+      chance: 100.0%
+      commands:
+      - tools give %player% hoe
+    '2':
+      slot: 10
+      icon:
+        material: NETHERITE_AXE
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʜʏsᴛ ᴀxᴇ
+        lore:
+        - §7Breaks Trees instantly
+        - '§8Self Destruct:'
+        - §82d 23h 59m
+        enchantments:
+          efficiency: 5
+          mending: 1
+          silk_touch: 1
+          unbreaking: 3
+      chance: 100.0%
+      commands:
+      - tools give %player% treechopper
+    '3':
+      slot: 11
+      icon:
+        material: NETHERITE_AXE
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʜʏsᴛ sᴇʟʟ ᴀxᴇ
+        lore:
+        - §7Instantly Sells All Items in A Chest
+        - '§8Self Destruct:'
+        - §82d 23h 59m
+        enchantments:
+          efficiency: 5
+          mending: 1
+          unbreaking: 3
+      chance: 100.0%
+      commands:
+      - sellaxe %player%
+    '4':
+      slot: 12
+      icon:
+        material: NETHERITE_PICKAXE
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʜʏsᴛ ᴘɪᴄᴋᴀxᴇ
+        lore:
+        - §7Breaks 9 Blocks at Once
+        - '§8Self Destruct:'
+        - §82d 23h 59m
+        enchantments:
+          efficiency: 5
+          mending: 1
+          unbreaking: 3
+      chance: 100.0%
+      commands:
+      - tools give %player% drill
+    '5':
+      slot: 13
+      icon:
+        material: NETHERITE_SHOVEL
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʏꜱᴛ ꜱʜᴏᴠᴇʟ
+        lore:
+        - §7Breaks 9 Blocks at Once
+        - '§8Self Destruct:'
+        - §82d 23h 59m
+        enchantments:
+          efficiency: 5
+          mending: 1
+          unbreaking: 3
+      chance: 100.0%
+      commands:
+      - tools give %player% shovel
+    '6':
+      slot: 14
+      icon:
+        material: GLASS_BOTTLE
+        name: §x§A§2§0§A§D§6ꜱʜᴀʀᴅ ʙᴏᴏꜱᴛᴇʀ
+        lore:
+        - §74x Shard Production for 24 hours
+        - §8The booster lasts one day.
+        - '§8Self Destruct:'
+        - §82d 23h 59m
+      chance: 100.0%
+      commands:
+      - shard booster %player% 24 4
+    '7':
+      slot: 15
+      icon:
+        material: BUCKET
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʜʏꜱᴛ ʙᴜᴄᴋᴇᴛ
+        lore:
+        - §7Drains 27 Water at Once
+        - '§8Self Destruct:'
+        - §82d 23h 59m
+      chance: 100.0%
+      commands:
+      - tools give %player% bucket
+    '8':
+      slot: 16
+      icon:
+        material: LAVA_BUCKET
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʜʏꜱᴛ ʟᴀᴠᴀ ʙᴜᴄᴋᴇᴛ
+        lore:
+        - §7Infinite Lava Bucket
+        - '§8Durability: §f3d 0h'
+      chance: 100.0%
+      commands:
+      - tools give %player% lavabucket time 4d
+    '9':
+      slot: 21
+      icon:
+        material: WATER_BUCKET
+        name: §x§A§2§0§A§D§6ᴀᴍᴇᴛʜʏꜱᴛ ᴡᴀᴛᴇʀ ʙᴜᴄᴋᴇᴛ
+        lore:
+        - §7Infinite Water Bucket
+        - '§8Durability: §f3d 0h'
+      chance: 100.0%
+      commanda:
+      - tools give %player% waterbucket time 4d
+    '10':
+      slot: 22
+      icon:
+        material: FIREWORK_ROCKET
+        name: §x§A§2§0§A§D§6ɪɴꜰɪɴɪᴛʏ ʀᴏᴄᴋᴇᴛ
+        lore:
+        - §7Boosts your Elytra flight!
+        - '§8Durability: §f∞'
+      chance: 100.0%
+      commands:
+      - tools give %player% rocket infinite
+    '11':
+      slot: 23
+      icon:
+        material: ENDER_PEARL
+        name: §x§A§2§0§A§D§6ɪɴꜰɪɴɪᴛᴇ ᴇɴᴅᴇʀ ᴘᴇᴀʀʟ
+        lore:
+        - §7Ender Pearl that never breaks
+        - '§8Self Destruct:'
+        - §f∞
+      chance: 100.0%
+      commands:
+      - tools give %player% enderpearl infinite

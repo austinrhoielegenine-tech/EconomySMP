@@ -1,0 +1,50 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-permission: "&cYou don't have permission!"
+player-only: "&cOnly players can use this!"
+reload-success: "&aAstralWarps reloaded."
+already-teleporting: "&cYou are already teleporting!"
+location-invalid: "&cThat location is invalid!"
+teleport-countdown: "&7Teleporting in &#00A0FC%seconds% &7seconds..."
+teleport-cancelled: "&cTeleport cancelled because you moved."
+invalid-number: "&cPlease provide a valid number for max players!"
+
+warp-set: "&7Warp &#00A0FC%warp% &7has been set to your location."
+warp-already-exists: "&7Warp &#00A0FC%warp% &7already exists."
+setwarp-usage: "&7Correct usage: &#00A0FC/setwarp [warp name]"
+warp-deleted: "&#00A0FC%warp% &7warp has been removed."
+warp-not-found: "&7Warp &#00A0FC%warp% &7does not exist."
+delwarp-usage: "&7Correct usage: &#00A0FC/delwarp [warp name]"
+available-warps: "&cUsage: /warp (destination)\n&cDestinations: %warps%"
+teleported-warp: "&7Teleported to warp &#00A0FC%warp%."
+
+no-spawns: "&cNo spawns have been set yet!"
+spawn-not-found: "&cSpawn not found!"
+spawn-full: "&cThis spawn is already full!"
+setspawn-usage: "&cUsage: /setspawn <name> [maxPlayers]"
+setspawn-success: "&aSpawn %name% has been set!"
+delspawn-usage: "&cUsage: /delspawn <name>"
+delspawn-success: "&aSpawn %name% has been deleted!"
+teleported-spawn: "&aYou have been teleported to Spawn %name%!"
+
+no-afk-areas: "&cNo AFK areas have been set yet!"
+afk-not-found: "&cAFK area not found!"
+afk-full: "&cThis AFK area is already full!"
+setafk-usage: "&cUsage: /setafk <name> [maxPlayers]"
+setafk-success: "&aAFK area %name% has been set!"
+delafk-usage: "&cUsage: /delafk <name>"
+delafk-success: "&aAFK area %name% has been deleted!"
+teleported-afk: "&aYou have been teleported to AFK area %name%!"

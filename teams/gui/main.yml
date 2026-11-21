@@ -1,0 +1,75 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+gui:
+  title: "&8ᴛᴇᴀᴍ (Page %current_page%)"
+  rows: 6
+
+items:
+  search:
+    material: OAK_SIGN
+    name: "&#34eb9bꜱᴇᴀʀᴄʜ"
+    lore:
+      - "&7Click to search"
+    slot: 45
+  sort:
+    material: HOPPER
+    name: "&#34eb9bѕᴏʀᴛ"
+    selected-prefix: "&#34eb9b• "
+    unselected-prefix: "&7• "
+    slot: 46
+    options:
+      ONLINE_MEMBERS: Online Members
+      ALPHABETICALLY: Alphabetically
+      JOIN_DATE: Join Date
+  back:
+    material: ARROW
+    display-name: "&#34eb9bʙᴀᴄᴋ"
+    lore:
+      - "&7Click to go to previous page"
+    slot: 48
+  team-info:
+    material: IRON_HELMET
+    display-name: "&#34eb9bᴛᴇᴀᴍ %astralsmpcore_teams_name%"
+    lore:
+      - "&7Click to refresh"
+      - "&7Add up to 27 team members"
+    slot: 49
+  next:
+    material: ARROW
+    display-name: "&#34eb9bɴᴇxᴛ"
+    lore:
+      - "&7Click to go to next page"
+    slot: 50
+  team-home:
+    material: WHITE_BANNER
+    display-name: "&#34eb9bᴛᴇᴀᴍ ʜᴏᴍᴇ"
+    lore:
+      - "&7Set the team home with /team sethome"
+    slot: 52
+  pvp:
+    material: DIAMOND_SWORD
+    display-name: "&#34eb9bᴘᴠᴘ"
+    lore:
+      - "&7Currently: %pvp-status%"
+    status:
+      enabled: "&#34eb9b&lON"
+      disabled: "&#FF0000&lOFF"
+    slot: 53
+  source-item:
+    material: PLAYER_HEAD
+    display-name: "&#34eb9b%player%"
+    lore:
+      - "&7Click to manage"

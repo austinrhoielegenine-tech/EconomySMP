@@ -1,0 +1,57 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+enabled: false
+url: ""
+username: "AstralAuction"
+avatar-url: ""
+
+events:
+  item-listed: true
+  item-bought: true
+  item-removed: true
+
+message:
+  listing-color: 5814783
+  purchase-color: 16755200
+  remove-color: 16711680
+  embed-title-listing: "New Auction Listing"
+  embed-title-purchase: "Item Purchased"
+  embed-title-remove: "Item Removed"
+  webhook-sell:
+    - "Seller: %seller%"
+    - "Item: %amount%x %item%"
+    - "Price: %price%"
+    - "Description: %lore%"
+    - ""
+    - "Happy trading!"
+  webhook-buy:
+    - "Buyer: %buyer%"
+    - "Seller: %seller%"
+    - "Item: %amount%x %item%"
+    - "Price: %price%"
+    - "Description: %lore%"
+    - ""
+    - "Thank you for your purchase!"
+  webhook-remove-item:
+    - "Seller: %seller%"
+    - "Item: %amount%x %item%"
+    - "Price: %price%"
+    - "Description: %lore%"
+    - ""
+    - "The item has been removed!"
+  item-format:
+    show-item-name-uppercase: true
+    show-item-lore: true

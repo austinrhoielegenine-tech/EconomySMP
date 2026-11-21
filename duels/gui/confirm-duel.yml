@@ -1,0 +1,40 @@
+# Colors use core theme tokens from core/config.yml
+# Map icon is overridden from arenas/<theme>.yml `icon`
+title: "{dark-gray}ᴄᴏɴꜰɪʀᴍ ᴅᴜᴇʟ - {accent}%opponent%"
+rows: 3
+filler:
+  enabled: false
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  lore: []
+items:
+  cancel:
+    slot: 10
+    material: RED_STAINED_GLASS_PANE
+    name: "{error}ᴅᴇɴʏ"
+    lore:
+      - "{white}Click to deny"
+  map:
+    slot: 12
+    material: SAND
+    name: "{main}ʙɪᴏᴍᴇ"
+    lore:
+      - "{gray}(%duel_map_name%)"
+  time:
+    slot: 13
+    material: CLOCK
+    name: "{main}ᴛɪᴍᴇ"
+    lore:
+      - "{gray}(%duel_time%)"
+  region:
+    slot: 14
+    material: PAPER
+    name: "{main}ʀᴇɢɪᴏɴ"
+    lore:
+      - "{gray}EU Central ({accent}%player_ping%ms{gray})"
+  confirm:
+    slot: 16
+    material: LIME_STAINED_GLASS_PANE
+    name: "{success}ᴀᴄᴄᴇᴘᴛ"
+    lore:
+      - "{white}Click to start the duel"

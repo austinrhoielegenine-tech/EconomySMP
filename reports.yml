@@ -1,0 +1,69 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+database:
+  type: SQLITE
+
+mysql:
+  host: localhost
+  port: 3306
+  database: astralreports
+  username: root
+  password: ""
+
+report-cooldown:
+  enabled: true
+  duration: 30m
+
+reasons:
+  - Hacking
+  - KillAura
+  - Fly
+  - X-Ray
+  - Reach
+  - AutoClicker
+  - Spam
+  - Advertising
+  - ChatAbuse
+  - InappropriateName
+
+messages:
+  report-success: "&aYou have successfully reported &#55CFFF%player% &afor &c%reason%"
+  staff-notify: "&#55CFFF%reporter% &7has reported &#55CFFF%reported% &7for &c%reason%"
+  cooldown: "&cYou need to wait &e%time% &cbefore reporting this player again."
+  player-not-found: "&cThat player could not be found."
+  cannot-report-self: "&cYou cannot report yourself."
+  invalid-reason: "&cPlease choose a valid reason."
+  no-permission: "&cYou do not have permission."
+  player-offline: "&cThat player is offline."
+
+commands:
+  ban:
+    - "ban %player%"
+  mute:
+    - "mute %player% 7d"
+
+items:
+  ban:
+    material: NETHERITE_AXE
+    name: "&cBan Player"
+
+  mute:
+    material: PAPER
+    name: "&eMute Player"
+
+  teleport:
+    material: ENDER_PEARL
+    name: "&bTeleport"

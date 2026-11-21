@@ -1,0 +1,60 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║
+# ███████║███████╗   ██║   ██████╔╝███████║██║
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝
+#
+worth:
+  title: "&8ᴡᴏʀᴛʜ (Page %page%)"
+  rows: 6
+  item-slots: 0-44
+
+items:
+  previous-page:
+    material: ARROW
+    slot: 45
+    name: "&#00fc88ᴘʀᴇᴠɪᴏᴜꜱ"
+    lore:
+      - "&fPrevious page"
+  next-page:
+    material: ARROW
+    slot: 53
+    name: "&#00fc88ɴᴇxᴛ"
+    lore:
+      - "&fNext page"
+  sort:
+    material: CAULDRON
+    slot: 47
+    name: "&#00fc88ꜱᴏʀᴛ"
+    lore:
+      - "&fClick to change sort"
+  filter:
+    material: HOPPER
+    slot: 48
+    name: "&#00fc88ꜰɪʟᴛᴇʀ"
+    lore:
+      - "&fClick to change filter"
+  search:
+    material: OAK_SIGN
+    slot: 50
+    name: "&#00fc88ꜱᴇᴀʀᴄʜ"
+    lore:
+      - "&fSearch items"
+  refresh:
+    material: ANVIL
+    slot: 49
+    name: "&#00fc88ᴡᴏʀᴛʜ"
+    lore:
+      - "&fRefresh"
+
+item-lore:
+  - "&fPrice: &#00fc88%price%"
+  - "&fWith multiplier: &#00fc88%multi_price%"

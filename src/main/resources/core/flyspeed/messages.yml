@@ -1,4 +1,0 @@
-enable: true
-FLYSPEED:
-  SET: '&aFly speed set to &f{speed}&a.'
-  INVALID: '&cInvalid speed. Please enter a number from 1 to 10.'

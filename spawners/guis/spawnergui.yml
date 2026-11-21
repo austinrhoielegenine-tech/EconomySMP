@@ -1,0 +1,52 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "%amount% %mob-name% ѕᴘᴀᴡɴᴇʀ"
+
+items:
+  head:
+    slot: 49
+    material: PLAYER_HEAD
+    name: "&#1FFD98%mob-name% ѕᴘᴀᴡɴᴇʀ"
+    lore:
+      - "&#1FFD98%loot-qty% &f%loot-name%"
+      - "&#1FFD98(%filled-percent%% filled)"
+  sell:
+    slot: 48
+    material: GOLD_INGOT
+    name: "&#FF1D1Dѕᴇʟʟ ᴀʟʟ"
+    lore:
+      - "&fClick to sell all mobs drops!"
+  drop:
+    slot: 50
+    material: DROPPER
+    name: "&#1FFD98ᴅʀᴏᴘ ʟᴏᴏᴛ"
+    lore:
+      - "&fClick to drop all loot on the page"
+
+  # Pagination buttons
+  next:
+    slot: 53
+    material: ARROW
+    name: "&#1FFD98ɴᴇхᴛ"
+    lore:
+      - "&fClick to go next page"
+
+  back:
+    slot: 45
+    material: ARROW
+    name: "&#1FFD98ʙᴀᴄᴋ"
+    lore:
+      - "&fClick to go previous page"

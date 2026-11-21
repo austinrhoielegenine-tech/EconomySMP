@@ -1,0 +1,44 @@
+# Colors use core theme tokens from core/config.yml
+title: "{dark-gray}ѕᴇʟᴇᴄᴛ & ᴄᴏɴꜰɪʀᴍ"
+rows: 3
+filler:
+  enabled: false
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  lore: []
+items:
+  cancel:
+    slot: 10
+    material: RED_STAINED_GLASS_PANE
+    name: "{error}ᴄᴀɴᴄᴇʟ"
+    lore:
+      - "{white}Click to cancel"
+  wait:
+    slot: 12
+    material: COMPASS
+    name: "{main}ᴡᴀɪᴛ ᴛɪᴍᴇ"
+    lore:
+      - "{gray}Estimated Wait: {accent}%estimated_wait%"
+      - "{gray}Currently queued: {accent}%amount_queued%"
+  stats:
+    slot: 13
+    material: GRAY_DYE
+    name: "{main}ѕᴛᴀᴛɪѕᴛɪᴄѕ"
+    lore:
+      - "{gray}Elo: {accent}%elo%"
+      - "{gray}Wins: {accent}%wins%"
+      - "{gray}Losses: {accent}%losses%"
+      - "{gray}Streak: {accent}%streak%"
+      - "{gray}Win Percentage: {accent}%win_percentage%%"
+  region:
+    slot: 14
+    material: FEATHER
+    name: "{main}ʀᴇɢɪᴏɴ"
+    lore:
+      - "{gray}EU Central ({accent}%player_ping%ms{gray})"
+  search:
+    slot: 16
+    material: LIME_STAINED_GLASS_PANE
+    name: "{success}ѕᴇᴀʀᴄʜ"
+    lore:
+      - "{white}Click to start searching for a match"

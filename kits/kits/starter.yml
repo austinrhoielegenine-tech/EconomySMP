@@ -1,0 +1,59 @@
+display-name: "&7Starter"
+permission: astralsmpcore.kit.starter
+permission-required: false
+cooldown: 3600
+slot: 11
+display:
+  ready:
+    material: LIGHT_GRAY_SHULKER_BOX
+    name: "&7ѕᴛᴀʀᴛᴇʀ"
+    lore:
+      - "&8Description"
+      - ""
+      - "&7Information"
+      - "&fClick to claim the starter kit"
+      - ""
+      - "&7Timer: &#00fc88Ready"
+      - "&7Access: &fMember"
+      - ""
+      - "&fLeft-Click to claim"
+      - "&fRight-Click to preview"
+    glow: true
+  cooldown:
+    material: LIGHT_GRAY_SHULKER_BOX
+    name: "&7ѕᴛᴀʀᴛᴇʀ"
+    lore:
+      - "&8Description"
+      - ""
+      - "&7Information"
+      - "&fClick to claim the starter kit"
+      - ""
+      - "&7Timer: &f%cooldown%"
+      - "&7Access: &fMember"
+      - ""
+      - "&fLeft-Click to claim"
+      - "&fRight-Click to preview"
+    glow: false
+  no-permission:
+    material: GRAY_SHULKER_BOX
+    name: "&7ѕᴛᴀʀᴛᴇʀ"
+    lore:
+      - "&8Description"
+      - ""
+      - "&7No permission for this kit"
+    glow: false
+items:
+  - material: IRON_SWORD
+    amount: 1
+  - material: IRON_PICKAXE
+    amount: 1
+  - material: IRON_AXE
+    amount: 1
+  - material: IRON_SHOVEL
+    amount: 1
+  - material: BREAD
+    amount: 16
+  - material: COOKED_BEEF
+    amount: 8
+  - material: TORCH
+    amount: 32

@@ -1,0 +1,41 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-permission: "&cYou do not have permission to use this command!"
+player-only: "&cYou must be a player to use this command!"
+reload: "&aConfiguration reloaded successfully."
+bounty-added: "&7You added &#fb0000$%amount_format% &7to &#00a3fb%target_name%'s &7bounty."
+bounty-added-on-you: "&#00a3fb%user_name% &7added &#fb0000$%amount_format% &7to your bounty."
+bounty-claimed: "&7You claimed &#fb0000$%amount_format% &7bounty for killing &#00a3fb%target_name%&7!"
+u-got-bounty-kill: "&#00a3fb%user_name% &7just killed you and claimed your bounty!"
+bounty-removed: "&7Removed bounty of &#fb0000$%amount_format% &7from &#00a3fb%target_name%&7."
+player-not-found: "&cPlayer not found!"
+cannot-add-bounty-to-yourself: "&cYou cannot add a bounty to yourself!"
+invalid-amount: "&cInvalid bounty amount!"
+amount-below-min: "&7Minimum amount is &#fb0000$%min_amount_format%."
+amount-above-max: "&7Maximum amount is &#fb0000$%max_amount_format%."
+not-enough-balance: "&cYou do not have enough balance to add this bounty."
+search-prompt: "&cType the name of the player you want to search for!"
+search-cancelled: "&cSearch cancelled!"
+usage-add: "&cUsage: /bounty add <player> <amount>"
+usage-admin: "&cUsage: /bounty admin <player>"
+no-bounty: "&cThat player has no bounty."
+player-bounty: "&7&#00a3fb%target_name% &7has a bounty of &#fb0000$%amount_format%&7."
+player-no-bounty: "&7&#00a3fb%target_name% &7has no bounty."
+
+actionbar-bounty-added: "&7You added &#fb0000$%amount_format% &7to &#00a3fb%target_name%'s &7bounty."
+actionbar-bounty-added-on-you: "&#00a3fb%user_name% &7added &#fb0000$%amount_format% &7to your bounty."
+actionbar-u-got-bounty-kill: "&#00a3fb%user_name% &7just killed you and claimed your bounty!"
+actionbar-bounty-claimed: "&7Claimed &#fb0000$%amount_format% &7bounty!"

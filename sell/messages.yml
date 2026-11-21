@@ -1,0 +1,52 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prefix-enable: false
+prefix: "&#00fc88ꜱᴇʟʟ &7» "
+
+messages:
+  sold: "&#00fc88$%amount%"
+  sold-detail: "&7Sold &#00fc88%items% &7items for &#00fc88%amount%&7!"
+  nothing-to-sell: "&cNo items to sell."
+  blacklisted-returned: "&c%count% blacklisted item(s) returned."
+  no-permission: "&cYou do not have permission."
+  player-only: "&cPlayers only."
+  reloaded: "&#00FF00AstralSell reloaded."
+  worth-search: "&cType an item name to search, or cancel."
+  search-cancelled: "&cSearch cancelled."
+  multiplier: "&7Your sell multiplier: &#00fc88%x%"
+  history-empty: "&cNo sell history yet."
+  price-set: "&7Price for &#00fc88%item% &7set to &#00fc88%price%&7."
+  worth-set-usage: "&cUsage: /worth set <price> [material]"
+  worth-hand: "&7%item% is &#00fc88%price% &7worth"
+  worth-stack: "&7%item% &7(x%amount%) is &#00fc88%total% &7worth &7(%single% each)"
+  history-player-usage: "&cUsage: /sellhistory <player>"
+  player-not-found: "&cPlayer not found."
+  no-item-in-hand: "&cHold an item or specify a material."
+  invalid-material: "&cInvalid material."
+
+  blacklist-added: "&c%item% blacklisted."
+  blacklist-removed: "&a%item% removed from blacklist."
+
+  invalid-price: "&cInvalid price!"
+  player-not-found: "&cPlayer not found."
+
+  sellaxe-sold: "&7Sold &#00fc88%items% &7chest items for &#00fc88%amount%&7!"
+  sellaxe-empty: "&cNo sellable items in that chest."
+  sellaxe-expired: "&cYour sell axe expired."
+  sellaxe-received: "&#00fc88You received an Amethyst Sell Axe &7(%time%)"
+
+  worth-toggle-on: "&7ᴡᴏʀᴛʜ ʟᴏʀᴇ ᴇɴᴀʙʟᴇᴅ"
+  worth-toggle-off: "&7ᴡᴏʀᴛʜ ʟᴏʀᴇ ᴅɪsᴀʙʟᴇᴅ"

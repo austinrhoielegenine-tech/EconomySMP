@@ -1,0 +1,25 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-required-items: "&cYou dont have the required items to trade!"
+inventory-full: "&cYour inventory is full!"
+trade-success: "&7You have successfully traded your items for &#7afc00%trade_item%&7!"
+cooldown: "&cPlease wait %time% seconds!"
+reload: "&aBillford Plugin Reloaded!"
+no-permission: "&cYou don't have permission to do this!"
+not-a-player: "Only players can do this!"
+usage: "&cUsage: %usage%"
+preset-changed: "&7The preset has been changed to &#7afc00%preset%&7!"
+no-preset: "&cNo trade preset is configured."

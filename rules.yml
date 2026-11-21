@@ -1,0 +1,68 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+gui:
+  title: "&8AstralSMP Rules"
+  size: 27
+
+sound:
+  enabled: true
+  type: UI_BUTTON_CLICK
+  volume: 1.0
+  pitch: 1.0
+
+items:
+
+  chat-rules:
+    slot: 12
+    material: KNOWLEDGE_BOOK
+    name: "<#55CFFF>Chat Rules"
+    lore:
+      - "&#64C1FD• &fNo Spamming or getting others to spam"
+      - "&#64C1FD• &fNo Harassing"
+      - "&#64C1FD• &fNo Advertising or Promotion"
+      - "&#64C1FD• &fNo Discrimination or Hate Speech"
+      - "&#64C1FD• &fNo Death Threats"
+      - "&#64C1FD• &fNo Sharing Others Private Information"
+      - "&#64C1FD• &fNo Pretending to be someone else"
+      - "&#64C1FD• &fNo Ban Evasion"
+      - "&#64C1FD• &fNo Lying to Staff Members"
+      - "&#64C1FD• &fReport Bugs, Glitches, and Cheaters"
+      - "    &fin the discord (&adiscord.gg/AstralSMP)"
+
+  server-rules:
+    slot: 14
+    material: KNOWLEDGE_BOOK
+    name: "<#55CFFF>&lServer Rules"
+    lore:
+      - "&#64C1FD• &fNo Hacked Clients"
+      - "&#64C1FD• &fNo Movement Mods"
+      - "&#64C1FD• &fNo Inventory Mods"
+      - "&#64C1FD• &fNo Health Indicators"
+      - "&#64C1FD• &fNo Radar"
+      - "&#64C1FD• &fNo Freecam"
+      - "&#64C1FD• &fNo Auto Place"
+      - "&#64C1FD• &fNo Easy Place"
+      - "&#64C1FD• &fNo Macros or Scripts"
+      - "&#64C1FD• &fNo Abusing Bugs"
+      - "&#64C1FD• &fNo Dupe Methods"
+      - "&#64C1FD• &fNo IRL Trading"
+      - "&#64C1FD• &fNo Invite Rewards"
+      - "&#64C1FD• &fNo Cross Server Trading"
+      - "&#64C1FD• &fNo Finding or Using The Seed"
+      - "&#64C1FD• &fMaximum 5 Accounts"
+      - "&#64C1FD• &fNo Mouse Tweaks / Scrollers"
+      - "&#64C1FD• &fNo Staff Impersonation"
+      - "&#64C1FD• &fNo External Gambling"

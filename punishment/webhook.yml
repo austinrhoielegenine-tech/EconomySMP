@@ -1,0 +1,109 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝╚═════╝    
+
+enabled: true
+url: "" # Webhook URL
+username: "AstralPunishment"
+avatar: ""
+
+embeds:
+  ban:
+    enabled: true
+    title: "Player Banned"
+    color: "#ff3333"
+    fields:
+      - "Player: %player%"
+      - "Staff: %staff%"
+      - "Reason: %reason%"
+      - "Duration: %duration%"
+      - "Offense: %offense%"
+      - "Ban ID: %banid%"
+      - "Date: %date%"
+
+  mute:
+    enabled: true
+    title: "Player Muted"
+    color: "#ff9933"
+    fields:
+      - "Player: %player%"
+      - "Staff: %staff%"
+      - "Reason: %reason%"
+      - "Duration: %duration%"
+      - "Offense: %offense%"
+      - "Date: %date%"
+
+  kick:
+    enabled: true
+    title: "Player Kicked"
+    color: "#ffff33"
+    fields:
+      - "Player: %player%"
+      - "Staff: %staff%"
+      - "Reason: %reason%"
+      - "Date: %date%"
+
+  freeze:
+    enabled: true
+    title: "Player Frozen"
+    color: "#33ccff"
+    fields:
+      - "Player: %player%"
+      - "Staff: %staff%"
+      - "Date: %date%"
+
+  unfreeze:
+    enabled: true
+    title: "Player Unfrozen"
+    color: "#33ff99"
+    fields:
+      - "Player: %player%"
+      - "Staff: %staff%"
+      - "Date: %date%"
+
+  unoffend:
+    enabled: true
+    title: "Punishment Removed"
+    color: "#00ff66"
+    fields:
+      - "Player: %player%"
+      - "Staff: %staff%"
+      - "Reason: %reason%"
+      - "Date: %date%"
+
+  ipban:
+    enabled: true
+    title: "Player IP-Banned"
+    color: "#cc0000"
+    fields:
+      - "Player: %player%"
+      - "IP: %ip%"
+      - "Staff: %staff%"
+      - "Reason: %reason%"
+      - "Duration: %duration%"
+      - "Offense: %offense%"
+      - "Ban ID: %banid%"
+      - "Date: %date%"
+
+  ipmute:
+    enabled: true
+    title: "Player IP-Muted"
+    color: "#cc6600"
+    fields:
+      - "Player: %player%"
+      - "IP: %ip%"
+      - "Staff: %staff%"
+      - "Reason: %reason%"
+      - "Duration: %duration%"
+      - "Offense: %offense%"
+      - "Date: %date%"

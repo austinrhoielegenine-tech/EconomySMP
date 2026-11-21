@@ -1,0 +1,82 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+blacklisted-blocks: # Blocks To not RTP on
+  - LAVA
+  - WATER
+  - MAGMA_BLOCK
+  - FIRE
+  - CACTUS
+  - POWDER_SNOW
+
+# Only block real water biomes. Remove entries if RTP fails too often.
+blacklisted-biomes:
+  - OCEAN
+  - DEEP_OCEAN
+  - WARM_OCEAN
+  - LUKEWARM_OCEAN
+  - COLD_OCEAN
+  - FROZEN_OCEAN
+  - DEEP_WARM_OCEAN
+  - DEEP_LUKEWARM_OCEAN
+  - DEEP_COLD_OCEAN
+  - DEEP_FROZEN_OCEAN
+
+# Stand completely still during countdown (Donut style)
+# How far you can walk during countdown before it cancels
+# 0 = must stay on the same block (strict / Donut style)
+# 3 = can move up to 3 blocks
+allowed-walk-range: 0
+
+wait-time-seconds: 5
+cooldown-seconds: 60
+
+# Raise this if you still get "no safe location"
+max-location-attempts: 500
+
+# IMPORTANT: world: must match your actual world folder names exactly
+world-settings:
+  overworld-region:
+    enabled: true
+    world: world
+    min-x: -8000
+    max-x: 8000
+    min-z: -8000
+    max-z: 8000
+
+  nether-region:
+    enabled: true
+    world: world_nether
+    min-x: -2500
+    max-x: 2500
+    min-z: -2500
+    max-z: 2500
+
+  end-region:
+    enabled: true
+    world: world_the_end
+    min-x: -4000
+    max-x: 4000
+    min-z: -4000
+    max-z: 4000
+
+
+sound:
+  teleport_cooldown: BLOCK_NOTE_BLOCK_PLING
+  teleporting: ENTITY_ENDERMAN_TELEPORT
+  button_click: UI_BUTTON_CLICK
+  teleport_success: ENTITY_PLAYER_LEVELUP
+  teleport_fail: ENTITY_VILLAGER_NO
+  reload: ENTITY_EXPERIENCE_ORB_PICKUP

@@ -1,0 +1,109 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8Astral Info"
+rows: 3
+items:
+  1:
+    item: LANTERN
+    slot: 10
+    cmd: rules
+    name: "&#13c3f5Astral"
+    lore:
+      - "&fBuild a base, fight players,"
+      - "&fand become the richest."
+      - ""
+      - "&#13c3f5PVP: &cEnabled"
+      - "&#13c3f5Difficulty: &cHard"
+      - "&#13c3f5KeepInventory: &cFalse"
+  2:
+    item: GOLD_INGOT
+    slot: 11
+    cmd: economy
+    name: "&#13c3f5Economy"
+    lore:
+      - "&fYou can earn server money by"
+      - "&fselling items in game."
+      - ""
+      - "&fBuy armor, gear and upgrades."
+      - ""
+      - "&#13c3f5cmd: &f/sell"
+      - "&#13c3f5cmd: &f/auction"
+  3:
+    item: BOOK
+    slot: 12
+    cmd: rules
+    name: "&#13c3f5Rules"
+    lore:
+      - "&fRead the server rules."
+      - "&fBreaking them may result"
+      - "&fin punishments."
+      - ""
+      - "&#13c3f5cmd: &f/rules"
+  4:
+    item: CLOCK
+    slot: 13
+    cmd: leaderboards
+    name: "&#13c3f5Leaderboards"
+    lore:
+      - "&fView the richest"
+      - "&for strongest players."
+      - ""
+      - "&#13c3f5cmd: &f/leaderboards"
+  5:
+    item: AMETHYST_SHARD
+    slot: 14
+    cmd: afk
+    name: "&#13c3f5AFK Shards"
+    lore:
+      - "&fEarn shards while AFK."
+      - "&fSpend them in the"
+      - "&fShard Shop."
+      - ""
+      - "&#13c3f5cmd: &f/afk"
+  6:
+    item: GRAY_DYE
+    slot: 15
+    cmd: settings
+    name: "&#13c3f5Settings"
+    lore:
+      - "&fCustomize your"
+      - "&fserver preferences."
+      - ""
+      - "&#13c3f5cmd: &f/settings"
+  7:
+    item: OAK_SAPLING
+    slot: 16
+    cmd: rtp
+    name: "&#13c3f5Random Teleport"
+    lore:
+      - "&fTeleport somewhere random."
+      - ""
+      - "&#13c3f5Overworld: &f175k x 175k"
+      - "&#13c3f5Nether: &f7.5k x 7.5k"
+      - "&#13c3f5End: &f225k x 225k"
+      - ""
+      - "&#13c3f5cmd: &f/rtp"
+messages:
+  reload: "&aAstralHelp configuration reloaded!"
+  no-permission: "&cYou don't have permission."
+  only-player: "&cOnly players can use this command."
+sounds:
+  gui-click:
+    sound: "minecraft:ui.button.click"
+  reload:
+    sound: "minecraft:entity.player.levelup"
+  no-permission:
+    sound: "minecraft:entity.villager.no"

@@ -1,0 +1,54 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+media-gui:
+  title: "&8media"
+  rows: 3
+  item:
+    slot: 13
+    material: LEATHER_HELMET
+    color: "#C74375"
+    click-command: "discord"
+    name: "&#EC2291media rank"
+    lore:
+      - "&#EC2291Requirements: &fonly one needed"
+      - "&#EC2291- &f25 average viewers on a stream"
+      - "&#EC2291- &f100 average viewers on a TikTok stream"
+      - "&#EC2291- &f5k views on a YouTube video"
+      - "&#EC2291- &f50k views on a TikTok"
+      - "&#EC2291- &f50k views on a YouTube short"
+      - "&#EC2291- &f50k views on an Instagram reel"
+      - ""
+      - "&#EC2291Reminders:"
+      - "&#EC2291- &fMust have the IP on screen"
+      - "&#EC2291- &fMust be from the new season"
+      - "&#EC2291- &fCreate a ticket in Discord for the rank"
+      - "&#EC2291- &fIt lasts 90 days and has all top rank perks"
+
+discord:
+  message:
+    - "&#00A4FCᴊᴏɪɴ ᴛʜᴇ ᴀsᴛʀᴀʟsᴍᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ"
+    - "&#00A4FC• &f&ndiscord.gg/KKY82f59pT"
+  sound: "minecraft:block.note_block.pling"
+
+messages:
+  reload: "&aAstralMedia configuration reloaded!"
+  no-permission: "&cYou don't have permission."
+
+store:
+  message:
+    - "&#00A4FCᴊᴏɪɴ ᴛʜᴇ ᴀsᴛʀᴀʟsᴍᴘ ᴄᴏᴍᴍᴜɴɪᴛʏ"
+    - "&#00A4FC• &f&nhttps://astralstudio.rf.gd/"
+  sound: "minecraft:block.note_block.pling"

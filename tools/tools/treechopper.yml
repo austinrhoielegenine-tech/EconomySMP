@@ -1,0 +1,47 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʏꜱᴛ ᴀxᴇ'
+lore:
+- '&7Breaks Trees instantly'
+- '&8Self Destruct:'
+- '&8%durability%'
+custom-model-data: 1000
+material: NETHERITE_AXE
+durability:
+  mode: time
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: true
+  list:
+  - EFFICIENCY:5
+  - UNBREAKING:3
+  - SHARPNESS:3
+  - MENDING:1
+  - SWEEPING_EDGE:3
+sound:
+  enabled: true
+  type: ITEM_AXE_STRIP
+  volume: 0.5
+  pitch: 1.2
+particle:
+  enabled: true
+  type: CRIT
+  count: 15
+  additional-particle:
+    enabled: true
+    type: CLOUD
+    count: 10

@@ -1,0 +1,43 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʜʏꜱᴛ ʟᴀᴠᴀ ʙᴜᴄᴋᴇᴛ'
+lore:
+- '&7Infinite Lava Bucket'
+- '&8Durability: &f%durability%'
+custom-model-data: 1003
+material: LAVA_BUCKET
+durability:
+  mode: infinite
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: false
+  list:
+  - UNBREAKING:3
+  - MENDING:1
+sound:
+  enabled: false
+  type: ENTITY_GENERIC_EXTINGUISH_FIRE
+  volume: 1.0
+  pitch: 1.0
+particle:
+  enabled: false
+  type: FLAME
+  count: 10
+  additional-particle:
+    enabled: false
+    type: LAVA
+    count: 5

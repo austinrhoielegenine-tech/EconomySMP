@@ -1,0 +1,46 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prefix: ""
+
+no-permission: "&cYou don't have permission."
+player-only: "&cOnly players can use this command."
+unknown-command: "&cUnknown subcommand. Try &7/as help&c."
+reload-success: "&#A2FF31YML'S Reloaded Successfully."
+invalid-entity: "&cInvalid mob type: &7%entity%"
+invalid-amount: "&cAmount must be a positive number."
+player-not-found: "&cPlayer not found."
+give-success: "&aGave &#1FFD98%amount% %entity% &aspawner(s) to &7%player%&a."
+receive-spawner: "&7You receive &#1FFD98%amount% %entity%"
+spawner-full: "&cThis spawner storage is full."
+collected-items: "&7Collected &#1FFD98%count% &7items."
+collected-exp: "&7Claimed &#1FFD98%exp% &7experience."
+sold-items: "&aSold items for &#1FFD98%price%&a."
+no-items: "&cNothing to collect."
+no-exp: "&cNo experience stored."
+stack-limit: "&cMaximum stack size is &7%max%&c."
+stack-success: "&aYou stacked the spawner! There are now &#1FFD98%amount% &aspawners in the stack."
+break-denied: "&cYou need Silk Touch to break this spawner!"
+not-your-spawner: "&cYou cannot interact with this spawner."
+type-changed: "&aSpawner type changed to &#1FFD98%entity%&a."
+list-header: "&7Active spawners (&#1FFD98%count%&7):"
+list-entry: "&8- &#1FFD98%entity% &7x%stack% &8@ &7%x% %y% %z% &7(%world%)"
+list-empty: "&7No spawners registered."
+info-header: "&#1FFD98Spawner Info"
+info-line: "&7%key%: &7%value%"
+hologram-line1: "&#1FFD98%entity%"
+hologram-line2: "&7x%stack% &8| &#1FFD98%items% items"
+convert-enabled: "&7Natural spawner conversion: &#1FFD98enabled"
+convert-disabled: "&7Natural spawner conversion: &cdisabled"

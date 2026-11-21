@@ -1,5 +1,0 @@
-enable: true
-VOICE-CHAT:
-  PROMPT-ON-JOIN: true
-  PROMPT-DELAY-TICKS: 40
-  MUTE-UNTIL-ACCEPTED: true

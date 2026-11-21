@@ -1,0 +1,32 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+# AstralSMPcore MSG system
+messages:
+  no-permission: "&cYou do not have permission."
+  blocked: "&7You have blocked &#00a3fb%player% &7from messaging you."
+  unblocked: "&7You have unblocked &#00a3fb%player%."
+  msg-format: "&#00a3fb%sender% &8-> &#00a3fb%receiver%&8: &f%message%"
+  msg-blocked: "&7You cannot message &#00a3fb%player% &7(blocked)."
+  msg-toggle-on: "&7Private messages &#00a3fbenabled&7."
+  msg-toggle-off: "&7Private messages &#00a3fbdisabled&7."
+  msg-toggle-player: "&#00a3fb%player% &7has private messages disabled."
+  usage-msg: "&cUsage: /msg <player> <message>"
+  usage-ignore: "&cUsage: /msgignore <player>"
+  self-message: "&cYou cannot message yourself."
+  no-target: "&cPlayer not found."
+  no-reply: "&cNobody to reply to."
+  ignored: "&7You are now ignoring &#00a3fb%player%&7."
+  unignored: "&7You are no longer ignoring &#00a3fb%player%&7."

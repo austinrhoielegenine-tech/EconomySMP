@@ -1,0 +1,114 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&cAdmin Control: &7%requested-material%"
+rows: 3
+items:
+  history:
+    slot: 11
+    material: "BOOK"
+    name: "&e&lDELIVERY HISTORY"
+    lore:
+      - "&fView all players who delivered"
+      - "&fitems for this order."
+      - ""
+      - "&eClick to view history"
+  delete:
+    slot: 13
+    material: "BARRIER"
+    name: "&c&lDELETE ORDER"
+    lore:
+      - "&fDelete this order and refund"
+      - "&fthe creator for remaining items."
+      - ""
+      - "&cClick to delete"
+  profile:
+    slot: 15
+    material: "PLAYER_HEAD"
+    name: "&b&lMANAGE CREATOR"
+    lore:
+      - "&fView statistics and manage"
+      - "&fthe player who created this order."
+      - ""
+      - "&bClick to manage profile"
+  claim:
+    slot: 4
+    material: "CHEST"
+    name: "&#00fc88ᴄʟᴀɪᴍ ɪᴛᴇᴍꜱ"
+    lore:
+      - "&fCollect uncollected items"
+      - "&ffrom this order."
+  back:
+    slot: 22
+    material: "ARROW"
+    name: "&a&lBACK"
+    lore:
+      - "&fReturn to order list"
+
+profile-gui:
+  title: "&bPlayer: &7%player%"
+  rows: 3
+  items:
+    stats:
+      slot: 13
+      material: "PLAYER_HEAD"
+      name: "&b&lSTATISTICS"
+      lore:
+        - "&fActive Orders: &f%active_orders%"
+        - "&fTotal Completed: &f%total_completed%"
+        - "&fStatus: %status_display%"
+    block:
+      slot: 11
+      material: "IRON_BARS"
+      name: "&c&lBLOCK PLAYER"
+      lore:
+        - "&fPrevent this player from"
+        - "&fcreating more orders."
+        - ""
+        - "&cClick to block"
+    unblock:
+      slot: 11
+      material: "LIME_STAINED_GLASS"
+      name: "&a&lUNBLOCK PLAYER"
+      lore:
+        - "&fAllow this player to"
+        - "&fcreate orders again."
+        - ""
+        - "&aClick to unblock"
+    back:
+      slot: 22
+      material: "ARROW"
+      name: "&a&lBACK"
+      lore:
+        - "&fReturn to order management"
+
+history-gui:
+  title: "&eHistory: &7%requested-material%"
+  rows: 6
+  navigation:
+    back:
+      slot: 49
+      material: "ARROW"
+      name: "&a&lBACK"
+      lore:
+        - "&fReturn to control panel"
+    prev:
+      slot: 45
+      material: "ARROW"
+      name: "&aPrevious Page"
+    next:
+      slot: 53
+      material: "ARROW"
+      name: "&aNext Page"

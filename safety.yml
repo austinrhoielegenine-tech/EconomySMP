@@ -1,0 +1,39 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+book:
+  title: "Safety"
+  author: "AstralSMP"
+
+first-join:
+  enabled: true
+  delay: 20
+  sound: "ENTITY_PLAYER_LEVELUP"
+
+pages:
+  - |
+    ⚠ Watch out!
+
+    Fake discords or mods can steal your account.
+
+    The only official discord can be found using /discord.
+
+    Never download files from random people.
+
+  - |
+    🎤 Voice Chat&n&nWelcome to AstralSMP's Voice Chat!&n&nUsing Voice Chat is completely optional, but if you choose to use it, please respect everyone around you.&nl%&nl%Breaking these rules may result in a mute or other punishment.
+messages:
+  reload: "&aAstralSafety configuration reloaded!"
+  no-permission: "&cYou don't have permission!"

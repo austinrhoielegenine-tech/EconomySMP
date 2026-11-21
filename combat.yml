@@ -1,0 +1,89 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+settings:
+  combat-duration: 20
+  tag-attacker: true
+  tag-victim: true
+  kill-on-quit: true
+  actionbar-enabled: true
+  actionbar-interval: 10
+
+blocked-commands:
+  - home
+  - homes
+  - rtp
+  - tpa
+  - tp
+  - tpaccept
+  - tpahere
+  - fly
+  - spawn
+  - warp
+  - warps
+  - duel
+  - duels
+  - kill
+  - suicide
+  - afk
+
+blocked-items:
+  - BEDROCK
+
+sounds:
+  enter-combat: ENTITY_EXPERIENCE_ORB_PICKUP
+  leave-combat: ENTITY_PLAYER_LEVELUP
+  command-blocked: ENTITY_VILLAGER_NO
+  item-blocked: ENTITY_VILLAGER_NO
+
+regions:
+  safe-zones:
+    - spawn
+    - afk
+  combat-only: []
+
+anti-safe-zone:
+  enabled: true
+  show-barrier: true
+  barrier-particle: REDSTONE
+  barrier-radius: 3
+  block-pearl: true
+  block-entry: true
+  message: "&cYou cannot enter a safe zone while in combat!"
+
+kill-message:
+  enabled: true
+  format: "&c%killer% &7eliminated &c%victim% &7with &7%weapon%"
+  no-weapon: "&c%killer% &7eliminated &c%victim%"
+  natural-death: "&7%victim% &7died"
+
+kill-reward:
+  enabled: true
+  cooldown: 30
+  commands:
+    - "shards give %killer% 10"
+
+messages:
+  no-permission: "&cYou lack permission for this."
+  player-only: "&cPlayers only."
+  reload-success: "&aConfiguration reloaded."
+  enter-combat: "&cYou entered combat!"
+  leave-combat: "&aYou left combat."
+  command-blocked: "&cThat command is blocked in combat."
+  item-blocked: "&cYou cannot use this item while tagged."
+  quit-punish: "&c%player% logged out during combat and was punished."
+  already-reward: "&cKill reward is on cooldown."
+  status-in: "&cIn combat for &7%time%s"
+  status-out: "&aNot in combat"

@@ -1,6 +1,0 @@
-enable: true
-MONEY-NAMETAGS:
-  ENABLED: true
-  FORMAT: '&a$ &f{balance}'
-  SHORT-FORMAT: true
-  UPDATE-INTERVAL-TICKS: 10

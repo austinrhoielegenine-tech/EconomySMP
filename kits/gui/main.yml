@@ -1,0 +1,10 @@
+title: "&8ᴋɪᴛꜱ"
+rows: 3
+
+kits:
+  starter:
+    slot: 13
+
+filler:
+  material: AIR
+  name: " "

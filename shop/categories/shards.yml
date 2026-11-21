@@ -1,0 +1,132 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ѕʜᴏᴘ - ꜱʜᴀʀᴅ ꜱʜᴏᴘ"
+size: 27
+type: shop
+economy: command
+take-command: "shards take %player% %total%"
+balance-placeholder: "%astralsmpcore_shards_balance_raw%"
+currency-symbol: "Shards"
+back-slot: 18
+back-open: main
+items:
+  "2":
+    material: TRIPWIRE_HOOK
+    name: "&2ᴄᴏᴍᴍᴏɴ ᴋᴇʏ"
+    price: 200
+    give-command: "crate givekey %player% common virtual 1"
+    lore:
+      - "&fBuy Price: &#A303F9200x &#A303F9&lShards"
+  "3":
+    material: TRIPWIRE_HOOK
+    name: "&6ɢᴏʟᴅ ᴋᴇʏ"
+    price: 1000
+    give-command: "crate givekey %player% gold virtual 1"
+    lore:
+      - "&fBuy Price: &#A303F91000x &#A303F9&lShards"
+  "4":
+    material: TRIPWIRE_HOOK
+    name: "&4ᴄʀɪᴍꜱᴏɴ ᴋᴇʏ"
+    price: 2500
+    give-command: "crate givekey %player% crimson virtual 1"
+    lore:
+      - "&fBuy Price: &#A303F92500x &#A303F9&lShards"
+  "5":
+    material: TRIPWIRE_HOOK
+    name: "&3ᴘʀɪᴍᴇ ᴋᴇʏ"
+    price: 2000
+    give-command: "crate givekey %player% prime virtual 1"
+    lore:
+      - "&fBuy Price: &#A303F92000x &#A303F9&lShards"
+  "6":
+    material: TRIPWIRE_HOOK
+    name: "&#A20AD6ᴀᴍᴇᴛʜʏsᴛ ᴋᴇʏ"
+    price: 2000
+    give-command: "crate givekey %player% amethyst virtual 1"
+    lore:
+      - "&fBuy Price: &#A303F92000x &#A303F9&lShards"
+  "9":
+    material: SPAWNER
+    name: "&dPig Spawner"
+    price: 200
+    give-command: "as give %player% PIG %amount%"
+    lore:
+      - "&ePig"
+      - "&fBuy Price: &#A303F9200x &#A303F9&lShards"
+  "10":
+    material: SPAWNER
+    name: "&dCow Spawner"
+    price: 250
+    give-command: "as give %player% COW %amount%"
+    lore:
+      - "&eCow"
+      - "&fBuy Price: &#A303F9250x &#A303F9&lShards"
+  "11":
+    material: SPAWNER
+    name: "&dZombie Spawner"
+    price: 300
+    give-command: "as give %player% ZOMBIE %amount%"
+    lore:
+      - "&eZombie"
+      - "&fBuy Price: &#A303F9300x &#A303F9&lShards"
+  "12":
+    material: SPAWNER
+    name: "&dSpider Spawner"
+    price: 400
+    give-command: "as give %player% SPIDER %amount%"
+    lore:
+      - "&eSpider"
+      - "&fBuy Price: &#A303F9400x &#A303F9&lShards"
+  "13":
+    material: SPAWNER
+    name: "&dSkeleton Spawner"
+    price: 500
+    give-command: "as give %player% SKELETON %amount%"
+    lore:
+      - "&eSkeleton"
+      - "&fBuy Price: &#A303F9500x &#A303F9&lShards"
+  "14":
+    material: SPAWNER
+    name: "&dCreeper Spawner"
+    price: 600
+    give-command: "as give %player% CREEPER %amount%"
+    lore:
+      - "&eCreeper"
+      - "&fBuy Price: &#A303F9600x &#A303F9&lShards"
+  "15":
+    material: SPAWNER
+    name: "&dPiglin Spawner"
+    price: 650
+    give-command: "as give %player% PIGLIN %amount%"
+    lore:
+      - "&ePiglin"
+      - "&fBuy Price: &#A303F9650x &#A303F9&lShards"
+  "16":
+    material: SPAWNER
+    name: "&dBlaze Spawner"
+    price: 500
+    give-command: "as give %player% BLAZE %amount%"
+    lore:
+      - "&eBlaze"
+      - "&fBuy Price: &#A303F9500x &#A303F9&lShards"
+  "17":
+    material: SPAWNER
+    name: "&dIron Golem Spawner"
+    price: 700
+    give-command: "as give %player% IRON_GOLEM %amount%"
+    lore:
+      - "&eIron Golem"
+      - "&fBuy Price: &#A303F9700x &#A303F9&lShards"

@@ -1,0 +1,57 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+menu-title: "&8ʜᴏᴍᴇꜱ" 
+size: 4 # How many raws should the Main GUI be?
+
+layout:
+  beds: "12,13,14,15,16"
+  dyes: "21,22,23,24,25"
+
+filled:
+  bed:
+    label: "&#0044FCʜᴏᴍᴇ %home%"
+    item: "LIGHT_BLUE_BED"
+    extra:
+      - "&fLeft-click to teleport"
+  dye:
+    label: "&#0044FCʜᴏᴍᴇ %home%"
+    item: "LIGHT_BLUE_DYE"
+    extra:
+      - "&fLeft-click to delete"
+
+empty:
+  bed:
+    label: "&7ɴᴏ ʜᴏᴍᴇ ꜱᴇᴛ"
+    item: "LIGHT_GRAY_BED"
+    extra:
+      - "&fClick to save your location"
+  dye:
+    label: "&7ɴᴏ ʜᴏᴍᴇ ꜱᴇᴛ"
+    item: "GRAY_DYE"
+    extra:
+      - "&fClick to save your location"
+
+locked:
+  bed:
+    label: "&#FF0000ɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ"
+    item: "RED_BED"
+    extra:
+      - "&fBuy &#0044FCAstral+ &fin /store for more homes"
+  dye:
+    label: "&#FF0000ɴᴏ ᴘᴇʀᴍɪꜱꜱɪᴏɴ"
+    item: "RED_DYE"
+    extra:
+      - "&fBuy &#0044FCAstral+ &fin /store for more homes"

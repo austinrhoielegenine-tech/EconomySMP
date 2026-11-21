@@ -1,4 +1,0 @@
-enable: true
-CLEAR-LAG:
-  COUNTDOWN: '&7Entities will be removed in &b{seconds} &7seconds.'
-  SUCCESS: '&7Total of &b{total} &7entities have been cleared.'

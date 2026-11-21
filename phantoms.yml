@@ -1,0 +1,35 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+
+Max-Range: 100 # meters
+
+blacklisted-world:
+  - spawn
+  - spawn2
+
+messages:
+  enable:
+    chat: false
+    actionbar: true
+    message: "&7ʏᴏᴜ ᴅɪѕᴀʙʟᴇᴅ ᴘʜᴀɴᴛᴏᴍѕ ѕᴘᴀᴡɴɪɴɢ ᴄʟᴏѕᴇ ᴛᴏ ʏᴏᴜ"
+
+  disable:
+    chat: false
+    actionbar: true
+    message: "&7ʏᴏᴜ ᴇɴᴀʙʟᴇᴅ ᴘʜᴀɴᴛᴏᴍѕ ѕᴘᴀᴡɴɪɴɢ ᴄʟᴏѕᴇ ᴛᴏ ʏᴏᴜ"
+  enable-sound:
+    chat: false
+    actionbar: true
+    message: "ENTITY_PHANTOM_DEATH"
+  disable-sound:
+    chat: false
+    actionbar: true
+    message: "ENTITY_PHANTOM_AMBIENT"
+  not_allowed_world:
+    chat: false
+    actionbar: true
+    message: "&cʏᴏᴜ ᴄᴀɴ'ᴛ ᴜѕᴇ ᴛʜɪѕ ᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜɪѕ ᴡᴏʀʟᴅ"

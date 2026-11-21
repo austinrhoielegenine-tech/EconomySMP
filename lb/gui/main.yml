@@ -1,0 +1,88 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅꜱ"
+rows: 4
+items:
+  money:
+    enabled: true
+    slot: 10
+    material: EMERALD
+    display-name: "&#00fc88ᴍᴏɴᴇʏ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view the money leaderboard"
+  shards:
+    enabled: true
+    slot: 11
+    material: AMETHYST_SHARD
+    display-name: "&#00fc88ꜱʜᴀʀᴅꜱ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view the shards leaderboard"
+  player-kills:
+    enabled: true
+    slot: 12
+    material: DIAMOND_SWORD
+    display-name: "&#00fc88ᴋɪʟʟꜱ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view the kills leaderboard"
+  deaths:
+    enabled: true
+    slot: 13
+    material: SKELETON_SKULL
+    display-name: "&#00fc88ᴅᴇᴀᴛʜꜱ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view the deaths leaderboard"
+  playtime:
+    enabled: true
+    slot: 14
+    material: CLOCK
+    display-name: "&#00fc88ᴘʟᴀʏᴛɪᴍᴇ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view the playtime leaderboard"
+  blocks-placed:
+    enabled: true
+    slot: 15
+    material: STONE
+    display-name: "&#00fc88ʙʟᴏᴄᴋꜱ ᴘʟᴀᴄᴇᴅ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view blocks placed"
+  blocks-broken:
+    enabled: true
+    slot: 16
+    material: COBBLESTONE
+    display-name: "&#00fc88ʙʟᴏᴄᴋꜱ ʙʀᴏᴋᴇɴ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view blocks broken"
+  mobs-killed:
+    enabled: true
+    slot: 19
+    material: ZOMBIE_HEAD
+    display-name: "&#00fc88ᴍᴏʙꜱ ᴋɪʟʟᴇᴅ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view mobs killed"
+  shop_spent:
+    enabled: true
+    slot: 20
+    material: GOLD_NUGGET
+    display-name: "&#00fc88ꜱʜᴏᴘ ꜱᴘᴇɴᴛ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view shop spent"
+  sell_earned:
+    enabled: true
+    slot: 21
+    material: IRON_NUGGET
+    display-name: "&#00fc88ꜱᴇʟʟ ᴇᴀʀɴᴇᴅ ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ"
+    lore:
+      - "&fClick to view sell earned"

@@ -1,0 +1,46 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʏꜱᴛ ʜᴏᴇ'
+lore:
+- '&7Plant 9 Blocks at once'
+- '&8Self Destruct:'
+- '&8%durability%'
+custom-model-data: 1000
+material: NETHERITE_HOE
+durability:
+  mode: time
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: true
+  list:
+  - EFFICIENCY:5
+  - UNBREAKING:3
+  - FORTUNE:3
+  - MENDING:1
+sound:
+  enabled: true
+  type: BLOCK_CROP_BREAK
+  volume: 0.4
+  pitch: 1.0
+particle:
+  enabled: true
+  type: HAPPY_VILLAGER
+  count: 15
+  additional-particle:
+    enabled: true
+    type: CLOUD
+    count: 10

@@ -1,0 +1,55 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+title: "&8ᴍᴏѕᴛ ᴍᴏɴᴇʏ (Page %page%/%total%)"
+row: 6
+players: 0-44
+items:
+  player:
+    display-name: "&#04fc84%name%"
+    material: PLAYER_HEAD
+    command: ""
+    lore:
+      - "&fMoney: &7%value% &#04fc84(%rank%)"
+  self:
+    slot: 48
+    material: PLAYER_HEAD
+    display-name: "&#04fc84%name%"
+    lore:
+      - "&fMoney: &7%value% &#04fc84(%rank%)"
+  back:
+    slot: 45
+    material: ARROW
+    display-name: "&#04fc84ʙᴀᴄᴋ"
+    lore:
+      - "&fClick to go to the previous page"
+  refresh:
+    slot: 49
+    material: EMERALD
+    display-name: "&#04fc84ᴍᴏѕᴛ ᴍᴏɴᴇʏ"
+    lore:
+      - "&fClick to refresh"
+  search:
+    slot: 50
+    material: OAK_SIGN
+    display-name: "&#04fc84ѕᴇᴀʀᴄʜ"
+    lore:
+      - "&fClick to search"
+  next:
+    slot: 53
+    material: ARROW
+    display-name: "&#04fc84ɴᴇxᴛ"
+    lore:
+      - "&fClick to go to the next page"

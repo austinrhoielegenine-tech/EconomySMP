@@ -1,0 +1,43 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʜʏꜱᴛ ᴡᴀᴛᴇʀ ʙᴜᴄᴋᴇᴛ'
+lore:
+- '&7Infinite Water Bucket'
+- '&8Durability: &f%durability%'
+custom-model-data: 1002
+material: WATER_BUCKET
+durability:
+  mode: infinite
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: false
+  list:
+  - UNBREAKING:3
+  - MENDING:1
+sound:
+  enabled: false
+  type: ENTITY_GENERIC_SPLASH
+  volume: 1.0
+  pitch: 1.0
+particle:
+  enabled: false
+  type: WATER_SPLASH
+  count: 10
+  additional-particle:
+    enabled: false
+    type: CLOUD
+    count: 5

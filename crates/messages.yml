@@ -1,0 +1,46 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-permission: "&cYou don't have permission to do this!"
+player-only: "&cOnly players can execute this command!"
+reloaded: "&aAstralCrates has been reloaded!"
+invalid-usage: "&cUsage: %usage%"
+crate-not-found: "&cCrate %crate% does not exist!"
+invalid-amount: "&cInvalid amount!"
+player-not-found: "&cPlayer not found!"
+bind: "&aCrate bound to the block you are looking at!"
+unbind: "&aCrate unbound from that block!"
+no-crate-bind: "&cNo crate is bound to this block!"
+no-block: "&cYou must be looking at a block!"
+effect-set: "&7Effect &#7afc00%effect% &7has been set for crate &#7afc00%crate%&7!"
+invalid-effect: "&cInvalid effect!"
+no-key: "&cYou don't have a key for this crate!"
+received-keys: "&7You received &#7afc00%amount%x %crate% &7keys!"
+given-keys: "&#7afc00%amount%x %crate% &7keys have been given to %player%."
+reward-received: "&aYou received %reward%!"
+open-cancelled: "&cCrate opening cancelled."
+
+help:
+  - "&#7afc00&lCRATES"
+  - " &7/crates help"
+  - " &7/crates list"
+  - " &7/crates reload"
+  - " &7/crates bind <crate>"
+  - " &7/crates unbind"
+  - " &7/crates givekey <player> <crate> <physical|virtual> <amount>"
+  - " &7/crates takekey <player> <crate> <physical|virtual> <amount>"
+  - " &7/crates keyall <crate> <physical|virtual> <amount>"
+  - " &7/crates seteffect <crate> <CHOOSE|NOWAIT|ROLLING>"
+view-only: "&7Viewing crate contents. You need a key to claim a reward."

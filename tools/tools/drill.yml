@@ -1,0 +1,46 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʜʏꜱᴛ ᴘɪᴄᴋᴀxᴇ'
+lore:
+- '&7Breaks 9 Blocks at Once'
+- '&8Self Destruct:'
+- '&8%durability%'
+custom-model-data: 1000
+material: NETHERITE_PICKAXE
+durability:
+  mode: time
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: true
+  list:
+  - EFFICIENCY:5
+  - UNBREAKING:3
+  - FORTUNE:3
+  - MENDING:1
+sound:
+  enabled: true
+  type: BLOCK_AMETHYST_BLOCK_STEP
+  volume: 0.1
+  pitch: 1.0
+particle:
+  enabled: true
+  type: PORTAL
+  count: 20
+  additional-particle:
+    enabled: true
+    type: DRAGON_BREATH
+    count: 15

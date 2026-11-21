@@ -1,0 +1,161 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+# turn the whitelist on/off
+whitelist:
+  enabled: true
+
+# stuff that happens when a cmd is blocked
+feedback:
+  message: "&cThis command is not available."
+  chat: true
+  action-bar: true
+  sound:
+    enabled: true
+    type: ENTITY_VILLAGER_NO
+
+# groups
+# default = everyone
+# other groups need at least 1 of the perms
+# cmds without the /
+
+groups:
+  default:
+    permissions: []
+    commands:
+      - discord
+      - media
+      - store
+      - spawn
+      - afk
+      - warp
+      - warps
+      - shop
+      - sell
+      - sellmulti
+      - sellmult
+      - sellhistory
+      - sellhist
+      - worth
+      - ec
+      - enderchest
+      - endersee
+      - ecsee
+      - rtp
+      - rtpq
+      - rtpqueue
+      - ah
+      - auction
+      - order
+      - orders
+      - duels
+      - duel
+      - queue
+      - leave 
+      - draw
+      - tpa
+      - tpahere
+      - tpauto
+      - tpaccept
+      - tpadeny
+      - tpacancel
+      - gtp
+      - gtph
+      - gmc
+      - gms
+      - gmsp
+      - give
+      - enchant
+      - clear
+      - vanish
+      - v
+      - invsee
+      - profile
+      - wipe
+      - offend
+      - unoffend
+      - offendip
+      - unoffendip
+      - kick
+      - ban
+      - mute
+      - unban
+      - unmute
+      - freeze
+      - unfreeze
+      - spawnfakeplayer
+      - spawnfakestash
+      - sus
+      - reports
+      - report
+      - history
+      - checkban
+      - checkmute
+      - shard
+      - shards
+      - baltop
+      - bal
+      - balancetop
+      - balance
+      - money
+      - moneytop
+      - bounty
+      - bounties
+      - billford
+      - stats
+      - statistics
+      - statistic
+      - leaderboard
+      - leaderboards
+      - lb
+      - home
+      - homes
+      - delhome
+      - sethome
+      - team
+      - teams
+      - msg
+      - message
+      - r
+      - messageblock
+      - messageingore
+      - msgblock
+      - msgingore
+      - tpaingore
+      - tpingore
+      - tpahereingore
+      - pay
+      - help
+      - guide
+      - hide
+      - vc
+      - voicechat
+      - safety
+      - link
+      - unlink
+      - phantoms
+      - p
+      - ping
+      - findplayer
+      - fp
+      - f
+      - safety
+      - s
+      - settings
+      - nv
+      - nightvision
+
+
+  

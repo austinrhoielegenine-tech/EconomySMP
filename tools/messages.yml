@@ -1,0 +1,35 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+prefix: "&#00fc88ᴀꜱᴛʀᴀʟᴛᴏᴏʟꜱ &8» "
+
+reloaded: "&#00fc88Reloaded."
+player-only: "&cPlayers only."
+no-permission: "&cNo permission."
+player-not-found: "&cPlayer not found."
+invalid-tool: "&cUnknown tool. Available: %tools%"
+tool-given: "&#00fc88Gave &7%tool% &#00fc88x%amount% &7to &7%player%"
+tool-received: "&#00fc88You received &7%tool%"
+inventory-full: "&cInventory full."
+tool-expired: "&cYour tool expired and broke."
+tool-broken: "&cYour tool ran out of uses."
+jump-cooldown: "&cWait &7%seconds%s &cbefore jumping again."
+water-nether: "&cCan't place water in the Nether."
+usage: |
+  &#00fc88AstralTools
+  &7/tools &8- &7open tools menu
+  &7/tools give <tool> [player] [amount]
+  &7/tools reload
+  &7/tools list

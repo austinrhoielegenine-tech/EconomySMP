@@ -1,0 +1,43 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ᴀᴍᴇᴛʜʏꜱᴛ ʙᴜᴄᴋᴇᴛ'
+lore:
+- '&7Drains 27 water or lava sources'
+- '&7at once (3x3x3)'
+- '&8Self Destruct:'
+- '&8%durability%'
+custom-model-data: 1004
+material: BUCKET
+durability:
+  mode: time
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: false
+  list: []
+sound:
+  enabled: true
+  type: ITEM_BUCKET_FILL
+  volume: 1.0
+  pitch: 1.0
+particle:
+  enabled: true
+  type: WATER_SPLASH
+  count: 20
+  additional-particle:
+    enabled: true
+    type: CLOUD
+    count: 10

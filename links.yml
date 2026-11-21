@@ -1,0 +1,17 @@
+# AstralSMPcore Discord linking
+# Put the Discord bot token and server ID here.
+# Discord role IDs are used so role names can be changed safely.
+
+enabled: true
+token: ""
+guild-id: ""
+linked-role-id: ""
+sync-interval-seconds: 60
+code-expire-seconds: 300
+default-group: default
+
+roles:
+  "123456789012345678":
+    luckperms-group: admin
+  "234567890123456789":
+    luckperms-group: moderator

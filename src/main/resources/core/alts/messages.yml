@@ -1,9 +1,0 @@
-enable: true
-ALTS:
-  USAGE: '&cUsage: /alts <player>'
-  NOT_FOUND: '&cPlayer not found.'
-  NO_DATA: '&cNo IP history found for that player.'
-  NONE: '&7No alternate accounts found.'
-  HEADER: '&8[&6Alts&8] &e%player%'
-  KNOWN_IPS: '&7Known IPs: &f%ips%'
-  ENTRY: '&8- &e%player% &7[%status%&7] &fshared: %ips%'

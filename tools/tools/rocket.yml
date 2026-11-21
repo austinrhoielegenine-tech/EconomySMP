@@ -1,0 +1,44 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+name: '&#A20AD6ɪɴꜰɪɴɪᴛʏ ʀᴏᴄᴋᴇᴛ'
+lore:
+- '&7Boosts your Elytra flight!'
+- '&8Durability: &f%durability%'
+custom-model-data: 1001
+material: FIREWORK_ROCKET
+durability:
+  mode: infinite
+  uses: 100
+  time: 3d
+enchantments:
+  enabled: false
+  list: []
+rocket:
+  flight-duration: 1
+  boost-power: 1.5
+sound:
+  enabled: true
+  type: ENTITY_FIREWORK_ROCKET_LAUNCH
+  volume: 1.0
+  pitch: 1.0
+particle:
+  enabled: true
+  type: FIREWORKS_SPARK
+  count: 30
+  additional-particle:
+    enabled: true
+    type: FLAME
+    count: 20

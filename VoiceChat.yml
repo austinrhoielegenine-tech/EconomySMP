@@ -1,0 +1,60 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+
+gui:
+  name: "&8ᴄᴏɴꜰɪʀᴍ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ"
+  rows: 3
+
+  cancel:
+    slot: 11
+    material: RED_STAINED_GLASS_PANE
+    name: "&cᴅᴇɴʏ"
+    lore:
+      - ""
+      - "&fClick to deny Voice Chat."
+
+  info:
+    slot: 13
+    material: NOTE_BLOCK
+    name: "&aɪɴꜰᴏ"
+    lore:
+      - ""
+      - "&fBy enabling voice chat on &aAstralSMP&f, you agree:"
+      - ""
+      - "&f- Your voice is recorded in voice channels"
+      - "&f- Recordings are not retained unless reported"
+      - "&f- You can revoke with &a/voicechat revoke"
+
+  accept:
+    slot: 15
+    material: LIME_STAINED_GLASS_PANE
+    name: "&aᴀᴄᴄᴇᴘᴛ"
+    lore:
+      - ""
+      - "&fClick to enable Voice Chat."
+
+sounds:
+  accept:
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 1
+    pitch: 1.2
+  cancel:
+    sound: ENTITY_VILLAGER_NO
+    volume: 1
+    pitch: 1
+  revoke:
+    sound: ENTITY_VILLAGER_NO
+    volume: 1
+    pitch: 1
+
+messages:
+  enabled: "&aʏᴏᴜ ʜᴀᴠᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴇɴᴀʙʟᴇᴅ ꜱɪᴍᴘʟᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ."
+  revoked: "&cʏᴏᴜ ʜᴀᴠᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʀᴇᴠᴏᴋᴇᴅ ꜱɪᴍᴘʟᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ."
+  refused: "&cʏᴏᴜ ʀᴇꜰᴜꜱᴇᴅ ᴛᴏ ᴇɴᴀʙʟᴇ ꜱɪᴍᴘʟᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ."
+  already-enabled: "&bYou already accepted voice chat."
+  not-enabled: "&cYou have not enabled voice chat."

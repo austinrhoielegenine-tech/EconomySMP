@@ -1,0 +1,58 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+order-news:
+  title: "&8ᴏʀᴅᴇʀs -> New Order"
+  rows: 3
+
+items:
+  cancel:
+    material: RED_STAINED_GLASS_PANE
+    slot: 10
+    name: '&#fc0404ᴄᴀɴᴄᴇʟ'
+    lore:
+      - '&fClick to return'
+
+  confirm:
+    material: LIME_STAINED_GLASS_PANE
+    slot: 16
+    name: '&#04fc04ᴄᴏɴғɪʀᴍ'
+    lore:
+      - '&fClick to confirm order'
+      - '&7(Total: %price%&7)'
+
+  item:
+    material: "%material_selected_item%" #Replace with a default material if needed. But the default item is stone
+    slot: 12
+    name: '&#00fc88ɪᴛᴇᴍ'
+    lore:
+      - '&fClick to choose the item'
+      - '&7(%item%)'
+
+  amount:
+    material: CHEST
+    slot: 13
+    name: '&#00fc88ᴀᴍᴏᴜɴᴛ'
+    lore:
+      - '&fClick to type amount of items'
+      - '&7(%amount_formatted%)'
+
+  price:
+    material: EMERALD
+    slot: 14
+    name: '&#00fc88ᴘʀɪᴄᴇ'
+    lore:
+      - '&fClick to type the price per item'
+      - '&7(%price_per_item%&7)'

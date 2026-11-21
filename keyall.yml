@@ -1,0 +1,69 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+# Keyall timer (seconds until next automatic random keyall)
+keyall-timer: 3600
+
+# Timer mode
+# per-player: true  = each online player has their own timer (pauses while offline)
+# per-player: false = one server-wide timer for everyone
+keyall-timer-type:
+  per-player: false
+
+# Broadcast when automatic keyall fires
+# Keys pool — chance is weight (higher = more common). Command runs as console.
+# %player% is replaced with each online player name when needed.
+keys:
+  common:
+    chance: 80
+    display: "&#249a1aᴄᴏᴍᴍᴏɴ ᴋᴇʏ"
+    command: "crate keyall common virtual 1"
+  crimson:
+    chance: 50
+    display: "&#c62119ᴄʀɪᴍsᴏɴ ᴋᴇʏ"
+    command: "crate keyall crimson virtual 1"
+  prime:
+    chance: 95
+    display: "&#2388d6ᴘʀɪᴍᴇ ᴋᴇʏ"
+    command: "crate keyall prime virtual 1"
+  gold:
+    chance: 99
+    display: "&#e6bb00ɢᴏʟᴅ ᴋᴇʏ"
+    command: "crate keyall gold virtual 1"
+  amethyst:
+    chance: 5
+    display: "&#6f3bafᴀᴍᴇᴛʜʏsᴛ ᴋᴇʏ"
+    command: "crate keyall amethyst virtual 1"
+
+messages:
+  no-permission: "&cYou don't have permission."
+  reload: "&aConfiguration reloaded."
+  no-keys: "&cNo keys configured."
+  timer-info: "&7Next keyall in &7%time%"
+  timer-reset: "&aKeyall timer has been reset."
+
+reward:
+  sound:
+    enabled: true
+    type: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    volume: 1.0
+    pitch: 1.0
+  actionbar: "#AAAAAAYou received #FFFFFF%key_reward%"
+  chat-message: "#AAAAAAYou received #FFFFFF%key_reward%!\n<click:run_command:%click_command%><hover:show_text:'#00FF00Click to teleport!'>#00A6FF[CLICK TO TELEPORT]</hover></click>\n#AAAAAAor type #00A6FF/warp crates to open it!"
+  click-command: "/warp crates"
+
+placeholder:
+  format: "%minutes%m %seconds%s"
+  ready: "&aReady!"

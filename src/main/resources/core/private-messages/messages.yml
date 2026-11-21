@@ -1,4 +1,0 @@
-enable: true
-PRIVATE_MESSAGES:
-  PM_ENABLED: '&aPrivate messages are now enabled'
-  PM_DISABLED: '&cPrivate messages are now disabled'

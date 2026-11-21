@@ -1,0 +1,134 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+main-panel:
+  title: "ꜱᴘᴀᴡɴᴇʀ ᴘᴀɴᴇʟ"
+  size: 27
+  filler:
+    enabled: true
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  
+  items:
+    overworld:
+      slot: 11
+      material: GRASS_BLOCK
+      name: "&#3AFF00ᴏᴠᴇʀᴡᴏʀʟᴅ"
+      lore:
+        - "&fTotal Spawners: &f%overworld-count%"
+        - ""
+        - "&fClick to see all of the spawners"
+    
+    nether:
+      slot: 13
+      material: NETHERRACK
+      name: "&#FE3333ɴᴇᴛʜᴇʀ"
+      lore:
+        - "&fTotal Spawners: &f%nether-count%"
+        - ""
+        - "&fClick to see all of the spawners"
+    
+    end:
+      slot: 15
+      material: END_STONE
+      name: "&#C11FFEᴇɴᴅ"
+      lore:
+        - "&fTotal Spawners: &f%end-count%"
+        - ""
+        - "&fClick to see all of the spawners"
+
+# Dimension spawner list settings
+dimension-panel:
+  # Titles for each dimension (page number appended if multiple pages)
+  titles:
+    overworld: "ᴏᴠᴇʀᴡᴏʀʟᴅ ꜱᴘᴀᴡɴᴇʀꜱ"
+    nether: "ɴᴇᴛʜᴇʀ ꜱᴘᴀᴡɴᴇʀꜱ"
+    end: "ᴇɴᴅ ꜱᴘᴀᴡɴᴇʀꜱ"
+  
+  size: 54
+  filler:
+    enabled: true
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  
+  # Display item for spawners in the list
+  display-item: SPAWNER
+  
+  # Spawner item display (placeholders: %mob-name%, %amount%, %world%, %x%, %y%, %z%)
+  spawner-item:
+    name: "&e%mob-name% Spawner"
+    lore:
+      - "&fAmount: &f%amount%"
+      - "&fWorld: &f%world%"
+      - "&fLocation: &f%x%, %y%, %z%"
+      - ""
+      - "&aRight-Click to teleport"
+      - "&cLeft-Click to remove"
+  
+  # Navigation buttons
+  items:
+    back-page:
+      slot: 45
+      material: ARROW
+      name: "&fʙᴀᴄᴋ"
+      lore: []
+    
+    back-main:
+      slot: 49
+      material: BARRIER
+      name: "&cBack"
+      lore: []
+    
+    next-page:
+      slot: 53
+      material: ARROW
+      name: "&fɴᴇхᴛ"
+      lore: []
+
+# Spawner removal confirmation GUI
+removal-confirm:
+  title: "ᴄᴏɴꜰɪʀᴍ ѕᴘᴀᴡɴᴇʀ ʀᴇᴍᴏᴠᴀʟ"
+  size: 27
+  filler:
+    enabled: true
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+  
+  # Spawner display item at slot 13 (placeholders: %mob-name%, %amount%, %world%, %x%, %y%, %z%)
+  spawner-item:
+    slot: 13
+    material: SPAWNER
+    name: "&e%mob-name% Spawner"
+    lore:
+      - "&fAmount: &f%amount%"
+      - "&fWorld: &f%world%"
+      - "&fLocation: &f%x%, %y%, %z%"
+      - ""
+      - "&cThis spawner will be removed!"
+  
+  items:
+    cancel:
+      slot: 11
+      material: RED_STAINED_GLASS_PANE
+      name: "&#FF1D1Dᴄᴀɴᴄᴇʟ"
+      lore:
+        - "&fClick to cancel"
+    
+    confirm:
+      slot: 15
+      material: LIME_STAINED_GLASS_PANE
+      name: "&#3AFF00ᴄᴏɴꜰɪʀᴍ"
+      lore:
+        - "&fClick to remove this spawner"

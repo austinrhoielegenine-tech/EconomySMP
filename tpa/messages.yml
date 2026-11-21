@@ -1,0 +1,84 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+no-permission: "&cYou do not have permission!"
+player-only: "&cOnly players can use this!"
+player-not-found: "&cPlayer not found!"
+reloaded: "&aAstralTPA reloaded."
+
+tpa-request-sent: "&7Tpa request sent to &#37BFF8{target}&7."
+tpa-request-received: "&7&#37BFF8{sender} &7wants to teleport to you."
+tpahere-request-sent: "&7Tpahere request sent to &#37BFF8{target}&7."
+tpahere-request-received: "&7&#37BFF8{sender} &7wants you to teleport to them."
+
+tpa-accepted-sender: "&7Your tpa to &#37BFF8{target} &7was accepted."
+tpa-accepted-target: "&7You accepted the tpa from &#37BFF8{sender}&7."
+tpahere-accepted-sender: "&7Your tpahere to &#37BFF8{target} &7was accepted."
+tpahere-accepted-target: "&7You accepted the tpahere."
+
+countdown-actionbar: "&7Teleporting in &#37BFF8{seconds} &7seconds"
+tpa-moved-cancel: "&cTeleport cancelled: movement detected!"
+teleport-done: "&aTeleported!"
+
+tpa-request-timeout: "&cYour teleport request to &#37BFF8{target}&c has expired."
+tpa-request-expired: "&cThe teleport request from &#37BFF8{sender}&c has expired."
+tpa-no-active-request: "&cYou do not have an active teleport request from &#37BFF8{sender}&c."
+tpa-no-pending-request: "&cThis tpa does not exist."
+
+tpa-denied-target: "&cYou denied &#37BFF8{sender}'s&c teleport request."
+tpa-denied-sender: "&cYour teleport request to &#37BFF8{target}&c has been denied."
+tpahere-denied-target: "&cYou denied &#37BFF8{sender}'s&c tpahere request."
+tpahere-denied-sender: "&cYour tpahere request to &#37BFF8{target}&c has been denied."
+
+tpa-cancelled-sender: "&cYou cancelled your teleport request."
+tpa-cancelled-target: "&c&#37BFF8{sender} &ccancelled their teleport request."
+
+tpa-usage: "&cUsage: /tpa <player>"
+tpahere-usage: "&cUsage: /tpahere <player>"
+tpaignore-usage: "&cUsage: /tpaignore <player>"
+
+tpa-self: "&cYou cannot send a teleport request to yourself!"
+tpa-receiver-disabled: "&c{player} has tpa requests disabled."
+tpa-here-receiver-disabled: "&c{player} has tpahere requests disabled."
+tpa-already-sent: "&cYou have already sent a teleport request to &#37BFF8{target}&c. Please wait."
+tpa-already-has-request: "&#37BFF8{target}&c already has an incoming teleport request. Please wait."
+tpa-ignored: "&c{player} is ignoring your teleport requests."
+
+click-accept-text: "&#37BFF8[CLICK] "
+click-accept-hover: "Click to accept request"
+or-type-text: "&7or type &#37BFF8/tpaccept {sender}"
+
+tpauto-chat-on: "&7You turned on tpauto."
+tpauto-chat-off: "&7You turned off tpauto."
+tpauto-actionbar-on: "&aYou have tpauto on."
+tpauto-actionbar-off: "&7You turned off tpauto."
+
+tpa-settings-enabled: "&aYou are now accepting all TPA requests."
+tpa-settings-disabled: "&cYou are now blocking all TPA requests."
+tpa-here-enabled: "&aYou are now accepting /tpahere requests."
+tpa-here-disabled: "&cYou are now blocking /tpahere requests."
+
+tpaignore-on: "&cYou are now ignoring &#37BFF8{player}&c."
+tpaignore-off: "&aYou are no longer ignoring &#37BFF8{player}&a."
+
+actionbar-tpa-sent: "&7Tpa sent to &#37BFF8{target}"
+actionbar-tpa-received: "&#37BFF8{sender} &7wants to teleport to you"
+actionbar-tpahere-sent: "&7Tpahere sent to &#37BFF8{target}"
+actionbar-tpahere-received: "&#37BFF8{sender} &7requested tpahere"
+
+confirm-gui-enabled: "&aConfirm GUI enabled for send and accept."
+confirm-gui-disabled: "&cConfirm GUI disabled. /tpa and /tpaccept are instant."
+
+tpa-send-cancelled: "&cTeleport request sending cancelled."

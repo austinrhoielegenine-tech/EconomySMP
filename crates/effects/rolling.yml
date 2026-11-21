@@ -1,0 +1,41 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+rolling-gui:
+  name: '&8ʀᴏʟʟɪɴɢ'
+  rows: 3
+  rolling-settings:
+    enabled: true
+    Direction: LEFT-TO-RIGHT
+    reward-item-slots: [9, 10, 11, 12, 13, 14, 15, 16, 17]
+    rolling-speed: 25
+    rolling-duration: 2000
+    above-below-item-reward: HOPPER
+
+  sounds:
+    rolling: UI_BUTTON_CLICK
+    reward-get: BLOCK_NOTE_BLOCK_PLING
+
+  rolling:
+    items:
+      - YELLOW_STAINED_GLASS_PANE
+      - BLUE_STAINED_GLASS_PANE
+      - RED_STAINED_GLASS_PANE
+      - GREEN_STAINED_GLASS_PANE
+      - PURPLE_STAINED_GLASS_PANE
+      - ORANGE_STAINED_GLASS_PANE
+      - CYAN_STAINED_GLASS_PANE
+      - LIGHT_GRAY_STAINED_GLASS_PANE
+      - GRAY_STAINED_GLASS_PANE

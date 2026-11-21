@@ -1,0 +1,50 @@
+# █████╗ ███████╗████████╗██████╗  █████╗ ██╗     
+# ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     
+# ███████║███████╗   ██║   ██████╔╝███████║██║     
+# ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     
+# ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗
+# ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+#
+# ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    
+# ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   
+# ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   
+# ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   
+# ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    
+#
+
+afk-gui:
+  title: "&8ᴀꜰᴋ ᴀʀᴇᴀꜱ"
+  row: 6
+  gui-settings:
+    spawn:
+      material: ITEM_FRAME
+      displayName: "&#A303F9ᴀꜰᴋ %name%"
+      lore:
+        - "&8%current%/%max%"
+        - "&fClick to go to this"
+        - "&fafk area."
+    maxed-players:
+      material: REDSTONE_BLOCK
+      displayName: "&cᴀꜰᴋ %name%"
+      lore:
+        - "&8%current%/%max%"
+        - "&cThis area is full/closed."
+    random-afk:
+      material: AMETHYST_BLOCK
+      slot: 49
+      displayName: "&#A303F9ᴀꜰᴋ"
+      lore:
+        - "&fClick to teleport to a random afk area"
+    back:
+      material: ARROW
+      slot: 45
+      displayName: "&aʙᴀᴄᴋ"
+      lore:
+        - "&fClick to go to the previous page"
+    next:
+      material: ARROW
+      slot: 53
+      displayName: "&aɴᴇxᴛ"
+      lore:
+        - "&fClick to go to the next page"
