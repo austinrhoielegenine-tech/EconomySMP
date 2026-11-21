@@ -13,6 +13,7 @@ import com.austynzdevv.economysmp.HologramsModule;
 import com.austynzdevv.economysmp.LinksModule;
 import com.austynzdevv.economysmp.Module;
 import com.austynzdevv.economysmp.MsgModule;
+import com.austynzdevv.economysmp.NametagModule;
 import com.austynzdevv.economysmp.NightVisionModule;
 import com.austynzdevv.economysmp.PayModule;
 import com.austynzdevv.economysmp.PhantomsModule;
@@ -51,6 +52,7 @@ public class ModuleManager {
       this.registerIfEnabled("msg", new MsgModule(this.plugin));
       this.registerIfEnabled("pay", new PayModule(this.plugin));
       this.registerIfEnabled("stats", new StatsModule(this.plugin));
+      this.modules.put("nametag", new NametagModule(this.plugin));
       this.tryRegisterAntiHealth();
       this.registerIfEnabled("settings", new SettingsModule(this.plugin));
       this.registerIfEnabled("scoreboard", new ScoreboardModule(this.plugin));
