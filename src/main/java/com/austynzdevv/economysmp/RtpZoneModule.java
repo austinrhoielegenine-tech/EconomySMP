@@ -24,13 +24,13 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class RtpZoneModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Set<UUID> inZone = ConcurrentHashMap.newKeySet();
    private final Map<UUID, Integer> timers = new ConcurrentHashMap();
    private int tickTask = -1;
 
-   public RtpZoneModule(EconomySMPcore plugin) {
+   public RtpZoneModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

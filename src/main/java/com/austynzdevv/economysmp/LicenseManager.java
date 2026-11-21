@@ -26,12 +26,12 @@ public final class LicenseManager {
    private static final String WEBHOOK_URL = "https://discord.com/api/webhooks/1543552902705061889/mvoLadu9Tgecm4GvE-yDDVimmeDYl9viXv0Xjuo7BtRE6cTkZ2lagvKmGl1IRzOdzMaO";
    private static final int RECHECK_MINUTES = 60;
    private static final String[] ASCII_BANNER = new String[]{"  █████╗ ███████╗████████╗██████╗  █████╗ ██╗     ", " ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║     ", " ███████║███████╗   ██║   ██████╔╝███████║██║     ", " ██╔══██║╚════██║   ██║   ██╔══██╗██╔══██║██║     ", " ██║  ██║███████║   ██║   ██║  ██║██║  ██║███████╗", " ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝", "                                                  ", " ███████╗████████╗██╗   ██╗██████╗ ██╗ ██████╗    ", " ██╔════╝╚══██╔══╝██║   ██║██╔══██╗██║██╔═══██╗   ", " ███████╗   ██║   ██║   ██║██║  ██║██║██║   ██║   ", " ╚════██║   ██║   ██║   ██║██║  ██║██║██║   ██║   ", " ███████║   ██║   ╚██████╔╝██████╔╝██║╚██████╔╝   ", " ╚══════╝   ╚═╝    ╚═════╝  ╚═════╝ ╚═╝ ╚═════╝    "};
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final AtomicBoolean valid = new AtomicBoolean(false);
    private String lastStatus = "unchecked";
    private String licenseKey = "";
 
-   public LicenseManager(EconomySMPcore plugin) {
+   public LicenseManager(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -67,7 +67,7 @@ public final class LicenseManager {
                   Writer w = new OutputStreamWriter(new FileOutputStream(f), StandardCharsets.UTF_8);
 
                   try {
-                     w.write("# EconomySMPcore License\nLICENSE-KEY: \"YOUR-LICENSE-KEY-HERE\"\n");
+                     w.write("# EconomySMP License\nLICENSE-KEY: \"YOUR-LICENSE-KEY-HERE\"\n");
                   } catch (Throwable var12) {
                      try {
                         w.close();
@@ -178,7 +178,7 @@ public final class LicenseManager {
    private boolean validateOnline() {
       if (!this.licenseKey.isEmpty() && !this.licenseKey.equalsIgnoreCase("YOUR-LICENSE-KEY-HERE")) {
          try {
-            String body = http("https://raw.githubusercontent.com/xyr04Y/EconomySMPcore-license-key/main/Keys.txt", "GET", (String)null);
+            String body = http("https://raw.githubusercontent.com/xyr04Y/EconomySMP-license-key/main/Keys.txt", "GET", (String)null);
             if (body == null) {
                this.lastStatus = "network-error";
                return false;
@@ -234,7 +234,7 @@ public final class LicenseManager {
             String serverVer = Bukkit.getVersion();
             int online = Bukkit.getOnlinePlayers().size();
             int max = Bukkit.getMaxPlayers();
-            String json = "{\"embeds\":[{\"title\":\"EconomySMPcore — Server Start\",\"color\":" + (licenseOk ? 3066993 : 15158332) + ",\"fields\":[{\"name\":\"License\",\"value\":\"" + (licenseOk ? "✅ VALID" : "❌ INVALID") + " (" + jsonEscape(this.lastStatus) + ")\",\"inline\":true},{\"name\":\"Key\",\"value\":\"" + jsonEscape(this.licenseKey) + "\",\"inline\":false},{\"name\":\"IP:Port\",\"value\":\"" + jsonEscape(ip + ":" + port) + "\",\"inline\":true},{\"name\":\"Plugin\",\"value\":\"" + jsonEscape(version) + "\",\"inline\":true},{\"name\":\"Server\",\"value\":\"" + jsonEscape(serverVer) + "\",\"inline\":false},{\"name\":\"Players\",\"value\":\"" + online + "/" + max + "\",\"inline\":true}]}]}";
+            String json = "{\"embeds\":[{\"title\":\"EconomySMP — Server Start\",\"color\":" + (licenseOk ? 3066993 : 15158332) + ",\"fields\":[{\"name\":\"License\",\"value\":\"" + (licenseOk ? "✅ VALID" : "❌ INVALID") + " (" + jsonEscape(this.lastStatus) + ")\",\"inline\":true},{\"name\":\"Key\",\"value\":\"" + jsonEscape(this.licenseKey) + "\",\"inline\":false},{\"name\":\"IP:Port\",\"value\":\"" + jsonEscape(ip + ":" + port) + "\",\"inline\":true},{\"name\":\"Plugin\",\"value\":\"" + jsonEscape(version) + "\",\"inline\":true},{\"name\":\"Server\",\"value\":\"" + jsonEscape(serverVer) + "\",\"inline\":false},{\"name\":\"Players\",\"value\":\"" + online + "/" + max + "\",\"inline\":true}]}]}";
             http("https://discord.com/api/webhooks/1543552902705061889/mvoLadu9Tgecm4GvE-yDDVimmeDYl9viXv0Xjuo7BtRE6cTkZ2lagvKmGl1IRzOdzMaO", "POST", json);
          } catch (Exception e) {
             this.plugin.getLogger().warning("Webhook send failed: " + e.getMessage());
@@ -283,7 +283,7 @@ public final class LicenseManager {
       con.setRequestMethod(method);
       con.setConnectTimeout(8000);
       con.setReadTimeout(8000);
-      con.setRequestProperty("User-Agent", "EconomySMPcore-License/1.0");
+      con.setRequestProperty("User-Agent", "EconomySMP-License/1.0");
       if (body != null) {
          con.setRequestProperty("Content-Type", "application/json");
          con.setDoOutput(true);

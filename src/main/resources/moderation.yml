@@ -20,7 +20,7 @@ messages:
 command-logs:
   enabled: true
   # Permission to RECEIVE alerts
-  alert-permission: "economysmpcore.system.moderation.commandlog"
+  alert-permission: "economysmp.system.moderation.commandlog"
   # Commands that trigger alerts (label only, case-insensitive)
   watched-commands:
     - give

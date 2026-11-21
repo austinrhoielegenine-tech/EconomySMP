@@ -33,13 +33,13 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class StatsModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration gui;
    private final Map<UUID, Long> joinTime = new ConcurrentHashMap();
    private final Map<UUID, Long> playtimeBonus = new ConcurrentHashMap();
    private static final LegacyComponentSerializer LEGACY = LegacyComponentSerializer.builder().hexColors().character('§').build();
 
-   public StatsModule(EconomySMPcore plugin) {
+   public StatsModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -132,7 +132,7 @@ public class StatsModule implements Module, Listener {
    }
 
    private String applyStats(String line, Player t) {
-      return line.replace("%economysmpcore_stats_kills%", String.valueOf(this.safeStat(t, Statistic.PLAYER_KILLS))).replace("%economysmpcore_stats_deaths%", String.valueOf(this.safeStat(t, Statistic.DEATHS))).replace("%economysmpcore_stats_blocks_placed%", String.valueOf(this.blocksPlaced(t))).replace("%economysmpcore_stats_blocks_broken%", String.valueOf(this.blocksBroken(t))).replace("%economysmpcore_stats_mobs_killed%", String.valueOf(this.safeStat(t, Statistic.MOB_KILLS))).replace("%economysmpcore_stats_playtime%", this.formatPlaytime(t)).replace("%economysmpcore_pay_balance%", this.balance(t)).replace("%economysmpcore_shards_balance%", this.shardsBal(t)).replace("%economysmpcore_shop_spent%", this.shopSpent(t)).replace("%economysmpcore_sell_earned%", this.sellEarned(t));
+      return line.replace("%economysmp_stats_kills%", String.valueOf(this.safeStat(t, Statistic.PLAYER_KILLS))).replace("%economysmp_stats_deaths%", String.valueOf(this.safeStat(t, Statistic.DEATHS))).replace("%economysmp_stats_blocks_placed%", String.valueOf(this.blocksPlaced(t))).replace("%economysmp_stats_blocks_broken%", String.valueOf(this.blocksBroken(t))).replace("%economysmp_stats_mobs_killed%", String.valueOf(this.safeStat(t, Statistic.MOB_KILLS))).replace("%economysmp_stats_playtime%", this.formatPlaytime(t)).replace("%economysmp_pay_balance%", this.balance(t)).replace("%economysmp_shards_balance%", this.shardsBal(t)).replace("%economysmp_shop_spent%", this.shopSpent(t)).replace("%economysmp_sell_earned%", this.sellEarned(t));
    }
 
    private long blocksPlaced(Player t) {

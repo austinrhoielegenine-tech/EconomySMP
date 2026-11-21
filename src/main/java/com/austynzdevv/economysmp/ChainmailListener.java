@@ -12,9 +12,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 
 public class ChainmailListener implements Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
 
-   public ChainmailListener(EconomySMPcore plugin) {
+   public ChainmailListener(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

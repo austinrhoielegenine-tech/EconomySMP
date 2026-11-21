@@ -38,7 +38,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
 public final class LinksModule implements Module {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final SecureRandom random = new SecureRandom();
    private final Map<String, UUID> pending = new ConcurrentHashMap();
    private final Set<String> usedCodes = ConcurrentHashMap.newKeySet();
@@ -49,7 +49,7 @@ public final class LinksModule implements Module {
    private JDA jda;
    private String guildId;
 
-   public LinksModule(EconomySMPcore plugin) {
+   public LinksModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -182,7 +182,7 @@ public final class LinksModule implements Module {
    }
 
    private boolean unlinkCommand(CommandSender sender, String[] args) {
-      if (!sender.hasPermission("economysmpcore.system.links.unlink") && !sender.isOp()) {
+      if (!sender.hasPermission("economysmp.system.links.unlink") && !sender.isOp()) {
          TextUtil.send(sender, "&cNo permission.");
          return true;
       } else if (args.length < 1) {

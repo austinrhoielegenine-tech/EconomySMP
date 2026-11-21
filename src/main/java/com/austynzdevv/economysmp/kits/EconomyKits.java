@@ -1,7 +1,7 @@
 package com.austynzdevv.economysmp.kits;
 
 import java.io.File;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.kits.gui.GuiManager;
 import com.austynzdevv.economysmp.kits.listener.GuiListener;
 import com.austynzdevv.economysmp.kits.util.MessageUtil;
@@ -9,14 +9,14 @@ import org.bukkit.Bukkit;
 import org.bukkit.event.HandlerList;
 
 public class EconomyKits {
-   private EconomySMPcore core;
+   private EconomySMP core;
    private File dataFolder;
    private KitManager manager;
    private GuiManager guiManager;
    private GuiListener guiListener;
    private boolean enabled;
 
-   public void init(EconomySMPcore core, File dataFolder) {
+   public void init(EconomySMP core, File dataFolder) {
       this.core = core;
       this.dataFolder = dataFolder;
       if (!dataFolder.exists()) {
@@ -41,7 +41,7 @@ public class EconomyKits {
       this.manager.saveCooldowns();
    }
 
-   public EconomySMPcore getCore() {
+   public EconomySMP getCore() {
       return this.core;
    }
 

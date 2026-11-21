@@ -15,8 +15,8 @@ import com.austynzdevv.economysmp.managers.ModuleManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class EconomySMPcore extends JavaPlugin {
-   private static EconomySMPcore instance;
+public final class EconomySMP extends JavaPlugin {
+   private static EconomySMP instance;
    private ConfigManager configManager;
    private LicenseManager licenseManager;
    private MessageManager messageManager;
@@ -63,7 +63,7 @@ public final class EconomySMPcore extends JavaPlugin {
    private void onLicenseValid() {
       if (!this.fullyEnabled) {
          this.fullyEnabled = true;
-         this.getLogger().info("License valid — loading EconomySMPcore...");
+         this.getLogger().info("License valid — loading EconomySMP...");
          this.startupStep("Compatibility logging", false, this::logCompatibility);
          this.startupStep("Config bootstrap", false, () -> {
             File mainCfg = new File(this.getDataFolder(), "main.config.yml");
@@ -115,12 +115,12 @@ public final class EconomySMPcore extends JavaPlugin {
          this.startupStep("PlaceholderAPI hook", false, () -> {
             if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
                (new EconomyPlaceholders(this)).register();
-               this.getLogger().info("PlaceholderAPI hooked (%economysmpcore_*%).");
+               this.getLogger().info("PlaceholderAPI hooked (%economysmp_*%).");
             }
 
          });
          this.startupStep("Elytra firework listener", false, () -> this.getServer().getPluginManager().registerEvents(new ElytraFireworkListener(), this));
-         this.getLogger().info("EconomySMPcore by Xyr0 enabled.");
+         this.getLogger().info("EconomySMP by Xyr0 enabled.");
       }
    }
 
@@ -135,7 +135,7 @@ public final class EconomySMPcore extends JavaPlugin {
 
    private void onLicenseInvalid(String status) {
       this.getLogger().severe("================================================");
-      this.getLogger().severe(" EconomySMPcore LICENSE INVALID (" + status + ")");
+      this.getLogger().severe(" EconomySMP LICENSE INVALID (" + status + ")");
       this.getLogger().severe(" Only license.yml was created.");
       this.getLogger().severe(" Set a valid LICENSE-KEY in license.yml and restart.");
       this.getLogger().severe("================================================");
@@ -155,7 +155,7 @@ public final class EconomySMPcore extends JavaPlugin {
 
       this.fullyEnabled = false;
       instance = null;
-      this.getLogger().info("EconomySMPcore disabled.");
+      this.getLogger().info("EconomySMP disabled.");
    }
 
    public void reloadAll() {
@@ -182,7 +182,7 @@ public final class EconomySMPcore extends JavaPlugin {
       }
    }
 
-   public static EconomySMPcore get() {
+   public static EconomySMP get() {
       return instance;
    }
 

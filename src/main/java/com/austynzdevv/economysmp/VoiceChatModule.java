@@ -31,14 +31,14 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public final class VoiceChatModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration config;
    private File dataFile;
    private final Set<UUID> accepted = new HashSet();
    private final Set<UUID> required = new HashSet();
    private static VoiceChatModule instance;
 
-   public VoiceChatModule(EconomySMPcore plugin) {
+   public VoiceChatModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

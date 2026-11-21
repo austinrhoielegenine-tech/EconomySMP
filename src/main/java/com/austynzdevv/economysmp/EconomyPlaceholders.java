@@ -20,14 +20,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class EconomyPlaceholders extends PlaceholderExpansion {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
 
-   public EconomyPlaceholders(EconomySMPcore plugin) {
+   public EconomyPlaceholders(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
    public String getIdentifier() {
-      return "economysmpcore";
+      return "economysmp";
    }
 
    public String getAuthor() {

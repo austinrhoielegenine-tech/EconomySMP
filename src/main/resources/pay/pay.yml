@@ -1,4 +1,4 @@
-# EconomySMPcore Pay system
+# EconomySMP Pay system
 confirm-gui-enabled: false
 min-pay: 1
 max-pay: 1000000000

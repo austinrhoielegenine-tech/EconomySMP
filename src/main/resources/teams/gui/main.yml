@@ -27,7 +27,7 @@ items:
     slot: 48
   team-info:
     material: IRON_HELMET
-    display-name: "&#34eb9bᴛᴇᴀᴍ %economysmpcore_teams_name%"
+    display-name: "&#34eb9bᴛᴇᴀᴍ %economysmp_teams_name%"
     lore:
       - "&7Click to refresh"
       - "&7Add up to 27 team members"

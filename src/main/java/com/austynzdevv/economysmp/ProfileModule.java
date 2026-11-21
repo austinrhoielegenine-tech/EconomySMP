@@ -30,9 +30,9 @@ import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.plugin.RegisteredServiceProvider;
 
 public class ProfileModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
 
-   public ProfileModule(EconomySMPcore plugin) {
+   public ProfileModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -67,7 +67,7 @@ public class ProfileModule implements Module, Listener {
 
    private boolean cmd(CommandSender sender, String[] args) {
       if (sender instanceof Player p) {
-         if (!p.hasPermission("economysmpcore.system.profile.use") && !p.isOp()) {
+         if (!p.hasPermission("economysmp.system.profile.use") && !p.isOp()) {
             TextUtil.send(p, "&cNo permission.");
             return true;
          } else {

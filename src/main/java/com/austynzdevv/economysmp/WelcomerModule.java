@@ -22,14 +22,14 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class WelcomerModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private File configFile;
    private File dataFile;
    private FileConfiguration data;
    private int registered;
 
-   public WelcomerModule(EconomySMPcore plugin) {
+   public WelcomerModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

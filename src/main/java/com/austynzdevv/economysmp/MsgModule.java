@@ -16,13 +16,13 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
 public class MsgModule implements Module {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Map<UUID, UUID> lastMsg = new HashMap();
    private final Set<UUID> toggledOff = new HashSet();
    private final Map<UUID, Set<UUID>> ignores = new HashMap();
 
-   public MsgModule(EconomySMPcore plugin) {
+   public MsgModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

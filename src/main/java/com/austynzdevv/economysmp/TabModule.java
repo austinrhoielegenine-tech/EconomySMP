@@ -40,7 +40,7 @@ import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.Team;
 
 public class TabModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private int taskId = -1;
    private int nameTaskId = -1;
@@ -52,7 +52,7 @@ public class TabModule implements Module, Listener {
    private final Map<Scoreboard, Map<String, String>> objectiveState = new WeakHashMap();
    private final Map<UUID, BossBar> bossBars = new ConcurrentHashMap();
 
-   public TabModule(EconomySMPcore plugin) {
+   public TabModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -254,7 +254,7 @@ public class TabModule implements Module, Listener {
    private void applyDisplayOptions(Player player) {
       int online = Bukkit.getOnlinePlayers().size();
       if (this.cfg.getBoolean("tab.bossbar.enabled", false)) {
-         String title = this.cfg.getString("tab.bossbar.title", "&bEconomySMP &8» &f%online% players").replace("%online%", String.valueOf(online)).replace("%player%", player.getName()).replace("&#00FC00&l$&#00FC00%economysmpcore_pay_balance%", String.valueOf((int)Math.ceil(player.getHealth()))).replace("%ping%", String.valueOf(player.getPing()));
+         String title = this.cfg.getString("tab.bossbar.title", "&bEconomySMP &8» &f%online% players").replace("%online%", String.valueOf(online)).replace("%player%", player.getName()).replace("&#00FC00&l$&#00FC00%economysmp_pay_balance%", String.valueOf((int)Math.ceil(player.getHealth()))).replace("%ping%", String.valueOf(player.getPing()));
          BossBar bar = (BossBar)this.bossBars.computeIfAbsent(player.getUniqueId(), (id) -> Bukkit.createBossBar(TextUtil.color(title), this.barColor(this.cfg.getString("tab.bossbar.color", "BLUE")), this.barStyle(this.cfg.getString("tab.bossbar.style", "SOLID")), new BarFlag[0]));
          bar.setTitle(TextUtil.color(title));
          bar.setColor(this.barColor(this.cfg.getString("tab.bossbar.color", "BLUE")));
@@ -320,7 +320,7 @@ public class TabModule implements Module, Listener {
             }
 
             for(Player target : Bukkit.getOnlinePlayers()) {
-               String format = this.cfg.getString("tab." + path + ".score", path.equals("belowname-objective") ? "&#00FC00&l$&#00FC00%economysmpcore_pay_balance%" : "%ping%");
+               String format = this.cfg.getString("tab." + path + ".score", path.equals("belowname-objective") ? "&#00FC00&l$&#00FC00%economysmp_pay_balance%" : "%ping%");
                int value;
                String shown;
                if (path.equals("belowname-objective") && format.toLowerCase(Locale.ROOT).contains("balance")) {
@@ -332,7 +332,7 @@ public class TabModule implements Module, Listener {
                   }
 
                   value = (int)Math.min((double)Integer.MAX_VALUE, Math.floor(balance));
-                  shown = format.replace("%economysmpcore_pay_balance%", CoreEconomy.formatMoney(balance));
+                  shown = format.replace("%economysmp_pay_balance%", CoreEconomy.formatMoney(balance));
                   if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
                      shown = PlaceholderAPI.setPlaceholders(target, shown);
                   }

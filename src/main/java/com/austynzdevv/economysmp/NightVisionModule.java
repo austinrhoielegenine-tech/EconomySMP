@@ -27,10 +27,10 @@ public class NightVisionModule implements Module, Listener {
    private static final String DATA_PATH = "nightvision.enabled";
    private static final String MSG_ON = "&7ᴛᴏɢɢʟᴇᴅ ɴɪɢʜᴛ ᴠɪѕɪᴏɴ ᴇꜰꜰᴇᴄᴛ";
    private static final String MSG_OFF = "&7ᴜɴᴛᴏɢɢʟᴇᴅ ɴɪɢʜᴛ ᴠɪѕɪᴏɴ ᴇꜰꜰᴇᴄᴛ";
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final Set<UUID> enabled = new HashSet();
 
-   public NightVisionModule(EconomySMPcore plugin) {
+   public NightVisionModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

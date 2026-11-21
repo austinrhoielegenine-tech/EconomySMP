@@ -1,7 +1,7 @@
-# EconomySMPcore leaderboard holograms — native TextDisplay (no FancyHolograms needed)
+# EconomySMP leaderboard holograms — native TextDisplay (no FancyHolograms needed)
 # /aholo list | movehere <name> | reload | near
-# Placeholders: %economysmpcore_lb_<board>_top_name_<rank>%, %economysmpcore_lb_<board>_top_value_<rank>%
-# Viewer row: %economysmpcore_lb_<board>_rank%, %economysmpcore_lb_<board>_value%, %player_name%
+# Placeholders: %economysmp_lb_<board>_top_name_<rank>%, %economysmp_lb_<board>_top_value_<rank>%
+# Viewer row: %economysmp_lb_<board>_rank%, %economysmp_lb_<board>_value%, %player_name%
 version: 2
 
 defaults:
@@ -29,18 +29,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ᴍᴏɴᴇʏ'
-    - '&#00f986#1 &f%economysmpcore_lb_money_top_name_1%: &#00f986%economysmpcore_lb_money_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_money_top_name_2%: &#00f986%economysmpcore_lb_money_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_money_top_name_3%: &#00f986%economysmpcore_lb_money_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_money_top_name_4%: &#00f986%economysmpcore_lb_money_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_money_top_name_5%: &#00f986%economysmpcore_lb_money_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_money_top_name_6%: &#00f986%economysmpcore_lb_money_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_money_top_name_7%: &#00f986%economysmpcore_lb_money_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_money_top_name_8%: &#00f986%economysmpcore_lb_money_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_money_top_name_9%: &#00f986%economysmpcore_lb_money_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_money_top_name_10%: &#00f986%economysmpcore_lb_money_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_money_top_name_1%: &#00f986%economysmp_lb_money_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_money_top_name_2%: &#00f986%economysmp_lb_money_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_money_top_name_3%: &#00f986%economysmp_lb_money_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_money_top_name_4%: &#00f986%economysmp_lb_money_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_money_top_name_5%: &#00f986%economysmp_lb_money_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_money_top_name_6%: &#00f986%economysmp_lb_money_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_money_top_name_7%: &#00f986%economysmp_lb_money_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_money_top_name_8%: &#00f986%economysmp_lb_money_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_money_top_name_9%: &#00f986%economysmp_lb_money_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_money_top_name_10%: &#00f986%economysmp_lb_money_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_money_rank% &f%player_name%: &#00f986%economysmpcore_lb_money_value%'
+    - '&#00f986%economysmp_lb_money_rank% &f%player_name%: &#00f986%economysmp_lb_money_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -68,18 +68,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ꜱʜᴀʀᴅꜱ'
-    - '&#00f986#1 &f%economysmpcore_lb_shards_top_name_1%: &#00f986%economysmpcore_lb_shards_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_shards_top_name_2%: &#00f986%economysmpcore_lb_shards_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_shards_top_name_3%: &#00f986%economysmpcore_lb_shards_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_shards_top_name_4%: &#00f986%economysmpcore_lb_shards_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_shards_top_name_5%: &#00f986%economysmpcore_lb_shards_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_shards_top_name_6%: &#00f986%economysmpcore_lb_shards_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_shards_top_name_7%: &#00f986%economysmpcore_lb_shards_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_shards_top_name_8%: &#00f986%economysmpcore_lb_shards_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_shards_top_name_9%: &#00f986%economysmpcore_lb_shards_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_shards_top_name_10%: &#00f986%economysmpcore_lb_shards_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_shards_top_name_1%: &#00f986%economysmp_lb_shards_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_shards_top_name_2%: &#00f986%economysmp_lb_shards_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_shards_top_name_3%: &#00f986%economysmp_lb_shards_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_shards_top_name_4%: &#00f986%economysmp_lb_shards_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_shards_top_name_5%: &#00f986%economysmp_lb_shards_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_shards_top_name_6%: &#00f986%economysmp_lb_shards_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_shards_top_name_7%: &#00f986%economysmp_lb_shards_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_shards_top_name_8%: &#00f986%economysmp_lb_shards_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_shards_top_name_9%: &#00f986%economysmp_lb_shards_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_shards_top_name_10%: &#00f986%economysmp_lb_shards_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_shards_rank% &f%player_name%: &#00f986%economysmpcore_lb_shards_value%'
+    - '&#00f986%economysmp_lb_shards_rank% &f%player_name%: &#00f986%economysmp_lb_shards_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -107,18 +107,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ᴘʟᴀʏᴇʀ ᴋɪʟʟꜱ'
-    - '&#00f986#1 &f%economysmpcore_lb_playerkills_top_name_1%: &#00f986%economysmpcore_lb_playerkills_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_playerkills_top_name_2%: &#00f986%economysmpcore_lb_playerkills_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_playerkills_top_name_3%: &#00f986%economysmpcore_lb_playerkills_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_playerkills_top_name_4%: &#00f986%economysmpcore_lb_playerkills_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_playerkills_top_name_5%: &#00f986%economysmpcore_lb_playerkills_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_playerkills_top_name_6%: &#00f986%economysmpcore_lb_playerkills_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_playerkills_top_name_7%: &#00f986%economysmpcore_lb_playerkills_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_playerkills_top_name_8%: &#00f986%economysmpcore_lb_playerkills_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_playerkills_top_name_9%: &#00f986%economysmpcore_lb_playerkills_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_playerkills_top_name_10%: &#00f986%economysmpcore_lb_playerkills_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_playerkills_top_name_1%: &#00f986%economysmp_lb_playerkills_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_playerkills_top_name_2%: &#00f986%economysmp_lb_playerkills_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_playerkills_top_name_3%: &#00f986%economysmp_lb_playerkills_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_playerkills_top_name_4%: &#00f986%economysmp_lb_playerkills_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_playerkills_top_name_5%: &#00f986%economysmp_lb_playerkills_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_playerkills_top_name_6%: &#00f986%economysmp_lb_playerkills_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_playerkills_top_name_7%: &#00f986%economysmp_lb_playerkills_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_playerkills_top_name_8%: &#00f986%economysmp_lb_playerkills_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_playerkills_top_name_9%: &#00f986%economysmp_lb_playerkills_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_playerkills_top_name_10%: &#00f986%economysmp_lb_playerkills_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_playerkills_rank% &f%player_name%: &#00f986%economysmpcore_lb_playerkills_value%'
+    - '&#00f986%economysmp_lb_playerkills_rank% &f%player_name%: &#00f986%economysmp_lb_playerkills_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -146,18 +146,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ᴅᴇᴀᴛʜꜱ'
-    - '&#00f986#1 &f%economysmpcore_lb_deaths_top_name_1%: &#00f986%economysmpcore_lb_deaths_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_deaths_top_name_2%: &#00f986%economysmpcore_lb_deaths_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_deaths_top_name_3%: &#00f986%economysmpcore_lb_deaths_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_deaths_top_name_4%: &#00f986%economysmpcore_lb_deaths_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_deaths_top_name_5%: &#00f986%economysmpcore_lb_deaths_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_deaths_top_name_6%: &#00f986%economysmpcore_lb_deaths_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_deaths_top_name_7%: &#00f986%economysmpcore_lb_deaths_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_deaths_top_name_8%: &#00f986%economysmpcore_lb_deaths_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_deaths_top_name_9%: &#00f986%economysmpcore_lb_deaths_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_deaths_top_name_10%: &#00f986%economysmpcore_lb_deaths_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_deaths_top_name_1%: &#00f986%economysmp_lb_deaths_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_deaths_top_name_2%: &#00f986%economysmp_lb_deaths_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_deaths_top_name_3%: &#00f986%economysmp_lb_deaths_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_deaths_top_name_4%: &#00f986%economysmp_lb_deaths_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_deaths_top_name_5%: &#00f986%economysmp_lb_deaths_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_deaths_top_name_6%: &#00f986%economysmp_lb_deaths_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_deaths_top_name_7%: &#00f986%economysmp_lb_deaths_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_deaths_top_name_8%: &#00f986%economysmp_lb_deaths_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_deaths_top_name_9%: &#00f986%economysmp_lb_deaths_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_deaths_top_name_10%: &#00f986%economysmp_lb_deaths_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_deaths_rank% &f%player_name%: &#00f986%economysmpcore_lb_deaths_value%'
+    - '&#00f986%economysmp_lb_deaths_rank% &f%player_name%: &#00f986%economysmp_lb_deaths_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -185,18 +185,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ᴘʟᴀʏᴛɪᴍᴇ'
-    - '&#00f986#1 &f%economysmpcore_lb_playtime_top_name_1%: &#00f986%economysmpcore_lb_playtime_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_playtime_top_name_2%: &#00f986%economysmpcore_lb_playtime_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_playtime_top_name_3%: &#00f986%economysmpcore_lb_playtime_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_playtime_top_name_4%: &#00f986%economysmpcore_lb_playtime_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_playtime_top_name_5%: &#00f986%economysmpcore_lb_playtime_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_playtime_top_name_6%: &#00f986%economysmpcore_lb_playtime_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_playtime_top_name_7%: &#00f986%economysmpcore_lb_playtime_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_playtime_top_name_8%: &#00f986%economysmpcore_lb_playtime_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_playtime_top_name_9%: &#00f986%economysmpcore_lb_playtime_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_playtime_top_name_10%: &#00f986%economysmpcore_lb_playtime_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_playtime_top_name_1%: &#00f986%economysmp_lb_playtime_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_playtime_top_name_2%: &#00f986%economysmp_lb_playtime_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_playtime_top_name_3%: &#00f986%economysmp_lb_playtime_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_playtime_top_name_4%: &#00f986%economysmp_lb_playtime_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_playtime_top_name_5%: &#00f986%economysmp_lb_playtime_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_playtime_top_name_6%: &#00f986%economysmp_lb_playtime_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_playtime_top_name_7%: &#00f986%economysmp_lb_playtime_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_playtime_top_name_8%: &#00f986%economysmp_lb_playtime_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_playtime_top_name_9%: &#00f986%economysmp_lb_playtime_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_playtime_top_name_10%: &#00f986%economysmp_lb_playtime_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_playtime_rank% &f%player_name%: &#00f986%economysmpcore_lb_playtime_value%'
+    - '&#00f986%economysmp_lb_playtime_rank% &f%player_name%: &#00f986%economysmp_lb_playtime_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -224,18 +224,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ʙʟᴏᴄᴋꜱ ᴘʟᴀᴄᴇᴅ'
-    - '&#00f986#1 &f%economysmpcore_lb_blocksplaced_top_name_1%: &#00f986%economysmpcore_lb_blocksplaced_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_blocksplaced_top_name_2%: &#00f986%economysmpcore_lb_blocksplaced_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_blocksplaced_top_name_3%: &#00f986%economysmpcore_lb_blocksplaced_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_blocksplaced_top_name_4%: &#00f986%economysmpcore_lb_blocksplaced_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_blocksplaced_top_name_5%: &#00f986%economysmpcore_lb_blocksplaced_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_blocksplaced_top_name_6%: &#00f986%economysmpcore_lb_blocksplaced_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_blocksplaced_top_name_7%: &#00f986%economysmpcore_lb_blocksplaced_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_blocksplaced_top_name_8%: &#00f986%economysmpcore_lb_blocksplaced_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_blocksplaced_top_name_9%: &#00f986%economysmpcore_lb_blocksplaced_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_blocksplaced_top_name_10%: &#00f986%economysmpcore_lb_blocksplaced_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_blocksplaced_top_name_1%: &#00f986%economysmp_lb_blocksplaced_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_blocksplaced_top_name_2%: &#00f986%economysmp_lb_blocksplaced_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_blocksplaced_top_name_3%: &#00f986%economysmp_lb_blocksplaced_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_blocksplaced_top_name_4%: &#00f986%economysmp_lb_blocksplaced_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_blocksplaced_top_name_5%: &#00f986%economysmp_lb_blocksplaced_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_blocksplaced_top_name_6%: &#00f986%economysmp_lb_blocksplaced_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_blocksplaced_top_name_7%: &#00f986%economysmp_lb_blocksplaced_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_blocksplaced_top_name_8%: &#00f986%economysmp_lb_blocksplaced_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_blocksplaced_top_name_9%: &#00f986%economysmp_lb_blocksplaced_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_blocksplaced_top_name_10%: &#00f986%economysmp_lb_blocksplaced_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_blocksplaced_rank% &f%player_name%: &#00f986%economysmpcore_lb_blocksplaced_value%'
+    - '&#00f986%economysmp_lb_blocksplaced_rank% &f%player_name%: &#00f986%economysmp_lb_blocksplaced_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -263,18 +263,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ʙʟᴏᴄᴋꜱ ᴍɪɴᴇᴅ'
-    - '&#00f986#1 &f%economysmpcore_lb_blocksbroken_top_name_1%: &#00f986%economysmpcore_lb_blocksbroken_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_blocksbroken_top_name_2%: &#00f986%economysmpcore_lb_blocksbroken_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_blocksbroken_top_name_3%: &#00f986%economysmpcore_lb_blocksbroken_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_blocksbroken_top_name_4%: &#00f986%economysmpcore_lb_blocksbroken_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_blocksbroken_top_name_5%: &#00f986%economysmpcore_lb_blocksbroken_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_blocksbroken_top_name_6%: &#00f986%economysmpcore_lb_blocksbroken_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_blocksbroken_top_name_7%: &#00f986%economysmpcore_lb_blocksbroken_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_blocksbroken_top_name_8%: &#00f986%economysmpcore_lb_blocksbroken_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_blocksbroken_top_name_9%: &#00f986%economysmpcore_lb_blocksbroken_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_blocksbroken_top_name_10%: &#00f986%economysmpcore_lb_blocksbroken_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_blocksbroken_top_name_1%: &#00f986%economysmp_lb_blocksbroken_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_blocksbroken_top_name_2%: &#00f986%economysmp_lb_blocksbroken_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_blocksbroken_top_name_3%: &#00f986%economysmp_lb_blocksbroken_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_blocksbroken_top_name_4%: &#00f986%economysmp_lb_blocksbroken_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_blocksbroken_top_name_5%: &#00f986%economysmp_lb_blocksbroken_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_blocksbroken_top_name_6%: &#00f986%economysmp_lb_blocksbroken_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_blocksbroken_top_name_7%: &#00f986%economysmp_lb_blocksbroken_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_blocksbroken_top_name_8%: &#00f986%economysmp_lb_blocksbroken_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_blocksbroken_top_name_9%: &#00f986%economysmp_lb_blocksbroken_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_blocksbroken_top_name_10%: &#00f986%economysmp_lb_blocksbroken_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_blocksbroken_rank% &f%player_name%: &#00f986%economysmpcore_lb_blocksbroken_value%'
+    - '&#00f986%economysmp_lb_blocksbroken_rank% &f%player_name%: &#00f986%economysmp_lb_blocksbroken_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -302,18 +302,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ᴍᴏʙꜱ ᴋɪʟʟᴇᴅ'
-    - '&#00f986#1 &f%economysmpcore_lb_mobkills_top_name_1%: &#00f986%economysmpcore_lb_mobkills_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_mobkills_top_name_2%: &#00f986%economysmpcore_lb_mobkills_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_mobkills_top_name_3%: &#00f986%economysmpcore_lb_mobkills_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_mobkills_top_name_4%: &#00f986%economysmpcore_lb_mobkills_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_mobkills_top_name_5%: &#00f986%economysmpcore_lb_mobkills_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_mobkills_top_name_6%: &#00f986%economysmpcore_lb_mobkills_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_mobkills_top_name_7%: &#00f986%economysmpcore_lb_mobkills_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_mobkills_top_name_8%: &#00f986%economysmpcore_lb_mobkills_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_mobkills_top_name_9%: &#00f986%economysmpcore_lb_mobkills_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_mobkills_top_name_10%: &#00f986%economysmpcore_lb_mobkills_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_mobkills_top_name_1%: &#00f986%economysmp_lb_mobkills_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_mobkills_top_name_2%: &#00f986%economysmp_lb_mobkills_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_mobkills_top_name_3%: &#00f986%economysmp_lb_mobkills_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_mobkills_top_name_4%: &#00f986%economysmp_lb_mobkills_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_mobkills_top_name_5%: &#00f986%economysmp_lb_mobkills_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_mobkills_top_name_6%: &#00f986%economysmp_lb_mobkills_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_mobkills_top_name_7%: &#00f986%economysmp_lb_mobkills_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_mobkills_top_name_8%: &#00f986%economysmp_lb_mobkills_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_mobkills_top_name_9%: &#00f986%economysmp_lb_mobkills_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_mobkills_top_name_10%: &#00f986%economysmp_lb_mobkills_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_mobkills_rank% &f%player_name%: &#00f986%economysmpcore_lb_mobkills_value%'
+    - '&#00f986%economysmp_lb_mobkills_rank% &f%player_name%: &#00f986%economysmp_lb_mobkills_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -341,18 +341,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴛᴏᴘ /ꜱᴇʟʟ'
-    - '&#00f986#1 &f%economysmpcore_lb_topsell_top_name_1%: &#00f986%economysmpcore_lb_topsell_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_topsell_top_name_2%: &#00f986%economysmpcore_lb_topsell_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_topsell_top_name_3%: &#00f986%economysmpcore_lb_topsell_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_topsell_top_name_4%: &#00f986%economysmpcore_lb_topsell_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_topsell_top_name_5%: &#00f986%economysmpcore_lb_topsell_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_topsell_top_name_6%: &#00f986%economysmpcore_lb_topsell_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_topsell_top_name_7%: &#00f986%economysmpcore_lb_topsell_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_topsell_top_name_8%: &#00f986%economysmpcore_lb_topsell_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_topsell_top_name_9%: &#00f986%economysmpcore_lb_topsell_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_topsell_top_name_10%: &#00f986%economysmpcore_lb_topsell_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_topsell_top_name_1%: &#00f986%economysmp_lb_topsell_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_topsell_top_name_2%: &#00f986%economysmp_lb_topsell_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_topsell_top_name_3%: &#00f986%economysmp_lb_topsell_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_topsell_top_name_4%: &#00f986%economysmp_lb_topsell_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_topsell_top_name_5%: &#00f986%economysmp_lb_topsell_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_topsell_top_name_6%: &#00f986%economysmp_lb_topsell_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_topsell_top_name_7%: &#00f986%economysmp_lb_topsell_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_topsell_top_name_8%: &#00f986%economysmp_lb_topsell_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_topsell_top_name_9%: &#00f986%economysmp_lb_topsell_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_topsell_top_name_10%: &#00f986%economysmp_lb_topsell_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_topsell_rank% &f%player_name%: &#00f986%economysmpcore_lb_topsell_value%'
+    - '&#00f986%economysmp_lb_topsell_rank% &f%player_name%: &#00f986%economysmp_lb_topsell_value%'
     text_shadow: false
     see_through: false
     text_alignment: center
@@ -380,18 +380,18 @@ holograms:
     shadow_strength: 1.0
     text:
     - '&#00f986ᴍᴏꜱᴛ ꜱᴘᴇɴᴛ'
-    - '&#00f986#1 &f%economysmpcore_lb_topspent_top_name_1%: &#00f986%economysmpcore_lb_topspent_top_value_1%'
-    - '&#00f986#2 &f%economysmpcore_lb_topspent_top_name_2%: &#00f986%economysmpcore_lb_topspent_top_value_2%'
-    - '&#00f986#3 &f%economysmpcore_lb_topspent_top_name_3%: &#00f986%economysmpcore_lb_topspent_top_value_3%'
-    - '&#00f986#4 &f%economysmpcore_lb_topspent_top_name_4%: &#00f986%economysmpcore_lb_topspent_top_value_4%'
-    - '&#00f986#5 &f%economysmpcore_lb_topspent_top_name_5%: &#00f986%economysmpcore_lb_topspent_top_value_5%'
-    - '&#00f986#6 &f%economysmpcore_lb_topspent_top_name_6%: &#00f986%economysmpcore_lb_topspent_top_value_6%'
-    - '&#00f986#7 &f%economysmpcore_lb_topspent_top_name_7%: &#00f986%economysmpcore_lb_topspent_top_value_7%'
-    - '&#00f986#8 &f%economysmpcore_lb_topspent_top_name_8%: &#00f986%economysmpcore_lb_topspent_top_value_8%'
-    - '&#00f986#9 &f%economysmpcore_lb_topspent_top_name_9%: &#00f986%economysmpcore_lb_topspent_top_value_9%'
-    - '&#00f986#10 &f%economysmpcore_lb_topspent_top_name_10%: &#00f986%economysmpcore_lb_topspent_top_value_10%'
+    - '&#00f986#1 &f%economysmp_lb_topspent_top_name_1%: &#00f986%economysmp_lb_topspent_top_value_1%'
+    - '&#00f986#2 &f%economysmp_lb_topspent_top_name_2%: &#00f986%economysmp_lb_topspent_top_value_2%'
+    - '&#00f986#3 &f%economysmp_lb_topspent_top_name_3%: &#00f986%economysmp_lb_topspent_top_value_3%'
+    - '&#00f986#4 &f%economysmp_lb_topspent_top_name_4%: &#00f986%economysmp_lb_topspent_top_value_4%'
+    - '&#00f986#5 &f%economysmp_lb_topspent_top_name_5%: &#00f986%economysmp_lb_topspent_top_value_5%'
+    - '&#00f986#6 &f%economysmp_lb_topspent_top_name_6%: &#00f986%economysmp_lb_topspent_top_value_6%'
+    - '&#00f986#7 &f%economysmp_lb_topspent_top_name_7%: &#00f986%economysmp_lb_topspent_top_value_7%'
+    - '&#00f986#8 &f%economysmp_lb_topspent_top_name_8%: &#00f986%economysmp_lb_topspent_top_value_8%'
+    - '&#00f986#9 &f%economysmp_lb_topspent_top_name_9%: &#00f986%economysmp_lb_topspent_top_value_9%'
+    - '&#00f986#10 &f%economysmp_lb_topspent_top_name_10%: &#00f986%economysmp_lb_topspent_top_value_10%'
     - ''
-    - '&#00f986%economysmpcore_lb_topspent_rank% &f%player_name%: &#00f986%economysmpcore_lb_topspent_value%'
+    - '&#00f986%economysmp_lb_topspent_rank% &f%player_name%: &#00f986%economysmp_lb_topspent_value%'
     text_shadow: false
     see_through: false
     text_alignment: center

@@ -86,10 +86,10 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
 public class CoreSystemsModule implements Module {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final List<Runnable> shutdown = new ArrayList();
 
-   public CoreSystemsModule(EconomySMPcore plugin) {
+   public CoreSystemsModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

@@ -27,12 +27,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
 public class DoubleJumpModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private YamlConfiguration cfg;
    private final Set<UUID> used = new HashSet();
    private final Set<UUID> flyEnabled = new HashSet();
 
-   public DoubleJumpModule(EconomySMPcore plugin) {
+   public DoubleJumpModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -118,7 +118,7 @@ public class DoubleJumpModule implements Module, Listener {
 
    private boolean flyCmd(CommandSender sender, String[] args) {
       if (sender instanceof Player p) {
-         if (!p.hasPermission("economysmpcore.system.fly.use") && !p.isOp()) {
+         if (!p.hasPermission("economysmp.system.fly.use") && !p.isOp()) {
             TextUtil.send(p, "&cNo permission for /fly.");
             return true;
          } else if (this.worldEnabled(p) && this.regionAllowed(p)) {

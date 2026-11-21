@@ -21,12 +21,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
 
 public class PhantomsModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Set<UUID> disabled = new HashSet();
    private double range = (double)100.0F;
 
-   public PhantomsModule(EconomySMPcore plugin) {
+   public PhantomsModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

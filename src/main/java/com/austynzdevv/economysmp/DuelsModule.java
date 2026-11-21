@@ -48,7 +48,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.projectiles.ProjectileSource;
 
 public class DuelsModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Set<UUID> queue = ConcurrentHashMap.newKeySet();
    private final Set<UUID> queueGuiOpen = ConcurrentHashMap.newKeySet();
@@ -71,7 +71,7 @@ public class DuelsModule implements Module, Listener {
    private Location arenaPos2;
    private final Map<UUID, Location> wandPos1 = new ConcurrentHashMap();
 
-   public DuelsModule(EconomySMPcore plugin) {
+   public DuelsModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
@@ -802,7 +802,7 @@ public class DuelsModule implements Module, Listener {
 
    private boolean adminCmd(CommandSender sender, String[] args) {
       if (sender instanceof Player p) {
-         if (!p.hasPermission("economysmpcore.system.duels.admin") && !p.isOp()) {
+         if (!p.hasPermission("economysmp.system.duels.admin") && !p.isOp()) {
             TextUtil.send(p, "&cNo permission.");
             return true;
          } else if (args.length < 1) {

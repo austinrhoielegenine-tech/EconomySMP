@@ -3,7 +3,7 @@ size: 27
 type: shop
 economy: command
 take-command: "shards take %player% %total%"
-balance-placeholder: "%economysmpcore_shards_balance_raw%"
+balance-placeholder: "%economysmp_shards_balance_raw%"
 currency-symbol: "Shards"
 back-slot: 18
 back-open: main

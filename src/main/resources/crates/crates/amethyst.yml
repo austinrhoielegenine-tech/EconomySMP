@@ -19,7 +19,7 @@ amethyst-crate:
     '2':
       height: 1.2
       lines:
-        - '&fKeys: &#6f3baf%economysmpcore_crate_keys_amethyst%'
+        - '&fKeys: &#6f3baf%economysmp_crate_keys_amethyst%'
     '3':
       height: 0.9
       lines:

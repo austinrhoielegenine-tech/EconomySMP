@@ -19,7 +19,7 @@ common-crate:
     '2':
       height: 1.2
       lines:
-        - '&fKeys: &#7afc00%economysmpcore_crate_keys_common%'
+        - '&fKeys: &#7afc00%economysmp_crate_keys_common%'
     '3':
       height: 0.9
       lines:

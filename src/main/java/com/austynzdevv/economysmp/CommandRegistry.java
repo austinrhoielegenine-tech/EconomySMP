@@ -20,7 +20,7 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
 public class CommandRegistry implements CommandExecutor, TabCompleter {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private final Map<String, String> commandToSystem = new HashMap();
    private final Map<String, BiFunction<CommandSender, String[], Boolean>> handlers = new HashMap();
    private final Map<String, TabCompleter> tabCompleters = new HashMap();
@@ -34,7 +34,7 @@ public class CommandRegistry implements CommandExecutor, TabCompleter {
       return h == null ? false : Boolean.TRUE.equals(h.apply(sender, args == null ? new String[0] : args));
    }
 
-   public CommandRegistry(EconomySMPcore plugin) {
+   public CommandRegistry(EconomySMP plugin) {
       this.plugin = plugin;
       this.mapDefaults();
    }
@@ -269,7 +269,7 @@ public class CommandRegistry implements CommandExecutor, TabCompleter {
          }
       }
 
-      PluginCommand core = this.plugin.getCommand("economysmpcore");
+      PluginCommand core = this.plugin.getCommand("economysmp");
       if (core != null) {
          CoreCommand cc = new CoreCommand(this.plugin);
          core.setExecutor(cc);

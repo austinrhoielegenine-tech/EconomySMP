@@ -11,14 +11,14 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 
 public class CoreCommand implements CommandExecutor, TabCompleter {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
 
-   public CoreCommand(EconomySMPcore plugin) {
+   public CoreCommand(EconomySMP plugin) {
       this.plugin = plugin;
    }
 
    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-      if (!sender.hasPermission("economysmpcore.reload") && !sender.hasPermission("economysmpcore.system.admin")) {
+      if (!sender.hasPermission("economysmp.reload") && !sender.hasPermission("economysmp.system.admin")) {
          this.plugin.messages().send(sender, "general.no-permission");
          return true;
       } else if (args.length == 0) {
@@ -72,7 +72,7 @@ public class CoreCommand implements CommandExecutor, TabCompleter {
    }
 
    public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-      if (!sender.hasPermission("economysmpcore.reload") && !sender.hasPermission("economysmpcore.system.admin")) {
+      if (!sender.hasPermission("economysmp.reload") && !sender.hasPermission("economysmp.system.admin")) {
          return List.of();
       } else if (args.length == 1) {
          return (List)Arrays.asList("reload", "enable", "disable").stream().filter((s) -> s.startsWith(args[0].toLowerCase())).collect(Collectors.toList());

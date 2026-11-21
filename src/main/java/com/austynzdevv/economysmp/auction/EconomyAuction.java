@@ -1,7 +1,7 @@
 package com.austynzdevv.economysmp.auction;
 
 import java.io.File;
-import com.austynzdevv.economysmp.EconomySMPcore;
+import com.austynzdevv.economysmp.EconomySMP;
 import com.austynzdevv.economysmp.SystemHost;
 import com.austynzdevv.economysmp.auction.command.AuctionCommand;
 import com.austynzdevv.economysmp.auction.gui.AuctionMenus;
@@ -51,9 +51,9 @@ public final class EconomyAuction extends SystemHost {
       new AuctionCommand(this);
 
       try {
-         ((EconomySMPcore)this.getCore()).commands().registerHandler("ahfastbuy", (s, a) -> {
+         ((EconomySMP)this.getCore()).commands().registerHandler("ahfastbuy", (s, a) -> {
             if (s instanceof Player p) {
-               if (!p.hasPermission("economysmpcore.system.auction.fastbuy") && !p.hasPermission("economysmpcore.system.auction.use") && !p.isOp()) {
+               if (!p.hasPermission("economysmp.system.auction.fastbuy") && !p.hasPermission("economysmp.system.auction.use") && !p.isOp()) {
                   p.sendMessage("§cNo permission.");
                   return true;
                } else {

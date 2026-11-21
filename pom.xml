@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.austynzdevv</groupId>
-    <artifactId>EconomySMPcore</artifactId>
+    <artifactId>EconomySMP</artifactId>
     <version>2.9</version>
     <packaging>jar</packaging>
-    <name>EconomySMPcore</name>
+    <name>EconomySMP</name>
 
     <properties>
         <java.version>21</java.version>
@@ -96,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>EconomySMPcore</finalName>
+        <finalName>EconomySMP</finalName>
         <defaultGoal>clean package</defaultGoal>
         <resources>
             <resource>

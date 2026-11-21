@@ -44,7 +44,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class SettingsModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private FileConfiguration settingsData;
    private final Set<UUID> soundsOff = ConcurrentHashMap.newKeySet();
@@ -71,7 +71,7 @@ public class SettingsModule implements Module, Listener {
    private final Map<UUID, Map<String, Boolean>> playerSettings = new ConcurrentHashMap();
    private static SettingsModule instance;
 
-   public SettingsModule(EconomySMPcore plugin) {
+   public SettingsModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

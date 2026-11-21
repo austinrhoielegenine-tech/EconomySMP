@@ -1,6 +1,6 @@
-name: EconomySMPcore
+name: EconomySMP
 version: 2.9
-main: com.austynzdevv.economysmp.EconomySMPcore
+main: com.austynzdevv.economysmp.EconomySMP
 api-version: '1.21'
 author: Xyr0
 description: Free EconomySMP 
@@ -10,31 +10,31 @@ softdepend: [ProtocolLib, packetevents, Vault, PlaceholderAPI, LuckPerms, Discor
 commands:
   tpaheretoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   globaltoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   teamchattoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   duelrequesttoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   duelsongtoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   tpaconfirmtoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   mobtoggle:
     description: Settings toggle
-    permission: economysmpcore.system.settings.use
+    permission: economysmp.system.settings.use
 
   phantom:
     description: Toggle personal phantom spawning
@@ -43,12 +43,12 @@ commands:
   aholo:
     description: Holograms admin
     aliases: [aholograms, holograms]
-    permission: economysmpcore.system.holograms.use
-  economysmpcore:
-    description: Main EconomySMPcore admin command
-    aliases: [asmp, asmpcore, economycore, acore, EconomySMPcore, EconomySMP]
-    usage: /economysmpcore reload | /asmp reload | /asmpcore reload
-    permission: economysmpcore.reload
+    permission: economysmp.system.holograms.use
+  economysmp:
+    description: Main EconomySMP admin command
+    aliases: [asmp, asmpcore, economycore, acore, EconomySMP, EconomySMP]
+    usage: /economysmp reload | /asmp reload | /asmpcore reload
+    permission: economysmp.reload
   ah:
     description: Auction house
     aliases: [auction, economyauction]
@@ -76,7 +76,7 @@ commands:
     description: Toggle worth display
   sellaxe:
     description: Sell axe
-    permission: EconomySMPcore.system.sellaxe.use
+    permission: EconomySMP.system.sellaxe.use
   sellhistory:
     description: Sell history
   orders:
@@ -306,7 +306,7 @@ commands:
 
   sus:
     description: Open suspected players GUI
-    permission: economysmpcore.system.moderation.sus
+    permission: economysmp.system.moderation.sus
 
   v:
     description: Toggle vanish
@@ -358,271 +358,271 @@ commands:
   eco:
     description: Economy admin commands
     usage: /eco <give|take|set|bal> <player> [amount]
-    permission: economysmpcore.system.moderation.eco
+    permission: economysmp.system.moderation.eco
   give:
     description: Give items to a player
-    permission: economysmpcore.system.moderation.give
+    permission: economysmp.system.moderation.give
   clear:
     description: Clear a player's inventory
-    permission: economysmpcore.system.moderation.clear
+    permission: economysmp.system.moderation.clear
   enchant:
     description: Enchant held item
-    permission: economysmpcore.system.moderation.enchant
+    permission: economysmp.system.moderation.enchant
   effect:
     description: Give/clear potion effects
-    permission: economysmpcore.system.moderation.effect
+    permission: economysmp.system.moderation.effect
   offend:
     description: Punish a player
-    permission: economysmpcore.system.punishment.offend
+    permission: economysmp.system.punishment.offend
   unoffend:
     description: Remove punishment
-    permission: economysmpcore.system.punishment.unoffend
+    permission: economysmp.system.punishment.unoffend
   offendip:
     description: IP punish
-    permission: economysmpcore.system.punishment.offendip
+    permission: economysmp.system.punishment.offendip
   freeze:
     description: Freeze a player
-    permission: economysmpcore.system.punishment.freeze
+    permission: economysmp.system.punishment.freeze
   unfreeze:
     description: Unfreeze a player
-    permission: economysmpcore.system.punishment.unfreeze
+    permission: economysmp.system.punishment.unfreeze
   kick:
     description: Kick a player
-    permission: economysmpcore.system.punishment.kick
+    permission: economysmp.system.punishment.kick
   checkban:
     description: Check ban
-    permission: economysmpcore.system.punishment.check
+    permission: economysmp.system.punishment.check
   checkmute:
     description: Check mute
-    permission: economysmpcore.system.punishment.check
+    permission: economysmp.system.punishment.check
   history:
     description: Punishment history
-    permission: economysmpcore.system.punishment.history
+    permission: economysmp.system.punishment.history
   punishment:
     description: Punishment history
-    permission: economysmpcore.system.punishment.admin
+    permission: economysmp.system.punishment.admin
     aliases: [punish]
   economypunishment:
     description: Punishment admin
-    permission: economysmpcore.system.punishment.admin
+    permission: economysmp.system.punishment.admin
     aliases: [ap]
 
 permissions:
-  economysmpcore.reload:
-    description: Reload EconomySMPcore (/economysmpcore reload, /asmp reload, /asmpcore reload)
+  economysmp.reload:
+    description: Reload EconomySMP (/economysmp reload, /asmp reload, /asmpcore reload)
     default: op
-  economysmpcore.system.admin:
+  economysmp.system.admin:
     description: Full admin for enable/disable systems
     default: op
 
-  # ---- systems (format: economysmpcore.system.<name>.<perm>) ----
-  economysmpcore.system.settings.use:
+  # ---- systems (format: economysmp.system.<name>.<perm>) ----
+  economysmp.system.settings.use:
     default: true
-  economysmpcore.system.holograms.use:
+  economysmp.system.holograms.use:
     default: op
-  economysmpcore.system.holograms.admin:
+  economysmp.system.holograms.admin:
     default: op
-  economysmpcore.system.warps.use:
+  economysmp.system.warps.use:
     default: true
-  economysmpcore.system.warps.spawn:
+  economysmp.system.warps.spawn:
     default: true
-  economysmpcore.system.warps.warp:
+  economysmp.system.warps.warp:
     default: true
-  economysmpcore.system.warps.afk:
+  economysmp.system.warps.afk:
     default: true
-  economysmpcore.system.warps.admin:
+  economysmp.system.warps.admin:
     default: op
-  economysmpcore.system.warps.bypass:
+  economysmp.system.warps.bypass:
     default: op
-  economysmpcore.system.homes.use:
+  economysmp.system.homes.use:
     default: true
-  economysmpcore.system.homes.limit.3:
+  economysmp.system.homes.limit.3:
     default: false
-  economysmpcore.system.homes.limit.4:
+  economysmp.system.homes.limit.4:
     default: false
-  economysmpcore.system.homes.limit.5:
+  economysmp.system.homes.limit.5:
     default: false
-  economysmpcore.system.homes.admin:
+  economysmp.system.homes.admin:
     default: op
-  economysmpcore.system.homes.bypass:
+  economysmp.system.homes.bypass:
     default: op
-  economysmpcore.system.homes.others:
+  economysmp.system.homes.others:
     default: op
-  economysmpcore.system.tpa.use:
+  economysmp.system.tpa.use:
     default: true
-  economysmpcore.system.tpa.admin:
+  economysmp.system.tpa.admin:
     default: op
-  economysmpcore.system.teams.use:
+  economysmp.system.teams.use:
     default: true
-  economysmpcore.system.teams.admin:
+  economysmp.system.teams.admin:
     default: op
-  economysmpcore.system.shop.use:
+  economysmp.system.shop.use:
     default: true
-  economysmpcore.system.shop.admin:
+  economysmp.system.shop.admin:
     default: op
-  economysmpcore.system.sell.use:
+  economysmp.system.sell.use:
     default: true
-  economysmpcore.system.sell.admin:
+  economysmp.system.sell.admin:
     default: op
-  EconomySMPcore.system.sellaxe.use:
+  EconomySMP.system.sellaxe.use:
     description: Give sell axes via /sellaxe
     default: op
-  economysmpcore.system.auction.use:
+  economysmp.system.auction.use:
     default: true
-  economysmpcore.system.auction.admin:
+  economysmp.system.auction.admin:
     default: op
-  economysmpcore.system.auction.fastbuy:
+  economysmp.system.auction.fastbuy:
     default: false
-  economysmpcore.system.order.use:
+  economysmp.system.order.use:
     default: true
-  economysmpcore.system.order.admin:
+  economysmp.system.order.admin:
     default: op
-  economysmpcore.system.bounties.use:
+  economysmp.system.bounties.use:
     default: true
-  economysmpcore.system.bounties.add:
+  economysmp.system.bounties.add:
     default: true
-  economysmpcore.system.bounties.admin:
+  economysmp.system.bounties.admin:
     default: op
-  economysmpcore.system.pay.use:
+  economysmp.system.pay.use:
     default: true
-  economysmpcore.system.msg.use:
+  economysmp.system.msg.use:
     default: true
-  economysmpcore.system.stats.use:
+  economysmp.system.stats.use:
     default: true
-  economysmpcore.system.profile.use:
+  economysmp.system.profile.use:
     default: true
-  economysmpcore.system.scoreboard.use:
+  economysmp.system.scoreboard.use:
     default: true
-  economysmpcore.system.nightvision.use:
+  economysmp.system.nightvision.use:
     default: true
-  economysmpcore.system.hide.use:
+  economysmp.system.hide.use:
     default: false
-  economysmpcore.system.fly.use:
+  economysmp.system.fly.use:
     default: op
-  economysmpcore.system.doublejump.use:
+  economysmp.system.doublejump.use:
     default: true
-  economysmpcore.system.shards.use:
+  economysmp.system.shards.use:
     default: true
-  economysmpcore.system.shards.vip:
+  economysmp.system.shards.vip:
     description: Earn VIP shard rate (2/min) while in the AFK zone
     default: false
-  economysmpcore.system.shards.everywhere:
+  economysmp.system.shards.everywhere:
     description: Earn 1 shard per minute anywhere on the server (not only AFK zone)
     default: false
-  economysmpcore.system.shards.admin:
+  economysmp.system.shards.admin:
     default: op
-  economysmpcore.system.crates.use:
+  economysmp.system.crates.use:
     default: true
-  economysmpcore.system.crates.admin:
+  economysmp.system.crates.admin:
     default: op
-  economysmpcore.system.spawners.use:
+  economysmp.system.spawners.use:
     default: true
-  economysmpcore.system.spawners.admin:
+  economysmp.system.spawners.admin:
     default: op
-  economysmpcore.system.tools.use:
+  economysmp.system.tools.use:
     default: true
-  economysmpcore.system.tools.admin:
+  economysmp.system.tools.admin:
     default: op
-  economysmpcore.system.rtp.use:
+  economysmp.system.rtp.use:
     default: true
-  economysmpcore.system.rtp.admin:
+  economysmp.system.rtp.admin:
     default: op
-  economysmpcore.system.ec.open:
+  economysmp.system.ec.open:
     default: true
-  economysmpcore.system.ec.everywhere:
+  economysmp.system.ec.everywhere:
     description: Open your ender chest with /ec from anywhere
     default: true
-  economysmpcore.system.ec.see:
+  economysmp.system.ec.see:
     default: op
-  economysmpcore.system.ec.admin:
+  economysmp.system.ec.admin:
     default: op
-  economysmpcore.system.links.use:
+  economysmp.system.links.use:
     default: true
-  economysmpcore.system.links.unlink:
+  economysmp.system.links.unlink:
     default: op
-  economysmpcore.system.duels.use:
+  economysmp.system.duels.use:
     default: true
-  economysmpcore.system.duels.admin:
+  economysmp.system.duels.admin:
     default: op
-  economysmpcore.system.moderation.use:
+  economysmp.system.moderation.use:
     default: op
-  economysmpcore.system.moderation.invsee:
+  economysmp.system.moderation.invsee:
     default: op
-  economysmpcore.system.moderation.wipe:
+  economysmp.system.moderation.wipe:
     default: op
-  economysmpcore.system.moderation.give:
+  economysmp.system.moderation.give:
     default: op
-  economysmpcore.system.moderation.clear:
+  economysmp.system.moderation.clear:
     default: op
-  economysmpcore.system.moderation.enchant:
+  economysmp.system.moderation.enchant:
     default: op
-  economysmpcore.system.moderation.effect:
+  economysmp.system.moderation.effect:
     default: op
-  economysmpcore.system.moderation.broadcast:
+  economysmp.system.moderation.broadcast:
     default: op
-  economysmpcore.system.moderation.vanish:
+  economysmp.system.moderation.vanish:
     default: op
-  economysmpcore.system.moderation.commandlog:
+  economysmp.system.moderation.commandlog:
     default: op
-  economysmpcore.system.moderation.sus:
+  economysmp.system.moderation.sus:
     default: op
-  economysmpcore.system.moderation.fakeplayer:
+  economysmp.system.moderation.fakeplayer:
     default: op
-  economysmpcore.system.moderation.fakestash:
+  economysmp.system.moderation.fakestash:
     default: op
-  economysmpcore.system.staffchat.use:
+  economysmp.system.staffchat.use:
     default: op
-  economysmpcore.system.punishment.offend:
+  economysmp.system.punishment.offend:
     default: op
-  economysmpcore.system.punishment.unoffend:
+  economysmp.system.punishment.unoffend:
     default: op
-  economysmpcore.system.punishment.offendip:
+  economysmp.system.punishment.offendip:
     default: op
-  economysmpcore.system.punishment.freeze:
+  economysmp.system.punishment.freeze:
     default: op
-  economysmpcore.system.punishment.unfreeze:
+  economysmp.system.punishment.unfreeze:
     default: op
-  economysmpcore.system.punishment.kick:
+  economysmp.system.punishment.kick:
     default: op
-  economysmpcore.system.punishment.check:
+  economysmp.system.punishment.check:
     default: op
-  economysmpcore.system.punishment.history:
+  economysmp.system.punishment.history:
     default: op
-  economysmpcore.system.punishment.admin:
+  economysmp.system.punishment.admin:
     default: op
-  economysmpcore.system.punishment.bypass:
+  economysmp.system.punishment.bypass:
     default: op
-  economysmpcore.system.maintenance.use:
+  economysmp.system.maintenance.use:
     default: op
-  economysmpcore.system.reports.use:
+  economysmp.system.reports.use:
     default: true
-  economysmpcore.system.reports.staff:
+  economysmp.system.reports.staff:
     default: op
-  economysmpcore.system.lb.use:
+  economysmp.system.lb.use:
     default: true
-  economysmpcore.system.lb.admin:
+  economysmp.system.lb.admin:
     default: op
-  economysmpcore.system.baltop.use:
+  economysmp.system.baltop.use:
     default: true
-  economysmpcore.system.billford.use:
+  economysmp.system.billford.use:
     default: true
-  economysmpcore.system.billford.admin:
+  economysmp.system.billford.admin:
     default: op
-  economysmpcore.system.voicechat.use:
+  economysmp.system.voicechat.use:
     default: true
-  economysmpcore.system.phantoms.use:
+  economysmp.system.phantoms.use:
     default: true
-  economysmpcore.system.combat.bypass:
+  economysmp.system.combat.bypass:
     default: op
-  economysmpcore.system.chainmail.use:
+  economysmp.system.chainmail.use:
     default: true
-  economysmpcore.system.safety.use:
+  economysmp.system.safety.use:
     default: true
-  economysmpcore.system.whitelister.bypass:
+  economysmp.system.whitelister.bypass:
     default: op
-  economysmpcore.system.whitelister.reload:
+  economysmp.system.whitelister.reload:
     default: op
-  economysmpcore.system.keyall.admin:
+  economysmp.system.keyall.admin:
     default: op
-  economysmpcore.system.help.use:
+  economysmp.system.help.use:
     default: true

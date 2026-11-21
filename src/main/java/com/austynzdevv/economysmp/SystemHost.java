@@ -252,7 +252,7 @@ public class SystemHost implements Plugin {
    }
 
    public @NotNull String getName() {
-      return "EconomySMPcore-" + this.systemId;
+      return "EconomySMP-" + this.systemId;
    }
 
    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
@@ -276,7 +276,7 @@ public class SystemHost implements Plugin {
    }
 
    public @NotNull String namespace() {
-      return "economysmpcore";
+      return "economysmp";
    }
 
    public ComponentLogger getComponentLogger() {

@@ -9,7 +9,7 @@ enabled-regions: # WorldGuard region ids (case-insensitive)
 
 vip:
   enabled: true
-  shards-per-minute: 2 # Rate in AFK zone for economysmpcore.system.shards.vip
+  shards-per-minute: 2 # Rate in AFK zone for economysmp.system.shards.vip
 
 pay-enabled: true # Allow /shards pay <player> <amount>
 

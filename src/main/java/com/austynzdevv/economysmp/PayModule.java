@@ -27,12 +27,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class PayModule implements Module, Listener {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private final Set<UUID> payDisabled = new HashSet();
    private final Map<UUID, PendingPay> pending = new HashMap();
 
-   public PayModule(EconomySMPcore plugin) {
+   public PayModule(EconomySMP plugin) {
       this.plugin = plugin;
    }
 

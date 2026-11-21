@@ -36,7 +36,7 @@ import org.joml.AxisAngle4f;
 import org.joml.Vector3f;
 
 public class HologramsModule implements Module {
-   private final EconomySMPcore plugin;
+   private final EconomySMP plugin;
    private FileConfiguration cfg;
    private File file;
    private int updateTask = -1;
@@ -45,7 +45,7 @@ public class HologramsModule implements Module {
    private final Map<String, Map<UUID, List<TextDisplay>>> personal = new ConcurrentHashMap();
    private static final LegacyComponentSerializer LEGACY = LegacyComponentSerializer.builder().hexColors().character('&').build();
 
-   public HologramsModule(EconomySMPcore plugin) {
+   public HologramsModule(EconomySMP plugin) {
       this.plugin = plugin;
       this.placeholders = new EconomyPlaceholders(plugin);
    }
@@ -164,7 +164,7 @@ public class HologramsModule implements Module {
       for(World world : Bukkit.getWorlds()) {
          for(Entity entity : new ArrayList<>(world.getEntities())) {
             try {
-               if (entity.getScoreboardTags().contains("economysmpcore_holo") || entity.getScoreboardTags().contains("economysmpcore_holo_personal")) {
+               if (entity.getScoreboardTags().contains("economysmp_holo") || entity.getScoreboardTags().contains("economysmp_holo_personal")) {
                   entity.remove();
                }
             } catch (Exception var6) {
@@ -239,7 +239,7 @@ public class HologramsModule implements Module {
                         }
 
                      });
-                     display.addScoreboardTag("economysmpcore_holo");
+                     display.addScoreboardTag("economysmp_holo");
                      display.addScoreboardTag("holo:" + name);
                      display.addScoreboardTag("line:" + i);
                      spawned.add(display);
@@ -266,7 +266,7 @@ public class HologramsModule implements Module {
       } else {
          String s = raw.toLowerCase(Locale.ROOT);
          if (!s.contains("%player_name%") && !s.contains("%player%")) {
-            return s.contains("%economysmpcore_lb_") && !s.contains("_top_") && (s.contains("_rank%") || s.contains("_value%"));
+            return s.contains("%economysmp_lb_") && !s.contains("_top_") && (s.contains("_rank%") || s.contains("_value%"));
          } else {
             return true;
          }
@@ -390,7 +390,7 @@ public class HologramsModule implements Module {
                               }
 
                            });
-                           display.addScoreboardTag("economysmpcore_holo_personal");
+                           display.addScoreboardTag("economysmp_holo_personal");
                            display.addScoreboardTag("holo:" + name);
                            display.addScoreboardTag("owner:" + String.valueOf(viewer.getUniqueId()));
 
@@ -436,7 +436,7 @@ public class HologramsModule implements Module {
    private void removeOrphanPersonal(String name, UUID uuid, Location base) {
       if (base != null && base.getWorld() != null) {
          for(Entity entity : new ArrayList<>(base.getWorld().getNearbyEntities(base, (double)3.0F, (double)4.0F, (double)3.0F))) {
-            if (entity.getScoreboardTags().contains("economysmpcore_holo_personal") && entity.getScoreboardTags().contains("holo:" + name) && entity.getScoreboardTags().contains("owner:" + String.valueOf(uuid))) {
+            if (entity.getScoreboardTags().contains("economysmp_holo_personal") && entity.getScoreboardTags().contains("holo:" + name) && entity.getScoreboardTags().contains("owner:" + String.valueOf(uuid))) {
                try {
                   entity.remove();
                } catch (Exception var7) {
@@ -470,7 +470,7 @@ public class HologramsModule implements Module {
 
       try {
          EconomyPlaceholders exp = this.placeholders;
-         Pattern pat = Pattern.compile("%economysmpcore_([^%]+)%", 2);
+         Pattern pat = Pattern.compile("%economysmp_([^%]+)%", 2);
          Matcher m = pat.matcher(out);
 
          StringBuffer sb;
@@ -559,7 +559,7 @@ public class HologramsModule implements Module {
    }
 
    private boolean cmd(CommandSender sender, String[] args) {
-      if (!sender.hasPermission("economysmpcore.system.holograms.use") && !sender.hasPermission("economysmpcore.system.admin")) {
+      if (!sender.hasPermission("economysmp.system.holograms.use") && !sender.hasPermission("economysmp.system.admin")) {
          TextUtil.send(sender, "&cNo permission.");
          return true;
       } else if (args.length == 0) {
