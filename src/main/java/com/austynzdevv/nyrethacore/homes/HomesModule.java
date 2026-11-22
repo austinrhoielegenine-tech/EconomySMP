@@ -1,0 +1,89 @@
+package com.austynzdevv.nyrethacore.homes;
+
+import java.io.File;
+import com.austynzdevv.nyrethacore.NyrethaCore;
+import com.austynzdevv.nyrethacore.CommandRegistry;
+import com.austynzdevv.nyrethacore.Module;
+import com.austynzdevv.nyrethacore.homes.command.HomeCommand;
+import com.austynzdevv.nyrethacore.homes.listener.GUIListener;
+import com.austynzdevv.nyrethacore.homes.listener.PlayerListener;
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.event.HandlerList;
+
+public class HomesModule implements Module {
+   private final NyrethaCore core;
+   private EconomyHomes host;
+   private HomeCommand command;
+   private GUIListener guiListener;
+   private PlayerListener playerListener;
+
+   public HomesModule(NyrethaCore core) {
+      this.core = core;
+   }
+
+   public String getName() {
+      return "homes";
+   }
+
+   public void onEnable() {
+      this.host = new EconomyHomes();
+      this.host.init(this.core, new File(this.core.getDataFolder(), "homes"));
+      this.host.start();
+      this.command = new HomeCommand(this.host);
+      this.guiListener = new GUIListener(this.host);
+      this.playerListener = new PlayerListener(this.host);
+      Bukkit.getPluginManager().registerEvents(this.guiListener, this.core);
+      Bukkit.getPluginManager().registerEvents(this.playerListener, this.core);
+      CommandRegistry reg = this.core.commands();
+      reg.registerHandler("homes", this::home);
+      reg.registerHandler("home", this::home);
+      reg.registerHandler("sethome", this::sethome);
+      reg.registerHandler("delhome", this::delhome);
+   }
+
+   public void onDisable() {
+      if (this.host != null) {
+         this.host.stop();
+      }
+
+      if (this.guiListener != null) {
+         HandlerList.unregisterAll(this.guiListener);
+      }
+
+      if (this.playerListener != null) {
+         HandlerList.unregisterAll(this.playerListener);
+      }
+
+   }
+
+   public void reload() {
+      if (this.host != null) {
+         this.host.reloadPlugin();
+      }
+
+   }
+
+   private boolean home(CommandSender sender, String[] args) {
+      return this.command.onCommand(sender, new FakeCommand("homes"), "homes", args);
+   }
+
+   private boolean sethome(CommandSender sender, String[] args) {
+      return this.command.onCommand(sender, new FakeCommand("sethome"), "sethome", args);
+   }
+
+   private boolean delhome(CommandSender sender, String[] args) {
+      return this.command.onCommand(sender, new FakeCommand("delhome"), "delhome", args);
+   }
+
+   private static final class FakeCommand extends Command {
+      FakeCommand(String name) {
+         super(name);
+      }
+
+      public boolean execute(CommandSender sender, String commandLabel, String[] args) {
+         return false;
+      }
+   }
+}

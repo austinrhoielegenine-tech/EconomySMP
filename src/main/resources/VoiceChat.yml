@@ -16,7 +16,7 @@ gui:
     name: "&aɪɴꜰᴏ"
     lore:
       - ""
-      - "&fBy enabling voice chat on &aNovaCore&f, you agree:"
+      - "&fBy enabling voice chat on &aNyrethaCore&f, you agree:"
       - ""
       - "&f- Your voice is recorded in voice channels"
       - "&f- Recordings are not retained unless reported"

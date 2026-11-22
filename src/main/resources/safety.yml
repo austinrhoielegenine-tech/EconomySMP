@@ -1,6 +1,6 @@
 book:
   title: "Safety"
-  author: "NovaCore"
+  author: "NyrethaCore"
 
 first-join:
   enabled: true
@@ -18,7 +18,7 @@ pages:
     Never download files from random people.
 
   - |
-    🎤 Voice Chat&n&nWelcome to NovaCore's Voice Chat!&n&nUsing Voice Chat is completely optional, but if you choose to use it, please respect everyone around you.&nl%&nl%Breaking these rules may result in a mute or other punishment.
+    🎤 Voice Chat&n&nWelcome to NyrethaCore's Voice Chat!&n&nUsing Voice Chat is completely optional, but if you choose to use it, please respect everyone around you.&nl%&nl%Breaking these rules may result in a mute or other punishment.
 messages:
   reload: "&aEconomySafety configuration reloaded!"
   no-permission: "&cYou don't have permission!"

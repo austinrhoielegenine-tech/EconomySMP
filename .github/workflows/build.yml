@@ -4,59 +4,12 @@ on:
   pull_request:
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Apply one-time NovaCore rename across all repository files
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          old = "Economy" + "SMP"
-          pattern = re.compile(re.escape(old), re.IGNORECASE)
-
-          def replacement(match):
-              value = match.group(0)
-              if value.isupper():
-                  return "NOVACORE"
-              if value.islower():
-                  return "novacore"
-              return "NovaCore"
-
-          root = Path(".")
-          for path in sorted(root.rglob("*"), key=lambda item: len(item.parts), reverse=True):
-              if ".git" in path.parts or not path.is_file():
-                  continue
-              try:
-                  data = path.read_text(encoding="utf-8")
-              except (UnicodeDecodeError, OSError):
-                  continue
-              updated = pattern.sub(replacement, data)
-              if updated != data:
-                  path.write_text(updated, encoding="utf-8", newline="")
-
-          for path in sorted(root.rglob("*"), key=lambda item: len(item.parts), reverse=True):
-              if ".git" in path.parts or not path.exists():
-                  continue
-              new_name = pattern.sub(replacement, path.name)
-              if new_name != path.name:
-                  path.rename(path.with_name(new_name))
-          PY
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if ! git diff --cached --quiet; then
-            git commit -m "Rename all legacy branding to NovaCore"
-            git push origin HEAD:main
-          fi
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -65,5 +18,5 @@ jobs:
       - run: mvn -B clean package
       - uses: actions/upload-artifact@v4
         with:
-          name: NovaCore
-          path: target/NovaCore.jar
+          name: NyrethaCore
+          path: target/NyrethaCore.jar

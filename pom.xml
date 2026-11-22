@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.austynzdevv</groupId>
-    <artifactId>NovaCore</artifactId>
+    <artifactId>NyrethaCore</artifactId>
     <version>2.9</version>
     <packaging>jar</packaging>
-    <name>NovaCore</name>
+    <name>NyrethaCore</name>
 
     <properties>
         <java.version>21</java.version>
@@ -96,7 +96,7 @@
     </dependencies>
 
     <build>
-        <finalName>NovaCore</finalName>
+        <finalName>NyrethaCore</finalName>
         <defaultGoal>clean package</defaultGoal>
         <resources>
             <resource>
@@ -137,31 +137,31 @@
                     <relocations>
                         <relocation>
                             <pattern>net.dv8tion</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.net.dv8tion</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.net.dv8tion</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okhttp3</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.okhttp3</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.okhttp3</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>okio</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.okio</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.okio</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.fasterxml.jackson</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.jackson</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.jackson</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>com.neovisionaries</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.neovisionaries</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.neovisionaries</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>gnu.trove</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.trove</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.trove</shadedPattern>
                         </relocation>
                         <relocation>
                             <pattern>org.apache.commons.collections4</pattern>
-                            <shadedPattern>com.austynzdevv.novacore.libs.collections4</shadedPattern>
+                            <shadedPattern>com.austynzdevv.nyrethacore.libs.collections4</shadedPattern>
                         </relocation>
                     </relocations>
                     <filters>

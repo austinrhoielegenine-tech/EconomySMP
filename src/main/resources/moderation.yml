@@ -20,7 +20,7 @@ messages:
 command-logs:
   enabled: true
   # Permission to RECEIVE alerts
-  alert-permission: "novacore.system.moderation.commandlog"
+  alert-permission: "nyrethacore.system.moderation.commandlog"
   # Commands that trigger alerts (label only, case-insensitive)
   watched-commands:
     - give

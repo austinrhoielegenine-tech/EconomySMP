@@ -1,0 +1,56 @@
+package com.austynzdevv.nyrethacore.combat.placeholders;
+
+import me.clip.placeholderapi.expansion.PlaceholderExpansion;
+import com.austynzdevv.nyrethacore.combat.EconomyCombat;
+import com.austynzdevv.nyrethacore.combat.CombatManager;
+import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+
+public class CombatExpansion extends PlaceholderExpansion {
+   private final EconomyCombat plugin;
+
+   public CombatExpansion(EconomyCombat plugin) {
+      this.plugin = plugin;
+   }
+
+   public @NotNull String getIdentifier() {
+      return "economycombat";
+   }
+
+   public @NotNull String getAuthor() {
+      return "EconomyStudio";
+   }
+
+   public @NotNull String getVersion() {
+      return this.plugin.getDescription().getVersion();
+   }
+
+   public boolean persist() {
+      return true;
+   }
+
+   public String onPlaceholderRequest(Player player, @NotNull String params) {
+      if (player == null) {
+         return "";
+      } else {
+         CombatManager mgr = this.plugin.getCombatManager();
+         String var10000;
+         switch (params.toLowerCase()) {
+            case "time_left":
+            case "time":
+               var10000 = String.valueOf(mgr.getTimeLeft(player));
+               break;
+            case "status":
+               var10000 = mgr.isInCombat(player) ? "Combat" : "Safe";
+               break;
+            case "in_combat":
+               var10000 = String.valueOf(mgr.isInCombat(player));
+               break;
+            default:
+               var10000 = null;
+         }
+
+         return var10000;
+      }
+   }
+}

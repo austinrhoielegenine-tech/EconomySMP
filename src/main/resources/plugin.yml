@@ -1,40 +1,40 @@
-name: NovaCore
+name: NyrethaCore
 version: 2.9
-main: com.austynzdevv.novacore.NovaCore
+main: com.austynzdevv.nyrethacore.NyrethaCore
 api-version: '1.21'
 author: AustynzDevv
-description: Free NovaCore 
+description: Free NyrethaCore 
 folia-supported: true
 softdepend: [ProtocolLib, packetevents, Vault, PlaceholderAPI, LuckPerms, DiscordSRV, WorldGuard, FancyNpcs, TAB, Geyser-Spigot, floodgate, ViaVersion, ViaBackwards]
 
 commands:
   tpaheretoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   globaltoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   teamchattoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   duelrequesttoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   duelsongtoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   tpaconfirmtoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   mobtoggle:
     description: Settings toggle
-    permission: novacore.system.settings.use
+    permission: nyrethacore.system.settings.use
 
   phantom:
     description: Toggle personal phantom spawning
@@ -43,12 +43,12 @@ commands:
   aholo:
     description: Holograms admin
     aliases: [aholograms, holograms]
-    permission: novacore.system.holograms.use
-  novacore:
-    description: Main NovaCore admin command
-    aliases: [asmp, asmpcore, economycore, acore, NovaCore, NovaCore]
-    usage: /novacore reload | /asmp reload | /asmpcore reload
-    permission: novacore.reload
+    permission: nyrethacore.system.holograms.use
+  nyrethacore:
+    description: Main NyrethaCore admin command
+    aliases: [asmp, asmpcore, economycore, acore, NyrethaCore, NyrethaCore]
+    usage: /nyrethacore reload | /asmp reload | /asmpcore reload
+    permission: nyrethacore.reload
   ah:
     description: Auction house
     aliases: [auction, economyauction]
@@ -76,7 +76,7 @@ commands:
     description: Toggle worth display
   sellaxe:
     description: Sell axe
-    permission: NovaCore.system.sellaxe.use
+    permission: NyrethaCore.system.sellaxe.use
   sellhistory:
     description: Sell history
   orders:
@@ -306,7 +306,7 @@ commands:
 
   sus:
     description: Open suspected players GUI
-    permission: novacore.system.moderation.sus
+    permission: nyrethacore.system.moderation.sus
 
   v:
     description: Toggle vanish
@@ -358,271 +358,271 @@ commands:
   eco:
     description: Economy admin commands
     usage: /eco <give|take|set|bal> <player> [amount]
-    permission: novacore.system.moderation.eco
+    permission: nyrethacore.system.moderation.eco
   give:
     description: Give items to a player
-    permission: novacore.system.moderation.give
+    permission: nyrethacore.system.moderation.give
   clear:
     description: Clear a player's inventory
-    permission: novacore.system.moderation.clear
+    permission: nyrethacore.system.moderation.clear
   enchant:
     description: Enchant held item
-    permission: novacore.system.moderation.enchant
+    permission: nyrethacore.system.moderation.enchant
   effect:
     description: Give/clear potion effects
-    permission: novacore.system.moderation.effect
+    permission: nyrethacore.system.moderation.effect
   offend:
     description: Punish a player
-    permission: novacore.system.punishment.offend
+    permission: nyrethacore.system.punishment.offend
   unoffend:
     description: Remove punishment
-    permission: novacore.system.punishment.unoffend
+    permission: nyrethacore.system.punishment.unoffend
   offendip:
     description: IP punish
-    permission: novacore.system.punishment.offendip
+    permission: nyrethacore.system.punishment.offendip
   freeze:
     description: Freeze a player
-    permission: novacore.system.punishment.freeze
+    permission: nyrethacore.system.punishment.freeze
   unfreeze:
     description: Unfreeze a player
-    permission: novacore.system.punishment.unfreeze
+    permission: nyrethacore.system.punishment.unfreeze
   kick:
     description: Kick a player
-    permission: novacore.system.punishment.kick
+    permission: nyrethacore.system.punishment.kick
   checkban:
     description: Check ban
-    permission: novacore.system.punishment.check
+    permission: nyrethacore.system.punishment.check
   checkmute:
     description: Check mute
-    permission: novacore.system.punishment.check
+    permission: nyrethacore.system.punishment.check
   history:
     description: Punishment history
-    permission: novacore.system.punishment.history
+    permission: nyrethacore.system.punishment.history
   punishment:
     description: Punishment history
-    permission: novacore.system.punishment.admin
+    permission: nyrethacore.system.punishment.admin
     aliases: [punish]
   economypunishment:
     description: Punishment admin
-    permission: novacore.system.punishment.admin
+    permission: nyrethacore.system.punishment.admin
     aliases: [ap]
 
 permissions:
-  novacore.reload:
-    description: Reload NovaCore (/novacore reload, /asmp reload, /asmpcore reload)
+  nyrethacore.reload:
+    description: Reload NyrethaCore (/nyrethacore reload, /asmp reload, /asmpcore reload)
     default: op
-  novacore.system.admin:
+  nyrethacore.system.admin:
     description: Full admin for enable/disable systems
     default: op
 
-  # ---- systems (format: novacore.system.<name>.<perm>) ----
-  novacore.system.settings.use:
+  # ---- systems (format: nyrethacore.system.<name>.<perm>) ----
+  nyrethacore.system.settings.use:
     default: true
-  novacore.system.holograms.use:
+  nyrethacore.system.holograms.use:
     default: op
-  novacore.system.holograms.admin:
+  nyrethacore.system.holograms.admin:
     default: op
-  novacore.system.warps.use:
+  nyrethacore.system.warps.use:
     default: true
-  novacore.system.warps.spawn:
+  nyrethacore.system.warps.spawn:
     default: true
-  novacore.system.warps.warp:
+  nyrethacore.system.warps.warp:
     default: true
-  novacore.system.warps.afk:
+  nyrethacore.system.warps.afk:
     default: true
-  novacore.system.warps.admin:
+  nyrethacore.system.warps.admin:
     default: op
-  novacore.system.warps.bypass:
+  nyrethacore.system.warps.bypass:
     default: op
-  novacore.system.homes.use:
+  nyrethacore.system.homes.use:
     default: true
-  novacore.system.homes.limit.3:
+  nyrethacore.system.homes.limit.3:
     default: false
-  novacore.system.homes.limit.4:
+  nyrethacore.system.homes.limit.4:
     default: false
-  novacore.system.homes.limit.5:
+  nyrethacore.system.homes.limit.5:
     default: false
-  novacore.system.homes.admin:
+  nyrethacore.system.homes.admin:
     default: op
-  novacore.system.homes.bypass:
+  nyrethacore.system.homes.bypass:
     default: op
-  novacore.system.homes.others:
+  nyrethacore.system.homes.others:
     default: op
-  novacore.system.tpa.use:
+  nyrethacore.system.tpa.use:
     default: true
-  novacore.system.tpa.admin:
+  nyrethacore.system.tpa.admin:
     default: op
-  novacore.system.teams.use:
+  nyrethacore.system.teams.use:
     default: true
-  novacore.system.teams.admin:
+  nyrethacore.system.teams.admin:
     default: op
-  novacore.system.shop.use:
+  nyrethacore.system.shop.use:
     default: true
-  novacore.system.shop.admin:
+  nyrethacore.system.shop.admin:
     default: op
-  novacore.system.sell.use:
+  nyrethacore.system.sell.use:
     default: true
-  novacore.system.sell.admin:
+  nyrethacore.system.sell.admin:
     default: op
-  NovaCore.system.sellaxe.use:
+  NyrethaCore.system.sellaxe.use:
     description: Give sell axes via /sellaxe
     default: op
-  novacore.system.auction.use:
+  nyrethacore.system.auction.use:
     default: true
-  novacore.system.auction.admin:
+  nyrethacore.system.auction.admin:
     default: op
-  novacore.system.auction.fastbuy:
+  nyrethacore.system.auction.fastbuy:
     default: false
-  novacore.system.order.use:
+  nyrethacore.system.order.use:
     default: true
-  novacore.system.order.admin:
+  nyrethacore.system.order.admin:
     default: op
-  novacore.system.bounties.use:
+  nyrethacore.system.bounties.use:
     default: true
-  novacore.system.bounties.add:
+  nyrethacore.system.bounties.add:
     default: true
-  novacore.system.bounties.admin:
+  nyrethacore.system.bounties.admin:
     default: op
-  novacore.system.pay.use:
+  nyrethacore.system.pay.use:
     default: true
-  novacore.system.msg.use:
+  nyrethacore.system.msg.use:
     default: true
-  novacore.system.stats.use:
+  nyrethacore.system.stats.use:
     default: true
-  novacore.system.profile.use:
+  nyrethacore.system.profile.use:
     default: true
-  novacore.system.scoreboard.use:
+  nyrethacore.system.scoreboard.use:
     default: true
-  novacore.system.nightvision.use:
+  nyrethacore.system.nightvision.use:
     default: true
-  novacore.system.hide.use:
+  nyrethacore.system.hide.use:
     default: false
-  novacore.system.fly.use:
+  nyrethacore.system.fly.use:
     default: op
-  novacore.system.doublejump.use:
+  nyrethacore.system.doublejump.use:
     default: true
-  novacore.system.shards.use:
+  nyrethacore.system.shards.use:
     default: true
-  novacore.system.shards.vip:
+  nyrethacore.system.shards.vip:
     description: Earn VIP shard rate (2/min) while in the AFK zone
     default: false
-  novacore.system.shards.everywhere:
+  nyrethacore.system.shards.everywhere:
     description: Earn 1 shard per minute anywhere on the server (not only AFK zone)
     default: false
-  novacore.system.shards.admin:
+  nyrethacore.system.shards.admin:
     default: op
-  novacore.system.crates.use:
+  nyrethacore.system.crates.use:
     default: true
-  novacore.system.crates.admin:
+  nyrethacore.system.crates.admin:
     default: op
-  novacore.system.spawners.use:
+  nyrethacore.system.spawners.use:
     default: true
-  novacore.system.spawners.admin:
+  nyrethacore.system.spawners.admin:
     default: op
-  novacore.system.tools.use:
+  nyrethacore.system.tools.use:
     default: true
-  novacore.system.tools.admin:
+  nyrethacore.system.tools.admin:
     default: op
-  novacore.system.rtp.use:
+  nyrethacore.system.rtp.use:
     default: true
-  novacore.system.rtp.admin:
+  nyrethacore.system.rtp.admin:
     default: op
-  novacore.system.ec.open:
+  nyrethacore.system.ec.open:
     default: true
-  novacore.system.ec.everywhere:
+  nyrethacore.system.ec.everywhere:
     description: Open your ender chest with /ec from anywhere
     default: true
-  novacore.system.ec.see:
+  nyrethacore.system.ec.see:
     default: op
-  novacore.system.ec.admin:
+  nyrethacore.system.ec.admin:
     default: op
-  novacore.system.links.use:
+  nyrethacore.system.links.use:
     default: true
-  novacore.system.links.unlink:
+  nyrethacore.system.links.unlink:
     default: op
-  novacore.system.duels.use:
+  nyrethacore.system.duels.use:
     default: true
-  novacore.system.duels.admin:
+  nyrethacore.system.duels.admin:
     default: op
-  novacore.system.moderation.use:
+  nyrethacore.system.moderation.use:
     default: op
-  novacore.system.moderation.invsee:
+  nyrethacore.system.moderation.invsee:
     default: op
-  novacore.system.moderation.wipe:
+  nyrethacore.system.moderation.wipe:
     default: op
-  novacore.system.moderation.give:
+  nyrethacore.system.moderation.give:
     default: op
-  novacore.system.moderation.clear:
+  nyrethacore.system.moderation.clear:
     default: op
-  novacore.system.moderation.enchant:
+  nyrethacore.system.moderation.enchant:
     default: op
-  novacore.system.moderation.effect:
+  nyrethacore.system.moderation.effect:
     default: op
-  novacore.system.moderation.broadcast:
+  nyrethacore.system.moderation.broadcast:
     default: op
-  novacore.system.moderation.vanish:
+  nyrethacore.system.moderation.vanish:
     default: op
-  novacore.system.moderation.commandlog:
+  nyrethacore.system.moderation.commandlog:
     default: op
-  novacore.system.moderation.sus:
+  nyrethacore.system.moderation.sus:
     default: op
-  novacore.system.moderation.fakeplayer:
+  nyrethacore.system.moderation.fakeplayer:
     default: op
-  novacore.system.moderation.fakestash:
+  nyrethacore.system.moderation.fakestash:
     default: op
-  novacore.system.staffchat.use:
+  nyrethacore.system.staffchat.use:
     default: op
-  novacore.system.punishment.offend:
+  nyrethacore.system.punishment.offend:
     default: op
-  novacore.system.punishment.unoffend:
+  nyrethacore.system.punishment.unoffend:
     default: op
-  novacore.system.punishment.offendip:
+  nyrethacore.system.punishment.offendip:
     default: op
-  novacore.system.punishment.freeze:
+  nyrethacore.system.punishment.freeze:
     default: op
-  novacore.system.punishment.unfreeze:
+  nyrethacore.system.punishment.unfreeze:
     default: op
-  novacore.system.punishment.kick:
+  nyrethacore.system.punishment.kick:
     default: op
-  novacore.system.punishment.check:
+  nyrethacore.system.punishment.check:
     default: op
-  novacore.system.punishment.history:
+  nyrethacore.system.punishment.history:
     default: op
-  novacore.system.punishment.admin:
+  nyrethacore.system.punishment.admin:
     default: op
-  novacore.system.punishment.bypass:
+  nyrethacore.system.punishment.bypass:
     default: op
-  novacore.system.maintenance.use:
+  nyrethacore.system.maintenance.use:
     default: op
-  novacore.system.reports.use:
+  nyrethacore.system.reports.use:
     default: true
-  novacore.system.reports.staff:
+  nyrethacore.system.reports.staff:
     default: op
-  novacore.system.lb.use:
+  nyrethacore.system.lb.use:
     default: true
-  novacore.system.lb.admin:
+  nyrethacore.system.lb.admin:
     default: op
-  novacore.system.baltop.use:
+  nyrethacore.system.baltop.use:
     default: true
-  novacore.system.billford.use:
+  nyrethacore.system.billford.use:
     default: true
-  novacore.system.billford.admin:
+  nyrethacore.system.billford.admin:
     default: op
-  novacore.system.voicechat.use:
+  nyrethacore.system.voicechat.use:
     default: true
-  novacore.system.phantoms.use:
+  nyrethacore.system.phantoms.use:
     default: true
-  novacore.system.combat.bypass:
+  nyrethacore.system.combat.bypass:
     default: op
-  novacore.system.chainmail.use:
+  nyrethacore.system.chainmail.use:
     default: true
-  novacore.system.safety.use:
+  nyrethacore.system.safety.use:
     default: true
-  novacore.system.whitelister.bypass:
+  nyrethacore.system.whitelister.bypass:
     default: op
-  novacore.system.whitelister.reload:
+  nyrethacore.system.whitelister.reload:
     default: op
-  novacore.system.keyall.admin:
+  nyrethacore.system.keyall.admin:
     default: op
-  novacore.system.help.use:
+  nyrethacore.system.help.use:
     default: true
