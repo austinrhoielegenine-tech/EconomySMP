@@ -9,80 +9,80 @@ items:
   "10":
     material: WHITE_CONCRETE
     name: "&fWhite Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "11":
     material: ORANGE_CONCRETE
     name: "&6Orange Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "12":
     material: MAGENTA_CONCRETE
     name: "&dMagenta Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "13":
     material: LIGHT_BLUE_CONCRETE
     name: "&bLight Blue Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "19":
     material: YELLOW_CONCRETE
     name: "&eYellow Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "20":
     material: LIME_CONCRETE
     name: "&aLime Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "21":
     material: PINK_CONCRETE
     name: "&dPink Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "22":
     material: GRAY_CONCRETE
     name: "&8Gray Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "28":
     material: LIGHT_GRAY_CONCRETE
     name: "&7Light Gray Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "29":
     material: CYAN_CONCRETE
     name: "&3Cyan Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "30":
     material: PURPLE_CONCRETE
     name: "&5Purple Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "31":
     material: BLUE_CONCRETE
     name: "&9Blue Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "37":
     material: BROWN_CONCRETE
     name: "&6Brown Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "38":
     material: GREEN_CONCRETE
     name: "&2Green Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "39":
     material: RED_CONCRETE
     name: "&cRed Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
   "40":
     material: BLACK_CONCRETE
     name: "&0Black Concrete"
-    price: 100
-    amount: 16
+    price: 150
+    amount: 1
