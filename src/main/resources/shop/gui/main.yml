@@ -20,6 +20,12 @@ items:
     lore:
       - "&fClick to view the redstone shop"
     open: redstone
+  "10":
+    material: BAMBOO
+    name: "&#00fc88ꜰᴀʀᴍ"
+    lore:
+      - "&fClick to view the farm shop"
+    open: farm
   "11":
     material: END_STONE
     name: "&#00fc88ᴇɴᴅ"
