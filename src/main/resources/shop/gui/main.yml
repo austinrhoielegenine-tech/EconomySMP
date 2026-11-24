@@ -2,6 +2,12 @@ title: "&8ѕʜᴏᴘ"
 size: 27
 type: menu
 items:
+  "3":
+    material: WHITE_CONCRETE
+    name: "&fᴄᴏɴᴄʀᴇᴛᴇ"
+    lore:
+      - "&fClick to view the concrete shop"
+    open: concrete
   "5":
     material: SPAWNER
     name: "&#00fc88sᴘᴀᴡɴᴇʀ"
