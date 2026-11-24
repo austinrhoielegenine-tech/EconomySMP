@@ -4,7 +4,7 @@ type: menu
 items:
   "3":
     material: WHITE_CONCRETE
-    name: "&fᴄᴏɴᴄʀᴇᴛᴇ"
+    name: "&#00fc88ᴄᴏɴᴄʀᴇᴛᴇ"
     lore:
       - "&fClick to view the concrete shop"
     open: concrete
