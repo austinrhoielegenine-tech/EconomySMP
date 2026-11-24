@@ -20,7 +20,7 @@ items:
     lore:
       - "&fClick to view the redstone shop"
     open: redstone
-  "10":
+  "16":
     material: BAMBOO
     name: "&#00fc88ꜰᴀʀᴍ"
     lore:
