@@ -1,0 +1,78 @@
+title: "&8ѕʜᴏᴘ - ꜰᴀʀᴍ"
+size: 54
+type: shop
+economy: vault
+currency-symbol: "$"
+back-slot: 45
+back-open: main
+items:
+  "10":
+    material: BAMBOO
+    name: "&fBamboo"
+    price: 1250
+    amount: 1
+  "11":
+    material: SEA_PICKLE
+    name: "&fSea Pickle"
+    price: 1750
+    amount: 1
+  "12":
+    material: SWEET_BERRIES
+    name: "&fSweet Berries"
+    price: 1100
+    amount: 1
+  "13":
+    material: GLOW_BERRIES
+    name: "&fGlow Berries"
+    price: 1850
+    amount: 1
+  "14":
+    material: KELP
+    name: "&fKelp"
+    price: 1400
+    amount: 1
+  "15":
+    material: CRIMSON_FUNGUS
+    name: "&fCrimson Fungus"
+    price: 1600
+    amount: 1
+  "16":
+    material: WARPED_FUNGUS
+    name: "&fWarped Fungus"
+    price: 1950
+    amount: 1
+  "19":
+    material: WHEAT_SEEDS
+    name: "&fWheat Seeds"
+    price: 350
+    amount: 1
+  "20":
+    material: PUMPKIN_SEEDS
+    name: "&fPumpkin Seeds"
+    price: 450
+    amount: 1
+  "21":
+    material: MELON_SEEDS
+    name: "&fMelon Seeds"
+    price: 300
+    amount: 1
+  "22":
+    material: BEETROOT_SEEDS
+    name: "&fBeetroot Seeds"
+    price: 400
+    amount: 1
+  "23":
+    material: TORCHFLOWER_SEEDS
+    name: "&fTorchflower Seeds"
+    price: 500
+    amount: 1
+  "24":
+    material: PITCHER_POD
+    name: "&fPitcher Pod"
+    price: 375
+    amount: 1
+  "25":
+    material: BONE
+    name: "&fBone"
+    price: 100
+    amount: 1
