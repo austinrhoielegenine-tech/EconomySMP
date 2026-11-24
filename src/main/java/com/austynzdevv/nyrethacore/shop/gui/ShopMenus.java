@@ -350,6 +350,25 @@ public final class ShopMenus {
    }
 
    private static String format(double value) {
-      return value == (double)((long)value) ? String.valueOf((long)value) : String.format("%.2f", value);
+      double abs = Math.abs(value);
+      if (abs >= 1.0E12) {
+         return trimCompact(value / 1.0E12) + "T";
+      }
+      if (abs >= 1.0E9) {
+         return trimCompact(value / 1.0E9) + "B";
+      }
+      if (abs >= 1.0E6) {
+         return trimCompact(value / 1.0E6) + "M";
+      }
+      if (abs >= 1.0E3) {
+         return trimCompact(value / 1.0E3) + "K";
+      }
+      return value == (double)((long)value) ? String.valueOf((long)value) : String.format(Locale.US, "%.2f", value);
+   }
+
+   private static String trimCompact(double value) {
+      return Math.abs(value - Math.rint(value)) < 0.001
+            ? String.format(Locale.US, "%.0f", value)
+            : String.format(Locale.US, "%.1f", value);
    }
 }
