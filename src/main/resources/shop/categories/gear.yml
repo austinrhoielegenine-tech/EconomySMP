@@ -16,8 +16,8 @@ items:
     price: 250
     amount: 1
   "11":
-    material: ENCHANTED_GOLDEN_APPLE
-    name: "&fEnchanted Golden Apple"
+    material: COBWEB
+    name: "&fCobweb"
     price: 1500
     amount: 1
   "12":
