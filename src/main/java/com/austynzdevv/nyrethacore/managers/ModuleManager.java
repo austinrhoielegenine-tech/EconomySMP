@@ -13,7 +13,6 @@ import com.austynzdevv.nyrethacore.HologramsModule;
 import com.austynzdevv.nyrethacore.LinksModule;
 import com.austynzdevv.nyrethacore.Module;
 import com.austynzdevv.nyrethacore.MsgModule;
-import com.austynzdevv.nyrethacore.NametagModule;
 import com.austynzdevv.nyrethacore.NightVisionModule;
 import com.austynzdevv.nyrethacore.PayModule;
 import com.austynzdevv.nyrethacore.PhantomsModule;
@@ -52,7 +51,6 @@ public class ModuleManager {
       this.registerIfEnabled("msg", new MsgModule(this.plugin));
       this.registerIfEnabled("pay", new PayModule(this.plugin));
       this.registerIfEnabled("stats", new StatsModule(this.plugin));
-      this.modules.put("nametag", new NametagModule(this.plugin));
       this.tryRegisterAntiHealth();
       this.registerIfEnabled("settings", new SettingsModule(this.plugin));
       this.registerIfEnabled("scoreboard", new ScoreboardModule(this.plugin));
